@@ -52,5 +52,8 @@
     "python -m revenue_lab.cli prepare control",
     "python -m revenue_lab.cli run control-recovery"
   ],
-  "configuration_hash": "27bf956b6b1a153e494fffb86fc6283cef9da8f52678084c84badb37d510d9f0"
+  "configuration_hash": "27bf956b6b1a153e494fffb86fc6283cef9da8f52678084c84badb37d510d9f0",
+  "input_hashes": {
+    "ledger.json": "914d3ae0ac7d0bbc5c727d949a40a82c985de5a7183bea0ae9b4d54c87b2b1fa"
+  }
 }

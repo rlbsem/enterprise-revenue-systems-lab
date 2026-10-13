@@ -47,5 +47,9 @@
     "python -m revenue_lab.cli prepare seller",
     "python -m revenue_lab.cli run seller-suppressed"
   ],
-  "configuration_hash": "ac63ea31093c4ab3376fda6e0d261215754c977025538bd5a6c6e8b1265c1ad9"
+  "configuration_hash": "ac63ea31093c4ab3376fda6e0d261215754c977025538bd5a6c6e8b1265c1ad9",
+  "input_hashes": {
+    "application.json": "c7a963d539f48fced5fb439538112561878613e83c92f78f4b4863a5f29cb40c",
+    "recorded-input.json": "a192caaa27ce51e6d0b33288dc07ed11cd57ed08271a357b1e15981e83112681"
+  }
 }

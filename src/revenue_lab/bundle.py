@@ -38,7 +38,10 @@ def seal(path, scenario, source, artifacts, mode, limitations):
         "packaged_at": datetime.now(timezone.utc).isoformat(),
         "runtime": {"python": platform.python_version(), "platform": platform.platform()},
         "artifacts": entries, "limitations": limitations,
-        "reproduce": ["python -m revenue_lab.cli prepare " + source,
+        "input_hashes": {a["path"]: a["sha256"] for a in entries if a["path"] in
+                         ("recorded-input.json", "dataset-manifest.json", "source-records.json", "ledger.json", "trace.json", "application.json")},
+        "reproduce": ["python -m revenue_lab.cli prepare " + source + " --install",
+                      ("python -m revenue_lab.cli recorded --source " + source) if mode == "recorded" else
                       "python -m revenue_lab.cli run " + scenario],
     }
     manifest["configuration_hash"] = digest({"scenario": scenario, "source": manifest["source"], "mode": mode})
@@ -48,10 +51,10 @@ def seal(path, scenario, source, artifacts, mode, limitations):
 
 def load_verified(path):
     """Check integrity, contracts and source pin before domain verification."""
-    from jsonschema import Draft202012Validator
+    from jsonschema import Draft202012Validator, FormatChecker
     manifest = json.loads((path / "bundle.json").read_text(encoding="utf-8"))
     schema = json.loads((ROOT / "schema/bundle-v1.json").read_text())
-    Draft202012Validator(schema).validate(manifest)
+    Draft202012Validator(schema, format_checker=FormatChecker()).validate(manifest)
     scenario = manifest["scenario"]
     source_key = scenario.split("-")[0]
     if source_key not in LOCK["sources"] or manifest["source"] != LOCK["sources"][source_key]:
@@ -73,6 +76,9 @@ def load_verified(path):
         if len(raw) != entry["bytes"] or hashlib.sha256(raw).hexdigest() != entry["sha256"]:
             raise ValueError("artifact integrity mismatch: " + name)
         found[name] = json.loads(raw) if name.endswith(".json") else raw.decode("utf-8")
+    hashes = {a["path"]: a["sha256"] for a in manifest["artifacts"]}
+    if not manifest["input_hashes"] or any(hashes.get(name) != value for name, value in manifest["input_hashes"].items()):
+        raise ValueError("input evidence hashes do not match artifacts")
     return manifest, found
 
 
@@ -125,6 +131,13 @@ def verify_seller(manifest, files):
     if manifest["mode"] == "fresh_replay":
         if any(r["configuration"]["mode"] != "recorded_response_replay" for r in runs.values()):
             raise ValueError("replay presented as fresh inference")
+    if "receiver.json" in files and application["actions"]:
+        effects = {r["id"]: r for r in files["receiver.json"]}
+        for action in application["actions"]:
+            if action["state"] == "delivered":
+                effect = effects.get(action["id"])
+                if not effect or digest(effect["body"]) != action["id"]:
+                    raise ValueError("fresh delivery lacks independent receiver effect")
     return {"runs_checked": len(runs), "approved_payloads_checked": len(application["actions"]),
             "quality": "structural_checks_only", "independent_usefulness": "pending"}
 

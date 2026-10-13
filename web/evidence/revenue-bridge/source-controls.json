@@ -1,0 +1,22 @@
+{
+  "net_bookings": {
+    "cents": "19745858859",
+    "rows": 345504,
+    "method": "Python csv reader over all Q1 source rows"
+  },
+  "net_invoiced": {
+    "cents": "18942279455",
+    "rows": 476751,
+    "method": "Python csv reader over all Q1 source rows"
+  },
+  "cash_received": {
+    "cents": "17461195438",
+    "rows": 261595,
+    "method": "Python csv reader over all Q1 source rows"
+  },
+  "period_end_arr": {
+    "cents": "75438995340",
+    "eligible_contracts": 60000,
+    "method": "Independent Python CSV audit of eligible period-end recurring contracts"
+  }
+}

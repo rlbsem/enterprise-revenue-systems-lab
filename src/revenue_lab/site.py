@@ -12,6 +12,7 @@ SCENARIOS = {
     "seller-stale": ("seller", "Evidence changes before approval", "The original Workbench refuses approval after new account evidence arrives."),
     "seller-suppressed": ("seller", "Consent blocks the action", "A recorded response is replayed; commercial authority prevents an effect."),
     "seller-live": ("seller", "Fresh local inference", "Actual configured local model inference and original-engine execution."),
+    "seller-delivery": ("seller", "Saved response, fresh approved delivery", "Recorded response replay with original-engine approval and a new local receiver effect."),
     "control-recovery": ("control", "Uncertain delivery and recovery", "Durable intent, lost acknowledgments and independently observed receiver effects."),
     "revenue-bridge": ("revenue", "Installed ARR and quarterly flows", "Different economic measures reconcile at their own grain and time boundary."),
     "revenue-correction": ("revenue", "Late correction and equivalent rebuild", "Original dbt builds are compared with independently exported model rows."),

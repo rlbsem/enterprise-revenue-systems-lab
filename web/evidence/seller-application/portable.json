@@ -8,7 +8,7 @@
     },
     "mode": "recorded",
     "environment": "independent_synthetic_environment",
-    "packaged_at": "2026-10-13T00:10:16.860269+00:00",
+    "packaged_at": "2026-10-13T00:40:42.699295+00:00",
     "runtime": {
       "python": "3.12.14",
       "platform": "Windows-11-10.0.26200-SP0"
@@ -40,9 +40,12 @@
       "Saved actual Qwen3-14B inference; no new inference in this explorer.",
       "Independent blinded usefulness review remains pending."
     ],
+    "input_hashes": {
+      "application.json": "7f1717e371353b9e889484266f1991e7c18e58e328b2663d8388917792a8e658"
+    },
     "reproduce": [
-      "python -m revenue_lab.cli prepare seller",
-      "python -m revenue_lab.cli run seller-application"
+      "python -m revenue_lab.cli prepare seller --install",
+      "python -m revenue_lab.cli recorded --source seller"
     ],
     "configuration_hash": "d2200b49edade4ec31337c4feddf7738f919f5ba6d9dff01a7c2c7073a446c7f"
   },

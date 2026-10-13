@@ -38,7 +38,7 @@ def prepare(key, install=False):
 
 
 def run(scenario, python=None, model_url=None):
-    allowed = {"seller-stale", "seller-suppressed", "seller-live", "control-recovery", "revenue-correction"}
+    allowed = {"seller-stale", "seller-suppressed", "seller-delivery", "seller-live", "control-recovery", "revenue-correction"}
     if scenario not in allowed:
         raise ValueError("scenario is not approved for execution")
     key = scenario.split("-")[0]
@@ -78,6 +78,7 @@ def main():
     s = sub.add_parser("verify"); s.add_argument("bundle", type=Path)
     s = sub.add_parser("run"); s.add_argument("scenario"); s.add_argument("--python"); s.add_argument("--model-url")
     sub.add_parser("build")
+    s = sub.add_parser("serve"); s.add_argument("--port", type=int, default=8542); s.add_argument("--execute", action="store_true"); s.add_argument("--model-url")
     args = p.parse_args()
     if args.command == "prepare":
         prepare(args.source, args.install)
@@ -92,6 +93,9 @@ def main():
         else:
             from .recorded import recorded
         recorded(source, ROOT / "web/evidence")
+    elif args.command == "serve":
+        from .server import serve
+        serve(args.port, args.execute, args.model_url)
     else:
         from .site import build
         build()

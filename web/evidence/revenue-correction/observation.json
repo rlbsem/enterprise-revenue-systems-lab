@@ -1,0 +1,41 @@
+{
+  "measures": {
+    "cash_received": 174611954.38,
+    "cohort_win_rate": 0.18669806,
+    "net_bookings": 197458588.59,
+    "net_invoiced": 189422794.55,
+    "open_pipeline": 222336753.02,
+    "period_end_arr": 754389953.4
+  },
+  "bridge": {
+    "bookings_less_invoices": 8035794.04,
+    "invoices_less_cash": 14810840.17
+  },
+  "equivalence": "Zero bidirectional EXCEPT ALL differences in all 15 model rowsets; selected exported rows independently compared.",
+  "model_counts": {
+    "dim_account": 68571,
+    "dim_date": 90,
+    "fct_booking_events": 345504,
+    "fct_invoice_lines": 775133,
+    "fct_opportunity_daily": 12470664,
+    "fct_payment_allocations": 329053,
+    "fct_subscription_period": 221781,
+    "mart_arr": 180000,
+    "mart_cohorts": 15,
+    "mart_discrepancy_bridge": 48020,
+    "mart_flows": 546059,
+    "mart_metric_values": 36,
+    "mart_pipeline": 5395893,
+    "stg_opportunities": 333146,
+    "stg_subscriptions": 73927
+  },
+  "timings_seconds": {
+    "generate_enterprise_sources": 3.724,
+    "load_original_sources": 3.17,
+    "initial_dbt_build": 18.862,
+    "load_late_correction": 0.137,
+    "incremental_dbt_build": 14.823,
+    "full_refresh_dbt_build": 19.837
+  },
+  "scope": "Enterprise profile: 60000 accounts. Timing is a single local run, not a production benchmark."
+}

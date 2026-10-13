@@ -51,6 +51,8 @@ def resign(bundle, name, value):
     a = next(a for a in manifest["artifacts"] if a["path"] == name)
     raw = (bundle / name).read_bytes()
     a.update(sha256=hashlib.sha256(raw).hexdigest(), bytes=len(raw))
+    if name in manifest["input_hashes"]:
+        manifest["input_hashes"][name] = a["sha256"]
     write_json(bundle / "bundle.json", manifest)
 
 

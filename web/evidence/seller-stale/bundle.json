@@ -47,5 +47,9 @@
     "python -m revenue_lab.cli prepare seller",
     "python -m revenue_lab.cli run seller-stale"
   ],
-  "configuration_hash": "4ada2acdbb779f4d849c00715665e0b217e29577d9328dc501c3a23c25878e0e"
+  "configuration_hash": "4ada2acdbb779f4d849c00715665e0b217e29577d9328dc501c3a23c25878e0e",
+  "input_hashes": {
+    "application.json": "c4654e50344e142efe74caa7d813aba5ca422dc23d682e61c8e89eb7f995c190",
+    "recorded-input.json": "7487bbe95886422f5fd3a7f5d8a37f15488b96d83190c0ed6e35c0af47bb6601"
+  }
 }

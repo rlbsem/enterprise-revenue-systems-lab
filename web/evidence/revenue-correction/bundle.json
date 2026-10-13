@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "scenario": "revenue-correction",
+  "source": {
+    "repository": "rlbsem/revenue-metrics-platform",
+    "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+  },
+  "mode": "fresh_engine",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-13T00:40:49.941718+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "observation.json",
+      "sha256": "80b03b2f0df81152024d3811d6cd48e5bfa1e2192f1cf69749190d878ac0db55",
+      "bytes": 1310
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "407761dc2acfed70e739c8af1d923f8f29a2d5aeaaa0a769873e332d729db48e",
+      "bytes": 691
+    },
+    {
+      "path": "dataset-manifest.json",
+      "sha256": "9f11fa8988ae1955a2efb40487e363078867bdc774618af25b4f5420ade44c9e",
+      "bytes": 2279
+    },
+    {
+      "path": "models.json",
+      "sha256": "e4ccc5d271ec37bd6fe95accb73aaee11fd85238c8d0c1aefaa88e025824e65f",
+      "bytes": 82419
+    },
+    {
+      "path": "source-controls.json",
+      "sha256": "8d90f8c8f489ee5276e2ff009017bdd20e2932651d56c3cd719816c762246ae1",
+      "bytes": 573
+    },
+    {
+      "path": "source-records.json",
+      "sha256": "a74c8c9a2951b7d6111d797c272055d3fcb6c73f040f75f80d041442abdf43cb",
+      "bytes": 20000
+    },
+    {
+      "path": "equivalence.json",
+      "sha256": "9dd08cd9688653ea3553de42de99805ce186ff77cb3af4562cbebf915055f8ea",
+      "bytes": 841
+    },
+    {
+      "path": "dbt-results.json",
+      "sha256": "6677d452643bd817ad4604a401bf96139b524d4229077d079e3e2f9f1d365b92",
+      "bytes": 14698
+    },
+    {
+      "path": "execution.json",
+      "sha256": "e3065d2e2aac2e3a5ac11459143dbe37233c8614f4edae1f3e6cec9b8cb1fde5",
+      "bytes": 3123
+    }
+  ],
+  "limitations": [
+    "Local synthetic execution, not production deployment.",
+    "Recorded-response replay is not new inference; model availability is explicit."
+  ],
+  "input_hashes": {
+    "dataset-manifest.json": "9f11fa8988ae1955a2efb40487e363078867bdc774618af25b4f5420ade44c9e",
+    "source-records.json": "a74c8c9a2951b7d6111d797c272055d3fcb6c73f040f75f80d041442abdf43cb"
+  },
+  "reproduce": [
+    "python -m revenue_lab.cli prepare revenue --install",
+    "python -m revenue_lab.cli run revenue-correction"
+  ],
+  "configuration_hash": "36be9d60cbd20ab0458e73e93943802ed9f8c6fa3fe8d8cefb5b180b1e582e82"
+}

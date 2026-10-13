@@ -1,0 +1,45 @@
+[
+  {
+    "id": "b54d10d25280c04171827a82bbf82cf2e56cad0bbb16c5df09b6fb11d4f7725a",
+    "body": {
+      "account": "account-0012",
+      "brand": "cedar",
+      "evidence_hash": "ebaf28fc8f835f094271968db0a98baad176f266ad830cca470fc012003bc2e1",
+      "owner": "cedar-east",
+      "proposal": {
+        "action": "schedule_discovery",
+        "assessment": "The customer is experiencing operational friction with their current workflow coordination and account reporting, specifically mentioning that handoffs are missed and account reporting takes too long. They are using spreadsheets to coordinate approvals across regional teams and are seeking to understand workflow coordination and reporting before evaluating integration requirements. They have not agreed on a budget and are open to a discovery meeting next week.",
+        "claims": [
+          {
+            "quote": "We coordinate approvals across regional teams using spreadsheets.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "Handoffs are missed and account reporting takes too long.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "We want to understand workflow coordination and reporting before evaluating integration requirements.",
+            "source": "inquiry-account-0012"
+          }
+        ],
+        "draft": "Thank you for reaching out. It sounds like your team is currently managing approvals across regional teams using spreadsheets, which is causing missed handoffs and lengthy account reporting. Cedar Systems provides workflow coordination and account reporting that could help streamline these processes. Our team is available to schedule a discovery meeting next week to explore how we can support your needs. Would you like us to proceed with scheduling that meeting?",
+        "questions": [
+          "What specific challenges are you facing with your current spreadsheet-based workflow coordination?",
+          "Are there any specific goals or outcomes you hope to achieve with improved workflow coordination and reporting?",
+          "What is the current status of your budget planning for this initiative?"
+        ],
+        "uncertainties": [
+          "The customer has not agreed on a budget, which may impact the timeline or scope of the project.",
+          "The customer is seeking to understand workflow coordination and reporting before evaluating integration requirements, which may require additional clarification on their current integration landscape."
+        ]
+      },
+      "run_id": "4319e0b58d120b316d90011ddc2f0619f6be5dd96886ee4ec1d76155b4cbdcdf"
+    },
+    "receipt": {
+      "destination": "synthetic_crm_task",
+      "id": "b54d10d25280c04171827a82bbf82cf2e56cad0bbb16c5df09b6fb11d4f7725a",
+      "payload_hash": "b54d10d25280c04171827a82bbf82cf2e56cad0bbb16c5df09b6fb11d4f7725a"
+    }
+  }
+]
