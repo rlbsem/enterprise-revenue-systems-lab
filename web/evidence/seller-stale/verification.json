@@ -1,0 +1,14 @@
+{
+  "scenario": "seller-stale",
+  "integrity": "verified",
+  "checks": {
+    "runs_checked": 1,
+    "approved_payloads_checked": 0,
+    "quality": "structural_checks_only",
+    "independent_usefulness": "pending"
+  },
+  "limitations": [
+    "Local synthetic execution, not production deployment.",
+    "Recorded-response replay is not new inference; model availability is explicit."
+  ]
+}

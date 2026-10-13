@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "seller-application",
+      "investigation": "seller",
+      "title": "Reviewed discovery action",
+      "summary": "A saved model response was edited, approved and delivered to a synthetic CRM.",
+      "manifest_sha256": "c06cb56ba9112b6b899340687e9d01b5491cec96c74a2cd9b3e3457bf47e139f",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-stale",
+      "investigation": "seller",
+      "title": "Evidence changes before approval",
+      "summary": "The original Workbench refuses approval after new account evidence arrives.",
+      "manifest_sha256": "7230efd93cefb9ddc3ef9a120cc7d7e795edf4877d8bdfe41a1fb5838bfd0bf8",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    },
+    {
+      "id": "seller-support-review",
+      "investigation": "seller",
+      "title": "A passing draft with an unsupported claim",
+      "summary": "Exact citations pass. The draft still implies unverified support availability.",
+      "manifest_sha256": "a85c51b23b6da5851765cfb822fb785483ef6d3e16f6a5709f4fc6e640be84c6",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-suppressed",
+      "investigation": "seller",
+      "title": "Consent blocks the action",
+      "summary": "A recorded response is replayed; commercial authority prevents an effect.",
+      "manifest_sha256": "e11d372816a0f5fa1ecf86b74d1aa5ee6af0552e423708e5c02423c454f9d931",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    }
+  ]
+}

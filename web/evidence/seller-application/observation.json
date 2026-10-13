@@ -1,0 +1,5 @@
+{
+  "runs": 3,
+  "actions": 1,
+  "scope": "Browser operated by engineering agent; real local model and synthetic HTTP CRM."
+}

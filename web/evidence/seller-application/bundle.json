@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "scenario": "seller-application",
+  "source": {
+    "repository": "rlbsem/customer-signal-activation",
+    "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-13T00:10:16.860269+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "application.json",
+      "sha256": "7f1717e371353b9e889484266f1991e7c18e58e328b2663d8388917792a8e658",
+      "bytes": 33006
+    },
+    {
+      "path": "operations.json",
+      "sha256": "bd855c4e4263794ca9ec8b35cb7a51b7189688314cd9eb0884aa5058a1b422a8",
+      "bytes": 15204
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "7c2be2fe8c6cee66fcb5059c91ec1ff9cf6635f12a6c4d080aa31ce968037d39",
+      "bytes": 825
+    },
+    {
+      "path": "observation.json",
+      "sha256": "6474c285a5a25f69d8e681b18094e3bfb9e042a7f7389daa6ac149453ef3b6d3",
+      "bytes": 126
+    }
+  ],
+  "limitations": [
+    "Synthetic accounts and HTTP CRM, not client deployment.",
+    "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+    "Independent blinded usefulness review remains pending."
+  ],
+  "reproduce": [
+    "python -m revenue_lab.cli prepare seller",
+    "python -m revenue_lab.cli run seller-application"
+  ],
+  "configuration_hash": "d2200b49edade4ec31337c4feddf7738f919f5ba6d9dff01a7c2c7073a446c7f"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "scenario": "seller-support-review",
+  "source": {
+    "repository": "rlbsem/customer-signal-activation",
+    "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-13T00:10:17.445394+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "trace.json",
+      "sha256": "75403c74cc8367eae0218641e69ff73cf63f46426fb131174eb4b2877e7c147e",
+      "bytes": 4654
+    },
+    {
+      "path": "simple.json",
+      "sha256": "1a18071becaec294878e57da4bde0f61eaecd1e4a76d92a5d5fe8d9858676324",
+      "bytes": 5011
+    },
+    {
+      "path": "template.json",
+      "sha256": "200ba9d8bae68393b3c2e9e76eeecc5a012302f800fb8924dbb7cb08569ae723",
+      "bytes": 3119
+    },
+    {
+      "path": "review.md",
+      "sha256": "930856c64cbb093a4217927c3f3483a2e50e64de5795fe3efccf027dd31d7c75",
+      "bytes": 3658
+    },
+    {
+      "path": "observation.json",
+      "sha256": "da47b3d0c5650c988d1f382f302827df0d3bc207657d0401b7711322b8027340",
+      "bytes": 96
+    }
+  ],
+  "limitations": [
+    "Synthetic accounts and HTTP CRM, not client deployment.",
+    "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+    "Independent blinded usefulness review remains pending."
+  ],
+  "reproduce": [
+    "python -m revenue_lab.cli prepare seller",
+    "python -m revenue_lab.cli run seller-support-review"
+  ],
+  "configuration_hash": "b20e285f168f42f70d9aadb6307dfd82a0670f077521583eefa37b41ef4f0843"
+}

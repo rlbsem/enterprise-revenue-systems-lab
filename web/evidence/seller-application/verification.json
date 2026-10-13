@@ -1,0 +1,15 @@
+{
+  "scenario": "seller-application",
+  "integrity": "verified",
+  "checks": {
+    "runs_checked": 3,
+    "approved_payloads_checked": 1,
+    "quality": "structural_checks_only",
+    "independent_usefulness": "pending"
+  },
+  "limitations": [
+    "Synthetic accounts and HTTP CRM, not client deployment.",
+    "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+    "Independent blinded usefulness review remains pending."
+  ]
+}

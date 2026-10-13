@@ -1,0 +1,425 @@
+{
+  "accounts": [
+    {
+      "brand": "cedar",
+      "account": "account-0000",
+      "stage": "customer",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0002",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0004",
+      "stage": "hold",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": false
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0006",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0008",
+      "stage": "hold",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0010",
+      "stage": "customer",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0012",
+      "stage": "qualified",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0014",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0016",
+      "stage": "hold",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": false
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0018",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0020",
+      "stage": "hold",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0022",
+      "stage": "customer",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0001",
+      "stage": "customer",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0003",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0005",
+      "stage": "hold",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": false
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0007",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0009",
+      "stage": "hold",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0011",
+      "stage": "customer",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0013",
+      "stage": "qualified",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0015",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0017",
+      "stage": "hold",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": false
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0019",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0021",
+      "stage": "hold",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0023",
+      "stage": "customer",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    }
+  ],
+  "runs": [
+    {
+      "cache_key": "4319e0b58d120b316d90011ddc2f0619f6be5dd96886ee4ec1d76155b4cbdcdf",
+      "cached": false,
+      "configuration": {
+        "mode": "recorded_response_replay",
+        "model": "saved-qwen3-14b-response",
+        "record_hash": "850bff86c27fb68fc2177c5857dc5768148e0f29dd8f05944facfc85af0cd406"
+      },
+      "created_at": 1791850220,
+      "id": "4319e0b58d120b316d90011ddc2f0619f6be5dd96886ee4ec1d76155b4cbdcdf",
+      "inference": {
+        "mode": "recorded_response_replay",
+        "original_inference": {
+          "baseline": false,
+          "executed_at": 1791777013,
+          "finish_reason": "stop",
+          "input_hash": "0f11f8a5d7da0804d5e254b4707072c9fe4a6cf4bf2a70196bff3ed0a2de527b",
+          "latency_seconds": 7.3057,
+          "max_tokens": 1400,
+          "mode": "live",
+          "model": "qwen3-14b",
+          "prompt_hash": "b064df146c2c4cea748d8683d87460fb6492c1e253576baa6653f27fc30cfb6c",
+          "prompt_version": "seller-assist/v2",
+          "reported_model": "qwen3-14b",
+          "seed": 42,
+          "source_bound_citation_decoding": true,
+          "temperature": 0.3,
+          "usage": {
+            "completion_tokens": 401,
+            "prompt_tokens": 926,
+            "prompt_tokens_details": {
+              "cached_tokens": 3
+            },
+            "total_tokens": 1327
+          }
+        },
+        "record_hash": "850bff86c27fb68fc2177c5857dc5768148e0f29dd8f05944facfc85af0cd406"
+      },
+      "proposal": {
+        "action": "schedule_discovery",
+        "assessment": "The customer is experiencing operational friction with their current workflow coordination and account reporting, specifically mentioning that handoffs are missed and account reporting takes too long. They are using spreadsheets to coordinate approvals across regional teams and are seeking to understand workflow coordination and reporting before evaluating integration requirements. They have not agreed on a budget and are open to a discovery meeting next week.",
+        "claims": [
+          {
+            "quote": "We coordinate approvals across regional teams using spreadsheets.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "Handoffs are missed and account reporting takes too long.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "We want to understand workflow coordination and reporting before evaluating integration requirements.",
+            "source": "inquiry-account-0012"
+          }
+        ],
+        "draft": "Thank you for reaching out. It sounds like your team is currently managing approvals across regional teams using spreadsheets, which is causing missed handoffs and lengthy account reporting. Cedar Systems provides workflow coordination and account reporting that could help streamline these processes. Our team is available to schedule a discovery meeting next week to explore how we can support your needs. Would you like us to proceed with scheduling that meeting?",
+        "questions": [
+          "What specific challenges are you facing with your current spreadsheet-based workflow coordination?",
+          "Are there any specific goals or outcomes you hope to achieve with improved workflow coordination and reporting?",
+          "What is the current status of your budget planning for this initiative?"
+        ],
+        "uncertainties": [
+          "The customer has not agreed on a budget, which may impact the timeline or scope of the project.",
+          "The customer is seeking to understand workflow coordination and reporting before evaluating integration requirements, which may require additional clarification on their current integration landscape."
+        ]
+      },
+      "raw_proposal": {
+        "action": "schedule_discovery",
+        "assessment": "The customer is experiencing operational friction with their current workflow coordination and account reporting, specifically mentioning that handoffs are missed and account reporting takes too long. They are using spreadsheets to coordinate approvals across regional teams and are seeking to understand workflow coordination and reporting before evaluating integration requirements. They have not agreed on a budget and are open to a discovery meeting next week.",
+        "claims": [
+          {
+            "quote": "We coordinate approvals across regional teams using spreadsheets.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "Handoffs are missed and account reporting takes too long.",
+            "source": "inquiry-account-0012"
+          },
+          {
+            "quote": "We want to understand workflow coordination and reporting before evaluating integration requirements.",
+            "source": "inquiry-account-0012"
+          }
+        ],
+        "draft": "Thank you for reaching out. It sounds like your team is currently managing approvals across regional teams using spreadsheets, which is causing missed handoffs and lengthy account reporting. Cedar Systems provides workflow coordination and account reporting that could help streamline these processes. Our team is available to schedule a discovery meeting next week to explore how we can support your needs. Would you like us to proceed with scheduling that meeting?",
+        "questions": [
+          "What specific challenges are you facing with your current spreadsheet-based workflow coordination?",
+          "Are there any specific goals or outcomes you hope to achieve with improved workflow coordination and reporting?",
+          "What is the current status of your budget planning for this initiative?"
+        ],
+        "uncertainties": [
+          "The customer has not agreed on a budget, which may impact the timeline or scope of the project.",
+          "The customer is seeking to understand workflow coordination and reporting before evaluating integration requirements, which may require additional clarification on their current integration landscape."
+        ]
+      },
+      "snapshot": {
+        "account": "account-0012",
+        "as_of": 1774958400,
+        "brand": "cedar",
+        "decision": {
+          "account": "account-0012",
+          "as_of": 1774958400,
+          "blocked": [],
+          "brand": "cedar",
+          "campaign": "enterprise-workflows",
+          "consent": true,
+          "fit": 30,
+          "input_events": [
+            "account-0012-consent",
+            "account-0012-enrich",
+            "account-0012-link",
+            "account-0012-opp",
+            "account-0012-profile",
+            "account-0012-web-0",
+            "account-0012-web-1",
+            "account-0012-web-2"
+          ],
+          "intent": 50,
+          "notes": [],
+          "owner": "cedar-east",
+          "policy": "fit-intent-route/v2",
+          "score": 80,
+          "stage": "qualified",
+          "touch_id": "account-0012-web-0"
+        },
+        "documents": [
+          {
+            "id": "verified-state",
+            "kind": "verified",
+            "text": "{\"blocked\":[],\"consent\":true,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"qualified\"}",
+            "title": "Authoritative commercial state"
+          },
+          {
+            "id": "catalog-v1",
+            "kind": "catalog",
+            "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here.",
+            "title": "Approved Cedar Systems product information"
+          },
+          {
+            "account": "account-0012",
+            "brand": "cedar",
+            "id": "inquiry-account-0012",
+            "kind": "inquiry",
+            "occurred_at": "2026-03-30T12:00:00Z",
+            "revision": 1,
+            "text": "We coordinate approvals across regional teams using spreadsheets. Handoffs are missed and account reporting takes too long. We want to understand workflow coordination and reporting before evaluating integration requirements. Our operations team can meet next week. We have not agreed a budget.",
+            "title": "Discovery request"
+          }
+        ],
+        "excluded_documents": [],
+        "state_hash": "ebaf28fc8f835f094271968db0a98baad176f266ad830cca470fc012003bc2e1"
+      },
+      "status": "review_required"
+    }
+  ],
+  "actions": [],
+  "audit": [
+    {
+      "seq": 8,
+      "action": "document_admitted",
+      "subject": "new-note",
+      "actor": "lab_scenario",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"b016cb5506f881d00ade9da44cc41adc58f64b956bd05db2446c30698ec08179\"}"
+    },
+    {
+      "seq": 7,
+      "action": "generation_completed",
+      "subject": "4319e0b58d120b316d90011ddc2f0619f6be5dd96886ee4ec1d76155b4cbdcdf",
+      "actor": "lab_scenario",
+      "occurred": 1791850220,
+      "body": "{\"configuration\":{\"mode\":\"recorded_response_replay\",\"model\":\"saved-qwen3-14b-response\",\"record_hash\":\"850bff86c27fb68fc2177c5857dc5768148e0f29dd8f05944facfc85af0cd406\"},\"status\":\"review_required\"}"
+    },
+    {
+      "seq": 6,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0008",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"4b38c857dcc30bd362e6d024b7928a096747e963ce5fe45f579c167598fd51a2\"}"
+    },
+    {
+      "seq": 5,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0006",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"cbdaebd58326538a48e965f10e1a027e66b816d629562ea29a2a07bac76ba1b8\"}"
+    },
+    {
+      "seq": 4,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0004",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"824675efac6832d6246e547b42fd08ae5944c22e23adde3405474d42641d6df7\"}"
+    },
+    {
+      "seq": 3,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0002",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"1c3a49f80560d4d0abd74a3d60e39ca896b923c4e41195eaed4873190647350b\"}"
+    },
+    {
+      "seq": 2,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0000",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"5c5a002e6f463537065b4630d1353438386d5188ec0f2dd050a9791b0c9f193e\"}"
+    },
+    {
+      "seq": 1,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0012",
+      "actor": "synthetic_seed",
+      "occurred": 1791850220,
+      "body": "{\"hash\":\"6df058c67b5be6815a5e657a9a3dd1ec11119af34242b86f2799c417b619f4de\"}"
+    }
+  ],
+  "as_of": 1774958400,
+  "rejected_run_ids": [],
+  "model": {
+    "mode": "recorded_response_replay",
+    "model": "saved-qwen3-14b-response",
+    "record_hash": "850bff86c27fb68fc2177c5857dc5768148e0f29dd8f05944facfc85af0cd406"
+  }
+}

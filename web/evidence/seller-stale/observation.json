@@ -1,0 +1,72 @@
+{
+  "refusal": "evidence_changed_regenerate",
+  "receipt": null,
+  "receiver_rows": 0,
+  "current_snapshot": {
+    "brand": "cedar",
+    "account": "account-0012",
+    "as_of": 1774958400,
+    "decision": {
+      "brand": "cedar",
+      "account": "account-0012",
+      "as_of": 1774958400,
+      "policy": "fit-intent-route/v2",
+      "fit": 30,
+      "intent": 50,
+      "score": 80,
+      "owner": "cedar-east",
+      "stage": "qualified",
+      "consent": true,
+      "blocked": [],
+      "notes": [],
+      "campaign": "enterprise-workflows",
+      "touch_id": "account-0012-web-0",
+      "input_events": [
+        "account-0012-consent",
+        "account-0012-enrich",
+        "account-0012-link",
+        "account-0012-opp",
+        "account-0012-profile",
+        "account-0012-web-0",
+        "account-0012-web-1",
+        "account-0012-web-2"
+      ]
+    },
+    "state_hash": "70183d15737efccc1aeefe6de2ae6fddedd15dcb4dec5c5d287f7f0030238892",
+    "documents": [
+      {
+        "id": "verified-state",
+        "title": "Authoritative commercial state",
+        "kind": "verified",
+        "text": "{\"blocked\":[],\"consent\":true,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"qualified\"}"
+      },
+      {
+        "id": "catalog-v1",
+        "title": "Approved Cedar Systems product information",
+        "kind": "catalog",
+        "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here."
+      },
+      {
+        "account": "account-0012",
+        "brand": "cedar",
+        "id": "inquiry-account-0012",
+        "kind": "inquiry",
+        "occurred_at": "2026-03-30T12:00:00Z",
+        "revision": 1,
+        "text": "We coordinate approvals across regional teams using spreadsheets. Handoffs are missed and account reporting takes too long. We want to understand workflow coordination and reporting before evaluating integration requirements. Our operations team can meet next week. We have not agreed a budget.",
+        "title": "Discovery request"
+      },
+      {
+        "account": "account-0012",
+        "brand": "cedar",
+        "id": "new-note",
+        "kind": "call_note",
+        "occurred_at": "2026-03-31T12:00:00Z",
+        "revision": 1,
+        "text": "The requirements changed.",
+        "title": "Changed requirements"
+      }
+    ],
+    "excluded_documents": []
+  }
+}
