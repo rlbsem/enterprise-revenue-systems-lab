@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "attempts": 4,
+    "unique_effects": 2,
+    "duplicate_effects": 0,
+    "lost_acknowledgments": 1,
+    "interrupted_workers": 1,
+    "replay_claimed": false
+  },
+  "scope": "Fresh original PostgreSQL engine; real worker killed; synthetic HTTP receiver"
+}

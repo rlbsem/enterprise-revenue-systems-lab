@@ -1,0 +1,26 @@
+[
+  {
+    "action": "generate enterprise sources",
+    "detail": "Observed original-engine execution: 3.724 seconds"
+  },
+  {
+    "action": "load original sources",
+    "detail": "Observed original-engine execution: 3.17 seconds"
+  },
+  {
+    "action": "initial dbt build",
+    "detail": "Observed original-engine execution: 18.862 seconds"
+  },
+  {
+    "action": "load late correction",
+    "detail": "Observed original-engine execution: 0.137 seconds"
+  },
+  {
+    "action": "incremental dbt build",
+    "detail": "Observed original-engine execution: 14.823 seconds"
+  },
+  {
+    "action": "full refresh dbt build",
+    "detail": "Observed original-engine execution: 19.837 seconds"
+  }
+]

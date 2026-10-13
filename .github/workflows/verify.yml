@@ -1,0 +1,66 @@
+name: Verify evidence lab
+on:
+  push:
+    branches: [feat/executable-evidence-lab]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lab-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+jobs:
+  explorer:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.12.14'
+          - os: windows-latest
+            python: '3.12.10'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      LAB_SCREENSHOT_DIR: .cache/screenshots
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements.lock
+      - run: python -m playwright install --with-deps chromium
+      - run: python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
+      - run: python -m pytest -q --basetemp .cache/tests --junitxml .cache/tests.xml
+      - run: python scripts/check_repository.py
+      - run: python scripts/build.py
+  source-engines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:17.6@sha256:00bc86618629af00d2937fdc5a5d63db3ff8450acf52f0636ec813c7f4902929
+        env:
+          POSTGRES_USER: lab_admin
+          POSTGRES_PASSWORD: disposable-ci-only
+          POSTGRES_DB: postgres
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PYTHONPATH: src
+      LAB_POSTGRES_ADMIN_DSN: host=127.0.0.1 port=5432 user=lab_admin password=disposable-ci-only dbname=postgres connect_timeout=5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - run: python -m pip install -r requirements.lock
+      - run: python -m revenue_lab.cli prepare seller --install
+      - run: python -m revenue_lab.cli prepare control --install
+      - run: python -m revenue_lab.cli prepare revenue --install
+      - run: python -m revenue_lab.cli run seller-stale
+      - run: python -m revenue_lab.cli run seller-suppressed
+      - run: python -m revenue_lab.cli run seller-delivery
+      - run: python -m revenue_lab.cli run control-recovery
+      - run: python -m revenue_lab.cli run revenue-correction

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17.6@sha256:00bc86618629af00d2937fdc5a5d63db3ff8450acf52f0636ec813c7f4902929
+    environment:
+      POSTGRES_USER: lab_admin
+      POSTGRES_PASSWORD: disposable-lab-only
+      POSTGRES_DB: postgres
+    ports:
+      - "127.0.0.1:55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lab_admin"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    # Disposable, isolated Lab state. No client data or production credentials.

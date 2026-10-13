@@ -1,0 +1,14 @@
+{
+  "scenario": "seller-live",
+  "integrity": "verified",
+  "checks": {
+    "runs_checked": 1,
+    "approved_payloads_checked": 1,
+    "quality": "structural_checks_only",
+    "independent_usefulness": "pending"
+  },
+  "limitations": [
+    "Actual fresh local Qwen3-14B inference; automatic scenario approval is not independent human review.",
+    "Synthetic local CRM effect only. Independent usefulness remains pending."
+  ]
+}

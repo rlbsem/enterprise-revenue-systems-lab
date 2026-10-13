@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "scenario": "control-recovery",
+  "source": {
+    "repository": "rlbsem/enterprise-martech-ai-control-plane",
+    "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+  },
+  "mode": "fresh_engine",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-13T00:50:26.595679+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "ledger.json",
+      "sha256": "816c3f5e510b0220bb525805e4019414284a2f09abdd4cd9db69757a2a0ce760",
+      "bytes": 14588
+    },
+    {
+      "path": "receiver.json",
+      "sha256": "8669d6337e57a897d83c8300e9343ee8b4479b55d6959acd8b0e540b5781721a",
+      "bytes": 1035
+    },
+    {
+      "path": "stages.json",
+      "sha256": "fd7e7233ec7e16faab69df99bbb947d8d40ec205fe648ab0b603101254d9f66e",
+      "bytes": 6644
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "98c0bb106060d7f42e3cdd9f2d4b39edfd1610ee55648580436366db6bc53e1e",
+      "bytes": 8119
+    },
+    {
+      "path": "observation.json",
+      "sha256": "203942ab6d7e4dd2e2eb036e52a1c9d95b11b2ad219d22ac573671b47bf19362",
+      "bytes": 276
+    },
+    {
+      "path": "execution.json",
+      "sha256": "74382425e441903246d72a4ab18808eb7d634ef7e31ac079f7f64ec68c6de2d3",
+      "bytes": 1467
+    }
+  ],
+  "limitations": [
+    "Local synthetic execution, not production deployment.",
+    "Original engine execution. Exported observations support bounded checks, not production guarantees."
+  ],
+  "input_hashes": {
+    "ledger.json": "816c3f5e510b0220bb525805e4019414284a2f09abdd4cd9db69757a2a0ce760"
+  },
+  "reproduce": [
+    "python -m revenue_lab.cli prepare control --install",
+    "python -m revenue_lab.cli run control-recovery"
+  ],
+  "configuration_hash": "27bf956b6b1a153e494fffb86fc6283cef9da8f52678084c84badb37d510d9f0"
+}

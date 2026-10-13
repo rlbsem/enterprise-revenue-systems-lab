@@ -1,0 +1,144 @@
+{
+  "cache_key": "85978f44cbe18776942536d8eaee7578a559743fd21dee88ab262b32799ecc4f",
+  "cached": false,
+  "configuration": {
+    "baseline": false,
+    "max_tokens": 1400,
+    "mode": "live",
+    "model": "qwen3-14b",
+    "prompt_hash": "b064df146c2c4cea748d8683d87460fb6492c1e253576baa6653f27fc30cfb6c",
+    "prompt_version": "seller-assist/v2",
+    "seed": 42,
+    "source_bound_citation_decoding": true,
+    "temperature": 0.3
+  },
+  "created_at": 1791777284,
+  "id": "85978f44cbe18776942536d8eaee7578a559743fd21dee88ab262b32799ecc4f",
+  "inference": {
+    "baseline": false,
+    "executed_at": 1791777292,
+    "finish_reason": "stop",
+    "input_hash": "2e4655cd02b70b7d745650661efae530653e1f2ba9909c5057e925c34e292afd",
+    "latency_seconds": 8.2931,
+    "max_tokens": 1400,
+    "mode": "live",
+    "model": "qwen3-14b",
+    "prompt_hash": "b064df146c2c4cea748d8683d87460fb6492c1e253576baa6653f27fc30cfb6c",
+    "prompt_version": "seller-assist/v2",
+    "reported_model": "qwen3-14b",
+    "seed": 42,
+    "source_bound_citation_decoding": true,
+    "temperature": 0.3,
+    "usage": {
+      "completion_tokens": 326,
+      "prompt_tokens": 884,
+      "prompt_tokens_details": {
+        "cached_tokens": 413
+      },
+      "total_tokens": 1210
+    }
+  },
+  "proposal": {
+    "action": "no_action",
+    "assessment": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which blocks any further action. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. The operational friction they mentioned is related to workflow coordination, which is a known capability of Cedar Systems. However, without verified consent, no further engagement is permissible.",
+    "claims": [
+      {
+        "quote": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+        "source": "verified-state"
+      },
+      {
+        "quote": "Do not treat this old note as current permission to contact us.",
+        "source": "inquiry-account-0004"
+      }
+    ],
+    "draft": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which prevents us from proceeding with any further engagement. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. As such, no further action can be taken at this time.",
+    "questions": [
+      "Is there any updated information or consent that would allow us to proceed with this account?",
+      "Can we confirm the current status of consent for this account?"
+    ],
+    "uncertainties": [
+      "The lack of verified consent prevents any further action or engagement with the account."
+    ]
+  },
+  "raw_proposal": {
+    "action": "no_action",
+    "assessment": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which blocks any further action. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. The operational friction they mentioned is related to workflow coordination, which is a known capability of Cedar Systems. However, without verified consent, no further engagement is permissible.",
+    "claims": [
+      {
+        "quote": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+        "source": "verified-state"
+      },
+      {
+        "quote": "Do not treat this old note as current permission to contact us.",
+        "source": "inquiry-account-0004"
+      }
+    ],
+    "draft": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which prevents us from proceeding with any further engagement. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. As such, no further action can be taken at this time.",
+    "questions": [
+      "Is there any updated information or consent that would allow us to proceed with this account?",
+      "Can we confirm the current status of consent for this account?"
+    ],
+    "uncertainties": [
+      "The lack of verified consent prevents any further action or engagement with the account."
+    ]
+  },
+  "snapshot": {
+    "account": "account-0004",
+    "as_of": 1774958400,
+    "brand": "cedar",
+    "decision": {
+      "account": "account-0004",
+      "as_of": 1774958400,
+      "blocked": [
+        "suppressed_or_unknown_consent"
+      ],
+      "brand": "cedar",
+      "campaign": "enterprise-workflows",
+      "consent": false,
+      "fit": 30,
+      "input_events": [
+        "account-0004-consent",
+        "account-0004-enrich",
+        "account-0004-link",
+        "account-0004-profile",
+        "account-0004-web-0",
+        "account-0004-web-1",
+        "account-0004-web-2"
+      ],
+      "intent": 50,
+      "notes": [],
+      "owner": "cedar-east",
+      "policy": "fit-intent-route/v2",
+      "score": 80,
+      "stage": "hold",
+      "touch_id": "account-0004-web-0"
+    },
+    "documents": [
+      {
+        "id": "verified-state",
+        "kind": "verified",
+        "text": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+        "title": "Authoritative commercial state"
+      },
+      {
+        "id": "catalog-v1",
+        "kind": "catalog",
+        "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here.",
+        "title": "Approved Cedar Systems product information"
+      },
+      {
+        "account": "account-0004",
+        "brand": "cedar",
+        "id": "inquiry-account-0004",
+        "kind": "inquiry",
+        "occurred_at": "2026-03-30T12:00:00Z",
+        "revision": 1,
+        "text": "We previously asked about workflow coordination. Do not treat this old note as current permission to contact us.",
+        "title": "Historical inquiry"
+      }
+    ],
+    "excluded_documents": [],
+    "state_hash": "ff3be551fcf430446d8407f26fead62d2145c0debb5af7dd247e13b0a7485e0c"
+  },
+  "status": "review_required"
+}

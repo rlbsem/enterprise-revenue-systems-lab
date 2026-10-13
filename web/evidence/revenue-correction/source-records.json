@@ -1,0 +1,718 @@
+{
+  "booking_events": [
+    {
+      "booking_event_id": "C000001ASIGNB00",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB02",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB03",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB04",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB05",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB06",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB07",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB08",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB09",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB10",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000001ASIGNB11",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "24300",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB00",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB01",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB02",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB03",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB04",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB05",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB06",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB07",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB08",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB09",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB10",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000002ASIGNB11",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "42840",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB00",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB01",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB02",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB03",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB04",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB05",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB06",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB07",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB08",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB09",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB10",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    },
+    {
+      "booking_event_id": "C000003ASIGNB11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "20400",
+      "event_type": "renewal"
+    }
+  ],
+  "invoice_lines": [
+    {
+      "line_id": "C000001A2026-01-01L00",
+      "invoice_id": "C000001A2026-01-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-01-01L01",
+      "invoice_id": "C000001A2026-01-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-01-01L02",
+      "invoice_id": "C000001A2026-01-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-01-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-02-01L00",
+      "invoice_id": "C000001A2026-02-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-02-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-02-01L01",
+      "invoice_id": "C000001A2026-02-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-02-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-02-01L02",
+      "invoice_id": "C000001A2026-02-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-02-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-03-01L00",
+      "invoice_id": "C000001A2026-03-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-03-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-03-01L01",
+      "invoice_id": "C000001A2026-03-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-03-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000001A2026-03-01L02",
+      "invoice_id": "C000001A2026-03-01",
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "event_date": "2026-03-01",
+      "amount_cents": "8100",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-01-22L00",
+      "invoice_id": "C000002A2026-01-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-01-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-01-22L01",
+      "invoice_id": "C000002A2026-01-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-01-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-01-22L02",
+      "invoice_id": "C000002A2026-01-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-01-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-02-22L00",
+      "invoice_id": "C000002A2026-02-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-02-22L01",
+      "invoice_id": "C000002A2026-02-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-02-22L02",
+      "invoice_id": "C000002A2026-02-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-02-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-03-22L00",
+      "invoice_id": "C000002A2026-03-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-03-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-03-22L01",
+      "invoice_id": "C000002A2026-03-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-03-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000002A2026-03-22L02",
+      "invoice_id": "C000002A2026-03-22",
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "event_date": "2026-03-22",
+      "amount_cents": "14280",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-01-11L00",
+      "invoice_id": "C000003A2026-01-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-01-11L01",
+      "invoice_id": "C000003A2026-01-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-01-11L02",
+      "invoice_id": "C000003A2026-01-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-01-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-02-11L00",
+      "invoice_id": "C000003A2026-02-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-02-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-02-11L01",
+      "invoice_id": "C000003A2026-02-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-02-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-02-11L02",
+      "invoice_id": "C000003A2026-02-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-02-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-03-11L00",
+      "invoice_id": "C000003A2026-03-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-03-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-03-11L01",
+      "invoice_id": "C000003A2026-03-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-03-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    },
+    {
+      "line_id": "C000003A2026-03-11L02",
+      "invoice_id": "C000003A2026-03-11",
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "event_date": "2026-03-11",
+      "amount_cents": "6800",
+      "line_type": "charge"
+    }
+  ],
+  "payment_allocations": [
+    {
+      "allocation_id": "C000001A2026-01-01P0",
+      "payment_id": "C000001A2026-01-01RCPT0",
+      "invoice_id": "C000001A2026-01-01",
+      "account_id": "A000001",
+      "event_date": "2026-01-08",
+      "amount_cents": "9720"
+    },
+    {
+      "allocation_id": "C000001A2026-01-01P1",
+      "payment_id": "C000001A2026-01-01RCPT1",
+      "invoice_id": "C000001A2026-01-01",
+      "account_id": "A000001",
+      "event_date": "2026-01-21",
+      "amount_cents": "14580"
+    },
+    {
+      "allocation_id": "C000001A2026-02-01P0",
+      "payment_id": "C000001A2026-02-01RCPT0",
+      "invoice_id": "C000001A2026-02-01",
+      "account_id": "A000001",
+      "event_date": "2026-02-08",
+      "amount_cents": "9720"
+    },
+    {
+      "allocation_id": "C000001A2026-02-01P1",
+      "payment_id": "C000001A2026-02-01RCPT1",
+      "invoice_id": "C000001A2026-02-01",
+      "account_id": "A000001",
+      "event_date": "2026-02-21",
+      "amount_cents": "14580"
+    },
+    {
+      "allocation_id": "C000001A2026-03-01P0",
+      "payment_id": "C000001A2026-03-01RCPT0",
+      "invoice_id": "C000001A2026-03-01",
+      "account_id": "A000001",
+      "event_date": "2026-03-08",
+      "amount_cents": "9720"
+    },
+    {
+      "allocation_id": "C000001A2026-03-01P1",
+      "payment_id": "C000001A2026-03-01RCPT1",
+      "invoice_id": "C000001A2026-03-01",
+      "account_id": "A000001",
+      "event_date": "2026-03-21",
+      "amount_cents": "14580"
+    },
+    {
+      "allocation_id": "C000002A2025-12-22P1",
+      "payment_id": "C000002A2025-12-22RCPT1",
+      "invoice_id": "C000002A2025-12-22",
+      "account_id": "A000002",
+      "event_date": "2026-01-12",
+      "amount_cents": "25704"
+    },
+    {
+      "allocation_id": "C000002A2026-01-22P0",
+      "payment_id": "C000002A2026-01-22RCPT0",
+      "invoice_id": "C000002A2026-01-22",
+      "account_id": "A000002",
+      "event_date": "2026-01-29",
+      "amount_cents": "17136"
+    },
+    {
+      "allocation_id": "C000002A2026-01-22P1",
+      "payment_id": "C000002A2026-01-22RCPT1",
+      "invoice_id": "C000002A2026-01-22",
+      "account_id": "A000002",
+      "event_date": "2026-02-12",
+      "amount_cents": "25704"
+    },
+    {
+      "allocation_id": "C000002A2026-02-22P0",
+      "payment_id": "C000002A2026-02-22RCPT0",
+      "invoice_id": "C000002A2026-02-22",
+      "account_id": "A000002",
+      "event_date": "2026-03-01",
+      "amount_cents": "17136"
+    },
+    {
+      "allocation_id": "C000002A2026-02-22P1",
+      "payment_id": "C000002A2026-02-22RCPT1",
+      "invoice_id": "C000002A2026-02-22",
+      "account_id": "A000002",
+      "event_date": "2026-03-15",
+      "amount_cents": "25704"
+    },
+    {
+      "allocation_id": "C000002A2026-03-22P0",
+      "payment_id": "C000002A2026-03-22RCPT0",
+      "invoice_id": "C000002A2026-03-22",
+      "account_id": "A000002",
+      "event_date": "2026-03-29",
+      "amount_cents": "17136"
+    },
+    {
+      "allocation_id": "C000003A2025-12-11P1",
+      "payment_id": "C000003A2025-12-11RCPT1",
+      "invoice_id": "C000003A2025-12-11",
+      "account_id": "A000003",
+      "event_date": "2026-01-02",
+      "amount_cents": "12240"
+    },
+    {
+      "allocation_id": "C000003A2026-01-11P0",
+      "payment_id": "C000003A2026-01-11RCPT0",
+      "invoice_id": "C000003A2026-01-11",
+      "account_id": "A000003",
+      "event_date": "2026-01-18",
+      "amount_cents": "8160"
+    },
+    {
+      "allocation_id": "C000003A2026-01-11P1",
+      "payment_id": "C000003A2026-01-11RCPT1",
+      "invoice_id": "C000003A2026-01-11",
+      "account_id": "A000003",
+      "event_date": "2026-02-02",
+      "amount_cents": "12240"
+    },
+    {
+      "allocation_id": "C000003A2026-02-11P0",
+      "payment_id": "C000003A2026-02-11RCPT0",
+      "invoice_id": "C000003A2026-02-11",
+      "account_id": "A000003",
+      "event_date": "2026-02-18",
+      "amount_cents": "8160"
+    },
+    {
+      "allocation_id": "C000003A2026-02-11P1",
+      "payment_id": "C000003A2026-02-11RCPT1",
+      "invoice_id": "C000003A2026-02-11",
+      "account_id": "A000003",
+      "event_date": "2026-03-05",
+      "amount_cents": "12240"
+    },
+    {
+      "allocation_id": "C000003A2026-03-11P0",
+      "payment_id": "C000003A2026-03-11RCPT0",
+      "invoice_id": "C000003A2026-03-11",
+      "account_id": "A000003",
+      "event_date": "2026-03-18",
+      "amount_cents": "8160"
+    }
+  ],
+  "subscription_contracts": [
+    {
+      "contract_id": "C000001A",
+      "account_id": "A000001",
+      "start_date": "2022-01-01",
+      "end_date": "2027-01-01",
+      "fee_cents": "24300",
+      "billing_months": "1",
+      "contract_type": "recurring",
+      "is_trial": "0",
+      "past_due": "0"
+    },
+    {
+      "contract_id": "C000002A",
+      "account_id": "A000002",
+      "start_date": "2025-02-22",
+      "end_date": "2027-02-22",
+      "fee_cents": "42840",
+      "billing_months": "1",
+      "contract_type": "recurring",
+      "is_trial": "0",
+      "past_due": "0"
+    },
+    {
+      "contract_id": "C000003A",
+      "account_id": "A000003",
+      "start_date": "2022-01-11",
+      "end_date": "2027-01-11",
+      "fee_cents": "20400",
+      "billing_months": "1",
+      "contract_type": "recurring",
+      "is_trial": "0",
+      "past_due": "0"
+    }
+  ]
+}

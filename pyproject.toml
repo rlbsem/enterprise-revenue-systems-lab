@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-revenue-systems-lab"
+version = "1.0.0"
+description = "Executable evidence explorer and failure-recovery lab for enterprise revenue systems"
+requires-python = ">=3.12,<3.13"
+dependencies = ["jsonschema==4.25.1"]
+
+[project.scripts]
+revenue-lab = "revenue_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

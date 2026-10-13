@@ -1,0 +1,482 @@
+{
+  "jobs": [
+    {
+      "id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "status": "succeeded",
+      "attempts": 2,
+      "available_at": "2026-10-12 20:50:28.113474-04:00",
+      "lease_until": null,
+      "lease_token": null,
+      "uncertain": false,
+      "mutation": {
+        "action": "sync_profile",
+        "payload": {
+          "email": "lab-0@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "revision": 1,
+        "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a"
+      },
+      "reason": "reconciled_committed_effect",
+      "remote_result": {
+        "key": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+        "hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb",
+        "receipt": "9617cf48-011d-4ae0-895b-e90d7d3acc97",
+        "committed_at": "2026-10-12T20:50:23.611549-04:00"
+      }
+    },
+    {
+      "id": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "status": "succeeded",
+      "attempts": 2,
+      "available_at": "2026-10-12 20:50:28.867197-04:00",
+      "lease_until": null,
+      "lease_token": null,
+      "uncertain": false,
+      "mutation": {
+        "action": "sync_profile",
+        "payload": {
+          "email": "lab-1@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "revision": 1,
+        "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6"
+      },
+      "reason": "reconciled_committed_effect",
+      "remote_result": {
+        "key": "70684f16-b5f1-43a3-a8b1-158a85306387",
+        "hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d",
+        "receipt": "2a6a0833-c85f-4417-9a8f-a95c434ec053",
+        "committed_at": "2026-10-12T20:50:24.610751-04:00"
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a",
+      "actor": "agent",
+      "hash": "d2bedb4b32028f397f452e696c0a8d8ce3c30e9ac9269eff2dcab0639e8cf67f",
+      "body": {
+        "action": "sync_profile",
+        "template": "welcome",
+        "rationale": "Lab controlled recovery investigation",
+        "request_id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+        "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a",
+        "expected_revision": 1
+      },
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "revision": 1,
+      "decision": "allow",
+      "reason": "policy_allowed",
+      "expires_at": "2026-10-12 21:05:23.412624-04:00",
+      "approved_by": null,
+      "approved_until": null,
+      "created_at": "2026-10-12 20:50:23.412625-04:00"
+    },
+    {
+      "id": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6",
+      "actor": "agent",
+      "hash": "666e5271c1be7baa36bc8c08843c4a710ac714367a868e69a630f20ba3d5e536",
+      "body": {
+        "action": "sync_profile",
+        "template": "welcome",
+        "rationale": "Lab controlled recovery investigation",
+        "request_id": "70684f16-b5f1-43a3-a8b1-158a85306387",
+        "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6",
+        "expected_revision": 1
+      },
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "revision": 1,
+      "decision": "allow",
+      "reason": "policy_allowed",
+      "expires_at": "2026-10-12 21:05:24.166876-04:00",
+      "approved_by": null,
+      "approved_until": null,
+      "created_at": "2026-10-12 20:50:24.166876-04:00"
+    }
+  ],
+  "audit": [
+    {
+      "id": 1,
+      "at": "2026-10-12 20:50:23.389513-04:00",
+      "actor": "crm",
+      "kind": "source_decision",
+      "subject": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "after": {
+          "email": "lab-0@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "before": {
+          "lifecycle": "Lead"
+        },
+        "event_id": "lab-0-1",
+        "incoming": {
+          "email": "lab-0@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "revision": 1,
+        "decisions": {
+          "email": "accepted",
+          "owner": "accepted",
+          "lifecycle": "accepted"
+        },
+        "provenance": {
+          "email": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          },
+          "owner": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          },
+          "lifecycle": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "at": "2026-10-12 20:50:23.414431-04:00",
+      "actor": "agent",
+      "kind": "proposal",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "body": {
+          "action": "sync_profile",
+          "template": "welcome",
+          "rationale": "Lab controlled recovery investigation",
+          "request_id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+          "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a",
+          "expected_revision": 1
+        },
+        "hash": "d2bedb4b32028f397f452e696c0a8d8ce3c30e9ac9269eff2dcab0639e8cf67f",
+        "state": {
+          "email": "lab-0@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "reason": "policy_allowed",
+        "decision": "allow",
+        "provenance": {
+          "email": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          },
+          "owner": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          },
+          "lifecycle": {
+            "source": "crm",
+            "subject": "lab-0",
+            "event_id": "lab-0-1",
+            "sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "at": "2026-10-12 20:50:23.547908-04:00",
+      "actor": "executor",
+      "kind": "claim",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 1,
+        "recovered": false
+      }
+    },
+    {
+      "id": 4,
+      "at": "2026-10-12 20:50:23.582798-04:00",
+      "actor": "executor",
+      "kind": "dispatch_authorized",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 1,
+        "revision": 1,
+        "mutation_hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb"
+      }
+    },
+    {
+      "id": 5,
+      "at": "2026-10-12 20:50:23.811489-04:00",
+      "actor": "executor",
+      "kind": "execution_result",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "reason": "remote_outcome_unknown",
+        "remote": null,
+        "status": "retry",
+        "attempt": 1
+      }
+    },
+    {
+      "id": 6,
+      "at": "2026-10-12 20:50:23.919943-04:00",
+      "actor": "executor",
+      "kind": "claim",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 2,
+        "recovered": false
+      }
+    },
+    {
+      "id": 7,
+      "at": "2026-10-12 20:50:23.983189-04:00",
+      "actor": "executor",
+      "kind": "execution_result",
+      "subject": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "reason": "reconciled_committed_effect",
+        "remote": {
+          "key": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+          "hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb",
+          "receipt": "9617cf48-011d-4ae0-895b-e90d7d3acc97",
+          "committed_at": "2026-10-12T20:50:23.611549-04:00"
+        },
+        "status": "succeeded",
+        "attempt": 2
+      }
+    },
+    {
+      "id": 8,
+      "at": "2026-10-12 20:50:24.146281-04:00",
+      "actor": "crm",
+      "kind": "source_decision",
+      "subject": "185abd97-b103-41e3-ac56-3d7bf6ec93b6",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "after": {
+          "email": "lab-1@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "before": {
+          "lifecycle": "Lead"
+        },
+        "event_id": "lab-1-1",
+        "incoming": {
+          "email": "lab-1@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "revision": 1,
+        "decisions": {
+          "email": "accepted",
+          "owner": "accepted",
+          "lifecycle": "accepted"
+        },
+        "provenance": {
+          "email": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          },
+          "owner": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          },
+          "lifecycle": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "at": "2026-10-12 20:50:24.168368-04:00",
+      "actor": "agent",
+      "kind": "proposal",
+      "subject": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "body": {
+          "action": "sync_profile",
+          "template": "welcome",
+          "rationale": "Lab controlled recovery investigation",
+          "request_id": "70684f16-b5f1-43a3-a8b1-158a85306387",
+          "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6",
+          "expected_revision": 1
+        },
+        "hash": "666e5271c1be7baa36bc8c08843c4a710ac714367a868e69a630f20ba3d5e536",
+        "state": {
+          "email": "lab-1@example.test",
+          "owner": "lab-owner",
+          "lifecycle": "Opportunity"
+        },
+        "reason": "policy_allowed",
+        "decision": "allow",
+        "provenance": {
+          "email": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          },
+          "owner": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          },
+          "lifecycle": {
+            "source": "crm",
+            "subject": "lab-1",
+            "event_id": "lab-1-1",
+            "sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "at": "2026-10-12 20:50:24.525649-04:00",
+      "actor": "executor",
+      "kind": "claim",
+      "subject": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 1,
+        "recovered": false
+      }
+    },
+    {
+      "id": 11,
+      "at": "2026-10-12 20:50:24.570893-04:00",
+      "actor": "executor",
+      "kind": "dispatch_authorized",
+      "subject": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 1,
+        "revision": 1,
+        "mutation_hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d"
+      }
+    },
+    {
+      "id": 12,
+      "at": "2026-10-12 20:50:24.713767-04:00",
+      "actor": "executor",
+      "kind": "claim",
+      "subject": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "attempt": 2,
+        "recovered": true
+      }
+    },
+    {
+      "id": 13,
+      "at": "2026-10-12 20:50:24.767275-04:00",
+      "actor": "executor",
+      "kind": "execution_result",
+      "subject": "70684f16-b5f1-43a3-a8b1-158a85306387",
+      "policy_hash": "f6360ddf381e1f14bd52be2d5cf3163fe39bc8034a7371f3321568a8d8646c39",
+      "detail": {
+        "reason": "reconciled_committed_effect",
+        "remote": {
+          "key": "70684f16-b5f1-43a3-a8b1-158a85306387",
+          "hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d",
+          "receipt": "2a6a0833-c85f-4417-9a8f-a95c434ec053",
+          "committed_at": "2026-10-12T20:50:24.610751-04:00"
+        },
+        "status": "succeeded",
+        "attempt": 2
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6",
+      "revision": 1,
+      "state": {
+        "email": "lab-1@example.test",
+        "owner": "lab-owner",
+        "lifecycle": "Opportunity"
+      },
+      "provenance": {
+        "email": {
+          "source": "crm",
+          "subject": "lab-1",
+          "event_id": "lab-1-1",
+          "sequence": 1
+        },
+        "owner": {
+          "source": "crm",
+          "subject": "lab-1",
+          "event_id": "lab-1-1",
+          "sequence": 1
+        },
+        "lifecycle": {
+          "source": "crm",
+          "subject": "lab-1",
+          "event_id": "lab-1-1",
+          "sequence": 1
+        }
+      }
+    },
+    {
+      "id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a",
+      "revision": 1,
+      "state": {
+        "email": "lab-0@example.test",
+        "owner": "lab-owner",
+        "lifecycle": "Opportunity"
+      },
+      "provenance": {
+        "email": {
+          "source": "crm",
+          "subject": "lab-0",
+          "event_id": "lab-0-1",
+          "sequence": 1
+        },
+        "owner": {
+          "source": "crm",
+          "subject": "lab-0",
+          "event_id": "lab-0-1",
+          "sequence": 1
+        },
+        "lifecycle": {
+          "source": "crm",
+          "subject": "lab-0",
+          "event_id": "lab-0-1",
+          "sequence": 1
+        }
+      }
+    }
+  ]
+}

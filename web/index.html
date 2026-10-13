@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Investigate AI seller decisions, uncertain execution and revenue integrity using verifiable engineering evidence."
+    />
+    <title>Enterprise Revenue Systems Lab</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to investigation</a>
+    <aside class="sidebar">
+      <a class="brand" href="./"
+        ><span class="brand-mark">R<span>↗</span></span
+        ><span>REVENUE SYSTEMS<br /><strong>Evidence Lab</strong></span></a
+      >
+      <div class="sidebar-label">THREE QUESTIONS. REAL EVIDENCE.</div>
+      <nav aria-label="Investigations">
+        <button data-investigation="seller" class="nav-item active">
+          <span>01</span>
+          <div>
+            Trust the seller action<small>AI decisions & human authority</small>
+          </div></button
+        ><button data-investigation="control" class="nav-item">
+          <span>02</span>
+          <div>
+            Recover uncertain execution<small
+              >Durability & receiver effects</small
+            >
+          </div></button
+        ><button data-investigation="revenue" class="nav-item">
+          <span>03</span>
+          <div>
+            Reconcile the numbers<small
+              >Installed value & quarterly flows</small
+            >
+          </div>
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="dot"></span> Independent synthetic environments
+        <p>
+          Inspect the claim.<br />Follow the evidence.<br />Reproduce the
+          result.
+        </p>
+        <a href="https://github.com/rlbsem/enterprise-revenue-systems-lab"
+          >Source & reproduction ↗</a
+        >
+      </div>
+    </aside>
+    <div class="workspace">
+      <header>
+        <span class="breadcrumb"
+          >ENGINEERING INVESTIGATIONS <span>/</span>
+          <b id="crumb">SELLER AUTHORITY</b></span
+        ><span class="recording-badge">RECORDED EVIDENCE</span>
+      </header>
+      <main id="main">
+        <div class="intro">
+          <div>
+            <div class="eyebrow" id="eyebrow">
+              INVESTIGATION 01 · APPLIED AI
+            </div>
+            <h1 id="question">Can this AI seller<br />action be trusted?</h1>
+            <p id="intro-copy">
+              A valid quotation does not make every sentence safe. Inspect the
+              original evidence, model response, human decision and observed
+              effect.
+            </p>
+          </div>
+          <div class="principle">
+            <span class="principle-label">THE ENGINEERING PRINCIPLE</span
+            ><strong id="principle">A proposal is not authority.</strong>
+            <p id="principle-copy">
+              Source support, approval and delivery are separate questions.
+            </p>
+            <span class="rule"></span
+            ><span>Three systems. Preserved boundaries.</span>
+          </div>
+        </div>
+        <div class="toolbar">
+          <div>
+            <label for="scenario">CHOOSE AN EVIDENCE CASE</label
+            ><select id="scenario"></select>
+          </div>
+          <button id="validate" class="primary">
+            Validate artifact integrity <span>↗</span></button
+          ><a id="download" class="button" download
+            >Download reproduction ZIP ↓</a
+          >
+        </div>
+        <div id="status" role="status" aria-live="polite" class="status">
+          Loading pinned evidence…
+        </div>
+        <section
+          class="metrics"
+          id="metrics"
+          aria-label="Observed results"
+        ></section>
+        <section class="case">
+          <div class="case-heading">
+            <div>
+              <div class="eyebrow">SELECTED CASE</div>
+              <h2 id="case-title"></h2>
+              <p id="case-summary"></p>
+            </div>
+            <span id="mode" class="tag"></span>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Evidence views">
+            <button role="tab" aria-selected="true" data-view="decision">
+              Decision & outcome</button
+            ><button role="tab" aria-selected="false" data-view="sources">
+              Source records</button
+            ><button role="tab" aria-selected="false" data-view="timeline">
+              Evidence timeline</button
+            ><button role="tab" aria-selected="false" data-view="compare">
+              Compare & verify
+            </button>
+          </div>
+          <div id="panel" role="tabpanel" tabindex="0"></div>
+        </section>
+        <section class="provenance">
+          <div>
+            <div class="eyebrow">PINNED PROVENANCE</div>
+            <a id="source-link"></a><code id="commit"></code>
+          </div>
+          <div>
+            <div class="eyebrow">EVIDENCE BOUNDARY</div>
+            <p id="limitations"></p>
+          </div>
+        </section>
+        <details class="local-execution">
+          <summary>
+            Reproduce this investigation · fresh local execution
+          </summary>
+          <p>
+            The public explorer reads recorded files. These commands invoke the
+            original engine in a new isolated workspace. Replay of saved model
+            responses is explicitly labeled; fresh inference needs a configured
+            local endpoint.
+          </p>
+          <pre id="commands"></pre>
+          <p id="local-note">
+            Run commands from the Lab checkout. No external CRM writes or paid
+            services are required.
+          </p>
+          <button id="fresh" hidden>Run approved local scenario</button>
+          <p id="fresh-status" role="status"></p>
+        </details>
+        <details>
+          <summary>Validate a downloaded portable bundle</summary>
+          <p>
+            Import the portable JSON to inspect it and check its pinned manifest
+            and artifact integrity. Arbitrary files cannot execute code.
+          </p>
+          <label for="import">Portable evidence JSON</label
+          ><input id="import" type="file" accept="application/json,.json" /><a
+            id="portable"
+            download
+            >Download portable JSON ↓</a
+          >
+        </details>
+        <footer>
+          <span>Enterprise Revenue Systems Lab</span
+          ><a href="https://github.com/rlbsem">Built by Richard Butts</a
+          ><span>Source evidence ≠ model usefulness ≠ production adoption</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

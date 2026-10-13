@@ -1,0 +1,15 @@
+{
+  "scenario": "revenue-correction",
+  "integrity": "verified",
+  "checks": {
+    "selected_account_source_totals_checked": 3,
+    "exported_incremental_full_rowsets_equal": true,
+    "warehouse_comparison": "Recorded fresh SQL observations: zero differences in 15 models",
+    "global_controls": "Fresh runner independently read all source CSVs; small bundle retains controls, not all enterprise rows",
+    "arr_stock_distinct_from_quarterly_flows": true
+  },
+  "limitations": [
+    "Recorded original-engine execution in an independent synthetic enterprise environment.",
+    "Compact evidence retains selected source/model rows and company controls; repeat the full warehouse comparison through fresh execution."
+  ]
+}

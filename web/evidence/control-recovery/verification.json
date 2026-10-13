@@ -1,0 +1,15 @@
+{
+  "scenario": "control-recovery",
+  "integrity": "verified",
+  "checks": {
+    "bound_intents": 2,
+    "independent_receiver_effects": 2,
+    "uncertain_states_observed": 2,
+    "duplicates": 0,
+    "scope": "Synthetic receiver contract, not arbitrary vendor exactly-once guarantee"
+  },
+  "limitations": [
+    "Local synthetic execution, not production deployment.",
+    "Original engine execution. Exported observations support bounded checks, not production guarantees."
+  ]
+}

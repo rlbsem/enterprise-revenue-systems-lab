@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "scenario": "seller-suppressed",
+  "source": {
+    "repository": "rlbsem/customer-signal-activation",
+    "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+  },
+  "mode": "fresh_replay",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-13T00:10:25.508801+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "application.json",
+      "sha256": "c7a963d539f48fced5fb439538112561878613e83c92f78f4b4863a5f29cb40c",
+      "bytes": 13360
+    },
+    {
+      "path": "recorded-input.json",
+      "sha256": "a192caaa27ce51e6d0b33288dc07ed11cd57ed08271a357b1e15981e83112681",
+      "bytes": 6401
+    },
+    {
+      "path": "receiver.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "observation.json",
+      "sha256": "57f6cf999a5bd0b5e0e9e08e96b85da8be4fe4964f5a49772afc82b64d6b511b",
+      "bytes": 2063
+    },
+    {
+      "path": "execution.json",
+      "sha256": "d4a59ef51bf24bb022f28b98fdfe8c1e1fa932c296948d68d81d7f8b431dc7a9",
+      "bytes": 176
+    }
+  ],
+  "limitations": [
+    "Local synthetic execution, not production deployment.",
+    "Recorded-response replay is not new inference; model availability is explicit."
+  ],
+  "reproduce": [
+    "python -m revenue_lab.cli prepare seller",
+    "python -m revenue_lab.cli run seller-suppressed"
+  ],
+  "configuration_hash": "ac63ea31093c4ab3376fda6e0d261215754c977025538bd5a6c6e8b1265c1ad9",
+  "input_hashes": {
+    "application.json": "c7a963d539f48fced5fb439538112561878613e83c92f78f4b4863a5f29cb40c",
+    "recorded-input.json": "a192caaa27ce51e6d0b33288dc07ed11cd57ed08271a357b1e15981e83112681"
+  }
+}

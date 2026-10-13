@@ -1,0 +1,57 @@
+{
+  "executed_at": "2026-10-13T05:22:28.971455+00:00",
+  "source_revisions": {
+    "seller": {
+      "repository": "rlbsem/customer-signal-activation",
+      "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+    },
+    "control": {
+      "repository": "rlbsem/enterprise-martech-ai-control-plane",
+      "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+    },
+    "revenue": {
+      "repository": "rlbsem/revenue-metrics-platform",
+      "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+    }
+  },
+  "lab_tests": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "original_suites": {
+    "seller": {
+      "tests": 86,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "control": {
+      "tests": 91,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "revenue": {
+      "tests": 30,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "recorded_cases": 9,
+  "browser": "Chromium: all cases, source inspection, comparisons, downloads, integrity checks, imported tampering, keyboard and mobile layouts passed",
+  "fresh_local_ui": "Three original-engine replay scenarios executed through actual browser controls",
+  "fresh_inference": {
+    "model": "qwen3-14b",
+    "runs": 1,
+    "latency_seconds": 5.7854,
+    "total_tokens": 1327,
+    "scope": "synthetic task, automatic scenario approval; not independent usefulness"
+  },
+  "mermaid": "Architecture diagram rendered successfully with existing Mermaid CLI",
+  "source_repositories_unchanged": true,
+  "hosting": "prepared; public deployment not enabled",
+  "hosted_ci": "See GitHub Actions for separately observed hosted status; local verification does not imply a hosted pass"
+}

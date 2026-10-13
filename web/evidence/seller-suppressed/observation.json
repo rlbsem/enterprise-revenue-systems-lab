@@ -1,0 +1,63 @@
+{
+  "refusal": "commercial_policy_blocks_action",
+  "receipt": null,
+  "receiver_rows": 0,
+  "current_snapshot": {
+    "brand": "cedar",
+    "account": "account-0004",
+    "as_of": 1774958400,
+    "decision": {
+      "brand": "cedar",
+      "account": "account-0004",
+      "as_of": 1774958400,
+      "policy": "fit-intent-route/v2",
+      "fit": 30,
+      "intent": 50,
+      "score": 80,
+      "owner": "cedar-east",
+      "stage": "hold",
+      "consent": false,
+      "blocked": [
+        "suppressed_or_unknown_consent"
+      ],
+      "notes": [],
+      "campaign": "enterprise-workflows",
+      "touch_id": "account-0004-web-0",
+      "input_events": [
+        "account-0004-consent",
+        "account-0004-enrich",
+        "account-0004-link",
+        "account-0004-profile",
+        "account-0004-web-0",
+        "account-0004-web-1",
+        "account-0004-web-2"
+      ]
+    },
+    "state_hash": "ff3be551fcf430446d8407f26fead62d2145c0debb5af7dd247e13b0a7485e0c",
+    "documents": [
+      {
+        "id": "verified-state",
+        "title": "Authoritative commercial state",
+        "kind": "verified",
+        "text": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}"
+      },
+      {
+        "id": "catalog-v1",
+        "title": "Approved Cedar Systems product information",
+        "kind": "catalog",
+        "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here."
+      },
+      {
+        "account": "account-0004",
+        "brand": "cedar",
+        "id": "inquiry-account-0004",
+        "kind": "inquiry",
+        "occurred_at": "2026-03-30T12:00:00Z",
+        "revision": 1,
+        "text": "We previously asked about workflow coordination. Do not treat this old note as current permission to contact us.",
+        "title": "Historical inquiry"
+      }
+    ],
+    "excluded_documents": []
+  }
+}

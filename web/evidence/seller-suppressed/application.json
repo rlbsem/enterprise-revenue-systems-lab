@@ -1,0 +1,406 @@
+{
+  "accounts": [
+    {
+      "brand": "cedar",
+      "account": "account-0000",
+      "stage": "customer",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0002",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0004",
+      "stage": "hold",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": false
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0006",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0008",
+      "stage": "hold",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0010",
+      "stage": "customer",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0012",
+      "stage": "qualified",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0014",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0016",
+      "stage": "hold",
+      "score": 80,
+      "owner": "cedar-east",
+      "consent": false
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0018",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0020",
+      "stage": "hold",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "cedar",
+      "account": "account-0022",
+      "stage": "customer",
+      "score": 50,
+      "owner": "cedar-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0001",
+      "stage": "customer",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0003",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0005",
+      "stage": "hold",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": false
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0007",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0009",
+      "stage": "hold",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0011",
+      "stage": "customer",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0013",
+      "stage": "qualified",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0015",
+      "stage": "nurture",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0017",
+      "stage": "hold",
+      "score": 80,
+      "owner": "harbour-east",
+      "consent": false
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0019",
+      "stage": "hold",
+      "score": 80,
+      "owner": null,
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0021",
+      "stage": "hold",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    },
+    {
+      "brand": "harbour",
+      "account": "account-0023",
+      "stage": "customer",
+      "score": 50,
+      "owner": "harbour-east",
+      "consent": true
+    }
+  ],
+  "runs": [
+    {
+      "cache_key": "8fae5188217a81b57837a739aaa293e169f05935cda89f3b3abe0911a1d8baaf",
+      "cached": false,
+      "configuration": {
+        "mode": "recorded_response_replay",
+        "model": "saved-qwen3-14b-response",
+        "record_hash": "65c5f19019db0b61c57dfe59127d68f35d5735d7154333681b3ac7ee8d642197"
+      },
+      "created_at": 1791850224,
+      "id": "8fae5188217a81b57837a739aaa293e169f05935cda89f3b3abe0911a1d8baaf",
+      "inference": {
+        "mode": "recorded_response_replay",
+        "original_inference": {
+          "baseline": false,
+          "executed_at": 1791777292,
+          "finish_reason": "stop",
+          "input_hash": "2e4655cd02b70b7d745650661efae530653e1f2ba9909c5057e925c34e292afd",
+          "latency_seconds": 8.2931,
+          "max_tokens": 1400,
+          "mode": "live",
+          "model": "qwen3-14b",
+          "prompt_hash": "b064df146c2c4cea748d8683d87460fb6492c1e253576baa6653f27fc30cfb6c",
+          "prompt_version": "seller-assist/v2",
+          "reported_model": "qwen3-14b",
+          "seed": 42,
+          "source_bound_citation_decoding": true,
+          "temperature": 0.3,
+          "usage": {
+            "completion_tokens": 326,
+            "prompt_tokens": 884,
+            "prompt_tokens_details": {
+              "cached_tokens": 413
+            },
+            "total_tokens": 1210
+          }
+        },
+        "record_hash": "65c5f19019db0b61c57dfe59127d68f35d5735d7154333681b3ac7ee8d642197"
+      },
+      "proposal": {
+        "action": "no_action",
+        "assessment": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which blocks any further action. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. The operational friction they mentioned is related to workflow coordination, which is a known capability of Cedar Systems. However, without verified consent, no further engagement is permissible.",
+        "claims": [
+          {
+            "quote": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+            "source": "verified-state"
+          },
+          {
+            "quote": "Do not treat this old note as current permission to contact us.",
+            "source": "inquiry-account-0004"
+          }
+        ],
+        "draft": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which prevents us from proceeding with any further engagement. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. As such, no further action can be taken at this time.",
+        "questions": [
+          "Is there any updated information or consent that would allow us to proceed with this account?",
+          "Can we confirm the current status of consent for this account?"
+        ],
+        "uncertainties": [
+          "The lack of verified consent prevents any further action or engagement with the account."
+        ]
+      },
+      "raw_proposal": {
+        "action": "no_action",
+        "assessment": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which blocks any further action. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. The operational friction they mentioned is related to workflow coordination, which is a known capability of Cedar Systems. However, without verified consent, no further engagement is permissible.",
+        "claims": [
+          {
+            "quote": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+            "source": "verified-state"
+          },
+          {
+            "quote": "Do not treat this old note as current permission to contact us.",
+            "source": "inquiry-account-0004"
+          }
+        ],
+        "draft": "The account is currently in a 'hold' stage due to suppressed or unknown consent, which prevents us from proceeding with any further engagement. The customer previously inquired about workflow coordination, but they explicitly stated not to treat this as current permission to contact them. As such, no further action can be taken at this time.",
+        "questions": [
+          "Is there any updated information or consent that would allow us to proceed with this account?",
+          "Can we confirm the current status of consent for this account?"
+        ],
+        "uncertainties": [
+          "The lack of verified consent prevents any further action or engagement with the account."
+        ]
+      },
+      "snapshot": {
+        "account": "account-0004",
+        "as_of": 1774958400,
+        "brand": "cedar",
+        "decision": {
+          "account": "account-0004",
+          "as_of": 1774958400,
+          "blocked": [
+            "suppressed_or_unknown_consent"
+          ],
+          "brand": "cedar",
+          "campaign": "enterprise-workflows",
+          "consent": false,
+          "fit": 30,
+          "input_events": [
+            "account-0004-consent",
+            "account-0004-enrich",
+            "account-0004-link",
+            "account-0004-profile",
+            "account-0004-web-0",
+            "account-0004-web-1",
+            "account-0004-web-2"
+          ],
+          "intent": 50,
+          "notes": [],
+          "owner": "cedar-east",
+          "policy": "fit-intent-route/v2",
+          "score": 80,
+          "stage": "hold",
+          "touch_id": "account-0004-web-0"
+        },
+        "documents": [
+          {
+            "id": "verified-state",
+            "kind": "verified",
+            "text": "{\"blocked\":[\"suppressed_or_unknown_consent\"],\"consent\":false,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"hold\"}",
+            "title": "Authoritative commercial state"
+          },
+          {
+            "id": "catalog-v1",
+            "kind": "catalog",
+            "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here.",
+            "title": "Approved Cedar Systems product information"
+          },
+          {
+            "account": "account-0004",
+            "brand": "cedar",
+            "id": "inquiry-account-0004",
+            "kind": "inquiry",
+            "occurred_at": "2026-03-30T12:00:00Z",
+            "revision": 1,
+            "text": "We previously asked about workflow coordination. Do not treat this old note as current permission to contact us.",
+            "title": "Historical inquiry"
+          }
+        ],
+        "excluded_documents": [],
+        "state_hash": "ff3be551fcf430446d8407f26fead62d2145c0debb5af7dd247e13b0a7485e0c"
+      },
+      "status": "review_required"
+    }
+  ],
+  "actions": [],
+  "audit": [
+    {
+      "seq": 7,
+      "action": "generation_completed",
+      "subject": "8fae5188217a81b57837a739aaa293e169f05935cda89f3b3abe0911a1d8baaf",
+      "actor": "lab_scenario",
+      "occurred": 1791850224,
+      "body": "{\"configuration\":{\"mode\":\"recorded_response_replay\",\"model\":\"saved-qwen3-14b-response\",\"record_hash\":\"65c5f19019db0b61c57dfe59127d68f35d5735d7154333681b3ac7ee8d642197\"},\"status\":\"review_required\"}"
+    },
+    {
+      "seq": 6,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0008",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"4b38c857dcc30bd362e6d024b7928a096747e963ce5fe45f579c167598fd51a2\"}"
+    },
+    {
+      "seq": 5,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0006",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"cbdaebd58326538a48e965f10e1a027e66b816d629562ea29a2a07bac76ba1b8\"}"
+    },
+    {
+      "seq": 4,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0004",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"824675efac6832d6246e547b42fd08ae5944c22e23adde3405474d42641d6df7\"}"
+    },
+    {
+      "seq": 3,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0002",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"1c3a49f80560d4d0abd74a3d60e39ca896b923c4e41195eaed4873190647350b\"}"
+    },
+    {
+      "seq": 2,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0000",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"5c5a002e6f463537065b4630d1353438386d5188ec0f2dd050a9791b0c9f193e\"}"
+    },
+    {
+      "seq": 1,
+      "action": "document_admitted",
+      "subject": "inquiry-account-0012",
+      "actor": "synthetic_seed",
+      "occurred": 1791850224,
+      "body": "{\"hash\":\"6df058c67b5be6815a5e657a9a3dd1ec11119af34242b86f2799c417b619f4de\"}"
+    }
+  ],
+  "as_of": 1774958400,
+  "rejected_run_ids": [],
+  "model": {
+    "mode": "recorded_response_replay",
+    "model": "saved-qwen3-14b-response",
+    "record_hash": "65c5f19019db0b61c57dfe59127d68f35d5735d7154333681b3ac7ee8d642197"
+  }
+}

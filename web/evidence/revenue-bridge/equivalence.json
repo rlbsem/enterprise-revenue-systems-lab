@@ -1,0 +1,65 @@
+{
+  "method": "bidirectional EXCEPT ALL in the original warehouse",
+  "differences": {
+    "dim_account": [
+      0,
+      0
+    ],
+    "dim_date": [
+      0,
+      0
+    ],
+    "fct_booking_events": [
+      0,
+      0
+    ],
+    "fct_invoice_lines": [
+      0,
+      0
+    ],
+    "fct_opportunity_daily": [
+      0,
+      0
+    ],
+    "fct_payment_allocations": [
+      0,
+      0
+    ],
+    "fct_subscription_period": [
+      0,
+      0
+    ],
+    "mart_arr": [
+      0,
+      0
+    ],
+    "mart_cohorts": [
+      0,
+      0
+    ],
+    "mart_discrepancy_bridge": [
+      0,
+      0
+    ],
+    "mart_flows": [
+      0,
+      0
+    ],
+    "mart_metric_values": [
+      0,
+      0
+    ],
+    "mart_pipeline": [
+      0,
+      0
+    ],
+    "stg_opportunities": [
+      0,
+      0
+    ],
+    "stg_subscriptions": [
+      0,
+      0
+    ]
+  }
+}

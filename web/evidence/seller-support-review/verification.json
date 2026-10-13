@@ -1,0 +1,14 @@
+{
+  "scenario": "seller-support-review",
+  "integrity": "verified",
+  "checks": {
+    "exact_citations": 2,
+    "quality": "unsupported_availability_statement_preserved",
+    "independent_usefulness": "pending"
+  },
+  "limitations": [
+    "Synthetic accounts and HTTP CRM, not client deployment.",
+    "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+    "Independent blinded usefulness review remains pending."
+  ]
+}
