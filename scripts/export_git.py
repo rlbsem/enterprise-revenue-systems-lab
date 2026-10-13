@@ -9,6 +9,7 @@ p.add_argument("--binary")
 p.add_argument("--offset", type=int, default=0)
 p.add_argument("--batch", type=int, default=-1)
 p.add_argument("--text")
+p.add_argument("--since")
 a = p.parse_args()
 if a.text:
     data = subprocess.check_output(["git", "show", "HEAD:" + a.text]).decode("utf-8")
@@ -17,7 +18,7 @@ elif a.binary:
     data = subprocess.check_output(["git", "show", "HEAD:" + a.binary])
     print(base64.b64encode(data).decode()[a.offset:a.offset+10000])
 else:
-    files = subprocess.check_output(["git", "ls-files"], text=True).splitlines()
+    files = subprocess.check_output(["git", "diff", "--name-only", a.since, "HEAD"] if a.since else ["git", "ls-files"], text=True).splitlines()
     entries, binaries = [], []
     for name in files:
         data = subprocess.check_output(["git", "show", "HEAD:" + name])

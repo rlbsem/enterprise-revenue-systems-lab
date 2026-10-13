@@ -1,0 +1,242 @@
+[
+  {
+    "action": "lost_acknowledgment: durable proposal admitted",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "lost_acknowledgment: durable proposal admitted",
+      "job": {
+        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "status": "ready",
+        "attempts": 0,
+        "available_at": "2026-10-12 20:32:02.020487-04:00",
+        "lease_until": null,
+        "lease_token": null,
+        "uncertain": false,
+        "mutation": null,
+        "reason": null,
+        "remote_result": null
+      },
+      "effects": []
+    }
+  },
+  {
+    "action": "lost_acknowledgment: receiver committed, worker timed out",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "lost_acknowledgment: receiver committed, worker timed out",
+      "job": {
+        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "status": "retry",
+        "attempts": 1,
+        "available_at": "2026-10-12 20:32:04.731217-04:00",
+        "lease_until": null,
+        "lease_token": null,
+        "uncertain": true,
+        "mutation": {
+          "action": "sync_profile",
+          "payload": {
+            "email": "lab-0@example.test",
+            "owner": "lab-owner",
+            "lifecycle": "Opportunity"
+          },
+          "revision": 1,
+          "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+        },
+        "reason": "remote_outcome_unknown",
+        "remote_result": null
+      },
+      "effects": [
+        {
+          "key": "ca231f74-3caa-4863-921b-b647485e522c",
+          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+          "body": {
+            "action": "sync_profile",
+            "payload": {
+              "email": "lab-0@example.test",
+              "owner": "lab-owner",
+              "lifecycle": "Opportunity"
+            },
+            "revision": 1,
+            "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+          },
+          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
+          "committed_at": "2026-10-12 20:32:02.283018-04:00"
+        }
+      ]
+    }
+  },
+  {
+    "action": "lost_acknowledgment: original worker reconciled existing receipt",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "lost_acknowledgment: original worker reconciled existing receipt",
+      "job": {
+        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "status": "succeeded",
+        "attempts": 2,
+        "available_at": "2026-10-12 20:32:07.036144-04:00",
+        "lease_until": null,
+        "lease_token": null,
+        "uncertain": false,
+        "mutation": {
+          "action": "sync_profile",
+          "payload": {
+            "email": "lab-0@example.test",
+            "owner": "lab-owner",
+            "lifecycle": "Opportunity"
+          },
+          "revision": 1,
+          "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+        },
+        "reason": "reconciled_committed_effect",
+        "remote_result": {
+          "key": "ca231f74-3caa-4863-921b-b647485e522c",
+          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
+          "committed_at": "2026-10-12T20:32:02.283018-04:00"
+        }
+      },
+      "effects": [
+        {
+          "key": "ca231f74-3caa-4863-921b-b647485e522c",
+          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+          "body": {
+            "action": "sync_profile",
+            "payload": {
+              "email": "lab-0@example.test",
+              "owner": "lab-owner",
+              "lifecycle": "Opportunity"
+            },
+            "revision": 1,
+            "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+          },
+          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
+          "committed_at": "2026-10-12 20:32:02.283018-04:00"
+        }
+      ]
+    }
+  },
+  {
+    "action": "process_interruption: durable proposal admitted",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "process_interruption: durable proposal admitted",
+      "job": {
+        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "status": "ready",
+        "attempts": 0,
+        "available_at": "2026-10-12 20:32:02.857356-04:00",
+        "lease_until": null,
+        "lease_token": null,
+        "uncertain": false,
+        "mutation": null,
+        "reason": null,
+        "remote_result": null
+      },
+      "effects": []
+    }
+  },
+  {
+    "action": "Worker process killed after receiver commit",
+    "body": {
+      "exit_code": 1
+    }
+  },
+  {
+    "action": "process_interruption: worker interrupted while leased",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "process_interruption: worker interrupted while leased",
+      "job": {
+        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "status": "leased",
+        "attempts": 1,
+        "available_at": "2026-10-12 20:32:02.857356-04:00",
+        "lease_until": "2026-10-12 20:32:33.312788-04:00",
+        "lease_token": "37d0dcc6-74db-450f-af43-50ff9bcb312f",
+        "uncertain": true,
+        "mutation": {
+          "action": "sync_profile",
+          "payload": {
+            "email": "lab-1@example.test",
+            "owner": "lab-owner",
+            "lifecycle": "Opportunity"
+          },
+          "revision": 1,
+          "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+        },
+        "reason": null,
+        "remote_result": null
+      },
+      "effects": [
+        {
+          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+          "body": {
+            "action": "sync_profile",
+            "payload": {
+              "email": "lab-1@example.test",
+              "owner": "lab-owner",
+              "lifecycle": "Opportunity"
+            },
+            "revision": 1,
+            "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+          },
+          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
+          "committed_at": "2026-10-12 20:32:03.418850-04:00"
+        }
+      ]
+    }
+  },
+  {
+    "action": "process_interruption: original worker reconciled existing receipt",
+    "detail": "Original worker state and separate receiver ledger",
+    "body": {
+      "label": "process_interruption: original worker reconciled existing receipt",
+      "job": {
+        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "status": "succeeded",
+        "attempts": 2,
+        "available_at": "2026-10-12 20:32:08.079999-04:00",
+        "lease_until": null,
+        "lease_token": null,
+        "uncertain": false,
+        "mutation": {
+          "action": "sync_profile",
+          "payload": {
+            "email": "lab-1@example.test",
+            "owner": "lab-owner",
+            "lifecycle": "Opportunity"
+          },
+          "revision": 1,
+          "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+        },
+        "reason": "reconciled_committed_effect",
+        "remote_result": {
+          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
+          "committed_at": "2026-10-12T20:32:03.418850-04:00"
+        }
+      },
+      "effects": [
+        {
+          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+          "body": {
+            "action": "sync_profile",
+            "payload": {
+              "email": "lab-1@example.test",
+              "owner": "lab-owner",
+              "lifecycle": "Opportunity"
+            },
+            "revision": 1,
+            "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+          },
+          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
+          "committed_at": "2026-10-12 20:32:03.418850-04:00"
+        }
+      ]
+    }
+  }
+]

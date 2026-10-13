@@ -1,0 +1,34 @@
+[
+  {
+    "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+    "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+    "body": {
+      "action": "sync_profile",
+      "payload": {
+        "email": "lab-1@example.test",
+        "owner": "lab-owner",
+        "lifecycle": "Opportunity"
+      },
+      "revision": 1,
+      "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+    },
+    "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
+    "committed_at": "2026-10-12 20:32:03.418850-04:00"
+  },
+  {
+    "key": "ca231f74-3caa-4863-921b-b647485e522c",
+    "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+    "body": {
+      "action": "sync_profile",
+      "payload": {
+        "email": "lab-0@example.test",
+        "owner": "lab-owner",
+        "lifecycle": "Opportunity"
+      },
+      "revision": 1,
+      "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+    },
+    "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
+    "committed_at": "2026-10-12 20:32:02.283018-04:00"
+  }
+]

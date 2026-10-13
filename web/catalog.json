@@ -2,6 +2,18 @@
   "version": 1,
   "scenarios": [
     {
+      "id": "control-recovery",
+      "investigation": "control",
+      "title": "Uncertain delivery and recovery",
+      "summary": "Durable intent, lost acknowledgments and independently observed receiver effects.",
+      "manifest_sha256": "c9a4a361b5520bc869db28bd1d8f0c364dfb3acc5d320bff6c3f93835ba85bdd",
+      "source": {
+        "repository": "rlbsem/enterprise-martech-ai-control-plane",
+        "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+      },
+      "mode": "fresh_engine"
+    },
+    {
       "id": "seller-application",
       "investigation": "seller",
       "title": "Reviewed discovery action",
