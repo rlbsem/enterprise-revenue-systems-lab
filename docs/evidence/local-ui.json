@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "scenario": "seller-stale",
+      "result": "fresh original engine executed",
+      "new_inference": false
+    },
+    {
+      "scenario": "seller-suppressed",
+      "result": "fresh original engine executed",
+      "new_inference": false
+    },
+    {
+      "scenario": "seller-delivery",
+      "result": "fresh original engine executed",
+      "new_inference": false
+    }
+  ],
+  "scope": "Real Chromium controls, original Workbench, isolated receivers; no fresh inference in these three replay tests"
+}

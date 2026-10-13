@@ -7,7 +7,7 @@
   },
   "mode": "fresh_engine",
   "environment": "independent_synthetic_environment",
-  "packaged_at": "2026-10-13T00:32:04.529670+00:00",
+  "packaged_at": "2026-10-13T00:50:26.595679+00:00",
   "runtime": {
     "python": "3.12.14",
     "platform": "Windows-11-10.0.26200-SP0"
@@ -15,22 +15,22 @@
   "artifacts": [
     {
       "path": "ledger.json",
-      "sha256": "914d3ae0ac7d0bbc5c727d949a40a82c985de5a7183bea0ae9b4d54c87b2b1fa",
+      "sha256": "816c3f5e510b0220bb525805e4019414284a2f09abdd4cd9db69757a2a0ce760",
       "bytes": 14588
     },
     {
       "path": "receiver.json",
-      "sha256": "e212bd98a29e26a57388ede8575d2acb36428e0f9133192263ec6f6d47beb02c",
+      "sha256": "8669d6337e57a897d83c8300e9343ee8b4479b55d6959acd8b0e540b5781721a",
       "bytes": 1035
     },
     {
       "path": "stages.json",
-      "sha256": "4812d94dd2a9baa5d09ce2eff6c0404f81f4190ef6ad2c0b2018b234e98558bf",
+      "sha256": "fd7e7233ec7e16faab69df99bbb947d8d40ec205fe648ab0b603101254d9f66e",
       "bytes": 6644
     },
     {
       "path": "timeline.json",
-      "sha256": "ccd792f25d1c3998879ac10f4e2ee6dd670e7f826f4d9d1d57408f359b297faf",
+      "sha256": "98c0bb106060d7f42e3cdd9f2d4b39edfd1610ee55648580436366db6bc53e1e",
       "bytes": 8119
     },
     {
@@ -40,20 +40,20 @@
     },
     {
       "path": "execution.json",
-      "sha256": "b5bf7f5712aeb09333c3cc7dde0ec6a281b95b6f4162d7ccfc3bc35ea903a39e",
-      "bytes": 175
+      "sha256": "74382425e441903246d72a4ab18808eb7d634ef7e31ac079f7f64ec68c6de2d3",
+      "bytes": 1467
     }
   ],
   "limitations": [
     "Local synthetic execution, not production deployment.",
-    "Recorded-response replay is not new inference; model availability is explicit."
+    "Original engine execution. Exported observations support bounded checks, not production guarantees."
   ],
+  "input_hashes": {
+    "ledger.json": "816c3f5e510b0220bb525805e4019414284a2f09abdd4cd9db69757a2a0ce760"
+  },
   "reproduce": [
-    "python -m revenue_lab.cli prepare control",
+    "python -m revenue_lab.cli prepare control --install",
     "python -m revenue_lab.cli run control-recovery"
   ],
-  "configuration_hash": "27bf956b6b1a153e494fffb86fc6283cef9da8f52678084c84badb37d510d9f0",
-  "input_hashes": {
-    "ledger.json": "914d3ae0ac7d0bbc5c727d949a40a82c985de5a7183bea0ae9b4d54c87b2b1fa"
-  }
+  "configuration_hash": "27bf956b6b1a153e494fffb86fc6283cef9da8f52678084c84badb37d510d9f0"
 }

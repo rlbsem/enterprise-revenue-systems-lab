@@ -69,7 +69,7 @@
   },
   "reproduce": [
     "python -m revenue_lab.cli prepare revenue --install",
-    "python -m revenue_lab.cli recorded --source revenue"
+    "python -m revenue_lab.cli run revenue-correction"
   ],
   "configuration_hash": "af9caed623d3741ba8f7df3abb5f4fe4c23b7615a346c3265441f18f01f788cf"
 }

@@ -6,7 +6,8 @@
       "investigation": "control",
       "title": "Uncertain delivery and recovery",
       "summary": "Durable intent, lost acknowledgments and independently observed receiver effects.",
-      "manifest_sha256": "ef336c0cf52608198860d17f6f6ae1d81fdf81e8fd166a76745aeaefe4e0af5d",
+      "manifest_sha256": "5f524a23a146d207086f80fcae1b59eeb91e3487f036850277ff659049212995",
+      "verification_sha256": "ec3c4f907635da3cd87fa8b28030fb88221a30412a393021368fa81bbed74a1f",
       "source": {
         "repository": "rlbsem/enterprise-martech-ai-control-plane",
         "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
@@ -18,7 +19,8 @@
       "investigation": "revenue",
       "title": "Installed ARR and quarterly flows",
       "summary": "Different economic measures reconcile at their own grain and time boundary.",
-      "manifest_sha256": "a835e9da52e2ede02640758eeb73e7c3a5b07a94eca70cc5eb9bff087e9e8a0a",
+      "manifest_sha256": "62bd460a07237b7ca0acf58553f2da0db645a4ee841a0a0248d65e5ac876c414",
+      "verification_sha256": "8f587ee1c1ec9759cf4b6ab00e1de736ef0d0d9745a5dff3444f5e56a44d45ca",
       "source": {
         "repository": "rlbsem/revenue-metrics-platform",
         "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
@@ -30,7 +32,8 @@
       "investigation": "revenue",
       "title": "Late correction and equivalent rebuild",
       "summary": "Original dbt builds are compared with independently exported model rows.",
-      "manifest_sha256": "0eb0a9ef5c46e7df0d59f71924eb6342e90cf1006679264bfe93458b0cff5339",
+      "manifest_sha256": "88c6e87176712c28d68848feaf0374a13f4a7f1dd6eef3737657cf8ab5e5037f",
+      "verification_sha256": "b2f4bc755cf3be02f55307c127f73a0abcc7943aa9c2f8dabee8513e484319e5",
       "source": {
         "repository": "rlbsem/revenue-metrics-platform",
         "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
@@ -43,6 +46,7 @@
       "title": "Reviewed discovery action",
       "summary": "A saved model response was edited, approved and delivered to a synthetic CRM.",
       "manifest_sha256": "55afda697fb7c727fd340848e78bba93ce23ad321cde9818453411cf32084232",
+      "verification_sha256": "1ff02a7e97d55c4491d3fd0c631e06b01f5a0c365c50da2eb6be38ee58514c02",
       "source": {
         "repository": "rlbsem/customer-signal-activation",
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
@@ -55,6 +59,7 @@
       "title": "Saved response, fresh approved delivery",
       "summary": "Recorded response replay with original-engine approval and a new local receiver effect.",
       "manifest_sha256": "b86b04b1d343e7e4d9f5a158c6ed2ca43c0d6813300127bf46aef141af26ee2b",
+      "verification_sha256": "55ac846eeec74b836905a6e263acb63fb839112efc6e78f548836f6fe456f398",
       "source": {
         "repository": "rlbsem/customer-signal-activation",
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
@@ -62,11 +67,25 @@
       "mode": "fresh_replay"
     },
     {
+      "id": "seller-live",
+      "investigation": "seller",
+      "title": "Recorded fresh local inference",
+      "summary": "A real local model produced this response; the original engine recorded the synthetic effect.",
+      "manifest_sha256": "000fd2a6d30b618972f09547f1a0ec760b7012f98cffdec01e4b917c5fde022a",
+      "verification_sha256": "89c1b679f7c3611893e2b1d2427359d40e2e7d614d0004f3d4d349fd55cdfec0",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_inference"
+    },
+    {
       "id": "seller-stale",
       "investigation": "seller",
       "title": "Evidence changes before approval",
       "summary": "The original Workbench refuses approval after new account evidence arrives.",
       "manifest_sha256": "6078d933e85598789256ca1479bb0212b6d79b209341cb18b29fdb8b76515151",
+      "verification_sha256": "f4afcea559b3bf5652faf983f5424167b85e93777b976152898edf4af5b30759",
       "source": {
         "repository": "rlbsem/customer-signal-activation",
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
@@ -79,6 +98,7 @@
       "title": "A passing draft with an unsupported claim",
       "summary": "Exact citations pass. The draft still implies unverified support availability.",
       "manifest_sha256": "8081357c10a80e7d0030aa7ce47e8728450fe17a89a6904988e00f38e55707ff",
+      "verification_sha256": "2244371ca330e3b4446428ab7281e3b646248d15171924f9540d89e57c73b634",
       "source": {
         "repository": "rlbsem/customer-signal-activation",
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
@@ -91,6 +111,7 @@
       "title": "Consent blocks the action",
       "summary": "A recorded response is replayed; commercial authority prevents an effect.",
       "manifest_sha256": "0acb342a7f6421164997639a867dd0692b630481194c051ba89845b8c5ab4354",
+      "verification_sha256": "e696c7251a505e51a8007d9bcd62f23b98060a806aaaac4e64a846ee28075084",
       "source": {
         "repository": "rlbsem/customer-signal-activation",
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"

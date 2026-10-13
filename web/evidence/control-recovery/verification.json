@@ -10,6 +10,6 @@
   },
   "limitations": [
     "Local synthetic execution, not production deployment.",
-    "Recorded-response replay is not new inference; model availability is explicit."
+    "Original engine execution. Exported observations support bounded checks, not production guarantees."
   ]
 }

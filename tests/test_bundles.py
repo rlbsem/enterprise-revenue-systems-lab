@@ -9,7 +9,15 @@ from revenue_lab.bundle import ROOT, digest, verify, write_json
 from revenue_lab.cli import run
 
 
-@pytest.mark.parametrize("name", ["seller-application", "seller-support-review", "seller-stale", "seller-suppressed"])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "seller-application",
+        "seller-support-review",
+        "seller-stale",
+        "seller-suppressed",
+    ],
+)
 def test_preserved_and_executed_evidence(name):
     assert verify(ROOT / "web/evidence" / name)["integrity"] == "verified"
 
@@ -21,7 +29,19 @@ def bundle(tmp_path):
     return target
 
 
-@pytest.mark.parametrize("change", ["tamper", "missing", "version", "stale", "duplicate", "traversal", "configuration", "incomplete"])
+@pytest.mark.parametrize(
+    "change",
+    [
+        "tamper",
+        "missing",
+        "version",
+        "stale",
+        "duplicate",
+        "traversal",
+        "configuration",
+        "incomplete",
+    ],
+)
 def test_invalid_bundle_refused(bundle, change):
     manifest = json.loads((bundle / "bundle.json").read_text())
     if change == "tamper":

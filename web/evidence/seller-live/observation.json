@@ -1,0 +1,66 @@
+{
+  "refusal": null,
+  "receipt": {
+    "id": "074f97e037ea4b712dfe3cb528850375a4b4555cb3e22c10dc59e0f19fc744eb",
+    "payload_hash": "074f97e037ea4b712dfe3cb528850375a4b4555cb3e22c10dc59e0f19fc744eb",
+    "destination": "synthetic_crm_task"
+  },
+  "receiver_rows": 1,
+  "current_snapshot": {
+    "brand": "cedar",
+    "account": "account-0012",
+    "as_of": 1774958400,
+    "decision": {
+      "brand": "cedar",
+      "account": "account-0012",
+      "as_of": 1774958400,
+      "policy": "fit-intent-route/v2",
+      "fit": 30,
+      "intent": 50,
+      "score": 80,
+      "owner": "cedar-east",
+      "stage": "qualified",
+      "consent": true,
+      "blocked": [],
+      "notes": [],
+      "campaign": "enterprise-workflows",
+      "touch_id": "account-0012-web-0",
+      "input_events": [
+        "account-0012-consent",
+        "account-0012-enrich",
+        "account-0012-link",
+        "account-0012-opp",
+        "account-0012-profile",
+        "account-0012-web-0",
+        "account-0012-web-1",
+        "account-0012-web-2"
+      ]
+    },
+    "state_hash": "ebaf28fc8f835f094271968db0a98baad176f266ad830cca470fc012003bc2e1",
+    "documents": [
+      {
+        "id": "verified-state",
+        "title": "Authoritative commercial state",
+        "kind": "verified",
+        "text": "{\"blocked\":[],\"consent\":true,\"owner\":\"cedar-east\",\"score\":80,\"stage\":\"qualified\"}"
+      },
+      {
+        "id": "catalog-v1",
+        "title": "Approved Cedar Systems product information",
+        "kind": "catalog",
+        "text": "Cedar Systems provides workflow coordination and account reporting. A discovery meeting can establish integration requirements. No price, deployment timeline, uptime guarantee or specific vendor connector is approved here."
+      },
+      {
+        "account": "account-0012",
+        "brand": "cedar",
+        "id": "inquiry-account-0012",
+        "kind": "inquiry",
+        "occurred_at": "2026-03-30T12:00:00Z",
+        "revision": 1,
+        "text": "We coordinate approvals across regional teams using spreadsheets. Handoffs are missed and account reporting takes too long. We want to understand workflow coordination and reporting before evaluating integration requirements. Our operations team can meet next week. We have not agreed a budget.",
+        "title": "Discovery request"
+      }
+    ],
+    "excluded_documents": []
+  }
+}

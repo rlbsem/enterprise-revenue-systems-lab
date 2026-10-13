@@ -61,8 +61,8 @@
       }
     ],
     "limitations": [
-      "Local synthetic execution, not production deployment.",
-      "Recorded-response replay is not new inference; model availability is explicit."
+      "Recorded original-engine execution in an independent synthetic enterprise environment.",
+      "Compact evidence retains selected source/model rows and company controls; repeat the full warehouse comparison through fresh execution."
     ],
     "input_hashes": {
       "dataset-manifest.json": "9f11fa8988ae1955a2efb40487e363078867bdc774618af25b4f5420ade44c9e",

@@ -5,10 +5,10 @@
     "body": {
       "label": "lost_acknowledgment: durable proposal admitted",
       "job": {
-        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
         "status": "ready",
         "attempts": 0,
-        "available_at": "2026-10-12 20:32:02.020487-04:00",
+        "available_at": "2026-10-12 20:50:23.413417-04:00",
         "lease_until": null,
         "lease_token": null,
         "uncertain": false,
@@ -25,10 +25,10 @@
     "body": {
       "label": "lost_acknowledgment: receiver committed, worker timed out",
       "job": {
-        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
         "status": "retry",
         "attempts": 1,
-        "available_at": "2026-10-12 20:32:04.731217-04:00",
+        "available_at": "2026-10-12 20:50:26.671185-04:00",
         "lease_until": null,
         "lease_token": null,
         "uncertain": true,
@@ -40,15 +40,15 @@
             "lifecycle": "Opportunity"
           },
           "revision": 1,
-          "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+          "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a"
         },
         "reason": "remote_outcome_unknown",
         "remote_result": null
       },
       "effects": [
         {
-          "key": "ca231f74-3caa-4863-921b-b647485e522c",
-          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+          "key": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+          "hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb",
           "body": {
             "action": "sync_profile",
             "payload": {
@@ -57,10 +57,10 @@
               "lifecycle": "Opportunity"
             },
             "revision": 1,
-            "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+            "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a"
           },
-          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
-          "committed_at": "2026-10-12 20:32:02.283018-04:00"
+          "receipt": "9617cf48-011d-4ae0-895b-e90d7d3acc97",
+          "committed_at": "2026-10-12 20:50:23.611549-04:00"
         }
       ]
     }
@@ -71,10 +71,10 @@
     "body": {
       "label": "lost_acknowledgment: original worker reconciled existing receipt",
       "job": {
-        "id": "ca231f74-3caa-4863-921b-b647485e522c",
+        "id": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
         "status": "succeeded",
         "attempts": 2,
-        "available_at": "2026-10-12 20:32:07.036144-04:00",
+        "available_at": "2026-10-12 20:50:28.113474-04:00",
         "lease_until": null,
         "lease_token": null,
         "uncertain": false,
@@ -86,20 +86,20 @@
             "lifecycle": "Opportunity"
           },
           "revision": 1,
-          "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+          "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a"
         },
         "reason": "reconciled_committed_effect",
         "remote_result": {
-          "key": "ca231f74-3caa-4863-921b-b647485e522c",
-          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
-          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
-          "committed_at": "2026-10-12T20:32:02.283018-04:00"
+          "key": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+          "hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb",
+          "receipt": "9617cf48-011d-4ae0-895b-e90d7d3acc97",
+          "committed_at": "2026-10-12T20:50:23.611549-04:00"
         }
       },
       "effects": [
         {
-          "key": "ca231f74-3caa-4863-921b-b647485e522c",
-          "hash": "ce19bcab4dbbdf7aa8d0cbcde7ce074b1160cfc11645e34465bc75893958650e",
+          "key": "293629d1-f282-41bf-91c6-1c1a9d02d1c4",
+          "hash": "2048d0bc39c2cef9b6f44d9a9d9656559766d4d790baf6ef5f689d27160217bb",
           "body": {
             "action": "sync_profile",
             "payload": {
@@ -108,10 +108,10 @@
               "lifecycle": "Opportunity"
             },
             "revision": 1,
-            "customer_id": "9217f3a8-80e4-457e-8d4c-49532d0e37f3"
+            "customer_id": "9d068572-33a1-4ef3-b12e-01d2c2f7f44a"
           },
-          "receipt": "297a0336-a956-4f00-8318-df5c0c273929",
-          "committed_at": "2026-10-12 20:32:02.283018-04:00"
+          "receipt": "9617cf48-011d-4ae0-895b-e90d7d3acc97",
+          "committed_at": "2026-10-12 20:50:23.611549-04:00"
         }
       ]
     }
@@ -122,10 +122,10 @@
     "body": {
       "label": "process_interruption: durable proposal admitted",
       "job": {
-        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "id": "70684f16-b5f1-43a3-a8b1-158a85306387",
         "status": "ready",
         "attempts": 0,
-        "available_at": "2026-10-12 20:32:02.857356-04:00",
+        "available_at": "2026-10-12 20:50:24.167545-04:00",
         "lease_until": null,
         "lease_token": null,
         "uncertain": false,
@@ -148,12 +148,12 @@
     "body": {
       "label": "process_interruption: worker interrupted while leased",
       "job": {
-        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "id": "70684f16-b5f1-43a3-a8b1-158a85306387",
         "status": "leased",
         "attempts": 1,
-        "available_at": "2026-10-12 20:32:02.857356-04:00",
-        "lease_until": "2026-10-12 20:32:33.312788-04:00",
-        "lease_token": "37d0dcc6-74db-450f-af43-50ff9bcb312f",
+        "available_at": "2026-10-12 20:50:24.167545-04:00",
+        "lease_until": "2026-10-12 20:50:54.524757-04:00",
+        "lease_token": "8266dc4c-bfbc-4e9d-af28-2902b522ac00",
         "uncertain": true,
         "mutation": {
           "action": "sync_profile",
@@ -163,15 +163,15 @@
             "lifecycle": "Opportunity"
           },
           "revision": 1,
-          "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+          "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6"
         },
         "reason": null,
         "remote_result": null
       },
       "effects": [
         {
-          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
-          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+          "key": "70684f16-b5f1-43a3-a8b1-158a85306387",
+          "hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d",
           "body": {
             "action": "sync_profile",
             "payload": {
@@ -180,10 +180,10 @@
               "lifecycle": "Opportunity"
             },
             "revision": 1,
-            "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+            "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6"
           },
-          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
-          "committed_at": "2026-10-12 20:32:03.418850-04:00"
+          "receipt": "2a6a0833-c85f-4417-9a8f-a95c434ec053",
+          "committed_at": "2026-10-12 20:50:24.610751-04:00"
         }
       ]
     }
@@ -194,10 +194,10 @@
     "body": {
       "label": "process_interruption: original worker reconciled existing receipt",
       "job": {
-        "id": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
+        "id": "70684f16-b5f1-43a3-a8b1-158a85306387",
         "status": "succeeded",
         "attempts": 2,
-        "available_at": "2026-10-12 20:32:08.079999-04:00",
+        "available_at": "2026-10-12 20:50:28.867197-04:00",
         "lease_until": null,
         "lease_token": null,
         "uncertain": false,
@@ -209,20 +209,20 @@
             "lifecycle": "Opportunity"
           },
           "revision": 1,
-          "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+          "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6"
         },
         "reason": "reconciled_committed_effect",
         "remote_result": {
-          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
-          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
-          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
-          "committed_at": "2026-10-12T20:32:03.418850-04:00"
+          "key": "70684f16-b5f1-43a3-a8b1-158a85306387",
+          "hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d",
+          "receipt": "2a6a0833-c85f-4417-9a8f-a95c434ec053",
+          "committed_at": "2026-10-12T20:50:24.610751-04:00"
         }
       },
       "effects": [
         {
-          "key": "59a098bc-4b07-4ccd-b09e-5b3548c6628e",
-          "hash": "f10b069738acf606140315082d6e670702ed1c0b85e0008699a14825a2dae905",
+          "key": "70684f16-b5f1-43a3-a8b1-158a85306387",
+          "hash": "99d81ac05aedaaad6da426690c8835f46eed44bb72a7fbc8d91bd3e587bdb33d",
           "body": {
             "action": "sync_profile",
             "payload": {
@@ -231,10 +231,10 @@
               "lifecycle": "Opportunity"
             },
             "revision": 1,
-            "customer_id": "a21a02e2-7ddb-4500-b6d8-f0082506a6dd"
+            "customer_id": "185abd97-b103-41e3-ac56-3d7bf6ec93b6"
           },
-          "receipt": "12a966d4-f17e-4f33-8a1f-bc5e6fab13ea",
-          "committed_at": "2026-10-12 20:32:03.418850-04:00"
+          "receipt": "2a6a0833-c85f-4417-9a8f-a95c434ec053",
+          "committed_at": "2026-10-12 20:50:24.610751-04:00"
         }
       ]
     }
