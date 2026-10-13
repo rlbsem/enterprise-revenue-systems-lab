@@ -72,6 +72,6 @@ python scripts/check_repository.py
 python scripts/build.py
 ```
 
-The browser tests capture actual pages and test downloads, source inspection, every case, mobile layout and tampered imports. `dist/` is a static site suitable for GitHub Pages after owner approval. Neither the local server nor model endpoint is deployed. No Pages deployment workflow is enabled.
+The browser tests capture actual pages and test downloads, source inspection, every case, mobile layout and tampered imports. `dist/` is a static site suitable for GitHub Pages after owner approval. Neither the local server nor model endpoint is deployed. A manual-only Pages workflow is prepared; public hosting remains disabled until the owner follows the [publishing steps](deployment.md).
 
 Hosted CI explicitly pins Ubuntu to Python 3.12.14 and Windows to Python 3.12.10. GitHub's [official runtime manifest](https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json) provides the latter Windows binary; it does not provide a Windows 3.12.14 build. Local Windows execution used the bundled Python 3.12.14 runtime. Source commits and package locks are identical across these environments.
