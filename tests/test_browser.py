@@ -218,11 +218,18 @@ def test_selected_account_bridge_uses_original_model_and_source_rows(url):
         browser.close()
 
 
-def test_static_pages_subpath_has_attribution_and_no_execution_api(tmp_path):
+def test_static_pages_subpath_has_attribution_and_no_execution_api(
+    tmp_path, monkeypatch
+):
+    # ZIP container metadata differs across operating systems. Build in isolation
+    # so the test cannot rewrite the checked-in recorded artifact bytes.
+    workspace = tmp_path / "build"
+    shutil.copytree(ROOT / "web", workspace / "web")
+    monkeypatch.setattr("revenue_lab.site.ROOT", workspace)
     build()
     # Serve only the deployment artifact under the same repository prefix as Pages.
     directory = tmp_path / "enterprise-revenue-systems-lab"
-    shutil.copytree(ROOT / "dist", directory)
+    shutil.copytree(workspace / "dist", directory)
     expected = {
         p.relative_to(ROOT / "web") for p in (ROOT / "web").rglob("*") if p.is_file()
     }

@@ -79,11 +79,11 @@
       "bytes": 29372
     },
     "docs/evidence/tests.xml": {
-      "sha256": "1987c312691477160cf2753c7764c518cac9b0a8bcdcf671ed6ea3b33b25b129",
+      "sha256": "a2208d83685a1e1064e97c9dc516d0a55b5786264b0991887ba607c63538515e",
       "bytes": 5789
     },
     "docs/evidence/verification.json": {
-      "sha256": "14b7f187da6597c926c8708ce0787be24a4a9ad9370ad59989a3d097a051e2ec",
+      "sha256": "e2316683fcf0cf86e39fa1035d4d3de081e1d25ff4eefdecd197e52ba41a8ad4",
       "bytes": 1732
     },
     "docs/images/control-overview.png": {
@@ -203,8 +203,8 @@
       "bytes": 106
     },
     "tests/test_browser.py": {
-      "sha256": "0356b28b19098184067e1b5f0c7029d4e763992ccf34245ef2edde2848e52055",
-      "bytes": 11899
+      "sha256": "6cbc661044957daeec75b033984ec8e43dea9630c15faff5fd3c518e9cb2ba8c",
+      "bytes": 12226
     },
     "tests/test_bundles.py": {
       "sha256": "93f704d11ab4a4caec846207ccf4888484a22122fab638c85b01fba7b332d823",
