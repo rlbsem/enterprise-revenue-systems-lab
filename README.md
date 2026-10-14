@@ -8,9 +8,9 @@ This application makes those boundaries inspectable. Follow source records, deci
 
 **[Open the published browser explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Claims, evidence and limitations](docs/evidence-guide.md) · [Reproduction guide](docs/reproduction.md)
 
-The static Pages deployment completed successfully on October 13, 2026. Its public URL was confirmed in the deployment job output; independent browser smoke-testing of the rendered site remains pending.
+The hosted explorer is a static review surface with recorded evidence. Model inference, database-backed execution and original-engine replay remain local. [Deployment evidence and remaining browser checks](docs/deployment.md).
 
-![Seller investigation](docs/images/seller-overview.png)
+<img src="docs/images/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
 ## Three investigations
 
@@ -53,7 +53,7 @@ These three scenarios replay an unchanged saved response through the original Wo
 
 The opt-in local interface, `revenue-lab serve --execute`, invokes only approved scenarios. It uses isolated workspaces, package/version checks, bounded process trees, explicit local execution authority and one execution lane. Fresh model inference requires a real configured endpoint and `SELLER_MODEL_KEY`; unavailable inference never produces fabricated success. [Full reproduction instructions](docs/reproduction.md).
 
-![Recovery investigation](docs/images/control-overview.png)
+<img src="docs/images/control-overview.png" alt="Recovery investigation screenshot" width="780">
 
 ## Executed evidence
 
@@ -65,7 +65,7 @@ The opt-in local interface, `revenue-lab serve --execute`, invokes only approved
 
 The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local test results do not imply a successful hosted run. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
 
-![Revenue investigation](docs/images/revenue-overview.png)
+<img src="docs/images/revenue-overview.png" alt="Revenue investigation screenshot" width="780">
 
 ## Architecture and verification
 
