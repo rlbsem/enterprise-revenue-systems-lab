@@ -66,12 +66,11 @@ const hash = async (text) =>
   )
     .map((x) => x.toString(16).padStart(2, "0"))
     .join("");
-const money = (n) =>
-  new Intl.NumberFormat("en-CA", {
-    style: "currency",
-    currency: "CAD",
-    maximumFractionDigits: 2,
-  }).format(n);
+const dollarAmount = new Intl.NumberFormat("en-US", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
+const money = (n) => (n < 0 ? "-$" : "$") + dollarAmount.format(Math.abs(n));
 function metric(label, value, note) {
   const n = el("div", undefined, "metric");
   n.append(
@@ -536,7 +535,7 @@ function render() {
       ].map(([l, k]) =>
         metric(
           l,
-          "CAD " + (d[k] / 1e6).toFixed(2) + "M",
+          "$" + (d[k] / 1e6).toFixed(2) + "M",
           k === "period_end_arr" ? "Period-end stock" : "Quarterly flow",
         ),
       ),
