@@ -33,7 +33,7 @@ revenue-lab serve
 
 Open **http://127.0.0.1:8542/**. Recorded evidence requires no model, PostgreSQL server or API key. Select a case, inspect its source records and timeline, compare outcomes, validate artifact integrity and download its reproduction ZIP. The public explorer can also be served directly from `web/` as a static site.
 
-**Public hosting is prepared but awaits owner approval.** The implementation is on the feature branch in [PR #1](https://github.com/rlbsem/enterprise-revenue-systems-lab/pull/1). No Pages deployment or merge is enabled automatically.
+**Publishing status:** [PR #1](https://github.com/rlbsem/enterprise-revenue-systems-lab/pull/1) has been merged into `main`, and the [manual GitHub Pages publishing workflow](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml) completed successfully on October 13, 2026. The published URL should be opened and checked in a browser before sharing it with reviewers. Recorded evidence is available locally without a hosted service.
 
 ## Execute the original systems
 
@@ -81,6 +81,6 @@ python scripts/build.py
 python scripts/package.py
 ```
 
-The static distribution requires no server credentials or inference service. The local execution server stays on loopback and is excluded from public hosting. [Deployment after approval](docs/deployment.md).
+The static distribution requires no server credentials or inference service. The local execution server stays on loopback and is excluded from public hosting. [Publishing configuration and verification](docs/deployment.md).
 
 The source repositories remain unchanged: [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation), [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) and [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform).
