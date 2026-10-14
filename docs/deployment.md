@@ -5,8 +5,8 @@ The application publishes a browser-only build from `dist/`. It contains HTML, C
 ## Current publishing status
 
 - [PR #1](https://github.com/rlbsem/enterprise-revenue-systems-lab/pull/1) was merged to `main`.
-- [Publish static evidence lab](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml) completed successfully on October 13, 2026. The deploy job reported success.
-- The exact public page response has not been independently checked here. Before presenting it to recruiters, open the URL shown in **Settings > Pages** (or the workflow's `github-pages` environment), confirm that all three investigations load, and inspect the download and integrity features.
+- [Publish static evidence lab](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38435896797) completed successfully on October 13, 2026. The deployment log reported `https://rlbsem.github.io/enterprise-revenue-systems-lab/` as the environment URL.
+- The exact public page response has not been independently checked here. Before sharing the [published URL](https://rlbsem.github.io/enterprise-revenue-systems-lab/) with recruiters, confirm that all three investigations load and that integrity and download features work.
 
 ## Republish or verify
 
