@@ -6,6 +6,10 @@ An AI-generated proposal can cite the right facts and still imply an unsupported
 
 This application makes those boundaries inspectable. Follow source records, decisions, approval history, receiver effects and financial model outputs. Validate the recorded artifact bytes, download reproduction bundles, or execute approved scenarios against the original engines in an isolated local workspace.
 
+**[Open the published browser explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Claims, evidence and limitations](docs/evidence-guide.md) · [Reproduction guide](docs/reproduction.md)
+
+The static Pages deployment completed successfully on October 13, 2026. Its public URL was confirmed in the deployment job output; independent browser smoke-testing of the rendered site remains pending.
+
 ![Seller investigation](docs/images/seller-overview.png)
 
 ## Three investigations
@@ -33,7 +37,7 @@ revenue-lab serve
 
 Open **http://127.0.0.1:8542/**. Recorded evidence requires no model, PostgreSQL server or API key. Select a case, inspect its source records and timeline, compare outcomes, validate artifact integrity and download its reproduction ZIP. The public explorer can also be served directly from `web/` as a static site.
 
-**Publishing status:** [PR #1](https://github.com/rlbsem/enterprise-revenue-systems-lab/pull/1) has been merged into `main`, and the [manual GitHub Pages publishing workflow](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml) completed successfully on October 13, 2026. The published URL should be opened and checked in a browser before sharing it with reviewers. Recorded evidence is available locally without a hosted service.
+**Hosted option:** [Open the static explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/). The [published deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38435896797) succeeded; final browser/device smoke-testing remains a separate check. Recorded evidence also runs locally without a model or database.
 
 ## Execute the original systems
 
