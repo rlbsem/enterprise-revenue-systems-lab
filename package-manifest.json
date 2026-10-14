@@ -23,8 +23,8 @@
       "bytes": 1070
     },
     "README.md": {
-      "sha256": "fc66531007b4c667135e5dea93eb722405a3220aa05c752866c97e9ec1172f33",
-      "bytes": 7282
+      "sha256": "0876dd6d1ac3de38119d605d515258922aef52142a302e5128a3deda4dc77c5b",
+      "bytes": 7954
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
@@ -35,12 +35,12 @@
       "bytes": 3750
     },
     "docs/deployment.md": {
-      "sha256": "c2f04bbb401c417586ab1fd7f14ce87522ce2da1073c5cdcf47a6e42130f969e",
-      "bytes": 4397
+      "sha256": "f880766b54b796257d18948b180031189550f1840f74084f32b80af482b29266",
+      "bytes": 3177
     },
     "docs/evidence-guide.md": {
-      "sha256": "ed8338c17870b03969e026f1f8038bfb4b15a5084af384d61fec97ab5cf380e8",
-      "bytes": 2377
+      "sha256": "b47357bf01bbeeca675d5082e1149fafe51c6b5b74b55160b723f5db5257a88e",
+      "bytes": 2558
     },
     "docs/evidence/local-ui.json": {
       "sha256": "ea194b8e1c221a46b7d9e67511338b9330458bd6ec709726926467398b625246",
@@ -203,8 +203,8 @@
       "bytes": 106
     },
     "tests/test_browser.py": {
-      "sha256": "6cbc661044957daeec75b033984ec8e43dea9630c15faff5fd3c518e9cb2ba8c",
-      "bytes": 12226
+      "sha256": "914250348dc966ef99c665eab86961884377e9a6735ef7761e4638f51b9bba41",
+      "bytes": 12845
     },
     "tests/test_bundles.py": {
       "sha256": "93f704d11ab4a4caec846207ccf4888484a22122fab638c85b01fba7b332d823",
@@ -223,8 +223,8 @@
       "bytes": 2119
     },
     "web/app.js": {
-      "sha256": "80dea4c9ebb3be80f3eadbcde152e688c12cd372360ef90850346369a432e997",
-      "bytes": 25952
+      "sha256": "c3f3ed07c03a943445678c7cf978c5e765a9e1197f16f21e65d4e7998bbff627",
+      "bytes": 25995
     },
     "web/catalog.json": {
       "sha256": "edf6fe2d8fe2628888f50b04642611be7a8981917d0fda7f82a03465cd331220",
