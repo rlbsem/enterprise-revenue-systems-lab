@@ -7,8 +7,8 @@
       "bytes": 45
     },
     ".github/workflows/pages.yml": {
-      "sha256": "0d6c13791b21f6f75891cffd540a235251140bc8704a2bbf51d2226d93202ba3",
-      "bytes": 2421
+      "sha256": "ccea9cdf8bfdcc17da38986de9e3fc689ba819eb5e85d28de4d4cd6163cc619b",
+      "bytes": 2516
     },
     ".github/workflows/verify.yml": {
       "sha256": "a11cd7c618c0cb3a9a096d2d0c3aa204668b60328e4488c2d12336b016eb5fce",
@@ -35,8 +35,8 @@
       "bytes": 3750
     },
     "docs/deployment.md": {
-      "sha256": "f880766b54b796257d18948b180031189550f1840f74084f32b80af482b29266",
-      "bytes": 3177
+      "sha256": "409c008b6e40ee825d85f00c5007eeae576c93d2a6ec3db5fc9964d03e94306d",
+      "bytes": 3386
     },
     "docs/evidence-guide.md": {
       "sha256": "b47357bf01bbeeca675d5082e1149fafe51c6b5b74b55160b723f5db5257a88e",

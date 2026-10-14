@@ -10,7 +10,9 @@ The application publishes a browser-only build from `dist/`. It contains HTML, C
 
 ## Republish or verify
 
-1. Confirm **Settings > Pages > Build and deployment** uses **GitHub Actions**. The publishing workflow is manual by design; merges and pushes do not automatically deploy.
+Web-application updates are automatically published from `main` after the evidence checks pass. Source artifact data is not rewritten for display-only changes.
+
+1. Confirm **Settings > Pages > Build and deployment** uses **GitHub Actions**. Changes to `web/**` or the publishing workflow on `main` trigger an automatic deployment. Manual `workflow_dispatch` remains available.
 2. If republishing, go to **Actions > Publish static evidence lab > Run workflow**, choose `main`, and authorize the protected `github-pages` environment if requested.
 3. Check both `build` and `deploy` jobs are successful. The build verifies recorded evidence and ensures the public artifact includes only static distribution files.
 4. Open the Pages URL. Inspect all three investigations, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
@@ -18,7 +20,7 @@ The application publishes a browser-only build from `dist/`. It contains HTML, C
 
 ## Deployment boundary
 
-The [manual workflow](../.github/workflows/pages.yml) installs locked dependencies, verifies recorded evidence and package inventory, builds `dist/`, and checks that every distribution file exactly matches `web/`. Only `dist/` is uploaded. The build job has read-only repository access; only the separate protected deployment job receives `pages: write` and `id-token: write`. Actions are pinned to immutable commit hashes, checkout credentials are not persisted, and deployments are serialized.
+The [publishing workflow](../.github/workflows/pages.yml) installs locked dependencies, verifies recorded evidence and package inventory, builds `dist/`, and checks that every distribution file exactly matches `web/`. Only `dist/` is uploaded. The build job has read-only repository access; only the separate protected deployment job receives `pages: write` and `id-token: write`. Actions are pinned to immutable commit hashes, checkout credentials are not persisted, and deployments are serialized.
 
 No source checkout, Python execution API, environment file, database, model service or local credential is included in the uploaded artifact. Reproduction commands are instructional text in the recorded explorer. Fresh execution remains a separate opt-in local capability.
 
