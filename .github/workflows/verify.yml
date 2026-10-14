@@ -1,7 +1,7 @@
 name: Verify evidence lab
 on:
   push:
-    branches: [feat/executable-evidence-lab]
+    branches: [main, feat/executable-evidence-lab]
   pull_request:
   workflow_dispatch:
 permissions:
