@@ -1,20 +1,20 @@
-# Publish after owner approval
+# Static GitHub Pages deployment and verification
 
-The application has a static build in `dist/`. It contains only HTML, CSS, JavaScript and recorded synthetic evidence. It requires no secrets, Python service, PostgreSQL database or live model endpoint.
+The application publishes a browser-only build from `dist/`. It contains HTML, CSS, JavaScript and recorded synthetic evidence. It needs no secrets, Python service, PostgreSQL database or live model endpoint.
 
-## Owner publishing steps
+## Current publishing status
 
-These steps require the owner's explicit approval. This update does not merge the PR, change repository settings or publish the application.
+- [PR #1](https://github.com/rlbsem/enterprise-revenue-systems-lab/pull/1) was merged to `main`.
+- [Publish static evidence lab](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml) completed successfully on October 13, 2026. The deploy job reported success.
+- The exact public page response has not been independently checked here. Before presenting it to recruiters, open the URL shown in **Settings > Pages** (or the workflow's `github-pages` environment), confirm that all three investigations load, and inspect the download and integrity features.
 
-1. Review the final green PR head and, after approval, merge PR #1 into `main`. Merging alone does not publish anything. The deployment workflow must exist on the default branch before GitHub shows its manual Run workflow control.
-2. In the repository, open **Settings > Actions > General**. Ensure GitHub Actions is enabled and that the pinned official `actions/*` actions are permitted by the repository or organization policy. Leave the default Workflow permissions at **Read repository contents and packages permissions**; the workflow declares its narrowly scoped publishing permissions itself. No repository secret, personal access token or model key is needed.
-3. Open **Settings > Pages > Build and deployment**. Set **Source** to **GitHub Actions**. Do not select Deploy from a branch and do not add a second automatic Pages workflow.
-4. Open **Settings > Environments > github-pages** (create it if it is not yet listed). Under **Deployment branches and tags**, select **Selected branches and tags**, add a **Branch** rule for `main`, and exclude other branches and tags. Where required reviewers are available, add the owner as a reviewer if a separate approval gate is desired. A sole owner must be allowed to approve their own manually requested deployment. Save these protection rules before running the workflow.
-5. Open **Actions > Publish static evidence lab > Run workflow**. Select **Branch: main**, then click **Run workflow**. Approve the `github-pages` environment deployment if a reviewer gate was configured. A feature-branch dispatch is intentionally skipped. Pushes, pull requests and merges never trigger this publishing workflow.
-6. Wait for both **build** and **deploy** to succeed. Open the URL emitted by the deploy job's environment, or the published link shown in **Settings > Pages**. Until this deployment and the following browser checks succeed, the application has no verified public URL.
-7. On the published site, open all three investigations, select evidence cases, validate artifact integrity, inspect source records and download a reproduction ZIP. Check the attribution link and mobile layout. Confirm that fresh-execution controls are absent. The repository path is supported through relative asset URLs; no custom domain is required.
+## Republish or verify
 
-If a run fails, inspect its step logs, correct the identified issue and manually run it again from `main`. A missing Pages configuration causes failure: the workflow explicitly disables automatic Pages enablement. To withdraw a published site later, use **Settings > Pages > Unpublish site**; this is an owner action, not an automatic PR behavior.
+1. Confirm **Settings > Pages > Build and deployment** uses **GitHub Actions**. The publishing workflow is manual by design; merges and pushes do not automatically deploy.
+2. If republishing, go to **Actions > Publish static evidence lab > Run workflow**, choose `main`, and authorize the protected `github-pages` environment if requested.
+3. Check both `build` and `deploy` jobs are successful. The build verifies recorded evidence and ensures the public artifact includes only static distribution files.
+4. Open the Pages URL. Inspect all three investigations, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
+5. If a run fails, use the job logs to identify the issue. To withdraw the public site, use **Settings > Pages > Unpublish site**.
 
 ## Deployment boundary
 
