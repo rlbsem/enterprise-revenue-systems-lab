@@ -19,4 +19,4 @@ The three source environments remain independent. The revenue bridge and correct
 - AWS operation, Snowflake execution and the optional stress profile remain outside executed Lab scope.
 - The recorded full-warehouse comparison requires fresh execution to independently repeat; compact downloads contain selected source/model rows.
 - Performance timings are individual workstation observations, not capacity guarantees.
-- The manual GitHub Pages deployment [completed successfully](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38435896797) on October 13, 2026. Public browser smoke-testing remains outstanding; the hosted static site does not execute models, databases or original engines.
+- The GitHub Pages [corrected deployment succeeded](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38495435399) on October 13, 2026, and the owner reviewed the published browser interface. Cross-device and download-path verification remains distinct from that check. The static site does not execute models, databases or original engines. Updates to `web/**` on `main` deploy automatically.

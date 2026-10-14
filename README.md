@@ -8,7 +8,7 @@ This application makes those boundaries inspectable. Follow source records, deci
 
 **[Open the published browser explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/)** · [Claims, evidence and limitations](docs/evidence-guide.md) · [Reproduction guide](docs/reproduction.md)
 
-The hosted explorer is a static review surface with recorded evidence. Model inference, database-backed execution and original-engine replay remain local. [Deployment evidence and remaining browser checks](docs/deployment.md).
+The hosted explorer is a static review surface with recorded evidence. Model inference, database-backed execution and original-engine replay remain local. [Deployment and verification](docs/deployment.md).
 
 <img src="docs/images/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
@@ -37,7 +37,7 @@ revenue-lab serve
 
 Open **http://127.0.0.1:8542/**. Recorded evidence requires no model, PostgreSQL server or API key. Select a case, inspect its source records and timeline, compare outcomes, validate artifact integrity and download its reproduction ZIP. The public explorer can also be served directly from `web/` as a static site.
 
-**Hosted option:** [Open the static explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/). The [published deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38435896797) succeeded; final browser/device smoke-testing remains a separate check. Recorded evidence also runs locally without a model or database.
+**Hosted option:** [Open the static explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/). The [latest corrected deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38495435399) succeeded, and the site owner reviewed the browser interface. Full cross-device and download-path testing remains a separate check. Recorded evidence also runs locally without a model or database.
 
 ## Execute the original systems
 
