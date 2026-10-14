@@ -64,3 +64,24 @@ jobs:
       - run: python -m revenue_lab.cli run seller-delivery
       - run: python -m revenue_lab.cli run control-recovery
       - run: python -m revenue_lab.cli run revenue-correction
+      - name: Diagnose original engine failure
+        if: failure()
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          paths = sorted(Path(".cache/runs").glob("revenue-correction-*/execution.log"), key=lambda p: p.stat().st_mtime, reverse=True)
+          if not paths:
+              print("No revenue execution.log; the worker may have failed before log capture.")
+          else:
+              path = paths[0]
+              failure = path.with_name("failure.json")
+              if failure.exists():
+                  print("Failure metadata:", failure.read_text())
+              tail = "\n".join(path.read_text(errors="replace").splitlines()[-100:])
+              tail = re.sub(r"(?i)(password|token|secret)=([^\s]+)", r"\1=[REDACTED]", tail)
+              tail = tail.replace("disposable-ci-only", "[REDACTED]")
+              print("Original engine log, last 100 lines (max 8000 characters):")
+              print(tail[-8000:])
+          PY
