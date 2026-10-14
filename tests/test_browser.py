@@ -197,6 +197,23 @@ def test_displayed_verification_record_cannot_be_silently_replaced(url):
         browser.close()
 
 
+def test_revenue_ui_uses_neutral_dollar_display(url):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(url + "/?case=revenue-correction")
+        page.get_by_role(
+            "heading", name="Installed ARR and quarterly flows"
+        ).wait_for()
+        metrics = page.locator("#metrics").inner_text()
+        assert "$754.39M" in metrics
+        assert "CAD" not in metrics
+        panel = page.locator("#panel").inner_text()
+        assert "$754,389,953.40" in panel
+        assert "CAD" not in panel
+        browser.close()
+
+
 def test_selected_account_bridge_uses_original_model_and_source_rows(url):
     source = json.loads(
         (ROOT / "web/evidence/revenue-correction/models.json").read_text()
