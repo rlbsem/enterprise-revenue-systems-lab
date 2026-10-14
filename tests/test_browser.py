@@ -203,7 +203,10 @@ def test_revenue_ui_uses_neutral_dollar_display(url):
         page = browser.new_page()
         page.goto(url + "/?case=revenue-correction")
         page.get_by_role(
-            "heading", name="Installed ARR and quarterly flows"
+            "heading", name="Late correction and equivalent rebuild"
+        ).wait_for()
+        page.get_by_role("status").filter(
+            has_text="Recorded evidence loaded"
         ).wait_for()
         metrics = page.locator("#metrics").inner_text()
         assert "$754.39M" in metrics
