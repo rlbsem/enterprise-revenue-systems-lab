@@ -1,0 +1,42 @@
+{
+  "executed_utc": "2026-10-16T04:23:20.103026+00:00",
+  "scope": "Local presentation/regression checks; historical engine/inference evidence remains unchanged. Hosted CI is reported separately in PR #2.",
+  "python": "3.12.14",
+  "tests": {
+    "tests": "48",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "16.738"
+  },
+  "rendered_views": 180,
+  "widths": [
+    1440,
+    1280,
+    768,
+    390,
+    320
+  ],
+  "page_errors": [],
+  "overflow_failures": 0,
+  "computed_text_contrast_failures": 0,
+  "markdown_and_readme_image_paths": 27,
+  "static_dist_files": 94,
+  "static_dist_matches_web_bytes": true,
+  "protected_files_unchanged": 125,
+  "archived_original_screenshots": 3,
+  "new_model_inference": "not_executed",
+  "external_system_writes": "not_executed",
+  "pages_deployment": "not_triggered",
+  "checks": [
+    "pip check",
+    "full pytest suite",
+    "capture_presentation.py (180 views and interactions)",
+    "node --check web/app.js",
+    "scripts/build.py",
+    "static artifact inventory/byte comparison",
+    "Markdown and README image paths",
+    "historical evidence preservation"
+  ],
+  "capture_record_sha256": "70281333deb35847d5498d42c564b50034e586e5aa6d3656370783ca5e3ec8c4"
+}

@@ -11,8 +11,8 @@
       "bytes": 2516
     },
     ".github/workflows/verify.yml": {
-      "sha256": "e0cdda2cc125c9c42b071b77fecf4418b16fc157f5bedc298058f9ac102f810f",
-      "bytes": 3574
+      "sha256": "0deb1528dc4f6bd235988a6acca4db57ff19f84fa6bbf4d7d105f056951734ea",
+      "bytes": 3765
     },
     ".gitignore": {
       "sha256": "0dd34425a8c07cc124767c3f9d1e6de0a5bf3283b364e24349593f0708c1be0f",
@@ -23,8 +23,8 @@
       "bytes": 1070
     },
     "README.md": {
-      "sha256": "763eeed059a9abc379e96f08ef35fd3c63d5686abad46c06a68887927d82fcd3",
-      "bytes": 8000
+      "sha256": "6c3bee3902316b365d9b632c4772ade6f916b881ff54c45d88cb5bed23e0b892",
+      "bytes": 8270
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
@@ -86,17 +86,49 @@
       "sha256": "e2316683fcf0cf86e39fa1035d4d3de081e1d25ff4eefdecd197e52ba41a8ad4",
       "bytes": 1732
     },
-    "docs/images/control-overview.png": {
+    "docs/evidence/visual-refresh/README.md": {
+      "sha256": "732513055e3cefbd97f116d81b1cd852138b3684710879304e02fb91a7e24836",
+      "bytes": 3414
+    },
+    "docs/evidence/visual-refresh/capture.json": {
+      "sha256": "70281333deb35847d5498d42c564b50034e586e5aa6d3656370783ca5e3ec8c4",
+      "bytes": 50507
+    },
+    "docs/evidence/visual-refresh/preservation.json": {
+      "sha256": "6eb9ddf857ff2a2c9fd82d0ef1cb2c85826972c932d0412d7fe8eec918f00643",
+      "bytes": 12655
+    },
+    "docs/evidence/visual-refresh/tests.xml": {
+      "sha256": "9eed2bd04da6f78a493574910725e2a626c2019fd6938bf830277a77e5e2232e",
+      "bytes": 5908
+    },
+    "docs/evidence/visual-refresh/verification.json": {
+      "sha256": "321c554a4779b7c49a96ca38246d67dd0099d9d693a505ecf66e32f27301e79f",
+      "bytes": 1231
+    },
+    "docs/images/archive/pre-navy-control-overview.png": {
       "sha256": "da481cea9dfb78676ddacd0d0d7c132dc0ce9d3277bda481bcf4b8872147143f",
       "bytes": 143663
+    },
+    "docs/images/archive/pre-navy-revenue-overview.png": {
+      "sha256": "08893c803922c75b9b5bd7c16226b9b058252f40db889f4a469b72a42b288165",
+      "bytes": 170301
+    },
+    "docs/images/archive/pre-navy-seller-overview.png": {
+      "sha256": "5c0894ba902f57ba83e295a4d93ca2b1ead127d952ddc318360e902ac1ecc6bb",
+      "bytes": 172645
+    },
+    "docs/images/control-overview.png": {
+      "sha256": "28a1d2a5eea450fe10bdde4d0f9b32a63e90d834b0c420148121ed569049ac5d",
+      "bytes": 144268
     },
     "docs/images/local-execution.png": {
       "sha256": "00f49334efffe9f732f23d1f53ad933b433979824a24c3f3b3a2e79cb3af9ab3",
       "bytes": 192552
     },
     "docs/images/revenue-overview.png": {
-      "sha256": "08893c803922c75b9b5bd7c16226b9b058252f40db889f4a469b72a42b288165",
-      "bytes": 170301
+      "sha256": "cc09d275c2e26984e3fc3091ee8aea5f4d60990cc746cff4c3df4b9091c7158b",
+      "bytes": 170838
     },
     "docs/images/seller-investigation.png": {
       "sha256": "60a61c8a16b4612e46ef9bdbd6190f9a9af63098cdb17125fb7ac3926d0842ed",
@@ -107,8 +139,20 @@
       "bytes": 125136
     },
     "docs/images/seller-overview.png": {
-      "sha256": "5c0894ba902f57ba83e295a4d93ca2b1ead127d952ddc318360e902ac1ecc6bb",
-      "bytes": 172645
+      "sha256": "7a61417f8c0147ca11c969f175b91112804dfe36c88a2b5af50485ded25e9556",
+      "bytes": 174241
+    },
+    "docs/images/visual-refresh/control-mobile.png": {
+      "sha256": "2446407e075858cd873949da5b01d7dff8081605e38d1085cc11ab5013b82e1d",
+      "bytes": 116256
+    },
+    "docs/images/visual-refresh/revenue-mobile.png": {
+      "sha256": "394eebc0cc6090921d0fd6e30c4ad9ab6dc73da22b8f042351a7a6be5945d85c",
+      "bytes": 153438
+    },
+    "docs/images/visual-refresh/seller-mobile.png": {
+      "sha256": "3ba48c189611236ba301c3252f48f727604ce53b6d49ff7c69b56be8a4d0c87f",
+      "bytes": 147357
     },
     "docs/reproduction.md": {
       "sha256": "9e46bc9e7a3ede80de59a3b95f62c3034b32fd9ba6d29d48cd8fe55c4715bd76",
@@ -129,6 +173,10 @@
     "scripts/build.py": {
       "sha256": "3b961d161bbc6dd1fd53491825bbccf8058713ea8a24a2ea937ffcabbaceb2e7",
       "bytes": 150
+    },
+    "scripts/capture_presentation.py": {
+      "sha256": "deef1e1728bcf65f5968e04426060bacbadf8aa9dba4e4e11a75b0acec0a4080",
+      "bytes": 11879
     },
     "scripts/check_repository.py": {
       "sha256": "cb3b688bba76a1a7a00e06f6923ed72f7eaf1252744f4ceafb61796b4ed55fb3",
@@ -595,8 +643,8 @@
       "bytes": 6699
     },
     "web/style.css": {
-      "sha256": "d3325bf6c6d24c437fe1cbd60fe9d38227b6348e02ccf57ba011ac53ce5b7977",
-      "bytes": 12720
+      "sha256": "bf92187af37c003e5eef19185a1678fe64f4561965a43398301952e4090de945",
+      "bytes": 13087
     }
   }
 }
