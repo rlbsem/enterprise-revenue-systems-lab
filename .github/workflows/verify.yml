@@ -32,6 +32,8 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - run: python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
       - run: python -m pytest -q --basetemp .cache/tests --junitxml .cache/tests.xml
+      - name: Review recorded UI layouts and contrast
+        run: python scripts/capture_presentation.py --images .cache/presentation/screenshots --evidence .cache/presentation/capture.json
       - run: python scripts/check_repository.py
       - run: python scripts/build.py
   source-engines:

@@ -12,6 +12,8 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
+The three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
+
 ## Three investigations
 
 | Question | Working evidence | What to challenge |
