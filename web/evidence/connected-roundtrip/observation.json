@@ -1,0 +1,68 @@
+{
+  "provenance": "recorded_native_salesforce_snowflake",
+  "source_business_hash_before": "71113f9cd7b7d7fc87496f4bb5fb32d930418ac0e615a5e4e915dd8b98f362f7",
+  "source_business_hash_after": "211a03f7beac1ea4bf25cb448c180683ced18d841854f189c3eb7a712dd7e04a",
+  "initial_decision": {
+    "account_source_ref": "44101f455a50df67530a690cee4f5ee9adabb64b31f09c7ec72a83d3204f43b1",
+    "source_modified_at": "2026-10-15T23:03:28.000000Z",
+    "brand": "cedar",
+    "account_key": "account-0012",
+    "owner_key": "cedar-east",
+    "owner_ref": "906c4463e297a9d7b514a1db775d7d686c6a1b5e0d03714308cf23a3ec3d117f",
+    "active": true,
+    "synthetic": true,
+    "review_count": 2,
+    "pending_count": 0,
+    "reviewed_count": 2,
+    "rejected_count": 0,
+    "decision_action": "clarify_need",
+    "source_hash": "3a756dc69428c13bd981d66554b797ff907667b28d4e34f0c6ed3be2a1446e48",
+    "decision_hash": "145bf75572372761446362eea3a8c1d7e28311d81e713af1dd87923bb04723cf"
+  },
+  "feedback_decision": {
+    "account_source_ref": "44101f455a50df67530a690cee4f5ee9adabb64b31f09c7ec72a83d3204f43b1",
+    "source_modified_at": "2026-10-15T23:03:28.000000Z",
+    "brand": "cedar",
+    "account_key": "account-0012",
+    "owner_key": "cedar-east",
+    "owner_ref": "906c4463e297a9d7b514a1db775d7d686c6a1b5e0d03714308cf23a3ec3d117f",
+    "active": true,
+    "synthetic": true,
+    "review_count": 3,
+    "pending_count": 1,
+    "reviewed_count": 2,
+    "rejected_count": 0,
+    "decision_action": "hold",
+    "source_hash": "22e3e085a66f34c2911c222ad16ebce5d206a7341cd5f7864443d062091a7dc6",
+    "decision_hash": "ddb053e10444d2ede4b29538e23dd156aab10c98785092f6466971670dbcd0f4"
+  },
+  "delivery": {
+    "first_state": "retry",
+    "restarted_state": "delivered",
+    "repeated_state": "delivered",
+    "post_requests": 1,
+    "independent_action_count": 1,
+    "readback_exact_fields": 13,
+    "readback_independent": true,
+    "original_sources_unchanged": true,
+    "feedback_suppressed": true,
+    "action_key": "def73e6d05e7f05f6005649882f0d7aec9096d42275b094691d8abbac2032e94",
+    "approval": "owner_authorized_synthetic_policy_not_human_business_review"
+  },
+  "native_counts": {
+    "distinct_snowflake_query_ids": 126,
+    "composite_salesforce_requests": 42
+  },
+  "cleanup": {
+    "warehouse": "SUSPENDED",
+    "remaining_schemas": 0
+  },
+  "new_vendor_execution": false,
+  "llm_inference": "not_executed_deterministic_policy",
+  "source_artifacts": {
+    "source-before.json": "aa40807504c9d62402dc430d908aa71a85835f24c37ff7b8d5bf8fda44933b7a",
+    "source-after.json": "138b696fb81a789e79971255ee18579be9af594385fdf077da6fd098895a9ea6",
+    "intent.json": "52c59be4c4e037a655ab5d9d9372e32154913ab715751887453f9bb7abf09ffc",
+    "verification.json": "a947fabc02718e95067e0304681e7cafca3f3e21c54c0d83340343a24fbe381f"
+  }
+}
