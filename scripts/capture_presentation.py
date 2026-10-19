@@ -17,6 +17,7 @@ CASES = {
     "seller": "seller-application",
     "control": "control-recovery",
     "revenue": "revenue-correction",
+    "connected": "connected-roundtrip",
 }
 TABS = ["Decision & outcome", "Source records", "Evidence timeline", "Compare & verify"]
 
@@ -59,6 +60,29 @@ def main():
         "--evidence", type=Path, default=ROOT / ".cache/visual-review/capture.json"
     )
     args = parser.parse_args()
+    # Generate only the new recorded case archive. Existing source-bound ZIPs
+    # must not be rebuilt by a visual review.
+    bundle_dir = ROOT / "web/evidence/connected-roundtrip"
+    bundle = json.loads((bundle_dir / "bundle.json").read_text(encoding="utf-8"))
+    with zipfile.ZipFile(bundle_dir / "reproduction.zip", "w", zipfile.ZIP_DEFLATED) as z:
+        def member(name, data):
+            info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(info, data)
+
+        member("bundle.json", (bundle_dir / "bundle.json").read_bytes())
+        for item in bundle["artifacts"]:
+            member(item["path"], (bundle_dir / item["path"]).read_bytes())
+        member(
+            "REPRODUCE.txt",
+            (
+                "Clone https://github.com/rlbsem/enterprise-revenue-systems-lab\\n"
+                "Install requirements.lock and set PYTHONPATH=src.\\n"
+                + "\\n".join(bundle["reproduce"])
+                + "\\npython -m revenue_lab.cli verify <extracted-bundle>\\n"
+                "Recorded vendor execution is verified offline; no new vendor calls.\\n"
+            ).encode(),
+        )
     args.images.mkdir(parents=True, exist_ok=True)
     args.evidence.parent.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer(
@@ -164,10 +188,12 @@ def main():
                         )
                         != "none"
                     )
-                    page.get_by_text(
-                        "Reproduce this investigation · fresh local execution",
-                        exact=True,
-                    ).click()
+                    expected_label = (
+                        "Verify this native record offline"
+                        if investigation == "connected"
+                        else "Reproduce this investigation · fresh local execution"
+                    )
+                    page.get_by_text(expected_label, exact=True).click()
                     assert page.locator("#fresh").is_hidden()
                     assert page.locator("#commands").inner_text().strip()
                     if width == 1440:

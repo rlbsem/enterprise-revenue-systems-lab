@@ -3,6 +3,7 @@ import json
 import os
 import shutil
 import threading
+import zipfile
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -254,7 +255,16 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
         p.relative_to(ROOT / "web") for p in (ROOT / "web").rglob("*") if p.is_file()
     }
     actual = {p.relative_to(directory) for p in directory.rglob("*") if p.is_file()}
-    assert actual == expected
+    # The connected native evidence download is built deterministically from its
+    # pinned source bundle. It is generated at build time, not tracked as binary.
+    generated = Path("evidence/connected-roundtrip/reproduction.zip")
+    assert actual == expected | {generated}
+    with zipfile.ZipFile(directory / generated) as packaged:
+        assert packaged.testzip() is None
+        assert packaged.read("bundle.json") == (
+            directory / "evidence/connected-roundtrip/bundle.json"
+        ).read_bytes()
+        assert "REPRODUCE.txt" in packaged.namelist()
     assert not any(p.is_symlink() for p in directory.rglob("*"))
     server = ThreadingHTTPServer(
         ("127.0.0.1", 0), functools.partial(Quiet, directory=str(tmp_path))
@@ -281,9 +291,12 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
                 )
                 assert author.is_visible()
                 assert author.get_attribute("href") == "https://github.com/rlbsem"
-                page.get_by_text(
-                    "Reproduce this investigation · fresh local execution", exact=True
-                ).click()
+                expected_label = (
+                    "Verify this native record offline"
+                    if case["investigation"] == "connected"
+                    else "Reproduce this investigation · fresh local execution"
+                )
+                page.get_by_text(expected_label, exact=True).click()
                 assert page.locator("#fresh").is_hidden()
             assert page.request.get(base + "api/config").status == 404
             assert (
@@ -307,3 +320,29 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
         server.shutdown()
         server.server_close()
         thread.join()
+
+
+def test_connected_vendor_investigation_navigation_and_integrity(url):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(viewport={"width": 1280, "height": 880})
+        outside = []
+        page.on("request", lambda r: outside.append(r.url) if any(
+            host in r.url for host in ("salesforce.com", "snowflakecomputing.com")
+        ) else None)
+        page.goto(url)
+        page.get_by_role("button", name="Connect CRM and warehouse").click()
+        page.get_by_role("heading", name="Salesforce and Snowflake round trip").wait_for()
+        page.get_by_text("Recovery with one real CRM effect").wait_for()
+        page.get_by_text("clarify_need", exact=True).first.wait_for()
+        page.get_by_text("hold", exact=True).first.wait_for()
+        page.get_by_role("button", name="Validate artifact integrity").click()
+        page.get_by_role("status").filter(has_text="Artifact integrity verified").wait_for()
+        for tab in ("Source records", "Evidence timeline", "Compare & verify"):
+            page.get_by_role("tab", name=tab).click()
+            assert page.locator("#panel").inner_text().strip()
+        page.get_by_role("tab", name="Evidence timeline").click()
+        page.get_by_text("Read-only cleanup confirmation").wait_for()
+        assert not outside
+        assert page.locator("#fresh").is_hidden()
+        browser.close()

@@ -1,6 +1,6 @@
 # Enterprise Revenue Systems Lab
 
-Inspect whether an AI seller action is justified, how governed execution recovers from uncertainty, and why ARR, bookings, invoices and cash differ.
+Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization and the differences between bookings, invoices, cash and ARR.
 
 An AI-generated proposal can cite the right facts and still imply an unsupported commitment. A timed-out write may already have committed. A mature SaaS company can carry $754M of ARR while booking far less in one quarter.
 
@@ -14,15 +14,16 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 The three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
 
-## Three investigations
+## Four investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
 | Can this AI seller action be trusted? | Actual saved Qwen3-14B output, exact citations, a reviewed edit, bound approval, synthetic CRM receipt and fresh refusal scenarios | Correct citations do not establish support for every sentence. The unsupported availability finding remains visible. |
 | What happens when execution becomes uncertain? | Durable PostgreSQL intent, lost acknowledgment, an actual interrupted worker, independently observed receiver rows and reconciled receipts | A timeout is not evidence that a write failed. Idempotency depends on the receiver's actual contract. |
-| Why do commercial numbers disagree? | Original enterprise sources and dbt outputs, independent CSV controls, financial bridges, late corrections and incremental/full comparisons | **Installed ARR ≠ quarterly bookings ≠ quarterly invoicing ≠ quarterly cash.** |
+| Why do commercial numbers disagree? | Original enterprise sources and dbt outputs, independent CSV controls, financial bridges, late corrections and incremental/full comparisons | ARR is a period-end measure; bookings, invoices and cash are distinct flows. |
+| Can a CRM action survive uncertain delivery? | [Native Salesforce and Snowflake evidence](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md): one synthetic CRM review, lost-acknowledgment recovery, exact independent readback and warehouse feedback changing `clarify_need` to `hold` | Owner-authorized synthetic policy, not human customer approval. This Lab displays recorded vendor execution without making new calls. |
 
-The nine recorded cases represent three **independent synthetic environments**, not a fictional integrated client deployment. No client data, real commercial outcomes or production adoption is claimed.
+The ten cases draw from three pinned source repositories. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## Open the application
 
@@ -34,6 +35,7 @@ python -m venv .venv
 # macOS/Linux: source .venv/bin/activate
 python -m pip install -r requirements.lock
 python -m pip install --no-deps --no-build-isolation -e .
+revenue-lab build
 revenue-lab serve
 ```
 

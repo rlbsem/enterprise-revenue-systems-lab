@@ -9,3 +9,4 @@ test-results/
 dist/
 *.egg-info/
 *.pyc
+web/evidence/connected-roundtrip/reproduction.zip

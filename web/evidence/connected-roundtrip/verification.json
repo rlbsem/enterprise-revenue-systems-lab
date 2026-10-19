@@ -1,0 +1,21 @@
+{
+  "scenario": "connected-roundtrip",
+  "integrity": "verified",
+  "checks": {
+    "native_source_snapshots": 2,
+    "previous_reviews_unchanged": 2,
+    "new_pending_reviews": 1,
+    "independent_receiver_effects": 1,
+    "duplicate_effects": 0,
+    "warehouse_transition": "clarify_need -> hold",
+    "cloud_cleanup": "SUSPENDED, no integration schemas",
+    "scope": "Recorded native synthetic internal review, not new vendor execution or customer contact"
+  },
+  "limitations": [
+    "Native Developer Edition and Snowflake observations were recorded in Customer Signal & Activation and are presented without new vendor calls.",
+    "Synthetic policy approval is not independent human seller approval or customer contact.",
+    "Native stages include earlier failures and read-only continuations; no single uninterrupted end-to-end pass is claimed.",
+    "Warehouse policy is deterministic and did not invoke an LLM.",
+    "Composite request and query counts are inherited observations, not additional Lab requests or charges."
+  ]
+}

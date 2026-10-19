@@ -9,14 +9,15 @@
 | Recovery can reconcile a committed effect after uncertainty | Worker stages, actual process kill, intent, receiver rows and matching receipt | Transactional synthetic receiver contract |
 | Enterprise ARR is distinct from quarterly flows | Original contract/billing sources, model outputs and independent company controls | Synthetic established SaaS economics |
 | Late corrections preserve rebuild equivalence | Original three dbt builds, all-model SQL differences and selected exported rows | Full comparison observed at execution; compact bundle contains selected rows |
+| A Salesforce review survives a lost acknowledgment and changes Snowflake's next decision | [Pinned native cross-platform acceptance](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md), synthetic before/after snapshots, original approved intent, independent readback and final cleanup | Recorded staged native execution. This Lab performs no new Salesforce or Snowflake writes or queries. |
 
-The three source environments remain independent. The revenue bridge and correction views reference the same enterprise execution; they are not two separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
+The three source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
 
 ## Known limitations
 
 - Independent blinded salesperson usefulness assessment is pending.
-- No real vendor, client deployment or commercial uplift is established by the Lab.
-- AWS operation, Snowflake execution and the optional stress profile remain outside executed Lab scope.
+- Customer Signal & Activation provides recorded native Salesforce and Snowflake evidence with synthetic records. The Lab does not execute new vendor operations or establish client adoption or commercial uplift.
+- AWS operation, new Snowflake queries and the optional stress profile remain outside new Lab execution. The connected case presents verified historical Snowflake acceptance from its source repository.
 - The recorded full-warehouse comparison requires fresh execution to independently repeat; compact downloads contain selected source/model rows.
 - Performance timings are individual workstation observations, not capacity guarantees.
 - The GitHub Pages [corrected deployment succeeded](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38495435399) on October 13, 2026, and the owner reviewed the published browser interface. Cross-device and download-path verification remains distinct from that check. The static site does not execute models, databases or original engines. Updates to `web/**` on `main` deploy automatically.

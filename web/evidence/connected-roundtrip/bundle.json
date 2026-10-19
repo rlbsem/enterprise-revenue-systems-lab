@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "scenario": "connected-roundtrip",
+  "source": {
+    "repository": "rlbsem/customer-signal-activation",
+    "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-19T19:35:56.990Z",
+  "runtime": {
+    "python": "not_executed_for_evidence_transfer",
+    "platform": "static_evidence_packaging"
+  },
+  "artifacts": [
+    {
+      "path": "source-before.json",
+      "sha256": "c12e27ce2395f3e0d7a0b8c912c4ca3f1d78ca86d475d522ec7c15edd561fa6d",
+      "bytes": 1675
+    },
+    {
+      "path": "source-after.json",
+      "sha256": "1ecae66b28c9981b6007aaf92e49b1f0aa8338710387f399861314f826f418a8",
+      "bytes": 2106
+    },
+    {
+      "path": "intent.json",
+      "sha256": "2372b172ddc0e49000a474980dd3c82da1bb23bda3f038e6aebb2d79a08ea1e4",
+      "bytes": 1552
+    },
+    {
+      "path": "observation.json",
+      "sha256": "2c844f87fabe529c0c17e9e2ccbba2374e99d826f8534da4b821e357f8fed2f5",
+      "bytes": 2818
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "3a6f2fbbcb9f8b4870e9939ec8f6ae28edddce0235184c906f2fcefded70f371",
+      "bytes": 4191
+    }
+  ],
+  "limitations": [
+    "Native Developer Edition and Snowflake observations were recorded in Customer Signal & Activation and are presented without new vendor calls.",
+    "Synthetic policy approval is not independent human seller approval or customer contact.",
+    "Native stages include earlier failures and read-only continuations; no single uninterrupted end-to-end pass is claimed.",
+    "Warehouse policy is deterministic and did not invoke an LLM.",
+    "Composite request and query counts are inherited observations, not additional Lab requests or charges."
+  ],
+  "input_hashes": {
+    "source-before.json": "c12e27ce2395f3e0d7a0b8c912c4ca3f1d78ca86d475d522ec7c15edd561fa6d",
+    "source-after.json": "1ecae66b28c9981b6007aaf92e49b1f0aa8338710387f399861314f826f418a8",
+    "intent.json": "2372b172ddc0e49000a474980dd3c82da1bb23bda3f038e6aebb2d79a08ea1e4"
+  },
+  "reproduce": [
+    "git clone https://github.com/rlbsem/enterprise-revenue-systems-lab",
+    "python -m revenue_lab.cli verify <extracted-bundle>"
+  ],
+  "configuration_hash": "fe1ed1a9d4759116bb584499b881a5ed728c4c38c8110c6c9141c752238a2724"
+}
