@@ -8,6 +8,11 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "connected-roundtrip": (
+        "connected",
+        "Salesforce and Snowflake round trip",
+        "A governed CRM review survives a lost acknowledgment and changes the next warehouse decision.",
+    ),
     "seller-application": (
         "seller",
         "Reviewed discovery action",
