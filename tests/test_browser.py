@@ -307,3 +307,29 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
         server.shutdown()
         server.server_close()
         thread.join()
+
+
+def test_connected_vendor_investigation_navigation_and_integrity(url):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(viewport={"width": 1280, "height": 880})
+        outside = []
+        page.on("request", lambda r: outside.append(r.url) if any(
+            host in r.url for host in ("salesforce.com", "snowflakecomputing.com")
+        ) else None)
+        page.goto(url)
+        page.get_by_role("button", name="Connect CRM and warehouse").click()
+        page.get_by_role("heading", name="Salesforce and Snowflake round trip").wait_for()
+        page.get_by_text("Recovery with one real CRM effect").wait_for()
+        page.get_by_text("clarify_need", exact=True).first.wait_for()
+        page.get_by_text("hold", exact=True).first.wait_for()
+        page.get_by_role("button", name="Validate artifact integrity").click()
+        page.get_by_role("status").filter(has_text="Artifact integrity verified").wait_for()
+        for tab in ("Source records", "Evidence timeline", "Compare & verify"):
+            page.get_by_role("tab", name=tab).click()
+            assert page.locator("#panel").inner_text().strip()
+        page.get_by_role("tab", name="Evidence timeline").click()
+        page.get_by_text("Read-only cleanup confirmation").wait_for()
+        assert not outside
+        assert page.locator("#fresh").is_hidden()
+        browser.close()
