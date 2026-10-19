@@ -291,9 +291,12 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
                 )
                 assert author.is_visible()
                 assert author.get_attribute("href") == "https://github.com/rlbsem"
-                page.get_by_text(
-                    "Reproduce this investigation · fresh local execution", exact=True
-                ).click()
+                expected_label = (
+                    "Verify this native record offline"
+                    if case["investigation"] == "connected"
+                    else "Reproduce this investigation · fresh local execution"
+                )
+                page.get_by_text(expected_label, exact=True).click()
                 assert page.locator("#fresh").is_hidden()
             assert page.request.get(base + "api/config").status == 404
             assert (
