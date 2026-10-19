@@ -14,6 +14,13 @@ const titles = {
     "Uncertainty needs reconciliation.",
     "Retries must preserve authority and prevent duplicate effects.",
   ],
+  connected: [
+    "04 · CONNECTED ENTERPRISE SYSTEMS",
+    "Can a CRM action\nsurvive uncertain delivery?",
+    "Follow a real synthetic Salesforce review through a Snowflake decision, a lost acknowledgment, independent readback and feedback.",
+    "An acknowledgment is not the effect.",
+    "One CRM record. A changed warehouse decision. No duplicate write.",
+  ],
   revenue: [
     "03 · REVENUE INTEGRITY",
     "Why do commercial\nnumbers disagree?",
@@ -26,6 +33,7 @@ const names = {
   seller: "SELLER AUTHORITY",
   control: "EXECUTION RECOVERY",
   revenue: "COMMERCIAL INTEGRITY",
+  connected: "CRM AND WAREHOUSE",
 };
 let catalog,
   entry,
@@ -236,6 +244,45 @@ function sellerPanel() {
   p.append(cols);
   return p;
 }
+function connectedPanel() {
+  const o = json("observation.json");
+  const before = json("source-before.json").body;
+  const after = json("source-after.json").body;
+  const intent = json("intent.json");
+  const p = el("div");
+  const cols = el("div", undefined, "columns");
+  const left = section("Snowflake decision before CRM delivery");
+  left.append(facts([
+    ["Account", o.initial_decision.account_key],
+    ["Brand and owner", o.initial_decision.brand + " / " + o.initial_decision.owner_key],
+    ["Reviewed records", o.initial_decision.reviewed_count],
+    ["Pending reviews", o.initial_decision.pending_count],
+    ["Recommendation", o.initial_decision.decision_action],
+  ]));
+  const right = section("Feedback after Salesforce readback");
+  right.append(facts([
+    ["Prior reviews preserved", before.reviews.length],
+    ["Reviews after", after.reviews.length],
+    ["Pending reviews after", o.feedback_decision.pending_count],
+    ["Next recommendation", o.feedback_decision.decision_action],
+    ["Independent exact fields", o.delivery.readback_exact_fields],
+  ]));
+  cols.append(left, right);
+  p.append(cols);
+  p.append(finding("Recovery with one real CRM effect",
+    "The approved internal review was created once. Its acknowledgment was deliberately lost, the dispatcher recovered the existing record, and a second dispatch did not create another POST."));
+  p.append(facts([
+    ["Action key (prefix)", intent.id.slice(0, 16) + "…"],
+    ["Create requests", o.delivery.post_requests],
+    ["Independent effect count", o.delivery.independent_action_count],
+    ["Original CRM account", "Unchanged"],
+    ["Warehouse cleanup", o.cleanup.warehouse + ", " + o.cleanup.remaining_schemas + " integration schemas"],
+  ]));
+  p.append(finding("Execution boundary",
+    "This is a recorded native Salesforce Developer Edition and Snowflake synthetic review workflow. Approval was owner-authorized synthetic policy, not a salesperson sign-off. No new LLM inference, customer contact or vendor execution occurred in the Lab."));
+  return p;
+}
+
 function controlPanel() {
   const d = json("observation.json");
   const cols = el("div", undefined, "columns");
@@ -457,7 +504,9 @@ function renderPanel() {
             ? sellerPanel()
             : entry.investigation === "control"
               ? controlPanel()
-              : revenuePanel();
+              : entry.investigation === "connected"
+                ? connectedPanel()
+                : revenuePanel();
   $("#panel").replaceChildren(panel);
 }
 function render() {
@@ -487,6 +536,9 @@ function render() {
     localConfig?.execution_enabled && localConfig.allowed.includes(entry.id)
   );
   $("#fresh-status").textContent = localConfig?.fresh_inference || "";
+  $("#local-note").textContent = entry.investigation === "connected"
+    ? "The original native run is archived in Customer Signal & Activation. This case supports offline evidence verification only; no Salesforce or Snowflake calls are made."
+    : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
   const metrics = $("#metrics");
   if (entry.investigation === "seller") {
     const obs = json("observation.json");
@@ -507,6 +559,14 @@ function render() {
         "Synthetic receiver / recorded actions",
       ),
       metric("Usefulness", "Pending", "Independent human assessment"),
+    );
+  } else if (entry.investigation === "connected") {
+    const d = json("observation.json");
+    metrics.replaceChildren(
+      metric("Salesforce POSTs", d.delivery.post_requests, "One approved synthetic review"),
+      metric("Independent effects", d.delivery.independent_action_count, "Exact native readback"),
+      metric("Snowflake decision", d.feedback_decision.decision_action.toUpperCase(), "Was clarify_need"),
+      metric("Native SQL queries", d.native_counts.distinct_snowflake_query_ids, "Recorded across stages"),
     );
   } else if (entry.investigation === "control") {
     const d = json("observation.json").summary;
