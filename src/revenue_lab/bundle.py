@@ -243,7 +243,11 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if source == "seller":
+    if source == "connected":
+        from .connected_checks import verify_connected
+
+        checks = verify_connected(manifest, files)
+    elif source == "seller":
         checks = verify_seller(manifest, files)
     else:
         from .domain_checks import verify_control, verify_revenue
