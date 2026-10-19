@@ -17,6 +17,7 @@ CASES = {
     "seller": "seller-application",
     "control": "control-recovery",
     "revenue": "revenue-correction",
+    "connected": "connected-roundtrip",
 }
 TABS = ["Decision & outcome", "Source records", "Evidence timeline", "Compare & verify"]
 
@@ -59,6 +60,12 @@ def main():
         "--evidence", type=Path, default=ROOT / ".cache/visual-review/capture.json"
     )
     args = parser.parse_args()
+    # Bundle downloads are generated locally. This never contacts source vendors.
+    import sys
+    sys.path.insert(0, str(ROOT / "src"))
+    from revenue_lab.site import build as build_static
+
+    build_static()
     args.images.mkdir(parents=True, exist_ok=True)
     args.evidence.parent.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer(
@@ -164,10 +171,12 @@ def main():
                         )
                         != "none"
                     )
-                    page.get_by_text(
-                        "Reproduce this investigation · fresh local execution",
-                        exact=True,
-                    ).click()
+                    expected_label = (
+                        "Verify this native record offline"
+                        if investigation == "connected"
+                        else "Reproduce this investigation · fresh local execution"
+                    )
+                    page.get_by_text(expected_label, exact=True).click()
                     assert page.locator("#fresh").is_hidden()
                     assert page.locator("#commands").inner_text().strip()
                     if width == 1440:
