@@ -16,6 +16,7 @@ from revenue_lab.cli import run
         "seller-support-review",
         "seller-stale",
         "seller-suppressed",
+        "connected-roundtrip",
     ],
 )
 def test_preserved_and_executed_evidence(name):
