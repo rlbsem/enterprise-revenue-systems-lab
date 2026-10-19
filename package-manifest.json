@@ -175,8 +175,8 @@
       "bytes": 150
     },
     "scripts/capture_presentation.py": {
-      "sha256": "64b340844db97c00e877cd64107bc1e55fb1e4cbf79499d9e905bb1ad863793e",
-      "bytes": 12283
+      "sha256": "9c0a2d0d77ca07fec82fa438ceaacfce1a44704c37623fdfe4bad414c8b1ee75",
+      "bytes": 13275
     },
     "scripts/check_repository.py": {
       "sha256": "cb3b688bba76a1a7a00e06f6923ed72f7eaf1252744f4ceafb61796b4ed55fb3",
