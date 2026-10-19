@@ -2,6 +2,19 @@
   "version": 1,
   "scenarios": [
     {
+      "id": "connected-roundtrip",
+      "investigation": "connected",
+      "title": "Salesforce and Snowflake round trip",
+      "summary": "A governed CRM review survives a lost acknowledgment and changes the next warehouse decision.",
+      "manifest_sha256": "3db928ea93bbe649f65f49cc8a21fe163785c613f87997af9552167a220dd865",
+      "verification_sha256": "ae0f89d72e0b484751ac46dae2be1097af8f6302982657a9105a91230f009b2c",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "control-recovery",
       "investigation": "control",
       "title": "Uncertain delivery and recovery",
