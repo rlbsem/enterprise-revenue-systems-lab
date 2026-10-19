@@ -536,6 +536,9 @@ function render() {
     localConfig?.execution_enabled && localConfig.allowed.includes(entry.id)
   );
   $("#fresh-status").textContent = localConfig?.fresh_inference || "";
+  $(".local-execution summary").textContent = entry.investigation === "connected"
+    ? "Verify this native record offline"
+    : "Reproduce this investigation · fresh local execution";
   $("#local-note").textContent = entry.investigation === "connected"
     ? "The original native run is archived in Customer Signal & Activation. This case supports offline evidence verification only; no Salesforce or Snowflake calls are made."
     : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
