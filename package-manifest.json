@@ -255,8 +255,8 @@
       "bytes": 106
     },
     "tests/test_browser.py": {
-      "sha256": "4588d040e25f0c6620820b516168747aa2772f50b26bd2f6dc89d1cd89f79e70",
-      "bytes": 14944
+      "sha256": "1d0fbadbe64578c430cc5b5489685a285566df217cc6c79876cb22fa5d027b55",
+      "bytes": 15115
     },
     "tests/test_bundles.py": {
       "sha256": "5f1bfee425b23ddf0744846af7d0aec6928fe50f15ff18cd14cc54b225aad3c2",
