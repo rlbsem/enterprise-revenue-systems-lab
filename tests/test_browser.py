@@ -3,6 +3,7 @@ import json
 import os
 import shutil
 import threading
+import zipfile
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -254,7 +255,16 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
         p.relative_to(ROOT / "web") for p in (ROOT / "web").rglob("*") if p.is_file()
     }
     actual = {p.relative_to(directory) for p in directory.rglob("*") if p.is_file()}
-    assert actual == expected
+    # The connected native evidence download is built deterministically from its
+    # pinned source bundle. It is generated at build time, not tracked as binary.
+    generated = Path("evidence/connected-roundtrip/reproduction.zip")
+    assert actual == expected | {generated}
+    with zipfile.ZipFile(directory / generated) as packaged:
+        assert packaged.testzip() is None
+        assert packaged.read("bundle.json") == (
+            directory / "evidence/connected-roundtrip/bundle.json"
+        ).read_bytes()
+        assert "REPRODUCE.txt" in packaged.namelist()
     assert not any(p.is_symlink() for p in directory.rglob("*"))
     server = ThreadingHTTPServer(
         ("127.0.0.1", 0), functools.partial(Quiet, directory=str(tmp_path))
