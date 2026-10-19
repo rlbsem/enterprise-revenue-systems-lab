@@ -1,0 +1,121 @@
+[
+  {
+    "action": "Original Salesforce state",
+    "detail": "One synthetic account, two Reviewed records",
+    "body": {
+      "account": "account-0012",
+      "counts": {
+        "accounts": 1,
+        "reviews": 2,
+        "pending": 0
+      }
+    }
+  },
+  {
+    "action": "Initial Snowflake recommendation",
+    "detail": "clarify_need",
+    "body": {
+      "account_source_ref": "44101f455a50df67530a690cee4f5ee9adabb64b31f09c7ec72a83d3204f43b1",
+      "source_modified_at": "2026-10-15T23:03:28.000000Z",
+      "brand": "cedar",
+      "account_key": "account-0012",
+      "owner_key": "cedar-east",
+      "owner_ref": "906c4463e297a9d7b514a1db775d7d686c6a1b5e0d03714308cf23a3ec3d117f",
+      "active": true,
+      "synthetic": true,
+      "review_count": 2,
+      "pending_count": 0,
+      "reviewed_count": 2,
+      "rejected_count": 0,
+      "decision_action": "clarify_need",
+      "source_hash": "3a756dc69428c13bd981d66554b797ff907667b28d4e34f0c6ed3be2a1446e48",
+      "decision_hash": "145bf75572372761446362eea3a8c1d7e28311d81e713af1dd87923bb04723cf"
+    }
+  },
+  {
+    "action": "One approved synthetic CRM review",
+    "detail": "Policy approval, not human customer outreach",
+    "body": {
+      "action_key": "def73e6d05e7f05f6005649882f0d7aec9096d42275b094691d8abbac2032e94",
+      "action": "clarify_need",
+      "approval": "owner_authorized_synthetic_policy_not_human_business_review"
+    }
+  },
+  {
+    "action": "Lost acknowledgment and receipt recovery",
+    "detail": "One Salesforce POST; existing effect recovered",
+    "body": {
+      "first_state": "retry",
+      "restarted_state": "delivered",
+      "repeated_state": "delivered",
+      "post_requests": 1
+    }
+  },
+  {
+    "action": "Independent Salesforce readback",
+    "detail": "Thirteen immutable fields checked",
+    "body": {
+      "exact_fields": 13,
+      "independent_readback": true,
+      "action_key": "def73e6d05e7f05f6005649882f0d7aec9096d42275b094691d8abbac2032e94"
+    }
+  },
+  {
+    "action": "Updated Snowflake decision",
+    "detail": "hold, after one new Pending review",
+    "body": {
+      "account_source_ref": "44101f455a50df67530a690cee4f5ee9adabb64b31f09c7ec72a83d3204f43b1",
+      "source_modified_at": "2026-10-15T23:03:28.000000Z",
+      "brand": "cedar",
+      "account_key": "account-0012",
+      "owner_key": "cedar-east",
+      "owner_ref": "906c4463e297a9d7b514a1db775d7d686c6a1b5e0d03714308cf23a3ec3d117f",
+      "active": true,
+      "synthetic": true,
+      "review_count": 3,
+      "pending_count": 1,
+      "reviewed_count": 2,
+      "rejected_count": 0,
+      "decision_action": "hold",
+      "source_hash": "22e3e085a66f34c2911c222ad16ebce5d206a7341cd5f7864443d062091a7dc6",
+      "decision_hash": "ddb053e10444d2ede4b29538e23dd156aab10c98785092f6466971670dbcd0f4"
+    }
+  },
+  {
+    "action": "Read-only cleanup confirmation",
+    "detail": "Warehouse SUSPENDED, zero integration schemas",
+    "body": {
+      "status": "PASSED",
+      "observed_utc": "2026-10-18T02:00:38.185430+00:00",
+      "warehouse_state": "SUSPENDED",
+      "integration_schemas_remaining": 0,
+      "operations": "metadata_only_no_resume_no_ddl_no_dml",
+      "queries": [
+        {
+          "statement_sha256": "9c24646004f1bd0297371e67d7c7933159eefaaada7fe2dfb9cb6f38c9bd99e0",
+          "status": "succeeded",
+          "query_id": "01c7cd78-0109-00d4-0011-d6b6000508f2",
+          "client_elapsed_ms": 125
+        },
+        {
+          "statement_sha256": "c9159c415cf1d06889bd3d352c36dd4f8f895ce367db2904fdb99f2bc51de0db",
+          "status": "succeeded",
+          "query_id": "01c7cd78-0109-00e2-0011-d6b60004515a",
+          "client_elapsed_ms": 250
+        },
+        {
+          "statement_sha256": "aafb7a81492738223bf5a9a718c479d38d0866a4da01ebf445375ac09c69309e",
+          "status": "succeeded",
+          "query_id": "01c7cd78-0109-00e4-0011-d6b60004887a",
+          "client_elapsed_ms": 343
+        },
+        {
+          "statement_sha256": "5044d075a757f3b3bf2ad877edf066133336162cdd34b6a5697fb902ff8ef24e",
+          "status": "succeeded",
+          "query_id": "01c7cd78-0109-00e5-0011-d6b6000490b2",
+          "client_elapsed_ms": 641
+        }
+      ]
+    }
+  }
+]
