@@ -35,6 +35,7 @@ python -m venv .venv
 # macOS/Linux: source .venv/bin/activate
 python -m pip install -r requirements.lock
 python -m pip install --no-deps --no-build-isolation -e .
+revenue-lab build
 revenue-lab serve
 ```
 
