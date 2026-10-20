@@ -77,7 +77,7 @@ The Lab is a companion interface and execution adapter. It calls the existing en
 
 The browser checks catalog-pinned artifact integrity. The standalone verifier additionally tests selected underlying relationships: exact source quotations, approved payload identity, receiver receipts, uncertainty/recovery observations, account-level source totals and exported analytical rowsets. A self-reported success field or valid hash alone is insufficient.
 
-Independent blinded seller usefulness, real-vendor interoperability, AWS operation, Snowflake execution, stress-profile performance and commercial uplift remain unproven by this Lab. [Architecture and trust boundaries](docs/architecture.md).
+The hosted explorer displays the recorded native Salesforce–Snowflake round trip and makes no vendor calls. Independent blinded seller usefulness, production deployment, stress-profile performance and commercial uplift remain outside the Lab's evidence. [Architecture and trust boundaries](docs/architecture.md).
 
 ## Validate and package
 
