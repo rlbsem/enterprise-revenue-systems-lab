@@ -189,18 +189,23 @@ def check_site(base, expected, output, *, source_links=False):
         record("navigation_and_keyboard", navigation)
 
         def imports():
-            page.goto(base + "?case=seller-application", wait_until="networkidle")
+            page.goto(base + "?case=revenue-correction", wait_until="networkidle")
+            page.get_by_role("heading", name="Late correction and equivalent rebuild", exact=True).wait_for()
             page.get_by_text("Validate a downloaded portable bundle", exact=True).click()
-            page.get_by_label("Portable evidence JSON").set_input_files(expected / "evidence/seller-application/portable.json")
+            page.get_by_label("Portable evidence JSON").set_input_files(expected / "evidence/seller-support-review/portable.json")
             page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
-            portable = json.loads((expected / "evidence/seller-application/portable.json").read_text(encoding="utf-8"))
-            portable["artifacts"]["application.json"] += " "
+            page.go_back(wait_until="networkidle")
+            page.get_by_role("heading", name="Late correction and equivalent rebuild", exact=True).wait_for()
+            page.go_forward(wait_until="networkidle")
+            page.get_by_role("heading", name="A passing draft with an unsupported claim", exact=True).wait_for()
+            portable = json.loads((expected / "evidence/seller-support-review/portable.json").read_text(encoding="utf-8"))
+            portable["artifacts"]["trace.json"] += " "
             tampered = output / "tampered.json"
             write_json(tampered, portable)
             page.get_by_label("Portable evidence JSON").set_input_files(tampered)
             page.locator("#status").filter(has_text="Verification refused").wait_for()
             assert "Artifact integrity mismatch" in page.locator("#status").inner_text()
-            return "Unchanged pinned bundle accepted; one-byte artifact mutation refused; no execution"
+            return "Pinned bundle accepted with one history entry; one-byte artifact mutation refused; no execution"
 
         record("portable_import", imports)
         # Public-source reachability is separate from the application's strict network boundary.

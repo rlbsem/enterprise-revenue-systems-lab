@@ -4,7 +4,7 @@ These observations test the recorded evidence explorer. They do not represent ne
 
 ## Public deployment
 
-[Actual public observations](2026-10-20-public.json) were captured from `https://rlbsem.github.io/enterprise-revenue-systems-lab/` using real Chromium. The latest successful [Pages deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/39318481410) was revision `e4031c4c043876193741d9d09969797f9b81dfc5`. Its HTML, CSS, JavaScript and catalog matched the inspected checkout's original web files; the report records their SHA-256 values.
+[Actual public observations](2026-10-20-public.json) were captured from `https://rlbsem.github.io/enterprise-revenue-systems-lab/` using real Chromium and the verifier at revision `a6613911411e4f7f41888491967e07f0df932f9e`. The latest successful [Pages deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/39318481410) was revision `e4031c4c043876193741d9d09969797f9b81dfc5`. Its HTML, CSS, JavaScript and catalog matched the inspected checkout's original web files; the report records their SHA-256 values.
 
 Passed observations:
 
@@ -21,7 +21,7 @@ The aggregate public check **failed**, correctly, on two groups: case navigation
 
 The complete local suite passed **67 tests** (60 existing plus seven new). New negative checks reject changed ZIP artifacts, changed manifests, extra/path-traversal members, duplicate members and missing members. The shared browser check also tests accepted and tampered imports, all cases at both sizes, and the static-only boundary. Unsupported target hosts are rejected before a browser opens.
 
-The changes fix URL/history synchronization, make the main landmark focusable through the skip link, and limit local-API discovery to loopback hosts. Existing server-side execution authorization remains intact. No evidence or business logic was changed.
+The changes fix URL/history synchronization (including a single history entry for imported cases), make the main landmark focusable through the skip link, and limit local-API discovery to loopback hosts. Existing server-side execution authorization remains intact. No evidence or business logic was changed.
 
 ## Reproduce and interpret
 

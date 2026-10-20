@@ -1,6 +1,6 @@
 {
-  "observed_at": "2026-10-20T18:12:33.440944+00:00",
-  "url": "http://127.0.0.1:54316/enterprise-revenue-systems-lab/",
+  "observed_at": "2026-10-20T18:17:50.307293+00:00",
+  "url": "http://127.0.0.1:57519/enterprise-revenue-systems-lab/",
   "scope": "Recorded static explorer only; no new inference or native vendor execution",
   "checks": [
     {
@@ -9,7 +9,7 @@
       "detail": {
         "index.html": "69f5e8f545850d6d049c6c1b89b44bf731045113e0b8667cd7f849a6b58544d9",
         "style.css": "bf92187af37c003e5eef19185a1678fe64f4561965a43398301952e4090de945",
-        "app.js": "4ebcfccf7e2c4edad1555af6d5147a3365172f7cbafa5c4bc5e292057f71718f",
+        "app.js": "1b0b986a64c01fe3f915951c558376d8d4a4dc7a89d2c91897e4f2ebfeea168f",
         "catalog.json": "b085010b0114fb7ac35f38b87d5e4e7638e5e622f03e56160afd86adbbcfddec"
       }
     },
@@ -452,7 +452,7 @@
     {
       "name": "portable_import",
       "status": "passed",
-      "detail": "Unchanged pinned bundle accepted; one-byte artifact mutation refused; no execution"
+      "detail": "Pinned bundle accepted with one history entry; one-byte artifact mutation refused; no execution"
     },
     {
       "name": "static_only_boundary",

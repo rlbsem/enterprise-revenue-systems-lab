@@ -818,9 +818,7 @@ $("#import").addEventListener("change", async (e) => {
     const p = JSON.parse(await e.target.files[0].text());
     const known = catalog.scenarios.find((s) => s.id === p.manifest.scenario);
     if (!known) throw Error("Unknown scenario");
-    await investigate(known.investigation);
-    $("#scenario").value = known.id;
-    await load(known.id);
+    await investigate(known.investigation, known.id);
     manifest = p.manifest;
     artifacts = p.artifacts;
     artifacts["verification.json"] = JSON.stringify({
