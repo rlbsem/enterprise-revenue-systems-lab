@@ -29,7 +29,7 @@ for item in catalog["scenarios"]:
             == (path / artifact["path"]).read_bytes()
         )
 links = 0
-for path in [ROOT / "README.md", *(ROOT / "docs").glob("*.md")]:
+for path in [ROOT / "README.md", *(ROOT / "docs").rglob("*.md")]:
     for target in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
         if target.startswith(("https://", "http://", "#", "mailto:")):
             continue

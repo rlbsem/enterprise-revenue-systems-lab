@@ -611,7 +611,7 @@ function render() {
       " original artifacts · integrity not yet checked in this browser.",
   );
 }
-async function load(id) {
+async function load(id, historyMode = "push") {
   const sequence = ++loadSequence;
   const next = catalog.scenarios.find((x) => x.id === id);
   const p = await fetch("evidence/" + id + "/portable.json").then((r) => {
@@ -627,6 +627,14 @@ async function load(id) {
   if (sequence !== loadSequence) return;
   freshResult = null;
   entry = next;
+  $("#scenario").value = id;
+  const address = new URL(location.href);
+  if (historyMode !== "none" && address.searchParams.get("case") !== id) {
+    address.searchParams.set("case", id);
+    history[historyMode === "replace" ? "replaceState" : "pushState"](
+      null, "", address,
+    );
+  }
   selectedRun = 0;
   step = null;
   manifest = p.manifest;
@@ -643,7 +651,7 @@ async function load(id) {
   $("#download").download = "reproduction.zip";
   render();
 }
-async function investigate(key) {
+async function investigate(key, selectedCase = null, historyMode = "push") {
   const t = titles[key];
   $("#crumb").textContent = names[key];
   $("#eyebrow").textContent = "INVESTIGATION " + t[0];
@@ -663,7 +671,12 @@ async function investigate(key) {
     o.value = e.id;
     select.append(o);
   }
-  if (select.options.length) await load(select.value);
+  if (select.options.length) {
+    const chosen = catalog.scenarios.find(
+      (e) => e.id === selectedCase && e.investigation === key,
+    );
+    await load(chosen?.id || select.value, historyMode);
+  }
   else {
     $("#panel").replaceChildren(
       el("div", "This investigation has no verified bundle yet.", "empty"),
@@ -819,21 +832,30 @@ $("#import").addEventListener("change", async (e) => {
   }
 });
 try {
-  try {
-    const c = await fetch("api/config");
-    if (c.ok) localConfig = await c.json();
-  } catch {}
+  // The hosted explorer has no execution API. Only the loopback preview may
+  // discover the opt-in local server; server-side authority checks still apply.
+  if (["127.0.0.1", "localhost"].includes(location.hostname)) {
+    try {
+      const c = await fetch("api/config");
+      if (c.ok) localConfig = await c.json();
+    } catch {}
+  }
   catalog = await fetch("catalog.json").then((r) => r.json());
   const desired = new URLSearchParams(location.search).get("case");
   const found = catalog.scenarios.find((e) => e.id === desired);
-  await investigate(found?.investigation || "seller");
-  if (found) {
-    $("#scenario").value = found.id;
-    await load(found.id);
-  }
+  await investigate(found?.investigation || "seller", found?.id, "replace");
 } catch (e) {
   status("Evidence loading failed · " + e.message, true);
 }
+
+window.addEventListener("popstate", () => {
+  const id = new URLSearchParams(location.search).get("case");
+  const found = catalog.scenarios.find((e) => e.id === id);
+  if (found?.id === entry?.id) return;
+  investigate(found?.investigation || "seller", found?.id, "none").catch(
+    (error) => status("Evidence loading failed · " + error.message, true),
+  );
+});
 
 const tabButtons = Array.from(document.querySelectorAll("[data-view]"));
 tabButtons.forEach((button, index) => {

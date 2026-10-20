@@ -67,7 +67,7 @@ The opt-in local interface, `revenue-lab serve --execute`, invokes only approved
 - The revenue execution ran **three dbt builds**, each with 15 models and 30 tests. Bidirectional `EXCEPT ALL` observed zero differences across all 15 corrected model rowsets. The opportunity daily model contains **12,470,664 rows**. The compact bundle includes selected source/model rows; repeating the entire warehouse comparison requires fresh execution.
 - One additional **actual local Qwen3-14B inference** was executed, with original-engine approval/delivery and observed synthetic receiver effects. Its automatic scenario approval is not independent human review. The original 120-case comparison is separate and its unsupported-language review finding remains preserved.
 
-The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local test results do not imply a successful hosted run. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
+The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local test results do not imply a successful hosted run. [Hosted verification](docs/evidence/hosted-verification/README.md) records public-site observations separately from candidate-build checks. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
 
 <img src="docs/images/revenue-overview.png" alt="Revenue investigation screenshot" width="780">
 
