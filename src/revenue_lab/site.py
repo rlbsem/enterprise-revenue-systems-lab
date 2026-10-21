@@ -8,6 +8,18 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "gtm-enterprise": (
+        "gtm", "120 accounts · USD $3.46M synthetic pipeline",
+        "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
+    ),
+    "gtm-salesforce": (
+        "gtm", "Native Salesforce · one guarded SDR Task",
+        "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
+    ),
+    "gtm-qwen": (
+        "gtm", "Recorded Qwen3 · advice and refusal",
+        "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
+    ),
     "connected-roundtrip": (
         "connected",
         "Salesforce and Snowflake round trip",

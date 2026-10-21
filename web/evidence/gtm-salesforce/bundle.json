@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "scenario": "gtm-salesforce",
+  "source": {
+    "repository": "rlbsem/gtm-pipeline-orchestration",
+    "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-21T19:28:19.030427+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "acceptance.json",
+      "sha256": "7a90158578258dd269077ce1c7267d555176afb9b9047b8bdfaef3f938833b1b",
+      "bytes": 51961
+    },
+    {
+      "path": "native-details.json",
+      "sha256": "a2e06649714aff7dde7f231f4d08b99dc90b57feb8c5f0305bf02667b7221f4d",
+      "bytes": 19164
+    },
+    {
+      "path": "post-cleanup.json",
+      "sha256": "36668d1ef99907358b5a6c2c4b5b805c8cc670554cc0e4b10b62429e988fe4db",
+      "bytes": 13570
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "5dd8fb5fa2144cdc7dc58bca56121a1179df9980cebfead9c45b59dde1f98b80",
+      "bytes": 1547
+    },
+    {
+      "path": "observation.json",
+      "sha256": "b1cf64237de2a54c517a7b8656015665534b27e6eca99c75893bfdf0022d1428",
+      "bytes": 230
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "5b796dbe79df64ebeb32bd65ffc3ad75b958929a3e04213186f539404b8c8cf3",
+      "bytes": 62669
+    }
+  ],
+  "limitations": [
+    "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+    "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+    "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+  ],
+  "input_hashes": {
+    "acceptance.json": "7a90158578258dd269077ce1c7267d555176afb9b9047b8bdfaef3f938833b1b",
+    "native-details.json": "a2e06649714aff7dde7f231f4d08b99dc90b57feb8c5f0305bf02667b7221f4d",
+    "post-cleanup.json": "36668d1ef99907358b5a6c2c4b5b805c8cc670554cc0e4b10b62429e988fe4db",
+    "upstream.json": "5dd8fb5fa2144cdc7dc58bca56121a1179df9980cebfead9c45b59dde1f98b80"
+  },
+  "reproduce": [
+    "python -m revenue_lab.cli verify web/evidence/gtm-salesforce"
+  ],
+  "configuration_hash": "00056c4ff917f958b4d1d645911fe4f49da4b0e407c4319e65909e5b5c5dbf02"
+}

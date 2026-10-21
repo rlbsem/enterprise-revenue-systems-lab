@@ -1,0 +1,14 @@
+{
+  "repository": "rlbsem/gtm-pipeline-orchestration",
+  "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+  "lane": "gtm-qwen",
+  "artifacts": [
+    {
+      "file": "evaluation.json",
+      "source_path": "docs/evidence/native-ai/ai-evaluation.json",
+      "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+      "sha256": "fa42652d84a649544d914b6b84ff90aa8bac53ae385f63b7eee45e4c40f6ba33",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/native-ai/ai-evaluation.json"
+    }
+  ]
+}

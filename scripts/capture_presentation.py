@@ -18,6 +18,7 @@ CASES = {
     "control": "control-recovery",
     "revenue": "revenue-correction",
     "connected": "connected-roundtrip",
+    "gtm": "gtm-enterprise",
 }
 TABS = ["Decision & outcome", "Source records", "Evidence timeline", "Compare & verify"]
 
@@ -55,6 +56,7 @@ def digest(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--investigation", choices=CASES, help="Capture only one investigation; default reviews all")
     parser.add_argument("--images", type=Path, default=ROOT / ".cache/visual-review")
     parser.add_argument(
         "--evidence", type=Path, default=ROOT / ".cache/visual-review/capture.json"
@@ -91,7 +93,9 @@ def main():
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
     url = f"http://127.0.0.1:{server.server_port}/"
-    catalog = json.loads((ROOT / "web/catalog.json").read_text())
+    catalog = json.loads((ROOT / "web/catalog.json").read_text(encoding="utf-8"))
+    if args.investigation:
+        catalog["scenarios"] = [c for c in catalog["scenarios"] if c["investigation"] == args.investigation]
     errors, requests, reviews, images = [], [], [], {}
     try:
         with sync_playwright() as pw:
@@ -145,9 +149,10 @@ def main():
                         )
                     page.get_by_role("tab", name=TABS[0], exact=True).click()
                     page.evaluate("scrollTo(0,0)")
-                    if width in (1440, 390) and scenario == CASES[investigation]:
+                    if width in (1440, 390) and (scenario == CASES[investigation] or investigation == "gtm"):
                         suffix = "overview" if width == 1440 else "mobile"
-                        image = args.images / f"{investigation}-{suffix}.png"
+                        image_name = scenario if investigation == "gtm" else investigation
+                        image = args.images / f"{image_name}-{suffix}.png"
                         if width == 390:
                             image = args.images / "visual-refresh" / image.name
                         image.parent.mkdir(parents=True, exist_ok=True)
@@ -189,6 +194,8 @@ def main():
                         != "none"
                     )
                     expected_label = (
+                        "Verify these separate records offline"
+                        if investigation == "gtm" else
                         "Verify this native record offline"
                         if investigation == "connected"
                         else "Reproduce this investigation · fresh local execution"
@@ -243,6 +250,7 @@ def main():
         "browser_version": browser_version,
         "stylesheet_sha256": digest(ROOT / "web/style.css"),
         "app_sha256": digest(ROOT / "web/app.js"),
+        "gtm_sha256": digest(ROOT / "web/gtm.js"),
         "html_sha256": digest(ROOT / "web/index.html"),
         "catalog_sha256": digest(ROOT / "web/catalog.json"),
         "images": images,

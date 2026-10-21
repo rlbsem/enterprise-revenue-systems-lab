@@ -1,0 +1,21 @@
+{
+  "repository": "rlbsem/gtm-pipeline-orchestration",
+  "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+  "lane": "gtm-enterprise",
+  "artifacts": [
+    {
+      "file": "execution.json",
+      "source_path": "docs/evidence/enterprise-usd/demo.json",
+      "recorded_source_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+      "sha256": "8ef8f721cce5427d426228e3f8c1c3e1dfd45ea0ae860be926a86399c0204426",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/enterprise-usd/demo.json"
+    },
+    {
+      "file": "scenario.json",
+      "source_path": "src/gtm/enterprise-scenario.json",
+      "recorded_source_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+      "sha256": "e5d144e835020a7acd3fbcb5ac78f41424749bd92aa4b439478e8a7fd5284cd8",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/src/gtm/enterprise-scenario.json"
+    }
+  ]
+}

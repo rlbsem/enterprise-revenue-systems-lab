@@ -28,6 +28,45 @@
       "mode": "fresh_engine"
     },
     {
+      "id": "gtm-enterprise",
+      "investigation": "gtm",
+      "title": "120 accounts · USD $3.46M synthetic pipeline",
+      "summary": "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
+      "manifest_sha256": "e798bffca98b50144b68efb1daba7a9e626dfd670c5c9e3577fe877bc7ad3e3c",
+      "verification_sha256": "2890fb8e9e036f5f74f0c3df9e19b67e4fc12d70edd012e439cc1fcdb583e186",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-qwen",
+      "investigation": "gtm",
+      "title": "Recorded Qwen3 · advice and refusal",
+      "summary": "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
+      "manifest_sha256": "2c9c445b19cee758f69d524237b5ef858a4e9cf15734695488ca8525cf5477f1",
+      "verification_sha256": "04aae9cf9f8781dff8bea781d634567bfbb27cff335fc90e7feae5852c4df2c1",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-salesforce",
+      "investigation": "gtm",
+      "title": "Native Salesforce · one guarded SDR Task",
+      "summary": "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
+      "manifest_sha256": "fb418b416e9492bbec63fefffcd109c387126b401687afd9d8cb10493ee622a5",
+      "verification_sha256": "ef58f4e7957bebd28c820b924d628cbaba06928f1225447e5548f34b7e4203ad",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "revenue-bridge",
       "investigation": "revenue",
       "title": "Installed ARR and quarterly flows",

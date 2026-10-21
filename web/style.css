@@ -66,6 +66,7 @@ summary:focus-visible {
   color: #d0e0ec;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 .brand {
   display: flex;
@@ -806,3 +807,16 @@ th {
     overflow: auto;
   }
 }
+
+/* GTM investigation: retain the Lab palette and expose each independent boundary. */
+.gtm-lanes { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 26px; }
+.gtm-lanes a { border:1px solid var(--line); border-radius:5px; padding:10px 12px; font-size:12px; }
+.gtm-lanes a[aria-current] { background:var(--nav); color:#fff; }
+.gtm-origin { display:grid; gap:5px; margin:14px 0; overflow-wrap:anywhere; }
+.gtm-origin small, table caption { color:var(--muted); font-size:11px; text-align:left; }
+.gtm-origin code { font-size:10px; overflow-wrap:anywhere; }
+#gtm-account, #gtm-model, #gtm-request { margin:8px 0 20px; }
+.gtm-investigation > section { margin-top:25px; }
+.gtm-investigation td small { display:block; overflow-wrap:anywhere; }
+.gtm-investigation .columns > section { min-width:0; }
+@media(max-width:760px) { .gtm-lanes a { flex:1 1 100%; } }

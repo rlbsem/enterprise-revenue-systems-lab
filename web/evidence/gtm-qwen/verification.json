@@ -1,0 +1,18 @@
+{
+  "scenario": "gtm-qwen",
+  "integrity": "verified",
+  "checks": {
+    "actual_responses": 16,
+    "exact_citation_passes": 10,
+    "preserved_failures": 6,
+    "semantic_support": "not_independently_evaluated",
+    "scope": "Recorded Qwen3 advisory evaluation with its own local policy observations; not native Salesforce execution",
+    "upstream_files": 1,
+    "new_vendor_or_model_execution": false
+  },
+  "limitations": [
+    "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+    "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+    "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+  ]
+}

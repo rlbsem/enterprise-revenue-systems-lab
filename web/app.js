@@ -1,5 +1,13 @@
+import { gtmPanel, gtmMetrics } from "./gtm.js";
 const $ = (s) => document.querySelector(s);
 const titles = {
+  gtm: [
+    "05 · GTM ENGINEERING",
+    "From Account Intelligence\nto Qualified Pipeline",
+    "Inspect qualification, owned routing, reviewed advice and synthetic opportunity evidence. Three recorded execution sets reveal different boundaries.",
+    "A funnel is not a proof chain.",
+    "Source economics, native CRM effects and model advice need separate evidence.",
+  ],
   seller: [
     "01 · APPLIED AI",
     "Can this AI seller\naction be trusted?",
@@ -30,6 +38,7 @@ const titles = {
   ],
 };
 const names = {
+  gtm: "GTM PIPELINE",
   seller: "SELLER AUTHORITY",
   control: "EXECUTION RECOVERY",
   revenue: "COMMERCIAL INTEGRITY",
@@ -132,13 +141,17 @@ function sourcesPanel() {
     }
     panel.append(q);
   }
-  const label = el("label", "Inspect an original artifact", "panel-title");
+  const label = el("label", entry.investigation === "gtm"
+    ? "Inspect a packaged artifact · original records and derived metadata"
+    : "Inspect an original artifact", "panel-title");
   label.htmlFor = "artifact";
   panel.append(label);
   const choice = el("select", undefined, "artifact-select");
   choice.id = "artifact";
   for (const name of Object.keys(artifacts)) {
-    const o = el("option", name);
+    const original = entry.investigation === "gtm" && json("upstream.json").artifacts.some(a => a.file === name);
+    const o = el("option", name + (entry.investigation === "gtm"
+      ? original ? " · upstream original" : " · derived Lab metadata" : ""));
     o.value = name;
     choice.append(o);
   }
@@ -500,6 +513,8 @@ function renderPanel() {
         ? timelinePanel()
         : view === "compare"
           ? comparePanel()
+          : entry.investigation === "gtm"
+            ? gtmPanel(entry.id, {el, section, raw, json, facts, finding})
           : entry.investigation === "seller"
             ? sellerPanel()
             : entry.investigation === "control"
@@ -536,14 +551,23 @@ function render() {
     localConfig?.execution_enabled && localConfig.allowed.includes(entry.id)
   );
   $("#fresh-status").textContent = localConfig?.fresh_inference || "";
-  $(".local-execution summary").textContent = entry.investigation === "connected"
+  $(".local-execution summary").textContent = entry.investigation === "gtm"
+    ? "Verify these separate records offline"
+    : entry.investigation === "connected"
     ? "Verify this native record offline"
     : "Reproduce this investigation · fresh local execution";
-  $("#local-note").textContent = entry.investigation === "connected"
+  $("#reproduction-copy").textContent = entry.investigation === "gtm"
+    ? "Download the original artifact bytes and run offline checks. These commands do not reproduce native Salesforce or model execution. To reproduce the local synthetic pipeline engine, use the pinned GTM repository instructions."
+    : "The public explorer reads recorded files. These commands invoke the original engine in a new isolated workspace. Replay of saved model responses is explicitly labeled; fresh inference needs a configured local endpoint.";
+  $("#local-note").textContent = entry.investigation === "gtm"
+    ? "These are separate archived GTM executions. Verify their artifacts offline; native Salesforce and Qwen3 cannot be rerun from the Lab. No new vendor/model calls occur."
+    : entry.investigation === "connected"
     ? "The original native run is archived in Customer Signal & Activation. This case supports offline evidence verification only; no Salesforce or Snowflake calls are made."
     : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
   const metrics = $("#metrics");
-  if (entry.investigation === "seller") {
+  if (entry.investigation === "gtm") {
+    metrics.replaceChildren(...gtmMetrics(entry.id, json, metric));
+  } else if (entry.investigation === "seller") {
     const obs = json("observation.json");
     metrics.replaceChildren(
       metric("Inference", "Qwen3-14B", "Actual saved model outputs"),
@@ -608,7 +632,9 @@ function render() {
   status(
     "Recorded evidence loaded · " +
       m.artifacts.length +
-      " original artifacts · integrity not yet checked in this browser.",
+      (entry.investigation === "gtm"
+        ? " packaged artifacts · originals and derived metadata labeled · integrity not yet checked in this browser."
+        : " original artifacts · integrity not yet checked in this browser."),
   );
 }
 async function load(id, historyMode = "push") {

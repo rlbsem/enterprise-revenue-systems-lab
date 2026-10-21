@@ -1,6 +1,6 @@
 # Enterprise Revenue Systems Lab
 
-Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization and the differences between bookings, invoices, cash and ARR.
+Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization, GTM pipeline orchestration and the differences between bookings, invoices, cash and ARR.
 
 An AI-generated proposal can cite the right facts and still imply an unsupported commitment. A timed-out write may already have committed. A mature SaaS company can carry $754M of ARR while booking far less in one quarter.
 
@@ -12,9 +12,9 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
+The original three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
 
-## Four investigations
+## Five investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -22,8 +22,9 @@ The three investigation screenshots are captured directly from the current stati
 | What happens when execution becomes uncertain? | Durable PostgreSQL intent, lost acknowledgment, an actual interrupted worker, independently observed receiver rows and reconciled receipts | A timeout is not evidence that a write failed. Idempotency depends on the receiver's actual contract. |
 | Why do commercial numbers disagree? | Original enterprise sources and dbt outputs, independent CSV controls, financial bridges, late corrections and incremental/full comparisons | ARR is a period-end measure; bookings, invoices and cash are distinct flows. |
 | Can a CRM action survive uncertain delivery? | [Native Salesforce and Snowflake evidence](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md): one synthetic CRM review, lost-acknowledgment recovery, exact independent readback and warehouse feedback changing `clarify_need` to `hold` | Owner-authorized synthetic policy, not human customer approval. This Lab displays recorded vendor execution without making new calls. |
+| How does account intelligence become qualified pipeline? | [GTM Pipeline investigation](docs/gtm-investigation.md): a 120-account USD $3.46M synthetic scenario, separate native Salesforce Account/Contact/Task acceptance and separate actual Qwen3 responses | Three recorded execution sets, not one continuous vendor workflow. No commercial uplift or prospect communication. |
 
-The ten cases draw from three pinned source repositories. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The thirteen cases draw from four pinned source repositories. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## Open the application
 
@@ -91,4 +92,12 @@ python scripts/package.py
 
 The static distribution requires no server credentials or inference service. The local execution server stays on loopback and is excluded from public hosting. [Publishing configuration and verification](docs/deployment.md).
 
-The source repositories remain unchanged: [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation), [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane) and [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform).
+The source engine implementations remain unchanged: [Customer Signal & Activation](https://github.com/rlbsem/customer-signal-activation), [Enterprise MarTech / AI Control Plane](https://github.com/rlbsem/enterprise-martech-ai-control-plane), [Revenue Metrics Platform](https://github.com/rlbsem/revenue-metrics-platform) and [GTM Pipeline Orchestration](https://github.com/rlbsem/gtm-pipeline-orchestration).
+
+## GTM pipeline investigation
+
+**From Account Intelligence to Qualified Pipeline** adds account and opportunity inspection, exact review history, native CRM operation records and preserved model failures to the existing navigation. The fifth investigation is available in this candidate build; its public-site deployment is pending review.
+
+<img src="docs/images/gtm/gtm-enterprise-overview.png" alt="Running Lab candidate showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
+
+[Evidence boundaries and verification](docs/gtm-investigation.md) · [Screenshot provenance and tests](docs/evidence/gtm-integration/README.md). In a local preview or approved deployment, open `?case=gtm-enterprise`, `?case=gtm-salesforce` or `?case=gtm-qwen`. The browser reads existing records only; no model or Salesforce access is needed.

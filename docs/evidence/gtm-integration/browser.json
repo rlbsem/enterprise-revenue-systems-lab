@@ -1,0 +1,795 @@
+{
+  "captured_utc": "2026-10-21T19:37:12.196961+00:00",
+  "scope": "Actual static HTML/CSS/JS; existing recorded synthetic bundles only. No new inference, engine run or external system call.",
+  "browser": "Chromium",
+  "browser_version": "140.0.7339.16",
+  "stylesheet_sha256": "dc0b2cfe0556d730f4b2b3b062958d7d497fbc35cb9ee07ba595cc50f6d24c6c",
+  "app_sha256": "ed4f0436da3f7b901805c713fd672303d9745ae64b6cbada60360002c36a7ed3",
+  "gtm_sha256": "541ed6ab6747b49ac407223afcff776d35137c21a1070c2b7da98c5667c90dfb",
+  "html_sha256": "45dcce9ab08af81f060aa116be904d75824a767e8c4be9b5ad4df8cc9ed865cd",
+  "catalog_sha256": "35e918b962a3887b3af674e8bdebd3b2eeb0ad9d6a73a9a7fb7596abc9622652",
+  "images": {
+    "gtm-enterprise-overview.png": {
+      "sha256": "a6d069bca0c86c868ec05a6dfc721a122a390d1d53a165169cdffb17ccc7fe8a",
+      "case": "gtm-enterprise",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-qwen-overview.png": {
+      "sha256": "f7bece8f3a8c4cb455fae4d5b09473d01f5aa2d4b72dee0b522a3a2088db33c7",
+      "case": "gtm-qwen",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-salesforce-overview.png": {
+      "sha256": "c4052766ffd247c9ec316500b3fa9282391605dab0f56f2d43b5179fa448a187",
+      "case": "gtm-salesforce",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-enterprise-mobile.png": {
+      "sha256": "9e519eccacbc664c7b7fb1da98d345817b4747bf54c1fd8d72538e64049f4ef9",
+      "case": "gtm-enterprise",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-qwen-mobile.png": {
+      "sha256": "5ddf6c727db3fb912e8623d24b70f6608443c27d547d03ca8a75d49b05a5f989",
+      "case": "gtm-qwen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-salesforce-mobile.png": {
+      "sha256": "87ee4b1d6165d484edc835e53b1b2f7e5a48c0279fccf33c9b41f51696708f7a",
+      "case": "gtm-salesforce",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    }
+  },
+  "reviews": [
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 196,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 636,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 196,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 636,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 196,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 78,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 636,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 79,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 176,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 616,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 176,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 58,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 616,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 59,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "recorded_cases": [
+    {
+      "id": "gtm-enterprise",
+      "investigation": "gtm",
+      "title": "120 accounts \u00b7 USD $3.46M synthetic pipeline",
+      "summary": "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
+      "manifest_sha256": "e798bffca98b50144b68efb1daba7a9e626dfd670c5c9e3577fe877bc7ad3e3c",
+      "verification_sha256": "2890fb8e9e036f5f74f0c3df9e19b67e4fc12d70edd012e439cc1fcdb583e186",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-qwen",
+      "investigation": "gtm",
+      "title": "Recorded Qwen3 \u00b7 advice and refusal",
+      "summary": "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
+      "manifest_sha256": "2c9c445b19cee758f69d524237b5ef858a4e9cf15734695488ca8525cf5477f1",
+      "verification_sha256": "04aae9cf9f8781dff8bea781d634567bfbb27cff335fc90e7feae5852c4df2c1",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-salesforce",
+      "investigation": "gtm",
+      "title": "Native Salesforce \u00b7 one guarded SDR Task",
+      "summary": "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
+      "manifest_sha256": "fb418b416e9492bbec63fefffcd109c387126b401687afd9d8cb10493ee622a5",
+      "verification_sha256": "ef58f4e7957bebd28c820b924d628cbaba06928f1225447e5548f34b7e4203ad",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    }
+  ],
+  "historical_images": {
+    "docs/images/archive/pre-navy-control-overview.png": "da481cea9dfb78676ddacd0d0d7c132dc0ce9d3277bda481bcf4b8872147143f",
+    "docs/images/archive/pre-navy-revenue-overview.png": "08893c803922c75b9b5bd7c16226b9b058252f40db889f4a469b72a42b288165",
+    "docs/images/archive/pre-navy-seller-overview.png": "5c0894ba902f57ba83e295a4d93ca2b1ead127d952ddc318360e902ac1ecc6bb"
+  },
+  "refusal_state": {
+    "text": "Import refused \u00b7 Cannot read properties of undefined (reading 'scenario')",
+    "contrast": {
+      "checked": 58,
+      "minimum_ratio": 4.584,
+      "failures": []
+    }
+  },
+  "page_errors": [],
+  "network": "GET requests to loopback static server only",
+  "interactions": [
+    "case loading",
+    "all four evidence tabs",
+    "artifact validation",
+    "keyboard tab navigation and visible focus",
+    "exact-byte reproduction ZIP download",
+    "reproduction commands with execution hidden",
+    "invalid import refusal"
+  ],
+  "contrast_scope": "Computed text/solid-background checks; not a complete WCAG audit"
+}
