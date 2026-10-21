@@ -7,7 +7,7 @@
   },
   "mode": "recorded",
   "environment": "independent_synthetic_environment",
-  "packaged_at": "2026-10-21T19:28:18.392596+00:00",
+  "packaged_at": "2026-10-21T23:07:38.555395+00:00",
   "runtime": {
     "python": "3.12.14",
     "platform": "Windows-11-10.0.26200-SP0"
@@ -24,9 +24,14 @@
       "bytes": 1551
     },
     {
+      "path": "regression.json",
+      "sha256": "0dbb0e92c05f199c9b701536db35a0ec5a28d7a317f513035f8c3f6bcea4646c",
+      "bytes": 9669
+    },
+    {
       "path": "upstream.json",
-      "sha256": "e73ef4d7f082d498a2c747cdfcdb58085085efc9741aeceac37dae1ec22de087",
-      "bytes": 1017
+      "sha256": "03cee29768581ebcade8fdc1e4b923c5b1bd02884455a4843f5e0300d7b82a1f",
+      "bytes": 1464
     },
     {
       "path": "observation.json",
@@ -47,7 +52,8 @@
   "input_hashes": {
     "execution.json": "8ef8f721cce5427d426228e3f8c1c3e1dfd45ea0ae860be926a86399c0204426",
     "scenario.json": "e5d144e835020a7acd3fbcb5ac78f41424749bd92aa4b439478e8a7fd5284cd8",
-    "upstream.json": "e73ef4d7f082d498a2c747cdfcdb58085085efc9741aeceac37dae1ec22de087"
+    "regression.json": "0dbb0e92c05f199c9b701536db35a0ec5a28d7a317f513035f8c3f6bcea4646c",
+    "upstream.json": "03cee29768581ebcade8fdc1e4b923c5b1bd02884455a4843f5e0300d7b82a1f"
   },
   "reproduce": [
     "python -m revenue_lab.cli verify web/evidence/gtm-enterprise"

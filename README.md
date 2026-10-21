@@ -96,7 +96,7 @@ The source engine implementations remain unchanged: [Customer Signal & Activatio
 
 ## GTM pipeline investigation
 
-**From Account Intelligence to Qualified Pipeline** adds account and opportunity inspection, exact review history, native CRM operation records and preserved model failures to the existing navigation. The fifth investigation is available in this candidate build; its public-site deployment is pending review.
+**AI Account Intelligence to Qualified Pipeline** lets an SDR inspect account signals, review AI research and a suggested next step, check the responsible owner and CRM handoff, and follow synthetic meeting/opportunity feedback to the existing navigation. The fifth investigation is available in this candidate build; its public-site deployment is pending review.
 
 <img src="docs/images/gtm/gtm-enterprise-overview.png" alt="Running Lab candidate showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
 

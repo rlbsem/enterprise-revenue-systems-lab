@@ -1,6 +1,7 @@
 """Import exact public Git blobs; never execute the GTM engine, a model or a vendor API."""
 
 import argparse
+import ast
 import hashlib
 import json
 import subprocess
@@ -18,13 +19,19 @@ LANES = {
     "gtm-enterprise": [
         ("execution.json", "docs/evidence/enterprise-usd/demo.json", REVISION),
         ("scenario.json", "src/gtm/enterprise-scenario.json", REVISION),
+        ("regression.json", "docs/evidence/enterprise-usd/verification.json", REVISION),
     ],
     "gtm-salesforce": [
         ("acceptance.json", "docs/evidence/salesforce-standard/acceptance.json", NATIVE),
         ("native-details.json", "docs/evidence/salesforce-standard/native-details.json", "62e48215a3609ba136f4ce581f98cc893e2378d9"),
         ("post-cleanup.json", "docs/evidence/salesforce-standard/post-cleanup.json", CLEANUP),
     ],
-    "gtm-qwen": [("evaluation.json", "docs/evidence/native-ai/ai-evaluation.json", AI)],
+    "gtm-qwen": [
+        ("evaluation.json", "docs/evidence/native-ai/ai-evaluation.json", AI),
+        ("model-source.py", "src/gtm/advice.py", AI),
+        ("policy-source.py", "scripts/evaluate_ai.py", AI),
+        ("cases.json", "src/gtm/upgrade_cases.json", AI),
+    ],
 }
 
 
@@ -39,14 +46,15 @@ def main():
     for scenario, entries in LANES.items():
         artifacts, originals = {}, {}
         for name, upstream_path, executed_revision in entries:
-            data = subprocess.check_output(["git", "show", f"{REVISION}:{upstream_path}"], cwd=args.source)
+            read_revision = executed_revision if name in {"model-source.py", "policy-source.py", "cases.json"} else REVISION
+            data = subprocess.check_output(["git", "show", f"{read_revision}:{upstream_path}"], cwd=args.source)
             artifacts[name] = data
-            originals[name] = json.loads(data)
+            originals[name] = json.loads(data) if name.endswith(".json") else data.decode("utf-8")
         upstream = {"repository": lock["sources"]["gtm"]["repository"], "import_revision": REVISION,
                     "lane": scenario, "artifacts": [
                         {"file": name, "source_path": path, "recorded_source_revision": revision,
                          "sha256": hashlib.sha256(artifacts[name]).hexdigest(),
-                         "source_url": f"https://github.com/rlbsem/gtm-pipeline-orchestration/blob/{REVISION}/{path}"}
+                         "source_url": f"https://github.com/rlbsem/gtm-pipeline-orchestration/blob/{revision if name in {'model-source.py', 'policy-source.py', 'cases.json'} else REVISION}/{path}"}
                         for name, path, revision in entries]}
         lock["gtm_imports"][scenario] = upstream
         artifacts["upstream.json"] = upstream
@@ -65,6 +73,12 @@ def main():
                          "detail": r["at"] + " · " + r["role"] + " · recorded request " + str(i + 1), "body": r}
                         for i, r in enumerate(a["requests"])]
         else:
+            tree = ast.parse(originals["model-source.py"])
+            prompt = next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n, ast.Assign)
+                          and any(isinstance(t, ast.Name) and t.id == "prompt" for t in n.targets))
+            artifacts["instructions.json"] = {"system_prompt": prompt["content"],
+                "derivation": "Exact literal extracted from recorded model source, not a new model request",
+                "source": "model-source.py"}
             timeline = [{"action": r["case_id"], "detail": r["executed_at"] + " · recorded Qwen3 inference",
                          "body": r} for r in originals["evaluation.json"]["records"]]
         artifacts["timeline.json"] = timeline

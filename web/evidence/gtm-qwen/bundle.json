@@ -7,7 +7,7 @@
   },
   "mode": "recorded",
   "environment": "independent_synthetic_environment",
-  "packaged_at": "2026-10-21T19:28:19.034427+00:00",
+  "packaged_at": "2026-10-21T23:07:39.183770+00:00",
   "runtime": {
     "python": "3.12.14",
     "platform": "Windows-11-10.0.26200-SP0"
@@ -19,14 +19,34 @@
       "bytes": 129480
     },
     {
+      "path": "model-source.py",
+      "sha256": "74e967f8354c67f7c815c715b2ca3b5d4bf903680da8a970dee4cfa41028b76b",
+      "bytes": 7119
+    },
+    {
+      "path": "policy-source.py",
+      "sha256": "ddcb9d1e1197e052e4f00fb9b9843056c8a0f2c79408d493d02e2529ed4c05da",
+      "bytes": 6299
+    },
+    {
+      "path": "cases.json",
+      "sha256": "2de37f8aaa6872bd6a793e30a7c2074bebc5caf9e69f277909b4d4292bace812",
+      "bytes": 1355
+    },
+    {
       "path": "upstream.json",
-      "sha256": "38802b028a1aa732025e6efc459ee1d90a5d59677e2ee0601fc59a3e7a7b45a2",
-      "bytes": 603
+      "sha256": "993bce57ec60b8767efdbaaa1c1ee65d0be1feeff465803493a5dea952da390c",
+      "bytes": 1794
     },
     {
       "path": "observation.json",
       "sha256": "f80e2b8199d9d507c99ef786d06f5c3690d59d4a54750c06fbbd4af0a29ddaff",
       "bytes": 224
+    },
+    {
+      "path": "instructions.json",
+      "sha256": "9bf970e84e103a4e54a2065bfd54e351ebc95406dfea767d16ddd197d46a3592",
+      "bytes": 598
     },
     {
       "path": "timeline.json",
@@ -41,7 +61,11 @@
   ],
   "input_hashes": {
     "evaluation.json": "fa42652d84a649544d914b6b84ff90aa8bac53ae385f63b7eee45e4c40f6ba33",
-    "upstream.json": "38802b028a1aa732025e6efc459ee1d90a5d59677e2ee0601fc59a3e7a7b45a2"
+    "model-source.py": "74e967f8354c67f7c815c715b2ca3b5d4bf903680da8a970dee4cfa41028b76b",
+    "policy-source.py": "ddcb9d1e1197e052e4f00fb9b9843056c8a0f2c79408d493d02e2529ed4c05da",
+    "cases.json": "2de37f8aaa6872bd6a793e30a7c2074bebc5caf9e69f277909b4d4292bace812",
+    "upstream.json": "993bce57ec60b8767efdbaaa1c1ee65d0be1feeff465803493a5dea952da390c",
+    "instructions.json": "9bf970e84e103a4e54a2065bfd54e351ebc95406dfea767d16ddd197d46a3592"
   },
   "reproduce": [
     "python -m revenue_lab.cli verify web/evidence/gtm-qwen"

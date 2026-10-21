@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import ast
 from collections import Counter
 
 from .bundle import LOCK
@@ -19,6 +20,9 @@ def require(condition, message):
 
 def pipeline(files):
     d, spec = files["execution.json"], files["scenario.json"]
+    regression = files["regression.json"]
+    require(regression["tests"]["tests"] == 163 and not any(regression["tests"][k] for k in ("failures", "errors", "skipped"))
+            and regression["independent_demo_runs"] == 4, "original regression evidence mismatch")
     require(d["fresh_inference"] == d["native_vendors"] == "not_executed", "local pipeline is not native execution")
     require(d["scenario"]["currency"] == d["measurement"]["currency"] == spec["currency"] == "USD", "pipeline currency mismatch")
     require(d["scenario"]["specification_sha256"] == source_digest(spec), "scenario specification mismatch")
@@ -73,6 +77,7 @@ def pipeline(files):
     require(d["reconciliation"]["safe_to_resume"] and not d["reconciliation"]["discrepancies"], "local reconciliation discrepancy")
     require(not d["measurement"]["leakage_accounts"], "holdout exposure leakage")
     return {"accounts": len(accounts), "opportunities": sum(counts.values()), "currency": "USD",
+            "original_regression_tests": regression["tests"]["tests"], "original_independent_demos": regression["independent_demo_runs"],
             "pipeline_cents": sum(values.values()), "pipeline_by_arm_cents": dict(values),
             "method": "Source CRM outcomes, scope multiplication, full account denominator, SQL rows and approvals checked offline",
             "causal_or_commercial_lift": "not_established"}
@@ -108,11 +113,21 @@ def salesforce(files):
 
 def qwen(files):
     d = files["evaluation.json"]
+    require(source_digest(files["cases.json"]) == d["cases_sha256"], "model case configuration mismatch")
+    tree = ast.parse(files["model-source.py"])
+    prompt = next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n, ast.Assign)
+                  and any(isinstance(t, ast.Name) and t.id == "prompt" for t in n.targets))
+    require(prompt["content"] == files["instructions.json"]["system_prompt"], "model instructions mismatch")
+    for name, path in [("model-source.py", "src/gtm/advice.py"), ("policy-source.py", "scripts/evaluate_ai.py")]:
+        require(hashlib.sha256(files[name].encode()).hexdigest() == d["source_sha256"][path], "recorded model source mismatch")
     require(d["inferences_executed"] == len(d["records"]) == 16, "inference count mismatch")
     exact = 0
     for r in d["records"]:
         require(r["inference"] == "executed" and r["advisory_only"], "model execution/authority boundary mismatch")
         require(r["context_hash"] == source_digest(r["context"]), "model context mismatch")
+        request = {"model": r["model"], "messages": [prompt, {"role": "user", "content": json.dumps(r["context"])}],
+                   "temperature": r["temperature"], "seed": r["seed"], "max_tokens": 900, "response_format": {"type": "json_object"}}
+        require(source_digest(request) == r["request_hash"], "recorded model request mismatch")
         if r["validation_error"] is None:
             parsed = json.loads(r["raw_response"])
             require(parsed == r["parsed"], "parsed model text mismatch")

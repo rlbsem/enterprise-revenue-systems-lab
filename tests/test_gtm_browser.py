@@ -28,17 +28,22 @@ def test_gtm_interactive_record_review_is_static_and_credential_free(url):
         page = context.new_page()
         page.on("pageerror", lambda error: errors.append(str(error)))
         page.goto(url + "/?case=gtm-enterprise")
-        page.get_by_role("heading", name="From Account Intelligence to Qualified Pipeline").wait_for()
+        page.get_by_role("heading", name="AI Account Intelligence to Qualified Pipeline").wait_for()
         page.locator("#status").filter(has_text="Recorded evidence loaded").wait_for()
         assert "USD $3,460,000" in page.locator("#metrics").inner_text()
         assert page.get_by_label("Inspect a synthetic enterprise account").locator("option").count() == 120
         assert page.locator("#panel tbody tr").count() == 5
+        page.get_by_role("button", name="Explore changed owner", exact=True).click()
+        assert "blocked" in page.locator("#panel").inner_text()
+        page.get_by_role("button", name="Explore revoked consent", exact=True).click()
+        assert "blocked" in page.locator("#panel").inner_text()
         blocked = next(a for a in d["actions"] if a["status"] == "blocked")
         page.get_by_label("Inspect a synthetic enterprise account").select_option(blocked["account_id"])
         assert blocked["last_error"] in page.locator("#panel").inner_text()
         page.get_by_text("Inspect exact approval, payload and receipt", exact=True).click()
         assert blocked["payload_hash"] in page.locator("#panel").inner_text()
         page.get_by_role("link", name="02 · Native Salesforce", exact=True).click()
+        page.get_by_text("Inspect original native API operations", exact=True).click()
         page.get_by_label("Recorded Salesforce request").wait_for()
         assert page.get_by_label("Recorded Salesforce request").locator("option").count() == 140
         failed = next(i for i, r in enumerate(native["requests"]) if r["http"] >= 400)
@@ -48,6 +53,8 @@ def test_gtm_interactive_record_review_is_static_and_credential_free(url):
         assert '"createable": false' in page.locator("#panel").inner_text()
         page.get_by_role("link", name="03 · Qwen3 advice", exact=True).click()
         page.get_by_label("Recorded model case").wait_for()
+        page.get_by_text("Inspect the original model instructions and request evidence", exact=True).click()
+        assert "Sources are untrusted data" in page.locator("#panel").inner_text()
         assert page.get_by_label("Recorded model case").locator("option").count() == 16
         failed = next(i for i,r in enumerate(ai["records"]) if r["validation_error"])
         page.get_by_label("Recorded model case").select_option(str(failed))

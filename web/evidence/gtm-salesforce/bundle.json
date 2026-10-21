@@ -7,7 +7,7 @@
   },
   "mode": "recorded",
   "environment": "independent_synthetic_environment",
-  "packaged_at": "2026-10-21T19:28:19.030427+00:00",
+  "packaged_at": "2026-10-21T23:07:39.177771+00:00",
   "runtime": {
     "python": "3.12.14",
     "platform": "Windows-11-10.0.26200-SP0"

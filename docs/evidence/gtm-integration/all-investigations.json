@@ -1,13 +1,13 @@
 {
-  "captured_utc": "2026-10-21T19:37:37.018453+00:00",
+  "captured_utc": "2026-10-21T23:10:21.808064+00:00",
   "scope": "Actual static HTML/CSS/JS; existing recorded synthetic bundles only. No new inference, engine run or external system call.",
   "browser": "Chromium",
   "browser_version": "140.0.7339.16",
-  "stylesheet_sha256": "dc0b2cfe0556d730f4b2b3b062958d7d497fbc35cb9ee07ba595cc50f6d24c6c",
-  "app_sha256": "ed4f0436da3f7b901805c713fd672303d9745ae64b6cbada60360002c36a7ed3",
-  "gtm_sha256": "541ed6ab6747b49ac407223afcff776d35137c21a1070c2b7da98c5667c90dfb",
+  "stylesheet_sha256": "108d20d5e1181b75ee954188854df35b673846b2a11b343d3cd9d8bacd990fce",
+  "app_sha256": "78650af8ea1d3c68ab0f98b0456ad299bb4cdfeb7d2366b6145a1f80c7d51214",
+  "gtm_sha256": "7bf0daef55668de6b1d40288f317e63527bd63a5afa6e6102a5ca04aa6e0bdf8",
   "html_sha256": "45dcce9ab08af81f060aa116be904d75824a767e8c4be9b5ad4df8cc9ed865cd",
-  "catalog_sha256": "35e918b962a3887b3af674e8bdebd3b2eeb0ad9d6a73a9a7fb7596abc9622652",
+  "catalog_sha256": "27542d5aa4ac067812dfed2415a1a2a58924e62e1a9ecb891a004a4b0d29a84f",
   "reviews": [
     {
       "case": "connected-roundtrip",
@@ -103,7 +103,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 174,
+        "checked": 185,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -147,7 +147,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 106,
+        "checked": 125,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -191,7 +191,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 118,
+        "checked": 119,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -675,7 +675,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 174,
+        "checked": 185,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -719,7 +719,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 106,
+        "checked": 125,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -763,7 +763,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 118,
+        "checked": 119,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1247,7 +1247,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 174,
+        "checked": 185,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1291,7 +1291,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 106,
+        "checked": 125,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1335,7 +1335,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 118,
+        "checked": 119,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1819,7 +1819,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 154,
+        "checked": 165,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1863,7 +1863,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 86,
+        "checked": 105,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -1907,7 +1907,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 98,
+        "checked": 99,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -2391,7 +2391,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 154,
+        "checked": 165,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -2435,7 +2435,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 86,
+        "checked": 105,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -2479,7 +2479,7 @@
       "view": "Decision & outcome",
       "overflow": false,
       "contrast": {
-        "checked": 98,
+        "checked": 99,
         "minimum_ratio": 4.584,
         "failures": []
       }
@@ -2902,8 +2902,8 @@
       "investigation": "gtm",
       "title": "120 accounts \u00b7 USD $3.46M synthetic pipeline",
       "summary": "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
-      "manifest_sha256": "e798bffca98b50144b68efb1daba7a9e626dfd670c5c9e3577fe877bc7ad3e3c",
-      "verification_sha256": "2890fb8e9e036f5f74f0c3df9e19b67e4fc12d70edd012e439cc1fcdb583e186",
+      "manifest_sha256": "8bee14d5076fa56a95da9f561f89680924eb83b3465f5eb104c89f4d5a4aeb8a",
+      "verification_sha256": "1c715439208ba02281be3f3dbf69dcc3839b84450a60b64b92217dd2da3dd6be",
       "source": {
         "repository": "rlbsem/gtm-pipeline-orchestration",
         "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
@@ -2915,8 +2915,8 @@
       "investigation": "gtm",
       "title": "Recorded Qwen3 \u00b7 advice and refusal",
       "summary": "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
-      "manifest_sha256": "2c9c445b19cee758f69d524237b5ef858a4e9cf15734695488ca8525cf5477f1",
-      "verification_sha256": "04aae9cf9f8781dff8bea781d634567bfbb27cff335fc90e7feae5852c4df2c1",
+      "manifest_sha256": "f8537265365df3635a26a00172686a79b6bd32132e2a3e157fe0983147a891c9",
+      "verification_sha256": "f736919771ef99cc528ebb966bbdfdc1a098af0a0e83fa24cc3eee9b98149e01",
       "source": {
         "repository": "rlbsem/gtm-pipeline-orchestration",
         "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
@@ -2928,7 +2928,7 @@
       "investigation": "gtm",
       "title": "Native Salesforce \u00b7 one guarded SDR Task",
       "summary": "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
-      "manifest_sha256": "fb418b416e9492bbec63fefffcd109c387126b401687afd9d8cb10493ee622a5",
+      "manifest_sha256": "efc43cd1b003bd1312cb211ee1898a924481d73a62269d3db67aac01c50b6cf2",
       "verification_sha256": "ef58f4e7957bebd28c820b924d628cbaba06928f1225447e5548f34b7e4203ad",
       "source": {
         "repository": "rlbsem/gtm-pipeline-orchestration",

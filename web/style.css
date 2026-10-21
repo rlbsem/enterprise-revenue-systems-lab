@@ -820,3 +820,8 @@ th {
 .gtm-investigation td small { display:block; overflow-wrap:anywhere; }
 .gtm-investigation .columns > section { min-width:0; }
 @media(max-width:760px) { .gtm-lanes a { flex:1 1 100%; } }
+
+.gtm-journey { padding:16px; border-left:3px solid var(--teal); background:#f0f6f8; color:var(--ink); font-weight:500; }
+.gtm-boundary { font-size:12px; color:var(--muted); line-height:1.7; }
+.gtm-failures { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 20px; }
+.gtm-failures button { min-height:44px; padding:8px 12px; background:#f8fafc; border:1px solid var(--line); border-radius:5px; color:var(--ink); font-size:12px; }

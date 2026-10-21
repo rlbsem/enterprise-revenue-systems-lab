@@ -5,7 +5,7 @@ export function gtmMetrics(id, read, metric) {
     return [metric("Synthetic accounts", d.account_records.length, "Full assigned-account denominator"),
       metric("Accepted opportunities", arms.reduce((n,a)=>n+a.accepted_opportunities,0), "CRM outcome events · synthetic ACV"),
       metric("Qualified pipeline", cash(d, arms.reduce((n,a)=>n+a.pipeline_cents,0)), "Synthetic estimates · not revenue"),
-      metric("Independent local effects", d.reconciliation.remote_effects, "Local HTTP receiver · not Salesforce")];
+      metric("Qualified meetings", arms.reduce((n,a)=>n+a.qualified_meetings,0), "Synthetic feedback · both cohorts")];
   }
   if (id === "gtm-salesforce") {
     const a=read("acceptance.json"), n=read("native-details.json"), c=read("post-cleanup.json");
@@ -29,8 +29,8 @@ function cash(d, cents) {
 
 export function gtmPanel(id, ui) {
   const {el, section, raw, json:read, facts, finding}=ui, p=el("div",undefined,"gtm-investigation");
-  p.append(finding("Three executions, three boundaries",
-    "The enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation are separate recorded runs. Inspect complementary capabilities; no continuous vendor funnel, prospect communication or commercial uplift is claimed."));
+  p.append(el("p", "The SDR workflow: find an account → understand the signals → review advice → approve a handoff → measure what follows.", "gtm-journey"));
+  p.append(el("p", "Evidence boundary: the enterprise scenario, Qwen3 research and native Salesforce handoff are three separate recorded runs. They show complementary capabilities, not a continuous vendor deployment or commercial uplift.", "gtm-boundary"));
   const lanes=el("nav",undefined,"gtm-lanes"); lanes.setAttribute("aria-label","GTM evidence boundaries");
   for(const [key,label] of [["gtm-enterprise","01 · Enterprise pipeline"],["gtm-salesforce","02 · Native Salesforce"],["gtm-qwen","03 · Qwen3 advice"]]) {
     const a=el("a",label);a.href="?case="+key;if(key===id)a.setAttribute("aria-current","page");lanes.append(a);
@@ -39,7 +39,7 @@ export function gtmPanel(id, ui) {
   if(id==="gtm-enterprise") enterprise(p,ui);
   else if(id==="gtm-salesforce") native(p,ui);
   else advice(p,ui);
-  const origin=section("Original artifacts · pinned provenance");
+  const origin=el("details"); origin.append(el("summary", "Evidence lineage · original artifacts and recorded revisions"));
   for(const a of read("upstream.json").artifacts) {
     const link=el("a",a.source_path+" ↗");link.href=a.source_url;
     const line=el("div",undefined,"gtm-origin");line.append(link,el("code",a.sha256),el("small","Recorded source revision: "+a.recorded_source_revision));origin.append(line);
@@ -57,15 +57,30 @@ function enterprise(p,{el,section,raw,json:read,facts,finding}) {
   const render=()=>{
     const a=d.account_records.find(x=>x.id===choice.value);
     const decision=d.qualification_decisions.filter(x=>x.account_id===a.id).at(-1);
-    const q=JSON.parse(decision.body), col=el("div",undefined,"columns"), left=section("Identity, fit and intent"),right=section("Authority and action history");
-    left.append(facts([["Account",a.name],["Identity",a.domain],["CRM owner",a.owner],["Fit / intent",q.fit+" / "+q.intent],["Eligible at recorded decision",q.eligible?"Yes":"No"],["Policy",q.policy_version]]));
+    const q=JSON.parse(decision.body), col=el("div",undefined,"columns"), left=section("Why this account?"),right=section("What the SDR reviews");
+    left.append(facts([["Account",a.name],["Company identity",a.domain],["Responsible owner",a.owner],["Fit / intent",q.fit+" / "+q.intent],["Eligible at recorded decision",q.eligible?"Yes":"No"],["Recorded buying signals",q.signals.map(s=>s.signal).join(" · ")||"None qualifying"]]));
     const action=d.actions.find(x=>x.account_id===a.id), routes=d.routes.filter(x=>x.account_id===a.id);
-    right.append(facts([["Local CRM context","Synthetic; not a native Salesforce account"],["Routing",routes.length?routes.map(r=>r.owner+" · "+r.reason).join("; "):"No recorded inbound route"],["Review",action?"Exact content approved by "+action.reviewer:"No approved action recorded"],["Execution",action? action.status+" · "+action.attempts+" attempts":"Not enrolled"],["Block reason",action?.last_error||"None recorded"]]));
+    const cohort=d.measurement.accounts.find(c=>c.account_id===a.id);
+    if(action) right.append(el("div",JSON.parse(action.payload).message,"draft"));
+    else right.append(el("p",cohort.arm==="holdout"?"This account is in holdout: no sequence enrollment is authorized. Organic outcomes still count.":"No approved seller action is recorded for this account."));
+    right.append(facts([["Routing",routes.length?routes.map(r=>r.owner+" · "+r.reason).join("; "):"No recorded inbound route"],["Review",action?"Exact content approved by "+action.reviewer:"No approved action recorded"],["Recorded handoff",action? action.status+" · "+action.attempts+" attempts":"Not enrolled"],["Block reason",action?.last_error||"None recorded"]]));
+    right.append(el("p","This is the local synthetic scenario. No Qwen response or native Salesforce record is attributed to this selected account.","gtm-boundary"));
+    const model=el("a","Inspect the separate recorded AI research example →");model.href="?case=gtm-qwen";right.append(model);
     const inspect=el("details");inspect.append(el("summary","Inspect source records and score contributions"),raw({account:a,qualification:q,sources:d.source_records.filter(s=>s.account_id===a.id).map(s=>({...s,payload:JSON.parse(s.payload)}))}));left.append(inspect);
     if(action){const log=el("details");log.append(el("summary","Inspect exact approval, payload and receipt"),raw({action,approval:d.audit.filter(x=>x.event==="exact_approval"&&x.subject===action.action_key)}));right.append(log);}
-    col.append(left,right);details.replaceChildren(col);
+    const follow=section("What happened next?"),feedback=d.feedback.filter(f=>f.account_id===a.id);
+    if(feedback.length)follow.append(...feedback.map(f=>el("p",({reply_positive:"Positive reply",reply_negative:"Negative reply",meeting_qualified:"Qualified meeting",opportunity_accepted:"Accepted opportunity"}[f.kind]||f.kind)+" · "+f.occurred_at.slice(0,10)+(f.amount_cents?" · "+cash(d,f.amount_cents):""))));
+    else follow.append(el("p","No meeting or opportunity feedback is recorded for this account. It stays in the assigned-account denominator."));
+    follow.append(el("small", "Synthetic CRM/engagement events · "+cohort.arm+" cohort · not actual prospect communications"));
+    col.append(left,right);details.replaceChildren(col,follow);
   };
-  choice.addEventListener("change",render);render();accountBlock.append(label,choice,details);p.append(accountBlock);
+  choice.addEventListener("change",render);render();accountBlock.append(label,choice);
+  const failures=el("div",undefined,"gtm-failures");
+  for(const [kind,title] of [["owner","Explore changed owner"],["consent","Explore revoked consent"]]){
+    const blocked=d.actions.find(a=>a.status==="blocked"&&d.source_records.some(s=>s.account_id===a.account_id&&s.kind===kind));
+    if(blocked){const b=el("button",title);b.addEventListener("click",()=>{choice.value=blocked.account_id;render();});failures.append(b);}
+  }
+  accountBlock.append(failures,details);p.append(accountBlock);
   const ledger=section("Five synthetic opportunities · original CRM outcome evidence");
   const table=el("table"),cap=el("caption","Illustrative 12-month opportunity ACV · "+d.scenario.currency+" · not revenue, bookings or ARR");
   table.append(cap);const head=el("thead"),hr=el("tr");
@@ -82,22 +97,28 @@ function enterprise(p,{el,section,raw,json:read,facts,finding}) {
 
 function native(p,{el,section,raw,json:read,facts,finding}) {
   const a=read("acceptance.json"),n=read("native-details.json"),c=read("post-cleanup.json"),grid=el("div",undefined,"columns"),left=section("One guarded native SDR handoff"),right=section("Independent identity and authority checks");
-  left.append(facts([["Environment","Isolated Salesforce Developer Edition"],["Account + Contact","Resolved by exact synthetic identity keys"],["Lost acknowledgment","Discarded after native commit; receipt recovered without repost"],["Duplicate probe","Server transaction rolled back the extra Task"],["Owner / consent / active opportunity","New actions rejected when authority changed"],["Commercial outcomes","Not part of this native run"]]));
-  right.append(finding("Associations are inspectable","Account, Contact, Task and original owner relationships are independently read back. Public identifiers are hashed; response hashes are not Salesforce signatures."),raw(n.relationships));grid.append(left,right);p.append(grid);
+  left.append(facts([["Environment","Isolated Salesforce Developer Edition"],["Account + Contact","Matched to the same synthetic account and owner"],["SDR next step","One internal Salesforce Task; no prospect message"],["Lost acknowledgment","Committed Task recovered by readback; no second POST"],["Changed owner or consent","Further actions rejected"],["Duplicate attempt","Extra Task rolled back"]]));
+  right.append(finding("The seller gets one owned handoff","The integration user creates the Task. A different identity independently reads it back and confirms the Account, Contact, owner and exact content. Four temporary grants were removed afterward."));
+  const identities=el("details");identities.append(el("summary","Inspect independent readback and hashed relationships"),raw(n.relationships));right.append(identities);grid.append(left,right);p.append(grid);
   const permissions=section("Effective permissions, rejection responses and restoration");
   for(const [title,value] of [["Effective object / field permissions",n.effective_permissions],["Actual rejected operations",n.rejected_operations],["Three native Apex test results",n.apex_deployment],["Controlled retention and grant restoration",{cleanup:a.cleanup,independent_cleanup:c}]]){const detail=el("details");detail.append(el("summary",title),raw(value));permissions.append(detail);}p.append(permissions);
-  const ops=section("Inspect a recorded native API operation"),label=el("label","Recorded Salesforce request");label.htmlFor="gtm-request";const select=el("select");select.id="gtm-request";
+  const ops=el("details");ops.append(el("summary","Inspect original native API operations"));const label=el("label","Recorded Salesforce request");label.htmlFor="gtm-request";const select=el("select");select.id="gtm-request";
   a.requests.forEach((r,i)=>{const o=el("option",(i+1)+" · "+r.role+" · "+r.method+" "+r.resource+" · HTTP "+r.http);o.value=i;select.append(o);});const output=raw(a.requests[0]);select.addEventListener("change",()=>output.textContent=JSON.stringify(a.requests[select.value],null,2));ops.append(label,select,output);p.append(ops);
 }
 
 function advice(p,{el,section,raw,json:read,facts,finding}) {
-  const d=read("evaluation.json"),block=section("Actual Qwen3 responses · inspect accepted and rejected advice"),label=el("label","Recorded model case");label.htmlFor="gtm-model";const select=el("select");select.id="gtm-model";
-  d.records.forEach((r,i)=>{const o=el("option",r.case_id+" · "+(r.validation_error||"exact citations pass"));o.value=i;select.append(o);});const display=el("div");
+  const d=read("evaluation.json"),block=section("AI research brief · what should the SDR ask next?"),label=el("label","Recorded model case");label.htmlFor="gtm-model";const select=el("select");select.id="gtm-model";
+  block.append(el("p","The model was asked to summarize supplied account facts, suggest a discovery question and cite exact supporting text. It could not assign ownership, promise delivery or authorize a CRM write."));
+  const task=el("details");task.append(el("summary","Inspect the original model instructions and request evidence"),el("p",read("instructions.json").system_prompt),el("small","The offline verifier reconstructs each original request and checks its recorded hash. No inference is rerun."));block.append(task);
+  const names={fresh_inbound:"Fresh pricing inquiry",prompt_injection:"Source tries to override instructions",unsupported_personalization:"Unverified meeting or delivery promise",conflicting_enrichment:"Enrichment disagrees with CRM",stale_buying_signal:"Old buying signal",revoked_permission:"Consent already revoked",incorrect_approved_owner:"Owner changes after approval",permission_revoked_after_approval:"Consent changes after approval"};
+  d.records.forEach((r,i)=>{const o=el("option",(names[r.case_id]||r.case_id)+" · seed "+r.seed+" · "+(r.validation_error||"exact citations pass"));o.value=i;select.append(o);});const display=el("div");
   const render=()=>{const r=d.records[select.value],col=el("div",undefined,"columns"),left=section("Original model response"),right=section("Policy and execution boundary");
-    left.append(el("div",r.parsed?.summary||"Rejected response · original text preserved below", "draft"));
+    left.append(el("div",r.parsed?.summary||"Citation check failed · original response preserved below", "draft"));
+    if(r.parsed?.suggested_question)left.append(el("div","Suggested discovery question","panel-title"),el("div",r.parsed.suggested_question,"draft"));
     const response=el("details");response.append(el("summary","Read the exact raw inference response"),raw(r.raw_response));left.append(response);
-    right.append(facts([["Case",r.case_id],["Model",r.model],["Citation result",r.validation_error||"Exact spans passed"],["Semantic support",r.semantic_support],["Native Salesforce linkage","None · separate execution set"]]),raw(r.policy));
-    if(r.validation_error)right.append(finding("Rejected recommendation preserved",r.validation_error+". A failed citation does not become an approved CRM action."));
+    right.append(facts([["Research account",r.context.account.name],["Responsible owner",r.context.account.owner],["Citation result",r.validation_error||"Exact spans passed"],["Unapproved copy change",r.policy.modified_copy_rejected?"Rejected by exact-content approval":"No copy-change probe needed"],["Independent template action",r.policy.dispatch_status||"Not permitted"],["Native Salesforce linkage","None · separate execution set"]]));
+    const policy=el("details");policy.append(el("summary","Inspect policy checks, approval hash and exact response"),raw(r.policy),raw({request_hash:r.request_hash,context_hash:r.context_hash,executed_at:r.executed_at,model:r.model}));right.append(policy);
+    if(r.validation_error)right.append(finding("Rejected recommendation preserved",r.validation_error+". This model text was not authorized. A separate unchanged template could still be approved by the finite execution policy; model rejection and workflow refusal are different checks."));
     const evidence=el("details");evidence.append(el("summary","Inspect supplied evidence, ownership and citations"),raw(r.context),raw(r.parsed?.citations||[]));left.append(evidence);
     col.append(left,right);display.replaceChildren(col);};select.addEventListener("change",render);render();block.append(label,select,display);p.append(block,finding("Advice is not authorization","Policy observations and approval hashes belong to this recorded local evaluation. They do not prove semantic usefulness, Salesforce delivery or commercial results. No model call occurs when you change the selected case."));
 }

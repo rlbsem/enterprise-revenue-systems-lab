@@ -14,7 +14,8 @@ from test_bundles import resign
 def artifacts(case):
     path = ROOT / "web/evidence" / case
     manifest = json.loads((path / "bundle.json").read_text())
-    return {a["path"]: json.loads((path / a["path"]).read_text(encoding="utf-8")) for a in manifest["artifacts"]}
+    return {a["path"]: (json.loads((path / a["path"]).read_text(encoding="utf-8")) if a["path"].endswith(".json")
+                         else (path / a["path"]).read_text(encoding="utf-8")) for a in manifest["artifacts"]}
 
 
 @pytest.mark.parametrize("case", ["gtm-enterprise", "gtm-salesforce", "gtm-qwen"])
@@ -64,7 +65,7 @@ def test_native_gtm_relationships_and_permissions_are_not_a_success_flag(mutatio
         salesforce(f)
 
 
-@pytest.mark.parametrize("mutation", ["citation", "context", "authority", "failure_count"])
+@pytest.mark.parametrize("mutation", ["citation", "context", "authority", "failure_count", "instructions", "request"])
 def test_qwen_exact_response_and_limitations_are_preserved(mutation):
     f = artifacts("gtm-qwen")
     d = f["evaluation.json"]
@@ -78,6 +79,10 @@ def test_qwen_exact_response_and_limitations_are_preserved(mutation):
         r["context"]["account"]["owner"] = "different-owner"
     elif mutation == "authority":
         r["advisory_only"] = False
+    elif mutation == "instructions":
+        f["instructions.json"]["system_prompt"] = "Invent a guarantee"
+    elif mutation == "request":
+        r["request_hash"] = "0" * 64
     else:
         d["exact_citation_checks_passed"] = 16
     with pytest.raises(ValueError):

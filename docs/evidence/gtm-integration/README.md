@@ -6,4 +6,4 @@ The browser review checks all three cases at five viewport sizes and all four ev
 
 Earlier investigation screenshots and evidence remain historical records; this review does not replace them. Public-site deployment and post-deployment checks remain pending owner approval.
 
-Local result: **96 tests passed**, with no skips, errors or failures. The [all-investigation review](all-investigations.json) checked 260 case/tab/viewport combinations across all five investigations with zero page-overflow, contrast or browser-error findings. The six delivered GTM screenshots retain their own full provenance in `browser.json`.
+Local result: **98 tests passed**, with no skips, errors or failures. The [all-investigation review](all-investigations.json) checked 260 case/tab/viewport combinations across all five investigations with zero page-overflow, contrast or browser-error findings. The six delivered GTM screenshots retain their own full provenance in `browser.json`.

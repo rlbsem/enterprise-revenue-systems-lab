@@ -7,7 +7,7 @@
     "preserved_failures": 6,
     "semantic_support": "not_independently_evaluated",
     "scope": "Recorded Qwen3 advisory evaluation with its own local policy observations; not native Salesforce execution",
-    "upstream_files": 1,
+    "upstream_files": 4,
     "new_vendor_or_model_execution": false
   },
   "limitations": [

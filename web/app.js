@@ -3,10 +3,10 @@ const $ = (s) => document.querySelector(s);
 const titles = {
   gtm: [
     "05 · GTM ENGINEERING",
-    "From Account Intelligence\nto Qualified Pipeline",
-    "Inspect qualification, owned routing, reviewed advice and synthetic opportunity evidence. Three recorded execution sets reveal different boundaries.",
-    "A funnel is not a proof chain.",
-    "Source economics, native CRM effects and model advice need separate evidence.",
+    "AI Account Intelligence\nto Qualified Pipeline",
+    "Help an SDR decide whom to pursue, why now, and what to review before a CRM handoff. Explore recorded research, seller decisions and synthetic pipeline feedback.",
+    "Better context. Controlled handoffs.",
+    "Useful seller advice needs evidence, an accountable owner and a reviewed next step.",
   ],
   seller: [
     "01 · APPLIED AI",
