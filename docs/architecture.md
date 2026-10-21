@@ -1,6 +1,6 @@
 # Evidence before conclusions
 
-The public application reads portable evidence from three separate synthetic environments. The local runner creates isolated workspaces and calls the original Python/dbt engines at pinned Git commits. The Lab does not define seller policy, govern CRM fields or calculate the displayed production-style metrics itself.
+The public application reads portable evidence from independent synthetic environments. The local runner creates isolated workspaces and calls the original Python/dbt engines at pinned Git commits. The Lab does not define seller policy, govern CRM fields or calculate the displayed production-style metrics itself.
 
 ```mermaid
 flowchart LR

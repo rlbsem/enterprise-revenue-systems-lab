@@ -35,16 +35,16 @@
       "bytes": 487
     },
     "docs/architecture.md": {
-      "sha256": "e8693296f5872b2cd245a4a331e89e6988641520d12465bee389553fc1cf71c2",
-      "bytes": 4199
+      "sha256": "edcfa8b664f665b5867801c71cd698a194ee8f923a4f6813555d4377f59c9cca",
+      "bytes": 4196
     },
     "docs/deployment.md": {
-      "sha256": "94a78542a85f6a8054feadc6ceeee43868c7eb108d4b210bd16f397480fc6695",
+      "sha256": "bc81efc9b9a513c770ee9f93c6786425f4c2030ee00c95282b6bfde7cdf4d03a",
       "bytes": 5098
     },
     "docs/evidence-guide.md": {
-      "sha256": "0646c2c8ccce9ce83a575bdc6d31a13bdebfbe72fe393d697a734876efd38fe9",
-      "bytes": 3508
+      "sha256": "16792aad6a83b8d570904b1b2c2b17895080b6c94cf36ba12354b21169ef2bf6",
+      "bytes": 3871
     },
     "docs/evidence/gtm-integration/README.md": {
       "sha256": "48f08f5c6481de8fbbf7a11d11a59bcb7ab1418e72b75bfb61682b5f02e052b6",

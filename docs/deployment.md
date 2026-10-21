@@ -15,7 +15,7 @@ Web-application updates are automatically published from `main` after the eviden
 1. Confirm **Settings > Pages > Build and deployment** uses **GitHub Actions**. Changes to `web/**` or the publishing workflow on `main` trigger an automatic deployment. Manual `workflow_dispatch` remains available.
 2. If republishing, go to **Actions > Publish static evidence lab > Run workflow**, choose `main`, and authorize the protected `github-pages` environment if requested.
 3. Check both `build` and `deploy` jobs are successful. The build verifies recorded evidence and ensures the public artifact includes only static distribution files.
-4. Open the Pages URL. Inspect all four investigations, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
+4. Open the Pages URL. Inspect all five investigations, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
 5. If a run fails, use the job logs to identify the issue. To withdraw the public site, use **Settings > Pages > Unpublish site**.
 
 ## Deployment boundary
