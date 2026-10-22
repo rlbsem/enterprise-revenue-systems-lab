@@ -58,7 +58,7 @@ def test_pages_shaped_build_passes_the_same_read_only_smoke_checks(tmp_path, mon
             workspace / "web", tmp_path / "smoke",
         )
         assert report["status"] == "passed", json.dumps(report["failures"], indent=2)
-        assert len([check for check in report["checks"] if check["name"].startswith("case:")]) == 26
+        assert len([check for check in report["checks"] if check["name"].startswith("case:")]) == 28
         assert report["attempted_writes"] == report["outside_requests"] == []
     finally:
         server.shutdown()

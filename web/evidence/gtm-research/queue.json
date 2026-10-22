@@ -1,0 +1,320 @@
+[
+  {
+    "case_id": "multi-source",
+    "name": "Northline Systems",
+    "domain": "account-04.example",
+    "fit": 90,
+    "signal_points": 60,
+    "priority": 96.0,
+    "contributions": [
+      {
+        "source_id": "northline-crm",
+        "kind": "crm_history",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 7.04
+      },
+      {
+        "source_id": "northline-expansion",
+        "kind": "expansion",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 22.0
+      },
+      {
+        "source_id": "northline-hiring",
+        "kind": "hiring",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 15.84
+      },
+      {
+        "source_id": "northline-initiative",
+        "kind": "initiative",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 17.6
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [],
+    "eligible": true,
+    "enrichment": {
+      "values": {
+        "employees": 240,
+        "industry": "software",
+        "territory": "NA"
+      },
+      "lineage": {
+        "industry": {
+          "provider": "fallback-fixture",
+          "confidence": 0.6
+        },
+        "territory": {
+          "provider": "fallback-fixture",
+          "confidence": 0.6
+        }
+      },
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "found"
+        }
+      ],
+      "conflicts": [
+        {
+          "field": "employees",
+          "kept": 240,
+          "rejected": 20000,
+          "provider": "fallback-fixture"
+        }
+      ]
+    }
+  },
+  {
+    "case_id": "duplicate-alerts",
+    "name": "Meridian Cloud",
+    "domain": "account-05.example",
+    "fit": 78,
+    "signal_points": 60,
+    "priority": 91.2,
+    "contributions": [
+      {
+        "source_id": "duplicate-alerts:northline-crm",
+        "kind": "crm_history",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 7.04
+      },
+      {
+        "source_id": "duplicate-alerts:northline-expansion",
+        "kind": "expansion",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 22.0
+      },
+      {
+        "source_id": "duplicate-alerts:northline-hiring",
+        "kind": "hiring",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 15.84
+      },
+      {
+        "source_id": "duplicate-alerts:northline-initiative",
+        "kind": "initiative",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 17.6
+      },
+      {
+        "source_id": "duplicate-alerts:syndicated-hiring",
+        "kind": "hiring",
+        "confidence": 0.6,
+        "age_days": 2.0,
+        "reason": "duplicate",
+        "points": 0
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [],
+    "eligible": true,
+    "enrichment": {
+      "values": {
+        "employees": 240
+      },
+      "lineage": {},
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "missing"
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  {
+    "case_id": "weak-signal",
+    "name": "Aster Services",
+    "domain": "account-08.example",
+    "fit": 63,
+    "signal_points": 15.84,
+    "priority": 41.04,
+    "contributions": [
+      {
+        "source_id": "weak-signal:weak-signal-source",
+        "kind": "hiring",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 15.84
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [
+      "insufficient_corroborated_signals"
+    ],
+    "eligible": false,
+    "enrichment": {
+      "values": {
+        "employees": 240
+      },
+      "lineage": {},
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "missing"
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  {
+    "case_id": "conflicting-enrichment",
+    "name": "Beacon Systems",
+    "domain": "account-07.example",
+    "fit": 68,
+    "signal_points": 7.04,
+    "priority": 34.24,
+    "contributions": [
+      {
+        "source_id": "conflicting-enrichment:crm-conflict",
+        "kind": "crm_history",
+        "confidence": 0.9,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 7.04
+      },
+      {
+        "source_id": "conflicting-enrichment:conflicting-enrichment-source",
+        "kind": "firmographics",
+        "confidence": 0.3,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 0.0
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [
+      "insufficient_corroborated_signals"
+    ],
+    "eligible": false,
+    "enrichment": {
+      "values": {
+        "employees": 240
+      },
+      "lineage": {},
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "missing"
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  {
+    "case_id": "stale-hiring",
+    "name": "Cedar Analytics",
+    "domain": "account-06.example",
+    "fit": 85,
+    "signal_points": 0,
+    "priority": 34.0,
+    "contributions": [
+      {
+        "source_id": "stale-hiring:stale-hiring-source",
+        "kind": "hiring",
+        "confidence": 0.9,
+        "age_days": 742.0,
+        "reason": "expired",
+        "points": 0
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [
+      "insufficient_corroborated_signals"
+    ],
+    "eligible": false,
+    "enrichment": {
+      "values": {
+        "employees": 240
+      },
+      "lineage": {},
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "missing"
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  {
+    "case_id": "champion-change",
+    "name": "Summit Software",
+    "domain": "account-09.example",
+    "fit": 72,
+    "signal_points": 3.91,
+    "priority": 32.71,
+    "contributions": [
+      {
+        "source_id": "champion-change:champion-change-source",
+        "kind": "champion_change",
+        "confidence": 0.4,
+        "age_days": 2.0,
+        "reason": "contributing",
+        "points": 3.91
+      }
+    ],
+    "owner": "atlas-na",
+    "blocks": [
+      "insufficient_corroborated_signals"
+    ],
+    "eligible": false,
+    "enrichment": {
+      "values": {
+        "employees": 240
+      },
+      "lineage": {},
+      "attempts": [
+        {
+          "provider": "primary-fixture",
+          "status": "missing"
+        },
+        {
+          "provider": "fallback-fixture",
+          "status": "missing"
+        }
+      ],
+      "conflicts": []
+    }
+  }
+]

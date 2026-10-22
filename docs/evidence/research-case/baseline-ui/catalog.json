@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "connected-roundtrip",
+      "investigation": "connected",
+      "title": "Salesforce and Snowflake round trip",
+      "summary": "A governed CRM review survives a lost acknowledgment and changes the next warehouse decision.",
+      "manifest_sha256": "3db928ea93bbe649f65f49cc8a21fe163785c613f87997af9552167a220dd865",
+      "verification_sha256": "ae0f89d72e0b484751ac46dae2be1097af8f6302982657a9105a91230f009b2c",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "control-recovery",
+      "investigation": "control",
+      "title": "Uncertain delivery and recovery",
+      "summary": "Durable intent, lost acknowledgments and independently observed receiver effects.",
+      "manifest_sha256": "5f524a23a146d207086f80fcae1b59eeb91e3487f036850277ff659049212995",
+      "verification_sha256": "ec3c4f907635da3cd87fa8b28030fb88221a30412a393021368fa81bbed74a1f",
+      "source": {
+        "repository": "rlbsem/enterprise-martech-ai-control-plane",
+        "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+      },
+      "mode": "fresh_engine"
+    },
+    {
+      "id": "gtm-enterprise",
+      "investigation": "gtm",
+      "title": "120 accounts · USD $3.46M synthetic pipeline",
+      "summary": "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
+      "manifest_sha256": "8bee14d5076fa56a95da9f561f89680924eb83b3465f5eb104c89f4d5a4aeb8a",
+      "verification_sha256": "1c715439208ba02281be3f3dbf69dcc3839b84450a60b64b92217dd2da3dd6be",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-qwen",
+      "investigation": "gtm",
+      "title": "Recorded Qwen3 · advice and refusal",
+      "summary": "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
+      "manifest_sha256": "f8537265365df3635a26a00172686a79b6bd32132e2a3e157fe0983147a891c9",
+      "verification_sha256": "f736919771ef99cc528ebb966bbdfdc1a098af0a0e83fa24cc3eee9b98149e01",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-salesforce",
+      "investigation": "gtm",
+      "title": "Native Salesforce · one guarded SDR Task",
+      "summary": "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
+      "manifest_sha256": "efc43cd1b003bd1312cb211ee1898a924481d73a62269d3db67aac01c50b6cf2",
+      "verification_sha256": "ef58f4e7957bebd28c820b924d628cbaba06928f1225447e5548f34b7e4203ad",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "revenue-bridge",
+      "investigation": "revenue",
+      "title": "Installed ARR and quarterly flows",
+      "summary": "Different economic measures reconcile at their own grain and time boundary.",
+      "manifest_sha256": "62bd460a07237b7ca0acf58553f2da0db645a4ee841a0a0248d65e5ac876c414",
+      "verification_sha256": "8f587ee1c1ec9759cf4b6ab00e1de736ef0d0d9745a5dff3444f5e56a44d45ca",
+      "source": {
+        "repository": "rlbsem/revenue-metrics-platform",
+        "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "revenue-correction",
+      "investigation": "revenue",
+      "title": "Late correction and equivalent rebuild",
+      "summary": "Original dbt builds are compared with independently exported model rows.",
+      "manifest_sha256": "88c6e87176712c28d68848feaf0374a13f4a7f1dd6eef3737657cf8ab5e5037f",
+      "verification_sha256": "b2f4bc755cf3be02f55307c127f73a0abcc7943aa9c2f8dabee8513e484319e5",
+      "source": {
+        "repository": "rlbsem/revenue-metrics-platform",
+        "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+      },
+      "mode": "fresh_engine"
+    },
+    {
+      "id": "seller-application",
+      "investigation": "seller",
+      "title": "Reviewed discovery action",
+      "summary": "A saved model response was edited, approved and delivered to a synthetic CRM.",
+      "manifest_sha256": "55afda697fb7c727fd340848e78bba93ce23ad321cde9818453411cf32084232",
+      "verification_sha256": "1ff02a7e97d55c4491d3fd0c631e06b01f5a0c365c50da2eb6be38ee58514c02",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-delivery",
+      "investigation": "seller",
+      "title": "Saved response, fresh approved delivery",
+      "summary": "Recorded response replay with original-engine approval and a new local receiver effect.",
+      "manifest_sha256": "b86b04b1d343e7e4d9f5a158c6ed2ca43c0d6813300127bf46aef141af26ee2b",
+      "verification_sha256": "55ac846eeec74b836905a6e263acb63fb839112efc6e78f548836f6fe456f398",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    },
+    {
+      "id": "seller-live",
+      "investigation": "seller",
+      "title": "Recorded fresh local inference",
+      "summary": "A real local model produced this response; the original engine recorded the synthetic effect.",
+      "manifest_sha256": "000fd2a6d30b618972f09547f1a0ec760b7012f98cffdec01e4b917c5fde022a",
+      "verification_sha256": "89c1b679f7c3611893e2b1d2427359d40e2e7d614d0004f3d4d349fd55cdfec0",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_inference"
+    },
+    {
+      "id": "seller-stale",
+      "investigation": "seller",
+      "title": "Evidence changes before approval",
+      "summary": "The original Workbench refuses approval after new account evidence arrives.",
+      "manifest_sha256": "6078d933e85598789256ca1479bb0212b6d79b209341cb18b29fdb8b76515151",
+      "verification_sha256": "f4afcea559b3bf5652faf983f5424167b85e93777b976152898edf4af5b30759",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    },
+    {
+      "id": "seller-support-review",
+      "investigation": "seller",
+      "title": "A passing draft with an unsupported claim",
+      "summary": "Exact citations pass. The draft still implies unverified support availability.",
+      "manifest_sha256": "8081357c10a80e7d0030aa7ce47e8728450fe17a89a6904988e00f38e55707ff",
+      "verification_sha256": "2244371ca330e3b4446428ab7281e3b646248d15171924f9540d89e57c73b634",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-suppressed",
+      "investigation": "seller",
+      "title": "Consent blocks the action",
+      "summary": "A recorded response is replayed; commercial authority prevents an effect.",
+      "manifest_sha256": "0acb342a7f6421164997639a867dd0692b630481194c051ba89845b8c5ab4354",
+      "verification_sha256": "e696c7251a505e51a8007d9bcd62f23b98060a806aaaac4e64a846ee28075084",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    }
+  ]
+}

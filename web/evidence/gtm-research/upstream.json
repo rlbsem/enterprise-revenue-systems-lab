@@ -1,0 +1,112 @@
+{
+  "repository": "rlbsem/gtm-pipeline-orchestration",
+  "import_revision": "81d9381169456ca8893be0ddea483296ac77e12e",
+  "lane": "gtm-research",
+  "artifacts": [
+    {
+      "file": "evaluation.json",
+      "source_path": "docs/evidence/research/evaluation.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "442083b7db2f9b2e401c1c06aaa489ba4ad3c6fdfc16004ec5284ab65ec4ecfc",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/evaluation.json"
+    },
+    {
+      "file": "round1-evaluation.json",
+      "source_path": "docs/evidence/research/round1-evaluation.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "88a82588aa1cf5c48c0766226fc7713b0263b6fdc30d258a180ffe4538ae08bf",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round1-evaluation.json"
+    },
+    {
+      "file": "round1-sources.json",
+      "source_path": "docs/evidence/research/round1-sources.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "95cf14e0d656b118d3f11a481b5127f8a455442a17fc70e6afa547096565a701",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round1-sources.json"
+    },
+    {
+      "file": "round2-evaluation.json",
+      "source_path": "docs/evidence/research/round2-evaluation.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "04d0ae6a0e52dbdda976294b6decbb607135933957f6c6613b331f752468c1eb",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round2-evaluation.json"
+    },
+    {
+      "file": "round2-sources.json",
+      "source_path": "docs/evidence/research/round2-sources.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "6264c2f0d36bfaef4ef786797afcd7f0971a7d33ebb4c859fad5cf740ccaca1d",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round2-sources.json"
+    },
+    {
+      "file": "round3-evaluation.json",
+      "source_path": "docs/evidence/research/round3-evaluation.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "316577503ed05c4819f12f02e45263ec4ba6089fa2cacc027ebad469a8a3c488",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round3-evaluation.json"
+    },
+    {
+      "file": "round3-sources.json",
+      "source_path": "docs/evidence/research/round3-sources.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "1315f1bdd124ac6ead58970e38c3168d7bcf0d9b0e7185c4156262769092a05a",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/round3-sources.json"
+    },
+    {
+      "file": "operator-proof.json",
+      "source_path": "docs/evidence/research/operator-proof.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "90ac9d977c378d3186569d4e2c017a73377783cdc83a01af1599c49e32494b62",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json"
+    },
+    {
+      "file": "reviewer-assessment.json",
+      "source_path": "docs/evidence/research/reviewer-assessment.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "4ac9b23b0a73719ab3ea9140173cba867fb59facb4c51cef51b678b7d7c89b61",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/reviewer-assessment.json"
+    },
+    {
+      "file": "public-jobs.json",
+      "source_path": "docs/evidence/research/public-jobs.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "546befec9b8a5c02c02cd77a38adaf010d7a949d3aeb9317f6fc17499c332bdc",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/public-jobs.json"
+    },
+    {
+      "file": "scenario.json",
+      "source_path": "src/gtm/research-scenario.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "da7ca6c97f303c1a103431f57af110cde2668e31cbd24f05b3eb449bd48f31db",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/src/gtm/research-scenario.json"
+    },
+    {
+      "file": "research-source.py",
+      "source_path": "src/gtm/research.py",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "61f74870dac0631a61c7fe7b8714a848f384a254aaf404f53a0188c475f14cb9",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/src/gtm/research.py"
+    },
+    {
+      "file": "browser-provenance.json",
+      "source_path": "docs/images/research/provenance.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "0dea78edba9c244f1e425ff9aa7128516604acaaaaa645ad047b7641161d5f78",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/images/research/provenance.json"
+    },
+    {
+      "file": "browser-capture.py",
+      "source_path": "scripts/capture_research.py",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "45f3a342de533fae91ec4bb4f04be43ee2555a458b8a2d4fe536ff0fe7e6af89",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/scripts/capture_research.py"
+    },
+    {
+      "file": "regression.json",
+      "source_path": "docs/evidence/research/local/verification.json",
+      "recorded_source_revision": "embedded per execution; import revision is not execution time",
+      "sha256": "a7dab8444d584f3cebcd35f4eb683f8620ecf6700e6f4361ce902666af9422ed",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/local/verification.json"
+    }
+  ]
+}

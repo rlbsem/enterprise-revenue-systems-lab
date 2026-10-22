@@ -8,6 +8,10 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "gtm-research": (
+        "gtm", "SDR account intelligence · sources to seller review",
+        "Prioritize six synthetic accounts, compare 40 actual Qwen3 responses and inspect a separately recorded local seller decision.",
+    ),
     "gtm-enterprise": (
         "gtm", "120 accounts · USD $3.46M synthetic pipeline",
         "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
@@ -89,26 +93,34 @@ def build():
             },
         }
         write_json(path.parent / "portable.json", portable)
-        with zipfile.ZipFile(
-            path.parent / "reproduction.zip", "w", zipfile.ZIP_DEFLATED
-        ) as z:
-
-            def member(name, data):
-                info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
-                info.compress_type = zipfile.ZIP_DEFLATED
-                z.writestr(info, data)
-
-            member("bundle.json", path.read_bytes())
-            for a in manifest["artifacts"]:
-                member(a["path"], (path.parent / a["path"]).read_bytes())
-            member(
-                "REPRODUCE.txt",
-                (
-                    "Clone https://github.com/rlbsem/enterprise-revenue-systems-lab\nInstall requirements.lock and set PYTHONPATH=src.\n"
-                    + "\n".join(manifest["reproduce"])
-                    + "\npython -m revenue_lab.cli verify <extracted-bundle>\nRecorded inference is not reproducible byte-for-byte by a new model run.\n"
-                ).encode(),
-            )
+        members = {"bundle.json": path.read_bytes(), **{
+            a["path"]: (path.parent / a["path"]).read_bytes() for a in manifest["artifacts"]},
+            "REPRODUCE.txt": (
+                "Clone https://github.com/rlbsem/enterprise-revenue-systems-lab\nInstall requirements.lock and set PYTHONPATH=src.\n"
+                + "\n".join(manifest["reproduce"])
+                + "\npython -m revenue_lab.cli verify <extracted-bundle>\nRecorded inference is not reproducible byte-for-byte by a new model run.\n"
+            ).encode()}
+        archive = path.parent / "reproduction.zip"
+        if archive.is_symlink():
+            raise ValueError("reproduction archive cannot be a symlink")
+        unchanged = False
+        if archive.exists():
+            try:
+                with zipfile.ZipFile(archive) as z:
+                    unchanged = (len(z.namelist()) == len(members) and set(z.namelist()) == set(members)
+                                 and all(z.read(name) == data for name, data in members.items()))
+            except (zipfile.BadZipFile, OSError):
+                pass
+        # Preserve historical bytes when the content is identical. Repacking on
+        # Linux would otherwise change Windows ZIP platform metadata and hashes.
+        if not unchanged:
+            with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as z:
+                for name, data in members.items():
+                    info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+                    info.create_system = 3
+                    info.external_attr = 0o100644 << 16
+                    info.compress_type = zipfile.ZIP_DEFLATED
+                    z.writestr(info, data)
         catalog.append(
             {
                 "id": scenario,
