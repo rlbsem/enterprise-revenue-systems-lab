@@ -1,0 +1,28 @@
+{
+  "repository": "rlbsem/gtm-pipeline-orchestration",
+  "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+  "lane": "gtm-salesforce",
+  "artifacts": [
+    {
+      "file": "acceptance.json",
+      "source_path": "docs/evidence/salesforce-standard/acceptance.json",
+      "recorded_source_revision": "c54503f00e65ad4195a74c0bacf2ce003add091c",
+      "sha256": "7a90158578258dd269077ce1c7267d555176afb9b9047b8bdfaef3f938833b1b",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/acceptance.json"
+    },
+    {
+      "file": "native-details.json",
+      "source_path": "docs/evidence/salesforce-standard/native-details.json",
+      "recorded_source_revision": "62e48215a3609ba136f4ce581f98cc893e2378d9",
+      "sha256": "a2e06649714aff7dde7f231f4d08b99dc90b57feb8c5f0305bf02667b7221f4d",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/native-details.json"
+    },
+    {
+      "file": "post-cleanup.json",
+      "source_path": "docs/evidence/salesforce-standard/post-cleanup.json",
+      "recorded_source_revision": "36fd314015812f2114d5e96a0cbbaee24b17b2e4",
+      "sha256": "36668d1ef99907358b5a6c2c4b5b805c8cc670554cc0e4b10b62429e988fe4db",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/post-cleanup.json"
+    }
+  ]
+}

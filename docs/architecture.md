@@ -1,6 +1,6 @@
 # Evidence before conclusions
 
-The public application reads portable evidence from three separate synthetic environments. The local runner creates isolated workspaces and calls the original Python/dbt engines at pinned Git commits. The Lab does not define seller policy, govern CRM fields or calculate the displayed production-style metrics itself.
+The public application reads portable evidence from independent synthetic environments. The local runner creates isolated workspaces and calls the original Python/dbt engines at pinned Git commits. The Lab does not define seller policy, govern CRM fields or calculate the displayed production-style metrics itself.
 
 ```mermaid
 flowchart LR
@@ -39,3 +39,7 @@ The Qwen review case preserves a mechanically passing proposal with unsupported 
 ## Maintenance
 
 There are three bounded adapters and one evidence contract. Source changes require a deliberate lock update, new execution and new evidence. Recorded UI interactions never call the model or destination. Live model output is nondeterministic: source generation and financial results are deterministic, while fresh model wording need not match an archived response.
+
+## Recorded GTM investigation
+
+The fifth investigation imports exact public GTM artifacts into three distinct recorded bundles. Its isolated reader module projects qualification, approvals, opportunity source events, native relationships and Qwen responses. It adds no execution adapter or vendor call. The existing local execution allowlist and static-only Pages deployment remain unchanged. [Provenance and offline checks](gtm-investigation.md).

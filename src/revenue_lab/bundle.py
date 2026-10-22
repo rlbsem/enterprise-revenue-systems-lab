@@ -243,7 +243,11 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if source == "connected":
+    if source == "gtm":
+        from .gtm_checks import verify_gtm
+
+        checks = verify_gtm(manifest, files)
+    elif source == "connected":
         from .connected_checks import verify_connected
 
         checks = verify_connected(manifest, files)

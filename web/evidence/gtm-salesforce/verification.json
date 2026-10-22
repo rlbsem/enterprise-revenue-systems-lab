@@ -1,0 +1,19 @@
+{
+  "scenario": "gtm-salesforce",
+  "integrity": "verified",
+  "checks": {
+    "native_requests": 140,
+    "read_only_cleanup_requests": 20,
+    "exact_task_effects": 1,
+    "independent_relationships": "consistent",
+    "Apex_tests": 3,
+    "scope": "Recorded native synthetic Account/Contact/Task only; not the enterprise pipeline cohort",
+    "upstream_files": 3,
+    "new_vendor_or_model_execution": false
+  },
+  "limitations": [
+    "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+    "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+    "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "scenario": "gtm-enterprise",
+  "source": {
+    "repository": "rlbsem/gtm-pipeline-orchestration",
+    "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-21T23:07:38.555395+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "execution.json",
+      "sha256": "8ef8f721cce5427d426228e3f8c1c3e1dfd45ea0ae860be926a86399c0204426",
+      "bytes": 1123109
+    },
+    {
+      "path": "scenario.json",
+      "sha256": "e5d144e835020a7acd3fbcb5ac78f41424749bd92aa4b439478e8a7fd5284cd8",
+      "bytes": 1551
+    },
+    {
+      "path": "regression.json",
+      "sha256": "0dbb0e92c05f199c9b701536db35a0ec5a28d7a317f513035f8c3f6bcea4646c",
+      "bytes": 9669
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "03cee29768581ebcade8fdc1e4b923c5b1bd02884455a4843f5e0300d7b82a1f",
+      "bytes": 1464
+    },
+    {
+      "path": "observation.json",
+      "sha256": "1281e665b44a4438bdcc3a701e83d2856ff4bc7b790eb5de55dd646c89e562ae",
+      "bytes": 230
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "5da6acd0413f1610efea509b036bfe0b486b4c3821c596a61e5b961a332268aa",
+      "bytes": 17013
+    }
+  ],
+  "limitations": [
+    "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+    "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+    "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+  ],
+  "input_hashes": {
+    "execution.json": "8ef8f721cce5427d426228e3f8c1c3e1dfd45ea0ae860be926a86399c0204426",
+    "scenario.json": "e5d144e835020a7acd3fbcb5ac78f41424749bd92aa4b439478e8a7fd5284cd8",
+    "regression.json": "0dbb0e92c05f199c9b701536db35a0ec5a28d7a317f513035f8c3f6bcea4646c",
+    "upstream.json": "03cee29768581ebcade8fdc1e4b923c5b1bd02884455a4843f5e0300d7b82a1f"
+  },
+  "reproduce": [
+    "python -m revenue_lab.cli verify web/evidence/gtm-enterprise"
+  ],
+  "configuration_hash": "b36c73c6633fee7710f092605e65ffe1f50356b21e131a73d572f788cefe4027"
+}

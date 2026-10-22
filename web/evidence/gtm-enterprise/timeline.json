@@ -1,0 +1,392 @@
+[
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 615,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_7d44e7423754d325f6853591",
+      "detail": "{\"payload_hash\":\"d621dfda6eb6f8a1185434b4ac2a154a00ffcaa4fb48be8339a63c6a29c4c035\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "f74236b6bb4bfe5eeccbacbbd2f0c40e7588264184c7d3a1a473f0aa84f6e354",
+      "digest": "038ceb1eb6cfe822e55b64e26b7d9a86a59d45983ab307e34ec961feb325fc83"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 621,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_6d5b233fd6189f849bbbce35",
+      "detail": "{\"payload_hash\":\"1db69fcf726253744369aa7fcb0ec76ab223dc5eec2af1c2b895de1b33075645\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "aea21e26518f6cc7cb638c7c722f38fce894468f8474b2bfe75ad165d99cc649",
+      "digest": "5367945e61173edd4de963b8a85b022cf7975018cfe1178c13725b2c903b52d6"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 627,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_554015fdc5445f9493739782",
+      "detail": "{\"payload_hash\":\"43adc577a02855c9e1911969328d89ebe1183da093fab61450d45483525592e5\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "3f2ea052f1611ddcd6f7390dc926fe63da0f8ed73e928128a99da06da49414e3",
+      "digest": "440724b035b8d65ca1fcd9a49afe16c42be2a3c55cb2ab55ea5be0d1fbaca61f"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 633,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_3f7989141b85bd8e11e631fe",
+      "detail": "{\"payload_hash\":\"03f4ade55ed530236834f586150211844a7e021ee5953fd3c9dedb63e222eaf0\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "383ce245d19a8b887d3bd349f79b787bd78eae5e048e9e8652d54f24e0ac37d9",
+      "digest": "7d56102d38ad700cccc3bc4cbf7a81b918d904361327eb974b184c0e9a6bfdcb"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 641,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_fe47e22b19b661b059754434",
+      "detail": "{\"payload_hash\":\"c36d3b246478e22430bebcee340a0b9f6c2ff08bc9f0d0ed6a207bd84c912e77\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "cf472ebfd71918b1f6b4416c3d0a582a803accab7398f8d3a9d7fca9370caa06",
+      "digest": "1e8b6f46c90876c253a1c3e923257515f77898d932db0414c1c35fd282bbe34e"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 647,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_a90ff9ff17c241777533c37d",
+      "detail": "{\"payload_hash\":\"d94e5debf5884da7f689569e86384ee3f1394fa5fe0f88e7f0706660a6b2edd5\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "52636915d281836bd8d93493c57611469a23c63f13e259728d7952b46bdc66e0",
+      "digest": "aedd64656979f0bfe841685676536f427eaa60740aa5580e8233de7d75a6379c"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 653,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_454570696ad0badf2f6eb911",
+      "detail": "{\"payload_hash\":\"b9ac4e6dc3ea69c15608f437ba350a2d4ef80f40e429c87788f50e1c9640806b\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "57b6d729350b9bf7d8298c2bce5e9a3fd175facb49c7fe2969916bae3c7927f5",
+      "digest": "94bd9d0913d2a2ce81baf72a79bf3fa288635488f64f5d9934d25fbb2ec3c006"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 659,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_41b1a9d44df085d444599be8",
+      "detail": "{\"payload_hash\":\"eac7daaa9dfcc08aca1222a70a3c3377ab8e990e9e6404f1825b2dbf6a0bb292\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "3f2b0cd8bf3c06f7d0ca3754217ea8c59e1105011449cfa98d68e2caed8913b9",
+      "digest": "b641ce9a64df865e281a6117d3569243612d43dd9fce5f25bded9a8ac4a9fc97"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 665,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_d7950ac77ee2e3e3a33c0311",
+      "detail": "{\"payload_hash\":\"cce7690395ed8f88a0601e3f956cf5ed1b882a9108cdc8a76e33b6e55773da3f\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "5eb50881d9be9536c7051837402ad91e79d09aeb382170a1f915cf6efbfee6bd",
+      "digest": "4f80c21ed44bbec094209d3d631a825e64d3ba8bce10d1af0853e1174d977e64"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 671,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_dc64d9723f2379718d323aaa",
+      "detail": "{\"payload_hash\":\"11dc582b976befa077a2af26d233629526bf0790e49f30c93a8a1666a31c2283\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "44dfcfd6d77147ece78ed86f72bfc9bca3f828161ada18e4ac42d4605dc5d554",
+      "digest": "4777046c6a617dbad39d5ad3d6bb713ddd573c79a23b939109842c4c4fabcc7d"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 677,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_d88fcbee1611f471432eea3e",
+      "detail": "{\"payload_hash\":\"56952760b86e7d1aa9605348c3fbd05d61829d9abd36a75c2fafce1d47d88a7e\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "4b8972ac915bae1accadb2ff6357494ca02ec1c2cdf501db93265bd7dc782692",
+      "digest": "0a12e65a4811651fab5b83053fc6b1435023a58c841a6b76965722d36cb12b39"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 683,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_b5e78ddd1fb7b424f475dcab",
+      "detail": "{\"payload_hash\":\"03c5d77e1586402f4d8435e1decabada5daf0e74f58864a151203aa1bbfc00a5\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "8fcad4e807bce37bd1ca76cfc6dc38f6bbd48322a8b2cce9d648ff49c81bfd51",
+      "digest": "1de5e89e0f8f03a746d2d44444c699149e51d9096f7e8a4eacbf9b9c0d46805a"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 689,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_c5ff14284d8b1a941fb4aa57",
+      "detail": "{\"payload_hash\":\"82e6509c91ffbacc4439310884457a204492ef6a525175f16e85ce8d525447b4\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "9a8b2b8657c2b2756364a3eeb72f74f63b327035209cf8537a71cd454a08e151",
+      "digest": "9bd6f448d81625a54c8465a0fbc00bdd8b3248086740adf912d1d8781c8d64ea"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 695,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_eca05222abcff6c908f35fdd",
+      "detail": "{\"payload_hash\":\"184d775957493a02013624720ee94827a3b56b7bbdcffe40c36778721989f645\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "7f2865d7acacffab544ed8d065f18b4c315d5893d6b4be347930cd463399e54b",
+      "digest": "aa335d2b4f7f8ff99539a9c408a39dcd1e274dab6cbb98860ea0b554b964d686"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 701,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_00bd2d5991ed30d76b064828",
+      "detail": "{\"payload_hash\":\"aad179384bfa32e4917181ac8bd89f273486259209570fc422f54e35484e9ab1\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "3c6f14738bda46668bb27dd3b846955e0087a5384bf845c156451aabb32a992f",
+      "digest": "daec8105aa71aac63ca5eb42dbf29036c64c08e62fda5f5785e61c90e7f9866f"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 707,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_c686a3fc7e4f3fe6b18feaec",
+      "detail": "{\"payload_hash\":\"b77bbef1cac3a3db2259276d4b8c82342c144a50428f63934665013d1a731e89\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "895e927df3db2fb105cc8c6de4d3b8f8bfeadf7e86c8cf36be79e60ebba6da41",
+      "digest": "0b2097248216e7d17da9200cd379bf6a44c355d5dc99c6193ed09a805ef3ccf6"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 713,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_60c7f01f5f17f16591e56757",
+      "detail": "{\"payload_hash\":\"93325f59ff39bd23b5ba5e5a0ce626f45e1b7d62e7e412d611672b19e86c5fe8\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "dd0b5b055c7ace9d22a6f3ddba4b3cd184600123bd1cf1430f3b6d0e96773e3b",
+      "digest": "c4e3e8cfd494cbe7214cc703d38b80b9d819737e7d57ca36648b55f88d013743"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 719,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_d0a784c4a439c3a4a36f6b06",
+      "detail": "{\"payload_hash\":\"cfa60d7f5f23542e0cd6b7e0e85e4c8959134ac20130d5f2f11a6f2f5426694c\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "eb765c68358c996773a4da288d3c66be2b6e6d1aed050b7e38fa43e8cb3e6332",
+      "digest": "c1117e27b8155e462e97c3c7de9da3c76a21afadf8d75a86cf48462709a586fa"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 725,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_90ba9c7ff690dca8a1fedf44",
+      "detail": "{\"payload_hash\":\"dcd98cace5f81fe2c58b62a0c51bb137c5e80d50450f8a5d0ee5fe6e35750d29\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "5bbea4933f22535d237b31a161ef888498ba9961ac348685a66a13bc1d92f4c7",
+      "digest": "c826f8121cb8229a80f2e3629de9600bae241257d8e6d8460b83f255648a1bc0"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 731,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_1b754877962e20fd6d6cf847",
+      "detail": "{\"payload_hash\":\"903497061c55f1c512f7ba373c8373e462846e589ecb526497432886be2acfd8\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "575c29875e7e4e43956bca45c4eabb83a88e855394b1178984143b21fe976ac0",
+      "digest": "02e7b9440a2cec03cc6f86f62a0c52428ede29259238beaaca7f327580240b1f"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 737,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_985b1af29668a82a38524ceb",
+      "detail": "{\"payload_hash\":\"0545d44836b11139a19620c35e9e675e57f2206727ed27b8804ac9d347d03f1b\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "c207f1b8f7487599d80be6358c3faf570ede75e007cfb677a0bc8bc5663dfc51",
+      "digest": "3ab9099c53bad4d99a2110e4b3ec55e7bc4d9a71a59a1c31a39f589f4843af88"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 743,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_cccaf2f37b18cf5127050c3e",
+      "detail": "{\"payload_hash\":\"894d1fe4b5a3eda0c80515d46ca3726a4a90fa53190bde7c7493b0dd0439f8cd\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "efef4f56ef4912e1059a14e21221b888f0b3ae7292567b810920313752335f01",
+      "digest": "c2524d0b8ec852187421439d423b0c1ce21035a04d9f4efffcc13c86c0b1d111"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 749,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_3e9555292104f4fd720786e0",
+      "detail": "{\"payload_hash\":\"ae289820cf2728efc958ded34723aa79895ffb90f8aed844313fb41e8d134c2c\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "093b751bd259e86c43f3ba385794628fe6542aaf23750d9a28ef25e4d17ca624",
+      "digest": "10010c2d7c0703949b977b94493690b0076c427538ee547b59836a51872ca687"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 755,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_78a336b3e5c61ae473a16142",
+      "detail": "{\"payload_hash\":\"79dfb3860ae7488cc26f985f02df65cd8694d9ab350f588cd2e919c55f8f04f7\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "b89e8cb3fb6ac0077599290561c03cff5a8eeeba53c6f7d70eb1fd19aa006096",
+      "digest": "39453af9bc4046f13b568eabdc8e2d9ddfe13c005ad15d39e0e538144965eecd"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 761,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_3bf8490fe3bcb85a0d5d3258",
+      "detail": "{\"payload_hash\":\"a770f9bbdcb9b95731b2de7958eb561a06ac83c87ac3f99ff5feef2497fd92b3\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "288c6778d831b9e66cf19b32d1bea4640e1493692b38ec64d9b9640a971d8df5",
+      "digest": "616108caa287ecaa74583fc72552db75e3401c85f8df09302d5357e0d38008d1"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 767,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_2141b8da6715c57a88a8ea39",
+      "detail": "{\"payload_hash\":\"1b1f8128e30dfb773379c52d15045c00e6ccb95b022db1d0259abf140ef4388c\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "0007372d733429fb2406533eb30c667cd392cc0ba5b63eaf08d1ae49e0e36ccb",
+      "digest": "c249b7ab5145216cf5945f3dd60c4ee3407f6e29aa1951441520baedd94c60e6"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 773,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_7b41d73624113c2343686450",
+      "detail": "{\"payload_hash\":\"f631d98c9e37e340260b79ab0afbdfe2a16ad5bf85d79bc1a29d86669f08642b\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "b8a3271c560c399d4a59224db6763f8e6f1f45b1b785ee6419dbf06b24b3c34c",
+      "digest": "6bc29b7e6856eccdeaae34e04750798c07107f00b9d2c68369eac313df924fd0"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 779,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_d29d066d93036cd6e405e9d1",
+      "detail": "{\"payload_hash\":\"33876b3fd95b0c29265d8453ccd8ae07b9c76821b5f3fe8c67949c4d974a60fc\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "8e9b8493cf4ab1aec398911fbfd46088c97e10ef1c0c9cac18394c718f086ab1",
+      "digest": "a5afdc5ad42e449b509082785660b929aa3f856b079240293d170a554ce86c94"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 785,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_df8eba451563f084f07a45c2",
+      "detail": "{\"payload_hash\":\"471138c0895d82d8dda4e9d1a1ec9dd8f252692784a92be130de8c57cd723514\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "2fc4a086056cec1fe98483135eeca81218deb600fe048909019fc01a6cb74e57",
+      "digest": "a147b19aa094c911bd7f3d5ff927a196728a85bd211c88158542fdc903a20457"
+    }
+  },
+  {
+    "action": "exact_approval",
+    "detail": "2026-01-01T12:00:00Z · local synthetic event",
+    "body": {
+      "seq": 791,
+      "at": "2026-01-01T12:00:00Z",
+      "event": "exact_approval",
+      "subject": "act_3d7e8c5c1587b57db54e8bfe",
+      "detail": "{\"payload_hash\":\"3fc268ca32351eaabdc504ddf0acabb35969a0a2720b21ac942ad8a507a847d1\",\"reviewer\":\"demo-reviewer\"}",
+      "previous": "775e9a52f1662c1d4832b3b713319bd3cf7c6d0f1265b72ae8001905ae0a65c7",
+      "digest": "0c0831700f38e15d20713c8022544a7d451f5864731b9e5129cc150c56fd2eff"
+    }
+  }
+]

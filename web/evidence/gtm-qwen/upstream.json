@@ -1,0 +1,35 @@
+{
+  "repository": "rlbsem/gtm-pipeline-orchestration",
+  "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+  "lane": "gtm-qwen",
+  "artifacts": [
+    {
+      "file": "evaluation.json",
+      "source_path": "docs/evidence/native-ai/ai-evaluation.json",
+      "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+      "sha256": "fa42652d84a649544d914b6b84ff90aa8bac53ae385f63b7eee45e4c40f6ba33",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/native-ai/ai-evaluation.json"
+    },
+    {
+      "file": "model-source.py",
+      "source_path": "src/gtm/advice.py",
+      "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+      "sha256": "74e967f8354c67f7c815c715b2ca3b5d4bf903680da8a970dee4cfa41028b76b",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/src/gtm/advice.py"
+    },
+    {
+      "file": "policy-source.py",
+      "source_path": "scripts/evaluate_ai.py",
+      "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+      "sha256": "ddcb9d1e1197e052e4f00fb9b9843056c8a0f2c79408d493d02e2529ed4c05da",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/scripts/evaluate_ai.py"
+    },
+    {
+      "file": "cases.json",
+      "source_path": "src/gtm/upgrade_cases.json",
+      "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+      "sha256": "2de37f8aaa6872bd6a793e30a7c2074bebc5caf9e69f277909b4d4292bace812",
+      "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/src/gtm/upgrade_cases.json"
+    }
+  ]
+}

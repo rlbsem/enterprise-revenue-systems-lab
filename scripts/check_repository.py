@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from revenue_lab.bundle import ROOT, verify
 
-catalog = json.loads((ROOT / "web/catalog.json").read_text())
+catalog = json.loads((ROOT / "web/catalog.json").read_text(encoding="utf-8"))
 checks = []
 for item in catalog["scenarios"]:
     path = ROOT / "web/evidence" / item["id"]
@@ -22,7 +22,7 @@ for item in catalog["scenarios"]:
         == item["verification_sha256"]
     )
     checks.append(verify(path))
-    portable = json.loads((path / "portable.json").read_text())
+    portable = json.loads((path / "portable.json").read_text(encoding="utf-8"))
     for artifact in portable["manifest"]["artifacts"]:
         assert (
             portable["artifacts"][artifact["path"]].encode()
@@ -42,7 +42,7 @@ print(
 )
 manifest = ROOT / "package-manifest.json"
 if manifest.exists():
-    inventory = json.loads(manifest.read_text())["files"]
+    inventory = json.loads(manifest.read_text(encoding="utf-8"))["files"]
     import subprocess
 
     if (ROOT / ".git").exists():

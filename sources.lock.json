@@ -16,6 +16,103 @@
     "connected": {
       "repository": "rlbsem/customer-signal-activation",
       "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+    },
+    "gtm": {
+      "repository": "rlbsem/gtm-pipeline-orchestration",
+      "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+    }
+  },
+  "gtm_imports": {
+    "gtm-enterprise": {
+      "repository": "rlbsem/gtm-pipeline-orchestration",
+      "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+      "lane": "gtm-enterprise",
+      "artifacts": [
+        {
+          "file": "execution.json",
+          "source_path": "docs/evidence/enterprise-usd/demo.json",
+          "recorded_source_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+          "sha256": "8ef8f721cce5427d426228e3f8c1c3e1dfd45ea0ae860be926a86399c0204426",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/enterprise-usd/demo.json"
+        },
+        {
+          "file": "scenario.json",
+          "source_path": "src/gtm/enterprise-scenario.json",
+          "recorded_source_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+          "sha256": "e5d144e835020a7acd3fbcb5ac78f41424749bd92aa4b439478e8a7fd5284cd8",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/src/gtm/enterprise-scenario.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/enterprise-usd/verification.json",
+          "recorded_source_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+          "sha256": "0dbb0e92c05f199c9b701536db35a0ec5a28d7a317f513035f8c3f6bcea4646c",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/enterprise-usd/verification.json"
+        }
+      ]
+    },
+    "gtm-salesforce": {
+      "repository": "rlbsem/gtm-pipeline-orchestration",
+      "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+      "lane": "gtm-salesforce",
+      "artifacts": [
+        {
+          "file": "acceptance.json",
+          "source_path": "docs/evidence/salesforce-standard/acceptance.json",
+          "recorded_source_revision": "c54503f00e65ad4195a74c0bacf2ce003add091c",
+          "sha256": "7a90158578258dd269077ce1c7267d555176afb9b9047b8bdfaef3f938833b1b",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/acceptance.json"
+        },
+        {
+          "file": "native-details.json",
+          "source_path": "docs/evidence/salesforce-standard/native-details.json",
+          "recorded_source_revision": "62e48215a3609ba136f4ce581f98cc893e2378d9",
+          "sha256": "a2e06649714aff7dde7f231f4d08b99dc90b57feb8c5f0305bf02667b7221f4d",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/native-details.json"
+        },
+        {
+          "file": "post-cleanup.json",
+          "source_path": "docs/evidence/salesforce-standard/post-cleanup.json",
+          "recorded_source_revision": "36fd314015812f2114d5e96a0cbbaee24b17b2e4",
+          "sha256": "36668d1ef99907358b5a6c2c4b5b805c8cc670554cc0e4b10b62429e988fe4db",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/salesforce-standard/post-cleanup.json"
+        }
+      ]
+    },
+    "gtm-qwen": {
+      "repository": "rlbsem/gtm-pipeline-orchestration",
+      "import_revision": "6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+      "lane": "gtm-qwen",
+      "artifacts": [
+        {
+          "file": "evaluation.json",
+          "source_path": "docs/evidence/native-ai/ai-evaluation.json",
+          "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+          "sha256": "fa42652d84a649544d914b6b84ff90aa8bac53ae385f63b7eee45e4c40f6ba33",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/6da3603a8e447dacfdbde25a8aab5c5fa3721328/docs/evidence/native-ai/ai-evaluation.json"
+        },
+        {
+          "file": "model-source.py",
+          "source_path": "src/gtm/advice.py",
+          "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+          "sha256": "74e967f8354c67f7c815c715b2ca3b5d4bf903680da8a970dee4cfa41028b76b",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/src/gtm/advice.py"
+        },
+        {
+          "file": "policy-source.py",
+          "source_path": "scripts/evaluate_ai.py",
+          "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+          "sha256": "ddcb9d1e1197e052e4f00fb9b9843056c8a0f2c79408d493d02e2529ed4c05da",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/scripts/evaluate_ai.py"
+        },
+        {
+          "file": "cases.json",
+          "source_path": "src/gtm/upgrade_cases.json",
+          "recorded_source_revision": "4b06935b23edee3045a58553ec9fcdf2fa056084",
+          "sha256": "2de37f8aaa6872bd6a793e30a7c2074bebc5caf9e69f277909b4d4292bace812",
+          "source_url": "https://github.com/rlbsem/gtm-pipeline-orchestration/blob/4b06935b23edee3045a58553ec9fcdf2fa056084/src/gtm/upgrade_cases.json"
+        }
+      ]
     }
   }
 }

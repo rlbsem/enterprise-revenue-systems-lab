@@ -1,0 +1,7 @@
+{
+  "derivation": "Offline import of exact public committed artifacts; no new system execution",
+  "lane": "gtm-enterprise",
+  "new_vendor_execution": false,
+  "new_model_execution": false,
+  "continuous_vendor_workflow": false
+}

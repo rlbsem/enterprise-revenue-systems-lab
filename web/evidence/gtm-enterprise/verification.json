@@ -1,0 +1,25 @@
+{
+  "scenario": "gtm-enterprise",
+  "integrity": "verified",
+  "checks": {
+    "accounts": 120,
+    "opportunities": 5,
+    "currency": "USD",
+    "original_regression_tests": 163,
+    "original_independent_demos": 4,
+    "pipeline_cents": 346000000,
+    "pipeline_by_arm_cents": {
+      "holdout": 81000000,
+      "treatment": 265000000
+    },
+    "method": "Source CRM outcomes, scope multiplication, full account denominator, SQL rows and approvals checked offline",
+    "causal_or_commercial_lift": "not_established",
+    "upstream_files": 3,
+    "new_vendor_or_model_execution": false
+  },
+  "limitations": [
+    "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+    "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+    "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+  ]
+}

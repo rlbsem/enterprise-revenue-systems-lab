@@ -110,7 +110,7 @@ def check_site(base, expected, output, *, source_links=False):
 
         def assets():
             hashes = {}
-            for name in ("index.html", "style.css", "app.js", "catalog.json"):
+            for name in ("index.html", "style.css", "app.js", "gtm.js", "catalog.json"):
                 response = context.request.get(base + name)
                 assert response.status == 200, name
                 data = response.body()
@@ -157,6 +157,7 @@ def check_site(base, expected, output, *, source_links=False):
                 ("Recover uncertain execution", "control-recovery"),
                 ("Reconcile the numbers", "revenue-bridge"),
                 ("Connect CRM and warehouse", "connected-roundtrip"),
+                ("Inspect qualified pipeline", "gtm-enterprise"),
                 ("Trust the seller action", "seller-application"),
             ):
                 button = page.get_by_role("button", name=label)
@@ -184,7 +185,7 @@ def check_site(base, expected, output, *, source_links=False):
             assert page.get_by_role("link", name="Skip to investigation").evaluate("e => e === document.activeElement")
             page.keyboard.press("Enter")
             assert page.evaluate("document.activeElement.id") == "main", "skip link did not focus the investigation"
-            return "Four keyboard-selectable investigations; share/reload/Back/Forward; tab keys; skip link"
+            return "Five keyboard-selectable investigations; share/reload/Back/Forward; tab keys; skip link"
 
         record("navigation_and_keyboard", navigation)
 

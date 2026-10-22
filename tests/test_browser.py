@@ -84,7 +84,7 @@ def test_browser_evidence_integrity_review_download_and_mobile(url, tmp_path):
 
 
 def test_all_scenarios_and_three_investigations(url):
-    catalog = json.loads((ROOT / "web/catalog.json").read_text())
+    catalog = json.loads((ROOT / "web/catalog.json").read_text(encoding="utf-8"))
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page(viewport={"width": 1440, "height": 1000})
@@ -278,7 +278,7 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
             page = browser.new_page(viewport={"width": 1440, "height": 1000})
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
-            catalog = json.loads((directory / "catalog.json").read_text())
+            catalog = json.loads((directory / "catalog.json").read_text(encoding="utf-8"))
             for case in catalog["scenarios"]:
                 page.goto(base + "?case=" + case["id"])
                 page.get_by_role("heading", name=case["title"], exact=True).wait_for()
@@ -292,6 +292,8 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
                 assert author.is_visible()
                 assert author.get_attribute("href") == "https://github.com/rlbsem"
                 expected_label = (
+                    "Verify these separate records offline"
+                    if case["investigation"] == "gtm" else
                     "Verify this native record offline"
                     if case["investigation"] == "connected"
                     else "Reproduce this investigation · fresh local execution"
