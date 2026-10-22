@@ -89,3 +89,26 @@ def test_current_research_capture_and_ui_provenance():
     assert not record["page_errors"] and not record["nonlocal_requests"]
     assert all(not r["overflow"] and not r["contrast"]["failures"] for r in record["layouts"])
     assert all(not r["violations"] for r in record["accessibility"].values())
+
+
+def test_static_build_preserves_valid_foreign_zip_metadata_and_repairs_bad_content(tmp_path, monkeypatch):
+    from revenue_lab.site import build
+    shutil.copytree(ROOT / "web", tmp_path / "web")
+    archive = tmp_path / "web/evidence/control-recovery/reproduction.zip"
+    with zipfile.ZipFile(archive) as z:
+        members = {name: z.read(name) for name in z.namelist()}
+    # Simulate an archive originating on a different platform, with distinct metadata.
+    with zipfile.ZipFile(archive, "w") as z:
+        z.comment = b"same verified contents, foreign packaging metadata"
+        for name, data in members.items():
+            z.writestr(name, data)
+    before = archive.read_bytes()
+    monkeypatch.setattr("revenue_lab.site.ROOT", tmp_path)
+    build()
+    assert archive.read_bytes() == before
+    with zipfile.ZipFile(archive, "w") as z:
+        for name, data in members.items():
+            z.writestr(name, b"corrupt" if name == "bundle.json" else data)
+    build()
+    with zipfile.ZipFile(archive) as z:
+        assert {name: z.read(name) for name in z.namelist()} == members

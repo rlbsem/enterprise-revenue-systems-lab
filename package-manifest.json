@@ -135,12 +135,12 @@
       "bytes": 20560
     },
     "docs/evidence/research-case/tests.xml": {
-      "sha256": "3b3047105e58559bb7e90bceb5c2b9f1302b754e4fa2220ec6ae7d1b9735e0df",
-      "bytes": 14902
+      "sha256": "42e324918e089aaed5b24922af2b84dfa1bf875bf1881587521fa9d80325841c",
+      "bytes": 15045
     },
     "docs/evidence/research-case/verification.json": {
-      "sha256": "1bdd51450e4126f2ae418ec0042efe567d3944c80d68831ad1010963660c8a39",
-      "bytes": 1163
+      "sha256": "8d0dd2fdab90dced019c36ab3e2936d8cbb54d92ac96980d1a7b2e71aa4a25cc",
+      "bytes": 1311
     },
     "docs/evidence/seller-delivery-fresh.json": {
       "sha256": "560f7daeca6f4d30fc13a107d88d67d659ecb9b3fb768f81633b3f18d3938310",
@@ -275,8 +275,8 @@
       "bytes": 5096
     },
     "docs/sdr-account-intelligence.md": {
-      "sha256": "465ca20c781b7ace7f3a99989fa70c7c0735f4e6e951f0fd1d3729ca516c54c1",
-      "bytes": 6337
+      "sha256": "56bb4d97a40e87d7a9892eb835fa12c410c1d1454556211bd5bbf110eb7068ef",
+      "bytes": 6546
     },
     "pyproject.toml": {
       "sha256": "5e042a7d84aff7bf8fb7be25a8122f1f2b575dc2dfa5dcc8158a7afb6b9672f0",
@@ -387,8 +387,8 @@
       "bytes": 7761
     },
     "src/revenue_lab/site.py": {
-      "sha256": "4711f282ac6b2c657dab2bf430843f0587db9d48b5e2a6699948b2b2345bd3d5",
-      "bytes": 5473
+      "sha256": "2e76baf9fbd1126c3030e0295a91e594ce2bbefe2c170949ff4b4da6f87f1762",
+      "bytes": 6207
     },
     "src/revenue_lab/smoke.py": {
       "sha256": "6de02140074dc785661512948835ec628e78cb01c43ba3294f4f817d24402206",
@@ -439,8 +439,8 @@
       "bytes": 2119
     },
     "tests/test_research.py": {
-      "sha256": "1208767b327c1e9d7b0b6d3160450a5eb0303c368cf9446dbe72a6b0d47ae28f",
-      "bytes": 4563
+      "sha256": "82ce5bb7c88129740f4e358cdfaff6bb76ee12d50a2e6f575f411fafc18eb23e",
+      "bytes": 5660
     },
     "tests/test_research_browser.py": {
       "sha256": "4242e14ede8180e8075607b7dede473d860df1642a2478e48e782cfa3814af58",

@@ -1,12 +1,12 @@
 {
   "scope": "Local Lab verification; no new vendor/model execution or public deployment",
   "tests": {
-    "tests": 118,
+    "tests": 119,
     "failures": 0,
     "errors": 0,
     "skipped": 0
   },
-  "test_seconds": 51.126,
+  "test_seconds": 51.636,
   "all_case_layout_reviews": 280,
   "new_case_layout_reviews": 20,
   "automated_accessibility_violations": 0,
@@ -22,5 +22,6 @@
   "prior_evidence_and_images": "Byte-exact preservation checked by regression test",
   "static_build": "All fourteen cases and downloads tested under GitHub Pages-style prefix",
   "github_ci": "Reported separately on pull-request head; not inferred from local tests",
-  "deployment": "Not performed"
+  "deployment": "Not performed",
+  "archive_build": "Exact existing member bytes are preserved across packaging platforms; invalid contents repaired; dedicated regression passed."
 }
