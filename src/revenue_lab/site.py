@@ -8,6 +8,10 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "gtm-research": (
+        "gtm", "SDR account intelligence · sources to seller review",
+        "Prioritize six synthetic accounts, compare 40 actual Qwen3 responses and inspect a separately recorded local seller decision.",
+    ),
     "gtm-enterprise": (
         "gtm", "120 accounts · USD $3.46M synthetic pipeline",
         "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",

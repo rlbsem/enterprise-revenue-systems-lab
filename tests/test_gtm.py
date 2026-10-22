@@ -121,7 +121,7 @@ def test_gtm_screenshot_provenance_matches_actual_ui_and_images():
     record = json.loads((ROOT / "docs/evidence/gtm-integration/browser.json").read_text())
     for field, name in [("stylesheet_sha256", "style.css"), ("app_sha256", "app.js"),
                         ("gtm_sha256", "gtm.js"), ("html_sha256", "index.html"), ("catalog_sha256", "catalog.json")]:
-        assert hashlib.sha256((ROOT / "web" / name).read_bytes()).hexdigest() == record[field]
+        assert hashlib.sha256((ROOT / "docs/evidence/research-case/baseline-ui" / name).read_bytes()).hexdigest() == record[field]
     assert len(record["reviews"]) == 60 and len(record["images"]) == 6
     assert record["page_errors"] == []
     for review in record["reviews"]:

@@ -1,0 +1,6 @@
+{
+  "derivation": "Offline read-only projection; no new research, approval or vendor execution",
+  "new_vendor_execution": false,
+  "new_model_execution": false,
+  "continuous_vendor_workflow": false
+}

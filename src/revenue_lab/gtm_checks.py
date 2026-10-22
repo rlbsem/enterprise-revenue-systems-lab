@@ -140,7 +140,7 @@ def qwen(files):
             "scope": "Recorded Qwen3 advisory evaluation with its own local policy observations; not native Salesforce execution"}
 
 
-def verify_gtm(manifest, files):
+def verify_provenance(manifest, files):
     upstream, obs = files["upstream.json"], files["observation.json"]
     require(upstream == LOCK["gtm_imports"][manifest["scenario"]], "unexpected upstream provenance")
     require(obs["new_vendor_execution"] is False and obs["new_model_execution"] is False and
@@ -149,5 +149,10 @@ def verify_gtm(manifest, files):
         # Original bytes are checked by load_verified; pin their hashes to the import lock too.
         entry = next(a for a in manifest["artifacts"] if a["path"] == item["file"])
         require(entry["sha256"] == item["sha256"], "upstream artifact bytes changed")
+
+
+def verify_gtm(manifest, files):
+    verify_provenance(manifest, files)
+    upstream = files["upstream.json"]
     check = {"gtm-enterprise": pipeline, "gtm-salesforce": salesforce, "gtm-qwen": qwen}[manifest["scenario"]]
     return {**check(files), "upstream_files": len(upstream["artifacts"]), "new_vendor_or_model_execution": False}

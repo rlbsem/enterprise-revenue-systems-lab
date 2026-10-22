@@ -24,7 +24,15 @@ The original three investigation screenshots are captured directly from the curr
 | Can a CRM action survive uncertain delivery? | [Native Salesforce and Snowflake evidence](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md): one synthetic CRM review, lost-acknowledgment recovery, exact independent readback and warehouse feedback changing `clarify_need` to `hold` | Owner-authorized synthetic policy, not human customer approval. This Lab displays recorded vendor execution without making new calls. |
 | How does account intelligence become qualified pipeline? | [GTM Pipeline investigation](docs/gtm-investigation.md): a 120-account USD $3.46M synthetic scenario, separate native Salesforce Account/Contact/Task acceptance and separate actual Qwen3 responses | Three recorded execution sets, not one continuous vendor workflow. No commercial uplift or prospect communication. |
 
-The thirteen cases draw from four pinned source repositories. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The fourteen cases draw from four pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+
+## SDR account intelligence
+
+The fifth investigation now includes **[SDR account intelligence](docs/sdr-account-intelligence.md)**: six explainable account priorities, forty actual Qwen3 responses, preserved failures and a separately recorded local seller decision. Select a source, compare an approach, inspect uncertainty and follow the boundary to native Salesforce or synthetic pipeline evidence.
+
+The candidate route is `?case=gtm-research`. It works in the static build; public availability requires a separately verified Pages deployment. The richer research desk is not a native Salesforce execution. [Source lock](sources.lock.json) · [Recorded operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json).
+
+<img src="docs/images/research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
 
 ## Open the application
 

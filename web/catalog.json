@@ -54,6 +54,19 @@
       "mode": "recorded"
     },
     {
+      "id": "gtm-research",
+      "investigation": "gtm",
+      "title": "SDR account intelligence · sources to seller review",
+      "summary": "Prioritize six synthetic accounts, compare 40 actual Qwen3 responses and inspect a separately recorded local seller decision.",
+      "manifest_sha256": "1b88dbeab8a4b8f384b3fadb6c6c13664fcf41781cb1f3877002f54c1583321b",
+      "verification_sha256": "d4d91eb95d53a6bf4064d9f8c8674c55596a5d2106ea4d3c4fb787519d1b7aec",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "81d9381169456ca8893be0ddea483296ac77e12e"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "gtm-salesforce",
       "investigation": "gtm",
       "title": "Native Salesforce · one guarded SDR Task",

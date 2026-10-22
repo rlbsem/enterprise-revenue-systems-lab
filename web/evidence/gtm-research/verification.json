@@ -1,0 +1,21 @@
+{
+  "scenario": "gtm-research",
+  "integrity": "verified",
+  "checks": {
+    "recorded_responses": 40,
+    "prompt_approaches": 3,
+    "queue_accounts": 6,
+    "recorded_local_reviews": 1,
+    "source_regression_tests": 237,
+    "new_vendor_or_model_execution": false,
+    "semantic_entailment": "not_established_by_exact_citations",
+    "native_research_delivery": "not_executed"
+  },
+  "limitations": [
+    "40 model evaluation responses and a separate fresh local operator run; not the native Salesforce execution or the 120-account pipeline scenario.",
+    "Synthetic January 2026 study contexts; actual model execution in October 2026. Priority is deterministic fit/signal arithmetic, not buying intent.",
+    "Exact citations do not establish semantic entailment. Qualitative assessment is an AI engineering review, not a blind human SDR study.",
+    "Clay/provider enrichment is fixture-based; n8n is an unexecuted reference. No prospect communications, new approvals or CRM writes occur here.",
+    "One real public job API archive is a separate read-only reference. API updated_at is not publication date; real company is not a synthetic CRM target."
+  ]
+}

@@ -1,5 +1,7 @@
 // Read-only projections of pinned execution records. No business engine or vendor client.
+import {researchMetrics, researchPanel} from "./research.js";
 export function gtmMetrics(id, read, metric) {
+  if(id === "gtm-research") return researchMetrics(read, metric);
   if (id === "gtm-enterprise") {
     const d = read("execution.json"), arms = Object.values(d.measurement.arms);
     return [metric("Synthetic accounts", d.account_records.length, "Full assigned-account denominator"),
@@ -29,14 +31,19 @@ function cash(d, cents) {
 
 export function gtmPanel(id, ui) {
   const {el, section, raw, json:read, facts, finding}=ui, p=el("div",undefined,"gtm-investigation");
-  p.append(el("p", "The SDR workflow: find an account → understand the signals → review advice → approve a handoff → measure what follows.", "gtm-journey"));
-  p.append(el("p", "Evidence boundary: the enterprise scenario, Qwen3 research and native Salesforce handoff are three separate recorded runs. They show complementary capabilities, not a continuous vendor deployment or commercial uplift.", "gtm-boundary"));
+  if(id==="gtm-research") {
+    p.append(el("p", "Research, local seller review, native Salesforce and pipeline measurement are separate recorded evidence sets. This viewer makes no new approvals, model calls or CRM writes.", "gtm-boundary"));
+  } else {
+    p.append(el("p", "The SDR workflow: find an account → understand the signals → review advice → approve a handoff → measure what follows.", "gtm-journey"));
+    p.append(el("p", "Evidence boundary: the enterprise scenario, Qwen3 research and native Salesforce handoff are three separate recorded runs. They show complementary capabilities, not a continuous vendor deployment or commercial uplift.", "gtm-boundary"));
+  }
   const lanes=el("nav",undefined,"gtm-lanes"); lanes.setAttribute("aria-label","GTM evidence boundaries");
-  for(const [key,label] of [["gtm-enterprise","01 · Enterprise pipeline"],["gtm-salesforce","02 · Native Salesforce"],["gtm-qwen","03 · Qwen3 advice"]]) {
+  for(const [key,label] of [["gtm-research","SDR account intelligence"],["gtm-enterprise","01 · Enterprise pipeline"],["gtm-salesforce","02 · Native Salesforce"],["gtm-qwen","03 · Qwen3 advice"]]) {
     const a=el("a",label);a.href="?case="+key;if(key===id)a.setAttribute("aria-current","page");lanes.append(a);
   }
   p.append(lanes);
-  if(id==="gtm-enterprise") enterprise(p,ui);
+  if(id==="gtm-research") researchPanel(p,ui);
+  else if(id==="gtm-enterprise") enterprise(p,ui);
   else if(id==="gtm-salesforce") native(p,ui);
   else advice(p,ui);
   const origin=el("details"); origin.append(el("summary", "Evidence lineage · original artifacts and recorded revisions"));
