@@ -4,7 +4,7 @@
   "required": ["schema_version", "scenario", "source", "mode", "environment", "packaged_at", "runtime", "artifacts", "limitations", "reproduce", "configuration_hash", "input_hashes"],
   "properties": {
     "schema_version": {"const": "1.0"},
-    "scenario": {"enum": ["seller-application", "seller-support-review", "seller-stale", "seller-suppressed", "seller-delivery", "seller-live", "control-recovery", "revenue-bridge", "revenue-correction", "connected-roundtrip", "gtm-enterprise", "gtm-salesforce", "gtm-qwen", "gtm-research"]},
+    "scenario": {"enum": ["seller-application", "seller-support-review", "seller-stale", "seller-suppressed", "seller-delivery", "seller-live", "control-recovery", "revenue-bridge", "revenue-correction", "connected-roundtrip", "gtm-enterprise", "gtm-salesforce", "gtm-qwen", "gtm-research", "release-assurance"]},
     "source": {"type": "object", "additionalProperties": false, "required": ["repository", "commit"], "properties": {"repository": {"type": "string"}, "commit": {"type": "string", "pattern": "^[a-f0-9]{40}$"}}},
     "mode": {"enum": ["recorded", "fresh_replay", "fresh_engine", "fresh_inference"]},
     "environment": {"const": "independent_synthetic_environment"},

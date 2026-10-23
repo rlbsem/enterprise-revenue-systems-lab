@@ -1,0 +1,684 @@
+{
+  "observed_at": "2026-10-23T20:20:05.523960+00:00",
+  "url": "https://rlbsem.github.io/enterprise-revenue-systems-lab/",
+  "scope": "Read-only verification of the existing public five-investigation site against starting main; the sixth investigation was not deployed.",
+  "checks": [
+    {
+      "name": "deployed_static_bytes",
+      "status": "passed",
+      "detail": {
+        "index.html": "45dcce9ab08af81f060aa116be904d75824a767e8c4be9b5ad4df8cc9ed865cd",
+        "style.css": "3d609d39895d86777563651f87715f5f0f2fea5ce52a558b9eee9f58d3316d2c",
+        "app.js": "78650af8ea1d3c68ab0f98b0456ad299bb4cdfeb7d2366b6145a1f80c7d51214",
+        "gtm.js": "82f2f073ef670dc922921e837e80a6ff6ef2f1524c29b1304f5501521246e58b",
+        "catalog.json": "cd074e05a00f586a56f28cd4c91873a27fae424b598c5a0374be578c4fe58bd4"
+      }
+    },
+    {
+      "name": "case:connected-roundtrip:1440",
+      "status": "passed",
+      "detail": {
+        "case": "connected-roundtrip",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+        },
+        "zip": {
+          "members": 7,
+          "sha256": "173f89516aeaccc23452ec98813527f0ff1ec9f6f532df903837eddcade748f7",
+          "domain_verification": {
+            "scenario": "connected-roundtrip",
+            "integrity": "verified",
+            "checks": {
+              "native_source_snapshots": 2,
+              "previous_reviews_unchanged": 2,
+              "new_pending_reviews": 1,
+              "independent_receiver_effects": 1,
+              "duplicate_effects": 0,
+              "warehouse_transition": "clarify_need -> hold",
+              "cloud_cleanup": "SUSPENDED, no integration schemas",
+              "scope": "Recorded native synthetic internal review, not new vendor execution or customer contact"
+            },
+            "limitations": [
+              "Native Developer Edition and Snowflake observations were recorded in Customer Signal & Activation and are presented without new vendor calls.",
+              "Synthetic policy approval is not independent human seller approval or customer contact.",
+              "Native stages include earlier failures and read-only continuations; no single uninterrupted end-to-end pass is claimed.",
+              "Warehouse policy is deterministic and did not invoke an LLM.",
+              "Composite request and query counts are inherited observations, not additional Lab requests or charges."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:control-recovery:1440",
+      "status": "passed",
+      "detail": {
+        "case": "control-recovery",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/enterprise-martech-ai-control-plane",
+          "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+        },
+        "zip": {
+          "members": 8,
+          "sha256": "6f9cc6ab4f7208bd9f430589b55a37da44851b5222049d46db0fd56248d62d7a",
+          "domain_verification": {
+            "scenario": "control-recovery",
+            "integrity": "verified",
+            "checks": {
+              "bound_intents": 2,
+              "independent_receiver_effects": 2,
+              "uncertain_states_observed": 2,
+              "duplicates": 0,
+              "scope": "Synthetic receiver contract, not arbitrary vendor exactly-once guarantee"
+            },
+            "limitations": [
+              "Local synthetic execution, not production deployment.",
+              "Original engine execution. Exported observations support bounded checks, not production guarantees."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:gtm-enterprise:1440",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-enterprise",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        },
+        "zip": {
+          "members": 8,
+          "sha256": "6d9a891ae9d958e3cf1f505ac3cc1bacbabb2d1eabebeb3bea5181d99b1bbfba",
+          "domain_verification": {
+            "scenario": "gtm-enterprise",
+            "integrity": "verified",
+            "checks": {
+              "accounts": 120,
+              "opportunities": 5,
+              "currency": "USD",
+              "original_regression_tests": 163,
+              "original_independent_demos": 4,
+              "pipeline_cents": 346000000,
+              "pipeline_by_arm_cents": {
+                "holdout": 81000000,
+                "treatment": 265000000
+              },
+              "method": "Source CRM outcomes, scope multiplication, full account denominator, SQL rows and approvals checked offline",
+              "causal_or_commercial_lift": "not_established",
+              "upstream_files": 3,
+              "new_vendor_or_model_execution": false
+            },
+            "limitations": [
+              "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+              "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+              "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:gtm-qwen:1440",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-qwen",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        },
+        "zip": {
+          "members": 10,
+          "sha256": "1be48ae8dc8c19910bfe0ace88506b2eb32fafeb7d4daac7d20dd4638a9fa20f",
+          "domain_verification": {
+            "scenario": "gtm-qwen",
+            "integrity": "verified",
+            "checks": {
+              "actual_responses": 16,
+              "exact_citation_passes": 10,
+              "preserved_failures": 6,
+              "semantic_support": "not_independently_evaluated",
+              "scope": "Recorded Qwen3 advisory evaluation with its own local policy observations; not native Salesforce execution",
+              "upstream_files": 4,
+              "new_vendor_or_model_execution": false
+            },
+            "limitations": [
+              "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+              "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+              "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:gtm-research:1440",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-research",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "81d9381169456ca8893be0ddea483296ac77e12e"
+        },
+        "zip": {
+          "members": 22,
+          "sha256": "dc1d812bfd29b78cd24faabf754be0a1030d0e877ce76b99998bae3c070386a7",
+          "domain_verification": {
+            "scenario": "gtm-research",
+            "integrity": "verified",
+            "checks": {
+              "recorded_responses": 40,
+              "prompt_approaches": 3,
+              "queue_accounts": 6,
+              "recorded_local_reviews": 1,
+              "source_regression_tests": 237,
+              "new_vendor_or_model_execution": false,
+              "semantic_entailment": "not_established_by_exact_citations",
+              "native_research_delivery": "not_executed"
+            },
+            "limitations": [
+              "40 model evaluation responses and a separate fresh local operator run; not the native Salesforce execution or the 120-account pipeline scenario.",
+              "Synthetic January 2026 study contexts; actual model execution in October 2026. Priority is deterministic fit/signal arithmetic, not buying intent.",
+              "Exact citations do not establish semantic entailment. Qualitative assessment is an AI engineering review, not a blind human SDR study.",
+              "Clay/provider enrichment is fixture-based; n8n is an unexecuted reference. No prospect communications, new approvals or CRM writes occur here.",
+              "One real public job API archive is a separate read-only reference. API updated_at is not publication date; real company is not a synthetic CRM target."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:gtm-salesforce:1440",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-salesforce",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        },
+        "zip": {
+          "members": 8,
+          "sha256": "71e4688bd30118359729243265b7eeae59e202008361b5463271f77b0061c04a",
+          "domain_verification": {
+            "scenario": "gtm-salesforce",
+            "integrity": "verified",
+            "checks": {
+              "native_requests": 140,
+              "read_only_cleanup_requests": 20,
+              "exact_task_effects": 1,
+              "independent_relationships": "consistent",
+              "Apex_tests": 3,
+              "scope": "Recorded native synthetic Account/Contact/Task only; not the enterprise pipeline cohort",
+              "upstream_files": 3,
+              "new_vendor_or_model_execution": false
+            },
+            "limitations": [
+              "Three separate execution sets: local synthetic enterprise pipeline, native Salesforce acceptance and Qwen3 evaluation. They are not one continuous live vendor workflow.",
+              "Synthetic opportunity estimates are not revenue or evidence of causal lift. No prospect communications or new vendor/model calls occur in this Lab.",
+              "Sanitized native response hashes are author-controlled evidence, not vendor signatures; organization and record identities remain hashed."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:revenue-bridge:1440",
+      "status": "passed",
+      "detail": {
+        "case": "revenue-bridge",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/revenue-metrics-platform",
+          "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+        },
+        "zip": {
+          "members": 11,
+          "sha256": "bf4aad55ef1309c54b641a09e443eaf8b4a37d06e893adf04f319f3d0d94c571",
+          "domain_verification": {
+            "scenario": "revenue-bridge",
+            "integrity": "verified",
+            "checks": {
+              "selected_account_source_totals_checked": 3,
+              "exported_incremental_full_rowsets_equal": true,
+              "warehouse_comparison": "Recorded fresh SQL observations: zero differences in 15 models",
+              "global_controls": "Fresh runner independently read all source CSVs; small bundle retains controls, not all enterprise rows",
+              "arr_stock_distinct_from_quarterly_flows": true
+            },
+            "limitations": [
+              "Same executed enterprise pipeline as the correction case; not an additional benchmark run.",
+              "Synthetic company, not client results. Full source CSVs remain in the isolated workspace."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:revenue-correction:1440",
+      "status": "passed",
+      "detail": {
+        "case": "revenue-correction",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/revenue-metrics-platform",
+          "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+        },
+        "zip": {
+          "members": 11,
+          "sha256": "91cc53a00b852b4d3de8fe53c78c274df69d1186bc19e44027701a0309012f54",
+          "domain_verification": {
+            "scenario": "revenue-correction",
+            "integrity": "verified",
+            "checks": {
+              "selected_account_source_totals_checked": 3,
+              "exported_incremental_full_rowsets_equal": true,
+              "warehouse_comparison": "Recorded fresh SQL observations: zero differences in 15 models",
+              "global_controls": "Fresh runner independently read all source CSVs; small bundle retains controls, not all enterprise rows",
+              "arr_stock_distinct_from_quarterly_flows": true
+            },
+            "limitations": [
+              "Recorded original-engine execution in an independent synthetic enterprise environment.",
+              "Compact evidence retains selected source/model rows and company controls; repeat the full warehouse comparison through fresh execution."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-application:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-application",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 6,
+          "sha256": "5daabbad69d476f3ecbc2564027e91ed6cfa1c46b228b86f5da71cdf518c5b8e",
+          "domain_verification": {
+            "scenario": "seller-application",
+            "integrity": "verified",
+            "checks": {
+              "runs_checked": 3,
+              "approved_payloads_checked": 1,
+              "quality": "structural_checks_only",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Synthetic accounts and HTTP CRM, not client deployment.",
+              "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+              "Independent blinded usefulness review remains pending."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-delivery:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-delivery",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 7,
+          "sha256": "1c258a23cd184e300b875e8aa795f2a82ec742d58e2373e7fda4fb26968a3b7c",
+          "domain_verification": {
+            "scenario": "seller-delivery",
+            "integrity": "verified",
+            "checks": {
+              "runs_checked": 1,
+              "approved_payloads_checked": 1,
+              "quality": "structural_checks_only",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Local synthetic execution, not production deployment.",
+              "Recorded-response replay is not new inference; model availability is explicit."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-live:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-live",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 8,
+          "sha256": "bb4329c861b3e414d04d66414ad3763db64e1aee851037a73c659989aaf4ecef",
+          "domain_verification": {
+            "scenario": "seller-live",
+            "integrity": "verified",
+            "checks": {
+              "runs_checked": 1,
+              "approved_payloads_checked": 1,
+              "quality": "structural_checks_only",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Actual fresh local Qwen3-14B inference; automatic scenario approval is not independent human review.",
+              "Synthetic local CRM effect only. Independent usefulness remains pending."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-stale:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-stale",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 7,
+          "sha256": "51f64c40d53a25f26e07375719a76ad3ec875b635bbf14340b0a30edd2575829",
+          "domain_verification": {
+            "scenario": "seller-stale",
+            "integrity": "verified",
+            "checks": {
+              "runs_checked": 1,
+              "approved_payloads_checked": 0,
+              "quality": "structural_checks_only",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Local synthetic execution, not production deployment.",
+              "Recorded-response replay is not new inference; model availability is explicit."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-support-review:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-support-review",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 7,
+          "sha256": "f8c54d22c586718391d14c330c37afeba0f9e3ebf6cf58c3fc97558092174b78",
+          "domain_verification": {
+            "scenario": "seller-support-review",
+            "integrity": "verified",
+            "checks": {
+              "exact_citations": 2,
+              "quality": "unsupported_availability_statement_preserved",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Synthetic accounts and HTTP CRM, not client deployment.",
+              "Saved actual Qwen3-14B inference; no new inference in this explorer.",
+              "Independent blinded usefulness review remains pending."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:seller-suppressed:1440",
+      "status": "passed",
+      "detail": {
+        "case": "seller-suppressed",
+        "width": 1440,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        },
+        "zip": {
+          "members": 7,
+          "sha256": "ba11679618c31ee2bf15bc775b190753cca86ac4b90b48edc6fe91230326e347",
+          "domain_verification": {
+            "scenario": "seller-suppressed",
+            "integrity": "verified",
+            "checks": {
+              "runs_checked": 1,
+              "approved_payloads_checked": 0,
+              "quality": "structural_checks_only",
+              "independent_usefulness": "pending"
+            },
+            "limitations": [
+              "Local synthetic execution, not production deployment.",
+              "Recorded-response replay is not new inference; model availability is explicit."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "case:connected-roundtrip:390",
+      "status": "passed",
+      "detail": {
+        "case": "connected-roundtrip",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+        }
+      }
+    },
+    {
+      "name": "case:control-recovery:390",
+      "status": "passed",
+      "detail": {
+        "case": "control-recovery",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/enterprise-martech-ai-control-plane",
+          "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+        }
+      }
+    },
+    {
+      "name": "case:gtm-enterprise:390",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-enterprise",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        }
+      }
+    },
+    {
+      "name": "case:gtm-qwen:390",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-qwen",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        }
+      }
+    },
+    {
+      "name": "case:gtm-research:390",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-research",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "81d9381169456ca8893be0ddea483296ac77e12e"
+        }
+      }
+    },
+    {
+      "name": "case:gtm-salesforce:390",
+      "status": "passed",
+      "detail": {
+        "case": "gtm-salesforce",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/gtm-pipeline-orchestration",
+          "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+        }
+      }
+    },
+    {
+      "name": "case:revenue-bridge:390",
+      "status": "passed",
+      "detail": {
+        "case": "revenue-bridge",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/revenue-metrics-platform",
+          "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+        }
+      }
+    },
+    {
+      "name": "case:revenue-correction:390",
+      "status": "passed",
+      "detail": {
+        "case": "revenue-correction",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/revenue-metrics-platform",
+          "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+        }
+      }
+    },
+    {
+      "name": "case:seller-application:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-application",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "case:seller-delivery:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-delivery",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "case:seller-live:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-live",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "case:seller-stale:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-stale",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "case:seller-support-review:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-support-review",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "case:seller-suppressed:390",
+      "status": "passed",
+      "detail": {
+        "case": "seller-suppressed",
+        "width": 390,
+        "source": {
+          "repository": "rlbsem/customer-signal-activation",
+          "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+        }
+      }
+    },
+    {
+      "name": "navigation_and_keyboard",
+      "status": "passed",
+      "detail": "Five keyboard-selectable investigations; share/reload/Back/Forward; tab keys; skip link"
+    },
+    {
+      "name": "portable_import",
+      "status": "passed",
+      "detail": "Pinned bundle accepted with one history entry; one-byte artifact mutation refused; no execution"
+    },
+    {
+      "name": "original_source_links",
+      "status": "passed",
+      "detail": [
+        "https://github.com/rlbsem/customer-signal-activation/tree/4ac00021637b3823a8df2f5f465b528df5749f1e",
+        "https://github.com/rlbsem/customer-signal-activation/tree/d5426e70b34abfd92e8bf3aaabef22aa831587f2",
+        "https://github.com/rlbsem/enterprise-martech-ai-control-plane/tree/77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e",
+        "https://github.com/rlbsem/gtm-pipeline-orchestration/tree/6da3603a8e447dacfdbde25a8aab5c5fa3721328",
+        "https://github.com/rlbsem/gtm-pipeline-orchestration/tree/81d9381169456ca8893be0ddea483296ac77e12e",
+        "https://github.com/rlbsem/revenue-metrics-platform/tree/b3837689c818053580fe71df90b3ff8f9e51eee5"
+      ]
+    },
+    {
+      "name": "static_only_boundary",
+      "status": "passed",
+      "detail": "GET probes 404; no browser HTTP writes, vendor requests or fresh controls"
+    },
+    {
+      "name": "browser_errors",
+      "status": "passed",
+      "detail": "No console errors, uncaught exceptions or failed resources"
+    }
+  ],
+  "failures": [],
+  "browser_errors": [],
+  "failed_resources": [],
+  "attempted_writes": [],
+  "outside_requests": [],
+  "status": "passed",
+  "expected_revision": "bc495d6d23d00433847be6015ea6b557109192f1",
+  "candidate_deployed": false
+}

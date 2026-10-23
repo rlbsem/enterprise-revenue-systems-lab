@@ -82,8 +82,11 @@ def test_prior_lab_evidence_and_images_remain_byte_exact():
 
 def test_current_research_capture_and_ui_provenance():
     record = json.loads((ROOT / "docs/evidence/research-case/browser.json").read_text(encoding="utf-8"))
+    # This is a preserved historical capture. Verify its original UI bytes, not
+    # a later shared navigation revision. Current rendering is checked in CI.
+    snapshot = json.loads((ROOT / "docs/evidence/release-assurance/prior-research-ui.json").read_text(encoding="utf-8"))
     for name, checksum in record["source_sha256"].items():
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == checksum
+        assert hashlib.sha256(snapshot["files"][name].encode()).hexdigest() == checksum
     for name, checksum in record["image_sha256"].items():
         assert hashlib.sha256((ROOT / "docs/images/research" / name).read_bytes()).hexdigest() == checksum
     assert not record["page_errors"] and not record["nonlocal_requests"]

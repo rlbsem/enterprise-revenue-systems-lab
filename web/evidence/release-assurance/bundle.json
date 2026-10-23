@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "scenario": "release-assurance",
+  "source": {
+    "repository": "rlbsem/enterprise-agent-runtime-evaluation",
+    "commit": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-23T20:11:14.480237+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "original-reference.json",
+      "sha256": "abfdc1944bda4f5e9e973036877039079f8a18acedb5dbbfc940be4d9b9fac79",
+      "bytes": 17600
+    },
+    {
+      "path": "original-candidate.json",
+      "sha256": "95e9e7ae4fe4f597e708cf168ab22262b01a8ffdb1560d427fb04eb5d6a63ed8",
+      "bytes": 16330
+    },
+    {
+      "path": "original-failure.json",
+      "sha256": "5c7708fd8081eb4a3b31abefbe890fe1dd0cf32e37150d84cb8a1121a4281d30",
+      "bytes": 5632
+    },
+    {
+      "path": "first-reference.json",
+      "sha256": "7fd864a3f3de18674e784def342788e928807eb605ec9b613fec3b92e1ab55a8",
+      "bytes": 52073
+    },
+    {
+      "path": "first-candidate.json",
+      "sha256": "fa9ea0e05242748512f8efe02bd0295e5651746a6add6ac6cfa8bcd3f398afea",
+      "bytes": 52229
+    },
+    {
+      "path": "first-gate.json",
+      "sha256": "0edca6316e287f1278264c4d5cd11a46f38c5ac71beca0ec8c4c81901073b071",
+      "bytes": 1731
+    },
+    {
+      "path": "first-release.json",
+      "sha256": "68edde7cdb70d1bab293fefe98ba92e0dd793a7ade6291aa6d80870affff82f9",
+      "bytes": 71
+    },
+    {
+      "path": "first-failure.json",
+      "sha256": "3868f1d8bd1741fe2c82d6ff8fe0a413da314327ce6b8c4a69f43ad735d9a4fc",
+      "bytes": 23518
+    },
+    {
+      "path": "bounded-reference.json",
+      "sha256": "5589c3d0afd8b66ca2f6d255164c0d34a226cf92b96335733ed5e804a505271c",
+      "bytes": 66504
+    },
+    {
+      "path": "bounded-candidate.json",
+      "sha256": "ae68c0de4435d2a30e0fac6bfbd1a540b9b302891430c9404c2034874b9d5f27",
+      "bytes": 66504
+    },
+    {
+      "path": "bounded-gate.json",
+      "sha256": "5365c9d35bbe0f057b4b16bfb297154fa6295fab34176ad784a96413ff0cdce5",
+      "bytes": 1680
+    },
+    {
+      "path": "lifecycle.json",
+      "sha256": "36fc2f4afa2c7aca5c9ca8ac384d2626a3a3c3f1b099021fd38748c15c57e359",
+      "bytes": 217922
+    },
+    {
+      "path": "controls.json",
+      "sha256": "ec963744059bfb5945f30cf34b34207e6697c4cae24c2fe5e2db9326ea162c04",
+      "bytes": 33705
+    },
+    {
+      "path": "seal.json",
+      "sha256": "9458f9e8b5c32d6cbb97e642dbcda88582d950950a06264e1d2572d8b05b0839",
+      "bytes": 34796
+    },
+    {
+      "path": "software.json",
+      "sha256": "225e1feea3bf65e7a53b6406c48154f11dff8b499f3e4589c5f1caf456d8ac0e",
+      "bytes": 4189
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "178df6c1b03bd3fa7d9692d0a2c0ff12a715cfb8c0ac54337eb3a473f1d00a72",
+      "bytes": 6453
+    },
+    {
+      "path": "projection.json",
+      "sha256": "3598db55b92d5c79f9bfc8f8b46f26fce3fa164b14008ebd28d00b4ab4b25880",
+      "bytes": 88713
+    },
+    {
+      "path": "observation.json",
+      "sha256": "65eb3369827e5517e6bf3b1f3632dd1f5044811ebf8f1180e35ebbdc9e77bf9b",
+      "bytes": 143
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "43f63423c39ba3005d3c059ca811ccb8683e7aa3e41813a113c1cdbbcb0611d8",
+      "bytes": 33818
+    }
+  ],
+  "limitations": [
+    "Actual recorded Qwen2.5/Qwen3 inference and local synthetic HTTP/SQLite effects; this static Lab makes no model or vendor calls.",
+    "Finite synthetic acceptance cases, including six fresh holdouts in the bounded run; not production reliability, general model accuracy or commercial outcomes.",
+    "Controlled adapter-input corruption triggered rollback; it is not an observed natural model regression. Rollback changes routing and does not undo prior effects.",
+    "Escalation approval came from the trusted evaluation harness, not an independent human reviewer. Software test counts are separate from model tasks.",
+    "Selected exact-byte source records, aggregate result checks and routed receipt checks are packaged. Complete per-task raw inference and source snapshots remain at the pinned upstream revision."
+  ],
+  "input_hashes": {
+    "original-reference.json": "abfdc1944bda4f5e9e973036877039079f8a18acedb5dbbfc940be4d9b9fac79",
+    "original-candidate.json": "95e9e7ae4fe4f597e708cf168ab22262b01a8ffdb1560d427fb04eb5d6a63ed8",
+    "original-failure.json": "5c7708fd8081eb4a3b31abefbe890fe1dd0cf32e37150d84cb8a1121a4281d30",
+    "first-reference.json": "7fd864a3f3de18674e784def342788e928807eb605ec9b613fec3b92e1ab55a8",
+    "first-candidate.json": "fa9ea0e05242748512f8efe02bd0295e5651746a6add6ac6cfa8bcd3f398afea",
+    "first-gate.json": "0edca6316e287f1278264c4d5cd11a46f38c5ac71beca0ec8c4c81901073b071",
+    "first-release.json": "68edde7cdb70d1bab293fefe98ba92e0dd793a7ade6291aa6d80870affff82f9",
+    "first-failure.json": "3868f1d8bd1741fe2c82d6ff8fe0a413da314327ce6b8c4a69f43ad735d9a4fc",
+    "bounded-reference.json": "5589c3d0afd8b66ca2f6d255164c0d34a226cf92b96335733ed5e804a505271c",
+    "bounded-candidate.json": "ae68c0de4435d2a30e0fac6bfbd1a540b9b302891430c9404c2034874b9d5f27",
+    "bounded-gate.json": "5365c9d35bbe0f057b4b16bfb297154fa6295fab34176ad784a96413ff0cdce5",
+    "lifecycle.json": "36fc2f4afa2c7aca5c9ca8ac384d2626a3a3c3f1b099021fd38748c15c57e359",
+    "controls.json": "ec963744059bfb5945f30cf34b34207e6697c4cae24c2fe5e2db9326ea162c04",
+    "seal.json": "9458f9e8b5c32d6cbb97e642dbcda88582d950950a06264e1d2572d8b05b0839",
+    "software.json": "225e1feea3bf65e7a53b6406c48154f11dff8b499f3e4589c5f1caf456d8ac0e"
+  },
+  "reproduce": [
+    "python scripts/import_release.py <agent-runtime-git-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/release-assurance"
+  ],
+  "configuration_hash": "7c1c99c63312b6d1ceb2e00d83433592fcf12b8f51120e6a4bbbd96380a29f88"
+}

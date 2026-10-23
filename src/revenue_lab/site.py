@@ -8,6 +8,10 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "release-assurance": (
+        "release", "AI Model Release Assurance",
+        "Inspect rejected model evaluations, finite-suite acceptance, actual local promotion and controlled-fault rollback.",
+    ),
     "gtm-research": (
         "gtm", "SDR account intelligence · sources to seller review",
         "Prioritize six synthetic accounts, compare 40 actual Qwen3 responses and inspect a separately recorded local seller decision.",
@@ -88,7 +92,9 @@ def build():
         portable = {
             "manifest": manifest,
             "artifacts": {
-                a["path"]: (path.parent / a["path"]).read_text(encoding="utf-8")
+                # Preserve original line endings inside portable JSON. Text-mode
+                # reads would normalize a Windows source artifact before hashing.
+                a["path"]: (path.parent / a["path"]).read_bytes().decode("utf-8")
                 for a in manifest["artifacts"]
             },
         }

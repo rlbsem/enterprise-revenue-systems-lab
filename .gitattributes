@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.png binary
 *.zip binary
+# Upstream release artifacts include historical CRLF bytes. Never normalize them.
+web/evidence/release-assurance/** -text
