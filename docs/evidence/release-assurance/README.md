@@ -23,3 +23,5 @@ python scripts/capture_release.py --images .cache/release/screenshots --output .
 ```
 
 The browser makes no model/vendor calls or HTTP writes. Complete source evaluation evidence remains in the [pinned Agent Runtime repository](https://github.com/rlbsem/enterprise-agent-runtime-evaluation/tree/84b7bbaa92b08d3238aa321ada52b4881a62b4c2). [Investigation and limitations](../../model-release-assurance.md).
+
+A separate [read-only public-site check](public-site.json) passed 34 checks against starting main, covering the existing fourteen cases, source links, downloads and static-only boundary. It does not claim that the sixth investigation is deployed.

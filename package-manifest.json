@@ -103,8 +103,8 @@
       "bytes": 250
     },
     "docs/evidence/release-assurance/README.md": {
-      "sha256": "3f477451116aa21e2a379ab5a0209c4ddfb229efaaba69f674d7c30ecedec8df",
-      "bytes": 2555
+      "sha256": "e13fe48d453c246fd1536cb6a61ec09d8566f0f8a373d746a0884ff63a183ac5",
+      "bytes": 2803
     },
     "docs/evidence/release-assurance/browser.json": {
       "sha256": "8c98e973b4ced4b3af4f3ef6b0b7040e5e4a343b133fbb4fabb23a8c3e6b4f72",
@@ -117,6 +117,10 @@
     "docs/evidence/release-assurance/prior-research-ui.json": {
       "sha256": "66b253147a53abe63fc52e6e31f16fb36dcb25c9e06bfac65b55852e839fdbd6",
       "bytes": 124212
+    },
+    "docs/evidence/release-assurance/public-site.json": {
+      "sha256": "d62c4d6cc4b417d6dc8332870762b0bb49b1c83653cea758de2112d1e05db006",
+      "bytes": 25602
     },
     "docs/evidence/release-assurance/tests.xml": {
       "sha256": "047df34c6ed5618d1a96557ad7aa24d7dc0bf0afa0f2b84cb97cd9e8b4b8deaa",
