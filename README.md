@@ -30,7 +30,7 @@ The fourteen cases draw from four pinned source repositories, with research impo
 
 The fifth investigation now includes **[SDR account intelligence](docs/sdr-account-intelligence.md)**: six explainable account priorities, forty actual Qwen3 responses, preserved failures and a separately recorded local seller decision. Select a source, compare an approach, inspect uncertainty and follow the boundary to native Salesforce or synthetic pipeline evidence.
 
-The candidate route is `?case=gtm-research`. It works in the static build; public availability requires a separately verified Pages deployment. The richer research desk is not a native Salesforce execution. [Source lock](sources.lock.json) · [Recorded operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json).
+The `?case=gtm-research` route is included in the main-branch static explorer. [Pages deployments](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted checks](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) show the public rollout status. The richer research desk does not execute through native Salesforce. [Source lock](sources.lock.json) · [Recorded operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json).
 
 <img src="docs/images/research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
 
@@ -78,7 +78,7 @@ The opt-in local interface, `revenue-lab serve --execute`, invokes only approved
 - The revenue execution ran **three dbt builds**, each with 15 models and 30 tests. Bidirectional `EXCEPT ALL` observed zero differences across all 15 corrected model rowsets. The opportunity daily model contains **12,470,664 rows**. The compact bundle includes selected source/model rows; repeating the entire warehouse comparison requires fresh execution.
 - One additional **actual local Qwen3-14B inference** was executed, with original-engine approval/delivery and observed synthetic receiver effects. Its automatic scenario approval is not independent human review. The original 120-case comparison is separate and its unsupported-language review finding remains preserved.
 
-The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local test results do not imply a successful hosted run. [Hosted verification](docs/evidence/hosted-verification/README.md) records public-site observations separately from candidate-build checks. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
+The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local and hosted checks answer different questions. [Hosted verification](docs/evidence/hosted-verification/README.md) records public-site observations separately from source and build checks. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
 
 <img src="docs/images/revenue-overview.png" alt="Revenue investigation screenshot" width="780">
 
@@ -106,8 +106,8 @@ The source engine implementations remain unchanged: [Customer Signal & Activatio
 
 ## GTM pipeline investigation
 
-**AI Account Intelligence to Qualified Pipeline** lets an SDR inspect account signals, review AI research and a suggested next step, check the responsible owner and CRM handoff, and follow synthetic meeting/opportunity feedback to the existing navigation. The fifth investigation is available in this candidate build; its public-site deployment is pending review.
+**AI Account Intelligence to Qualified Pipeline** lets an SDR inspect account signals, review AI research and a suggested next step, check the responsible owner and CRM handoff, and follow synthetic meeting/opportunity feedback to the existing navigation. The fifth investigation is part of the main-branch explorer; public availability is tracked by the Pages and hosted-verification workflows.
 
-<img src="docs/images/gtm/gtm-enterprise-overview.png" alt="Running Lab candidate showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
+<img src="docs/images/gtm/gtm-enterprise-overview.png" alt="GTM evidence view showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
 
-[Evidence boundaries and verification](docs/gtm-investigation.md) · [Screenshot provenance and tests](docs/evidence/gtm-integration/README.md). In a local preview or approved deployment, open `?case=gtm-enterprise`, `?case=gtm-salesforce` or `?case=gtm-qwen`. The browser reads existing records only; no model or Salesforce access is needed.
+[Evidence boundaries and verification](docs/gtm-investigation.md) · [Screenshot provenance and tests](docs/evidence/gtm-integration/README.md). In the explorer, open `?case=gtm-enterprise`, `?case=gtm-salesforce` or `?case=gtm-qwen`. The browser reads existing records only; no model or Salesforce access is needed.
