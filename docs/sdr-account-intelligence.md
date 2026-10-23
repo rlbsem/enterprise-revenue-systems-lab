@@ -2,7 +2,7 @@
 
 Help a seller decide which account deserves attention, what the evidence supports and what still needs checking. Open `?case=gtm-research` within investigation 05. Browsing requires no credentials, model endpoint or local Python.
 
-This candidate is verified locally under the GitHub Pages project prefix. It is **not a verified public deployment**. After merge and a separately authorized Pages deployment, test the public query link, navigation, integrity validation and downloads before announcing it as live.
+This read-only case is included on `main` and is designed for the GitHub Pages project prefix. [Pages deployments](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) document the public deployment status separately from local source checks.
 
 ## Inspect the case
 
