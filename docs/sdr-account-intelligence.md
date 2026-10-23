@@ -49,6 +49,6 @@ The richer research desk ends at **local internal review**. These openings have 
 
 Clay/provider adapters are fixtures; n8n is an unexecuted reference. The Cloudflare job metadata archive is a separate real public API retrieval, read-only and unlinked to synthetic CRM targets. API `updated_at` is not publication date. Synthetic `.example` URLs are evidence identifiers, not functioning public job links.
 
-No authenticated APIs, inference endpoints, live approvals, CRM writes or prospect communications are published. The existing Pages workflow still deploys only static `dist/` from `main` (on matching pushes or manual dispatch). This feature branch does not deploy. No commercial revenue or causal uplift is established.
+GitHub Pages publishes static `dist/` assets from `main`; it does not expose authentication, inference, live approvals, CRM writes or prospect communications. The published code and recorded cases establish engineering execution boundaries, not commercial revenue or causal uplift. Check the [Pages deployment history](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) for the current hosted revision.
 
 Historical evidence and images remain byte-exact. Their original UI is retained under [baseline UI](evidence/research-case/baseline-ui/) for historical screenshot attestation. New screenshots attest the current UI separately. [Preservation inventory](evidence/research-case/preserved-files.json).
