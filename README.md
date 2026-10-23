@@ -34,9 +34,11 @@ The candidate route is `?case=gtm-research`. It works in the static build; publi
 
 <img src="docs/images/research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
 
-## Open the application
+## Open the hosted explorer or run it locally
 
-Use Python 3.12 and Git:
+**No installation required:** [Open the public Engineering Evidence Lab](https://rlbsem.github.io/enterprise-revenue-systems-lab/). You can review recorded cases and evidence in your browser. The hosted site is read-only: it does not run fresh model inference or connect to live CRM and warehouse systems.
+
+For an optional local reproduction, use Python 3.12 and Git:
 
 ```shell
 python -m venv .venv
@@ -48,9 +50,9 @@ revenue-lab build
 revenue-lab serve
 ```
 
-Open **http://127.0.0.1:8542/**. Recorded evidence requires no model, PostgreSQL server or API key. Select a case, inspect its source records and timeline, compare outcomes, validate artifact integrity and download its reproduction ZIP. The public explorer can also be served directly from `web/` as a static site.
+Once `revenue-lab serve` is running, open `http://127.0.0.1:8542/` in a browser on the **same computer**. This address is for the local preview only; public visitors should use the hosted link above. Recorded evidence requires no model, PostgreSQL server or API key. Select a case, inspect its source records and timeline, compare outcomes, validate artifact integrity and download its reproduction ZIP. The public explorer can also be served directly from `web/` as a static site.
 
-**Hosted option:** [Open the static explorer](https://rlbsem.github.io/enterprise-revenue-systems-lab/). The [latest corrected deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38495435399) succeeded, and the site owner reviewed the browser interface. Full cross-device and download-path testing remains a separate check. Recorded evidence also runs locally without a model or database.
+**Publication evidence:** [GitHub Pages deployments](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) show current results. Recorded evidence can also be explored locally without a model or database.
 
 ## Execute the original systems
 
