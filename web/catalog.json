@@ -80,6 +80,19 @@
       "mode": "recorded"
     },
     {
+      "id": "release-assurance",
+      "investigation": "release",
+      "title": "AI Model Release Assurance",
+      "summary": "Inspect rejected model evaluations, finite-suite acceptance, actual local promotion and controlled-fault rollback.",
+      "manifest_sha256": "f74766b2484a447ded073ec36a75d8f1ab2f1062138a92ec060704403cdb26f1",
+      "verification_sha256": "89a58337e67a7c75e5da8c14693a87401f87bc24f1e0b96df916650292c026f0",
+      "source": {
+        "repository": "rlbsem/enterprise-agent-runtime-evaluation",
+        "commit": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "revenue-bridge",
       "investigation": "revenue",
       "title": "Installed ARR and quarterly flows",

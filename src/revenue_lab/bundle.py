@@ -243,7 +243,12 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if manifest["scenario"] == "gtm-research":
+    if manifest["scenario"] == "release-assurance":
+        from .release_checks import release, verify_original_bytes
+
+        verify_original_bytes(Path(path), files["upstream.json"])
+        checks = release(files)
+    elif manifest["scenario"] == "gtm-research":
         from .gtm_checks import verify_provenance
         from .research_checks import research
 

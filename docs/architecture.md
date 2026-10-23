@@ -43,3 +43,7 @@ There are three bounded adapters and one evidence contract. Source changes requi
 ## Recorded GTM investigation
 
 The fifth investigation imports exact public GTM artifacts into three distinct recorded bundles. Its isolated reader module projects qualification, approvals, opportunity source events, native relationships and Qwen responses. It adds no execution adapter or vendor call. The existing local execution allowlist and static-only Pages deployment remain unchanged. [Provenance and offline checks](gtm-investigation.md).
+
+## Recorded model release investigation
+
+The sixth investigation adds one compact recorded bundle, with fifteen exact original artifacts pinned to Agent Runtime merge `84b7bbaa92b08d3238aa321ada52b4881a62b4c2`. Its reader projects aggregate task results and recorded release transitions; it adds no model client or execution adapter. The offline verifier checks source hashes, aggregate/oracle consistency, recorded requests, routed configurations, controlled-fault rejection and exact receipt content. Complete raw task records remain upstream. Portable serialization preserves original line endings as well as hashes. [Evidence selection and limitations](model-release-assurance.md).

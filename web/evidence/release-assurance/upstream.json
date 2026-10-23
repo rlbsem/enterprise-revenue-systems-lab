@@ -1,0 +1,97 @@
+{
+  "repository": "rlbsem/enterprise-agent-runtime-evaluation",
+  "import_revision": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2",
+  "execution_revision_note": "Import merge is not execution time; each original seal/configuration retains its executed source hashes.",
+  "artifacts": [
+    {
+      "file": "original-reference.json",
+      "source_path": "docs/evidence/live-reference/summary.json",
+      "sha256": "abfdc1944bda4f5e9e973036877039079f8a18acedb5dbbfc940be4d9b9fac79",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-reference/summary.json"
+    },
+    {
+      "file": "original-candidate.json",
+      "source_path": "docs/evidence/live-candidate/summary.json",
+      "sha256": "95e9e7ae4fe4f597e708cf168ab22262b01a8ffdb1560d427fb04eb5d6a63ed8",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-candidate/summary.json"
+    },
+    {
+      "file": "original-failure.json",
+      "source_path": "docs/evidence/live-reference/adoption-0.json",
+      "sha256": "5c7708fd8081eb4a3b31abefbe890fe1dd0cf32e37150d84cb8a1121a4281d30",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-reference/adoption-0.json"
+    },
+    {
+      "file": "first-reference.json",
+      "source_path": "docs/evidence/live-release/qwen3-v1/qwen3-14b-reference-v1/summary.json",
+      "sha256": "7fd864a3f3de18674e784def342788e928807eb605ec9b613fec3b92e1ab55a8",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-v1/qwen3-14b-reference-v1/summary.json"
+    },
+    {
+      "file": "first-candidate.json",
+      "source_path": "docs/evidence/live-release/qwen3-v1/qwen3-14b-authority-facts-v4/summary.json",
+      "sha256": "fa9ea0e05242748512f8efe02bd0295e5651746a6add6ac6cfa8bcd3f398afea",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-v1/qwen3-14b-authority-facts-v4/summary.json"
+    },
+    {
+      "file": "first-gate.json",
+      "source_path": "docs/evidence/live-release/qwen3-v1/gate.json",
+      "sha256": "0edca6316e287f1278264c4d5cd11a46f38c5ac71beca0ec8c4c81901073b071",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-v1/gate.json"
+    },
+    {
+      "file": "first-release.json",
+      "source_path": "docs/evidence/live-release/qwen3-v1/release.json",
+      "sha256": "68edde7cdb70d1bab293fefe98ba92e0dd793a7ade6291aa6d80870affff82f9",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-v1/release.json"
+    },
+    {
+      "file": "first-failure.json",
+      "source_path": "docs/evidence/live-release/qwen3-v1/qwen3-14b-authority-facts-v4/injected-source-priority-0.json",
+      "sha256": "3868f1d8bd1741fe2c82d6ff8fe0a413da314327ce6b8c4a69f43ad735d9a4fc",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-v1/qwen3-14b-authority-facts-v4/injected-source-priority-0.json"
+    },
+    {
+      "file": "bounded-reference.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/qwen3-14b-reasoning1024-reference/summary.json",
+      "sha256": "5589c3d0afd8b66ca2f6d255164c0d34a226cf92b96335733ed5e804a505271c",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/qwen3-14b-reasoning1024-reference/summary.json"
+    },
+    {
+      "file": "bounded-candidate.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/qwen3-14b-reasoning768-candidate/summary.json",
+      "sha256": "ae68c0de4435d2a30e0fac6bfbd1a540b9b302891430c9404c2034874b9d5f27",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/qwen3-14b-reasoning768-candidate/summary.json"
+    },
+    {
+      "file": "bounded-gate.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/gate.json",
+      "sha256": "5365c9d35bbe0f057b4b16bfb297154fa6295fab34176ad784a96413ff0cdce5",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/gate.json"
+    },
+    {
+      "file": "lifecycle.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/lifecycle.json",
+      "sha256": "36fc2f4afa2c7aca5c9ca8ac384d2626a3a3c3f1b099021fd38748c15c57e359",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/lifecycle.json"
+    },
+    {
+      "file": "controls.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/controls.json",
+      "sha256": "ec963744059bfb5945f30cf34b34207e6697c4cae24c2fe5e2db9326ea162c04",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/controls.json"
+    },
+    {
+      "file": "seal.json",
+      "source_path": "docs/evidence/live-release/qwen3-bounded-v2/seal.json",
+      "sha256": "9458f9e8b5c32d6cbb97e642dbcda88582d950950a06264e1d2572d8b05b0839",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/qwen3-bounded-v2/seal.json"
+    },
+    {
+      "file": "software.json",
+      "source_path": "docs/evidence/live-release/software/verification.json",
+      "sha256": "225e1feea3bf65e7a53b6406c48154f11dff8b499f3e4589c5f1caf456d8ac0e",
+      "source_url": "https://github.com/rlbsem/enterprise-agent-runtime-evaluation/blob/84b7bbaa92b08d3238aa321ada52b4881a62b4c2/docs/evidence/live-release/software/verification.json"
+    }
+  ]
+}

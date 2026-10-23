@@ -37,6 +37,8 @@ jobs:
         run: python scripts/capture_presentation.py --images .cache/presentation/screenshots --evidence .cache/presentation/capture.json
       - name: Verify SDR research static build and accessibility
         run: python scripts/capture_research.py --images .cache/research/screenshots --output .cache/research/browser.json
+      - name: Verify recorded model release and accessibility
+        run: python scripts/capture_release.py --images .cache/release/screenshots --output .cache/release/browser.json
       - run: python scripts/check_repository.py
       - run: python scripts/build.py
   source-engines:

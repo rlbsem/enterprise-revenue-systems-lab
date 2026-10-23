@@ -1,0 +1,21 @@
+{
+  "scenario": "release-assurance",
+  "integrity": "verified",
+  "checks": {
+    "source_artifacts": 15,
+    "recorded_model_tasks": 192,
+    "routed_decisions_checked": 5,
+    "exact_independent_receipts": 1,
+    "permission_replay_checks": 9,
+    "source_software_tests": 79,
+    "new_inference": false,
+    "domain_checks": "aggregate/oracle consistency, source hashes, request hashes, routed configurations and receipt content"
+  },
+  "limitations": [
+    "Actual recorded Qwen2.5/Qwen3 inference and local synthetic HTTP/SQLite effects; this static Lab makes no model or vendor calls.",
+    "Finite synthetic acceptance cases, including six fresh holdouts in the bounded run; not production reliability, general model accuracy or commercial outcomes.",
+    "Controlled adapter-input corruption triggered rollback; it is not an observed natural model regression. Rollback changes routing and does not undo prior effects.",
+    "Escalation approval came from the trusted evaluation harness, not an independent human reviewer. Software test counts are separate from model tasks.",
+    "Selected exact-byte source records, aggregate result checks and routed receipt checks are packaged. Complete per-task raw inference and source snapshots remain at the pinned upstream revision."
+  ]
+}

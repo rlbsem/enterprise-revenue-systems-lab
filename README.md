@@ -1,6 +1,6 @@
 # Enterprise Revenue Systems Lab
 
-Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization, GTM pipeline orchestration and the differences between bookings, invoices, cash and ARR.
+Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization, GTM pipeline orchestration, real-model release assurance and the differences between bookings, invoices, cash and ARR.
 
 An AI-generated proposal can cite the right facts and still imply an unsupported commitment. A timed-out write may already have committed. A mature SaaS company can carry $754M of ARR while booking far less in one quarter.
 
@@ -14,7 +14,7 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 The original three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
 
-## Five investigations
+## Six investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -23,8 +23,9 @@ The original three investigation screenshots are captured directly from the curr
 | Why do commercial numbers disagree? | Original enterprise sources and dbt outputs, independent CSV controls, financial bridges, late corrections and incremental/full comparisons | ARR is a period-end measure; bookings, invoices and cash are distinct flows. |
 | Can a CRM action survive uncertain delivery? | [Native Salesforce and Snowflake evidence](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md): one synthetic CRM review, lost-acknowledgment recovery, exact independent readback and warehouse feedback changing `clarify_need` to `hold` | Owner-authorized synthetic policy, not human customer approval. This Lab displays recorded vendor execution without making new calls. |
 | How does account intelligence become qualified pipeline? | [GTM Pipeline investigation](docs/gtm-investigation.md): a 120-account USD $3.46M synthetic scenario, separate native Salesforce Account/Contact/Task acceptance and separate actual Qwen3 responses | Three recorded execution sets, not one continuous vendor workflow. No commercial uplift or prospect communication. |
+| Can a real-model candidate be released safely? | [AI Model Release Assurance](docs/model-release-assurance.md): preserved Qwen2.5 failures, blocked 35/36 Qwen3 candidate, 48/48 paired configurations and actual local shadow/canary/promotion/rollback | Finite-suite local acceptance with synthetic effects; controlled input corruption, not production reliability or general model accuracy. |
 
-The fourteen cases draw from four pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The fifteen cases draw from five pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## SDR account intelligence
 
@@ -33,6 +34,14 @@ The fifth investigation now includes **[SDR account intelligence](docs/sdr-accou
 The `?case=gtm-research` route is included in the main-branch static explorer. [Pages deployments](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted checks](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) show the public rollout status. The richer research desk does not execute through native Salesforce. [Source lock](sources.lock.json) · [Recorded operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json).
 
 <img src="docs/images/research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
+
+## AI Model Release Assurance
+
+The sixth investigation follows actual recorded model failures through finite-suite acceptance, local promotion and verified rollback. Inspect failed tasks, original model responses, independent destination receipts and the reference version used after a controlled fault. No model endpoint or credentials are needed.
+
+The candidate route is `?case=release-assurance`. [Evidence and execution boundaries](docs/model-release-assurance.md) · [Genuine screenshots and browser checks](docs/evidence/release-assurance/README.md). Public availability requires an approved merge and the existing Pages deployment.
+
+<img src="docs/images/release-assurance/release-assurance-desktop.png" alt="Actual Lab release-assurance interface with rejected results, bounded acceptance and inspectable recorded stages" width="900">
 
 ## Open the hosted explorer or run it locally
 
