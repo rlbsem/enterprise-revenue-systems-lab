@@ -3,3 +3,4 @@
 *.zip binary
 # Upstream release artifacts include historical CRLF bytes. Never normalize them.
 web/evidence/release-assurance/** -text
+web/evidence/revenue-integrity/** -text

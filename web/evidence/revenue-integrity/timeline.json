@@ -1,0 +1,198 @@
+[
+  {
+    "action": "intent_committed",
+    "occurred": 1792944996.441428,
+    "body": {
+      "id": 1,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "intent_committed",
+      "reference": "336d73b6-823e-5efb-bb59-ff0f647d6a28",
+      "detail": {
+        "hash": "45c0c7ca22bcc0991e7a4d398b8817ca7e70cd80254032f1d0292da46b4b86a7",
+        "destination": "stripe"
+      },
+      "recorded_at": "2026-10-25 12:16:36.441428-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "planned",
+    "occurred": 1792944996.443453,
+    "body": {
+      "id": 2,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "planned",
+      "reference": "sf-event-1-v1",
+      "detail": {
+        "reason": ""
+      },
+      "recorded_at": "2026-10-25 12:16:36.443453-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "intent_committed",
+    "occurred": 1792944996.674678,
+    "body": {
+      "id": 3,
+      "tenant": "northstar",
+      "entity": "EU",
+      "action": "intent_committed",
+      "reference": "d0c46090-19fc-5f5c-bccc-627650ebed23",
+      "detail": {
+        "hash": "9df84516a0ccb8c4b33075e83c62339e09ac4ffb76e01fc049a5eadd37bd0c68",
+        "destination": "stripe"
+      },
+      "recorded_at": "2026-10-25 12:16:36.674678-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "planned",
+    "occurred": 1792944996.67649,
+    "body": {
+      "id": 4,
+      "tenant": "northstar",
+      "entity": "EU",
+      "action": "planned",
+      "reference": "sf-event-2-v1",
+      "detail": {
+        "reason": ""
+      },
+      "recorded_at": "2026-10-25 12:16:36.676490-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "uncertain",
+    "occurred": 1792944997.554096,
+    "body": {
+      "id": 5,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "uncertain",
+      "reference": "336d73b6-823e-5efb-bb59-ff0f647d6a28",
+      "detail": {
+        "reason": "remote_outcome_unconfirmed_readback_before_retry"
+      },
+      "recorded_at": "2026-10-25 12:16:37.554096-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "effect_verified",
+    "occurred": 1792944997.901531,
+    "body": {
+      "id": 6,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "effect_verified",
+      "reference": "336d73b6-823e-5efb-bb59-ff0f647d6a28",
+      "detail": {
+        "receipt_id": "3c97c6d0-e12d-5119-87f8-e2e8ec707f87"
+      },
+      "recorded_at": "2026-10-25 12:16:37.901531-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "intent_committed",
+    "occurred": 1792944998.035383,
+    "body": {
+      "id": 7,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "intent_committed",
+      "reference": "84bf9093-2b6a-5da1-ab21-d071759357ce",
+      "detail": {
+        "hash": "c9ad321f8552f510b97bd5edf8db5a0cf54fe959043d08f6c4d5bd40b53a9ccb",
+        "destination": "netsuite"
+      },
+      "recorded_at": "2026-10-25 12:16:38.035383-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "effect_verified",
+    "occurred": 1792944998.825743,
+    "body": {
+      "id": 8,
+      "tenant": "northstar",
+      "entity": "EU",
+      "action": "effect_verified",
+      "reference": "d0c46090-19fc-5f5c-bccc-627650ebed23",
+      "detail": {
+        "receipt_id": "698a9464-d8b5-51cb-9abb-be626956663b"
+      },
+      "recorded_at": "2026-10-25 12:16:38.825743-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "intent_committed",
+    "occurred": 1792944998.967026,
+    "body": {
+      "id": 9,
+      "tenant": "northstar",
+      "entity": "EU",
+      "action": "intent_committed",
+      "reference": "fb217c2f-67dc-516e-ae02-7985c6f488b9",
+      "detail": {
+        "hash": "eed5abde2777cea640d6f7f564227755da492d4ebc9cc2499e2258b51e9d4c36",
+        "destination": "netsuite"
+      },
+      "recorded_at": "2026-10-25 12:16:38.967026-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "effect_verified",
+    "occurred": 1792944999.596474,
+    "body": {
+      "id": 10,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "effect_verified",
+      "reference": "84bf9093-2b6a-5da1-ab21-d071759357ce",
+      "detail": {
+        "receipt_id": "030335ab-2941-5e6f-aac7-eb17e3db6c12"
+      },
+      "recorded_at": "2026-10-25 12:16:39.596474-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "effect_verified",
+    "occurred": 1792945000.220952,
+    "body": {
+      "id": 11,
+      "tenant": "northstar",
+      "entity": "EU",
+      "action": "effect_verified",
+      "reference": "fb217c2f-67dc-516e-ae02-7985c6f488b9",
+      "detail": {
+        "receipt_id": "a81ba52d-5846-5303-b4e2-7509df1b251e"
+      },
+      "recorded_at": "2026-10-25 12:16:40.220952-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  },
+  {
+    "action": "blocked",
+    "occurred": 1792945000.550376,
+    "body": {
+      "id": 12,
+      "tenant": "northstar",
+      "entity": "US",
+      "action": "blocked",
+      "reference": "sf-event-3-v1",
+      "detail": {
+        "reason": "ambiguous_or_missing_canonical_mapping"
+      },
+      "recorded_at": "2026-10-25 12:16:40.550376-04:00",
+      "evidence_set": "Separate foundation delivery run"
+    }
+  }
+]

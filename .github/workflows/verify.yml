@@ -39,6 +39,8 @@ jobs:
         run: python scripts/capture_research.py --images .cache/research/screenshots --output .cache/research/browser.json
       - name: Verify recorded model release and accessibility
         run: python scripts/capture_release.py --images .cache/release/screenshots --output .cache/release/browser.json
+      - name: Verify Revenue Integrity static investigation
+        run: python scripts/capture_integrity.py --images .cache/integrity/screenshots --output .cache/integrity/browser.json
       - run: python scripts/check_repository.py
       - run: python scripts/build.py
   source-engines:

@@ -96,7 +96,7 @@ def load_verified(path):
     schema = json.loads((ROOT / "schema/bundle-v1.json").read_text())
     Draft202012Validator(schema, format_checker=FormatChecker()).validate(manifest)
     scenario = manifest["scenario"]
-    source_key = "research" if scenario == "gtm-research" else scenario.split("-")[0]
+    source_key = "integrity" if scenario == "revenue-integrity" else "research" if scenario == "gtm-research" else scenario.split("-")[0]
     if (
         source_key not in LOCK["sources"]
         or manifest["source"] != LOCK["sources"][source_key]
@@ -243,7 +243,12 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if manifest["scenario"] == "release-assurance":
+    if manifest["scenario"] == "revenue-integrity":
+        from .integrity_checks import integrity, verify_original_bytes
+
+        verify_original_bytes(Path(path), files["upstream.json"])
+        checks = integrity(files)
+    elif manifest["scenario"] == "release-assurance":
         from .release_checks import release, verify_original_bytes
 
         verify_original_bytes(Path(path), files["upstream.json"])

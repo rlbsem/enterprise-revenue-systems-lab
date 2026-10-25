@@ -119,6 +119,19 @@
       "mode": "fresh_engine"
     },
     {
+      "id": "revenue-integrity",
+      "investigation": "integrity",
+      "title": "Revenue Integrity — From Sales Commitment to Collected Cash",
+      "summary": "Trace the $1,500 discrepancy, authoritative records and a separately reviewed delivery recovery. Recorded local execution; synthetic USD.",
+      "manifest_sha256": "355ac646b3b20dacd5c907932f3c5927565f22221ee5cec3065ff8f857c16c43",
+      "verification_sha256": "ad6d240ec15e68288195de92e7081746b2ea3d749076faee309007249e9407f8",
+      "source": {
+        "repository": "rlbsem/enterprise-revenue-integrity-platform",
+        "commit": "e2993099acaaae188aac0d83ba840cecef1c0014"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "seller-application",
       "investigation": "seller",
       "title": "Reviewed discovery action",
