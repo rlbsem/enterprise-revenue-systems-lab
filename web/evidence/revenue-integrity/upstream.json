@@ -1,0 +1,62 @@
+{
+  "repository": "rlbsem/enterprise-revenue-integrity-platform",
+  "import_revision": "e2993099acaaae188aac0d83ba840cecef1c0014",
+  "source_pr": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/pull/1",
+  "execution_revision_note": "Pinned unmerged implementation, not an independent architecture sign-off. Lifecycle and delivery run at 9f7ce81; operator capture at 369bd0b. Their original records retain source fingerprints. These are separate local executions.",
+  "artifacts": [
+    {
+      "file": "lifecycle.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/lifecycle.json",
+      "sha256": "6f653ecbdd1c38b80c2c9bf341da879edf25953e788c3317d8dee13f19cf8c72",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/lifecycle.json"
+    },
+    {
+      "file": "delivery.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/demo.json",
+      "sha256": "4a10dee0182848cbf4817ab7e9eb8afe1e2eb692dbf0c9d196af94b04a80f3d0",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/demo.json"
+    },
+    {
+      "file": "software.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/verification.json",
+      "sha256": "f35dd49771f7f8ba493bd62c516686e6ceaace735347b325f136df9b27fbc189",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/verification.json"
+    },
+    {
+      "file": "process-death.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/process-death.json",
+      "sha256": "7f634e61fafe0d9fa33527c2dcc3ee56a61965173b90a947c8096b9129b4e4b5",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/process-death.json"
+    },
+    {
+      "file": "history-rehydration.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/history-rehydration.json",
+      "sha256": "a601e4b60054652a763ab5139905222c819d6d50bf54f9d9fedfdbff2b34dbc0",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/history-rehydration.json"
+    },
+    {
+      "file": "publication-process-death.json",
+      "source_path": "docs/evidence/internal-acceptance/run01/publication-process-death.json",
+      "sha256": "88325acdb5d28bf76288b1fe68832e1b8fc1ae0abfbdda640568b9abcb33a1e2",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/internal-acceptance/run01/publication-process-death.json"
+    },
+    {
+      "file": "operator-browser.json",
+      "source_path": "docs/evidence/operator-console/run02/browser.json",
+      "sha256": "283ccc2849826731532cf29f6d2b4ae2bcb0aedebb53dbb0cea2f3723882c381",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/docs/evidence/operator-console/run02/browser.json"
+    },
+    {
+      "file": "source-console.py",
+      "source_path": "src/integrity/console.py",
+      "sha256": "f4b41a896e39dd9254b9f1c7c920f9c0b91d5549dcabd125e0857895f36a5818",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/src/integrity/console.py"
+    },
+    {
+      "file": "source-browser.cjs",
+      "source_path": "scripts/browser_acceptance.cjs",
+      "sha256": "e60573e6ac25b6343fd472fb0f83cc6d81ecf98d149586cb7cb17fe066a58e19",
+      "source_url": "https://github.com/rlbsem/enterprise-revenue-integrity-platform/blob/e2993099acaaae188aac0d83ba840cecef1c0014/scripts/browser_acceptance.cjs"
+    }
+  ]
+}

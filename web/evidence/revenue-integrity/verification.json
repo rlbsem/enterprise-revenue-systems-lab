@@ -1,0 +1,21 @@
+{
+  "scenario": "revenue-integrity",
+  "integrity": "verified",
+  "checks": {
+    "raw_invoice_traces": 2,
+    "verified_receiver_effects": 4,
+    "unresolved_variance_cents": 150000,
+    "recorded_software_tests": 60,
+    "recorded_browser_assertions": 43,
+    "dbt_models": 6,
+    "dbt_tests_per_build": 23,
+    "new_vendor_calls": false,
+    "new_financial_effects": false
+  },
+  "limitations": [
+    "Read-only recorded local contract services with synthetic USD data. No native Salesforce, Stripe, NetSuite or Snowflake execution; no production or commercial results.",
+    "Lifecycle, foundation delivery, process-death and operator-browser runs are separate evidence sets. Pinned source PR is unmerged; this viewer is not an independent certification of the source platform.",
+    "Post-recovery billing/ERP totals are archived browser observations. Cash/ARR use versioned fixture arithmetic corroborated by executed assertions. Full recovery approval/attempt rows were not archived at this revision.",
+    "Only the recorded finite scenario is checked. This does not establish general financial correctness, strict cross-system revocation atomicity, production HA or universal exactly-once delivery."
+  ]
+}

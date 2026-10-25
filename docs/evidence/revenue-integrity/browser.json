@@ -1,0 +1,529 @@
+{
+  "captured_at": "2026-10-25T21:18:58.581156+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
+  "case": "revenue-integrity",
+  "source_revision": "e2993099acaaae188aac0d83ba840cecef1c0014",
+  "source_sha256": {
+    "web/app.js": "c3f35061af6ec7b98dc08fd54f965375b754b7e621b5bd526f134eab9662834a",
+    "web/integrity.js": "c6c667ba5b0b04f87f068c2d37c9e429dad2b1c077a8c64a4ff7893d029dd109",
+    "web/style.css": "e7eb3fe3cc85960358533da1a64ee31779ef759a2c2ebf4dff70b47f301fd9a5",
+    "web/index.html": "c4e71227a59e1bfa75f0ec0a88e8fefe22ffd82ea980d1e10a90bc0a304aef97",
+    "web/catalog.json": "7239f28b6b6f6b48e1fde1cc1fba6d1774f52299fbb4df14b77b61a7e1d4e164",
+    "sources.lock.json": "4a0a1279a190efe53a724ab6e34c1e666e54b94bc368effa536e9c3e2fac731f",
+    "scripts/capture_integrity.py": "16e22d95b7bd27b338628dda18a4a983a325c5e9778a0405a9ba06a8ba9998a3"
+  },
+  "image_sha256": {
+    "revenue-integrity-desktop.png": "64be4571b0611c55f2cfa31fb015f0c73545dfbfb0dd0b8b1f5c19e0c64b1f2f",
+    "revenue-integrity-recovery.png": "2ce9a4ac672a3062d72852960e7368b9de524b6875637521f7c2a73587b40c70",
+    "revenue-integrity-mobile.png": "fce5d4eace824eb4975fce2fbf2e0bd2d0b7a2b22da60f820db2fd4327385b20"
+  },
+  "images": {
+    "revenue-integrity-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; recorded financial comparison and unresolved variance"
+    },
+    "revenue-integrity-recovery.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; separate operator recovery outcome and unchanged variance"
+    },
+    "revenue-integrity-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "capture": "actual mobile viewport; selectable financial investigation stages"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1440,
+      "state": "discrepancy",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "lineage",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 144,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "architecture",
+      "overflow": false,
+      "contrast": {
+        "checked": 147,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "discrepancy",
+      "overflow": false,
+      "contrast": {
+        "checked": 160,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "lineage",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 144,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "architecture",
+      "overflow": false,
+      "contrast": {
+        "checked": 147,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "discrepancy",
+      "overflow": false,
+      "contrast": {
+        "checked": 160,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "lineage",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 144,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "architecture",
+      "overflow": false,
+      "contrast": {
+        "checked": 147,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "discrepancy",
+      "overflow": false,
+      "contrast": {
+        "checked": 136,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "lineage",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 130,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "architecture",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 109,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "discrepancy",
+      "overflow": false,
+      "contrast": {
+        "checked": 136,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "lineage",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 130,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "architecture",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 109,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "state": "discrepancy",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "width": 1440,
+      "state": "lineage",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 1440,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "width": 1440,
+      "state": "recovery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "width": 1440,
+      "state": "architecture",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 390,
+      "state": "discrepancy",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "lineage",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "recovery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "architecture",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    }
+  ],
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "http_writes": [],
+  "new_model_execution": false,
+  "new_financial_effects": false
+}

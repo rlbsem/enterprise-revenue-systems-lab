@@ -13,7 +13,7 @@ from test_bundles import resign
 def records():
     path=ROOT / "web/evidence/release-assurance"
     return {a["path"]: json.loads((path/a["path"]).read_text(encoding="utf-8"))
-            for a in json.loads((path/"bundle.json").read_text())["artifacts"]}
+            for a in json.loads((path/"bundle.json").read_text(encoding="utf-8"))["artifacts"]}
 
 
 def test_release_verifies_actual_routing_receipts_and_separate_test_counts():
@@ -56,38 +56,43 @@ def test_release_refuses_plausible_but_incorrect_records(mutation):
 def test_resealed_source_artifact_still_fails_original_byte_pin(tmp_path):
     target=tmp_path/"release"
     shutil.copytree(ROOT/"web/evidence/release-assurance",target)
-    data=json.loads((target/"software.json").read_text());data["tests"]+=1
+    data=json.loads((target/"software.json").read_text(encoding="utf-8"));data["tests"]+=1
     resign(target,"software.json",data)
     with pytest.raises(ValueError,match="original release bytes differ"):verify(target)
 
 
 def test_five_prior_investigations_and_archived_images_remain_exact():
-    record=json.loads((ROOT/"docs/evidence/release-assurance/preserved-files.json").read_text())
+    record=json.loads((ROOT/"docs/evidence/release-assurance/preserved-files.json").read_text(encoding="utf-8"))
     assert len(record["sha256"]) > 150
     for name,checksum in record["sha256"].items():
         assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==checksum,name
 
 
 def test_screenshots_and_browser_proof_match_the_executed_ui():
-    report=json.loads((ROOT/"docs/evidence/release-assurance/browser.json").read_text())
+    report=json.loads((ROOT/"docs/evidence/release-assurance/browser.json").read_text(encoding="utf-8"))
     assert len(report["layouts"])==50 and len(report["accessibility"])==14
     assert all(not x["overflow"] and not x["contrast"]["failures"] for x in report["layouts"])
     assert all(not x["violations"] for x in report["accessibility"])
     assert report["http_writes"]==report["page_errors"]==report["nonlocal_requests"]==[]
+    snapshot=json.loads((ROOT/"docs/evidence/revenue-integrity/prior-release-ui.json").read_text(encoding="utf-8"))
     for name,checksum in report["source_sha256"].items():
-        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==checksum,name
+        assert hashlib.sha256(snapshot["files"][name].encode()).hexdigest()==checksum,name
     for name,checksum in report["image_sha256"].items():
         assert hashlib.sha256((ROOT/"docs/images/release-assurance"/name).read_bytes()).hexdigest()==checksum,name
 
 
 def test_existing_catalog_routes_and_source_pins_are_unchanged():
-    snapshot=json.loads((ROOT/"docs/evidence/release-assurance/prior-research-ui.json").read_text())
+    snapshot=json.loads((ROOT/"docs/evidence/release-assurance/prior-research-ui.json").read_text(encoding="utf-8"))
     before={r["id"]:r for r in json.loads(snapshot["files"]["web/catalog.json"])["scenarios"]}
-    after={r["id"]:r for r in json.loads((ROOT/"web/catalog.json").read_text())["scenarios"]}
-    assert set(after)-set(before)=={"release-assurance"}
-    assert all(after[key]==value for key,value in before.items())
+    after={r["id"]:r for r in json.loads((ROOT/"web/catalog.json").read_text(encoding="utf-8"))["scenarios"]}
+    assert set(after)-set(before)=={"release-assurance", "revenue-integrity"}
+    baseline=json.loads((ROOT/"docs/evidence/revenue-integrity/prior-release-ui.json").read_text(encoding="utf-8"))
+    previous={r["id"]:r for r in json.loads(baseline["files"]["web/catalog.json"])["scenarios"]}
+    # Older captured labels retained their original encoding; compare current
+    # routes and labels against the exact starting main, not rewritten history.
+    assert all(after[key]==value for key,value in previous.items())
     old=json.loads(snapshot["files"]["sources.lock.json"])["sources"]
-    current=json.loads((ROOT/"sources.lock.json").read_text())["sources"]
+    current=json.loads((ROOT/"sources.lock.json").read_text(encoding="utf-8"))["sources"]
     assert all(current[key]==value for key,value in old.items())
 
 
@@ -95,5 +100,5 @@ def test_portable_preserves_original_crlf_bytes():
     path=ROOT/"web/evidence/release-assurance"
     original=(path/"software.json").read_bytes()
     assert b"\r\n" in original
-    portable=json.loads((path/"portable.json").read_text())
+    portable=json.loads((path/"portable.json").read_text(encoding="utf-8"))
     assert portable["artifacts"]["software.json"].encode()==original

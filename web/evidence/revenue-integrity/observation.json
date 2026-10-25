@@ -1,0 +1,5 @@
+{
+  "new_effects": false,
+  "native_vendor_calls": false,
+  "scope": "Read-only recorded local synthetic execution; no live operator API"
+}
