@@ -30,7 +30,11 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -r requirements.lock
-      - run: python -m playwright install --with-deps chromium
+      # Hosted Ubuntu/Windows images already supply the Chromium runtime
+      # libraries. Avoid unrelated apt upgrades; real browser tests below
+      # still fail if a required library is missing.
+      - run: python -m playwright install chromium
+        timeout-minutes: 5
       - run: python -c "from pathlib import Path; Path('.cache').mkdir(exist_ok=True)"
       - run: python -m pytest -q --basetemp .cache/tests --junitxml .cache/tests.xml
       - name: Review recorded UI layouts and contrast
