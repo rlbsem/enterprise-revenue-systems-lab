@@ -1,4 +1,4 @@
-# Revenue Integrity — From Sales Commitment to Collected Cash
+# Revenue Integrity: From Sales Commitment to Collected Cash
 
 Candidate route: `?case=revenue-integrity`. This static investigation is prepared for review; public availability requires an approved merge and Pages deployment.
 

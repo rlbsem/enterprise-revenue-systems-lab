@@ -9,7 +9,7 @@ from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
     "revenue-integrity": (
-        "integrity", "Revenue Integrity — From Sales Commitment to Collected Cash",
+        "integrity", "Revenue Integrity: From Sales Commitment to Collected Cash",
         "Trace the $1,500 discrepancy, authoritative records and a separately reviewed delivery recovery. Recorded local execution; synthetic USD.",
     ),
     "release-assurance": (
