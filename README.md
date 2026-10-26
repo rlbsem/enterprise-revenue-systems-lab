@@ -44,7 +44,7 @@ The candidate route is `?case=release-assurance`. [Evidence and execution bounda
 
 <img src="docs/images/release-assurance/release-assurance-desktop.png" alt="Actual Lab release-assurance interface with rejected results, bounded acceptance and inspectable recorded stages" width="900">
 
-## Revenue Integrity — commitment to cash
+## Revenue Integrity: commitment to cash
 
 The seventh investigation follows a recorded $1,500 posting discrepancy through source lineage and a separate reviewed delivery recovery. Inspect the before/after invoice, cash and ARR measures without access to the privileged operator console. The discrepancy remains **Review Required**.
 
