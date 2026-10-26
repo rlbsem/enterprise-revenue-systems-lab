@@ -1,0 +1,1260 @@
+{
+  "executed_at": "2026-10-26T20:14:54.511716+00:00",
+  "source_revision": "4cc1480d63f1095584db2ddcde72ed5626eb7ea7",
+  "source_input_sha256": {
+    "sql/dim_account.sql": "8ffc21d074c46109e1d4b50c42606b17ca7e877452e77b8d9e850bd15d994f25",
+    "sql/dim_date.sql": "2978d206de67a2d43ed5ad4409039a8a2c0583880a9ff1f04b465e04ff2118a4",
+    "sql/fct_booking_events.sql": "e5db049f737a0f5e6776849a10c4fc26875f1679a2a61eed0f0837132b00c878",
+    "sql/fct_invoice_lines.sql": "f817e3437a3b37212317424b8961228a9efef2f44462ccb5ae1d4912e921ba27",
+    "sql/fct_opportunity_daily.sql": "2c3a338554b06fb6581f91bd7051a61436d79c65c8c86a21e1ab27f73131adaf",
+    "sql/fct_payment_allocations.sql": "83cb9ef07eb1489f6e747b8cf5031d2724656ce9f172bb8a8539ff42cd94acce",
+    "sql/fct_subscription_period.sql": "6beb2c95cce09286a7196100adbb1055075369bf52e75f0818ae8ef830f94815",
+    "sql/mart_arr.sql": "5fac193b2c9a3428b19b41d13616793bb15f20375625dc188cc8ac0d0f58432b",
+    "sql/mart_cohorts.sql": "30276320eb4c522232721700b71dced87f099647cf74723a1611a534168d1f54",
+    "sql/mart_discrepancy_bridge.sql": "ef002ee5b27c61cd0ac99bae168e6a2a30578aaa328e614f40dd0b8dc030a1e9",
+    "sql/mart_flows.sql": "91b35d1ca35b154cc447bb0b2c044ec56b61a591420780e0dbfaeb9a3592339b",
+    "sql/mart_metric_values.sql": "50928f0b379f333bfe8084dc5cfdb1d8d475a792e886464fef11369259ade88c",
+    "sql/mart_pipeline.sql": "f05109fc19e243b6cf5dca92f90ead5c7ef1657515b6cbc3cdd1b9e2eb2466eb",
+    "sql/stg_opportunities.sql": "cc41a5643193a9f43d7515738bf950729cbd210851cdce9ad6d952e6600dd52e",
+    "sql/stg_subscriptions.sql": "4125a9e0da17aa61f82046443ee14475dc8b5955f264f36e98e3e8918dfa11b2",
+    "fixture/account_history.csv": "a4c6fe6a1219f4ee8d96aea4d08f10a067edbdacaf4a10516d87dc865c07fcb7",
+    "fixture/booking_events.csv": "e5318baee6d728d2587bfa29538e1a440e5ab6c3237b2faa5b8b10967fb39faa",
+    "fixture/calendar.csv": "c95f5bb25803d26c6177a1116162c05269e03906878d373abaf65e784e9205cc",
+    "fixture/coverage.csv": "de1abba91968213e743a5e8d7bf50a47fe0c6c4190fc27080545c54a93894df9",
+    "fixture/invoice_lines.csv": "bc72cf5cd68614b45b1e7e100058ff616f3138e7c388171d6289dbd8b9e0eac7",
+    "fixture/late_opportunity_events.csv": "a6e533db3df2f06d5e99745d520849de3745951b6cbdd7677471886bcd6eada7",
+    "fixture/opportunity_events.csv": "27ad60897c277bee1f9358df433f2184e0a83a8da4d68d1cb7a13e7f349de50a",
+    "fixture/payment_allocations.csv": "01babf5f039b707afae3089185ebdfafdcb5fa788fddb2cab4012818a1051e7b",
+    "fixture/subscription_contracts.csv": "310a9fc2b3a50abd523144cb588e322681c91f2a0c7753e74ecc8cfa61d4b6b4"
+  },
+  "lane": "fresh_local_small_fixture_duckdb_dbt",
+  "late_batch_loaded": true,
+  "independent_fixture_expectations_passed": true,
+  "models": {
+    "dim_account": {
+      "rows": 5,
+      "columns": [
+        [
+          "account_version_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "account_name",
+          "VARCHAR"
+        ],
+        [
+          "owner",
+          "VARCHAR"
+        ],
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "valid_from",
+          "DATE"
+        ],
+        [
+          "valid_to",
+          "DATE"
+        ]
+      ],
+      "sample": [
+        {
+          "account_version_id": "A1_1",
+          "account_id": "A1",
+          "account_name": "Cedar Labs",
+          "owner": "Maya",
+          "region": "North",
+          "valid_from": "2025-01-01",
+          "valid_to": "2026-02-15"
+        },
+        {
+          "account_version_id": "A1_2",
+          "account_id": "A1",
+          "account_name": "Cedar Labs",
+          "owner": "Noah",
+          "region": "East",
+          "valid_from": "2026-02-15",
+          "valid_to": "2099-01-01"
+        },
+        {
+          "account_version_id": "A2_1",
+          "account_id": "A2",
+          "account_name": "Maple Systems",
+          "owner": "Sam",
+          "region": "West",
+          "valid_from": "2025-01-01",
+          "valid_to": "2099-01-01"
+        },
+        {
+          "account_version_id": "A3_1",
+          "account_id": "A3",
+          "account_name": "Birch Works",
+          "owner": "Maya",
+          "region": "North",
+          "valid_from": "2025-01-01",
+          "valid_to": "2099-01-01"
+        }
+      ]
+    },
+    "dim_date": {
+      "rows": 90,
+      "columns": [
+        [
+          "date_day",
+          "DATE"
+        ],
+        [
+          "month_start",
+          "DATE"
+        ],
+        [
+          "is_month_end",
+          "INTEGER"
+        ]
+      ],
+      "sample": [
+        {
+          "date_day": "2026-01-01",
+          "month_start": "2026-01-01",
+          "is_month_end": 0
+        },
+        {
+          "date_day": "2026-01-02",
+          "month_start": "2026-01-01",
+          "is_month_end": 0
+        },
+        {
+          "date_day": "2026-01-03",
+          "month_start": "2026-01-01",
+          "is_month_end": 0
+        },
+        {
+          "date_day": "2026-01-04",
+          "month_start": "2026-01-01",
+          "is_month_end": 0
+        }
+      ]
+    },
+    "fct_booking_events": {
+      "rows": 4,
+      "columns": [
+        [
+          "booking_event_id",
+          "VARCHAR"
+        ],
+        [
+          "contract_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "event_date",
+          "DATE"
+        ],
+        [
+          "amount_cents",
+          "BIGINT"
+        ],
+        [
+          "event_type",
+          "VARCHAR"
+        ]
+      ],
+      "sample": [
+        {
+          "booking_event_id": "B1",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "event_date": "2026-02-10",
+          "amount_cents": 1200000,
+          "event_type": "new"
+        },
+        {
+          "booking_event_id": "B2",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "event_date": "2026-03-20",
+          "amount_cents": -200000,
+          "event_type": "amendment"
+        },
+        {
+          "booking_event_id": "B3",
+          "contract_id": "S2",
+          "account_id": "A2",
+          "event_date": "2026-03-10",
+          "amount_cents": 600000,
+          "event_type": "new"
+        },
+        {
+          "booking_event_id": "B4",
+          "contract_id": "S3",
+          "account_id": "A4",
+          "event_date": "2026-02-01",
+          "amount_cents": 200000,
+          "event_type": "new"
+        }
+      ]
+    },
+    "fct_invoice_lines": {
+      "rows": 5,
+      "columns": [
+        [
+          "line_id",
+          "VARCHAR"
+        ],
+        [
+          "invoice_id",
+          "VARCHAR"
+        ],
+        [
+          "contract_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "event_date",
+          "DATE"
+        ],
+        [
+          "amount_cents",
+          "BIGINT"
+        ],
+        [
+          "line_type",
+          "VARCHAR"
+        ]
+      ],
+      "sample": [
+        {
+          "line_id": "L1",
+          "invoice_id": "I1",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "event_date": "2026-02-11",
+          "amount_cents": 700000,
+          "line_type": "invoice"
+        },
+        {
+          "line_id": "L2",
+          "invoice_id": "I2",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "event_date": "2026-03-01",
+          "amount_cents": 500000,
+          "line_type": "invoice"
+        },
+        {
+          "line_id": "L3",
+          "invoice_id": "I2",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "event_date": "2026-03-25",
+          "amount_cents": -100000,
+          "line_type": "credit"
+        },
+        {
+          "line_id": "L4",
+          "invoice_id": "I3",
+          "contract_id": "S2",
+          "account_id": "A2",
+          "event_date": "2026-03-12",
+          "amount_cents": 400000,
+          "line_type": "invoice"
+        }
+      ]
+    },
+    "fct_opportunity_daily": {
+      "rows": 362,
+      "columns": [
+        [
+          "opportunity_day_key",
+          "VARCHAR"
+        ],
+        [
+          "opportunity_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "created_date",
+          "DATE"
+        ],
+        [
+          "date_day",
+          "DATE"
+        ],
+        [
+          "stage",
+          "VARCHAR"
+        ],
+        [
+          "amount_cents",
+          "BIGINT"
+        ],
+        [
+          "origin",
+          "VARCHAR"
+        ],
+        [
+          "last_ingest_seq",
+          "BIGINT"
+        ]
+      ],
+      "sample": [
+        {
+          "opportunity_day_key": "O1:2026-01-05",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "date_day": "2026-01-05",
+          "stage": "open",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "last_ingest_seq": 1
+        },
+        {
+          "opportunity_day_key": "O1:2026-01-06",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "date_day": "2026-01-06",
+          "stage": "open",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "last_ingest_seq": 1
+        },
+        {
+          "opportunity_day_key": "O1:2026-01-07",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "date_day": "2026-01-07",
+          "stage": "open",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "last_ingest_seq": 1
+        },
+        {
+          "opportunity_day_key": "O1:2026-01-08",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "date_day": "2026-01-08",
+          "stage": "open",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "last_ingest_seq": 1
+        }
+      ]
+    },
+    "fct_payment_allocations": {
+      "rows": 5,
+      "columns": [
+        [
+          "allocation_id",
+          "VARCHAR"
+        ],
+        [
+          "payment_id",
+          "VARCHAR"
+        ],
+        [
+          "invoice_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "event_date",
+          "DATE"
+        ],
+        [
+          "amount_cents",
+          "BIGINT"
+        ]
+      ],
+      "sample": [
+        {
+          "allocation_id": "P1",
+          "payment_id": "R1",
+          "invoice_id": "I1",
+          "account_id": "A1",
+          "event_date": "2026-02-15",
+          "amount_cents": 300000
+        },
+        {
+          "allocation_id": "P2",
+          "payment_id": "R2",
+          "invoice_id": "I1",
+          "account_id": "A1",
+          "event_date": "2026-02-25",
+          "amount_cents": 200000
+        },
+        {
+          "allocation_id": "P3",
+          "payment_id": "R3",
+          "invoice_id": "I2",
+          "account_id": "A1",
+          "event_date": "2026-03-10",
+          "amount_cents": 300000
+        },
+        {
+          "allocation_id": "P4",
+          "payment_id": "R4",
+          "invoice_id": "I3",
+          "account_id": "A2",
+          "event_date": "2026-03-20",
+          "amount_cents": 200000
+        }
+      ]
+    },
+    "fct_subscription_period": {
+      "rows": 18,
+      "columns": [
+        [
+          "contract_period_key",
+          "VARCHAR"
+        ],
+        [
+          "contract_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "date_day",
+          "DATE"
+        ],
+        [
+          "arr_cents",
+          "DECIMAL(18,2)"
+        ]
+      ],
+      "sample": [
+        {
+          "contract_period_key": "S1:2026-01-31",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "date_day": "2026-01-31",
+          "arr_cents": "0.00"
+        },
+        {
+          "contract_period_key": "S1:2026-02-28",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "date_day": "2026-02-28",
+          "arr_cents": "1200000.00"
+        },
+        {
+          "contract_period_key": "S1:2026-03-31",
+          "contract_id": "S1",
+          "account_id": "A1",
+          "date_day": "2026-03-31",
+          "arr_cents": "1200000.00"
+        },
+        {
+          "contract_period_key": "S2:2026-01-31",
+          "contract_id": "S2",
+          "account_id": "A2",
+          "date_day": "2026-01-31",
+          "arr_cents": "0.00"
+        }
+      ]
+    },
+    "mart_arr": {
+      "rows": 12,
+      "columns": [
+        [
+          "date_day",
+          "DATE"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "owner",
+          "VARCHAR"
+        ],
+        [
+          "arr_cents",
+          "DECIMAL(38,2)"
+        ]
+      ],
+      "sample": [
+        {
+          "date_day": "2026-01-31",
+          "account_id": "A1",
+          "region": "North",
+          "owner": "Maya",
+          "arr_cents": "0.00"
+        },
+        {
+          "date_day": "2026-01-31",
+          "account_id": "A2",
+          "region": "West",
+          "owner": "Sam",
+          "arr_cents": "0.00"
+        },
+        {
+          "date_day": "2026-01-31",
+          "account_id": "A3",
+          "region": "North",
+          "owner": "Maya",
+          "arr_cents": "1200000.00"
+        },
+        {
+          "date_day": "2026-01-31",
+          "account_id": "A4",
+          "region": "West",
+          "owner": "Sam",
+          "arr_cents": "0.00"
+        }
+      ]
+    },
+    "mart_cohorts": {
+      "rows": 4,
+      "columns": [
+        [
+          "cohort_month",
+          "DATE"
+        ],
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "opportunities",
+          "BIGINT"
+        ],
+        [
+          "mature_opportunities",
+          "HUGEINT"
+        ],
+        [
+          "wins",
+          "HUGEINT"
+        ],
+        [
+          "win_rate",
+          "DECIMAL(18,8)"
+        ]
+      ],
+      "sample": [
+        {
+          "cohort_month": "2026-01-01",
+          "region": "North",
+          "opportunities": 2,
+          "mature_opportunities": 2,
+          "wins": 0,
+          "win_rate": "0.00000000"
+        },
+        {
+          "cohort_month": "2026-01-01",
+          "region": "West",
+          "opportunities": 1,
+          "mature_opportunities": 1,
+          "wins": 1,
+          "win_rate": "1.00000000"
+        },
+        {
+          "cohort_month": "2026-02-01",
+          "region": "West",
+          "opportunities": 2,
+          "mature_opportunities": 2,
+          "wins": 0,
+          "win_rate": "0.00000000"
+        },
+        {
+          "cohort_month": "2026-03-01",
+          "region": "East",
+          "opportunities": 1,
+          "mature_opportunities": 0,
+          "wins": 0,
+          "win_rate": null
+        }
+      ]
+    },
+    "mart_discrepancy_bridge": {
+      "rows": 3,
+      "columns": [
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "bookings",
+          "DOUBLE"
+        ],
+        [
+          "invoiced",
+          "DOUBLE"
+        ],
+        [
+          "cash",
+          "DOUBLE"
+        ],
+        [
+          "account_name",
+          "VARCHAR"
+        ],
+        [
+          "bookings_less_invoices",
+          "DOUBLE"
+        ],
+        [
+          "invoices_less_cash",
+          "DOUBLE"
+        ],
+        [
+          "explanation",
+          "VARCHAR"
+        ]
+      ],
+      "sample": [
+        {
+          "account_id": "A1",
+          "bookings": 10000.0,
+          "invoiced": 11000.0,
+          "cash": 8000.0,
+          "account_name": "Cedar Labs",
+          "bookings_less_invoices": -1000.0,
+          "invoices_less_cash": 3000.0,
+          "explanation": "Net invoicing exceeds amended bookings in this period"
+        },
+        {
+          "account_id": "A2",
+          "bookings": 6000.0,
+          "invoiced": 4000.0,
+          "cash": 2000.0,
+          "account_name": "Maple Systems",
+          "bookings_less_invoices": 2000.0,
+          "invoices_less_cash": 2000.0,
+          "explanation": "Contract value not yet invoiced in this period"
+        },
+        {
+          "account_id": "A4",
+          "bookings": 2000.0,
+          "invoiced": 1000.0,
+          "cash": 1000.0,
+          "account_name": "Spruce Data",
+          "bookings_less_invoices": 1000.0,
+          "invoices_less_cash": 0.0,
+          "explanation": "Contract value not yet invoiced in this period"
+        }
+      ]
+    },
+    "mart_flows": {
+      "rows": 14,
+      "columns": [
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "event_date",
+          "DATE"
+        ],
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "owner",
+          "VARCHAR"
+        ],
+        [
+          "bookings_cents",
+          "HUGEINT"
+        ],
+        [
+          "invoiced_cents",
+          "HUGEINT"
+        ],
+        [
+          "cash_cents",
+          "HUGEINT"
+        ]
+      ],
+      "sample": [
+        {
+          "account_id": "A1",
+          "event_date": "2026-02-10",
+          "region": "North",
+          "owner": "Maya",
+          "bookings_cents": 1200000,
+          "invoiced_cents": 0,
+          "cash_cents": 0
+        },
+        {
+          "account_id": "A1",
+          "event_date": "2026-02-11",
+          "region": "North",
+          "owner": "Maya",
+          "bookings_cents": 0,
+          "invoiced_cents": 700000,
+          "cash_cents": 0
+        },
+        {
+          "account_id": "A1",
+          "event_date": "2026-02-15",
+          "region": "East",
+          "owner": "Noah",
+          "bookings_cents": 0,
+          "invoiced_cents": 0,
+          "cash_cents": 300000
+        },
+        {
+          "account_id": "A1",
+          "event_date": "2026-02-25",
+          "region": "East",
+          "owner": "Noah",
+          "bookings_cents": 0,
+          "invoiced_cents": 0,
+          "cash_cents": 200000
+        }
+      ]
+    },
+    "mart_metric_values": {
+      "rows": 24,
+      "columns": [
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "metric_id",
+          "VARCHAR"
+        ],
+        [
+          "value",
+          "DECIMAL(18,8)"
+        ],
+        [
+          "numerator",
+          "DECIMAL(38,2)"
+        ],
+        [
+          "denominator",
+          "DECIMAL(38,2)"
+        ],
+        [
+          "excluded",
+          "HUGEINT"
+        ],
+        [
+          "unit",
+          "VARCHAR"
+        ],
+        [
+          "definition_version",
+          "VARCHAR"
+        ],
+        [
+          "period_start",
+          "DATE"
+        ],
+        [
+          "period_end",
+          "DATE"
+        ]
+      ],
+      "sample": [
+        {
+          "region": "ALL",
+          "metric_id": "cash_received",
+          "value": "11000.00000000",
+          "numerator": null,
+          "denominator": null,
+          "excluded": 0,
+          "unit": "USD",
+          "definition_version": "1.0",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31"
+        },
+        {
+          "region": "ALL",
+          "metric_id": "cohort_win_rate",
+          "value": "0.20000000",
+          "numerator": "1.00",
+          "denominator": "5.00",
+          "excluded": 1,
+          "unit": "ratio",
+          "definition_version": "1.0",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31"
+        },
+        {
+          "region": "ALL",
+          "metric_id": "net_bookings",
+          "value": "18000.00000000",
+          "numerator": null,
+          "denominator": null,
+          "excluded": 0,
+          "unit": "USD",
+          "definition_version": "1.0",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31"
+        },
+        {
+          "region": "ALL",
+          "metric_id": "net_invoiced",
+          "value": "16000.00000000",
+          "numerator": null,
+          "denominator": null,
+          "excluded": 0,
+          "unit": "USD",
+          "definition_version": "1.0",
+          "period_start": "2026-01-01",
+          "period_end": "2026-03-31"
+        }
+      ]
+    },
+    "mart_pipeline": {
+      "rows": 295,
+      "columns": [
+        [
+          "date_day",
+          "DATE"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "region",
+          "VARCHAR"
+        ],
+        [
+          "owner",
+          "VARCHAR"
+        ],
+        [
+          "pipeline_cents",
+          "HUGEINT"
+        ]
+      ],
+      "sample": [
+        {
+          "date_day": "2026-01-05",
+          "account_id": "A1",
+          "region": "North",
+          "owner": "Maya",
+          "pipeline_cents": 1200000
+        },
+        {
+          "date_day": "2026-01-06",
+          "account_id": "A1",
+          "region": "North",
+          "owner": "Maya",
+          "pipeline_cents": 1200000
+        },
+        {
+          "date_day": "2026-01-07",
+          "account_id": "A1",
+          "region": "North",
+          "owner": "Maya",
+          "pipeline_cents": 1200000
+        },
+        {
+          "date_day": "2026-01-08",
+          "account_id": "A1",
+          "region": "North",
+          "owner": "Maya",
+          "pipeline_cents": 1200000
+        }
+      ]
+    },
+    "stg_opportunities": {
+      "rows": 11,
+      "columns": [
+        [
+          "event_id",
+          "VARCHAR"
+        ],
+        [
+          "opportunity_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "created_date",
+          "DATE"
+        ],
+        [
+          "effective_date",
+          "DATE"
+        ],
+        [
+          "stage",
+          "VARCHAR"
+        ],
+        [
+          "amount_cents",
+          "BIGINT"
+        ],
+        [
+          "origin",
+          "VARCHAR"
+        ],
+        [
+          "ingest_seq",
+          "BIGINT"
+        ]
+      ],
+      "sample": [
+        {
+          "event_id": "E1",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "effective_date": "2026-01-05",
+          "stage": "open",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "ingest_seq": 1
+        },
+        {
+          "event_id": "E10",
+          "opportunity_id": "O6",
+          "account_id": "A2",
+          "created_date": "2026-02-10",
+          "effective_date": "2026-02-10",
+          "stage": "open",
+          "amount_cents": 100000,
+          "origin": "Sales",
+          "ingest_seq": 1
+        },
+        {
+          "event_id": "E11",
+          "opportunity_id": "O6",
+          "account_id": "A2",
+          "created_date": "2026-02-10",
+          "effective_date": "2026-02-20",
+          "stage": "lost",
+          "amount_cents": 100000,
+          "origin": "Sales",
+          "ingest_seq": 1
+        },
+        {
+          "event_id": "E2",
+          "opportunity_id": "O1",
+          "account_id": "A1",
+          "created_date": "2026-01-05",
+          "effective_date": "2026-02-10",
+          "stage": "won",
+          "amount_cents": 1200000,
+          "origin": "Marketing",
+          "ingest_seq": 1
+        }
+      ]
+    },
+    "stg_subscriptions": {
+      "rows": 6,
+      "columns": [
+        [
+          "contract_id",
+          "VARCHAR"
+        ],
+        [
+          "account_id",
+          "VARCHAR"
+        ],
+        [
+          "start_date",
+          "DATE"
+        ],
+        [
+          "end_date",
+          "DATE"
+        ],
+        [
+          "fee_cents",
+          "BIGINT"
+        ],
+        [
+          "billing_months",
+          "INTEGER"
+        ],
+        [
+          "contract_type",
+          "VARCHAR"
+        ],
+        [
+          "is_trial",
+          "INTEGER"
+        ],
+        [
+          "past_due",
+          "INTEGER"
+        ],
+        [
+          "annual_cents",
+          "DECIMAL(18,2)"
+        ]
+      ],
+      "sample": [
+        {
+          "contract_id": "S1",
+          "account_id": "A1",
+          "start_date": "2026-02-10",
+          "end_date": "2027-02-10",
+          "fee_cents": 1200000,
+          "billing_months": 12,
+          "contract_type": "recurring",
+          "is_trial": 0,
+          "past_due": 0,
+          "annual_cents": "1200000.00"
+        },
+        {
+          "contract_id": "S2",
+          "account_id": "A2",
+          "start_date": "2026-03-10",
+          "end_date": "2027-03-10",
+          "fee_cents": 50000,
+          "billing_months": 1,
+          "contract_type": "recurring",
+          "is_trial": 0,
+          "past_due": 1,
+          "annual_cents": "600000.00"
+        },
+        {
+          "contract_id": "S3",
+          "account_id": "A4",
+          "start_date": "2026-02-01",
+          "end_date": "2026-03-20",
+          "fee_cents": 240000,
+          "billing_months": 12,
+          "contract_type": "recurring",
+          "is_trial": 0,
+          "past_due": 0,
+          "annual_cents": "240000.00"
+        },
+        {
+          "contract_id": "S4",
+          "account_id": "A3",
+          "start_date": "2026-01-01",
+          "end_date": "2027-01-01",
+          "fee_cents": 9999900,
+          "billing_months": 12,
+          "contract_type": "recurring",
+          "is_trial": 1,
+          "past_due": 0,
+          "annual_cents": "0.00"
+        }
+      ]
+    }
+  },
+  "build_results": [
+    {
+      "node": "model.revenue_metrics.dim_account",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.dim_date",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.fct_booking_events",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.fct_invoice_lines",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.fct_payment_allocations",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.stg_opportunities",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.stg_subscriptions",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_raw_revision_unique",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_source_coverage",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_scd_intervals",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_dim_account_account_version_id.956f97e023",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_dim_account_account_version_id.081635f4f9",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_dim_date_date_day.e3f312efb2",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_dim_date_date_day.d56fd19199",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_fct_booking_events_booking_event_id.bb5998017c",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_fct_booking_events_booking_event_id.33c401e9c1",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_fct_invoice_lines_line_id.6f58cdee9b",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_fct_invoice_lines_line_id.56e7ba6f2a",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_flows",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_invoice_settlement",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_payment_invoice_reference",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_fct_payment_allocations_allocation_id.d3a9f1f778",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_fct_payment_allocations_allocation_id.902a1988a7",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.fct_opportunity_daily",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_cohorts",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_opportunity_contract",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_stg_opportunities_event_id.a1ef70569b",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_stg_opportunities_event_id.2e2c7d09fe",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.fct_subscription_period",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_contract_references",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_contract_validity",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_required_fact_fields",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_stg_subscriptions_contract_id.2c9d4c503f",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_stg_subscriptions_contract_id.5e620e2c61",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_discrepancy_bridge",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_flow_conservation",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_pipeline",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_fct_opportunity_daily_opportunity_day_key.d488988ebf",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_fct_opportunity_daily_opportunity_day_key.fba23a1aed",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_arr",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_account_references",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.not_null_fct_subscription_period_contract_period_key.0c9046cc23",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.unique_fct_subscription_period_contract_period_key.aa9e8aefeb",
+      "status": "success"
+    },
+    {
+      "node": "model.revenue_metrics.mart_metric_values",
+      "status": "success"
+    },
+    {
+      "node": "test.revenue_metrics.assert_metric_shape",
+      "status": "success"
+    }
+  ],
+  "display_limit_per_model": 4,
+  "new_native_execution": false,
+  "new_large_benchmark": false,
+  "note": "Actual local model rows; first four ordered typed rows per model. Not the historical Snowflake run or the 60K/180K benchmark. The source demo validates independent fixture expectations before publication."
+}

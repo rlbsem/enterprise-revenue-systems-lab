@@ -14,7 +14,7 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 The original three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
 
-## Seven investigations
+## Eight investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -25,8 +25,9 @@ The original three investigation screenshots are captured directly from the curr
 | How does account intelligence become qualified pipeline? | [GTM Pipeline investigation](docs/gtm-investigation.md): a 120-account USD $3.46M synthetic scenario, separate native Salesforce Account/Contact/Task acceptance and separate actual Qwen3 responses | Three recorded execution sets, not one continuous vendor workflow. No commercial uplift or prospect communication. |
 | Can a real-model candidate be released safely? | [AI Model Release Assurance](docs/model-release-assurance.md): preserved Qwen2.5 failures, blocked 35/36 Qwen3 candidate, 48/48 paired configurations and actual local shadow/canary/promotion/rollback | Finite-suite local acceptance with synthetic effects; controlled input corruption, not production reliability or general model accuracy. |
 | Why do billing and Finance disagree after a delivery recovers? | [Revenue Integrity](docs/revenue-integrity.md): authoritative invoice/ERP/cash lineage, independent receipts, a separate recorded operator recovery and an unresolved $1,500 variance | Local contract acceptance at a pinned unmerged source revision; recorded review states, no privileged actions or native vendor calls. |
+| Are analytical models correct, and is the optimization worth keeping? | [Analytics Engineering](docs/analytics-engineering.md): 15-model SQL lineage, actual small-fixture rows, 60K/180K paired benchmarks, a rejected selective rebuild and separate native Snowflake fixture evidence | Complete comparisons were recorded upstream; the browser checks artifacts and summaries. Local timing is not native warehouse performance or commercial savings. |
 
-The sixteen cases draw from six pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The seventeen cases draw from six pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## SDR account intelligence
 
@@ -51,6 +52,14 @@ The seventh investigation follows a recorded $1,500 posting discrepancy through 
 Candidate route: `?case=revenue-integrity`. [Evidence and financial derivation](docs/revenue-integrity.md) · [Actual browser screenshots](docs/evidence/revenue-integrity/README.md). Public availability requires merge and deployment approval; the source platform remains pinned to its unmerged PR.
 
 <img src="docs/images/revenue-integrity/revenue-integrity-desktop.png" alt="Actual static Revenue Integrity investigation showing synthetic invoice, ERP, cash and ARR values with the unresolved $1,500 difference" width="900">
+
+## Analytics Engineering — Model Correctness & Performance
+
+The eighth investigation connects financial grain, actual SQL/dbt dependencies and measured correctness to an engineering decision. Inspect 15 models, typed rows from an executed small fixture, six metric identities and three paired measurements at each enterprise scale. The selective candidate was rejected despite faster aggregation: total elapsed time regressed by 54.3% at 60K accounts and 31.2% at 180K accounts.
+
+Preview route: `?case=analytics-engineering`. [Evidence, execution boundaries and reproduction](docs/analytics-engineering.md) · [Actual screenshots and browser verification](docs/evidence/analytics-engineering/README.md). Public availability requires an approved merge and the existing Pages deployment.
+
+<img src="docs/images/analytics-engineering/analytics-engineering-desktop.png" alt="Actual model selector, financial grain and clickable dbt lineage with separate fixture and benchmark evidence" width="900">
 
 ## Open the hosted explorer or run it locally
 

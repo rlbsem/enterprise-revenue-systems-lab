@@ -298,7 +298,9 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
                     if case["investigation"] == "release" else
                     "Verify these separate records offline"
                     if case["investigation"] == "gtm" else
-                    "Verify this native record offline"
+                    "Verify the recorded analytics evidence offline"
+                    if case["investigation"] == "analytics"
+                    else "Verify this native record offline"
                     if case["investigation"] == "connected"
                     else "Reproduce this investigation · fresh local execution"
                 )

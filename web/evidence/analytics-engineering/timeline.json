@@ -1,0 +1,143 @@
+[
+  {
+    "action": "Local enterprise paired benchmark",
+    "body": {
+      "accounts": 60000,
+      "opportunities": 195927,
+      "fact_rows": 12470664,
+      "model_rows": {
+        "dim_account": 68571,
+        "dim_date": 90,
+        "fct_booking_events": 345504,
+        "fct_invoice_lines": 775133,
+        "fct_opportunity_daily": 12470664,
+        "fct_payment_allocations": 329053,
+        "fct_subscription_period": 221781,
+        "mart_arr": 180000,
+        "mart_cohorts": 15,
+        "mart_discrepancy_bridge": 48020,
+        "mart_flows": 546059,
+        "mart_metric_values": 36,
+        "mart_pipeline": 5395893,
+        "stg_opportunities": 333146,
+        "stg_subscriptions": 73927
+      },
+      "baseline_median_seconds": 12.447005899972282,
+      "candidate_median_seconds": 19.20493130001705,
+      "wall_change_percent": 54.293582363127335,
+      "pairs": [
+        {
+          "repetition": 1,
+          "baseline": 12.28415020002285,
+          "candidate": 19.20493130001705,
+          "baseline_noop": 11.673088299983647,
+          "candidate_noop": 16.10577620001277
+        },
+        {
+          "repetition": 2,
+          "baseline": 12.447005899972282,
+          "candidate": 18.904984499968123,
+          "baseline_noop": 12.83378680003807,
+          "candidate_noop": 16.747201499994844
+        },
+        {
+          "repetition": 3,
+          "baseline": 12.769950999994762,
+          "candidate": 20.033537100011017,
+          "baseline_noop": 12.427097000007052,
+          "candidate_noop": 17.501055100001395
+        }
+      ]
+    }
+  },
+  {
+    "action": "Local stress paired benchmark",
+    "body": {
+      "accounts": 180000,
+      "opportunities": 587461,
+      "fact_rows": 37375442,
+      "model_rows": {
+        "dim_account": 205714,
+        "dim_date": 90,
+        "fct_booking_events": 1030836,
+        "fct_invoice_lines": 2325124,
+        "fct_opportunity_daily": 37375442,
+        "fct_payment_allocations": 986897,
+        "fct_subscription_period": 664239,
+        "mart_arr": 540000,
+        "mart_cohorts": 15,
+        "mart_discrepancy_bridge": 144122,
+        "mart_flows": 1637669,
+        "mart_metric_values": 36,
+        "mart_pipeline": 16188545,
+        "stg_opportunities": 998789,
+        "stg_subscriptions": 221413
+      },
+      "baseline_median_seconds": 43.92271840001922,
+      "candidate_median_seconds": 57.63381330005359,
+      "wall_change_percent": 31.216407816935956,
+      "pairs": [
+        {
+          "repetition": 1,
+          "baseline": 48.86398820002796,
+          "candidate": 57.63381330005359,
+          "baseline_noop": 41.27657819999149,
+          "candidate_noop": 46.97677470004419
+        },
+        {
+          "repetition": 2,
+          "baseline": 42.323234000010416,
+          "candidate": 56.00491969997529,
+          "baseline_noop": 44.385605499963276,
+          "candidate_noop": 47.78360219998285
+        },
+        {
+          "repetition": 3,
+          "baseline": 43.92271840001922,
+          "candidate": 58.80559510004241,
+          "baseline_noop": 41.86783319996903,
+          "candidate_noop": 47.64742389996536
+        }
+      ]
+    }
+  },
+  {
+    "action": "Separate historical native Snowflake fixture",
+    "body": {
+      "started_at": "2026-10-15T01:56:01.995775+00:00",
+      "finished_at": "2026-10-15T01:58:57.397575+00:00",
+      "query_ids": 461,
+      "models": 15,
+      "denied_operations": [
+        {
+          "denied": true,
+          "errno": 2003,
+          "operation": "raw_read",
+          "sqlstate": "02000"
+        },
+        {
+          "denied": true,
+          "errno": 2003,
+          "operation": "release_write",
+          "sqlstate": "42S02"
+        },
+        {
+          "denied": true,
+          "errno": 3013,
+          "operation": "build_role_escalation",
+          "sqlstate": "42501"
+        },
+        {
+          "denied": true,
+          "errno": 3013,
+          "operation": "loader_role_escalation",
+          "sqlstate": "42501"
+        }
+      ],
+      "consumption": {
+        "note": "Elapsed time is not billed credits. Use snowflake/consumption.sql after reporting latency.",
+        "status": "pending_owner_metering_export"
+      }
+    }
+  }
+]

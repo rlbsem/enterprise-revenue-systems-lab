@@ -920,6 +920,25 @@ th {
 .research-case pre, .research-case code { white-space:pre-wrap; overflow-wrap:anywhere; max-width:100%; font-size:11px; }
 .research-case > section { margin-top:28px; padding-top:20px; border-top:1px solid var(--line); }
 .research-state { display:inline-block; padding:7px 10px; border:1px solid #b3c9ce; border-radius:5px; color:#235960; background:#eaf3f4; font-size:10px; letter-spacing:.6px; font-weight:700; }
+.analytics-investigation { min-width:0; }
+.analytics-investigation .release-hero h2 { color:#fff; font-size:clamp(23px,2.6vw,34px); margin:12px 0; }
+.analytics-investigation pre { white-space:pre-wrap; overflow-wrap:anywhere; max-height:420px; overflow:auto; font-size:11px; }
+.analytics-investigation details { margin:18px 0; }
+.analytics-control { margin:18px 0; }
+.analytics-control label { display:block; font-size:12px; font-weight:700; color:#42596d; }
+.analytics-table { max-width:100%; overflow:auto; margin:20px 0; }
+.analytics-table table { min-width:520px; }
+.analytics-table:focus-visible { outline:3px solid #966316; }
+.analytics-lineage { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0; }
+.analytics-lineage section { min-width:0; padding:16px; background:#f0f4f8; border:1px solid var(--line); border-radius:6px; }
+.analytics-lineage button,.analytics-lineage code { display:block; overflow-wrap:anywhere; margin:8px 0; }
+.analytics-lineage button { min-height:44px; padding:8px 12px; background:#203e57; color:#fff; border:1px solid #203e57; border-radius:4px; text-align:left; }
+.analytics-bars { display:grid; gap:16px; padding:20px; background:#edf3f6; border-radius:6px; }
+.analytics-bars span { display:block; font-size:12px; font-weight:600; margin-bottom:7px; }
+.analytics-bars div > div { height:14px; background:#34777e; border-radius:3px; }
+.analytics-bars > div:last-child > div { background:#87601a; }
+#analytics-test-filter { width:100%; box-sizing:border-box; margin-top:8px; padding:12px; border:1px solid #8198aa; border-radius:4px; color:var(--ink); background:white; }
+@media(max-width:650px) { .analytics-lineage { grid-template-columns:1fr; } }
 .research-rounds { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
 .research-rounds > div { padding:16px; background:#f0f4f8; border:1px solid var(--line); border-radius:7px; }
 .research-rounds small { color:#526779; }
