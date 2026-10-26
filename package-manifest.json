@@ -15,8 +15,8 @@
       "bytes": 2516
     },
     ".github/workflows/verify.yml": {
-      "sha256": "e3c751ac2ffe5e715996155f17ada7cc1a5a9dffc55bd0b9c7a1c388182c2bbd",
-      "bytes": 4536
+      "sha256": "cd6d352b00501ddddc0467492e88288702f1c2319cf5f3c01c28d13745f43732",
+      "bytes": 5098
     },
     ".gitignore": {
       "sha256": "89fb63f91f40b687e8f85a7bd1f94c627702506f9a79bd2c54137e1c57633604",
@@ -51,8 +51,8 @@
       "bytes": 5291
     },
     "docs/evidence/analytics-engineering/README.md": {
-      "sha256": "e7264322264aad9efef9caf27ef6c0ad6714cd23ec63dffc0b673c69d2013976",
-      "bytes": 3750
+      "sha256": "55fba0fc047d1b1b175ec4a047842d5aa92a1ccc337eef80fd3f3f09f308140d",
+      "bytes": 4253
     },
     "docs/evidence/analytics-engineering/browser.json": {
       "sha256": "6bdd23396d2aa64038f6d8bc1cd28608839bc55266df84607e3f1a6d108d75f7",

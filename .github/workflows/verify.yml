@@ -95,4 +95,11 @@ jobs:
               tail = tail.replace("disposable-ci-only", "[REDACTED]")
               print("Original engine log, last 100 lines (max 8000 characters):")
               print(tail[-8000:])
+              # The original runner stores dbt errors in a nested file rather
+              # than stdout. Keep the finite synthetic failure diagnosable.
+              for log in sorted(path.parent.rglob("dbt-build.log")):
+                  text = "\n".join(log.read_text(errors="replace").splitlines()[-80:])
+                  text = re.sub(r"(?i)(password|token|secret)=([^\s]+)", r"\1=[REDACTED]", text)
+                  print("Nested dbt log:", log.relative_to(path.parent))
+                  print(text.replace("disposable-ci-only", "[REDACTED]")[-8000:])
           PY
