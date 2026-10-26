@@ -51,12 +51,16 @@
       "bytes": 5291
     },
     "docs/evidence/analytics-engineering/README.md": {
-      "sha256": "1404a8305c7b8ea3356128db77aa9f73511ec475795bec1c3ba4e27000c631ca",
-      "bytes": 3203
+      "sha256": "e7264322264aad9efef9caf27ef6c0ad6714cd23ec63dffc0b673c69d2013976",
+      "bytes": 3750
     },
     "docs/evidence/analytics-engineering/browser.json": {
       "sha256": "6bdd23396d2aa64038f6d8bc1cd28608839bc55266df84607e3f1a6d108d75f7",
       "bytes": 11201
+    },
+    "docs/evidence/analytics-engineering/capture-workflows.json": {
+      "sha256": "4c0bf8f84ed5dd0021e9d809f67342622e8433f2dee9ad9c179526b707b742a5",
+      "bytes": 1783
     },
     "docs/evidence/analytics-engineering/fixture-execution.json": {
       "sha256": "d7c7a7eef9778b2040c4c4e636fa8a88dbf55aeb77e346e51bf841b1adf164e8",
@@ -65,6 +69,10 @@
     "docs/evidence/analytics-engineering/local-tests-byte-safe.json": {
       "sha256": "e95a492d487fa1cc5fbaaf97ca577c9eac3a4a4996b7fdbf03063ef9fcd47f03",
       "bytes": 29109
+    },
+    "docs/evidence/analytics-engineering/local-tests-complete.json": {
+      "sha256": "f1e6e6743c1027e54f30e788f2ff020fea7aad4318b702b56c081c2c24111f19",
+      "bytes": 29091
     },
     "docs/evidence/analytics-engineering/local-tests.json": {
       "sha256": "c1991cc021977b6511784a66b4f60cafbf3a66342223eb2331afc8cff44f3bdf",
@@ -435,8 +443,8 @@
       "bytes": 6869
     },
     "scripts/capture_presentation.py": {
-      "sha256": "1b21fcc362c1737dbe07614763b88522aa9b4c4eb86667753502ef144cf9232c",
-      "bytes": 14191
+      "sha256": "b030f01ac815b3be01281cd5853426af853020a291960d4594fc713e9acaed26",
+      "bytes": 14367
     },
     "scripts/capture_release.py": {
       "sha256": "f8daa8b1972fec57346bc6b5d653c711ff4d916cd74fb6e6c0439734608b663a",
@@ -571,8 +579,8 @@
       "bytes": 302
     },
     "tests/test_analytics.py": {
-      "sha256": "aa707cf9eb0ba8ac6b1c9ea3560f99f6dec2184d82f54bfbd55bdcd7ddd4846b",
-      "bytes": 5946
+      "sha256": "8218df89e65481ce74c28a4368ca7fa641eb36a2eef10bd80b4bace4ac0a4f5c",
+      "bytes": 6376
     },
     "tests/test_analytics_browser.py": {
       "sha256": "780b44f521e1a136a2c880c12c06674cad887dc666ca30fcffcb3467d413050a",

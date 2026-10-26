@@ -64,6 +64,14 @@ def test_git_index_preserves_imported_original_bytes():
         assert hashlib.sha256(blob).hexdigest() == a["sha256"], path
 
 
+def test_shared_capture_registry_covers_every_investigation():
+    import runpy
+    registry = runpy.run_path(str(ROOT/"scripts/capture_presentation.py"))["CASES"]
+    cases = json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]
+    assert set(registry) == {c["investigation"] for c in cases}
+    assert all(any(c["id"] == scenario and c["investigation"] == key for c in cases) for key, scenario in registry.items())
+
+
 def test_seven_prior_investigations_and_evidence_are_preserved():
     f = json.loads((ROOT / "docs/evidence/analytics-engineering/preserved-files.json").read_bytes())
     for name, checksum in f["sha256"].items():
