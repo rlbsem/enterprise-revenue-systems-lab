@@ -369,7 +369,7 @@ function revenuePanel() {
   p.append(
     finding(
       "Collection boundary",
-      "Cash includes collections on opening invoices. The invoice–cash flow difference is not an accounts-receivable balance.",
+      "Cash includes collections on opening invoices. The difference between invoicing and cash collection is not an accounts-receivable balance.",
     ),
   );
   const accounts = json("models.json").full.bridge;
