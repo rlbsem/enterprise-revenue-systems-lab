@@ -3,8 +3,8 @@
   "scope": "all delivered source files; manifest excludes itself to avoid recursion",
   "files": {
     ".gitattributes": {
-      "sha256": "d5a7983c14dc4f7eb4e0c124d3fc3922f1136a754f574f85b62a687b8b005616",
-      "bytes": 207
+      "sha256": "6fa5652368cb338cf9159f1f3e9048c959649cae51915be56e76dd80801552e9",
+      "bytes": 251
     },
     ".github/workflows/hosted.yml": {
       "sha256": "ddb41b3c18c17b20b7a31f431775414e94291001777c2f2ea4eb72f3a542927b",
@@ -51,8 +51,8 @@
       "bytes": 5291
     },
     "docs/evidence/analytics-engineering/README.md": {
-      "sha256": "3c204cfcd9779454abb9b0e5ca0b090244929d53084aafb75bb45f90b53cd619",
-      "bytes": 2676
+      "sha256": "1404a8305c7b8ea3356128db77aa9f73511ec475795bec1c3ba4e27000c631ca",
+      "bytes": 3203
     },
     "docs/evidence/analytics-engineering/browser.json": {
       "sha256": "6bdd23396d2aa64038f6d8bc1cd28608839bc55266df84607e3f1a6d108d75f7",
@@ -61,6 +61,10 @@
     "docs/evidence/analytics-engineering/fixture-execution.json": {
       "sha256": "d7c7a7eef9778b2040c4c4e636fa8a88dbf55aeb77e346e51bf841b1adf164e8",
       "bytes": 30941
+    },
+    "docs/evidence/analytics-engineering/local-tests-byte-safe.json": {
+      "sha256": "e95a492d487fa1cc5fbaaf97ca577c9eac3a4a4996b7fdbf03063ef9fcd47f03",
+      "bytes": 29109
     },
     "docs/evidence/analytics-engineering/local-tests.json": {
       "sha256": "c1991cc021977b6511784a66b4f60cafbf3a66342223eb2331afc8cff44f3bdf",
@@ -567,8 +571,8 @@
       "bytes": 302
     },
     "tests/test_analytics.py": {
-      "sha256": "04c505b3916100eb31e7aa4b21c95a69b3803973038d3ab9d9bff99d48c1fe0e",
-      "bytes": 5588
+      "sha256": "aa707cf9eb0ba8ac6b1c9ea3560f99f6dec2184d82f54bfbd55bdcd7ddd4846b",
+      "bytes": 5946
     },
     "tests/test_analytics_browser.py": {
       "sha256": "780b44f521e1a136a2c880c12c06674cad887dc666ca30fcffcb3467d413050a",

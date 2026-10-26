@@ -55,6 +55,15 @@ def test_resealing_does_not_allow_changes_to_original_sql(tmp_path):
     with pytest.raises(ValueError): verify(p)
 
 
+def test_git_index_preserves_imported_original_bytes():
+    import subprocess
+    up = records()["upstream.json"]
+    for a in up["artifacts"]:
+        path = "web/evidence/analytics-engineering/" + a["file"]
+        blob = subprocess.check_output(["git", "show", ":" + path], cwd=ROOT)
+        assert hashlib.sha256(blob).hexdigest() == a["sha256"], path
+
+
 def test_seven_prior_investigations_and_evidence_are_preserved():
     f = json.loads((ROOT / "docs/evidence/analytics-engineering/preserved-files.json").read_bytes())
     for name, checksum in f["sha256"].items():
