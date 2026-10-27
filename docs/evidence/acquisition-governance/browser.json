@@ -1,0 +1,583 @@
+{
+  "captured_at": "2026-10-27T04:02:57.706430+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
+  "case": "acquisition-governance",
+  "source_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
+  "source_sha256": {
+    "web/app.js": "352d575852f914737f06667de8edf8d19c6d891a535b6e223a142bdbce0641c9",
+    "web/acquisition.js": "b954277926d98be8767333f6b13cbacc6c05c1cda0e1f5f940292456f4be759f",
+    "web/style.css": "4ebdebc019216d7413fd2e8e89346086a605bf78aae0f719d707b8d6a25ce090",
+    "web/index.html": "020c7285d498f85252e33b6daa1362fe129a61c107846354eeace78b15ab7671",
+    "web/catalog.json": "3c5fdba9addaba4e83945c29fad859b4b9849604da98385e308d4189ea7a1aa5",
+    "sources.lock.json": "5460f0a36322cf138cdaa015495fea9342cd562c8a02704926b7cbc91e23ed06",
+    "scripts/capture_acquisition.py": "9461a0443e3c9738c30792fb382845fad65d182accfa0c28de0b7c38418e19f7"
+  },
+  "image_sha256": {
+    "acquisition-governance-desktop.png": "e1f1cec3bf91b672f34c041bd8137cc4d56019b671e5b03781b56307d67ad2be",
+    "acquisition-governance-finance.png": "5f07465ed5db8ecd51d54f932ae3a1131836e7236cde6ab8f8067949e127ecbb",
+    "acquisition-governance-mobile.png": "15a823dd775391a0dfd7d4c5f4cdf7649f7100fd3214bc4fa05f39d88c186e35"
+  },
+  "images": {
+    "acquisition-governance-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; synthetic company identity and scoped source records"
+    },
+    "acquisition-governance-finance.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; separately executed annual financial publication and preserved findings"
+    },
+    "acquisition-governance-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "capture": "actual mobile viewport; annual financial publication"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1440,
+      "state": "identity",
+      "overflow": false,
+      "contrast": {
+        "checked": 156,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "admission",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 119,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "finance",
+      "overflow": false,
+      "contrast": {
+        "checked": 143,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "history",
+      "overflow": false,
+      "contrast": {
+        "checked": 136,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 153,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 93,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 103,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "identity",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "admission",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 119,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "finance",
+      "overflow": false,
+      "contrast": {
+        "checked": 143,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "history",
+      "overflow": false,
+      "contrast": {
+        "checked": 136,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 153,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 93,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 103,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "identity",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "admission",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 119,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "finance",
+      "overflow": false,
+      "contrast": {
+        "checked": 143,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "history",
+      "overflow": false,
+      "contrast": {
+        "checked": 136,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 153,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 93,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 103,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "identity",
+      "overflow": false,
+      "contrast": {
+        "checked": 128,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "admission",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 89,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "finance",
+      "overflow": false,
+      "contrast": {
+        "checked": 113,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "history",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 73,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "identity",
+      "overflow": false,
+      "contrast": {
+        "checked": 128,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "admission",
+      "overflow": false,
+      "contrast": {
+        "checked": 120,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 89,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "finance",
+      "overflow": false,
+      "contrast": {
+        "checked": 113,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "history",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 73,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "state": "identity",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 1440,
+      "state": "admission",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 1440,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 1440,
+      "state": "finance",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 1440,
+      "state": "history",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "width": 1440,
+      "state": "proof",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "identity",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "admission",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "finance",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "history",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "width": 390,
+      "state": "proof",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    }
+  ],
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "http_writes": [],
+  "new_model_execution": false,
+  "new_warehouse_execution": false
+}

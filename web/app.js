@@ -1,3 +1,4 @@
+import { acquisitionPanel, acquisitionMetrics } from "./acquisition.js";
 import { measurementPanel, measurementMetrics } from "./measurement.js";
 import { analyticsPanel, analyticsMetrics } from "./analytics.js";
 import { integrityPanel, integrityMetrics } from "./integrity.js";
@@ -5,6 +6,7 @@ import { releasePanel, releaseMetrics } from "./release.js";
 import { gtmPanel, gtmMetrics } from "./gtm.js";
 const $ = (s) => document.querySelector(s);
 const titles = {
+  acquisition: ["10 · ACQUISITION GOVERNANCE", "Imported is not\nreport-ready.", "Trace scoped identities, reviewed admission, durable handoffs and financial cutoffs across three synthetic acquired companies.", "Consolidate with evidence.", "Separate entities. Governed actions. Versioned financial truth."],
   measurement: ["09 · FIRST-PARTY MEASUREMENT", "Trust the source.\nQuestion the conversion.", "Trace contract and payment claims to authoritative synthetic records, inspect browser controls and separate native Google sample proof.", "Reconcile before optimizing.", "Different grains. Separate executions. Findings preserved."],
   analytics: ["08 · ANALYTICS ENGINEERING", "Fast is not enough.\nProve the model.", "Trace financial grain and SQL lineage. Compare complete-model correctness with measured rebuild costs, then inspect the separate native warehouse acceptance.", "Measure the whole build.", "Correctness first. Performance measured. Rejected optimizations preserved."],
   integrity: ["07 · ORDER-TO-CASH ENGINEERING", "From sales commitment\nto collected cash", "Follow authoritative records across commercial, billing and finance systems. Inspect a recorded delivery recovery while the original posting discrepancy stays open.", "Recovery does not erase a variance.", "Different sources. Explicit authority. Independently verified effects."],
@@ -46,6 +48,7 @@ const titles = {
   ],
 };
 const names = {
+  acquisition: "ACQUISITION READINESS & FINANCIAL GOVERNANCE",
   measurement: "CONVERSION & REVENUE INTEGRITY",
   analytics: "MODEL CORRECTNESS & PERFORMANCE",
   integrity: "REVENUE INTEGRITY PLATFORM",
@@ -153,7 +156,7 @@ function sourcesPanel() {
     }
     panel.append(q);
   }
-  const label = el("label", ["gtm", "release", "integrity", "analytics", "measurement"].includes(entry.investigation)
+  const label = el("label", ["gtm", "release", "integrity", "analytics", "measurement", "acquisition"].includes(entry.investigation)
     ? "Inspect a packaged artifact · original records and derived metadata"
     : "Inspect an original artifact", "panel-title");
   label.htmlFor = "artifact";
@@ -161,9 +164,9 @@ function sourcesPanel() {
   const choice = el("select", undefined, "artifact-select");
   choice.id = "artifact";
   for (const name of Object.keys(artifacts)) {
-    const original = ["gtm", "release", "integrity", "analytics", "measurement"].includes(entry.investigation) && json("upstream.json").artifacts.some(a => a.file === name);
-    const o = el("option", name + (["gtm", "release", "integrity", "analytics", "measurement"].includes(entry.investigation)
-      ? ["analytics", "measurement"].includes(entry.investigation) && name === "fixture-execution.json" ? " · separate local fixture execution" : original ? " · upstream original" : " · derived Lab metadata" : ""));
+    const original = ["gtm", "release", "integrity", "analytics", "measurement", "acquisition"].includes(entry.investigation) && json("upstream.json").artifacts.some(a => a.file === name);
+    const o = el("option", name + (["gtm", "release", "integrity", "analytics", "measurement", "acquisition"].includes(entry.investigation)
+      ? ["analytics", "measurement", "acquisition"].includes(entry.investigation) && name === "fixture-execution.json" ? " · separate local fixture execution" : original ? " · upstream original" : " · derived Lab metadata" : ""));
     o.value = name;
     choice.append(o);
   }
@@ -525,6 +528,8 @@ function renderPanel() {
         ? timelinePanel()
         : view === "compare"
           ? comparePanel()
+          : entry.investigation === "acquisition"
+            ? acquisitionPanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
           : entry.investigation === "measurement"
             ? measurementPanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
           : entry.investigation === "analytics"
@@ -571,7 +576,9 @@ function render() {
     localConfig?.execution_enabled && localConfig.allowed.includes(entry.id)
   );
   $("#fresh-status").textContent = localConfig?.fresh_inference || "";
-  $(".local-execution summary").textContent = entry.investigation === "measurement"
+  $(".local-execution summary").textContent = entry.investigation === "acquisition"
+    ? "Verify the recorded acquisition evidence offline"
+    : entry.investigation === "measurement"
     ? "Verify the recorded measurement evidence offline"
     : entry.investigation === "analytics"
     ? "Verify the recorded analytics evidence offline"
@@ -584,7 +591,9 @@ function render() {
     : entry.investigation === "connected"
     ? "Verify this native record offline"
     : "Reproduce this investigation · fresh local execution";
-  $("#reproduction-copy").textContent = entry.investigation === "measurement"
+  $("#reproduction-copy").textContent = entry.investigation === "acquisition"
+    ? "Download original source records, SQL, cutoffs and independent receipts. Offline checks recalculate both separate financial scenarios without database, vendor or privileged actions."
+    : entry.investigation === "measurement"
     ? "Download exact source records, contracts, SQL and seeds. Offline verification recomputes financial findings and checks recorded acceptance; it does not collect events or execute Google queries."
     : entry.investigation === "analytics"
     ? "Download pinned SQL, small fixture sources and original run records. Offline checks recompute summaries and verify recorded comparisons; they do not repeat the full 37-million-row benchmark or execute Snowflake."
@@ -595,7 +604,9 @@ function render() {
     : entry.investigation === "gtm"
     ? "Download the original artifact bytes and run offline checks. These commands do not reproduce native Salesforce or model execution. To reproduce the local synthetic pipeline engine, use the pinned GTM repository instructions."
     : "The public explorer reads recorded files. These commands invoke the original engine in a new isolated workspace. Replay of saved model responses is explicitly labeled; fresh inference needs a configured local endpoint.";
-  $("#local-note").textContent = entry.investigation === "measurement"
+  $("#local-note").textContent = entry.investigation === "acquisition"
+    ? "Selected-period, annual and adversarial acceptance retain their original provenance. No native vendor, production, statutory-accounting or human security-certification claim."
+    : entry.investigation === "measurement"
     ? "Evermere conversion fixtures, local GA4 warehouse acceptance and historical native Google sample jobs are separate executions. No live tracking, Google credentials or vendor calls."
     : entry.investigation === "analytics"
     ? "Current SQL/fixture, local paired benchmarks and historical native Snowflake acceptance retain distinct provenance. No credentials, warehouse execution or new performance trial is available here."
@@ -609,7 +620,10 @@ function render() {
     ? "The original native run is archived in Customer Signal & Activation. This case supports offline evidence verification only; no Salesforce or Snowflake calls are made."
     : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
   const metrics = $("#metrics");
-  if (entry.investigation === "measurement") {
+  metrics.classList.toggle("acquisition-metrics", entry.investigation === "acquisition");
+  if (entry.investigation === "acquisition") {
+    metrics.replaceChildren(...acquisitionMetrics(json, metric));
+  } else if (entry.investigation === "measurement") {
     metrics.replaceChildren(...measurementMetrics(json, metric));
   } else if (entry.investigation === "analytics") {
     metrics.replaceChildren(...analyticsMetrics(json, metric));
@@ -684,7 +698,7 @@ function render() {
   status(
     "Recorded evidence loaded · " +
       m.artifacts.length +
-      (["gtm", "release", "integrity", "analytics", "measurement"].includes(entry.investigation)
+      (["gtm", "release", "integrity", "analytics", "measurement", "acquisition"].includes(entry.investigation)
         ? " packaged artifacts · originals and derived metadata labeled · integrity not yet checked in this browser."
         : " original artifacts · integrity not yet checked in this browser."),
   );

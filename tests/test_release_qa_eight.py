@@ -19,8 +19,8 @@ def test_current_main_contracts_survive_typography_reconciliation():
     baseline = json.loads((QA/"prior-ui-main.json").read_bytes())["files"]
     before = {r["id"]: r for r in json.loads(baseline["web/catalog.json"])["scenarios"]}
     after = {r["id"]: r for r in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert set(after) - set(before) == {"measurement-integrity"} and len(after) == 18
-    assert len({r["investigation"] for r in after.values()}) == 9
+    assert set(after) - set(before) == {"measurement-integrity", "acquisition-governance"} and len(after) == 19
+    assert len({r["investigation"] for r in after.values()}) == 10
     for key, record in before.items():
         expected = dict(record)
         if key == "revenue-integrity":
@@ -30,7 +30,7 @@ def test_current_main_contracts_survive_typography_reconciliation():
     old = json.loads(baseline["sources.lock.json"])
     assert all(current[k] == v for k, v in old.items() if k != "sources")
     assert all(current["sources"][k] == v for k,v in old["sources"].items())
-    assert set(current["sources"]) - set(old["sources"]) == {"measurement"}
+    assert set(current["sources"]) - set(old["sources"]) == {"measurement", "acquisition"}
     result = verify(ROOT/"web/evidence/analytics-engineering")["checks"]
     assert result["models"] == 15 and result["paired_repetitions"] == 6 and result["native_query_ids"] == 461
 
@@ -62,10 +62,10 @@ def test_fresh_eight_case_captures_bind_current_source_and_images(name):
 def test_readme_images_use_fresh_release_captures_without_losing_routes():
     text = (ROOT/"README.md").read_text(encoding="utf-8")
     images = re.findall(r'<img src="([^"]+)"', text)
-    assert images and all(p.startswith(("docs/images/release-qa-eight/", "docs/images/measurement-integrity/")) for p in images)
+    assert images and all(p.startswith(("docs/images/release-qa-eight/", "docs/images/measurement-integrity/", "docs/images/acquisition-governance/")) for p in images)
     assert all((ROOT/p).is_file() for p in images)
-    assert "## Nine investigations" in text
+    assert "## Ten investigations" in text
     html = (ROOT/"web/index.html").read_text(encoding="utf-8")
-    assert "Nine investigations. Independent evidence." in html
+    assert "Ten investigations. Independent evidence." in html
     assert not re.search(r"(?:Six|Seven|six|seven) investigations", html)
     assert not re.search(r"PR #11[^\n]*(?:unmerged|requires.*merge)", text)

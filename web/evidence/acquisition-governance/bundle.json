@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0",
+  "scenario": "acquisition-governance",
+  "source": {
+    "repository": "rlbsem/enterprise-acquisition-onboarding",
+    "commit": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-27T02:39:47.521773+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "demo.json",
+      "sha256": "447404eab463398940f7d30b47ef2cbf6b3e83d353b433a90c0ab8851a7849ee",
+      "bytes": 19752
+    },
+    {
+      "path": "governance.json",
+      "sha256": "a8293b18d7057ca7d0a14244b47e95219b567a19a66a020989e8d89b9377c3e1",
+      "bytes": 74995
+    },
+    {
+      "path": "selected-period.json",
+      "sha256": "1722463c7b54ebac5f3b872dd48f2f215edee2a412bf43ee37622104a997b865",
+      "bytes": 321400
+    },
+    {
+      "path": "annual.json",
+      "sha256": "578d62bd6c3ca966ec14b3961cc7e2abf154adff37eb5c9de01daa086b6752f2",
+      "bytes": 1828621
+    },
+    {
+      "path": "annual-execution.json",
+      "sha256": "c5e93a5902eda3bb4a104f1fc36bf8415f99e7f99a8f646df472927527460975",
+      "bytes": 14951
+    },
+    {
+      "path": "browser.json",
+      "sha256": "b9b09a9eb83f37957af9f0c0533d55b3a7e548be7043de127dc9a79da9e474f6",
+      "bytes": 39631
+    },
+    {
+      "path": "software.json",
+      "sha256": "77127720a8dae10e7354e67ef755d8dd06b425ff0f469e83113ca03e8aee6bab",
+      "bytes": 16786
+    },
+    {
+      "path": "independent-financial.json",
+      "sha256": "7275b408e146e2fc4c1d3ef24c937725da51340fb444bcb532cb2cea2904cd6e",
+      "bytes": 6352
+    },
+    {
+      "path": "historical-authority.json",
+      "sha256": "703e92c20bac9b101054859cb6a0df21695c00c35a029d4e1feadfb2ada01b59",
+      "bytes": 267
+    },
+    {
+      "path": "identity-negative.json",
+      "sha256": "d8570a2747177f4307e0ac675662b3bf9b135ace2873316177b09c136b401ee5",
+      "bytes": 434
+    },
+    {
+      "path": "publication-negative.json",
+      "sha256": "fd9784eacc94ee17bd1586c58be14a5bef74198cc99d924a2bd9f62315a43938",
+      "bytes": 4887
+    },
+    {
+      "path": "exhaustion.json",
+      "sha256": "4bb43c038ba5a95c7b9854f6bd88ff95eccd59d6ab58c69be9f30cdb6f2fa819",
+      "bytes": 169
+    },
+    {
+      "path": "process-death.json",
+      "sha256": "f1c0193bc7e4ebf64248c1a360819557992038f10d4274b42f45d694e2c84dc6",
+      "bytes": 163
+    },
+    {
+      "path": "financial-oracle.py",
+      "sha256": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
+      "bytes": 9494
+    },
+    {
+      "path": "mapping-fixtures.py",
+      "sha256": "0e46fd4f5c92dd8a4b7ba90049a59885f05bed04f040f72d64d594f6d1a7b9f6",
+      "bytes": 9129
+    },
+    {
+      "path": "admission-contract.md",
+      "sha256": "14f28293d7d9c425fef945f5c386de3a0d2b30238858f2b7e36982ec1c950665",
+      "bytes": 5092
+    },
+    {
+      "path": "governed-execution.md",
+      "sha256": "e625d8d3f0b8fce8ec75eb8a64ae22725360a2e1b5ccc5f9cb700a756c56ced1",
+      "bytes": 5794
+    },
+    {
+      "path": "financial-reporting.md",
+      "sha256": "8117f7d3c0463e00836043efdfb43d71d14c90735fbc1b33f7c353f4e5a79906",
+      "bytes": 8772
+    },
+    {
+      "path": "pass5-findings.md",
+      "sha256": "21be26e66915146b70a080e41143f6bd8d51d9651821a1d7cca69fd6d0b9b596",
+      "bytes": 3920
+    },
+    {
+      "path": "authorization-admission.json",
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    {
+      "path": "authorization-business.json",
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    {
+      "path": "authorization-mapping.json",
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    {
+      "path": "authorization-source_revision.json",
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    {
+      "path": "warehouse/dbt_project.yml",
+      "sha256": "7e7ec60047cd4b2daf12152096d0bbe1a06cb860dc7d28c41e305e16f9d85931",
+      "bytes": 188
+    },
+    {
+      "path": "warehouse/models/dim_reporting_entities.sql",
+      "sha256": "0d5f0e661a06efb746d479b9fce852db5a20dc812c3e70a7e6c54f0306dd7c23",
+      "bytes": 381
+    },
+    {
+      "path": "warehouse/models/fct_allocations.sql",
+      "sha256": "99fc791473505e384d0cb9cca5a0274ec4c232afa17fd2e3434d7a719be39a10",
+      "bytes": 503
+    },
+    {
+      "path": "warehouse/models/fct_invoices.sql",
+      "sha256": "cae735450bb22cfa814cec0ead70a34db6a7d1bfc7181e42e1e2abe6b7302936",
+      "bytes": 1274
+    },
+    {
+      "path": "warehouse/models/intercompany_eliminations.sql",
+      "sha256": "efedc1a7ec585d9e7d68e16001d652a46592c5bd16085aaed9849c6f616b4892",
+      "bytes": 1753
+    },
+    {
+      "path": "warehouse/models/legal_entity_totals.sql",
+      "sha256": "5a441db535bcc9f5dc56d2441e43ca40e08eb23e8947ee56885e6b8259934f94",
+      "bytes": 1804
+    },
+    {
+      "path": "warehouse/models/portfolio_totals.sql",
+      "sha256": "7a89569963ff5d3f280675dde297769bda4d22b2db8f2bc545f077e10c91785f",
+      "bytes": 585
+    },
+    {
+      "path": "warehouse/models/reconciliation_variances.sql",
+      "sha256": "51428689cb1b466b2b745593d293ba0533c80654c112c0b751f65b25d9d58398",
+      "bytes": 1067
+    },
+    {
+      "path": "warehouse/models/restatement_bridge.sql",
+      "sha256": "c0039be53be5c58d1901368580578b13143c16db6aeeb90a10cf2c2da79b4b69",
+      "bytes": 939
+    },
+    {
+      "path": "warehouse/models/schema.yml",
+      "sha256": "43191fbc07ab618b868af460c946ed90083562de488a336259d5f83723790e49",
+      "bytes": 893
+    },
+    {
+      "path": "warehouse/models/stg_financial.sql",
+      "sha256": "ef2459d475492e9a8957378a3adb6e78509a19e984c4946cb0b3244b9ef9da6b",
+      "bytes": 2605
+    },
+    {
+      "path": "warehouse/tests/financial_amount_controls.sql",
+      "sha256": "4e295b14bf361de12d6eb8d2e61e47ba9073cca6699632c3372de77e08650a10",
+      "bytes": 545
+    },
+    {
+      "path": "warehouse/tests/financial_grains.sql",
+      "sha256": "aece6ca5824c2154b0e50b79e8f82524ffb00eaceae3b2ba417ae085eafc7c87",
+      "bytes": 472
+    },
+    {
+      "path": "warehouse/tests/financial_references.sql",
+      "sha256": "ca9e535d06ec14262a079424a075306d1b7467fc3d8c08e0c531fdce78fd7e1e",
+      "bytes": 651
+    },
+    {
+      "path": "warehouse/tests/financial_scope.sql",
+      "sha256": "75c311e5e19db647afe3458c40e5f4c32e0080428576d0bc1b4d206ab9891422",
+      "bytes": 386
+    },
+    {
+      "path": "warehouse/tests/rollup_and_bridge.sql",
+      "sha256": "a8809de6b1c3759d4e93f1f4fc5644cb096b75735643672c2942d416e0dd698e",
+      "bytes": 311
+    },
+    {
+      "path": "source-regression.json",
+      "sha256": "5b247984ef0009af8be6c1e1d144c0bf9423db0891876c84f7d1daaf7218aefe",
+      "bytes": 11876
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "a33f877e834d1ee165aaccc18274506f151fbbf06ee9a935bde003d22787f6ae",
+      "bytes": 15033
+    },
+    {
+      "path": "projection.json",
+      "sha256": "f793cf2802479b38ab20a4aa3b77a4c4812df9c3b99316abf35c0ccbfe6ddb4c",
+      "bytes": 11010
+    },
+    {
+      "path": "observation.json",
+      "sha256": "8e2c6567f2fcc9694fb2563acdd1ed44b0663982d2ef4026c2885a26984c9aae",
+      "bytes": 133
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "585dd270ba671f88896d33a9a9bd1a6fc790592797e26c3659e70f8e33c68853",
+      "bytes": 2782
+    }
+  ],
+  "limitations": [
+    "Three fictional operating companies and synthetic USD only; no 50-company deployment, recognized revenue, statutory accounting or commercial outcomes.",
+    "Selected-period and annual scenarios are separate executed records. Admission today is not historical publication inclusion. Source import revision is not either execution revision.",
+    "Recorded local PostgreSQL, HTTP, dbt and browser acceptance; no native vendor connection or production deployment. Frozen receipts do not authorize a new action or prove universal exactly-once execution.",
+    "Pass 5 is a recorded independent AI-led adversarial assessment, not independent human security certification. This static explorer performs no privileged actions."
+  ],
+  "input_hashes": {
+    "demo.json": "447404eab463398940f7d30b47ef2cbf6b3e83d353b433a90c0ab8851a7849ee",
+    "governance.json": "a8293b18d7057ca7d0a14244b47e95219b567a19a66a020989e8d89b9377c3e1",
+    "selected-period.json": "1722463c7b54ebac5f3b872dd48f2f215edee2a412bf43ee37622104a997b865",
+    "annual.json": "578d62bd6c3ca966ec14b3961cc7e2abf154adff37eb5c9de01daa086b6752f2",
+    "annual-execution.json": "c5e93a5902eda3bb4a104f1fc36bf8415f99e7f99a8f646df472927527460975",
+    "browser.json": "b9b09a9eb83f37957af9f0c0533d55b3a7e548be7043de127dc9a79da9e474f6",
+    "software.json": "77127720a8dae10e7354e67ef755d8dd06b425ff0f469e83113ca03e8aee6bab",
+    "independent-financial.json": "7275b408e146e2fc4c1d3ef24c937725da51340fb444bcb532cb2cea2904cd6e",
+    "historical-authority.json": "703e92c20bac9b101054859cb6a0df21695c00c35a029d4e1feadfb2ada01b59",
+    "identity-negative.json": "d8570a2747177f4307e0ac675662b3bf9b135ace2873316177b09c136b401ee5",
+    "publication-negative.json": "fd9784eacc94ee17bd1586c58be14a5bef74198cc99d924a2bd9f62315a43938",
+    "exhaustion.json": "4bb43c038ba5a95c7b9854f6bd88ff95eccd59d6ab58c69be9f30cdb6f2fa819",
+    "process-death.json": "f1c0193bc7e4ebf64248c1a360819557992038f10d4274b42f45d694e2c84dc6",
+    "financial-oracle.py": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
+    "mapping-fixtures.py": "0e46fd4f5c92dd8a4b7ba90049a59885f05bed04f040f72d64d594f6d1a7b9f6",
+    "admission-contract.md": "14f28293d7d9c425fef945f5c386de3a0d2b30238858f2b7e36982ec1c950665",
+    "governed-execution.md": "e625d8d3f0b8fce8ec75eb8a64ae22725360a2e1b5ccc5f9cb700a756c56ced1",
+    "financial-reporting.md": "8117f7d3c0463e00836043efdfb43d71d14c90735fbc1b33f7c353f4e5a79906",
+    "pass5-findings.md": "21be26e66915146b70a080e41143f6bd8d51d9651821a1d7cca69fd6d0b9b596",
+    "authorization-admission.json": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+    "authorization-business.json": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+    "authorization-mapping.json": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+    "authorization-source_revision.json": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+    "warehouse/dbt_project.yml": "7e7ec60047cd4b2daf12152096d0bbe1a06cb860dc7d28c41e305e16f9d85931",
+    "warehouse/models/dim_reporting_entities.sql": "0d5f0e661a06efb746d479b9fce852db5a20dc812c3e70a7e6c54f0306dd7c23",
+    "warehouse/models/fct_allocations.sql": "99fc791473505e384d0cb9cca5a0274ec4c232afa17fd2e3434d7a719be39a10",
+    "warehouse/models/fct_invoices.sql": "cae735450bb22cfa814cec0ead70a34db6a7d1bfc7181e42e1e2abe6b7302936",
+    "warehouse/models/intercompany_eliminations.sql": "efedc1a7ec585d9e7d68e16001d652a46592c5bd16085aaed9849c6f616b4892",
+    "warehouse/models/legal_entity_totals.sql": "5a441db535bcc9f5dc56d2441e43ca40e08eb23e8947ee56885e6b8259934f94",
+    "warehouse/models/portfolio_totals.sql": "7a89569963ff5d3f280675dde297769bda4d22b2db8f2bc545f077e10c91785f",
+    "warehouse/models/reconciliation_variances.sql": "51428689cb1b466b2b745593d293ba0533c80654c112c0b751f65b25d9d58398",
+    "warehouse/models/restatement_bridge.sql": "c0039be53be5c58d1901368580578b13143c16db6aeeb90a10cf2c2da79b4b69",
+    "warehouse/models/schema.yml": "43191fbc07ab618b868af460c946ed90083562de488a336259d5f83723790e49",
+    "warehouse/models/stg_financial.sql": "ef2459d475492e9a8957378a3adb6e78509a19e984c4946cb0b3244b9ef9da6b",
+    "warehouse/tests/financial_amount_controls.sql": "4e295b14bf361de12d6eb8d2e61e47ba9073cca6699632c3372de77e08650a10",
+    "warehouse/tests/financial_grains.sql": "aece6ca5824c2154b0e50b79e8f82524ffb00eaceae3b2ba417ae085eafc7c87",
+    "warehouse/tests/financial_references.sql": "ca9e535d06ec14262a079424a075306d1b7467fc3d8c08e0c531fdce78fd7e1e",
+    "warehouse/tests/financial_scope.sql": "75c311e5e19db647afe3458c40e5f4c32e0080428576d0bc1b4d206ab9891422",
+    "warehouse/tests/rollup_and_bridge.sql": "a8809de6b1c3759d4e93f1f4fc5644cb096b75735643672c2942d416e0dd698e"
+  },
+  "reproduce": [
+    "python scripts/import_acquisition.py <pinned-measurement-git-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/acquisition-governance"
+  ],
+  "configuration_hash": "8c75692adfe06b6e7a117de2b1410874a0d4ccc31d3951608edda18b317b6b59"
+}

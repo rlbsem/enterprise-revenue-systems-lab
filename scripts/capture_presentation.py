@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CASES = {
     "analytics": "analytics-engineering",
     "measurement": "measurement-integrity",
+    "acquisition": "acquisition-governance",
     "integrity": "revenue-integrity",
     "release": "release-assurance",
     "seller": "seller-application",
@@ -204,6 +205,8 @@ def main():
                         if investigation == "release" else
                         "Verify these separate records offline"
                         if investigation == "gtm" else
+                        "Verify the recorded acquisition evidence offline"
+                        if investigation == "acquisition" else
                         "Verify the recorded measurement evidence offline"
                         if investigation == "measurement" else
                         "Verify the recorded analytics evidence offline"

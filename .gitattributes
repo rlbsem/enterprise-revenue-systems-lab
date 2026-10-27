@@ -7,3 +7,6 @@ web/evidence/revenue-integrity/** -text
 web/evidence/analytics-engineering/** -text
 
 web/evidence/measurement-integrity/** -text
+
+web/evidence/acquisition-governance/** -text
+src/revenue_lab/acquisition_oracle.py -text

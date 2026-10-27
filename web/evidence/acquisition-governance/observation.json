@@ -1,0 +1,4 @@
+{
+  "scope": "Fresh offline recalculation of original records; no new vendor or financial writes",
+  "new_native_execution": false
+}
