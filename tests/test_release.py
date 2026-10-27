@@ -85,7 +85,7 @@ def test_existing_catalog_routes_and_source_pins_are_unchanged():
     snapshot=json.loads((ROOT/"docs/evidence/release-assurance/prior-research-ui.json").read_text(encoding="utf-8"))
     before={r["id"]:r for r in json.loads(snapshot["files"]["web/catalog.json"])["scenarios"]}
     after={r["id"]:r for r in json.loads((ROOT/"web/catalog.json").read_text(encoding="utf-8"))["scenarios"]}
-    assert set(after)-set(before)=={"release-assurance", "revenue-integrity"}
+    assert set(after)-set(before)=={"release-assurance", "revenue-integrity", "analytics-engineering"}
     baseline=json.loads((ROOT/"docs/evidence/revenue-integrity/prior-release-ui.json").read_text(encoding="utf-8"))
     previous={r["id"]:r for r in json.loads(baseline["files"]["web/catalog.json"])["scenarios"]}
     # Older captured labels retained their original encoding; compare current

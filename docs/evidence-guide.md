@@ -16,11 +16,15 @@
 
 The six source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
 
+## Analytics model correctness and performance
+
+The [eighth investigation](analytics-engineering.md) imports later Revenue Metrics evidence at a separate pin. It preserves the third investigation and distinguishes controlled local 60K/180K benchmarks, a fresh small local fixture and historical native Snowflake acceptance. A selective rebuild candidate remains rejected. Offline checks verify imported bytes, recorded relationships and median arithmetic; they do not rerun the large warehouse comparisons or establish cloud performance.
+
 ## Known limitations
 
 - Independent blinded salesperson usefulness assessment is pending.
 - Customer Signal & Activation provides recorded native Salesforce and Snowflake evidence with synthetic records. The Lab does not execute new vendor operations or establish client adoption or commercial uplift.
-- AWS operation, new Snowflake queries and the optional stress profile remain outside new Lab execution. The connected case presents verified historical Snowflake acceptance from its source repository.
+- AWS operation, new Snowflake queries and fresh large stress benchmarks remain outside new Lab execution. The connected case presents verified historical Snowflake acceptance from its source repository.
 - The recorded full-warehouse comparison requires fresh execution to independently repeat; compact downloads contain selected source/model rows.
 - Performance timings are individual workstation observations, not capacity guarantees.
 - The GitHub Pages [corrected deployment succeeded](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/38495435399) on October 13, 2026, and the owner reviewed the published browser interface. Cross-device and download-path verification remains distinct from that check. The static site does not execute models, databases or original engines. Updates to `web/**` on `main` deploy automatically.

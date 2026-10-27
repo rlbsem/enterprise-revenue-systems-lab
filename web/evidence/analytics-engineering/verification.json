@@ -1,0 +1,21 @@
+{
+  "scenario": "analytics-engineering",
+  "integrity": "verified",
+  "checks": {
+    "models": 15,
+    "metrics": 6,
+    "paired_repetitions": 6,
+    "complete_model_comparisons": 270,
+    "recorded_software_tests": 87,
+    "native_models_per_build": 15,
+    "native_tests_per_build": 30,
+    "native_query_ids": 461,
+    "new_warehouse_execution": false
+  },
+  "limitations": [
+    "Recorded synthetic local DuckDB/dbt benchmarks and historical native Snowflake fixture are separate executions. No new warehouse/model/cloud calls occur.",
+    "Three filesystem-warm paired observations per scale on one Windows host, one dbt/DuckDB thread and 2GB engine setting; not cold-cache, production capacity, cost savings or a process memory cap.",
+    "Complete typed-export equality was recorded upstream. Compact downloads contain original comparison records, SQL, the small fixture and selected publication rows, not 37 million fact rows; offline checks do not repeat those warehouse comparisons.",
+    "Snowflake acceptance predates the USD unit correction. It does not validate the current USD-specific revision, selective candidate or large-scale Snowflake performance; billed consumption remains unavailable."
+  ]
+}

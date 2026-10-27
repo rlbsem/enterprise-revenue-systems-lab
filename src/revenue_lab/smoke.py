@@ -110,7 +110,7 @@ def check_site(base, expected, output, *, source_links=False):
 
         def assets():
             hashes = {}
-            for name in ("index.html", "style.css", "app.js", "gtm.js", "research.js", "release.js", "integrity.js", "catalog.json"):
+            for name in ("index.html", "style.css", "app.js", "gtm.js", "research.js", "release.js", "integrity.js", "analytics.js", "catalog.json"):
                 response = context.request.get(base + name)
                 assert response.status == 200, name
                 data = response.body()
@@ -160,6 +160,7 @@ def check_site(base, expected, output, *, source_links=False):
                 ("Inspect qualified pipeline", "gtm-enterprise"),
                 ("Assure the model release", "release-assurance"),
                 ("Trace commitment to cash", "revenue-integrity"),
+                ("Prove models and performance", "analytics-engineering"),
                 ("Trust the seller action", "seller-application"),
             ):
                 button = page.get_by_role("button", name=label)

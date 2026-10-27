@@ -2,6 +2,19 @@
   "version": 1,
   "scenarios": [
     {
+      "id": "analytics-engineering",
+      "investigation": "analytics",
+      "title": "Analytics Engineering — Model Correctness & Performance",
+      "summary": "Inspect 15 SQL/dbt models, six paired local benchmark runs, rejected selective rebuilds and separate historical native Snowflake fixture acceptance.",
+      "manifest_sha256": "7ba2f24e7538bcd44d5a6d60631a7258812cde65366bfa64c804cab74efc74d9",
+      "verification_sha256": "e92ce6e313a3d323b138fac836e0d849da8cea07f91d0f9aef8f6934be15d3be",
+      "source": {
+        "repository": "rlbsem/revenue-metrics-platform",
+        "commit": "4cc1480d63f1095584db2ddcde72ed5626eb7ea7"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "connected-roundtrip",
       "investigation": "connected",
       "title": "Salesforce and Snowflake round trip",

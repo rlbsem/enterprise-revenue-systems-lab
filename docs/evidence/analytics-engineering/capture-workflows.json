@@ -1,0 +1,61 @@
+{
+  "executed_at": "2026-10-26T22:58:54.287230+00:00",
+  "recorded_command_family": "python scripts/capture_<name>.py with fresh .cache output paths",
+  "results": {
+    "presentation": {
+      "views": 340,
+      "overflow_failures": 0,
+      "contrast_failures": 0,
+      "images": [
+        "analytics-overview.png",
+        "connected-overview.png",
+        "control-overview.png",
+        "gtm-enterprise-overview.png",
+        "gtm-qwen-overview.png",
+        "gtm-research-overview.png",
+        "gtm-salesforce-overview.png",
+        "release-overview.png",
+        "revenue-overview.png",
+        "integrity-overview.png",
+        "seller-overview.png",
+        "visual-refresh/analytics-mobile.png",
+        "visual-refresh/connected-mobile.png",
+        "visual-refresh/control-mobile.png",
+        "visual-refresh/gtm-enterprise-mobile.png",
+        "visual-refresh/gtm-qwen-mobile.png",
+        "visual-refresh/gtm-research-mobile.png",
+        "visual-refresh/gtm-salesforce-mobile.png",
+        "visual-refresh/release-mobile.png",
+        "visual-refresh/revenue-mobile.png",
+        "visual-refresh/integrity-mobile.png",
+        "visual-refresh/seller-mobile.png"
+      ],
+      "page_errors": []
+    },
+    "research": {
+      "layouts": 20,
+      "images": 3,
+      "axe_violations": 0,
+      "status": "passed"
+    },
+    "release": {
+      "layout_checks": 50,
+      "accessibility_states": 14,
+      "screenshots": 3,
+      "status": "passed"
+    },
+    "integrity": {
+      "layout_checks": 40,
+      "accessibility_states": 10,
+      "screenshots": 3,
+      "status": "passed"
+    },
+    "analytics": {
+      "layout_checks": 40,
+      "accessibility_states": 10,
+      "screenshots": 3,
+      "status": "passed"
+    }
+  },
+  "new_native_execution": false
+}

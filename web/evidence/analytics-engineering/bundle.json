@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "scenario": "analytics-engineering",
+  "source": {
+    "repository": "rlbsem/revenue-metrics-platform",
+    "commit": "4cc1480d63f1095584db2ddcde72ed5626eb7ea7"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-26T20:16:35.443063+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "lineage.json",
+      "sha256": "8128ec9342eefede658fc9d21d3bc499f260f5c8e0abe3f21995225ed75a198f",
+      "bytes": 10862
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "f6186633482342a8711634b16a81a1f5b90548ae9612614b88d2382b96f2887e",
+      "bytes": 5599
+    },
+    {
+      "path": "summary.json",
+      "sha256": "2fdba8df3848903d18a62c4fddc6d5fecb8d39fdb1527369d9be89bd4bc4ea7f",
+      "bytes": 627
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "00903ff6cc0e1dddc8e4f9129d99766977d953f940141509ffd66846b306c94f",
+      "bytes": 2340
+    },
+    {
+      "path": "software.json",
+      "sha256": "8c78ce93bf769e1116fd97a1228db6ad8bfab0e245f39f82e5ee99bb5e3a0460",
+      "bytes": 10360
+    },
+    {
+      "path": "fixture-cases.json",
+      "sha256": "cd0f202b74262a376002bef382202c4fa20eb3b680428b1191efd70b74d83b09",
+      "bytes": 267
+    },
+    {
+      "path": "fixture-publication.json",
+      "sha256": "181e118416ba7db447bcfd127ae8917600f4430c61560f245c8a335f69d47ba8",
+      "bytes": 16479
+    },
+    {
+      "path": "snowflake.json",
+      "sha256": "64b3e457913932b9692ee9bc8364eee90180458c20acaa1b231d2c67c20ffcfa",
+      "bytes": 28028
+    },
+    {
+      "path": "snowflake-notes.json",
+      "sha256": "37f04e7ffc65986a020347d7327148c8bc37e086916ef2aa7ce9859df7c74658",
+      "bytes": 1975
+    },
+    {
+      "path": "enterprise-pair-1.json",
+      "sha256": "27f50132d8ba4727b7de511b5f8e35c3335e5bf5453f295b0fd2557f28f0fc24",
+      "bytes": 85538
+    },
+    {
+      "path": "enterprise-pair-2.json",
+      "sha256": "baa22b59b04495d8b2221fca77a69eda2618f3f4a122e67d4f62f001cd936484",
+      "bytes": 85550
+    },
+    {
+      "path": "enterprise-pair-3.json",
+      "sha256": "29d9525e15d41cf0fa39a0031716345ff032ace3e4d8d5191d461c73fb5b4457",
+      "bytes": 120795
+    },
+    {
+      "path": "enterprise-execution-protocol.json",
+      "sha256": "77b925fed54effa765fcfda5e5ccc3b3e55f11d6c4c7978482cfe2af423e97b6",
+      "bytes": 7416
+    },
+    {
+      "path": "enterprise-generation.json",
+      "sha256": "643371b15391cef6005136916b781dd9147b3122b5eb58ae4ceebf594243bdf5",
+      "bytes": 2683
+    },
+    {
+      "path": "stress-pair-1.json",
+      "sha256": "75116c4d68bc6e49a092312170e42923c776afa9648fdc567bc21b19cdfaa6f8",
+      "bytes": 85550
+    },
+    {
+      "path": "stress-pair-2.json",
+      "sha256": "82e39fd5faaa8d743c1760e947d35be8f2e1fccd6bf2013b80c306964a361cbb",
+      "bytes": 85554
+    },
+    {
+      "path": "stress-pair-3.json",
+      "sha256": "f68d788363082625cfcea1edbb27b3ac8bd0ed2e96d76fb9362c9c1be8da1f42",
+      "bytes": 85538
+    },
+    {
+      "path": "stress-execution-protocol.json",
+      "sha256": "93952d9fd2cdc09add7e7f6e8056dab666d210b62d6eac192841b2b8efcd5746",
+      "bytes": 7633
+    },
+    {
+      "path": "stress-generation.json",
+      "sha256": "91c4790b2b1eecc5f1b598631f01a6b40fa76f26fd4f0a5d4084b0c4c5a61a53",
+      "bytes": 2688
+    },
+    {
+      "path": "snowflake-initial_full_build.json",
+      "sha256": "4ed99a75b120b864d61aad99c92fc6a3545591745c52245e8ba21830729fe142",
+      "bytes": 8901
+    },
+    {
+      "path": "snowflake-corrected_incremental_build.json",
+      "sha256": "5afc3be26bc5245fa471fea5b6adcac27e1f15c0a12012eb5399c170475b98b0",
+      "bytes": 8903
+    },
+    {
+      "path": "snowflake-independent_corrected_full_build.json",
+      "sha256": "a91b7c2f6f6b477a2f926407721395c2880464d79748165c1b0c8ef6e2723f7e",
+      "bytes": 8908
+    },
+    {
+      "path": "sql/dim_account.sql",
+      "sha256": "8ffc21d074c46109e1d4b50c42606b17ca7e877452e77b8d9e850bd15d994f25",
+      "bytes": 149
+    },
+    {
+      "path": "sql/dim_date.sql",
+      "sha256": "2978d206de67a2d43ed5ad4409039a8a2c0583880a9ff1f04b465e04ff2118a4",
+      "bytes": 44
+    },
+    {
+      "path": "sql/fct_booking_events.sql",
+      "sha256": "e5db049f737a0f5e6776849a10c4fc26875f1679a2a61eed0f0837132b00c878",
+      "bytes": 50
+    },
+    {
+      "path": "sql/fct_invoice_lines.sql",
+      "sha256": "f817e3437a3b37212317424b8961228a9efef2f44462ccb5ae1d4912e921ba27",
+      "bytes": 49
+    },
+    {
+      "path": "sql/fct_opportunity_daily.sql",
+      "sha256": "2c3a338554b06fb6581f91bd7051a61436d79c65c8c86a21e1ab27f73131adaf",
+      "bytes": 1177
+    },
+    {
+      "path": "sql/fct_payment_allocations.sql",
+      "sha256": "83cb9ef07eb1489f6e747b8cf5031d2724656ce9f172bb8a8539ff42cd94acce",
+      "bytes": 55
+    },
+    {
+      "path": "sql/fct_subscription_period.sql",
+      "sha256": "6beb2c95cce09286a7196100adbb1055075369bf52e75f0818ae8ef830f94815",
+      "bytes": 398
+    },
+    {
+      "path": "sql/mart_arr.sql",
+      "sha256": "5fac193b2c9a3428b19b41d13616793bb15f20375625dc188cc8ac0d0f58432b",
+      "bytes": 289
+    },
+    {
+      "path": "sql/mart_cohorts.sql",
+      "sha256": "30276320eb4c522232721700b71dced87f099647cf74723a1611a534168d1f54",
+      "bytes": 1049
+    },
+    {
+      "path": "sql/mart_discrepancy_bridge.sql",
+      "sha256": "ef002ee5b27c61cd0ac99bae168e6a2a30578aaa328e614f40dd0b8dc030a1e9",
+      "bytes": 806
+    },
+    {
+      "path": "sql/mart_flows.sql",
+      "sha256": "91b35d1ca35b154cc447bb0b2c044ec56b61a591420780e0dbfaeb9a3592339b",
+      "bytes": 895
+    },
+    {
+      "path": "sql/mart_metric_values.sql",
+      "sha256": "50928f0b379f333bfe8084dc5cfdb1d8d475a792e886464fef11369259ade88c",
+      "bytes": 2542
+    },
+    {
+      "path": "sql/mart_pipeline.sql",
+      "sha256": "f05109fc19e243b6cf5dca92f90ead5c7ef1657515b6cbc3cdd1b9e2eb2466eb",
+      "bytes": 819
+    },
+    {
+      "path": "sql/stg_opportunities.sql",
+      "sha256": "cc41a5643193a9f43d7515738bf950729cbd210851cdce9ad6d952e6600dd52e",
+      "bytes": 134
+    },
+    {
+      "path": "sql/stg_subscriptions.sql",
+      "sha256": "4125a9e0da17aa61f82046443ee14475dc8b5955f264f36e98e3e8918dfa11b2",
+      "bytes": 216
+    },
+    {
+      "path": "fixture/account_history.csv",
+      "sha256": "a4c6fe6a1219f4ee8d96aea4d08f10a067edbdacaf4a10516d87dc865c07fcb7",
+      "bytes": 336
+    },
+    {
+      "path": "fixture/booking_events.csv",
+      "sha256": "e5318baee6d728d2587bfa29538e1a440e5ab6c3237b2faa5b8b10967fb39faa",
+      "bytes": 207
+    },
+    {
+      "path": "fixture/calendar.csv",
+      "sha256": "c95f5bb25803d26c6177a1116162c05269e03906878d373abaf65e784e9205cc",
+      "bytes": 2194
+    },
+    {
+      "path": "fixture/coverage.csv",
+      "sha256": "de1abba91968213e743a5e8d7bf50a47fe0c6c4190fc27080545c54a93894df9",
+      "bytes": 282
+    },
+    {
+      "path": "fixture/invoice_lines.csv",
+      "sha256": "bc72cf5cd68614b45b1e7e100058ff616f3138e7c388171d6289dbd8b9e0eac7",
+      "bytes": 266
+    },
+    {
+      "path": "fixture/late_opportunity_events.csv",
+      "sha256": "a6e533db3df2f06d5e99745d520849de3745951b6cbdd7677471886bcd6eada7",
+      "bytes": 201
+    },
+    {
+      "path": "fixture/opportunity_events.csv",
+      "sha256": "27ad60897c277bee1f9358df433f2184e0a83a8da4d68d1cb7a13e7f349de50a",
+      "bytes": 682
+    },
+    {
+      "path": "fixture/payment_allocations.csv",
+      "sha256": "01babf5f039b707afae3089185ebdfafdcb5fa788fddb2cab4012818a1051e7b",
+      "bytes": 221
+    },
+    {
+      "path": "fixture/subscription_contracts.csv",
+      "sha256": "310a9fc2b3a50abd523144cb588e322681c91f2a0c7753e74ecc8cfa61d4b6b4",
+      "bytes": 411
+    },
+    {
+      "path": "fixture-execution.json",
+      "sha256": "d7c7a7eef9778b2040c4c4e636fa8a88dbf55aeb77e346e51bf841b1adf164e8",
+      "bytes": 30941
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "3dc7e3811f30950568484f9b73524dfd611443a329600c77024742527709436c",
+      "bytes": 17381
+    },
+    {
+      "path": "projection.json",
+      "sha256": "ed56e497905da69bb122b86d733dcba01bc8fa76fb54fd58175a7756e103f25c",
+      "bytes": 35382
+    },
+    {
+      "path": "observation.json",
+      "sha256": "88b80e2fa40e76c1f1b6a9fad8ae3bddfda427536f65fcb3f71ae54c4b960944",
+      "bytes": 133
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "68ab6cdb00b1993ff2619647f5f10285a5b9735d360b5d72f43e21fd703c38f5",
+      "bytes": 4212
+    }
+  ],
+  "limitations": [
+    "Recorded synthetic local DuckDB/dbt benchmarks and historical native Snowflake fixture are separate executions. No new warehouse/model/cloud calls occur.",
+    "Three filesystem-warm paired observations per scale on one Windows host, one dbt/DuckDB thread and 2GB engine setting; not cold-cache, production capacity, cost savings or a process memory cap.",
+    "Complete typed-export equality was recorded upstream. Compact downloads contain original comparison records, SQL, the small fixture and selected publication rows, not 37 million fact rows; offline checks do not repeat those warehouse comparisons.",
+    "Snowflake acceptance predates the USD unit correction. It does not validate the current USD-specific revision, selective candidate or large-scale Snowflake performance; billed consumption remains unavailable."
+  ],
+  "input_hashes": {
+    "lineage.json": "8128ec9342eefede658fc9d21d3bc499f260f5c8e0abe3f21995225ed75a198f",
+    "metrics.json": "f6186633482342a8711634b16a81a1f5b90548ae9612614b88d2382b96f2887e",
+    "summary.json": "2fdba8df3848903d18a62c4fddc6d5fecb8d39fdb1527369d9be89bd4bc4ea7f",
+    "protocol.json": "00903ff6cc0e1dddc8e4f9129d99766977d953f940141509ffd66846b306c94f",
+    "software.json": "8c78ce93bf769e1116fd97a1228db6ad8bfab0e245f39f82e5ee99bb5e3a0460",
+    "fixture-cases.json": "cd0f202b74262a376002bef382202c4fa20eb3b680428b1191efd70b74d83b09",
+    "fixture-publication.json": "181e118416ba7db447bcfd127ae8917600f4430c61560f245c8a335f69d47ba8",
+    "snowflake.json": "64b3e457913932b9692ee9bc8364eee90180458c20acaa1b231d2c67c20ffcfa",
+    "snowflake-notes.json": "37f04e7ffc65986a020347d7327148c8bc37e086916ef2aa7ce9859df7c74658",
+    "enterprise-pair-1.json": "27f50132d8ba4727b7de511b5f8e35c3335e5bf5453f295b0fd2557f28f0fc24",
+    "enterprise-pair-2.json": "baa22b59b04495d8b2221fca77a69eda2618f3f4a122e67d4f62f001cd936484",
+    "enterprise-pair-3.json": "29d9525e15d41cf0fa39a0031716345ff032ace3e4d8d5191d461c73fb5b4457",
+    "enterprise-execution-protocol.json": "77b925fed54effa765fcfda5e5ccc3b3e55f11d6c4c7978482cfe2af423e97b6",
+    "enterprise-generation.json": "643371b15391cef6005136916b781dd9147b3122b5eb58ae4ceebf594243bdf5",
+    "stress-pair-1.json": "75116c4d68bc6e49a092312170e42923c776afa9648fdc567bc21b19cdfaa6f8",
+    "stress-pair-2.json": "82e39fd5faaa8d743c1760e947d35be8f2e1fccd6bf2013b80c306964a361cbb",
+    "stress-pair-3.json": "f68d788363082625cfcea1edbb27b3ac8bd0ed2e96d76fb9362c9c1be8da1f42",
+    "stress-execution-protocol.json": "93952d9fd2cdc09add7e7f6e8056dab666d210b62d6eac192841b2b8efcd5746",
+    "stress-generation.json": "91c4790b2b1eecc5f1b598631f01a6b40fa76f26fd4f0a5d4084b0c4c5a61a53",
+    "snowflake-initial_full_build.json": "4ed99a75b120b864d61aad99c92fc6a3545591745c52245e8ba21830729fe142",
+    "snowflake-corrected_incremental_build.json": "5afc3be26bc5245fa471fea5b6adcac27e1f15c0a12012eb5399c170475b98b0",
+    "snowflake-independent_corrected_full_build.json": "a91b7c2f6f6b477a2f926407721395c2880464d79748165c1b0c8ef6e2723f7e",
+    "sql/dim_account.sql": "8ffc21d074c46109e1d4b50c42606b17ca7e877452e77b8d9e850bd15d994f25",
+    "sql/dim_date.sql": "2978d206de67a2d43ed5ad4409039a8a2c0583880a9ff1f04b465e04ff2118a4",
+    "sql/fct_booking_events.sql": "e5db049f737a0f5e6776849a10c4fc26875f1679a2a61eed0f0837132b00c878",
+    "sql/fct_invoice_lines.sql": "f817e3437a3b37212317424b8961228a9efef2f44462ccb5ae1d4912e921ba27",
+    "sql/fct_opportunity_daily.sql": "2c3a338554b06fb6581f91bd7051a61436d79c65c8c86a21e1ab27f73131adaf",
+    "sql/fct_payment_allocations.sql": "83cb9ef07eb1489f6e747b8cf5031d2724656ce9f172bb8a8539ff42cd94acce",
+    "sql/fct_subscription_period.sql": "6beb2c95cce09286a7196100adbb1055075369bf52e75f0818ae8ef830f94815",
+    "sql/mart_arr.sql": "5fac193b2c9a3428b19b41d13616793bb15f20375625dc188cc8ac0d0f58432b",
+    "sql/mart_cohorts.sql": "30276320eb4c522232721700b71dced87f099647cf74723a1611a534168d1f54",
+    "sql/mart_discrepancy_bridge.sql": "ef002ee5b27c61cd0ac99bae168e6a2a30578aaa328e614f40dd0b8dc030a1e9",
+    "sql/mart_flows.sql": "91b35d1ca35b154cc447bb0b2c044ec56b61a591420780e0dbfaeb9a3592339b",
+    "sql/mart_metric_values.sql": "50928f0b379f333bfe8084dc5cfdb1d8d475a792e886464fef11369259ade88c",
+    "sql/mart_pipeline.sql": "f05109fc19e243b6cf5dca92f90ead5c7ef1657515b6cbc3cdd1b9e2eb2466eb",
+    "sql/stg_opportunities.sql": "cc41a5643193a9f43d7515738bf950729cbd210851cdce9ad6d952e6600dd52e",
+    "sql/stg_subscriptions.sql": "4125a9e0da17aa61f82046443ee14475dc8b5955f264f36e98e3e8918dfa11b2",
+    "fixture/account_history.csv": "a4c6fe6a1219f4ee8d96aea4d08f10a067edbdacaf4a10516d87dc865c07fcb7",
+    "fixture/booking_events.csv": "e5318baee6d728d2587bfa29538e1a440e5ab6c3237b2faa5b8b10967fb39faa",
+    "fixture/calendar.csv": "c95f5bb25803d26c6177a1116162c05269e03906878d373abaf65e784e9205cc",
+    "fixture/coverage.csv": "de1abba91968213e743a5e8d7bf50a47fe0c6c4190fc27080545c54a93894df9",
+    "fixture/invoice_lines.csv": "bc72cf5cd68614b45b1e7e100058ff616f3138e7c388171d6289dbd8b9e0eac7",
+    "fixture/late_opportunity_events.csv": "a6e533db3df2f06d5e99745d520849de3745951b6cbdd7677471886bcd6eada7",
+    "fixture/opportunity_events.csv": "27ad60897c277bee1f9358df433f2184e0a83a8da4d68d1cb7a13e7f349de50a",
+    "fixture/payment_allocations.csv": "01babf5f039b707afae3089185ebdfafdcb5fa788fddb2cab4012818a1051e7b",
+    "fixture/subscription_contracts.csv": "310a9fc2b3a50abd523144cb588e322681c91f2a0c7753e74ecc8cfa61d4b6b4"
+  },
+  "reproduce": [
+    "python scripts/import_analytics.py <pinned-revenue-metrics-git-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/analytics-engineering"
+  ],
+  "configuration_hash": "df3dc9aaa0376cfd211fb03a22d0eab2763ef4c20cbcf75a1f09a888ecabb6d0"
+}
