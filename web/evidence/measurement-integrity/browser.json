@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "boundary": "real local Chromium + HTTP; synthetic records",
+  "initial_state": "29 fixture decisions through separate browser/offline Python admission lanes before actual browser HTTP actions",
+  "browser": "140.0.7339.16",
+  "checks": [
+    "source contract, actual payment and measured values remain separate in USD",
+    "receipt drill-down links admitted content without exposing session authority",
+    "denied browser action produces no measurement request or identifier storage",
+    "real browser inquiry HTTP instrumentation",
+    "exact replay deduplicated",
+    "schema drift rejected",
+    "browser cannot assert offline payment",
+    "actual GTM-compatible data-layer message validates separately",
+    "lost acknowledgement retried with one admitted effect",
+    "network failure exhausts exactly three attempts",
+    "revocation clears pending events and prevents retry",
+    "delayed grant cannot override later revocation",
+    "recorded native public-sample status remains distinct from local dbt and production GA4",
+    "nine responsive view/width combinations without page overflow",
+    "no external network requests",
+    "no JavaScript runtime errors"
+  ],
+  "layouts": [
+    {
+      "width": 390,
+      "view": "health",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "view": "browser",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "view": "proof",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "view": "health",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "view": "browser",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "view": "proof",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "view": "health",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "view": "browser",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "view": "proof",
+      "horizontal_overflow": false
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "measurement-health.png",
+      "sha256": "4278ef6950a39137fc1417b2160200e519cf5a32135bc4fe90825d05ae410877",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      }
+    },
+    {
+      "file": "browser-laboratory.png",
+      "sha256": "0ba7e9a433d9d6af25278a30b3cd02375d1bb5ae983afbc1779c35ee155a1181",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      }
+    },
+    {
+      "file": "warehouse-proof.png",
+      "sha256": "b8e9cc9585198150b1b4dff24482e2ebf8efa0f0f019d15101e9cc12a3ec6ea4",
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      }
+    },
+    {
+      "file": "health-mobile.png",
+      "sha256": "9de27ada1296a31b08d28147fa6398df03c2ef76ff7a0084498e84dc16892a8b",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      }
+    },
+    {
+      "file": "browser-mobile.png",
+      "sha256": "acc959b72ffecaf7d5de6d515a044a3242f5baa09ef17a5af8d6617b7f1acd7f",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      }
+    },
+    {
+      "file": "proof-mobile.png",
+      "sha256": "469860b1a1d30481439833adbb6d6833dfcaf2878ff8e2327ec79ebe6bde95e4",
+      "viewport": {
+        "width": 390,
+        "height": 900
+      }
+    }
+  ],
+  "source_sha256": {
+    "web/app.js": "9af98c38960d31949a24c8ad1a24d5a2871bbe277e34c0e67a280ad82e5429b8",
+    "web/index.html": "47898de7e6d889540c9cbce8642b6ce76adc84e5e95d4def39c508d49e26b021",
+    "web/style.css": "fcc5dd6f65bf04882efdf6f548211221df887a8a1a772e33a81f6ae6846709bd",
+    "assurance/analytics.py": "5d9fce4fc4da7a194e46ac53618bc7951f47d119fa6a35040115393f3d99d34a",
+    "assurance/core.py": "45649c6960ebcee273642da3f3d6f88485dfcbae4dca8946003e688d0aebe273",
+    "assurance/fixtures.py": "545dab884307fef9f253e1b0d54be96a5f7692ea3210d855709b6d11ae049225",
+    "assurance/native.py": "58713247c59c18d961e4548e0f53be3c5c0a86e79bfe0396340dbddec4266cd7",
+    "assurance/server.py": "3ffc6f38844a2778519c51a0d27be618655a950909315bc9737e62e4a14263d6",
+    "assurance/__init__.py": "e5c08755a5a0bd480a16801f57e0d6e014d23a1e6920ed7a93b64a2b707df91a",
+    "contracts/data-layer-v1.json": "f3b6a6fe07fe4be038ec95c1985bbc4071de9284f161e533226c0cace83578c9",
+    "contracts/event-v2.json": "5b599c8723f1bb67e55feaa2363c6de8f12f4268281405b7852fa254b154df13"
+  },
+  "collection_statuses": {
+    "accepted": 20,
+    "accepted_late": 1,
+    "authority_denied": 3,
+    "consent_denied": 1,
+    "contract_rejected": 3,
+    "duplicate_conversion": 1,
+    "duplicate_event": 3,
+    "duplicate_transaction": 1,
+    "identity_conflict": 1,
+    "value_rejected": 1
+  }
+}

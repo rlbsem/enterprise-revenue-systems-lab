@@ -12,9 +12,9 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/release-qa-eight/presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The current screenshots are captured from the reconciled eight-investigation UI using recorded synthetic evidence. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
+The first eight investigations retain their reconciled screenshots. The ninth adds new captures from the actual running application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
 
-## Eight investigations
+## Nine investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -27,7 +27,17 @@ The current screenshots are captured from the reconciled eight-investigation UI 
 | Why do billing and Finance disagree after a delivery recovers? | [Revenue Integrity](docs/revenue-integrity.md): authoritative invoice/ERP/cash lineage, independent receipts, a separate recorded operator recovery and an unresolved $1,500 variance | Local contract acceptance at a pinned historical source revision; recorded review states, no privileged actions or native vendor calls. |
 | Are analytical models correct, and is the optimization worth keeping? | [Analytics Engineering](docs/analytics-engineering.md): 15-model SQL lineage, actual small-fixture rows, 60K/180K paired benchmarks, a rejected selective rebuild and separate native Snowflake fixture evidence | Complete comparisons were recorded upstream; the browser checks artifacts and summaries. Local timing is not native warehouse performance or commercial savings. |
 
-The seventeen cases draw from six pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+| Can a measured conversion be trusted as collected money? | [First-Party Measurement](docs/measurement-integrity.md): synthetic source-to-conversion reconciliation, browser controls, five local GA4 rowsets and separate historical native Google sample queries | Measured values are claims. The Google sample is unrelated to Evermere; no production GA4 export or native dbt-bigquery acceptance. |
+
+The eighteen cases draw from seven pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+
+## First-Party Measurement — Conversion & Revenue Integrity
+
+The ninth investigation traces synthetic Evermere contracts and payments to reported conversions. Inspect the missing $245,000 contract, missing $13,000 payment and $171,500 deposit overstatement. Explore collection decisions, consent controls, actual locally executed GA4 rowsets and the separate historical native BigQuery sample queries.
+
+Feature route: `?case=measurement-integrity`. This change is not deployed by the feature branch. [Evidence and reproduction](docs/measurement-integrity.md).
+
+<img src="docs/images/measurement-integrity/measurement-integrity-desktop.png" alt="Actual measurement explorer showing source amounts and unresolved conversion findings" width="900">
 
 ## SDR account intelligence
 

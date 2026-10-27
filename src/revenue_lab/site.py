@@ -8,6 +8,8 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "measurement-integrity": ("measurement", "First-Party Measurement — Conversion & Revenue Integrity",
+        "Reconcile synthetic source contracts and payments against measured claims; inspect recorded browser controls, local GA4 models and separate native Google sample queries."),
     "analytics-engineering": ("analytics", "Analytics Engineering — Model Correctness & Performance",
         "Inspect 15 SQL/dbt models, six paired local benchmark runs, rejected selective rebuilds and separate historical native Snowflake fixture acceptance."),
     "revenue-integrity": (

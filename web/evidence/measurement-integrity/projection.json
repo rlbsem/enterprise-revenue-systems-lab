@@ -1,0 +1,112 @@
+{
+  "currency": "USD",
+  "totals": {
+    "proposal_cents": 92000000,
+    "signed_contract_cents": 43500000,
+    "payment_cents": 14350000,
+    "measured_contract_cents": 19000000,
+    "measured_payment_cents": 30200000
+  },
+  "projects": [
+    {
+      "project_id": "SYN-P01",
+      "project_type": "hardscaping",
+      "opportunity_cents": 6500000
+    },
+    {
+      "project_id": "SYN-P02",
+      "project_type": "outdoor_kitchen",
+      "opportunity_cents": 12500000
+    },
+    {
+      "project_id": "SYN-P03",
+      "project_type": "custom_pool",
+      "opportunity_cents": 24500000
+    },
+    {
+      "project_id": "SYN-P04",
+      "project_type": "premium_renovation",
+      "opportunity_cents": 48500000
+    },
+    {
+      "project_id": "SYN-P05",
+      "project_type": "landscape_construction",
+      "opportunity_cents": 5000000
+    }
+  ],
+  "findings": [
+    {
+      "conversion_key": "close_convert_lead|SYN-P03-signed_contract",
+      "project_id": "SYN-P03",
+      "source_ref": "SYN-P03-signed_contract",
+      "event_name": "close_convert_lead",
+      "value_basis": "contract",
+      "expected_cents": 24500000,
+      "measured_cents": null,
+      "delta_cents": -24500000,
+      "status": "missing"
+    },
+    {
+      "conversion_key": "purchase|SYN-P01-progress",
+      "project_id": "SYN-P01",
+      "source_ref": "SYN-P01-progress",
+      "event_name": "purchase",
+      "value_basis": "payment",
+      "expected_cents": 1300000,
+      "measured_cents": null,
+      "delta_cents": -1300000,
+      "status": "missing"
+    },
+    {
+      "conversion_key": "purchase|SYN-P03-payment",
+      "project_id": "SYN-P03",
+      "source_ref": "SYN-P03-payment",
+      "event_name": "purchase",
+      "value_basis": "payment",
+      "expected_cents": 7350000,
+      "measured_cents": 24500000,
+      "delta_cents": 17150000,
+      "status": "value_mismatch"
+    }
+  ],
+  "receipt_statuses": {
+    "accepted": 18,
+    "duplicate_conversion": 1,
+    "duplicate_event": 1,
+    "duplicate_transaction": 1,
+    "identity_conflict": 1,
+    "contract_rejected": 2,
+    "value_rejected": 1,
+    "consent_denied": 1,
+    "authority_denied": 2,
+    "accepted_late": 1
+  },
+  "model_rows": {
+    "fct_events": 19,
+    "fct_items": 3,
+    "fct_purchases": 3,
+    "mart_reconciliation": 21,
+    "mart_daily": 6,
+    "mart_channels": 6,
+    "mart_health": 10,
+    "fct_conversions": 19,
+    "mart_project_values": 5
+  },
+  "warehouse_models": [
+    "fct_ga4_events",
+    "fct_ga4_items",
+    "mart_ga4_purchase_quality",
+    "mart_ga4_sessions",
+    "mart_ga4_daily"
+  ],
+  "native": {
+    "purchase_events": 14,
+    "distinct_transaction_ids": 13,
+    "purchase_item_rows": 57,
+    "missing_transaction_ids": 0,
+    "missing_purchase_revenue": 0,
+    "item_revenue_disagreements": 2,
+    "source_quality": "findings_present; counts are not silently repaired",
+    "interpretation": "UNNEST(items) would produce 57 item rows from 14 purchase events. Repeated transaction identifiers and item/revenue disagreement are observations, not proof of ingestion duplicates or a specific cause; the sample is obfuscated."
+  }
+}

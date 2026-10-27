@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "scenario": "measurement-integrity",
+  "source": {
+    "repository": "rlbsem/first-party-measurement-assurance",
+    "commit": "88a197c761cfd167c19e3d23039948ffe6bb7f2b"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-27T01:46:54.715361+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "demo.json",
+      "sha256": "a172b8ae2389cf7fada07286c427aeb1f1c097f4c8745a74daa9f7e5921439de",
+      "bytes": 135521
+    },
+    {
+      "path": "ledger.json",
+      "sha256": "7bf74bd1fbf42effcc92f871d52d5de5197ad0e1ed5cb1acebde93ee41b2cb44",
+      "bytes": 31025
+    },
+    {
+      "path": "browser.json",
+      "sha256": "a2d66e0dbb1a983f70f76f651591a940a7b32c9e56fa10694ae11f67639cc51f",
+      "bytes": 4689
+    },
+    {
+      "path": "software.json",
+      "sha256": "436c8b749f574cf96a8c2ad9eec4ef39c01f69b2b49d441d7c7eb2e295c6bef2",
+      "bytes": 5909
+    },
+    {
+      "path": "native.json",
+      "sha256": "1d883700cee5c2931c3a42072859d1a66ba0201b6dcbba21f7322482a29fa1fc",
+      "bytes": 9027
+    },
+    {
+      "path": "job-statistics.json",
+      "sha256": "b50a7f1a47c118426cdfc9b53f79f3250cf9de471dff9fc23258278d0bf4d546",
+      "bytes": 1163
+    },
+    {
+      "path": "local-warehouse.json",
+      "sha256": "a9683570b353dab16db41bad969a426936beabb1ca7c4df215ba3574b1059e47",
+      "bytes": 1851
+    },
+    {
+      "path": "event-contract.json",
+      "sha256": "5b599c8723f1bb67e55feaa2363c6de8f12f4268281405b7852fa254b154df13",
+      "bytes": 4477
+    },
+    {
+      "path": "data-layer-contract.json",
+      "sha256": "f3b6a6fe07fe4be038ec95c1985bbc4071de9284f161e533226c0cace83578c9",
+      "bytes": 1410
+    },
+    {
+      "path": "sql/event_health.sql",
+      "sha256": "cbc3fbca20b2a858cccf48b3f459fb009a3a43be8cdb7addbf6e38593e00bb99",
+      "bytes": 586
+    },
+    {
+      "path": "sql/purchase_grain.sql",
+      "sha256": "04cda679bb2830bd5cca53ea0f050a97265bae5fb916b4317a0fe15a5b8bcf1c",
+      "bytes": 828
+    },
+    {
+      "path": "sql/job-statistics.sql",
+      "sha256": "be49eac5314acf5e546d371eaf8353275345ec96b69e441bebccea2c000def92",
+      "bytes": 602
+    },
+    {
+      "path": "ga4-verifier.py",
+      "sha256": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+      "bytes": 10274
+    },
+    {
+      "path": "dbt/models/fct_conversions.sql",
+      "sha256": "94ef94798e2f43a063ea317c76224fc3e9ada8068d220cb034da801b986cb4d5",
+      "bytes": 214
+    },
+    {
+      "path": "dbt/models/fct_events.sql",
+      "sha256": "8b892a78e371cd41e52429c540f35d3eba2c7c7ae236a9da7c6d6543660eefda",
+      "bytes": 612
+    },
+    {
+      "path": "dbt/models/fct_items.sql",
+      "sha256": "8baf321c9d348ea7af050176b9b2a32b2d67d35f980a2b2d91f12824ad815565",
+      "bytes": 334
+    },
+    {
+      "path": "dbt/models/fct_purchases.sql",
+      "sha256": "f79b5e73c83532b7d86021893e865075f4e7f3dce4013060832c02445bab06c1",
+      "bytes": 148
+    },
+    {
+      "path": "dbt/models/mart_channels.sql",
+      "sha256": "8d73b7965b05683461361b2f412fde97a55ea637ab53be5e74fdcc3aec72f864",
+      "bytes": 283
+    },
+    {
+      "path": "dbt/models/mart_daily.sql",
+      "sha256": "85258aa09ce9dc7f9e8beeeefc8108129ce13cd739a5e922a98a5b501747c8e5",
+      "bytes": 343
+    },
+    {
+      "path": "dbt/models/mart_health.sql",
+      "sha256": "456c52e7b6bb7cfbbdb0f5423d55463c83d83867b00bbafcaed037f9b4cc7fa6",
+      "bytes": 91
+    },
+    {
+      "path": "dbt/models/mart_project_values.sql",
+      "sha256": "d9c7b4386ace9e2145c63383b3ffd97afdecc6c221b89013cca9125b84818190",
+      "bytes": 1039
+    },
+    {
+      "path": "dbt/models/mart_reconciliation.sql",
+      "sha256": "6d2552b9ef0d945f15dcadacfa84d409089b557b178075266c1e672407577707",
+      "bytes": 1457
+    },
+    {
+      "path": "dbt/models/schema.yml",
+      "sha256": "67c9e37053589e81f7e974e2e299a1621f7ef6b43591cbb8830450b17dd81712",
+      "bytes": 1335
+    },
+    {
+      "path": "ga4_pipeline/dbt_project.yml",
+      "sha256": "a56ba894d0b8a69412c7b4bf2a35cc63447b30de2a77e48154df6174a1839f70",
+      "bytes": 403
+    },
+    {
+      "path": "ga4_pipeline/macros/source_relations.sql",
+      "sha256": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+      "bytes": 527
+    },
+    {
+      "path": "ga4_pipeline/models/fct_ga4_events.sql",
+      "sha256": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+      "bytes": 1217
+    },
+    {
+      "path": "ga4_pipeline/models/fct_ga4_items.sql",
+      "sha256": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+      "bytes": 457
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_daily.sql",
+      "sha256": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+      "bytes": 723
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_purchase_quality.sql",
+      "sha256": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+      "bytes": 1158
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_sessions.sql",
+      "sha256": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+      "bytes": 438
+    },
+    {
+      "path": "ga4_pipeline/models/schema.yml",
+      "sha256": "bdb2c9d780129993482ac19d1ceec8de453c3a6fcae4969d5341a6cdee0b5434",
+      "bytes": 2031
+    },
+    {
+      "path": "ga4_pipeline/models/staging/sources.yml",
+      "sha256": "8dfddfc143d77f1ec74ae0587eb80ba0e789ce648c158776fb5551fc057a7c33",
+      "bytes": 335
+    },
+    {
+      "path": "ga4_pipeline/models/staging/stg_event_versions.sql",
+      "sha256": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+      "bytes": 564
+    },
+    {
+      "path": "ga4_pipeline/models/staging/stg_item_versions.sql",
+      "sha256": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+      "bytes": 356
+    },
+    {
+      "path": "ga4_pipeline/profiles.yml",
+      "sha256": "bf64bffc7b8064f67c5bdad15d4e11071913837396a3f168c238d20921e58ae3",
+      "bytes": 579
+    },
+    {
+      "path": "ga4_pipeline/seeds/raw_ga4_events.csv",
+      "sha256": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+      "bytes": 615
+    },
+    {
+      "path": "ga4_pipeline/seeds/raw_ga4_items.csv",
+      "sha256": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+      "bytes": 270
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_item_grain.sql",
+      "sha256": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+      "bytes": 159
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_item_version_identity.sql",
+      "sha256": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+      "bytes": 681
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_landing_values.sql",
+      "sha256": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+      "bytes": 661
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_mart_reconciliation.sql",
+      "sha256": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+      "bytes": 667
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_no_regression.sql",
+      "sha256": "1a13f63dee48b082090f31cff42f29faa183644d93c6823df4ea44bb42f69440",
+      "bytes": 784
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_purchase_item_conservation.sql",
+      "sha256": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+      "bytes": 526
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_quality_flags.sql",
+      "sha256": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+      "bytes": 640
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_source_version_identity.sql",
+      "sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+      "bytes": 278
+    },
+    {
+      "path": "fixture-execution.json",
+      "sha256": "6368e5b7a61e80a2281d45469ced1da69f6cf848065a75b0a5aa1078a45048cf",
+      "bytes": 30221
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "418b0677c876adef65034f93ae04d221dad66ec4f837ff539e6f98c4b3fd28ad",
+      "bytes": 17140
+    },
+    {
+      "path": "projection.json",
+      "sha256": "014dbe39de7f561c52d81f1624c0fa1e817683cc337c36365a9c3ae46bd75c9d",
+      "bytes": 3114
+    },
+    {
+      "path": "observation.json",
+      "sha256": "1f297fea6d6156109168711e80f69f4a098fb8cf352826e57fa1fe5164c6b07b",
+      "bytes": 129
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "6265673c6ea44c949b1e9d65e659c0ba834d4ea37aba8272dc40dd723936a4a8",
+      "bytes": 3067
+    }
+  ],
+  "limitations": [
+    "Evermere Design + Build is synthetic. Proposal, contract and payment amounts have different grains and must not be added into revenue. Measured conversion values are claims, not money received.",
+    "Historical native BigQuery queried Google's public obfuscated ecommerce sample, not Evermere or a production GA4 export. Repeated transaction IDs do not prove ingestion duplicates. Findings remain unresolved.",
+    "Local synthetic GA4 warehouse acceptance used DuckDB/dbt, not native dbt-bigquery. Five-model parity is a recorded result; this explorer verifies records without reexecuting SQL.",
+    "No new model inference, tracking or native warehouse execution. The small pinned GA4 fixture was separately reexecuted locally. Measurement Protocol debug, a published GTM container, production ingestion and production deployment were not executed."
+  ],
+  "input_hashes": {
+    "demo.json": "a172b8ae2389cf7fada07286c427aeb1f1c097f4c8745a74daa9f7e5921439de",
+    "ledger.json": "7bf74bd1fbf42effcc92f871d52d5de5197ad0e1ed5cb1acebde93ee41b2cb44",
+    "browser.json": "a2d66e0dbb1a983f70f76f651591a940a7b32c9e56fa10694ae11f67639cc51f",
+    "software.json": "436c8b749f574cf96a8c2ad9eec4ef39c01f69b2b49d441d7c7eb2e295c6bef2",
+    "native.json": "1d883700cee5c2931c3a42072859d1a66ba0201b6dcbba21f7322482a29fa1fc",
+    "job-statistics.json": "b50a7f1a47c118426cdfc9b53f79f3250cf9de471dff9fc23258278d0bf4d546",
+    "local-warehouse.json": "a9683570b353dab16db41bad969a426936beabb1ca7c4df215ba3574b1059e47",
+    "event-contract.json": "5b599c8723f1bb67e55feaa2363c6de8f12f4268281405b7852fa254b154df13",
+    "data-layer-contract.json": "f3b6a6fe07fe4be038ec95c1985bbc4071de9284f161e533226c0cace83578c9",
+    "sql/event_health.sql": "cbc3fbca20b2a858cccf48b3f459fb009a3a43be8cdb7addbf6e38593e00bb99",
+    "sql/purchase_grain.sql": "04cda679bb2830bd5cca53ea0f050a97265bae5fb916b4317a0fe15a5b8bcf1c",
+    "sql/job-statistics.sql": "be49eac5314acf5e546d371eaf8353275345ec96b69e441bebccea2c000def92",
+    "ga4-verifier.py": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+    "dbt/models/fct_conversions.sql": "94ef94798e2f43a063ea317c76224fc3e9ada8068d220cb034da801b986cb4d5",
+    "dbt/models/fct_events.sql": "8b892a78e371cd41e52429c540f35d3eba2c7c7ae236a9da7c6d6543660eefda",
+    "dbt/models/fct_items.sql": "8baf321c9d348ea7af050176b9b2a32b2d67d35f980a2b2d91f12824ad815565",
+    "dbt/models/fct_purchases.sql": "f79b5e73c83532b7d86021893e865075f4e7f3dce4013060832c02445bab06c1",
+    "dbt/models/mart_channels.sql": "8d73b7965b05683461361b2f412fde97a55ea637ab53be5e74fdcc3aec72f864",
+    "dbt/models/mart_daily.sql": "85258aa09ce9dc7f9e8beeeefc8108129ce13cd739a5e922a98a5b501747c8e5",
+    "dbt/models/mart_health.sql": "456c52e7b6bb7cfbbdb0f5423d55463c83d83867b00bbafcaed037f9b4cc7fa6",
+    "dbt/models/mart_project_values.sql": "d9c7b4386ace9e2145c63383b3ffd97afdecc6c221b89013cca9125b84818190",
+    "dbt/models/mart_reconciliation.sql": "6d2552b9ef0d945f15dcadacfa84d409089b557b178075266c1e672407577707",
+    "dbt/models/schema.yml": "67c9e37053589e81f7e974e2e299a1621f7ef6b43591cbb8830450b17dd81712",
+    "ga4_pipeline/dbt_project.yml": "a56ba894d0b8a69412c7b4bf2a35cc63447b30de2a77e48154df6174a1839f70",
+    "ga4_pipeline/macros/source_relations.sql": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+    "ga4_pipeline/models/fct_ga4_events.sql": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+    "ga4_pipeline/models/fct_ga4_items.sql": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+    "ga4_pipeline/models/mart_ga4_daily.sql": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+    "ga4_pipeline/models/mart_ga4_purchase_quality.sql": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+    "ga4_pipeline/models/mart_ga4_sessions.sql": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+    "ga4_pipeline/models/schema.yml": "bdb2c9d780129993482ac19d1ceec8de453c3a6fcae4969d5341a6cdee0b5434",
+    "ga4_pipeline/models/staging/sources.yml": "8dfddfc143d77f1ec74ae0587eb80ba0e789ce648c158776fb5551fc057a7c33",
+    "ga4_pipeline/models/staging/stg_event_versions.sql": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+    "ga4_pipeline/models/staging/stg_item_versions.sql": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+    "ga4_pipeline/profiles.yml": "bf64bffc7b8064f67c5bdad15d4e11071913837396a3f168c238d20921e58ae3",
+    "ga4_pipeline/seeds/raw_ga4_events.csv": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+    "ga4_pipeline/seeds/raw_ga4_items.csv": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+    "ga4_pipeline/tests/assert_item_grain.sql": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+    "ga4_pipeline/tests/assert_item_version_identity.sql": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+    "ga4_pipeline/tests/assert_landing_values.sql": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+    "ga4_pipeline/tests/assert_mart_reconciliation.sql": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+    "ga4_pipeline/tests/assert_no_regression.sql": "1a13f63dee48b082090f31cff42f29faa183644d93c6823df4ea44bb42f69440",
+    "ga4_pipeline/tests/assert_purchase_item_conservation.sql": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+    "ga4_pipeline/tests/assert_quality_flags.sql": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+    "ga4_pipeline/tests/assert_source_version_identity.sql": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e"
+  },
+  "reproduce": [
+    "python scripts/import_measurement.py <pinned-measurement-git-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/measurement-integrity"
+  ],
+  "configuration_hash": "b9c81604525bb75e92f32137bb459dd1bc9a1575b441ce33afd4e6e55e6a63c1"
+}

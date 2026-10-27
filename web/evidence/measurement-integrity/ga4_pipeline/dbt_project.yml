@@ -1,0 +1,17 @@
+name: ga4_governed_warehouse
+version: '1.0.0'
+config-version: 2
+profile: ga4_governed_warehouse
+model-paths: [models]
+seed-paths: [seeds]
+test-paths: [tests]
+macro-paths: [macros]
+query-comment:
+  comment: '{"assurance_run": "{{ env_var("GA4_BQ_RUN", "offline") }}"}'
+  job-label: true
+models:
+  ga4_governed_warehouse:
+    +materialized: view
+seeds:
+  ga4_governed_warehouse:
+    +quote_columns: false

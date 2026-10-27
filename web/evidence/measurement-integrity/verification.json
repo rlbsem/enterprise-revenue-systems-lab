@@ -1,0 +1,24 @@
+{
+  "scenario": "measurement-integrity",
+  "integrity": "verified",
+  "checks": {
+    "source_facts": 25,
+    "fixture_attempts": 29,
+    "distinct_events": 19,
+    "financial_findings": 3,
+    "conversion_models": 9,
+    "local_warehouse_models": 5,
+    "native_purchase_events": 14,
+    "native_item_rows": 57,
+    "native_transaction_ids": 13,
+    "native_unresolved_variances": 2,
+    "recorded_browser_checks": 16,
+    "recorded_software_tests": 85
+  },
+  "limitations": [
+    "Evermere Design + Build is synthetic. Proposal, contract and payment amounts have different grains and must not be added into revenue. Measured conversion values are claims, not money received.",
+    "Historical native BigQuery queried Google's public obfuscated ecommerce sample, not Evermere or a production GA4 export. Repeated transaction IDs do not prove ingestion duplicates. Findings remain unresolved.",
+    "Local synthetic GA4 warehouse acceptance used DuckDB/dbt, not native dbt-bigquery. Five-model parity is a recorded result; this explorer verifies records without reexecuting SQL.",
+    "No new model inference, tracking or native warehouse execution. The small pinned GA4 fixture was separately reexecuted locally. Measurement Protocol debug, a published GTM container, production ingestion and production deployment were not executed."
+  ]
+}

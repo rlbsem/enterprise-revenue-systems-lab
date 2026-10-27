@@ -243,7 +243,11 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if manifest["scenario"] == "analytics-engineering":
+    if manifest["scenario"] == "measurement-integrity":
+        from .measurement_checks import measurement, verify_original_bytes
+        verify_original_bytes(Path(path), files["upstream.json"])
+        checks = measurement(files)
+    elif manifest["scenario"] == "analytics-engineering":
         from .analytics_checks import analytics, verify_original_bytes
 
         verify_original_bytes(Path(path), files["upstream.json"])
