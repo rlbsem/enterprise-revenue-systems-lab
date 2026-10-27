@@ -79,7 +79,7 @@ def test_seven_prior_investigations_and_evidence_are_preserved():
     snapshot = json.loads((ROOT / "docs/evidence/analytics-engineering/prior-ui.json").read_bytes())
     before = {r["id"]: r for r in json.loads(snapshot["files"]["web/catalog.json"])["scenarios"]}
     after = {r["id"]: r for r in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert set(after) - set(before) == {"analytics-engineering"}
+    assert set(after) - set(before) == {"analytics-engineering", "measurement-integrity"}
     for k, v in before.items():
         expected = dict(v)
         if k == "revenue-integrity":

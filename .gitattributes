@@ -5,3 +5,5 @@
 web/evidence/release-assurance/** -text
 web/evidence/revenue-integrity/** -text
 web/evidence/analytics-engineering/** -text
+
+web/evidence/measurement-integrity/** -text

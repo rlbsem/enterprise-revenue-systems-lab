@@ -14,11 +14,15 @@
 | A real model can qualify and be routed through a local staged release | [Pinned release acceptance](model-release-assurance.md): exact original summaries, rejected traces, request hashes, routing fingerprints and independent receipts | 192 selected-summary task outcomes; actual source model runs, separate 79-test software regression and synthetic effects. Finite-suite acceptance does not establish production reliability, general accuracy or commercial outcomes. |
 | The recorded order-to-cash discrepancy remains visible after delivery recovery | [Revenue Integrity](revenue-integrity.md): raw financial exports, exact invoice/receipt checks and separate operator-browser assertions | Pinned historical local-contract acceptance. The viewer does not certify general financial correctness or execute privileged actions; missing recovery journal rows remain explicitly unclaimed. |
 
-The six source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
+The seven source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
 
 ## Analytics model correctness and performance
 
 The [eighth investigation](analytics-engineering.md) imports later Revenue Metrics evidence at a separate pin. It preserves the third investigation and distinguishes controlled local 60K/180K benchmarks, a fresh small local fixture and historical native Snowflake acceptance. A selective rebuild candidate remains rejected. Offline checks verify imported bytes, recorded relationships and median arithmetic; they do not rerun the large warehouse comparisons or establish cloud performance.
+
+## First-party measurement
+
+The [ninth investigation](measurement-integrity.md) imports exact conversion, browser, native Google sample and local warehouse records at a separate source pin. It recomputes money from source facts, preserves missing and overstated conversions, and exposes the SQL and job IDs behind native sample observations. A fresh small local GA4 DuckDB/dbt run contributes all five rowsets and an independent full-build comparison; it is not native Google execution.
 
 ## Known limitations
 
@@ -27,4 +31,4 @@ The [eighth investigation](analytics-engineering.md) imports later Revenue Metri
 - AWS operation, new Snowflake queries and fresh large stress benchmarks remain outside new Lab execution. The connected case presents verified historical Snowflake acceptance from its source repository.
 - The recorded full-warehouse comparison requires fresh execution to independently repeat; compact downloads contain selected source/model rows.
 - Performance timings are individual workstation observations, not capacity guarantees.
-- Main `834750d` has a successful [Pages deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/40426684205) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/40426758284). The [release QA observation](release-qa-eight.md) independently checks that public baseline. PR #10 presentation changes remain unpublished; `web/**` changes on main deploy through the existing workflow after approval.
+- Main `834750d` has a successful [Pages deployment](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/40426684205) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/runs/40426758284). The [release QA observation](release-qa-eight.md) preserves that historical public baseline. PR #10 has since merged; the ninth investigation remains a feature-branch change; `web/**` changes on main deploy through the existing workflow after approval.

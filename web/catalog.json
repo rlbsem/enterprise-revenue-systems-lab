@@ -93,6 +93,19 @@
       "mode": "recorded"
     },
     {
+      "id": "measurement-integrity",
+      "investigation": "measurement",
+      "title": "First-Party Measurement — Conversion & Revenue Integrity",
+      "summary": "Reconcile synthetic source contracts and payments against measured claims; inspect recorded browser controls, local GA4 models and separate native Google sample queries.",
+      "manifest_sha256": "fdfcb877416b979ce7c27eb6730083fe80763c8635f1255365d3f4912333e28d",
+      "verification_sha256": "cb8b5a2e63e404a1b95eade180b836f89ea56bb61730d3eecff9693cc0242769",
+      "source": {
+        "repository": "rlbsem/first-party-measurement-assurance",
+        "commit": "88a197c761cfd167c19e3d23039948ffe6bb7f2b"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "release-assurance",
       "investigation": "release",
       "title": "AI Model Release Assurance",
