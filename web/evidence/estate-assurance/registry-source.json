@@ -1,0 +1,74 @@
+{
+  "format": "change-source/v1",
+  "records": [
+    {
+      "kind": "interface",
+      "subject": "atlas/workbench",
+      "value": {
+        "events": [
+          "campaign.ready"
+        ],
+        "fields": [
+          "account_id",
+          "permission"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "location": "record:1"
+    },
+    {
+      "kind": "interface",
+      "subject": "atlas/modern",
+      "value": {
+        "events": [
+          "campaign.ready"
+        ],
+        "fields": [
+          "account_id"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "location": "record:2"
+    },
+    {
+      "kind": "integration",
+      "subject": "atlas/sync",
+      "value": {
+        "source": "atlas/crm",
+        "destination": "parent/hub",
+        "runtime": "parent/hub",
+        "owner": "atlas Operations",
+        "mode": "data_flow"
+      },
+      "location": "record:3"
+    },
+    {
+      "kind": "integration",
+      "subject": "boreal/sync",
+      "value": {
+        "source": "boreal/crm",
+        "destination": "parent/hub",
+        "runtime": "parent/hub",
+        "owner": "boreal Operations",
+        "mode": "data_flow"
+      },
+      "location": "record:4"
+    },
+    {
+      "kind": "integration",
+      "subject": "cinder/sync",
+      "value": {
+        "source": "cinder/crm",
+        "destination": "parent/hub",
+        "runtime": "parent/hub",
+        "owner": "cinder Operations",
+        "mode": "data_flow"
+      },
+      "location": "record:5"
+    }
+  ]
+}

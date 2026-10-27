@@ -1,0 +1,95 @@
+{
+  "schema": "lab-assurance-verification.v1",
+  "recorded_at": "2026-10-27T21:46:29.856084+00:00",
+  "scope": "Actual local regression and static browser acceptance, not new source-engine or vendor execution",
+  "baseline": "6135acd0c8ff4e4970d05ece035b31f963120ad6",
+  "tests": {
+    "tests": 256,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 91.821,
+    "original_junit_sha256": "8f39ed711c7860d5ab8647b0f6034b395098fd24a7f518fb562edbf90130ef9d"
+  },
+  "browser_checks": {
+    "presentation": {
+      "record_sha256": "9011e6aeea13663e7039b8fba073dbfe7d47c7ab09eeb15cbec1fdae0c342d0b",
+      "layout_contrast_observations": 420,
+      "automated_accessibility_states": 0,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "research": {
+      "record_sha256": "7f090d68ac5e54fdc033494b0d56ed27e166e108ce43029bd87b5a13c6ce313a",
+      "layout_contrast_observations": 20,
+      "automated_accessibility_states": 2,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "release": {
+      "record_sha256": "0abef4a1fbe8d4739018f12b2371e2e61b590bc56bf6f6a20ba4bed646a7fe47",
+      "layout_contrast_observations": 50,
+      "automated_accessibility_states": 14,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "integrity": {
+      "record_sha256": "80e21a65dfc7f1ee4f4e576fcea949fcf57cdeaee31424b52b1aa060ad551931",
+      "layout_contrast_observations": 40,
+      "automated_accessibility_states": 10,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "analytics": {
+      "record_sha256": "da85d02da3584e418df70ef0e3e068261a64e746e6fc46f31e056f2faaaa4d41",
+      "layout_contrast_observations": 40,
+      "automated_accessibility_states": 10,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "measurement": {
+      "record_sha256": "7efba10c29017ed4a7c3020875833dcc5ecc0b167bd2ab24157c47156256d008",
+      "layout_contrast_observations": 40,
+      "automated_accessibility_states": 10,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    },
+    "assurance": {
+      "record_sha256": "86f90af4fb041435ceeaed9523f76d63e40817b02a3ef66ddd46c536ec605a72",
+      "layout_contrast_observations": 111,
+      "automated_accessibility_states": 30,
+      "accessibility_violations": 0,
+      "page_errors": 0,
+      "status": "passed"
+    }
+  },
+  "total_layout_contrast_observations": 721,
+  "total_automated_accessibility_states": 76,
+  "pages_path_smoke": {
+    "checks": 48,
+    "failures": 0,
+    "record_sha256": "3ecfee7984a7221f626e054e0e30b05188ecfb54d187b9aef73576423ec432c0",
+    "public_deployment": false
+  },
+  "historical_preservation": {
+    "files": 476,
+    "unchanged": true,
+    "inventory_sha256": "31e25e726998ccd63fcdb823a06c63a2f41ec5cd3b85f87fd83712550c95d755"
+  },
+  "source_imports": {
+    "original_files": 24,
+    "sources": 3,
+    "new_source_execution": false
+  },
+  "limitations": [
+    "Automated accessibility is not a complete human usability assessment.",
+    "Only the three new investigations have new committed screenshots; the broader capture outputs remain reproducible through the existing CI commands.",
+    "GitHub CI and public deployment are separate from these local observations. No merge or deployment was performed."
+  ]
+}

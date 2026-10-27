@@ -49,6 +49,8 @@ jobs:
         run: python scripts/capture_analytics.py --images .cache/analytics/screenshots --output .cache/analytics/browser.json
       - name: Verify measurement evidence, layouts and accessibility
         run: python scripts/capture_measurement.py --images .cache/measurement/screenshots --output .cache/measurement/browser.json
+      - name: Verify architecture, reliability and temporal investigations
+        run: python scripts/capture_assurance.py --images .cache/assurance/screenshots --output .cache/assurance/browser.json
       - run: python scripts/check_repository.py
       - run: python scripts/build.py
   source-engines:

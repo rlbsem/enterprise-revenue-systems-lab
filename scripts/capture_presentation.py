@@ -14,6 +14,9 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = {
+    "estate": "estate-assurance",
+    "reliability": "reliability-operations",
+    "temporal": "temporal-assurance",
     "analytics": "analytics-engineering",
     "measurement": "measurement-integrity",
     "integrity": "revenue-integrity",
@@ -198,6 +201,8 @@ def main():
                         != "none"
                     )
                     expected_label = (
+                        "Verify these recorded assurance artifacts offline"
+                        if investigation in {"estate", "reliability", "temporal"} else
                         "Verify this recorded financial scenario offline"
                         if investigation == "integrity" else
                         "Verify this recorded release offline"

@@ -1,0 +1,1583 @@
+{
+  "captured_at": "2026-10-27T21:42:27.071475+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "Actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
+  "source_sha256": {
+    "web/app.js": "ff36e05fe26cfc1cb9b6a4930bfd3fcdcf77fa926298167bdc71679d78cc6333",
+    "web/assurance.js": "14aef0fe453f98d68c76c9468ca313c39fa27b49a0ad6d76142a55c77559021c",
+    "web/assurance.css": "5ee1a4337b2a4559d884670c7d7ddc8bb4bd2ecaed797d492cddf8e4969c9b6c",
+    "web/style.css": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",
+    "web/index.html": "4064ce19c70e4d5cbee5c3389a224508120f08f2894d163c84d93b41533a9f2f",
+    "web/catalog.json": "43280bf409736652c839bdb16bf7d3ccf9723410d3e32f3d1ea477162a255185",
+    "sources.lock.json": "9e6cae12f1ab5d914efc09837bb38a2d7e97f842f0d26fc5f7693225225216da",
+    "scripts/capture_assurance.py": "8ce8030a0249b008729cf1cfdf336763b292d2c91e14d0d11008ca1bfcbf10d4"
+  },
+  "image_sha256": {
+    "estate-desktop.png": "4c21b853e2babddb6acac4ef34b9dd6fec5dc55c660d1cf13f27d3d1c2ac0d61",
+    "estate-proof.png": "0a1c9e5aa8a9f80948cc7c639cbf5acf262e5836dfb412509f7a3d7dee11440c",
+    "estate-mobile.png": "730706bdccbf68a5a5df7594393afebdc5729c538607f5924aa55ec6b07b61fc",
+    "reliability-desktop.png": "73b2bfddb7d52699cb5bd3d2da8ddddd5f9cea471fbba740da236c9cdf8d9d90",
+    "reliability-proof.png": "386689d1c293821c5c57553f24fdc88f7330431a82ceb1aa1d6ca3000d3847a6",
+    "reliability-mobile.png": "405dc2449a7f10b98f318980ae9e60894802712ced469c209301b424bde59368",
+    "temporal-desktop.png": "ca2e23defaa04f46219b72ccf8e617a257de654a2419107b429bd5aee4ede827",
+    "temporal-proof.png": "4ae2ddb775301505411d5e7c2fd6b2972383bae26b7a0c97ebf9220102cc2584",
+    "temporal-mobile.png": "75cf459fb9690b987c623036deb08872e64a63baa465df82158bf470b997331c"
+  },
+  "images": {
+    "estate-desktop.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "estate-assurance",
+      "stage": "impact",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "estate-proof.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "estate-assurance",
+      "stage": "review",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "estate-mobile.png": {
+      "width": 390,
+      "height": 1050,
+      "case": "estate-assurance",
+      "stage": "review",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "reliability-desktop.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "reliability-operations",
+      "stage": "publication",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "reliability-proof.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "reliability-operations",
+      "stage": "candidates",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "reliability-mobile.png": {
+      "width": 390,
+      "height": 1050,
+      "case": "reliability-operations",
+      "stage": "candidates",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "temporal-desktop.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "temporal-assurance",
+      "stage": "time",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "temporal-proof.png": {
+      "width": 1440,
+      "height": 1250,
+      "case": "temporal-assurance",
+      "stage": "delivery",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    },
+    "temporal-mobile.png": {
+      "width": 390,
+      "height": 1050,
+      "case": "temporal-assurance",
+      "stage": "delivery",
+      "capture": "Actual viewport of static dist; recorded synthetic evidence, no compositing"
+    }
+  },
+  "layouts": [
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "impact",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "review",
+      "overflow": false,
+      "contrast": {
+        "checked": 159,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "evidence",
+      "overflow": false,
+      "contrast": {
+        "checked": 135,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "evidence:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 135,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "state": "impact",
+      "overflow": false,
+      "contrast": {
+        "checked": 180,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "state": "review",
+      "overflow": false,
+      "contrast": {
+        "checked": 159,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "state": "evidence",
+      "overflow": false,
+      "contrast": {
+        "checked": 135,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "state": "impact",
+      "overflow": false,
+      "contrast": {
+        "checked": 180,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "state": "review",
+      "overflow": false,
+      "contrast": {
+        "checked": 159,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "state": "evidence",
+      "overflow": false,
+      "contrast": {
+        "checked": 135,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "impact",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "review",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "evidence",
+      "overflow": false,
+      "contrast": {
+        "checked": 101,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "evidence:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 101,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "state": "impact",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "state": "review",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "state": "evidence",
+      "overflow": false,
+      "contrast": {
+        "checked": 101,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "state": "proof",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "publication",
+      "overflow": false,
+      "contrast": {
+        "checked": 153,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "candidates",
+      "overflow": false,
+      "contrast": {
+        "checked": 157,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "sources",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "sources:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 130,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 162,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "state": "publication",
+      "overflow": false,
+      "contrast": {
+        "checked": 155,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "state": "candidates",
+      "overflow": false,
+      "contrast": {
+        "checked": 157,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "state": "sources",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 162,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "state": "publication",
+      "overflow": false,
+      "contrast": {
+        "checked": 155,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "state": "candidates",
+      "overflow": false,
+      "contrast": {
+        "checked": 157,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "state": "sources",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 162,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "publication",
+      "overflow": false,
+      "contrast": {
+        "checked": 121,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "candidates",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "sources",
+      "overflow": false,
+      "contrast": {
+        "checked": 91,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "sources:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 96,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 128,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "state": "publication",
+      "overflow": false,
+      "contrast": {
+        "checked": 121,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "state": "candidates",
+      "overflow": false,
+      "contrast": {
+        "checked": 123,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "state": "sources",
+      "overflow": false,
+      "contrast": {
+        "checked": 91,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "state": "recovery",
+      "overflow": false,
+      "contrast": {
+        "checked": 128,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "time",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "permissions",
+      "overflow": false,
+      "contrast": {
+        "checked": 138,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 131,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "delivery:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 134,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "destination",
+      "overflow": false,
+      "contrast": {
+        "checked": 194,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "state": "time",
+      "overflow": false,
+      "contrast": {
+        "checked": 142,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "state": "permissions",
+      "overflow": false,
+      "contrast": {
+        "checked": 138,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 131,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "state": "destination",
+      "overflow": false,
+      "contrast": {
+        "checked": 194,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "state": "time",
+      "overflow": false,
+      "contrast": {
+        "checked": 142,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "state": "permissions",
+      "overflow": false,
+      "contrast": {
+        "checked": 138,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 131,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "state": "destination",
+      "overflow": false,
+      "contrast": {
+        "checked": 194,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 99,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 105,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "time",
+      "overflow": false,
+      "contrast": {
+        "checked": 108,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "permissions",
+      "overflow": false,
+      "contrast": {
+        "checked": 104,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "delivery:expanded",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "destination",
+      "overflow": false,
+      "contrast": {
+        "checked": 160,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "state": "time",
+      "overflow": false,
+      "contrast": {
+        "checked": 108,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "state": "permissions",
+      "overflow": false,
+      "contrast": {
+        "checked": 104,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "state": "delivery",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "state": "destination",
+      "overflow": false,
+      "contrast": {
+        "checked": 160,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 65,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 66,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "impact",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "review",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "evidence",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "evidence:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "state": "proof",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "impact",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "review",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "evidence",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "evidence:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "estate-assurance",
+      "width": 390,
+      "state": "proof",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "publication",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "candidates",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "sources",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "sources:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "state": "recovery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "publication",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "candidates",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "sources",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "sources:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "case": "reliability-operations",
+      "width": 390,
+      "state": "recovery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "time",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "permissions",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "delivery:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "state": "destination",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "time",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "permissions",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "delivery",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "delivery:expanded",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 390,
+      "state": "destination",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    }
+  ],
+  "interactions": {
+    "estate": [
+      "company-scoped platform choices",
+      "interactive requirement inputs and source witness",
+      "replacement revisions retain readiness failures",
+      "conflicting claims remain inspectable"
+    ],
+    "reliability": [
+      "equal-count wrong-value publication refusal",
+      "outage coverage schema race and full-rebuild candidates",
+      "independently stored acknowledgments for all three sources"
+    ],
+    "temporal": [
+      "same local person identity remains brand scoped",
+      "two-time history and separate permission evidence",
+      "lost acknowledgment and independent business-record receipt",
+      "missing destination state is not called synchronized"
+    ]
+  },
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "http_writes": [],
+  "new_source_engine_execution": false,
+  "new_model_execution": false,
+  "new_vendor_execution": false
+}

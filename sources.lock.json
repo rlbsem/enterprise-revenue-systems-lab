@@ -40,6 +40,18 @@
     "measurement": {
       "repository": "rlbsem/first-party-measurement-assurance",
       "commit": "88a197c761cfd167c19e3d23039948ffe6bb7f2b"
+    },
+    "estate": {
+      "repository": "rlbsem/martech-estate-impact",
+      "commit": "11890321d8cd6c164da236cad7896d00b6e0938e"
+    },
+    "reliability": {
+      "repository": "rlbsem/martech-data-reliability",
+      "commit": "225964aead1a3f697007605534613f5a813aaed9"
+    },
+    "temporal": {
+      "repository": "rlbsem/temporal-customer-audiences",
+      "commit": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc"
     }
   },
   "gtm_imports": {
@@ -965,5 +977,172 @@
         "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/88a197c761cfd167c19e3d23039948ffe6bb7f2b/ga4_pipeline/tests/assert_source_version_identity.sql"
       }
     ]
+  },
+  "assurance_imports": {
+    "estate-assurance": {
+      "repository": "rlbsem/martech-estate-impact",
+      "import_revision": "11890321d8cd6c164da236cad7896d00b6e0938e",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/change-assurance/run-03/estate-record.json",
+          "sha256": "8cb57cfe7056dfd03b10e5a52daf386ba0c77ea725e0f473f3d36c2de94b03c9",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/estate-record.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/change-assurance/run-03/verification.json",
+          "sha256": "579f498c721e3167bf25dfd10f51e1a7086311bcb03cd952df23a7b6dd1c57f0",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/verification.json"
+        },
+        {
+          "file": "comparison.json",
+          "source_path": "docs/evidence/change-assurance/run-03/oracle-comparison.json",
+          "sha256": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/oracle-comparison.json"
+        },
+        {
+          "file": "catalog-source.json",
+          "source_path": "fixtures/change-assurance/catalog.json",
+          "sha256": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/catalog.json"
+        },
+        {
+          "file": "cmdb.csv",
+          "source_path": "fixtures/change-assurance/cmdb.csv",
+          "sha256": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/cmdb.csv"
+        },
+        {
+          "file": "owner-source.json",
+          "source_path": "fixtures/change-assurance/owner.json",
+          "sha256": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/owner.json"
+        },
+        {
+          "file": "registry-source.json",
+          "source_path": "fixtures/change-assurance/registry.json",
+          "sha256": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/registry.json"
+        },
+        {
+          "file": "execution-source.json",
+          "source_path": "fixtures/change-assurance/execution.json",
+          "sha256": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/execution.json"
+        },
+        {
+          "file": "requirement-engine.py",
+          "source_path": "src/estate_impact/requirements.py",
+          "sha256": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_impact/requirements.py"
+        },
+        {
+          "file": "governance-source.py",
+          "source_path": "src/estate_change/service.py",
+          "sha256": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/service.py"
+        },
+        {
+          "file": "governance.sql",
+          "source_path": "src/estate_change/schema.sql",
+          "sha256": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/schema.sql"
+        }
+      ]
+    },
+    "reliability-operations": {
+      "repository": "rlbsem/martech-data-reliability",
+      "import_revision": "225964aead1a3f697007605534613f5a813aaed9",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/operations/run02/acceptance.json",
+          "sha256": "2f91c2805c192fb421a1fbd4133cd23a6e67d082b7fc1c0eb0cb33c5cc0bbd58",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/acceptance.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/operations/run02/verification.json",
+          "sha256": "7bfbedf1ceafb8cdb2e9180aa845686ed74dc84102c8626d068d33c3b4948684",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/verification.json"
+        },
+        {
+          "file": "crashes.json",
+          "source_path": "docs/evidence/operations/run02/original-recovery.json",
+          "sha256": "8a9d498b01e589ee06a7f2240362b4b9c28098dcb25840eb3eb90919223fe951",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/original-recovery.json"
+        },
+        {
+          "file": "contracts-source.py",
+          "source_path": "src/marketing_reliability/contracts.py",
+          "sha256": "c031e62080e92a486977940c00a44560cc407c7358745c62230949c2abfa02d3",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/contracts.py"
+        },
+        {
+          "file": "controller-source.py",
+          "source_path": "src/reliability_ops/controller.py",
+          "sha256": "428cd83c5c25efb1172624a5c071b845f17d27479d5399fab6c62772c0348e80",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/reliability_ops/controller.py"
+        },
+        {
+          "file": "publication.sql",
+          "source_path": "src/marketing_reliability/sql/campaign_daily.sql",
+          "sha256": "23324167067a04f934cf0c50fe03aa548e40531a1efce78c4cecfce38427881e",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/sql/campaign_daily.sql"
+        }
+      ]
+    },
+    "temporal-assurance": {
+      "repository": "rlbsem/temporal-customer-audiences",
+      "import_revision": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/activation-assurance/run02/acceptance.json",
+          "sha256": "009d56e2084ede3c8c0c71165a721fd7e646cd8da6606f201da7f44b192074d6",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/acceptance.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/activation-assurance/run02/verification.json",
+          "sha256": "082ad60a0d96d1a9ba1d9b68a8cb39368e3058bc3d33b225fca5572328a6a09e",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/verification.json"
+        },
+        {
+          "file": "temporal-proof.json",
+          "source_path": "docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json",
+          "sha256": "718b6239b6ce4298c30832df790418776f503d051552f5a839c6e3dba8b54881",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json"
+        },
+        {
+          "file": "ci-record.json",
+          "source_path": "docs/evidence/activation-assurance/ci-execution.json",
+          "sha256": "8967bdefae699495f004e861b70f110a51df5328720f4aa7b61ed836ca673ef8",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/ci-execution.json"
+        },
+        {
+          "file": "operating.sql",
+          "source_path": "src/audience_ops/operating.sql",
+          "sha256": "a3755f0c152c235dea91ff1b722eb0cf79689058654ec1e19fe62e6a3799a94a",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/operating.sql"
+        },
+        {
+          "file": "permission-source.py",
+          "source_path": "src/audience_ops/activation.py",
+          "sha256": "2ad6d0a0e5eb515de4fefe37c153c7022317dc48877904603375428983915f7e",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/activation.py"
+        },
+        {
+          "file": "delivery-source.py",
+          "source_path": "src/audience_ops/worker.py",
+          "sha256": "13a3461b39e1459131fda1aed6c1f09ccef7bb29bc049516698d22d1aa6fe248",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/worker.py"
+        }
+      ]
+    }
   }
 }

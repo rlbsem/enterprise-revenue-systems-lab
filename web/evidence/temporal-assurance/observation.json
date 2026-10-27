@@ -1,0 +1,19 @@
+{
+  "scope": "Read-only recorded evidence inspection",
+  "synthetic": true,
+  "new_source_execution": false,
+  "new_native_external_execution": false,
+  "summary": {
+    "brands": 2,
+    "publications": 10,
+    "historical_decisions": 164,
+    "eligibility_rows": 20,
+    "eligible": [],
+    "effects": 11,
+    "intents": 17,
+    "observed_requests": 16,
+    "lost_acknowledgments": 1,
+    "native_external_execution": false,
+    "boundary": "Offline reconstruction of selected original records; no new source-engine, vendor or model execution."
+  }
+}

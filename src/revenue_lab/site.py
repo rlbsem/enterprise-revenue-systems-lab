@@ -8,6 +8,12 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "estate-assurance": ("estate", "Enterprise Change Assurance",
+        "Inspect company-scoped dependencies, recorded retirement consequences, immutable revisions and unresolved readiness gates."),
+    "reliability-operations": ("reliability", "MarTech Data Reliability",
+        "Trace independently persisted source deliveries, exact checkpoints and failed publication decisions to reconciled reporting values."),
+    "temporal-assurance": ("temporal", "Temporal Audience Assurance",
+        "Compare business time with knowledge time, then inspect current permissions, uncertain delivery and independent destination records."),
     "measurement-integrity": ("measurement", "First-Party Measurement — Conversion & Revenue Integrity",
         "Reconcile synthetic source contracts and payments against measured claims; inspect recorded browser controls, local GA4 models and separate native Google sample queries."),
     "analytics-engineering": ("analytics", "Analytics Engineering — Model Correctness & Performance",

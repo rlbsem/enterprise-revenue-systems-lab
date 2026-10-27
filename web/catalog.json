@@ -41,6 +41,19 @@
       "mode": "fresh_engine"
     },
     {
+      "id": "estate-assurance",
+      "investigation": "estate",
+      "title": "Enterprise Change Assurance",
+      "summary": "Inspect company-scoped dependencies, recorded retirement consequences, immutable revisions and unresolved readiness gates.",
+      "manifest_sha256": "7ce1e2331fa16e439ec6ce0a57b0376cf391edaa44f35f222f70511ac260e0c3",
+      "verification_sha256": "1c5a7ebb522b7273d92b3d3626e98c5f927ea59693a91b5fc1597b0390720883",
+      "source": {
+        "repository": "rlbsem/martech-estate-impact",
+        "commit": "11890321d8cd6c164da236cad7896d00b6e0938e"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "gtm-enterprise",
       "investigation": "gtm",
       "title": "120 accounts · USD $3.46M synthetic pipeline",
@@ -115,6 +128,19 @@
       "source": {
         "repository": "rlbsem/enterprise-agent-runtime-evaluation",
         "commit": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "reliability-operations",
+      "investigation": "reliability",
+      "title": "MarTech Data Reliability",
+      "summary": "Trace independently persisted source deliveries, exact checkpoints and failed publication decisions to reconciled reporting values.",
+      "manifest_sha256": "0d21768e60697df36b9c718d94ab33cce6d004db4ed4c3ad48c57ba05eb4567b",
+      "verification_sha256": "17f9be11bc078bceb51a4145ec59f5b6574b1d5c64cc06a2ff8af5b64f3e7d49",
+      "source": {
+        "repository": "rlbsem/martech-data-reliability",
+        "commit": "225964aead1a3f697007605534613f5a813aaed9"
       },
       "mode": "recorded"
     },
@@ -234,6 +260,19 @@
         "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
       },
       "mode": "fresh_replay"
+    },
+    {
+      "id": "temporal-assurance",
+      "investigation": "temporal",
+      "title": "Temporal Audience Assurance",
+      "summary": "Compare business time with knowledge time, then inspect current permissions, uncertain delivery and independent destination records.",
+      "manifest_sha256": "19dfef5037389039679a57bc43e331840551e9383533c7d8fbebe538d66b010b",
+      "verification_sha256": "c93a651806e4a2ca415653c6799cb7f185edb2acd41b6caee95af61c75ecfc00",
+      "source": {
+        "repository": "rlbsem/temporal-customer-audiences",
+        "commit": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc"
+      },
+      "mode": "recorded"
     }
   ]
 }

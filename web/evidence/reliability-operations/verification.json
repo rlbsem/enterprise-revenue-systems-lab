@@ -1,0 +1,34 @@
+{
+  "scenario": "reliability-operations",
+  "integrity": "verified",
+  "checks": {
+    "sources": 3,
+    "source_positions": 11,
+    "row_accounting": {
+      "admitted": 27,
+      "duplicate": 2,
+      "quarantined": 2
+    },
+    "latest_records": 19,
+    "superseded": 8,
+    "rows": 6,
+    "active_run": 13,
+    "totals": {
+      "cost_cents": 41000,
+      "impressions": 4000,
+      "clicks": 400,
+      "conversions": 6,
+      "revenue_cents": 115000
+    },
+    "raw_source_rows_reconciled": 19,
+    "candidates": 13,
+    "native_external_execution": false,
+    "boundary": "Offline reconstruction of selected original records; no new source-engine, vendor or model execution."
+  },
+  "limitations": [
+    "All companies, people, source feeds, financial values and destination effects are synthetic. No customer result, causal uplift, vendor certification or production reliability is established.",
+    "Original records describe executed local software and independent synthetic source/receiver services. They are not native marketing-platform acceptance or a continuous workflow shared with other investigations.",
+    "This browser replays records. Its offline checker reconstructs selected relationships, arithmetic and temporal answers; it does not rerun the source engines, authorize changes, contact a person or connect to a live database.",
+    "Captured approvals, permissions, coverage and readiness describe the recorded clock only. Historical receipts and restatements never authorize a new present-day action."
+  ]
+}
