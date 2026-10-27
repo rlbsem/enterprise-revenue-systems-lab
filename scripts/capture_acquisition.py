@@ -70,6 +70,15 @@ def main():
                     if width in [1440,390]:
                         result=page.evaluate("async()=>{const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {violations:r.violations,incomplete:r.incomplete.map(x=>({id:x.id,impact:x.impact})),passes:r.passes.length}}")
                         accessibility.append({"width":width,"state":stage,**result})
+                if width in [1440,390]:
+                    page.get_by_text("fct_invoices.sql",exact=True).click()
+                    code=page.locator(".acquisition-investigation details[open] > pre").last
+                    assert code.get_attribute("tabindex")=="0"
+                    code.focus();page.keyboard.press("ArrowDown")
+                    layouts.append({"width":width,"state":"proof-sql-expanded","overflow":page.evaluate("document.documentElement.scrollWidth>innerWidth"),"contrast":page.evaluate(CONTRAST)})
+                    result=page.evaluate("async()=>{const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {violations:r.violations,incomplete:r.incomplete.map(x=>({id:x.id,impact:x.impact})),passes:r.passes.length}}")
+                    accessibility.append({"width":width,"state":"proof-sql-expanded",**result})
+                    page.get_by_text("fct_invoices.sql",exact=True).click()
                 for tab in ["Source records","Evidence timeline","Compare & verify"]:
                     page.get_by_role("tab",name=tab,exact=True).click()
                     layouts.append({"width":width,"tab":tab,"overflow":page.evaluate("document.documentElement.scrollWidth>innerWidth"),"contrast":page.evaluate(CONTRAST)})

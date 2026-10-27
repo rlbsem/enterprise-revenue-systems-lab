@@ -78,7 +78,8 @@ def test_acquisition_static_interface_and_records_do_not_expose_secrets():
 
 def test_acquisition_genuine_screenshots_and_accessibility_provenance():
  r=json.loads((ROOT/"docs/evidence/acquisition-governance/browser.json").read_bytes())
- assert len(r["layouts"])==45 and len(r["accessibility"])==12
+ assert len(r["layouts"])==47 and len(r["accessibility"])==14
+ assert {x["width"] for x in r["accessibility"] if x["state"]=="proof-sql-expanded"}=={1440,390}
  assert not r["http_writes"] and not r["nonlocal_requests"] and not r["page_errors"]
  assert all(not x["overflow"] and not x["contrast"]["failures"] for x in r["layouts"])
  assert all(not x["violations"] for x in r["accessibility"])

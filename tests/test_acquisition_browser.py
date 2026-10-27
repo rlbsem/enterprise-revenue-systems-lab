@@ -28,6 +28,10 @@ def test_acquisition_identity_admission_receipts_financial_versions_and_download
    summary=page.locator("summary").filter(has_text="published rows · "+n);summary.click();assert summary.locator("..").locator("pre").inner_text()
   page.locator('[data-acquisition-stage="history"]').click();assert "Original-cutoff replay equal" in page.locator(".acquisition-investigation").inner_text()
   page.locator('[data-acquisition-stage="proof"]').click();assert "62 passing tests" in page.locator(".acquisition-investigation").inner_text()
+  page.get_by_text("fct_invoices.sql",exact=True).click()
+  code=page.locator(".acquisition-investigation details[open] > pre").last
+  assert code.get_attribute("tabindex")=="0"
+  code.focus();page.keyboard.press("ArrowDown")
   with page.expect_download() as event:page.get_by_role("link",name="Download reproduction ZIP").click()
   target=tmp_path/"acquisition.zip";event.value.save_as(target);check_zip(target.read_bytes(),ROOT/"web/evidence/acquisition-governance")
   page.get_by_text("Validate a downloaded portable bundle",exact=True).click()

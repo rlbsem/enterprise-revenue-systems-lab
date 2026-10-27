@@ -55,16 +55,16 @@
       "bytes": 6416
     },
     "docs/evidence/acquisition-governance/README.md": {
-      "sha256": "49737862b17a72a474b710b8a112f8db08f2420a8738a9fefcbc9a3eb737f899",
+      "sha256": "8c5b3f4f059482a1e19459e7d9190c7c8036f14df8faa9db84975aea63192717",
       "bytes": 1867
     },
     "docs/evidence/acquisition-governance/browser.json": {
-      "sha256": "043a7f42c0e4148f4e56087610185333ed65c1f00e8bad6427d16e03711b9b04",
-      "bytes": 12402
+      "sha256": "8621da15d4b5a55cba730ed415a70466ef0a095247c8dcde48f2509de50afefa",
+      "bytes": 13173
     },
     "docs/evidence/acquisition-governance/local-verification.json": {
-      "sha256": "d3f28e38d5db78a5eeed354922c9aed21d4bfebfd0f8321efb505ef15887b018",
-      "bytes": 38328
+      "sha256": "4e662d697d163e72063c2f6a3542d80a6b6ad7a7e40e660e5c89bca481a580a0",
+      "bytes": 38500
     },
     "docs/evidence/acquisition-governance/preserved-files.json": {
       "sha256": "352f905edaaa3250d9056031cc1fdb92dc3b0837599d5fbba864512da6165129",
@@ -827,8 +827,8 @@
       "bytes": 150
     },
     "scripts/capture_acquisition.py": {
-      "sha256": "9461a0443e3c9738c30792fb382845fad65d182accfa0c28de0b7c38418e19f7",
-      "bytes": 7752
+      "sha256": "dc82a9b1ac1540d343df74f1efa117a22f2dff02ac4bba6cf750569845cd8091",
+      "bytes": 8719
     },
     "scripts/capture_analytics.py": {
       "sha256": "74373f64382d5c276f356262d47be62d57a0d1fbc18951609fb0228b2f774482",
@@ -1007,12 +1007,12 @@
       "bytes": 302
     },
     "tests/test_acquisition.py": {
-      "sha256": "1ebb457f1de1dd1ca303026a476f7f0dcbf4ce3398a733be31cd60f7c3bc0a1b",
-      "bytes": 6081
+      "sha256": "35d06f16fc0aaf8b7af589bcd1a22714e0bf0c68cb5136dbbfbd285298983509",
+      "bytes": 6178
     },
     "tests/test_acquisition_browser.py": {
-      "sha256": "4bace29a8eff0e4454ba208ddb51a89485517cb514ea976fc9c8b21805541c54",
-      "bytes": 4299
+      "sha256": "a6c20f7487361cbb319bc3391becf4ac4c57320beff3dfb94fb14796e5ab707c",
+      "bytes": 4525
     },
     "tests/test_analytics.py": {
       "sha256": "de85144faf6719d5f03880fcf835c859cb002f413c9ca029c0a9686c968930fe",
@@ -1095,8 +1095,8 @@
       "bytes": 4253
     },
     "web/acquisition.js": {
-      "sha256": "b954277926d98be8767333f6b13cbacc6c05c1cda0e1f5f940292456f4be759f",
-      "bytes": 16174
+      "sha256": "0f2331d80103dc5cec20afcb68df04312918c29ff778d7e0b938ee9511902d08",
+      "bytes": 16200
     },
     "web/analytics.js": {
       "sha256": "5f19987660bc5e120b94ec88bc472656cb4c41557cfd5f8c433b86aae0e4e86a",

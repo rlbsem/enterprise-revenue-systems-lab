@@ -1,6 +1,6 @@
 # Acquisition investigation verification
 
-[Local Lab verification](local-verification.json) records 254 passing regression tests, 615 layout/contrast observations and 58 automated accessibility states across all ten investigations. No overflow, contrast failures, page errors or automated accessibility violations remain. Automated accessibility does not establish full assistive-technology conformance.
+[Local Lab verification](local-verification.json) records 254 passing regression tests, 617 layout/contrast observations and 60 automated accessibility states across all ten investigations. No overflow, contrast failures, page errors or automated accessibility violations remain. Automated accessibility does not establish full assistive-technology conformance.
 
 [Fresh source regression](source-regression.json) records 83 tests actually executed in a disposable checkout of the pinned source, with local PostgreSQL, HTTP and dbt. The original source checkout was not modified. This is separate from the original 62-test software acceptance and historical browser observations.
 

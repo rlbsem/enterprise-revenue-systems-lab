@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-27T04:03:40.038818+00:00",
+  "recorded_at": "2026-10-27T04:08:09.469783+00:00",
   "scope": "Fresh local Lab and disposable acquisition source tests; static read-only investigation, no native vendors or deployment",
   "baseline_commit": "6135acd0c8ff4e4970d05ece035b31f963120ad6",
   "source_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
@@ -8,7 +8,7 @@
     "failures": "0",
     "errors": "0",
     "skipped": "0",
-    "time": "83.062"
+    "time": "83.329"
   },
   "tests": [
     {
@@ -1086,19 +1086,20 @@
       "report_sha256": "7d7afd97c912f7fd5beb44c8da8cdac4183d30b6b229c3401bec4777d327a4c0"
     },
     "acquisition": {
-      "layout_contrast_observations": 45,
-      "accessibility_states": 12,
+      "layout_contrast_observations": 47,
+      "accessibility_states": 14,
       "overflow_failures": 0,
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "043a7f42c0e4148f4e56087610185333ed65c1f00e8bad6427d16e03711b9b04"
+      "report_sha256": "8621da15d4b5a55cba730ed415a70466ef0a095247c8dcde48f2509de50afefa"
     }
   },
   "failures_resolved": [
     "320-pixel overflow from exact annual metric amounts; one-column narrow-screen treatment is scoped to acquisition cards.",
     "A financial browser locator matched both a summary card and publication cell; scoped the assertion to the actual table cell.",
-    "A test compared CSS-uppercase inner text with mixed-case heading text; changed to the exact accessible heading."
+    "A test compared CSS-uppercase inner text with mixed-case heading text; changed to the exact accessible heading.",
+    "Expanded SQL code panel initially failed scrollable-region-focusable; all nine SQL panels are now keyboard-focusable, with two additional expanded-state axe checks."
   ],
   "unexecuted": [
     "native vendor calls",
