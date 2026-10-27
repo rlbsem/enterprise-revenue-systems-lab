@@ -10,11 +10,11 @@ This application makes those boundaries inspectable. Follow source records, deci
 
 The hosted explorer is a static review surface with recorded evidence. Model inference, database-backed execution and original-engine replay remain local. [Deployment and verification](docs/deployment.md).
 
-<img src="docs/images/current-presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
+<img src="docs/images/release-qa-eight/presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The original three investigation screenshots are captured directly from the current static UI using existing recorded synthetic evidence. No new inference or business outcome is implied. [Screenshot provenance and desktop/mobile review](docs/evidence/visual-refresh/README.md).
+The current screenshots are captured from the reconciled eight-investigation UI using recorded synthetic evidence. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
 
-## Seven investigations
+## Eight investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -24,9 +24,10 @@ The original three investigation screenshots are captured directly from the curr
 | Can a CRM action survive uncertain delivery? | [Native Salesforce and Snowflake evidence](https://github.com/rlbsem/customer-signal-activation/blob/4ac00021637b3823a8df2f5f465b528df5749f1e/docs/evidence/connected-integration/README.md): one synthetic CRM review, lost-acknowledgment recovery, exact independent readback and warehouse feedback changing `clarify_need` to `hold` | Owner-authorized synthetic policy, not human customer approval. This Lab displays recorded vendor execution without making new calls. |
 | How does account intelligence become qualified pipeline? | [GTM Pipeline investigation](docs/gtm-investigation.md): a 120-account USD $3.46M synthetic scenario, separate native Salesforce Account/Contact/Task acceptance and separate actual Qwen3 responses | Three recorded execution sets, not one continuous vendor workflow. No commercial uplift or prospect communication. |
 | Can a real-model candidate be released safely? | [AI Model Release Assurance](docs/model-release-assurance.md): preserved Qwen2.5 failures, blocked 35/36 Qwen3 candidate, 48/48 paired configurations and actual local shadow/canary/promotion/rollback | Finite-suite local acceptance with synthetic effects; controlled input corruption, not production reliability or general model accuracy. |
-| Why do billing and Finance disagree after a delivery recovers? | [Revenue Integrity](docs/revenue-integrity.md): authoritative invoice/ERP/cash lineage, independent receipts, a separate recorded operator recovery and an unresolved $1,500 variance | Local contract acceptance at a pinned unmerged source revision; recorded review states, no privileged actions or native vendor calls. |
+| Why do billing and Finance disagree after a delivery recovers? | [Revenue Integrity](docs/revenue-integrity.md): authoritative invoice/ERP/cash lineage, independent receipts, a separate recorded operator recovery and an unresolved $1,500 variance | Local contract acceptance at a pinned historical source revision; recorded review states, no privileged actions or native vendor calls. |
+| Are analytical models correct, and is the optimization worth keeping? | [Analytics Engineering](docs/analytics-engineering.md): 15-model SQL lineage, actual small-fixture rows, 60K/180K paired benchmarks, a rejected selective rebuild and separate native Snowflake fixture evidence | Complete comparisons were recorded upstream; the browser checks artifacts and summaries. Local timing is not native warehouse performance or commercial savings. |
 
-The sixteen cases draw from six pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The seventeen cases draw from six pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## SDR account intelligence
 
@@ -34,23 +35,31 @@ The fifth investigation now includes **[SDR account intelligence](docs/sdr-accou
 
 The `?case=gtm-research` route is included in the main-branch static explorer. [Pages deployments](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted checks](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) show the public rollout status. The richer research desk does not execute through native Salesforce. [Source lock](sources.lock.json) · [Recorded operator proof](https://github.com/rlbsem/gtm-pipeline-orchestration/blob/81d9381169456ca8893be0ddea483296ac77e12e/docs/evidence/research/operator-proof.json).
 
-<img src="docs/images/current-research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
+<img src="docs/images/release-qa-eight/research/sdr-intelligence-desktop.png" alt="Recorded SDR research: prioritized accounts and selected evidence" width="900">
 
 ## AI Model Release Assurance
 
 The sixth investigation follows actual recorded model failures through finite-suite acceptance, local promotion and verified rollback. Inspect failed tasks, original model responses, independent destination receipts and the reference version used after a controlled fault. No model endpoint or credentials are needed.
 
-The candidate route is `?case=release-assurance`. [Evidence and execution boundaries](docs/model-release-assurance.md) · [Genuine screenshots and browser checks](docs/evidence/release-assurance/README.md). Public availability requires an approved merge and the existing Pages deployment.
+Route: `?case=release-assurance`, included on `main`. [Evidence and execution boundaries](docs/model-release-assurance.md) · [Genuine screenshots and browser checks](docs/evidence/release-assurance/README.md). Pages deployment and hosted verification establish public availability separately from local checks.
 
-<img src="docs/images/current-release/release-assurance-desktop.png" alt="Actual Lab release-assurance interface with rejected results, bounded acceptance and inspectable recorded stages" width="900">
+<img src="docs/images/release-qa-eight/release/release-assurance-desktop.png" alt="Actual Lab release-assurance interface with rejected results, bounded acceptance and inspectable recorded stages" width="900">
 
 ## Revenue Integrity: commitment to cash
 
 The seventh investigation follows a recorded $1,500 posting discrepancy through source lineage and a separate reviewed delivery recovery. Inspect the before/after invoice, cash and ARR measures without access to the privileged operator console. The discrepancy remains **Review Required**.
 
-Candidate route: `?case=revenue-integrity`. [Evidence and financial derivation](docs/revenue-integrity.md) · [Actual browser screenshots](docs/evidence/revenue-integrity/README.md). Public availability requires merge and deployment approval; the source platform remains pinned to its unmerged PR.
+Route: `?case=revenue-integrity`, included on `main`. [Evidence and financial derivation](docs/revenue-integrity.md) · [Actual browser screenshots](docs/evidence/revenue-integrity/README.md). The source platform remains pinned to its recorded acceptance revision; this presentation update is not deployed by this PR.
 
-<img src="docs/images/current-integrity/revenue-integrity-desktop.png" alt="Actual static Revenue Integrity investigation showing synthetic invoice, ERP, cash and ARR values with the unresolved $1,500 difference" width="900">
+<img src="docs/images/release-qa-eight/integrity/revenue-integrity-desktop.png" alt="Actual static Revenue Integrity investigation showing synthetic invoice, ERP, cash and ARR values with the unresolved $1,500 difference" width="900">
+
+## Analytics Engineering — Model Correctness & Performance
+
+The eighth investigation connects financial grain, actual SQL/dbt dependencies and measured correctness to an engineering decision. Inspect 15 models, typed rows from an executed small fixture, six metric identities and three paired measurements at each enterprise scale. The selective candidate was rejected despite faster aggregation: total elapsed time regressed by 54.3% at 60K accounts and 31.2% at 180K accounts.
+
+Route: `?case=analytics-engineering`, merged through PR #11. [Evidence, execution boundaries and reproduction](docs/analytics-engineering.md) · [Actual screenshots and browser verification](docs/evidence/analytics-engineering/README.md). Pages deployment and hosted verification establish public availability separately from local checks.
+
+<img src="docs/images/release-qa-eight/analytics/analytics-engineering-desktop.png" alt="Actual model selector, financial grain and clickable dbt lineage with separate fixture and benchmark evidence" width="900">
 
 ## Open the hosted explorer or run it locally
 
@@ -86,7 +95,7 @@ These three scenarios replay an unchanged saved response through the original Wo
 
 The opt-in local interface, `revenue-lab serve --execute`, invokes only approved scenarios. It uses isolated workspaces, package/version checks, bounded process trees, explicit local execution authority and one execution lane. Fresh model inference requires a real configured endpoint and `SELLER_MODEL_KEY`; unavailable inference never produces fabricated success. [Full reproduction instructions](docs/reproduction.md).
 
-<img src="docs/images/current-presentation/control-overview.png" alt="Recovery investigation screenshot" width="780">
+<img src="docs/images/release-qa-eight/presentation/control-overview.png" alt="Recovery investigation screenshot" width="780">
 
 ## Executed evidence
 
@@ -98,7 +107,7 @@ The opt-in local interface, `revenue-lab serve --execute`, invokes only approved
 
 The current hosted workflow status is visible in [GitHub Actions](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions). Local and hosted checks answer different questions. [Hosted verification](docs/evidence/hosted-verification/README.md) records public-site observations separately from source and build checks. [Claim-to-evidence guide and limitations](docs/evidence-guide.md).
 
-<img src="docs/images/current-presentation/revenue-overview.png" alt="Revenue investigation screenshot" width="780">
+<img src="docs/images/release-qa-eight/presentation/revenue-overview.png" alt="Revenue investigation screenshot" width="780">
 
 ## Architecture and verification
 
@@ -126,8 +135,8 @@ The source engine implementations remain unchanged: [Customer Signal & Activatio
 
 **AI Account Intelligence to Qualified Pipeline** lets an SDR inspect account signals, review AI research and a suggested next step, check the responsible owner and CRM handoff, and follow synthetic meeting/opportunity feedback to the existing navigation. The fifth investigation is part of the main-branch explorer; public availability is tracked by the Pages and hosted-verification workflows.
 
-<img src="docs/images/current-presentation/gtm-enterprise-overview.png" alt="GTM evidence view showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
+<img src="docs/images/release-qa-eight/presentation/gtm-enterprise-overview.png" alt="GTM evidence view showing USD synthetic pipeline, source account qualification and opportunity evidence" width="780">
 
 [Evidence boundaries and verification](docs/gtm-investigation.md) · [Screenshot provenance and tests](docs/evidence/gtm-integration/README.md). In the explorer, open `?case=gtm-enterprise`, `?case=gtm-salesforce` or `?case=gtm-qwen`. The browser reads existing records only; no model or Salesforce access is needed.
 
-Current screenshots come from real Chromium rendering of the recorded evidence. [Presentation checks](docs/images/current-presentation/provenance.json), [research](docs/images/current-research/provenance.json), [model release](docs/images/current-release/provenance.json) and [revenue integrity](docs/images/current-integrity/provenance.json) retain capture hashes and browser checks. Original captures and execution records remain unchanged. No new model or vendor execution is implied.
+The PR #10 captures below remain historical seven-investigation records. Current eight-investigation screenshots and checks are linked in [release QA](docs/release-qa-eight.md). These archived screenshots came from real Chromium rendering of the recorded evidence. [Presentation checks](docs/images/current-presentation/provenance.json), [research](docs/images/current-research/provenance.json), [model release](docs/images/current-release/provenance.json) and [revenue integrity](docs/images/current-integrity/provenance.json) retain capture hashes and browser checks. Original captures and execution records remain unchanged. No new model or vendor execution is implied.

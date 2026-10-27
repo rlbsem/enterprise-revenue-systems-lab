@@ -48,17 +48,21 @@ def test_six_prior_investigations_remain_exact_and_routes_preserved():
     snap=json.loads((ROOT/"docs/evidence/revenue-integrity/prior-release-ui.json").read_bytes())
     before={x["id"]:x for x in json.loads(snap["files"]["web/catalog.json"])["scenarios"]}
     after={x["id"]:x for x in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert set(after)-set(before)=={"revenue-integrity"}
+    assert set(after)-set(before)=={"revenue-integrity", "analytics-engineering"}
     assert all(after[k]==v for k,v in before.items())
 
 def test_genuine_screenshot_provenance():
-    r=json.loads((ROOT/"docs/images/current-integrity/provenance.json").read_bytes())
+    r=json.loads((ROOT/"docs/evidence/revenue-integrity/browser.json").read_bytes())
     assert len(r["layouts"])==40 and len(r["accessibility"])==10
     assert r["http_writes"]==r["nonlocal_requests"]==r["page_errors"]==[]
     for x in r["layouts"]:assert not x["overflow"] and not x["contrast"]["failures"]
     for x in r["accessibility"]:assert not x["violations"]
-    for n,h in r["source_sha256"].items():assert hashlib.sha256((ROOT/n).read_bytes()).hexdigest()==h,n
-    for n,h in r["image_sha256"].items():assert hashlib.sha256((ROOT/"docs/images/current-integrity"/n).read_bytes()).hexdigest()==h
+    baseline=json.loads((ROOT/"docs/evidence/analytics-engineering/prior-ui.json").read_bytes())["files"]
+    main=json.loads((ROOT/"docs/evidence/release-qa-eight/prior-ui-main.json").read_bytes())["files"]
+    for n,h in r["source_sha256"].items():
+        data=baseline[n].encode() if n in baseline else main[n].encode() if n in main else (ROOT/n).read_bytes()
+        assert hashlib.sha256(data).hexdigest()==h,n
+    for n,h in r["image_sha256"].items():assert hashlib.sha256((ROOT/"docs/images/revenue-integrity"/n).read_bytes()).hexdigest()==h
 
 def test_public_investigation_has_no_live_operator_connection_or_credentials():
     import re

@@ -14,6 +14,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = {
+    "analytics": "analytics-engineering",
     "integrity": "revenue-integrity",
     "release": "release-assurance",
     "seller": "seller-application",
@@ -202,6 +203,8 @@ def main():
                         if investigation == "release" else
                         "Verify these separate records offline"
                         if investigation == "gtm" else
+                        "Verify the recorded analytics evidence offline"
+                        if investigation == "analytics" else
                         "Verify this native record offline"
                         if investigation == "connected"
                         else "Reproduce this investigation · fresh local execution"

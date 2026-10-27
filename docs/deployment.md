@@ -15,7 +15,7 @@ Web-application updates are automatically published from `main` after the eviden
 1. Confirm **Settings > Pages > Build and deployment** uses **GitHub Actions**. Changes to `web/**` or the publishing workflow on `main` trigger an automatic deployment. Manual `workflow_dispatch` remains available.
 2. If republishing, go to **Actions > Publish static evidence lab > Run workflow**, choose `main`, and authorize the protected `github-pages` environment if requested.
 3. Check both `build` and `deploy` jobs are successful. The build verifies recorded evidence and ensures the public artifact includes only static distribution files.
-4. Open the Pages URL. Inspect all seven investigations after the approved new route is deployed, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
+4. Open the Pages URL. Inspect all eight investigations after the approved new route is deployed, navigate evidence cases, validate integrity, download a reproduction ZIP, and check mobile behavior. Fresh-execution controls must be absent from the hosted site.
 5. If a run fails, use the job logs to identify the issue. To withdraw the public site, use **Settings > Pages > Unpublish site**.
 
 ## Deployment boundary
@@ -36,6 +36,10 @@ Install `requirements.lock` and Chromium, then run `python scripts/verify_hosted
 
 GitHub's official instructions cover [custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and [manual workflow dispatch](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow).
 
-## Revenue Integrity candidate
+## Revenue Integrity release checks
 
-The seventh investigation is verified locally under the Pages-shaped path; it is not yet a public deployment. Review its PR and screenshots first. The existing workflow automatically publishes `web/**` changes merged into `main`, so approve both merge and publication before merging. After the deployment completes, run the existing hosted verifier against that exact deployment revision and inspect `?case=revenue-integrity`, all stages, integrity validation, downloads and mobile navigation. No workflow dispatch or deployment was performed by this feature build.
+The seventh investigation is included on main and is checked under the Pages-shaped path. Presentation changes still require review. The existing workflow automatically publishes `web/**` changes merged into `main`, so approve both merge and publication before merging. After the deployment completes, run the existing hosted verifier against that exact deployment revision and inspect `?case=revenue-integrity`, all stages, integrity validation, downloads and mobile navigation. No workflow dispatch or deployment was performed by this feature build.
+
+## Analytics Engineering release checks
+
+The eighth investigation is verified against the static Pages-shaped build at `?case=analytics-engineering`. PR #11 merged the investigation into main at `834750d`. No deployment is performed by this presentation reconciliation. After explicit merge/publication approval, use the existing hosted verification to compare exact deployed bytes, all eight navigation entries, original source links, artifact validation, downloads and desktop/mobile behavior. The static-only security boundary and Pages workflow remain unchanged.

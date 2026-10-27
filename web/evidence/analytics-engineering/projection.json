@@ -1,0 +1,1272 @@
+{
+  "models": [
+    {
+      "name": "dim_account",
+      "grain": "One account effective interval [valid_from, valid_to).",
+      "parents": [
+        "source.revenue_metrics.raw.account_history"
+      ],
+      "sql": "sql/dim_account.sql"
+    },
+    {
+      "name": "dim_date",
+      "grain": "One calendar day.",
+      "parents": [
+        "source.revenue_metrics.raw.calendar"
+      ],
+      "sql": "sql/dim_date.sql"
+    },
+    {
+      "name": "fct_booking_events",
+      "grain": "One signed contract booking event; amendments are deltas.",
+      "parents": [
+        "source.revenue_metrics.raw.booking_events"
+      ],
+      "sql": "sql/fct_booking_events.sql"
+    },
+    {
+      "name": "fct_invoice_lines",
+      "grain": "One signed invoice or credit line.",
+      "parents": [
+        "source.revenue_metrics.raw.invoice_lines"
+      ],
+      "sql": "sql/fct_invoice_lines.sql"
+    },
+    {
+      "name": "fct_opportunity_daily",
+      "grain": "One opportunity at end of each reporting day.",
+      "parents": [
+        "model.revenue_metrics.stg_opportunities",
+        "model.revenue_metrics.dim_date"
+      ],
+      "sql": "sql/fct_opportunity_daily.sql"
+    },
+    {
+      "name": "fct_payment_allocations",
+      "grain": "One cash allocation to an invoice.",
+      "parents": [
+        "source.revenue_metrics.raw.payment_allocations"
+      ],
+      "sql": "sql/fct_payment_allocations.sql"
+    },
+    {
+      "name": "fct_subscription_period",
+      "grain": "One contract per month end.",
+      "parents": [
+        "model.revenue_metrics.stg_subscriptions",
+        "model.revenue_metrics.dim_date"
+      ],
+      "sql": "sql/fct_subscription_period.sql"
+    },
+    {
+      "name": "mart_arr",
+      "grain": "One account per month end.",
+      "parents": [
+        "model.revenue_metrics.fct_subscription_period",
+        "model.revenue_metrics.dim_account"
+      ],
+      "sql": "sql/mart_arr.sql"
+    },
+    {
+      "name": "mart_cohorts",
+      "grain": "One creation month and creation-time region; 30-day outcomes.",
+      "parents": [
+        "model.revenue_metrics.stg_opportunities",
+        "model.revenue_metrics.dim_date",
+        "model.revenue_metrics.dim_account"
+      ],
+      "sql": "sql/mart_cohorts.sql"
+    },
+    {
+      "name": "mart_discrepancy_bridge",
+      "grain": "One account per configured quarter; explained commercial differences.",
+      "parents": [
+        "model.revenue_metrics.mart_flows",
+        "model.revenue_metrics.dim_account"
+      ],
+      "sql": "sql/mart_discrepancy_bridge.sql"
+    },
+    {
+      "name": "mart_flows",
+      "grain": "One account and event date with independently aggregated flows.",
+      "parents": [
+        "model.revenue_metrics.fct_booking_events",
+        "model.revenue_metrics.fct_invoice_lines",
+        "model.revenue_metrics.fct_payment_allocations",
+        "model.revenue_metrics.dim_account"
+      ],
+      "sql": "sql/mart_flows.sql"
+    },
+    {
+      "name": "mart_metric_values",
+      "grain": "One metric and region (including ALL) per configured quarter.",
+      "parents": [
+        "model.revenue_metrics.dim_account",
+        "model.revenue_metrics.mart_pipeline",
+        "model.revenue_metrics.mart_flows",
+        "model.revenue_metrics.mart_arr",
+        "model.revenue_metrics.mart_cohorts"
+      ],
+      "sql": "sql/mart_metric_values.sql"
+    },
+    {
+      "name": "mart_pipeline",
+      "grain": "One account per day with account attributes at that date.",
+      "parents": [
+        "model.revenue_metrics.fct_opportunity_daily",
+        "model.revenue_metrics.dim_account"
+      ],
+      "sql": "sql/mart_pipeline.sql"
+    },
+    {
+      "name": "stg_opportunities",
+      "grain": "One latest received revision per CRM event.",
+      "parents": [
+        "source.revenue_metrics.raw.opportunity_events"
+      ],
+      "sql": "sql/stg_opportunities.sql"
+    },
+    {
+      "name": "stg_subscriptions",
+      "grain": "One contract; eligibility and annualized fee.",
+      "parents": [
+        "source.revenue_metrics.raw.subscription_contracts"
+      ],
+      "sql": "sql/stg_subscriptions.sql"
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "open_pipeline",
+      "title": "Open pipeline",
+      "owner": "Sales Operations",
+      "definition": "Sum of open opportunity value at the reporting date.",
+      "grain": "Opportunity/day snapshot",
+      "time_basis": "Period-end date",
+      "filters": "stage=open",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Not additive across snapshot dates.",
+      "version": "1.0",
+      "caveats": "Account region/owner at snapshot date; potential value, not a commitment.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "net_bookings",
+      "title": "Net bookings",
+      "owner": "Revenue Operations",
+      "definition": "Signed contract booking events plus signed amendment deltas.",
+      "grain": "Booking event",
+      "time_basis": "Event date within quarter",
+      "filters": "All signed booking events",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Additive across disjoint dates and accounts.",
+      "version": "1.0",
+      "caveats": "Uses booking events, not won CRM amounts; one-off and recurring commitments are included.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "net_invoiced",
+      "title": "Net invoiced",
+      "owner": "Finance",
+      "definition": "Invoice lines plus negative credit lines.",
+      "grain": "Invoice/credit line",
+      "time_basis": "Line event date within quarter",
+      "filters": "All invoice and credit lines",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Additive across disjoint dates and accounts.",
+      "version": "1.0",
+      "caveats": "Not recognized revenue. Credit timing can differ from contract amendments.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "cash_received",
+      "title": "Cash received",
+      "owner": "Finance",
+      "definition": "Cash allocations to the invoices included in the supplied source.",
+      "grain": "Payment allocation",
+      "time_basis": "Allocation event date within quarter",
+      "filters": "All supplied allocations",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Additive across disjoint dates and accounts.",
+      "version": "1.0",
+      "caveats": "Allocated cash only; not bank balance. Unallocated receipts, FX and refunds are outside scope.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "period_end_arr",
+      "title": "Period-end ARR",
+      "owner": "Finance / Revenue Operations",
+      "definition": "Annualized eligible recurring contract fee at month end.",
+      "grain": "Contract/month-end",
+      "time_basis": "Final day of reporting quarter",
+      "filters": "Recurring, not trial; start inclusive and end exclusive",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Additive across accounts, not across month-end balances.",
+      "version": "1.0",
+      "caveats": "Policy 1 includes past-due contracts; annualization is fee times 12 divided by billing months. Not recognized revenue.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "cohort_win_rate",
+      "title": "30-day opportunity-cohort win rate",
+      "owner": "Marketing / Sales Operations",
+      "definition": "Mature opportunities first won within 30 days of creation divided by mature created opportunities.",
+      "grain": "Opportunity, grouped by creation cohort",
+      "time_basis": "Creation in quarter; 30-day observation window complete by report end",
+      "filters": "Exclude immature opportunities from both numerator and denominator",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Null when mature denominator is zero; immature count is exposed.",
+      "additivity": "Recompute from summed wins and mature opportunities; never average rates.",
+      "version": "1.0",
+      "caveats": "Region is at creation, not current ownership. First win is used; subsequent reopenings are outside this model. March immature rows remain visible.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    },
+    {
+      "metric_id": "period_end_arr",
+      "title": "Period-end ARR",
+      "owner": "Finance / Revenue Operations",
+      "definition": "Annualized eligible recurring contract fee at month end.",
+      "grain": "Contract/month-end",
+      "time_basis": "Final day of reporting quarter",
+      "filters": "Recurring, not trial; start inclusive and end exclusive; exclude past_due=1",
+      "permitted_dimensions": [
+        "region",
+        "ALL"
+      ],
+      "null_behavior": "Zero for covered regions with no eligible activity; missing coverage blocks release.",
+      "additivity": "Additive across accounts, not across month-end balances.",
+      "version": "2.0",
+      "caveats": "Policy 2 excludes past-due contracts. This is a definition change, not a source correction. No accounting compliance claim.",
+      "implementation": "dbt/models/marts/mart_metric_values.sql"
+    }
+  ],
+  "profiles": {
+    "enterprise": {
+      "accounts": 60000,
+      "opportunities": 195927,
+      "fact_rows": 12470664,
+      "model_rows": {
+        "dim_account": 68571,
+        "dim_date": 90,
+        "fct_booking_events": 345504,
+        "fct_invoice_lines": 775133,
+        "fct_opportunity_daily": 12470664,
+        "fct_payment_allocations": 329053,
+        "fct_subscription_period": 221781,
+        "mart_arr": 180000,
+        "mart_cohorts": 15,
+        "mart_discrepancy_bridge": 48020,
+        "mart_flows": 546059,
+        "mart_metric_values": 36,
+        "mart_pipeline": 5395893,
+        "stg_opportunities": 333146,
+        "stg_subscriptions": 73927
+      },
+      "baseline_median_seconds": 12.447005899972282,
+      "candidate_median_seconds": 19.20493130001705,
+      "wall_change_percent": 54.293582363127335,
+      "pairs": [
+        {
+          "repetition": 1,
+          "baseline": 12.28415020002285,
+          "candidate": 19.20493130001705,
+          "baseline_noop": 11.673088299983647,
+          "candidate_noop": 16.10577620001277
+        },
+        {
+          "repetition": 2,
+          "baseline": 12.447005899972282,
+          "candidate": 18.904984499968123,
+          "baseline_noop": 12.83378680003807,
+          "candidate_noop": 16.747201499994844
+        },
+        {
+          "repetition": 3,
+          "baseline": 12.769950999994762,
+          "candidate": 20.033537100011017,
+          "baseline_noop": 12.427097000007052,
+          "candidate_noop": 17.501055100001395
+        }
+      ]
+    },
+    "stress": {
+      "accounts": 180000,
+      "opportunities": 587461,
+      "fact_rows": 37375442,
+      "model_rows": {
+        "dim_account": 205714,
+        "dim_date": 90,
+        "fct_booking_events": 1030836,
+        "fct_invoice_lines": 2325124,
+        "fct_opportunity_daily": 37375442,
+        "fct_payment_allocations": 986897,
+        "fct_subscription_period": 664239,
+        "mart_arr": 540000,
+        "mart_cohorts": 15,
+        "mart_discrepancy_bridge": 144122,
+        "mart_flows": 1637669,
+        "mart_metric_values": 36,
+        "mart_pipeline": 16188545,
+        "stg_opportunities": 998789,
+        "stg_subscriptions": 221413
+      },
+      "baseline_median_seconds": 43.92271840001922,
+      "candidate_median_seconds": 57.63381330005359,
+      "wall_change_percent": 31.216407816935956,
+      "pairs": [
+        {
+          "repetition": 1,
+          "baseline": 48.86398820002796,
+          "candidate": 57.63381330005359,
+          "baseline_noop": 41.27657819999149,
+          "candidate_noop": 46.97677470004419
+        },
+        {
+          "repetition": 2,
+          "baseline": 42.323234000010416,
+          "candidate": 56.00491969997529,
+          "baseline_noop": 44.385605499963276,
+          "candidate_noop": 47.78360219998285
+        },
+        {
+          "repetition": 3,
+          "baseline": 43.92271840001922,
+          "candidate": 58.80559510004241,
+          "baseline_noop": 41.86783319996903,
+          "candidate_noop": 47.64742389996536
+        }
+      ]
+    }
+  },
+  "fixture_sources": {
+    "account_history": [
+      {
+        "account_version_id": "A1_1",
+        "account_id": "A1",
+        "account_name": "Cedar Labs",
+        "owner": "Maya",
+        "region": "North",
+        "valid_from": "2025-01-01",
+        "valid_to": "2026-02-15"
+      },
+      {
+        "account_version_id": "A1_2",
+        "account_id": "A1",
+        "account_name": "Cedar Labs",
+        "owner": "Noah",
+        "region": "East",
+        "valid_from": "2026-02-15",
+        "valid_to": "2099-01-01"
+      },
+      {
+        "account_version_id": "A2_1",
+        "account_id": "A2",
+        "account_name": "Maple Systems",
+        "owner": "Sam",
+        "region": "West",
+        "valid_from": "2025-01-01",
+        "valid_to": "2099-01-01"
+      },
+      {
+        "account_version_id": "A3_1",
+        "account_id": "A3",
+        "account_name": "Birch Works",
+        "owner": "Maya",
+        "region": "North",
+        "valid_from": "2025-01-01",
+        "valid_to": "2099-01-01"
+      },
+      {
+        "account_version_id": "A4_1",
+        "account_id": "A4",
+        "account_name": "Spruce Data",
+        "owner": "Sam",
+        "region": "West",
+        "valid_from": "2025-01-01",
+        "valid_to": "2099-01-01"
+      }
+    ],
+    "booking_events": [
+      {
+        "booking_event_id": "B1",
+        "contract_id": "S1",
+        "account_id": "A1",
+        "event_date": "2026-02-10",
+        "amount_cents": "1200000",
+        "event_type": "new"
+      },
+      {
+        "booking_event_id": "B2",
+        "contract_id": "S1",
+        "account_id": "A1",
+        "event_date": "2026-03-20",
+        "amount_cents": "-200000",
+        "event_type": "amendment"
+      },
+      {
+        "booking_event_id": "B3",
+        "contract_id": "S2",
+        "account_id": "A2",
+        "event_date": "2026-03-10",
+        "amount_cents": "600000",
+        "event_type": "new"
+      },
+      {
+        "booking_event_id": "B4",
+        "contract_id": "S3",
+        "account_id": "A4",
+        "event_date": "2026-02-01",
+        "amount_cents": "200000",
+        "event_type": "new"
+      }
+    ],
+    "calendar": [
+      {
+        "date_day": "2026-01-01",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-02",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-03",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-04",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-05",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-06",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-07",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-08",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-09",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-10",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-11",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-12",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-13",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-14",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-15",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-16",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-17",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-18",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-19",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-20",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-21",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-22",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-23",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-24",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-25",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-26",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-27",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-28",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-29",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-30",
+        "month_start": "2026-01-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-01-31",
+        "month_start": "2026-01-01",
+        "is_month_end": "1"
+      },
+      {
+        "date_day": "2026-02-01",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-02",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-03",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-04",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-05",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-06",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-07",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-08",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-09",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-10",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-11",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-12",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-13",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-14",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-15",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-16",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-17",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-18",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-19",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-20",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-21",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-22",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-23",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-24",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-25",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-26",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-27",
+        "month_start": "2026-02-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-02-28",
+        "month_start": "2026-02-01",
+        "is_month_end": "1"
+      },
+      {
+        "date_day": "2026-03-01",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-02",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-03",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-04",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-05",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-06",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-07",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-08",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-09",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-10",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-11",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-12",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-13",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-14",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-15",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-16",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-17",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-18",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-19",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-20",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-21",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-22",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-23",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-24",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-25",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-26",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-27",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-28",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-29",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-30",
+        "month_start": "2026-03-01",
+        "is_month_end": "0"
+      },
+      {
+        "date_day": "2026-03-31",
+        "month_start": "2026-03-01",
+        "is_month_end": "1"
+      }
+    ],
+    "coverage": [
+      {
+        "source_name": "account_history",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      },
+      {
+        "source_name": "opportunity_events",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      },
+      {
+        "source_name": "booking_events",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      },
+      {
+        "source_name": "invoice_lines",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      },
+      {
+        "source_name": "payment_allocations",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      },
+      {
+        "source_name": "subscription_contracts",
+        "complete_from": "2026-01-01",
+        "complete_through": "2026-03-31"
+      }
+    ],
+    "invoice_lines": [
+      {
+        "line_id": "L1",
+        "invoice_id": "I1",
+        "contract_id": "S1",
+        "account_id": "A1",
+        "event_date": "2026-02-11",
+        "amount_cents": "700000",
+        "line_type": "invoice"
+      },
+      {
+        "line_id": "L2",
+        "invoice_id": "I2",
+        "contract_id": "S1",
+        "account_id": "A1",
+        "event_date": "2026-03-01",
+        "amount_cents": "500000",
+        "line_type": "invoice"
+      },
+      {
+        "line_id": "L3",
+        "invoice_id": "I2",
+        "contract_id": "S1",
+        "account_id": "A1",
+        "event_date": "2026-03-25",
+        "amount_cents": "-100000",
+        "line_type": "credit"
+      },
+      {
+        "line_id": "L4",
+        "invoice_id": "I3",
+        "contract_id": "S2",
+        "account_id": "A2",
+        "event_date": "2026-03-12",
+        "amount_cents": "400000",
+        "line_type": "invoice"
+      },
+      {
+        "line_id": "L5",
+        "invoice_id": "I4",
+        "contract_id": "S3",
+        "account_id": "A4",
+        "event_date": "2026-02-03",
+        "amount_cents": "100000",
+        "line_type": "invoice"
+      }
+    ],
+    "late_opportunity_events": [
+      {
+        "event_id": "E3",
+        "opportunity_id": "O2",
+        "account_id": "A2",
+        "created_date": "2026-02-03",
+        "effective_date": "2026-02-03",
+        "stage": "open",
+        "amount_cents": "900000",
+        "origin": "Sales",
+        "ingest_seq": "2"
+      },
+      {
+        "event_id": "E4",
+        "opportunity_id": "O2",
+        "account_id": "A2",
+        "created_date": "2026-02-03",
+        "effective_date": "2026-03-10",
+        "stage": "won",
+        "amount_cents": "600000",
+        "origin": "Sales",
+        "ingest_seq": "2"
+      }
+    ],
+    "opportunity_events": [
+      {
+        "event_id": "E1",
+        "opportunity_id": "O1",
+        "account_id": "A1",
+        "created_date": "2026-01-05",
+        "effective_date": "2026-01-05",
+        "stage": "open",
+        "amount_cents": "1200000",
+        "origin": "Marketing",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E2",
+        "opportunity_id": "O1",
+        "account_id": "A1",
+        "created_date": "2026-01-05",
+        "effective_date": "2026-02-10",
+        "stage": "won",
+        "amount_cents": "1200000",
+        "origin": "Marketing",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E3",
+        "opportunity_id": "O2",
+        "account_id": "A2",
+        "created_date": "2026-02-05",
+        "effective_date": "2026-02-05",
+        "stage": "open",
+        "amount_cents": "600000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E4",
+        "opportunity_id": "O2",
+        "account_id": "A2",
+        "created_date": "2026-02-05",
+        "effective_date": "2026-03-10",
+        "stage": "won",
+        "amount_cents": "600000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E5",
+        "opportunity_id": "O3",
+        "account_id": "A1",
+        "created_date": "2026-03-15",
+        "effective_date": "2026-03-15",
+        "stage": "open",
+        "amount_cents": "400000",
+        "origin": "Marketing",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E6",
+        "opportunity_id": "O4",
+        "account_id": "A3",
+        "created_date": "2026-01-10",
+        "effective_date": "2026-01-10",
+        "stage": "open",
+        "amount_cents": "300000",
+        "origin": "Marketing",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E7",
+        "opportunity_id": "O4",
+        "account_id": "A3",
+        "created_date": "2026-01-10",
+        "effective_date": "2026-01-20",
+        "stage": "lost",
+        "amount_cents": "300000",
+        "origin": "Marketing",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E8",
+        "opportunity_id": "O5",
+        "account_id": "A4",
+        "created_date": "2026-01-20",
+        "effective_date": "2026-01-20",
+        "stage": "open",
+        "amount_cents": "200000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E9",
+        "opportunity_id": "O5",
+        "account_id": "A4",
+        "created_date": "2026-01-20",
+        "effective_date": "2026-02-01",
+        "stage": "won",
+        "amount_cents": "200000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E10",
+        "opportunity_id": "O6",
+        "account_id": "A2",
+        "created_date": "2026-02-10",
+        "effective_date": "2026-02-10",
+        "stage": "open",
+        "amount_cents": "100000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      },
+      {
+        "event_id": "E11",
+        "opportunity_id": "O6",
+        "account_id": "A2",
+        "created_date": "2026-02-10",
+        "effective_date": "2026-02-20",
+        "stage": "lost",
+        "amount_cents": "100000",
+        "origin": "Sales",
+        "ingest_seq": "1"
+      }
+    ],
+    "payment_allocations": [
+      {
+        "allocation_id": "P1",
+        "payment_id": "R1",
+        "invoice_id": "I1",
+        "account_id": "A1",
+        "event_date": "2026-02-15",
+        "amount_cents": "300000"
+      },
+      {
+        "allocation_id": "P2",
+        "payment_id": "R2",
+        "invoice_id": "I1",
+        "account_id": "A1",
+        "event_date": "2026-02-25",
+        "amount_cents": "200000"
+      },
+      {
+        "allocation_id": "P3",
+        "payment_id": "R3",
+        "invoice_id": "I2",
+        "account_id": "A1",
+        "event_date": "2026-03-10",
+        "amount_cents": "300000"
+      },
+      {
+        "allocation_id": "P4",
+        "payment_id": "R4",
+        "invoice_id": "I3",
+        "account_id": "A2",
+        "event_date": "2026-03-20",
+        "amount_cents": "200000"
+      },
+      {
+        "allocation_id": "P5",
+        "payment_id": "R5",
+        "invoice_id": "I4",
+        "account_id": "A4",
+        "event_date": "2026-02-10",
+        "amount_cents": "100000"
+      }
+    ],
+    "subscription_contracts": [
+      {
+        "contract_id": "S1",
+        "account_id": "A1",
+        "start_date": "2026-02-10",
+        "end_date": "2027-02-10",
+        "fee_cents": "1200000",
+        "billing_months": "12",
+        "contract_type": "recurring",
+        "is_trial": "0",
+        "past_due": "0"
+      },
+      {
+        "contract_id": "S2",
+        "account_id": "A2",
+        "start_date": "2026-03-10",
+        "end_date": "2027-03-10",
+        "fee_cents": "50000",
+        "billing_months": "1",
+        "contract_type": "recurring",
+        "is_trial": "0",
+        "past_due": "1"
+      },
+      {
+        "contract_id": "S3",
+        "account_id": "A4",
+        "start_date": "2026-02-01",
+        "end_date": "2026-03-20",
+        "fee_cents": "240000",
+        "billing_months": "12",
+        "contract_type": "recurring",
+        "is_trial": "0",
+        "past_due": "0"
+      },
+      {
+        "contract_id": "S4",
+        "account_id": "A3",
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "fee_cents": "9999900",
+        "billing_months": "12",
+        "contract_type": "recurring",
+        "is_trial": "1",
+        "past_due": "0"
+      },
+      {
+        "contract_id": "S5",
+        "account_id": "A3",
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "fee_cents": "7000000",
+        "billing_months": "12",
+        "contract_type": "one_time",
+        "is_trial": "0",
+        "past_due": "0"
+      },
+      {
+        "contract_id": "S6",
+        "account_id": "A3",
+        "start_date": "2026-01-01",
+        "end_date": "2026-03-01",
+        "fee_cents": "100000",
+        "billing_months": "1",
+        "contract_type": "recurring",
+        "is_trial": "0",
+        "past_due": "0"
+      }
+    ]
+  },
+  "software_tests": 87,
+  "native": {
+    "started_at": "2026-10-15T01:56:01.995775+00:00",
+    "finished_at": "2026-10-15T01:58:57.397575+00:00",
+    "query_ids": 461,
+    "models": 15,
+    "denied_operations": [
+      {
+        "denied": true,
+        "errno": 2003,
+        "operation": "raw_read",
+        "sqlstate": "02000"
+      },
+      {
+        "denied": true,
+        "errno": 2003,
+        "operation": "release_write",
+        "sqlstate": "42S02"
+      },
+      {
+        "denied": true,
+        "errno": 3013,
+        "operation": "build_role_escalation",
+        "sqlstate": "42501"
+      },
+      {
+        "denied": true,
+        "errno": 3013,
+        "operation": "loader_role_escalation",
+        "sqlstate": "42501"
+      }
+    ],
+    "consumption": {
+      "note": "Elapsed time is not billed credits. Use snowflake/consumption.sql after reporting latency.",
+      "status": "pending_owner_metering_export"
+    }
+  }
+}

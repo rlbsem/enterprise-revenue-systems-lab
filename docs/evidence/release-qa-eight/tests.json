@@ -1,0 +1,1005 @@
+{
+  "executed_at": "2026-10-27T00:46:39.426081+00:00",
+  "reconciled_parents": [
+    "219fceffa63fae618593f48646c0ddbfc4b4eb31",
+    "834750dcc50b1759c736e0e081d1bf8aca41fb5a"
+  ],
+  "python": "3.12.14",
+  "platform": "Windows",
+  "tests": 195,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 68.635,
+  "command": "python -m pytest -q --basetemp .cache/release-qa-full-tests --junitxml .cache/release-qa-full-tests.xml",
+  "source_sha256": {
+    "web/app.js": "0cbc9a7b3e6ed5b27c04ba5d09eee346ea150080e19c1920aab2a9495c0a7e48",
+    "web/index.html": "0f5ca819877f0f7378b3defcd201900c3e356d3182625f720095bdaeb88a1a67",
+    "web/release.js": "e505ccc0dedd12df0f3c2ea7556202434d505033efef14825e8477203b3a4797",
+    "web/research.js": "99175f84431cd22d8c7cafed35eebdf08dcbb3c877de725a9d86414beeb0b43c",
+    "web/integrity.js": "a7b4d930a5bf34f4a4ba1571a0a34decfea39ac04434c6f802b595cd68679752",
+    "web/analytics.js": "5f19987660bc5e120b94ec88bc472656cb4c41557cfd5f8c433b86aae0e4e86a",
+    "web/catalog.json": "8b9dff5aee77692410a9a58633743636866a37a164bbc20defa0e8a482e80ea7",
+    "sources.lock.json": "147b6287e33ce19f9fc04d5e03d8d1d4f58da890e1d0e21685a7d3fa97867a48",
+    "src/revenue_lab/site.py": "511bee1ac637be7828e52e8876584bc83a0a123539b1b24c9592d71be4b65f35",
+    "tests/test_release_qa_eight.py": "ff4995eadb7c883daa5c3a0948fcde17a7f9e18851411d710efbd3272547c00d"
+  },
+  "cases": [
+    {
+      "class": "tests.test_analytics",
+      "test": "test_actual_recorded_benchmarks_models_and_native_boundaries",
+      "seconds": 0.056
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[timing]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[summary]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[rowset]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[model_missing]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[test_failed]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[native_failed]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[native_denial]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[native_query]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[provenance]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[projection]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[promoted]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[new_run]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[local_native]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[local_hash]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[local_model]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_evidence_cannot_be_relabelled_or_incomplete[local_gate]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_resealing_does_not_allow_changes_to_original_sql",
+      "seconds": 0.043
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_git_index_preserves_imported_original_bytes",
+      "seconds": 1.006
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_shared_capture_registry_covers_every_investigation",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_seven_prior_investigations_and_evidence_are_preserved",
+      "seconds": 0.021
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_public_analytics_has_no_live_warehouse_or_private_material",
+      "seconds": 0.01
+    },
+    {
+      "class": "tests.test_analytics",
+      "test": "test_genuine_rendered_screenshots_and_static_accessibility",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_analytics_browser",
+      "test": "test_analytics_lineage_metrics_benchmarks_native_and_download",
+      "seconds": 1.322
+    },
+    {
+      "class": "tests.test_analytics_browser",
+      "test": "test_tampered_analytics_verification_is_not_rendered",
+      "seconds": 0.98
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_browser_evidence_integrity_review_download_and_mobile",
+      "seconds": 1.063
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_all_scenarios_and_three_investigations",
+      "seconds": 4.929
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_browser_import_refuses_altered_artifacts",
+      "seconds": 0.614
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_keyboard_tabs_and_latest_navigation_preserve_evidence_identity",
+      "seconds": 0.706
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_displayed_verification_record_cannot_be_silently_replaced",
+      "seconds": 0.515
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_revenue_ui_uses_neutral_dollar_display",
+      "seconds": 0.533
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_selected_account_bridge_uses_original_model_and_source_rows",
+      "seconds": 0.584
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_static_pages_subpath_has_attribution_and_no_execution_api",
+      "seconds": 3.676
+    },
+    {
+      "class": "tests.test_browser",
+      "test": "test_connected_vendor_investigation_navigation_and_integrity",
+      "seconds": 1.116
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_preserved_and_executed_evidence[seller-application]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_preserved_and_executed_evidence[seller-support-review]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_preserved_and_executed_evidence[seller-stale]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_preserved_and_executed_evidence[seller-suppressed]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_preserved_and_executed_evidence[connected-roundtrip]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[tamper]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[missing]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[version]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[stale]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[duplicate]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[traversal]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[configuration]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_invalid_bundle_refused[incomplete]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_valid_hash_does_not_prove_business_relationship[receipt]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_valid_hash_does_not_prove_business_relationship[quote]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_valid_hash_does_not_prove_business_relationship[approval]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_valid_hash_does_not_prove_business_relationship[authority]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_runner_rejects_arbitrary_command",
+      "seconds": 0.0
+    },
+    {
+      "class": "tests.test_bundles",
+      "test": "test_review_does_not_claim_independent_usefulness",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_native_bundle",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[extra_review]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[old_review]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[wrong_account]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[missing_receipt]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[second_post]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[warehouse_hold]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[source_hash]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[cleanup]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_connected",
+      "test": "test_connected_claims_reject_resigned_tampering[claimed_cloud_rerun]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_new_domain_bundles[control-recovery]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_new_domain_bundles[revenue-correction]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_new_domain_bundles[revenue-bridge]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_new_domain_bundles[seller-delivery]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_recovery_relationship_failures_with_valid_hashes[effect]",
+      "seconds": 0.009
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_recovery_relationship_failures_with_valid_hashes[intent]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_recovery_relationship_failures_with_valid_hashes[receipt]",
+      "seconds": 0.01
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_recovery_relationship_failures_with_valid_hashes[uncertainty]",
+      "seconds": 0.008
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_financial_relationship_failures_with_valid_hashes[source]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_financial_relationship_failures_with_valid_hashes[metric]",
+      "seconds": 0.016
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_financial_relationship_failures_with_valid_hashes[equivalence]",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_financial_relationship_failures_with_valid_hashes[correction]",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_domains",
+      "test": "test_financial_relationship_failures_with_valid_hashes[dbt]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_local_execution_rejects_unapproved_requests[origin]",
+      "seconds": 0.546
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_local_execution_rejects_unapproved_requests[token]",
+      "seconds": 0.517
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_local_execution_rejects_unapproved_requests[scenario]",
+      "seconds": 0.516
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_local_execution_rejects_unapproved_requests[extra]",
+      "seconds": 0.514
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_local_execution_rejects_unapproved_requests[host]",
+      "seconds": 0.514
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_fresh_inference_unavailability_is_explicit",
+      "seconds": 0.502
+    },
+    {
+      "class": "tests.test_execution_boundary",
+      "test": "test_static_mode_disables_execution",
+      "seconds": 0.515
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_bundles_verify_without_engine_or_vendor[gtm-enterprise]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_bundles_verify_without_engine_or_vendor[gtm-salesforce]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_bundles_verify_without_engine_or_vendor[gtm-qwen]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[currency]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[amount]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[denominator]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[approval]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[leakage]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[source]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_pipeline_rejects_inconsistent_business_evidence[scope]",
+      "seconds": 0.014
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_native_gtm_relationships_and_permissions_are_not_a_success_flag[relationship]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_native_gtm_relationships_and_permissions_are_not_a_success_flag[reader]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_native_gtm_relationships_and_permissions_are_not_a_success_flag[receipt]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_native_gtm_relationships_and_permissions_are_not_a_success_flag[grant]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_native_gtm_relationships_and_permissions_are_not_a_success_flag[cleanup]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[citation]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[context]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[authority]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[failure_count]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[instructions]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_qwen_exact_response_and_limitations_are_preserved[request]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_lane_conflation_is_rejected_even_after_resigning[new_vendor_execution]",
+      "seconds": 0.023
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_lane_conflation_is_rejected_even_after_resigning[new_model_execution]",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_lane_conflation_is_rejected_even_after_resigning[continuous_vendor_workflow]",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_original_gtm_bytes_are_independently_pinned",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_original_four_investigations_and_screenshots_remain_byte_preserved",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_gtm_screenshot_provenance_matches_actual_ui_and_images",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_utf8_portable_artifacts_preserve_original_bytes[gtm-enterprise]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_utf8_portable_artifacts_preserve_original_bytes[gtm-salesforce]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm",
+      "test": "test_utf8_portable_artifacts_preserve_original_bytes[gtm-qwen]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_gtm_browser",
+      "test": "test_gtm_interactive_record_review_is_static_and_credential_free",
+      "seconds": 1.525
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_downloaded_archive_refuses_content_or_inventory_mutation[artifact]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_downloaded_archive_refuses_content_or_inventory_mutation[manifest]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_downloaded_archive_refuses_content_or_inventory_mutation[extra]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_downloaded_archive_refuses_content_or_inventory_mutation[duplicate]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_downloaded_archive_refuses_content_or_inventory_mutation[missing]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_pages_shaped_build_passes_the_same_read_only_smoke_checks",
+      "seconds": 35.195
+    },
+    {
+      "class": "tests.test_hosted",
+      "test": "test_smoke_refuses_other_hosts_before_opening_a_browser",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_recorded_integrity_source_money_and_independent_receipts",
+      "seconds": 0.013
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[money]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[arr]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[variance]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[receipt]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[record]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[assertion]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[new_effect]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[provenance]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[dbt]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_financial_evidence_rejects_false_or_incomplete_claims[projection]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_resealing_cannot_change_upstream_original_bytes",
+      "seconds": 0.016
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_six_prior_investigations_remain_exact_and_routes_preserved",
+      "seconds": 0.022
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_genuine_screenshot_provenance",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_integrity",
+      "test": "test_public_investigation_has_no_live_operator_connection_or_credentials",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_integrity_browser",
+      "test": "test_recorded_financial_journey_and_static_boundary",
+      "seconds": 1.061
+    },
+    {
+      "class": "tests.test_integrity_browser",
+      "test": "test_integrity_corrupt_verification_fails_before_display",
+      "seconds": 0.988
+    },
+    {
+      "class": "tests.test_process_boundaries",
+      "test": "test_timeout_terminates_engine_descendants",
+      "seconds": 2.854
+    },
+    {
+      "class": "tests.test_process_boundaries",
+      "test": "test_scenario_receives_only_its_explicit_local_authority",
+      "seconds": 0.0
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_verifies_actual_routing_receipts_and_separate_test_counts",
+      "seconds": 0.014
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[aggregate]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[projection]",
+      "seconds": 0.02
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[oracle]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[unsafe]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[duplicate]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[gate]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[failure]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[original]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[route]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[request]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[receipt]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[fault]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[rollback]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[canary]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[timeline]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[software]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[controls]",
+      "seconds": 0.004
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_release_refuses_plausible_but_incorrect_records[provenance]",
+      "seconds": 0.003
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_resealed_source_artifact_still_fails_original_byte_pin",
+      "seconds": 0.029
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_five_prior_investigations_and_archived_images_remain_exact",
+      "seconds": 0.017
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_screenshots_and_browser_proof_match_the_executed_ui",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_existing_catalog_routes_and_source_pins_are_unchanged",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_release",
+      "test": "test_portable_preserves_original_crlf_bytes",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_release_browser",
+      "test": "test_recorded_release_progression_is_inspectable_and_read_only",
+      "seconds": 1.071
+    },
+    {
+      "class": "tests.test_release_browser",
+      "test": "test_release_corrupted_verification_does_not_render_success",
+      "seconds": 0.97
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_historical_main_and_typography_artifacts_are_byte_exact",
+      "seconds": 0.031
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_current_main_contracts_survive_typography_reconciliation",
+      "seconds": 0.023
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_fresh_eight_case_captures_bind_current_source_and_images[presentation]",
+      "seconds": 0.005
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_fresh_eight_case_captures_bind_current_source_and_images[research]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_fresh_eight_case_captures_bind_current_source_and_images[release]",
+      "seconds": 0.002
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_fresh_eight_case_captures_bind_current_source_and_images[integrity]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_fresh_eight_case_captures_bind_current_source_and_images[analytics]",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_release_qa_eight",
+      "test": "test_readme_images_use_fresh_release_captures_without_losing_routes",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_bundle_is_separate_and_reproducible_offline",
+      "seconds": 0.069
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[response]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[prompt]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[citation]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[context]",
+      "seconds": 0.007
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[qualitative]",
+      "seconds": 0.009
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[round]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[queue]",
+      "seconds": 0.012
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[enrichment]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[source]",
+      "seconds": 0.006
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[review]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[authority]",
+      "seconds": 0.011
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[operator]",
+      "seconds": 0.016
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[jobs]",
+      "seconds": 0.022
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_rejects_broken_lineage_and_fabricated_authority[regression]",
+      "seconds": 0.012
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_research_original_bytes_are_pinned_independently_of_bundle_hashes",
+      "seconds": 0.046
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_prior_lab_evidence_and_images_remain_byte_exact",
+      "seconds": 0.018
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_current_research_capture_and_ui_provenance",
+      "seconds": 0.001
+    },
+    {
+      "class": "tests.test_research",
+      "test": "test_static_build_preserves_valid_foreign_zip_metadata_and_repairs_bad_content",
+      "seconds": 0.642
+    },
+    {
+      "class": "tests.test_research_browser",
+      "test": "test_sdr_research_interactions_are_recorded_and_read_only",
+      "seconds": 1.265
+    },
+    {
+      "class": "tests.test_research_browser",
+      "test": "test_research_fails_closed_on_corrupted_verification",
+      "seconds": 0.978
+    }
+  ],
+  "native_vendor_execution": false
+}
