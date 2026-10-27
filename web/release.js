@@ -87,7 +87,7 @@ export function releasePanel(ui) {
   }
   for(const [key,number,label,note] of stages){const b=el("button");b.type="button";b.dataset.stage=key;b.setAttribute("aria-controls","release-detail");b.append(el("small",number+" · "+note),el("strong",label));b.addEventListener("click",()=>{selected=key;show();});nav.append(b);}
   p.append(nav,announcement,content);show();
-  const boundaries=section("What this establishes — and what it does not");
+  const boundaries=section("What this establishes (and what it does not)");
   boundaries.append(el("p","Recorded real inference met this finite synthetic suite and exercised the local release controls. These results do not establish production reliability, general model accuracy or commercial outcomes. The same engineer authored the domain rules and cases; this is not an external blind benchmark."));
   const software=read("software.json"),controls=read("controls.json");
   boundaries.append(facts([["Separate source software regression",`${software.tests} tests · ${software.failures} failures`],["Permission / replay controls",`${Object.values(controls.checks).filter(Boolean).length}/${Object.keys(controls.checks).length}`],["Escalation approvals","Trusted synthetic evaluation harness · not human reviewer quality"]]));

@@ -1,0 +1,3950 @@
+{
+  "captured_utc": "2026-10-26T12:32:37.188137+00:00",
+  "scope": "Actual static HTML/CSS/JS; existing recorded synthetic bundles only. No new inference, engine run or external system call.",
+  "browser": "Chromium",
+  "browser_version": "140.0.7339.16",
+  "stylesheet_sha256": "e7eb3fe3cc85960358533da1a64ee31779ef759a2c2ebf4dff70b47f301fd9a5",
+  "app_sha256": "f4010a15ce14aaaa9ce0c64de3683a0d9f6735458a32c8ebf15bd83b73870e43",
+  "gtm_sha256": "82f2f073ef670dc922921e837e80a6ff6ef2f1524c29b1304f5501521246e58b",
+  "html_sha256": "c4e71227a59e1bfa75f0ec0a88e8fefe22ffd82ea980d1e10a90bc0a304aef97",
+  "catalog_sha256": "fd9fe5f4469c89bca31da8a5f29a8395cf0eeaaae2e6b6b8f0c82dd66e3e0955",
+  "images": {
+    "connected-overview.png": {
+      "sha256": "b1aaecc9d50de24accb2a3cd3b1e6554bcebdf5eee2dea8cfc0e1bc8259f9993",
+      "case": "connected-roundtrip",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "control-overview.png": {
+      "sha256": "13368dfdad89640c76e35c23f7ff312d8b2d6128e4757f2eb87d5f0c349bad91",
+      "case": "control-recovery",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-enterprise-overview.png": {
+      "sha256": "9d47a301eb9dfa44763b67137f861de5ceac3824343e236476ab1bd8c9bb92e0",
+      "case": "gtm-enterprise",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-qwen-overview.png": {
+      "sha256": "6450d2c02a7ba40d0079d54ddebf3b92ea5af046c74d787006f43b269b465423",
+      "case": "gtm-qwen",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-research-overview.png": {
+      "sha256": "6e8267611d658b52976ebfa5215aba53cf5e21733a59e5e3ca4671a6a3dde926",
+      "case": "gtm-research",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "gtm-salesforce-overview.png": {
+      "sha256": "343077cf2eb49c02ed1dc613b00aa7b62e15c455ef5d9d44d55502633fd38b14",
+      "case": "gtm-salesforce",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "release-overview.png": {
+      "sha256": "f0c5678992a742453ec1de5fe304f0020d1c73c76f36c5c66324e13a353b78fc",
+      "case": "release-assurance",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "revenue-overview.png": {
+      "sha256": "a17c6c2c63eee572bff40ca8bff89f1eca4398198861e75e32fbf17a3de2e015",
+      "case": "revenue-correction",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "integrity-overview.png": {
+      "sha256": "7977890cb83b5f5d6d1048815f1a79912f26abe78185e5b648a23fbab9d86b0a",
+      "case": "revenue-integrity",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "seller-overview.png": {
+      "sha256": "c033cd0604a666f2217efb7cefb33a56d9b0c77c981ea36fe91e4c4e5f53132c",
+      "case": "seller-application",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "full_page": true
+    },
+    "visual-refresh/connected-mobile.png": {
+      "sha256": "8fbd08b50abe7b7a0083c62709c7f0d468d1ab9badd56f92fca96872e88ed63b",
+      "case": "connected-roundtrip",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/control-mobile.png": {
+      "sha256": "44a87a98553b0fb6608810ec9f78c6f6f0c1b5531bda1b34b94214916b3afae1",
+      "case": "control-recovery",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-enterprise-mobile.png": {
+      "sha256": "2ec1de44862b40914e42a0ec05bd102cc2c269a641fe53b7a6c2be62a3fe2944",
+      "case": "gtm-enterprise",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-qwen-mobile.png": {
+      "sha256": "15f767cda47b37dd4dbaf4f6d2c2e3ede2185f1f13f244aa1fb9a39847ace296",
+      "case": "gtm-qwen",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-research-mobile.png": {
+      "sha256": "9cf97fe20f1d8346d5ae354046a7f2260a4e63c542d5e97dcf837f5ad4dc15ec",
+      "case": "gtm-research",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/gtm-salesforce-mobile.png": {
+      "sha256": "a0606e0a9a91fa20bfa7b06ff61b62c59a61ae3ab4e9cfaf29279764f271e68c",
+      "case": "gtm-salesforce",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/release-mobile.png": {
+      "sha256": "db3a58a9ecdcad48335b2c604aee7ca0e8b1b6aa4518c557840167d25c6e6956",
+      "case": "release-assurance",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/revenue-mobile.png": {
+      "sha256": "c1f429cad257b7c9106277001c4d31fa8d0de91f75c361b4804e3f9f36a3b387",
+      "case": "revenue-correction",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/integrity-mobile.png": {
+      "sha256": "856a7d7329e619bb9966df92168426e6abdc87107a8a09c229bb8d78cb2dd75b",
+      "case": "revenue-integrity",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    },
+    "visual-refresh/seller-mobile.png": {
+      "sha256": "403d754016b993e680e71d928f3722adac45c3dc1eae0ccfb2cca772ad0091ed",
+      "case": "seller-application",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full_page": true
+    }
+  },
+  "reviews": [
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 116,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 192,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 202,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 132,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 293,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 642,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 380,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 114,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 96,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 116,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 192,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 202,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 132,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 293,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 642,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 380,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 114,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 96,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1280,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1280,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1280,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1280,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 116,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 192,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 202,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 132,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 146,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 293,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 642,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 380,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 106,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 133,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 126,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 114,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 100,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 96,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 768,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 768,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 98,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 768,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 110,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 768,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 92,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 73,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 168,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 108,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 269,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 218,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 102,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 618,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 356,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 82,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 82,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 134,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 109,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 102,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 90,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 72,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 390,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 390,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 390,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 390,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 92,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 73,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 168,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 108,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 269,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 218,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 102,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 618,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 356,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 82,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 82,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 134,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 63,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 109,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 64,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 102,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 90,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 76,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 72,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "view": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "view": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 74,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "view": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 86,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "view": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "recorded_cases": [
+    {
+      "id": "connected-roundtrip",
+      "investigation": "connected",
+      "title": "Salesforce and Snowflake round trip",
+      "summary": "A governed CRM review survives a lost acknowledgment and changes the next warehouse decision.",
+      "manifest_sha256": "3db928ea93bbe649f65f49cc8a21fe163785c613f87997af9552167a220dd865",
+      "verification_sha256": "ae0f89d72e0b484751ac46dae2be1097af8f6302982657a9105a91230f009b2c",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "4ac00021637b3823a8df2f5f465b528df5749f1e"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "control-recovery",
+      "investigation": "control",
+      "title": "Uncertain delivery and recovery",
+      "summary": "Durable intent, lost acknowledgments and independently observed receiver effects.",
+      "manifest_sha256": "5f524a23a146d207086f80fcae1b59eeb91e3487f036850277ff659049212995",
+      "verification_sha256": "ec3c4f907635da3cd87fa8b28030fb88221a30412a393021368fa81bbed74a1f",
+      "source": {
+        "repository": "rlbsem/enterprise-martech-ai-control-plane",
+        "commit": "77e2fa0fae8f3e28a4eb22ef754eb6b1ad52ba5e"
+      },
+      "mode": "fresh_engine"
+    },
+    {
+      "id": "gtm-enterprise",
+      "investigation": "gtm",
+      "title": "120 accounts \u00b7 USD $3.46M synthetic pipeline",
+      "summary": "Inspect account qualification, exact approvals and five source CRM outcomes across treatment and holdout.",
+      "manifest_sha256": "8bee14d5076fa56a95da9f561f89680924eb83b3465f5eb104c89f4d5a4aeb8a",
+      "verification_sha256": "1c715439208ba02281be3f3dbf69dcc3839b84450a60b64b92217dd2da3dd6be",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-qwen",
+      "investigation": "gtm",
+      "title": "Recorded Qwen3 \u00b7 advice and refusal",
+      "summary": "A separate 16-response evaluation preserves exact quotations, policy observations and six citation failures.",
+      "manifest_sha256": "f8537265365df3635a26a00172686a79b6bd32132e2a3e157fe0983147a891c9",
+      "verification_sha256": "f736919771ef99cc528ebb966bbdfdc1a098af0a0e83fa24cc3eee9b98149e01",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-research",
+      "investigation": "gtm",
+      "title": "SDR account intelligence \u00b7 sources to seller review",
+      "summary": "Prioritize six synthetic accounts, compare 40 actual Qwen3 responses and inspect a separately recorded local seller decision.",
+      "manifest_sha256": "1b88dbeab8a4b8f384b3fadb6c6c13664fcf41781cb1f3877002f54c1583321b",
+      "verification_sha256": "d4d91eb95d53a6bf4064d9f8c8674c55596a5d2106ea4d3c4fb787519d1b7aec",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "81d9381169456ca8893be0ddea483296ac77e12e"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "gtm-salesforce",
+      "investigation": "gtm",
+      "title": "Native Salesforce \u00b7 one guarded SDR Task",
+      "summary": "A separate Developer Edition run: Account/Contact resolution, ownership, lost-ack recovery and duplicate rollback.",
+      "manifest_sha256": "efc43cd1b003bd1312cb211ee1898a924481d73a62269d3db67aac01c50b6cf2",
+      "verification_sha256": "ef58f4e7957bebd28c820b924d628cbaba06928f1225447e5548f34b7e4203ad",
+      "source": {
+        "repository": "rlbsem/gtm-pipeline-orchestration",
+        "commit": "6da3603a8e447dacfdbde25a8aab5c5fa3721328"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "release-assurance",
+      "investigation": "release",
+      "title": "AI Model Release Assurance",
+      "summary": "Inspect rejected model evaluations, finite-suite acceptance, actual local promotion and controlled-fault rollback.",
+      "manifest_sha256": "f74766b2484a447ded073ec36a75d8f1ab2f1062138a92ec060704403cdb26f1",
+      "verification_sha256": "89a58337e67a7c75e5da8c14693a87401f87bc24f1e0b96df916650292c026f0",
+      "source": {
+        "repository": "rlbsem/enterprise-agent-runtime-evaluation",
+        "commit": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "revenue-bridge",
+      "investigation": "revenue",
+      "title": "Installed ARR and quarterly flows",
+      "summary": "Different economic measures reconcile at their own grain and time boundary.",
+      "manifest_sha256": "62bd460a07237b7ca0acf58553f2da0db645a4ee841a0a0248d65e5ac876c414",
+      "verification_sha256": "8f587ee1c1ec9759cf4b6ab00e1de736ef0d0d9745a5dff3444f5e56a44d45ca",
+      "source": {
+        "repository": "rlbsem/revenue-metrics-platform",
+        "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "revenue-correction",
+      "investigation": "revenue",
+      "title": "Late correction and equivalent rebuild",
+      "summary": "Original dbt builds are compared with independently exported model rows.",
+      "manifest_sha256": "88c6e87176712c28d68848feaf0374a13f4a7f1dd6eef3737657cf8ab5e5037f",
+      "verification_sha256": "b2f4bc755cf3be02f55307c127f73a0abcc7943aa9c2f8dabee8513e484319e5",
+      "source": {
+        "repository": "rlbsem/revenue-metrics-platform",
+        "commit": "b3837689c818053580fe71df90b3ff8f9e51eee5"
+      },
+      "mode": "fresh_engine"
+    },
+    {
+      "id": "revenue-integrity",
+      "investigation": "integrity",
+      "title": "Revenue Integrity: From Sales Commitment to Collected Cash",
+      "summary": "Trace the $1,500 discrepancy, authoritative records and a separately reviewed delivery recovery. Recorded local execution; synthetic USD.",
+      "manifest_sha256": "355ac646b3b20dacd5c907932f3c5927565f22221ee5cec3065ff8f857c16c43",
+      "verification_sha256": "ad6d240ec15e68288195de92e7081746b2ea3d749076faee309007249e9407f8",
+      "source": {
+        "repository": "rlbsem/enterprise-revenue-integrity-platform",
+        "commit": "e2993099acaaae188aac0d83ba840cecef1c0014"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-application",
+      "investigation": "seller",
+      "title": "Reviewed discovery action",
+      "summary": "A saved model response was edited, approved and delivered to a synthetic CRM.",
+      "manifest_sha256": "55afda697fb7c727fd340848e78bba93ce23ad321cde9818453411cf32084232",
+      "verification_sha256": "1ff02a7e97d55c4491d3fd0c631e06b01f5a0c365c50da2eb6be38ee58514c02",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-delivery",
+      "investigation": "seller",
+      "title": "Saved response, fresh approved delivery",
+      "summary": "Recorded response replay with original-engine approval and a new local receiver effect.",
+      "manifest_sha256": "b86b04b1d343e7e4d9f5a158c6ed2ca43c0d6813300127bf46aef141af26ee2b",
+      "verification_sha256": "55ac846eeec74b836905a6e263acb63fb839112efc6e78f548836f6fe456f398",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    },
+    {
+      "id": "seller-live",
+      "investigation": "seller",
+      "title": "Recorded fresh local inference",
+      "summary": "A real local model produced this response; the original engine recorded the synthetic effect.",
+      "manifest_sha256": "000fd2a6d30b618972f09547f1a0ec760b7012f98cffdec01e4b917c5fde022a",
+      "verification_sha256": "89c1b679f7c3611893e2b1d2427359d40e2e7d614d0004f3d4d349fd55cdfec0",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_inference"
+    },
+    {
+      "id": "seller-stale",
+      "investigation": "seller",
+      "title": "Evidence changes before approval",
+      "summary": "The original Workbench refuses approval after new account evidence arrives.",
+      "manifest_sha256": "6078d933e85598789256ca1479bb0212b6d79b209341cb18b29fdb8b76515151",
+      "verification_sha256": "f4afcea559b3bf5652faf983f5424167b85e93777b976152898edf4af5b30759",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    },
+    {
+      "id": "seller-support-review",
+      "investigation": "seller",
+      "title": "A passing draft with an unsupported claim",
+      "summary": "Exact citations pass. The draft still implies unverified support availability.",
+      "manifest_sha256": "8081357c10a80e7d0030aa7ce47e8728450fe17a89a6904988e00f38e55707ff",
+      "verification_sha256": "2244371ca330e3b4446428ab7281e3b646248d15171924f9540d89e57c73b634",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "seller-suppressed",
+      "investigation": "seller",
+      "title": "Consent blocks the action",
+      "summary": "A recorded response is replayed; commercial authority prevents an effect.",
+      "manifest_sha256": "0acb342a7f6421164997639a867dd0692b630481194c051ba89845b8c5ab4354",
+      "verification_sha256": "e696c7251a505e51a8007d9bcd62f23b98060a806aaaac4e64a846ee28075084",
+      "source": {
+        "repository": "rlbsem/customer-signal-activation",
+        "commit": "d5426e70b34abfd92e8bf3aaabef22aa831587f2"
+      },
+      "mode": "fresh_replay"
+    }
+  ],
+  "historical_images": {
+    "docs/images/archive/pre-navy-control-overview.png": "da481cea9dfb78676ddacd0d0d7c132dc0ce9d3277bda481bcf4b8872147143f",
+    "docs/images/archive/pre-navy-revenue-overview.png": "08893c803922c75b9b5bd7c16226b9b058252f40db889f4a469b72a42b288165",
+    "docs/images/archive/pre-navy-seller-overview.png": "5c0894ba902f57ba83e295a4d93ca2b1ead127d952ddc318360e902ac1ecc6bb"
+  },
+  "refusal_state": {
+    "text": "Import refused \u00b7 Cannot read properties of undefined (reading 'scenario')",
+    "contrast": {
+      "checked": 74,
+      "minimum_ratio": 4.584,
+      "failures": []
+    }
+  },
+  "page_errors": [],
+  "network": "GET requests to loopback static server only",
+  "interactions": [
+    "case loading",
+    "all four evidence tabs",
+    "artifact validation",
+    "keyboard tab navigation and visible focus",
+    "exact-byte reproduction ZIP download",
+    "reproduction commands with execution hidden",
+    "invalid import refusal"
+  ],
+  "contrast_scope": "Computed text/solid-background checks; not a complete WCAG audit"
+}

@@ -1,0 +1,651 @@
+{
+  "captured_at": "2026-10-26T12:32:44.836697+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
+  "case": "release-assurance",
+  "source_revision": "84b7bbaa92b08d3238aa321ada52b4881a62b4c2",
+  "source_sha256": {
+    "web/app.js": "f4010a15ce14aaaa9ce0c64de3683a0d9f6735458a32c8ebf15bd83b73870e43",
+    "web/release.js": "e505ccc0dedd12df0f3c2ea7556202434d505033efef14825e8477203b3a4797",
+    "web/style.css": "e7eb3fe3cc85960358533da1a64ee31779ef759a2c2ebf4dff70b47f301fd9a5",
+    "web/index.html": "c4e71227a59e1bfa75f0ec0a88e8fefe22ffd82ea980d1e10a90bc0a304aef97",
+    "web/catalog.json": "fd9fe5f4469c89bca31da8a5f29a8395cf0eeaaae2e6b6b8f0c82dd66e3e0955",
+    "sources.lock.json": "4a0a1279a190efe53a724ab6e34c1e666e54b94bc368effa536e9c3e2fac731f",
+    "scripts/capture_release.py": "f8daa8b1972fec57346bc6b5d653c711ff4d916cd74fb6e6c0439734608b663a"
+  },
+  "image_sha256": {
+    "release-assurance-desktop.png": "2acf129f9c40f8f45d1f8b319460ae1680588afd1a26977755b8ac1c13f36e56",
+    "release-assurance-rollback.png": "d98503bd929508c62f4777fb15f1e8f003e0bb3bd5f985e3ea50b32034b3541d",
+    "release-assurance-mobile.png": "994b54ba869191c9b281f1640b3ecc8605913f80cb95c25e1658118e3c6ba048"
+  },
+  "images": {
+    "release-assurance-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; comparison, state navigation and finite acceptance"
+    },
+    "release-assurance-rollback.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; controlled fault and subsequent reference routing"
+    },
+    "release-assurance-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "capture": "actual mobile viewport; selectable states and rollback evidence"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1440,
+      "state": "original",
+      "overflow": false,
+      "contrast": {
+        "checked": 221,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "blocked",
+      "overflow": false,
+      "contrast": {
+        "checked": 191,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "eligible",
+      "overflow": false,
+      "contrast": {
+        "checked": 382,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "shadow",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "canary",
+      "overflow": false,
+      "contrast": {
+        "checked": 172,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "promoted",
+      "overflow": false,
+      "contrast": {
+        "checked": 164,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "rollback",
+      "overflow": false,
+      "contrast": {
+        "checked": 169,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "original",
+      "overflow": false,
+      "contrast": {
+        "checked": 223,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "blocked",
+      "overflow": false,
+      "contrast": {
+        "checked": 191,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "eligible",
+      "overflow": false,
+      "contrast": {
+        "checked": 382,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "shadow",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "canary",
+      "overflow": false,
+      "contrast": {
+        "checked": 172,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "promoted",
+      "overflow": false,
+      "contrast": {
+        "checked": 164,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "rollback",
+      "overflow": false,
+      "contrast": {
+        "checked": 169,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "original",
+      "overflow": false,
+      "contrast": {
+        "checked": 223,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "blocked",
+      "overflow": false,
+      "contrast": {
+        "checked": 191,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "eligible",
+      "overflow": false,
+      "contrast": {
+        "checked": 382,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "shadow",
+      "overflow": false,
+      "contrast": {
+        "checked": 174,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "canary",
+      "overflow": false,
+      "contrast": {
+        "checked": 172,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "promoted",
+      "overflow": false,
+      "contrast": {
+        "checked": 164,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "rollback",
+      "overflow": false,
+      "contrast": {
+        "checked": 169,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 118,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "original",
+      "overflow": false,
+      "contrast": {
+        "checked": 199,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "blocked",
+      "overflow": false,
+      "contrast": {
+        "checked": 167,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "eligible",
+      "overflow": false,
+      "contrast": {
+        "checked": 358,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "shadow",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "canary",
+      "overflow": false,
+      "contrast": {
+        "checked": 148,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "promoted",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "rollback",
+      "overflow": false,
+      "contrast": {
+        "checked": 145,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "original",
+      "overflow": false,
+      "contrast": {
+        "checked": 199,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "blocked",
+      "overflow": false,
+      "contrast": {
+        "checked": 167,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "eligible",
+      "overflow": false,
+      "contrast": {
+        "checked": 358,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "shadow",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "canary",
+      "overflow": false,
+      "contrast": {
+        "checked": 148,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "promoted",
+      "overflow": false,
+      "contrast": {
+        "checked": 140,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "rollback",
+      "overflow": false,
+      "contrast": {
+        "checked": 145,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 94,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "state": "original",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 1440,
+      "state": "blocked",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "width": 1440,
+      "state": "eligible",
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "width": 1440,
+      "state": "shadow",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 1440,
+      "state": "canary",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 1440,
+      "state": "promoted",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "width": 1440,
+      "state": "rollback",
+      "violations": [],
+      "incomplete": [],
+      "passes": 24
+    },
+    {
+      "width": 390,
+      "state": "original",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29
+    },
+    {
+      "width": 390,
+      "state": "blocked",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "eligible",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "shadow",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "width": 390,
+      "state": "canary",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    },
+    {
+      "width": 390,
+      "state": "promoted",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "width": 390,
+      "state": "rollback",
+      "violations": [],
+      "incomplete": [],
+      "passes": 25
+    }
+  ],
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "http_writes": [],
+  "new_model_execution": false
+}

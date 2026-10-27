@@ -2,7 +2,7 @@
 
 Can an agent that cites the right facts still choose the wrong action? Can a stronger model fail a mandatory release gate? The sixth investigation follows actual recorded evaluations through a bounded local release and rollback.
 
-Open `?case=release-assurance` in a local preview. This route is included in the candidate static build; it is not a claim that the public site has deployed this PR. The existing five investigations and their routes remain intact.
+Open `?case=release-assurance` in a local preview. This route is included on main. All eight investigations retain their routes; deployment status remains separate from local presentation verification.
 
 ## Inspect the progression
 
@@ -51,4 +51,6 @@ The existing hosted smoke verifier automatically checks all fifteen cases at des
 - Effects are synthetic local HTTP/SQLite records. There is no production traffic, client result, external CRM action or commercial outcome.
 - The bounded run has six development, twelve now-known regression and six fresh holdout cases, each at two seeds. The same engineer authored domain rules and cases. This is not a blind external benchmark or evidence of general model accuracy or production reliability.
 - The regression was deliberately injected into a copy of the adapter input. It is not a naturally observed model failure. Escalation approvals came from the trusted evaluation harness, not measured independent human review.
-- This PR performs no paid inference, cloud deployment, vendor execution or new release action. Public availability of the new route requires owner-approved merge and the existing Pages workflow.
+- This PR performs no paid inference, cloud deployment, vendor execution or new release action. The route is included on main; the existing Pages and hosted workflows record public availability.
+
+Current eight-investigation presentation and screenshots: [release QA](release-qa-eight.md). Original execution records and their capture-time provenance remain archived at the links above.

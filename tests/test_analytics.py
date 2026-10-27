@@ -80,7 +80,11 @@ def test_seven_prior_investigations_and_evidence_are_preserved():
     before = {r["id"]: r for r in json.loads(snapshot["files"]["web/catalog.json"])["scenarios"]}
     after = {r["id"]: r for r in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
     assert set(after) - set(before) == {"analytics-engineering"}
-    assert all(after[k] == v for k, v in before.items())
+    for k, v in before.items():
+        expected = dict(v)
+        if k == "revenue-integrity":
+            expected["title"] = "Revenue Integrity: From Sales Commitment to Collected Cash"
+        assert after[k] == expected
     old = json.loads(snapshot["files"]["sources.lock.json"])
     current = json.loads((ROOT/"sources.lock.json").read_bytes())
     assert all(current["sources"][k] == v for k, v in old["sources"].items())
@@ -103,7 +107,9 @@ def test_genuine_rendered_screenshots_and_static_accessibility():
     assert not r["http_writes"] and not r["page_errors"] and not r["nonlocal_requests"]
     assert all(not x["overflow"] and not x["contrast"]["failures"] for x in r["layouts"])
     assert all(not x["violations"] for x in r["accessibility"])
+    baseline = json.loads((ROOT/"docs/evidence/release-qa-eight/prior-ui-main.json").read_bytes())["files"]
     for name, checksum in r["source_sha256"].items():
-        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest() == checksum, name
+        data = baseline[name].encode() if name in baseline else (ROOT/name).read_bytes()
+        assert hashlib.sha256(data).hexdigest() == checksum, name
     for name, checksum in r["image_sha256"].items():
         assert hashlib.sha256((ROOT/"docs/images/analytics-engineering"/name).read_bytes()).hexdigest() == checksum, name

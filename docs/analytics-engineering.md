@@ -1,6 +1,6 @@
 # Analytics Engineering — Model Correctness & Performance
 
-The eighth investigation asks whether a model can be trusted, and whether a measured optimization is worth keeping. Preview route: `?case=analytics-engineering`. It is a static, read-only evidence explorer; this feature requires an approved merge and the existing Pages deployment before public availability is established.
+The eighth investigation asks whether a model can be trusted, and whether a measured optimization is worth keeping. Route: `?case=analytics-engineering`. It is a static, read-only evidence explorer; PR #11 merged it into main at `834750d`. Public deployment is verified separately; the reconciled presentation is still under PR review.
 
 ## Inspect the implementation
 
@@ -51,3 +51,5 @@ Offline verification checks original-byte hashes, source pins, lineage completen
 To repeat the small local row capture, export the exact source revision into a fresh isolated directory, install that platform's locked dependencies in its own environment, then run this Lab's `scripts/capture_analytics_fixture.py --source <export> --workspace <new-private-workspace> --output <new-private-record.json>`. The script refuses existing outputs/workspaces and invokes only `revenue demo --profile fixture`. Repeating large benchmarks remains an explicit, resource-intensive source-platform operation; [original performance contract](https://github.com/rlbsem/revenue-metrics-platform/blob/4cc1480d63f1095584db2ddcde72ed5626eb7ea7/docs/performance.md).
 
 [Genuine screenshots and current Lab verification](evidence/analytics-engineering/README.md). The source platform and GitHub profile are unchanged. No cloud resources or new vendor calls are involved.
+
+Current eight-investigation presentation and screenshots: [release QA](release-qa-eight.md). Original execution records and their capture-time provenance remain archived at the links above.

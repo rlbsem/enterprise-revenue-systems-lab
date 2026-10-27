@@ -1,0 +1,519 @@
+{
+  "captured_at": "2026-10-27T00:43:49.472356+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
+  "case": "analytics-engineering",
+  "source_revision": "4cc1480d63f1095584db2ddcde72ed5626eb7ea7",
+  "source_sha256": {
+    "web/app.js": "0cbc9a7b3e6ed5b27c04ba5d09eee346ea150080e19c1920aab2a9495c0a7e48",
+    "web/analytics.js": "5f19987660bc5e120b94ec88bc472656cb4c41557cfd5f8c433b86aae0e4e86a",
+    "web/style.css": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",
+    "web/index.html": "0f5ca819877f0f7378b3defcd201900c3e356d3182625f720095bdaeb88a1a67",
+    "web/catalog.json": "8b9dff5aee77692410a9a58633743636866a37a164bbc20defa0e8a482e80ea7",
+    "sources.lock.json": "147b6287e33ce19f9fc04d5e03d8d1d4f58da890e1d0e21685a7d3fa97867a48",
+    "scripts/capture_analytics.py": "74373f64382d5c276f356262d47be62d57a0d1fbc18951609fb0228b2f774482"
+  },
+  "image_sha256": {
+    "analytics-engineering-desktop.png": "35b70fad28b08ff53b8be806842f04d082d05a06ccce63fd917ad3eec3e3af8d",
+    "analytics-engineering-performance.png": "a8f6a3a340ca81252b018d0679a133bab1381b19f7be7ce57f8b6e138b4543c9",
+    "analytics-engineering-mobile.png": "ad4170b8b56c97e3676d33faeb6354a8dff73f5fabf7c4cd7bb4ee930e16500d"
+  },
+  "images": {
+    "analytics-engineering-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; recorded model grain, lineage and source fixture"
+    },
+    "analytics-engineering-performance.png": {
+      "width": 1440,
+      "height": 1260,
+      "capture": "actual viewport; actual paired local measurements and rejected optimization"
+    },
+    "analytics-engineering-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "capture": "actual mobile viewport; selectable analytics investigation and stress measurements"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1440,
+      "state": "models",
+      "overflow": false,
+      "contrast": {
+        "checked": 220,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "metrics",
+      "overflow": false,
+      "contrast": {
+        "checked": 239,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "quality",
+      "overflow": false,
+      "contrast": {
+        "checked": 386,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "performance",
+      "overflow": false,
+      "contrast": {
+        "checked": 312,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "state": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 234,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "models",
+      "overflow": false,
+      "contrast": {
+        "checked": 222,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "metrics",
+      "overflow": false,
+      "contrast": {
+        "checked": 239,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "quality",
+      "overflow": false,
+      "contrast": {
+        "checked": 386,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "performance",
+      "overflow": false,
+      "contrast": {
+        "checked": 312,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "state": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 234,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "models",
+      "overflow": false,
+      "contrast": {
+        "checked": 222,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "metrics",
+      "overflow": false,
+      "contrast": {
+        "checked": 239,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "quality",
+      "overflow": false,
+      "contrast": {
+        "checked": 386,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "performance",
+      "overflow": false,
+      "contrast": {
+        "checked": 312,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "state": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 234,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 87,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 97,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 88,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "models",
+      "overflow": false,
+      "contrast": {
+        "checked": 196,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "metrics",
+      "overflow": false,
+      "contrast": {
+        "checked": 213,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "quality",
+      "overflow": false,
+      "contrast": {
+        "checked": 360,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "performance",
+      "overflow": false,
+      "contrast": {
+        "checked": 286,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "state": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 208,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 62,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "models",
+      "overflow": false,
+      "contrast": {
+        "checked": 196,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "metrics",
+      "overflow": false,
+      "contrast": {
+        "checked": 213,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "quality",
+      "overflow": false,
+      "contrast": {
+        "checked": 360,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "performance",
+      "overflow": false,
+      "contrast": {
+        "checked": 286,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "state": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 208,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 71,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 62,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "state": "models",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 1440,
+      "state": "metrics",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 1440,
+      "state": "quality",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29
+    },
+    {
+      "width": 1440,
+      "state": "performance",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29
+    },
+    {
+      "width": 1440,
+      "state": "native",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "models",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "width": 390,
+      "state": "metrics",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "width": 390,
+      "state": "quality",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29
+    },
+    {
+      "width": 390,
+      "state": "performance",
+      "violations": [],
+      "incomplete": [],
+      "passes": 29
+    },
+    {
+      "width": 390,
+      "state": "native",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    }
+  ],
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "http_writes": [],
+  "new_model_execution": false,
+  "new_warehouse_execution": false
+}

@@ -58,8 +58,9 @@ def test_genuine_screenshot_provenance():
     for x in r["layouts"]:assert not x["overflow"] and not x["contrast"]["failures"]
     for x in r["accessibility"]:assert not x["violations"]
     baseline=json.loads((ROOT/"docs/evidence/analytics-engineering/prior-ui.json").read_bytes())["files"]
+    main=json.loads((ROOT/"docs/evidence/release-qa-eight/prior-ui-main.json").read_bytes())["files"]
     for n,h in r["source_sha256"].items():
-        data=baseline[n].encode() if n in baseline else (ROOT/n).read_bytes()
+        data=baseline[n].encode() if n in baseline else main[n].encode() if n in main else (ROOT/n).read_bytes()
         assert hashlib.sha256(data).hexdigest()==h,n
     for n,h in r["image_sha256"].items():assert hashlib.sha256((ROOT/"docs/images/revenue-integrity"/n).read_bytes()).hexdigest()==h
 

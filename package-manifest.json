@@ -27,28 +27,28 @@
       "bytes": 1070
     },
     "README.md": {
-      "sha256": "cb34b669a00d3120e657f2c9225b4e398d480b23f55002bb5422298a1c142c74",
-      "bytes": 16192
+      "sha256": "a1907504800a24b4bd7b7380a962a0365cb7bcd1ac4514d5bd61b67db2b51441",
+      "bytes": 17034
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
       "bytes": 487
     },
     "docs/analytics-engineering.md": {
-      "sha256": "e4475cccd6480278af3a5f6362e71f1d9e2313b93a655f30ff7f5ba689012406",
-      "bytes": 6610
+      "sha256": "5eeba51c1f60931e7f2e9d3345b4ab643c10b9b04cf30d53f7fd63df4884658e",
+      "bytes": 6813
     },
     "docs/architecture.md": {
       "sha256": "d2a100b977b3ed1c045a9bea59464e536d9a362355573b1c9289f21ba68329ce",
       "bytes": 4883
     },
     "docs/deployment.md": {
-      "sha256": "c153e2805b7fb473e62f4d0b242a28b8001b71973b024976b8bd0e619f564506",
-      "bytes": 6232
+      "sha256": "506121084a20c3f8fe8de5e3ad73a7a68360039e9f329e7729ed5826a8161326",
+      "bytes": 6298
     },
     "docs/evidence-guide.md": {
-      "sha256": "32b529ec1df57f83e8b0a2c02b9dd918f0b22b47eb4284e4ecdc77b9059e34ec",
-      "bytes": 5291
+      "sha256": "77b519c339e7e76494f6056319aca370b6f7771e82bc538265c6d8421bace31e",
+      "bytes": 5348
     },
     "docs/evidence/analytics-engineering/README.md": {
       "sha256": "3b4281cf535fb977a84729ccdb8aad3e3f90ece6303f00a3a5a7946318d82278",
@@ -170,6 +170,50 @@
       "sha256": "865d8410a6adc011a0d2811f151d0264960a153495347c6e23c2f006f3e58eb0",
       "bytes": 3748
     },
+    "docs/evidence/release-qa-eight/analytics.json": {
+      "sha256": "bd715e2591fe1a6e2db67f540b45f66ad704dd8e5078e9a7c372f646cac511bf",
+      "bytes": 11201
+    },
+    "docs/evidence/release-qa-eight/integrity.json": {
+      "sha256": "d91c7718b27f89cdb467435a0dfcebd5b9e1a2092c237150a09af413a0e3074e",
+      "bytes": 11402
+    },
+    "docs/evidence/release-qa-eight/presentation.json": {
+      "sha256": "a684e440320badee69c79dbc7bf83b8a6a8a497f81b5e0ff551fcf31ec97edfb",
+      "bytes": 97175
+    },
+    "docs/evidence/release-qa-eight/preserved-files.json": {
+      "sha256": "aa25c4a0c955bd6f6bfc76aecfd5fceb498a987ae86f0b4bbd5258f29ca7e128",
+      "bytes": 45836
+    },
+    "docs/evidence/release-qa-eight/prior-ui-main.json": {
+      "sha256": "e5e43c566bb15f4b4286e9c61cedce6a6ff932fa7b2da6e958134fb9aa2b848e",
+      "bytes": 257347
+    },
+    "docs/evidence/release-qa-eight/prior-ui-pr10.json": {
+      "sha256": "a459190dc9b42c44662dc75fd8aa78267e00b9e5b255de7c2b6f559eac10c93b",
+      "bytes": 208083
+    },
+    "docs/evidence/release-qa-eight/public-main-context.json": {
+      "sha256": "6091b4091ea4a0981de98d10343e94c037469752622e57228cece54e54f39715",
+      "bytes": 366
+    },
+    "docs/evidence/release-qa-eight/public-main.json": {
+      "sha256": "0f7f0bb9ff8b11465821b430d2439c7cf5d73a4d0ee29cef423eda49c97d4f78",
+      "bytes": 32989
+    },
+    "docs/evidence/release-qa-eight/release.json": {
+      "sha256": "8ff9d2da2e0204ee6263144bb24da6810ef20c8c0b44ba9bea8ed666fedf5e5c",
+      "bytes": 13615
+    },
+    "docs/evidence/release-qa-eight/research.json": {
+      "sha256": "254b59363f067d6b8273700d03c8d1b630f8ca10e42bb1803f167287850cfa80",
+      "bytes": 7618
+    },
+    "docs/evidence/release-qa-eight/tests.json": {
+      "sha256": "97679b9cf092d70754e9ac22c8cbb38fdd646e7ce75418bd315c86e01154d37b",
+      "bytes": 31215
+    },
     "docs/evidence/research-case/all-cases-browser.json": {
       "sha256": "cf8cfaa4f306e49eadb77a153ea9c5042aff98f35672a270629acd6fe057bceb",
       "bytes": 75353
@@ -275,8 +319,8 @@
       "bytes": 1231
     },
     "docs/gtm-investigation.md": {
-      "sha256": "71058265c672a2bdf0006cd9752009fc10d48d7e92e66da45d97dcf99c585538",
-      "bytes": 4838
+      "sha256": "76c9502a6f251a47ad6792d36880366d8ac28bd390d893eb64044628a13bebe6",
+      "bytes": 5030
     },
     "docs/images/analytics-engineering/analytics-engineering-desktop.png": {
       "sha256": "35b70fad28b08ff53b8be806842f04d082d05a06ccce63fd917ad3eec3e3af8d",
@@ -305,6 +349,138 @@
     "docs/images/control-overview.png": {
       "sha256": "28a1d2a5eea450fe10bdde4d0f9b32a63e90d834b0c420148121ed569049ac5d",
       "bytes": 144268
+    },
+    "docs/images/current-integrity/provenance.json": {
+      "sha256": "3d51cf1ef87c96a530a78972bfa3207a4844542a16bdb5596fe1d115c985a69a",
+      "bytes": 11402
+    },
+    "docs/images/current-integrity/revenue-integrity-desktop.png": {
+      "sha256": "64be4571b0611c55f2cfa31fb015f0c73545dfbfb0dd0b8b1f5c19e0c64b1f2f",
+      "bytes": 111710
+    },
+    "docs/images/current-integrity/revenue-integrity-mobile.png": {
+      "sha256": "0f302a01ddae2e176b04a57053e2e47cd7bbc58be0c5b37a11761647c4bfad64",
+      "bytes": 45657
+    },
+    "docs/images/current-integrity/revenue-integrity-recovery.png": {
+      "sha256": "2ce9a4ac672a3062d72852960e7368b9de524b6875637521f7c2a73587b40c70",
+      "bytes": 118723
+    },
+    "docs/images/current-presentation/connected-overview.png": {
+      "sha256": "b1aaecc9d50de24accb2a3cd3b1e6554bcebdf5eee2dea8cfc0e1bc8259f9993",
+      "bytes": 176916
+    },
+    "docs/images/current-presentation/control-overview.png": {
+      "sha256": "13368dfdad89640c76e35c23f7ff312d8b2d6128e4757f2eb87d5f0c349bad91",
+      "bytes": 156538
+    },
+    "docs/images/current-presentation/gtm-enterprise-overview.png": {
+      "sha256": "9d47a301eb9dfa44763b67137f861de5ceac3824343e236476ab1bd8c9bb92e0",
+      "bytes": 284582
+    },
+    "docs/images/current-presentation/gtm-qwen-overview.png": {
+      "sha256": "6450d2c02a7ba40d0079d54ddebf3b92ea5af046c74d787006f43b269b465423",
+      "bytes": 226991
+    },
+    "docs/images/current-presentation/gtm-research-overview.png": {
+      "sha256": "6e8267611d658b52976ebfa5215aba53cf5e21733a59e5e3ca4671a6a3dde926",
+      "bytes": 438081
+    },
+    "docs/images/current-presentation/gtm-salesforce-overview.png": {
+      "sha256": "343077cf2eb49c02ed1dc613b00aa7b62e15c455ef5d9d44d55502633fd38b14",
+      "bytes": 206337
+    },
+    "docs/images/current-presentation/integrity-overview.png": {
+      "sha256": "7977890cb83b5f5d6d1048815f1a79912f26abe78185e5b648a23fbab9d86b0a",
+      "bytes": 243079
+    },
+    "docs/images/current-presentation/provenance.json": {
+      "sha256": "b292a4849d596e1ab75244172accdc92f1ac0c1dd8db7960c22fdbfb601ac8a2",
+      "bytes": 91172
+    },
+    "docs/images/current-presentation/release-overview.png": {
+      "sha256": "f0c5678992a742453ec1de5fe304f0020d1c73c76f36c5c66324e13a353b78fc",
+      "bytes": 437816
+    },
+    "docs/images/current-presentation/revenue-overview.png": {
+      "sha256": "a17c6c2c63eee572bff40ca8bff89f1eca4398198861e75e32fbf17a3de2e015",
+      "bytes": 183105
+    },
+    "docs/images/current-presentation/seller-overview.png": {
+      "sha256": "c033cd0604a666f2217efb7cefb33a56d9b0c77c981ea36fe91e4c4e5f53132c",
+      "bytes": 186157
+    },
+    "docs/images/current-presentation/visual-refresh/connected-mobile.png": {
+      "sha256": "8fbd08b50abe7b7a0083c62709c7f0d468d1ab9badd56f92fca96872e88ed63b",
+      "bytes": 145564
+    },
+    "docs/images/current-presentation/visual-refresh/control-mobile.png": {
+      "sha256": "44a87a98553b0fb6608810ec9f78c6f6f0c1b5531bda1b34b94214916b3afae1",
+      "bytes": 118836
+    },
+    "docs/images/current-presentation/visual-refresh/gtm-enterprise-mobile.png": {
+      "sha256": "2ec1de44862b40914e42a0ec05bd102cc2c269a641fe53b7a6c2be62a3fe2944",
+      "bytes": 255638
+    },
+    "docs/images/current-presentation/visual-refresh/gtm-qwen-mobile.png": {
+      "sha256": "15f767cda47b37dd4dbaf4f6d2c2e3ede2185f1f13f244aa1fb9a39847ace296",
+      "bytes": 195195
+    },
+    "docs/images/current-presentation/visual-refresh/gtm-research-mobile.png": {
+      "sha256": "9cf97fe20f1d8346d5ae354046a7f2260a4e63c542d5e97dcf837f5ad4dc15ec",
+      "bytes": 412577
+    },
+    "docs/images/current-presentation/visual-refresh/gtm-salesforce-mobile.png": {
+      "sha256": "a0606e0a9a91fa20bfa7b06ff61b62c59a61ae3ab4e9cfaf29279764f271e68c",
+      "bytes": 175618
+    },
+    "docs/images/current-presentation/visual-refresh/integrity-mobile.png": {
+      "sha256": "856a7d7329e619bb9966df92168426e6abdc87107a8a09c229bb8d78cb2dd75b",
+      "bytes": 208223
+    },
+    "docs/images/current-presentation/visual-refresh/release-mobile.png": {
+      "sha256": "db3a58a9ecdcad48335b2c604aee7ca0e8b1b6aa4518c557840167d25c6e6956",
+      "bytes": 407183
+    },
+    "docs/images/current-presentation/visual-refresh/revenue-mobile.png": {
+      "sha256": "c1f429cad257b7c9106277001c4d31fa8d0de91f75c361b4804e3f9f36a3b387",
+      "bytes": 156625
+    },
+    "docs/images/current-presentation/visual-refresh/seller-mobile.png": {
+      "sha256": "403d754016b993e680e71d928f3722adac45c3dc1eae0ccfb2cca772ad0091ed",
+      "bytes": 149768
+    },
+    "docs/images/current-release/provenance.json": {
+      "sha256": "1fe95e0ba4720aaed152ad3db473950bc1651b71d0f6b20f1ccacc1916b7af15",
+      "bytes": 13615
+    },
+    "docs/images/current-release/release-assurance-desktop.png": {
+      "sha256": "2acf129f9c40f8f45d1f8b319460ae1680588afd1a26977755b8ac1c13f36e56",
+      "bytes": 124649
+    },
+    "docs/images/current-release/release-assurance-mobile.png": {
+      "sha256": "994b54ba869191c9b281f1640b3ecc8605913f80cb95c25e1658118e3c6ba048",
+      "bytes": 44636
+    },
+    "docs/images/current-release/release-assurance-rollback.png": {
+      "sha256": "d98503bd929508c62f4777fb15f1e8f003e0bb3bd5f985e3ea50b32034b3541d",
+      "bytes": 133362
+    },
+    "docs/images/current-research/provenance.json": {
+      "sha256": "3ac40e78bce494de6234f96fe4030a2dc9d0507e3b892658c192bf742b9333bc",
+      "bytes": 7579
+    },
+    "docs/images/current-research/recorded-seller-review.png": {
+      "sha256": "d383af35853d847c73bbd504eb848f0e98fd8802cb3e984721fda3246636ea83",
+      "bytes": 59449
+    },
+    "docs/images/current-research/sdr-intelligence-desktop.png": {
+      "sha256": "85a7f7ca9ba932d544920452cbe0235b5e36039a24cd5a995519e22dc6f45b81",
+      "bytes": 174653
+    },
+    "docs/images/current-research/sdr-intelligence-mobile.png": {
+      "sha256": "25808b4b24bfd1a12b307ebb4cf16f8c26c52c7744fda27cc27b5c0198d95b78",
+      "bytes": 42933
     },
     "docs/images/gtm/gtm-enterprise-overview.png": {
       "sha256": "e9d2322cab3152a91e90fa4506e38d676387d4210a22731743c7b1ec745f9934",
@@ -345,6 +521,142 @@
     "docs/images/release-assurance/release-assurance-rollback.png": {
       "sha256": "02740a10637b46690f3d07ba104d111b35d341567413cd9fbdd934835321fbb5",
       "bytes": 130408
+    },
+    "docs/images/release-qa-eight/analytics/analytics-engineering-desktop.png": {
+      "sha256": "35b70fad28b08ff53b8be806842f04d082d05a06ccce63fd917ad3eec3e3af8d",
+      "bytes": 115506
+    },
+    "docs/images/release-qa-eight/analytics/analytics-engineering-mobile.png": {
+      "sha256": "ad4170b8b56c97e3676d33faeb6354a8dff73f5fabf7c4cd7bb4ee930e16500d",
+      "bytes": 41910
+    },
+    "docs/images/release-qa-eight/analytics/analytics-engineering-performance.png": {
+      "sha256": "a8f6a3a340ca81252b018d0679a133bab1381b19f7be7ce57f8b6e138b4543c9",
+      "bytes": 104675
+    },
+    "docs/images/release-qa-eight/integrity/revenue-integrity-desktop.png": {
+      "sha256": "fb1aa81be69441d68fb468187aeba161030cf65d887448f24c528ae18abb88eb",
+      "bytes": 115576
+    },
+    "docs/images/release-qa-eight/integrity/revenue-integrity-mobile.png": {
+      "sha256": "0f302a01ddae2e176b04a57053e2e47cd7bbc58be0c5b37a11761647c4bfad64",
+      "bytes": 45657
+    },
+    "docs/images/release-qa-eight/integrity/revenue-integrity-recovery.png": {
+      "sha256": "1bfb6616c59d973c47099662f5f6bd4362fe64b2b5b439d3929e2840a786c4f2",
+      "bytes": 122534
+    },
+    "docs/images/release-qa-eight/presentation/analytics-overview.png": {
+      "sha256": "22b5fef7722fb5ada484be02883f2b03b2f6a4e777338dc1d19bbc441f0df45c",
+      "bytes": 239554
+    },
+    "docs/images/release-qa-eight/presentation/connected-overview.png": {
+      "sha256": "11185f78f4a725bc30f3912064fc51849755ccf5799142f8688c53095d0b0dc2",
+      "bytes": 178352
+    },
+    "docs/images/release-qa-eight/presentation/control-overview.png": {
+      "sha256": "90f309983165f1c1f9c92acce74927cf5cef5fb2cd6a30f843588558ac349549",
+      "bytes": 157751
+    },
+    "docs/images/release-qa-eight/presentation/gtm-enterprise-overview.png": {
+      "sha256": "2cb01ed393fb98b38576235748bc4212b18d7db2c1c7794fd4ad1840ce71b203",
+      "bytes": 285982
+    },
+    "docs/images/release-qa-eight/presentation/gtm-qwen-overview.png": {
+      "sha256": "014b655728169b6deb24e181896e2e4f0fa59aff48d28776d2bed447a477b016",
+      "bytes": 228207
+    },
+    "docs/images/release-qa-eight/presentation/gtm-research-overview.png": {
+      "sha256": "8ffce87370e6c1310e55a8168f00ff08f42cca72e5509f9a5817d8e97c9f298e",
+      "bytes": 439288
+    },
+    "docs/images/release-qa-eight/presentation/gtm-salesforce-overview.png": {
+      "sha256": "bb7ca492811a80d3db531888d899f444f4904f61b5373ccb9a8fb3c6c266d762",
+      "bytes": 207630
+    },
+    "docs/images/release-qa-eight/presentation/integrity-overview.png": {
+      "sha256": "6aa34164e9a9ed215e2369cd3e345134b1c853a8f6dd0fb33e36fff297b7a234",
+      "bytes": 244371
+    },
+    "docs/images/release-qa-eight/presentation/release-overview.png": {
+      "sha256": "9a6b4066b78924d9ed46f1160c183af093a3686bda7e2b7e6c23e1c02659fba5",
+      "bytes": 439277
+    },
+    "docs/images/release-qa-eight/presentation/revenue-overview.png": {
+      "sha256": "164ac63436a4924af3490b6dc25450331c73a38d29251e828b69b7e637ade940",
+      "bytes": 184355
+    },
+    "docs/images/release-qa-eight/presentation/seller-overview.png": {
+      "sha256": "1c1a41eaaa5d085e6ee68b28b2e46de57f191b01d0d5c7fccf0a1672b18f321b",
+      "bytes": 187425
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/analytics-mobile.png": {
+      "sha256": "36ad618942c22521204a5f860662750b697b87ef40c467ee67104e33efcc01ab",
+      "bytes": 204224
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/connected-mobile.png": {
+      "sha256": "8fbd08b50abe7b7a0083c62709c7f0d468d1ab9badd56f92fca96872e88ed63b",
+      "bytes": 145564
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/control-mobile.png": {
+      "sha256": "44a87a98553b0fb6608810ec9f78c6f6f0c1b5531bda1b34b94214916b3afae1",
+      "bytes": 118836
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/gtm-enterprise-mobile.png": {
+      "sha256": "3e0a4f2bfa1b959b5ca16bb6e9a888b5bae636c83b86a61b771ba7309f3ee607",
+      "bytes": 255642
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/gtm-qwen-mobile.png": {
+      "sha256": "15f767cda47b37dd4dbaf4f6d2c2e3ede2185f1f13f244aa1fb9a39847ace296",
+      "bytes": 195195
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/gtm-research-mobile.png": {
+      "sha256": "9cf97fe20f1d8346d5ae354046a7f2260a4e63c542d5e97dcf837f5ad4dc15ec",
+      "bytes": 412577
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/gtm-salesforce-mobile.png": {
+      "sha256": "fb70a8388f99bfe07dfbc65c2dd50437f02fc0b8dfb7ff5a4b399fbc340be69c",
+      "bytes": 172892
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/integrity-mobile.png": {
+      "sha256": "102c8931ba2b700ef23ddf79981fe76d787ae02da5adf8989c4fddb32f31845b",
+      "bytes": 208227
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/release-mobile.png": {
+      "sha256": "db3a58a9ecdcad48335b2c604aee7ca0e8b1b6aa4518c557840167d25c6e6956",
+      "bytes": 407183
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/revenue-mobile.png": {
+      "sha256": "c1f429cad257b7c9106277001c4d31fa8d0de91f75c361b4804e3f9f36a3b387",
+      "bytes": 156625
+    },
+    "docs/images/release-qa-eight/presentation/visual-refresh/seller-mobile.png": {
+      "sha256": "403d754016b993e680e71d928f3722adac45c3dc1eae0ccfb2cca772ad0091ed",
+      "bytes": 149768
+    },
+    "docs/images/release-qa-eight/release/release-assurance-desktop.png": {
+      "sha256": "17384805cc7690b1358fcf7cd61134425d49ab1999dc746b3dfa4cbf2253769b",
+      "bytes": 128381
+    },
+    "docs/images/release-qa-eight/release/release-assurance-mobile.png": {
+      "sha256": "994b54ba869191c9b281f1640b3ecc8605913f80cb95c25e1658118e3c6ba048",
+      "bytes": 44636
+    },
+    "docs/images/release-qa-eight/release/release-assurance-rollback.png": {
+      "sha256": "13a62a27bd9528c36a963e93ebc84abab73f27c98094b47c755548f9264d5413",
+      "bytes": 137055
+    },
+    "docs/images/release-qa-eight/research/recorded-seller-review.png": {
+      "sha256": "d383af35853d847c73bbd504eb848f0e98fd8802cb3e984721fda3246636ea83",
+      "bytes": 59449
+    },
+    "docs/images/release-qa-eight/research/sdr-intelligence-desktop.png": {
+      "sha256": "33ff771610a2b16463309f47c7533879fb06e98452c3fecfd538cca7f67c6db4",
+      "bytes": 178471
+    },
+    "docs/images/release-qa-eight/research/sdr-intelligence-mobile.png": {
+      "sha256": "25808b4b24bfd1a12b307ebb4cf16f8c26c52c7744fda27cc27b5c0198d95b78",
+      "bytes": 42933
     },
     "docs/images/research/recorded-seller-review.png": {
       "sha256": "d383af35853d847c73bbd504eb848f0e98fd8802cb3e984721fda3246636ea83",
@@ -399,16 +711,20 @@
       "bytes": 147357
     },
     "docs/model-release-assurance.md": {
-      "sha256": "0476526b10c780981fef55abc350900da4a77911ea25f2b3b7f5b683bbb3b3b8",
-      "bytes": 6013
+      "sha256": "525ca7c512805a10880abc7b5f1b594ae4939c04dcfac7ba660ee411fd3fbe3a",
+      "bytes": 6174
+    },
+    "docs/release-qa-eight.md": {
+      "sha256": "9b579d10fa302f760247416a94ad085212a53c8197741bfb8465de9887adc886",
+      "bytes": 6176
     },
     "docs/reproduction.md": {
       "sha256": "9e46bc9e7a3ede80de59a3b95f62c3034b32fd9ba6d29d48cd8fe55c4715bd76",
       "bytes": 5096
     },
     "docs/revenue-integrity.md": {
-      "sha256": "a667d401b60afed0fd61b0591b83deec1387cbc4d91009c33bad9c394f11788c",
-      "bytes": 4121
+      "sha256": "78f30773fac131b7ed66b9cd98d2125887bc9f9c3afedb1b43df474e68469f6e",
+      "bytes": 4377
     },
     "docs/sdr-account-intelligence.md": {
       "sha256": "d7386d93dac23326299f63027109b55dd66fa7b3488a78c957e19ec56bff9049",
@@ -563,8 +879,8 @@
       "bytes": 7761
     },
     "src/revenue_lab/site.py": {
-      "sha256": "a6090811ab76fba13f4acfa419f18df2d5f5838a8496ca86a7f959cbd7f46132",
-      "bytes": 7114
+      "sha256": "511bee1ac637be7828e52e8876584bc83a0a123539b1b24c9592d71be4b65f35",
+      "bytes": 7111
     },
     "src/revenue_lab/smoke.py": {
       "sha256": "26cd82eb339c2c4e7fc8e7e696b3773880914f6ce53aef8a423ec4179214b08a",
@@ -579,8 +895,8 @@
       "bytes": 302
     },
     "tests/test_analytics.py": {
-      "sha256": "8218df89e65481ce74c28a4368ca7fa641eb36a2eef10bd80b4bace4ac0a4f5c",
-      "bytes": 6376
+      "sha256": "b3e997eb9a55cd0460b6b32fe20c7f264c7a79e94b7a6b9aa0013ff9bf6b4473",
+      "bytes": 6721
     },
     "tests/test_analytics_browser.py": {
       "sha256": "780b44f521e1a136a2c880c12c06674cad887dc666ca30fcffcb3467d413050a",
@@ -619,8 +935,8 @@
       "bytes": 2867
     },
     "tests/test_integrity.py": {
-      "sha256": "63e898549e6790ecc2e06f78badec923fc1173ebbc3096275f36a29ac6e6b43e",
-      "bytes": 4589
+      "sha256": "32fd131e26ab8016b1299aa12760155445425da2b44d2cb92a6824c4fd10d86c",
+      "bytes": 4726
     },
     "tests/test_integrity_browser.py": {
       "sha256": "7799be8f4165cd0771b5702bb6a43720d3c162a605d41f73c72d4f5f6cccf019",
@@ -638,6 +954,10 @@
       "sha256": "0189df39464080c911efedf19d8677e3d847d56834a9417cc33a36cc126b8719",
       "bytes": 3377
     },
+    "tests/test_release_qa_eight.py": {
+      "sha256": "ff4995eadb7c883daa5c3a0948fcde17a7f9e18851411d710efbd3272547c00d",
+      "bytes": 3749
+    },
     "tests/test_research.py": {
       "sha256": "d18227ddb521a326fafb1d35b233d8ebf12d041a8f57ed8f3309682983abe6fc",
       "bytes": 5945
@@ -651,12 +971,12 @@
       "bytes": 17287
     },
     "web/app.js": {
-      "sha256": "b40fe1872b7a0d351fa870cf4a00eb4f1168cc10a4bb89f40c46bd54b20c5712",
-      "bytes": 36817
+      "sha256": "0cbc9a7b3e6ed5b27c04ba5d09eee346ea150080e19c1920aab2a9495c0a7e48",
+      "bytes": 36835
     },
     "web/catalog.json": {
-      "sha256": "3fb9f7db9bc52d5192f77ea2d5e979a895fe88003b03e6f8e347505bcc412d14",
-      "bytes": 10545
+      "sha256": "8b9dff5aee77692410a9a58633743636866a37a164bbc20defa0e8a482e80ea7",
+      "bytes": 10542
     },
     "web/evidence/analytics-engineering/bundle.json": {
       "sha256": "7ba2f24e7538bcd44d5a6d60631a7258812cde65366bfa64c804cab74efc74d9",
@@ -1659,20 +1979,20 @@
       "bytes": 16026
     },
     "web/index.html": {
-      "sha256": "6b2b7f52a94a9b1cb8f4a415db33681db40c9ad9848d475b2b8ac510da31acc9",
-      "bytes": 7691
+      "sha256": "0f5ca819877f0f7378b3defcd201900c3e356d3182625f720095bdaeb88a1a67",
+      "bytes": 7693
     },
     "web/integrity.js": {
-      "sha256": "c6c667ba5b0b04f87f068c2d37c9e429dad2b1c077a8c64a4ff7893d029dd109",
-      "bytes": 13113
+      "sha256": "a7b4d930a5bf34f4a4ba1571a0a34decfea39ac04434c6f802b595cd68679752",
+      "bytes": 13118
     },
     "web/release.js": {
-      "sha256": "f7c52d9c0649663581e66b110acdf104f83c3eb1c6c326f7aae992b7f3e6818e",
-      "bytes": 11758
+      "sha256": "e505ccc0dedd12df0f3c2ea7556202434d505033efef14825e8477203b3a4797",
+      "bytes": 11756
     },
     "web/research.js": {
-      "sha256": "ccce6a13a42c08fc2378c22469fab128e0a166dee03bdecc4fec15eed2692b4d",
-      "bytes": 14791
+      "sha256": "99175f84431cd22d8c7cafed35eebdf08dcbb3c877de725a9d86414beeb0b43c",
+      "bytes": 14788
     },
     "web/style.css": {
       "sha256": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",

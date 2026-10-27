@@ -11,7 +11,7 @@ SCENARIOS = {
     "analytics-engineering": ("analytics", "Analytics Engineering — Model Correctness & Performance",
         "Inspect 15 SQL/dbt models, six paired local benchmark runs, rejected selective rebuilds and separate historical native Snowflake fixture acceptance."),
     "revenue-integrity": (
-        "integrity", "Revenue Integrity — From Sales Commitment to Collected Cash",
+        "integrity", "Revenue Integrity: From Sales Commitment to Collected Cash",
         "Trace the $1,500 discrepancy, authoritative records and a separately reviewed delivery recovery. Recorded local execution; synthetic USD.",
     ),
     "release-assurance": (

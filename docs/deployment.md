@@ -36,10 +36,10 @@ Install `requirements.lock` and Chromium, then run `python scripts/verify_hosted
 
 GitHub's official instructions cover [custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and [manual workflow dispatch](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow).
 
-## Revenue Integrity candidate
+## Revenue Integrity release checks
 
-The seventh investigation is verified locally under the Pages-shaped path; it is not yet a public deployment. Review its PR and screenshots first. The existing workflow automatically publishes `web/**` changes merged into `main`, so approve both merge and publication before merging. After the deployment completes, run the existing hosted verifier against that exact deployment revision and inspect `?case=revenue-integrity`, all stages, integrity validation, downloads and mobile navigation. No workflow dispatch or deployment was performed by this feature build.
+The seventh investigation is included on main and is checked under the Pages-shaped path. Presentation changes still require review. The existing workflow automatically publishes `web/**` changes merged into `main`, so approve both merge and publication before merging. After the deployment completes, run the existing hosted verifier against that exact deployment revision and inspect `?case=revenue-integrity`, all stages, integrity validation, downloads and mobile navigation. No workflow dispatch or deployment was performed by this feature build.
 
-## Analytics Engineering candidate
+## Analytics Engineering release checks
 
-The eighth investigation is verified against the static Pages-shaped build at `?case=analytics-engineering`. No deployment is performed by its feature branch. After explicit merge/publication approval, use the existing hosted verification to compare exact deployed bytes, all eight navigation entries, original source links, artifact validation, downloads and desktop/mobile behavior. The static-only security boundary and Pages workflow remain unchanged.
+The eighth investigation is verified against the static Pages-shaped build at `?case=analytics-engineering`. PR #11 merged the investigation into main at `834750d`. No deployment is performed by this presentation reconciliation. After explicit merge/publication approval, use the existing hosted verification to compare exact deployed bytes, all eight navigation entries, original source links, artifact validation, downloads and desktop/mobile behavior. The static-only security boundary and Pages workflow remain unchanged.

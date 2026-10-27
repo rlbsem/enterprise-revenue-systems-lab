@@ -83,7 +83,7 @@ export function researchPanel(p, ui) {
       claims.append(el("h4","Model observations · citations checked, semantic support still needs review"));
       for(const f of b.facts)claims.append(el("p",f.text),el("blockquote",f.quote),el("small",f.source_id));
       if(!b.facts.length)claims.append(el("p","No observations admitted."));
-      claims.append(el("h4","Hypotheses · explicitly uncertain"));for(const h of b.hypotheses)claims.append(el("p",h.text+" — "+h.rationale),el("small",h.source_ids.join(", ")));
+      claims.append(el("h4","Hypotheses · explicitly uncertain"));for(const h of b.hypotheses)claims.append(el("p",h.text+": "+h.rationale),el("small",h.source_ids.join(", ")));
       if(!b.hypotheses.length)claims.append(el("p","No hypotheses proposed."));
       claims.append(el("h4","Unknowns and contradictions"));for(const gap of b.gaps)claims.append(el("p",gap));brief.append(claims);
     }

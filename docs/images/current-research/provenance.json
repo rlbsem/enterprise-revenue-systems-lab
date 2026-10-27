@@ -1,0 +1,308 @@
+{
+  "captured_at": "2026-10-26T12:32:40.290158+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "case": "gtm-research",
+  "served": "actual dist build under /enterprise-revenue-systems-lab/; not public deployment",
+  "source_sha256": {
+    "web/app.js": "f4010a15ce14aaaa9ce0c64de3683a0d9f6735458a32c8ebf15bd83b73870e43",
+    "web/gtm.js": "82f2f073ef670dc922921e837e80a6ff6ef2f1524c29b1304f5501521246e58b",
+    "web/research.js": "99175f84431cd22d8c7cafed35eebdf08dcbb3c877de725a9d86414beeb0b43c",
+    "web/style.css": "e7eb3fe3cc85960358533da1a64ee31779ef759a2c2ebf4dff70b47f301fd9a5",
+    "web/index.html": "c4e71227a59e1bfa75f0ec0a88e8fefe22ffd82ea980d1e10a90bc0a304aef97",
+    "web/catalog.json": "fd9fe5f4469c89bca31da8a5f29a8395cf0eeaaae2e6b6b8f0c82dd66e3e0955",
+    "sources.lock.json": "4a0a1279a190efe53a724ab6e34c1e666e54b94bc368effa536e9c3e2fac731f",
+    "scripts/capture_research.py": "031e01540857482fe28aaebb4b67f0dde1722d82981ed942e816c17eb76ba84d"
+  },
+  "image_sha256": {
+    "sdr-intelligence-desktop.png": "85a7f7ca9ba932d544920452cbe0235b5e36039a24cd5a995519e22dc6f45b81",
+    "recorded-seller-review.png": "d383af35853d847c73bbd504eb848f0e98fd8802cb3e984721fda3246636ea83",
+    "sdr-intelligence-mobile.png": "25808b4b24bfd1a12b307ebb4cf16f8c26c52c7744fda27cc27b5c0198d95b78"
+  },
+  "images": {
+    "sdr-intelligence-desktop.png": {
+      "width": 1440,
+      "height": 1320,
+      "capture": "actual viewport crop; hero, queue and selected account"
+    },
+    "recorded-seller-review.png": {
+      "capture": "actual saved-review section; no compositing"
+    },
+    "sdr-intelligence-mobile.png": {
+      "width": 390,
+      "height": 844,
+      "capture": "actual viewport crop; selected account controls"
+    }
+  },
+  "layouts": [
+    {
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 293,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 295,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 295,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 84,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 242,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 85,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 271,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 218,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false,
+      "contrast": {
+        "checked": 271,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false,
+      "contrast": {
+        "checked": 60,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false,
+      "contrast": {
+        "checked": 218,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false,
+      "contrast": {
+        "checked": 61,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": {
+    "1440": {
+      "violations": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-conditional-attr",
+        "aria-deprecated-role",
+        "aria-hidden-body",
+        "aria-prohibited-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-roles",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "bypass",
+        "color-contrast",
+        "document-title",
+        "duplicate-id-aria",
+        "form-field-multiple-labels",
+        "html-has-lang",
+        "html-lang-valid",
+        "link-in-text-block",
+        "link-name",
+        "meta-viewport",
+        "nested-interactive",
+        "select-name",
+        "summary-name"
+      ]
+    },
+    "390": {
+      "violations": [],
+      "incomplete": [],
+      "passes": [
+        "aria-allowed-attr",
+        "aria-conditional-attr",
+        "aria-deprecated-role",
+        "aria-hidden-body",
+        "aria-prohibited-attr",
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-roles",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "bypass",
+        "color-contrast",
+        "document-title",
+        "duplicate-id-aria",
+        "form-field-multiple-labels",
+        "html-has-lang",
+        "html-lang-valid",
+        "link-in-text-block",
+        "link-name",
+        "meta-viewport",
+        "nested-interactive",
+        "scrollable-region-focusable",
+        "select-name",
+        "summary-name"
+      ]
+    }
+  },
+  "axe_version": "4.10.3",
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "nonlocal_requests": [],
+  "new_model_vendor_or_approval_execution": false
+}
