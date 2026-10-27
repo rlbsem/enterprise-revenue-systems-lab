@@ -18,7 +18,7 @@ def test_recorded_release_progression_is_inspectable_and_read_only(url,tmp_path)
         page.get_by_role("heading",name="A passing model needs a controlled release.").wait_for()
         page.get_by_role("button",name="Validate artifact integrity").click()
         page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
-        assert page.locator("[data-investigation]").count()==9
+        assert page.locator("[data-investigation]").count()==10
         for stage in ["original","blocked","eligible","shadow","canary","promoted","rollback"]:
             button=page.locator(f'[data-stage="{stage}"]');button.focus();page.keyboard.press("Enter")
             assert button.get_attribute("aria-pressed")=="true"

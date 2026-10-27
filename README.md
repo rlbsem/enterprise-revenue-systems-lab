@@ -12,9 +12,9 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/release-qa-eight/presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The first eight investigations retain their reconciled screenshots. The ninth adds new captures from the actual running application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
+Earlier investigations retain their original screenshots. The ninth and tenth add separate captures from the actual running application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
 
-## Nine investigations
+## Ten investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -29,7 +29,17 @@ The first eight investigations retain their reconciled screenshots. The ninth ad
 
 | Can a measured conversion be trusted as collected money? | [First-Party Measurement](docs/measurement-integrity.md): synthetic source-to-conversion reconciliation, browser controls, five local GA4 rowsets and separate historical native Google sample queries | Measured values are claims. The Google sample is unrelated to Evermere; no production GA4 export or native dbt-bigquery acceptance. |
 
-The eighteen cases draw from seven pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+| What proves an acquired company is safe to consolidate? | [M&A Systems Integration](docs/acquisition-governance.md): scoped identities, reviewed source coverage, independently receipted handoffs and separate selected-period/annual financial publications | Three synthetic companies; current authority differs from historical reporting inclusion. No native vendor, statutory accounting or recognized revenue claim. |
+
+The nineteen cases draw from eight pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+
+## M&A Systems Integration — Acquisition Readiness & Financial Governance
+
+The tenth investigation separates imported records from report-ready companies. Follow Cedar, Meridian and Summit through scoped identity, reviewed admission and a receipted internal handoff. Compare original/restated selected-period and annual publications, with source cutoffs and unresolved ERP/intercompany findings retained.
+
+Feature route: `?case=acquisition-governance`. Prepared for review; not deployed by this branch. [Evidence and execution boundaries](docs/acquisition-governance.md).
+
+<img src="docs/images/acquisition-governance/acquisition-governance-desktop.png" alt="Actual acquisition evidence explorer showing separate company identities and source records" width="900">
 
 ## First-Party Measurement — Conversion & Revenue Integrity
 

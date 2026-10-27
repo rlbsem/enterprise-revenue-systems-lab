@@ -3,8 +3,8 @@
   "scope": "all delivered source files; manifest excludes itself to avoid recursion",
   "files": {
     ".gitattributes": {
-      "sha256": "2a002679e81c944e06b7c01a42468e7855c9393421800fa42f42d951bc380848",
-      "bytes": 296
+      "sha256": "30ca2fb9dbdb59539e9def1cb56c17c538e30426bd231b90f27007c6c53a25e3",
+      "bytes": 386
     },
     ".github/workflows/hosted.yml": {
       "sha256": "ddb41b3c18c17b20b7a31f431775414e94291001777c2f2ea4eb72f3a542927b",
@@ -15,8 +15,8 @@
       "bytes": 2516
     },
     ".github/workflows/verify.yml": {
-      "sha256": "7e3fa7764f562c71a46d26effac8dbecfc277e1b42443b67cc7856b70c57656e",
-      "bytes": 5514
+      "sha256": "2df23efadb5942f5ce5fe1f0112cba3a3645a96877721bb8ec5a10891fc88324",
+      "bytes": 5715
     },
     ".gitignore": {
       "sha256": "89fb63f91f40b687e8f85a7bd1f94c627702506f9a79bd2c54137e1c57633604",
@@ -27,12 +27,16 @@
       "bytes": 1070
     },
     "README.md": {
-      "sha256": "858078881aa0d9f4b747e4ca15be639e0344e8a49ef3ebefbfc411703a0ba43e",
-      "bytes": 18197
+      "sha256": "3c8ad4cde306528ab7615d0b2e025fa705315593c7461da578c02a93f7efb828",
+      "bytes": 19387
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
       "bytes": 487
+    },
+    "docs/acquisition-governance.md": {
+      "sha256": "11b96290a67160e84e8c05d69495a192bd444ddffc529f08b15a413518747c70",
+      "bytes": 6291
     },
     "docs/analytics-engineering.md": {
       "sha256": "5eeba51c1f60931e7f2e9d3345b4ab643c10b9b04cf30d53f7fd63df4884658e",
@@ -47,8 +51,32 @@
       "bytes": 6298
     },
     "docs/evidence-guide.md": {
-      "sha256": "657e9d852a4cfada4fb396b30ec0056b68ef5cee63e1ee553668ea733a2dee89",
-      "bytes": 5872
+      "sha256": "bf817475b60482ceb0f2c9e6de3071ba8db9cff6fbc535d98da7dcd36f0f52fe",
+      "bytes": 6416
+    },
+    "docs/evidence/acquisition-governance/README.md": {
+      "sha256": "8c5b3f4f059482a1e19459e7d9190c7c8036f14df8faa9db84975aea63192717",
+      "bytes": 1867
+    },
+    "docs/evidence/acquisition-governance/browser.json": {
+      "sha256": "dfd3eef212b18c083dcf739bc106b0103e2ccb066b091bd20c04ed7ea784e770",
+      "bytes": 13173
+    },
+    "docs/evidence/acquisition-governance/local-verification.json": {
+      "sha256": "6c21041ff5c57260098c5bd1dbb2e68d447c1c02b7cb19325e66367f21d14275",
+      "bytes": 38849
+    },
+    "docs/evidence/acquisition-governance/preserved-files.json": {
+      "sha256": "352f905edaaa3250d9056031cc1fdb92dc3b0837599d5fbba864512da6165129",
+      "bytes": 60806
+    },
+    "docs/evidence/acquisition-governance/prior-ui.json": {
+      "sha256": "6a2cb2df62de97e36e66580c2b898b4d9c8849221e1145dfaebb24c67049c41c",
+      "bytes": 240394
+    },
+    "docs/evidence/acquisition-governance/source-regression.json": {
+      "sha256": "5b247984ef0009af8be6c1e1d144c0bf9423db0891876c84f7d1daaf7218aefe",
+      "bytes": 11876
     },
     "docs/evidence/analytics-engineering/README.md": {
       "sha256": "3b4281cf535fb977a84729ccdb8aad3e3f90ece6303f00a3a5a7946318d82278",
@@ -345,6 +373,18 @@
     "docs/gtm-investigation.md": {
       "sha256": "76c9502a6f251a47ad6792d36880366d8ac28bd390d893eb64044628a13bebe6",
       "bytes": 5030
+    },
+    "docs/images/acquisition-governance/acquisition-governance-desktop.png": {
+      "sha256": "e1f1cec3bf91b672f34c041bd8137cc4d56019b671e5b03781b56307d67ad2be",
+      "bytes": 116883
+    },
+    "docs/images/acquisition-governance/acquisition-governance-finance.png": {
+      "sha256": "8cfae226009a755f1f333adbb894d4f8a01644857ff2751d93dc4073be52da3a",
+      "bytes": 106927
+    },
+    "docs/images/acquisition-governance/acquisition-governance-mobile.png": {
+      "sha256": "5efb7c46e7afc5d00fe9b28ab98611dc9ca92c6c582d47634afb6e04c5122e0b",
+      "bytes": 40135
     },
     "docs/images/analytics-engineering/analytics-engineering-desktop.png": {
       "sha256": "35b70fad28b08ff53b8be806842f04d082d05a06ccce63fd917ad3eec3e3af8d",
@@ -779,12 +819,16 @@
       "bytes": 308
     },
     "schema/bundle-v1.json": {
-      "sha256": "f41200f3bf6943ea8380f5f87aa10096e25362a9fd5b624d769462a52f1ffcc9",
-      "bytes": 1898
+      "sha256": "09132c7f9e272a705a68b3d5ef79a7fc7a1eabf12830aa5a56b8cdf62620d895",
+      "bytes": 1924
     },
     "scripts/build.py": {
       "sha256": "3b961d161bbc6dd1fd53491825bbccf8058713ea8a24a2ea937ffcabbaceb2e7",
       "bytes": 150
+    },
+    "scripts/capture_acquisition.py": {
+      "sha256": "67f3942ec832e681a781144528f9da7fc5556022d97e3cc252b77a599b83edd9",
+      "bytes": 9236
     },
     "scripts/capture_analytics.py": {
       "sha256": "74373f64382d5c276f356262d47be62d57a0d1fbc18951609fb0228b2f774482",
@@ -803,8 +847,8 @@
       "bytes": 7857
     },
     "scripts/capture_presentation.py": {
-      "sha256": "fc087cff76228bbfdd4b1e79af004b57ddb5d2d6a2020dd86225e2b0fc5f62ff",
-      "bytes": 14549
+      "sha256": "a868fed6ca3a389d717d9a2334f11fe99227abf2b2271095cb44f0c652e65769",
+      "bytes": 14732
     },
     "scripts/capture_release.py": {
       "sha256": "f8daa8b1972fec57346bc6b5d653c711ff4d916cd74fb6e6c0439734608b663a",
@@ -829,6 +873,10 @@
     "scripts/export_git.py": {
       "sha256": "90e1fcae52c29bd4bd1be8f4b52387b3402ac2f477627c8f995193437e8afeb7",
       "bytes": 1776
+    },
+    "scripts/import_acquisition.py": {
+      "sha256": "82975433d3608782be4876ca58af19e78f421328b2142cf2e68752c33e8a8568",
+      "bytes": 5133
     },
     "scripts/import_analytics.py": {
       "sha256": "afefb9480dbfde8d878b183823b98642811d212d34949258bffb83d04ef66b35",
@@ -867,20 +915,28 @@
       "bytes": 2365
     },
     "sources.lock.json": {
-      "sha256": "f993f2e2469836b63515b4cc2547636c5ada96530de45ed076df4d245fb9629a",
-      "bytes": 60756
+      "sha256": "5460f0a36322cf138cdaa015495fea9342cd562c8a02704926b7cbc91e23ed06",
+      "bytes": 76445
     },
     "src/revenue_lab/__init__.py": {
       "sha256": "86ae3225ba682f28332a5a72ee605fe93868168b1512caec716d92505c9e653d",
       "bytes": 77
+    },
+    "src/revenue_lab/acquisition_checks.py": {
+      "sha256": "044ac9b3e0626a519ef81262afca5162c6bfb4792f9dce53430fd26bc07f6ea8",
+      "bytes": 9103
+    },
+    "src/revenue_lab/acquisition_oracle.py": {
+      "sha256": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
+      "bytes": 9494
     },
     "src/revenue_lab/analytics_checks.py": {
       "sha256": "ef151bcda742060453ea6c683b333fbd43ba0f5b883c8221fbf5907a715e6291",
       "bytes": 8143
     },
     "src/revenue_lab/bundle.py": {
-      "sha256": "69ad8dfe5a419aea2b5a91616058ec81274ad43e146de264d924eed67d5f1138",
-      "bytes": 11376
+      "sha256": "9f41766d560bd0fb83670fd13825566b4bd23fcd2b6b6ad0be3320ba21e955cb",
+      "bytes": 11612
     },
     "src/revenue_lab/cli.py": {
       "sha256": "25f692f47dbca2cb6be956f53a87e494d3053a5eb35b39df5a5a6f9e010d0ae0",
@@ -935,12 +991,12 @@
       "bytes": 7761
     },
     "src/revenue_lab/site.py": {
-      "sha256": "28a86dfc4be63dd04fb69586764d720ca4598e3d70b771d5a593e74594fe6625",
-      "bytes": 7400
+      "sha256": "73a26707f8eb72215069a0d89e2cf809c6a796593d9aa4bdb5fb05f52f4aa5a9",
+      "bytes": 7687
     },
     "src/revenue_lab/smoke.py": {
-      "sha256": "49d4e601265d49eb61fcf5398cfa6fae01bdb418a59265d78d1712e55180d9f5",
-      "bytes": 14540
+      "sha256": "8c2323156d34085c1229499604cf85285f422b349e8fc9aea0baf781a14149e9",
+      "bytes": 14634
     },
     "src/revenue_lab/worker.py": {
       "sha256": "4b20631e040db72e549042c0e2f3aa1cf44497964c955b10a4ccdaca4508ffe9",
@@ -950,17 +1006,25 @@
       "sha256": "c0c17045f9bf4b615c58d2a98a58d90755b707f80191c29ba6483a59f5c650c0",
       "bytes": 302
     },
+    "tests/test_acquisition.py": {
+      "sha256": "35d06f16fc0aaf8b7af589bcd1a22714e0bf0c68cb5136dbbfbd285298983509",
+      "bytes": 6178
+    },
+    "tests/test_acquisition_browser.py": {
+      "sha256": "d1087384721e304ac90c1c76ccfb08fab5a6f39563fb5dca599635a375e56b6d",
+      "bytes": 4900
+    },
     "tests/test_analytics.py": {
-      "sha256": "ab952240871a3e02800b36078c1044449695eced2d9d1d31b4adaf26e0a6ec76",
-      "bytes": 6746
+      "sha256": "de85144faf6719d5f03880fcf835c859cb002f413c9ca029c0a9686c968930fe",
+      "bytes": 6772
     },
     "tests/test_analytics_browser.py": {
-      "sha256": "48fa1187d2fa55091e40c4d2f048fc6c2a52f54c0febc83e254436fbf343b32d",
-      "bytes": 4170
+      "sha256": "1afc17a95d60e91faa14ed4a70000a05ba8f0b8359fa7f35b704b00f89d8b253",
+      "bytes": 4171
     },
     "tests/test_browser.py": {
-      "sha256": "50d2fd511cd9f26112f65d617ab405d2544dcfe0fb749213da9faf107033d17d",
-      "bytes": 15795
+      "sha256": "9523822dbec46bcbcafe80f32d97b15eed5609edb9ccf7f532f7cac3fe39d565",
+      "bytes": 15933
     },
     "tests/test_bundles.py": {
       "sha256": "5f1bfee425b23ddf0744846af7d0aec6928fe50f15ff18cd14cc54b225aad3c2",
@@ -991,36 +1055,36 @@
       "bytes": 2867
     },
     "tests/test_integrity.py": {
-      "sha256": "5f75657b1c5ff57dc42134117b4222d3752ce891f44f83d91461c210a8aa35bc",
-      "bytes": 4751
+      "sha256": "18c32b6d1d5451c21036788bec984c20f6ca9713882640c6d125210899bf3ec3",
+      "bytes": 4777
     },
     "tests/test_integrity_browser.py": {
-      "sha256": "53fd6244c07bc2c0589b608df5d2dcaf221f9735e809dbe7b30558ea075a5b5d",
-      "bytes": 3092
+      "sha256": "e18530d5f754ffa6e5a00451117446a1899b316dc9c9e5baaca53d5a9aec3e48",
+      "bytes": 3093
     },
     "tests/test_measurement.py": {
-      "sha256": "bbf9d5c71f65a0fba64e89496ac743a95f1f922f5997758ca751fd0d744983d1",
-      "bytes": 6547
+      "sha256": "5a3caa728f8e8a88a0afe587e7ac4aab399024d52ae02ef0cef17bce6ef35bfe",
+      "bytes": 6694
     },
     "tests/test_measurement_browser.py": {
-      "sha256": "e141e95196857166c868bc8c7fb1e56d4b1d53ab981f3f37cf4cd6d04999a52a",
-      "bytes": 3929
+      "sha256": "0b731869be136757f05ef1c99e0bb8218f1bdc928fdaa8a6164404f6735bbd7f",
+      "bytes": 3930
     },
     "tests/test_process_boundaries.py": {
       "sha256": "4f7063b23dbc5fbc09cf61e4011819d218c54c5b63f551095dd022c1caa88641",
       "bytes": 2119
     },
     "tests/test_release.py": {
-      "sha256": "b598a77c3b8d12ba3661f5883f0c4c663316b8d797cd17d7c360ec8850f31b68",
-      "bytes": 6527
+      "sha256": "6d19c7fb8bbbdf7196c7443a2a5f1f9c1b3ad4dc48a8c054524d40c12fab44d0",
+      "bytes": 6553
     },
     "tests/test_release_browser.py": {
-      "sha256": "d657cf566736b6a82f403d0dfb6c9436bac9d188e68803e9e0cb24d3e0b88e4e",
-      "bytes": 3377
+      "sha256": "7ad862c94398751da5a37dbc9e1b55e5c5cc806f11c772d095b309b6aba32f32",
+      "bytes": 3378
     },
     "tests/test_release_qa_eight.py": {
-      "sha256": "2fc7d52f4bc6991a1311d33e6a1cddd51ec99929175c95504a3820fe9fa43b63",
-      "bytes": 4183
+      "sha256": "bb692e56455788a249c0904d620ec197294b835d1c48965db5ff4b36b043cf45",
+      "bytes": 4262
     },
     "tests/test_research.py": {
       "sha256": "d18227ddb521a326fafb1d35b233d8ebf12d041a8f57ed8f3309682983abe6fc",
@@ -1030,17 +1094,213 @@
       "sha256": "4242e14ede8180e8075607b7dede473d860df1642a2478e48e782cfa3814af58",
       "bytes": 4253
     },
+    "web/acquisition.js": {
+      "sha256": "42b322020c518a02f0cf9e200c1a9ff862dfcf038d3777c093f9010ce500cae2",
+      "bytes": 16254
+    },
     "web/analytics.js": {
       "sha256": "5f19987660bc5e120b94ec88bc472656cb4c41557cfd5f8c433b86aae0e4e86a",
       "bytes": 17287
     },
     "web/app.js": {
-      "sha256": "d6f80ff7e2bb0b5be039d9d85c2175dbe6f60c2cabd75ce4f77afceedf7e2abc",
-      "bytes": 38224
+      "sha256": "352d575852f914737f06667de8edf8d19c6d891a535b6e223a142bdbce0641c9",
+      "bytes": 39671
     },
     "web/catalog.json": {
-      "sha256": "3bb3cbf3e92feacc82ca7a9abfa9bd94df09f0e618072f85049b5d42d0c1272e",
-      "bytes": 11266
+      "sha256": "3c5fdba9addaba4e83945c29fad859b4b9849604da98385e308d4189ea7a1aa5",
+      "bytes": 11988
+    },
+    "web/evidence/acquisition-governance/admission-contract.md": {
+      "sha256": "14f28293d7d9c425fef945f5c386de3a0d2b30238858f2b7e36982ec1c950665",
+      "bytes": 5092
+    },
+    "web/evidence/acquisition-governance/annual-execution.json": {
+      "sha256": "c5e93a5902eda3bb4a104f1fc36bf8415f99e7f99a8f646df472927527460975",
+      "bytes": 14951
+    },
+    "web/evidence/acquisition-governance/annual.json": {
+      "sha256": "578d62bd6c3ca966ec14b3961cc7e2abf154adff37eb5c9de01daa086b6752f2",
+      "bytes": 1828621
+    },
+    "web/evidence/acquisition-governance/authorization-admission.json": {
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    "web/evidence/acquisition-governance/authorization-business.json": {
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    "web/evidence/acquisition-governance/authorization-mapping.json": {
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    "web/evidence/acquisition-governance/authorization-source_revision.json": {
+      "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+      "bytes": 159
+    },
+    "web/evidence/acquisition-governance/browser.json": {
+      "sha256": "b9b09a9eb83f37957af9f0c0533d55b3a7e548be7043de127dc9a79da9e474f6",
+      "bytes": 39631
+    },
+    "web/evidence/acquisition-governance/bundle.json": {
+      "sha256": "f65c4e5afff53a823a2f0171148f1844b21d49a9c21fc7501609ffab9a9bed61",
+      "bytes": 12593
+    },
+    "web/evidence/acquisition-governance/demo.json": {
+      "sha256": "447404eab463398940f7d30b47ef2cbf6b3e83d353b433a90c0ab8851a7849ee",
+      "bytes": 19752
+    },
+    "web/evidence/acquisition-governance/exhaustion.json": {
+      "sha256": "4bb43c038ba5a95c7b9854f6bd88ff95eccd59d6ab58c69be9f30cdb6f2fa819",
+      "bytes": 169
+    },
+    "web/evidence/acquisition-governance/financial-oracle.py": {
+      "sha256": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
+      "bytes": 9494
+    },
+    "web/evidence/acquisition-governance/financial-reporting.md": {
+      "sha256": "8117f7d3c0463e00836043efdfb43d71d14c90735fbc1b33f7c353f4e5a79906",
+      "bytes": 8772
+    },
+    "web/evidence/acquisition-governance/governance.json": {
+      "sha256": "a8293b18d7057ca7d0a14244b47e95219b567a19a66a020989e8d89b9377c3e1",
+      "bytes": 74995
+    },
+    "web/evidence/acquisition-governance/governed-execution.md": {
+      "sha256": "e625d8d3f0b8fce8ec75eb8a64ae22725360a2e1b5ccc5f9cb700a756c56ced1",
+      "bytes": 5794
+    },
+    "web/evidence/acquisition-governance/historical-authority.json": {
+      "sha256": "703e92c20bac9b101054859cb6a0df21695c00c35a029d4e1feadfb2ada01b59",
+      "bytes": 267
+    },
+    "web/evidence/acquisition-governance/identity-negative.json": {
+      "sha256": "d8570a2747177f4307e0ac675662b3bf9b135ace2873316177b09c136b401ee5",
+      "bytes": 434
+    },
+    "web/evidence/acquisition-governance/independent-financial.json": {
+      "sha256": "7275b408e146e2fc4c1d3ef24c937725da51340fb444bcb532cb2cea2904cd6e",
+      "bytes": 6352
+    },
+    "web/evidence/acquisition-governance/mapping-fixtures.py": {
+      "sha256": "0e46fd4f5c92dd8a4b7ba90049a59885f05bed04f040f72d64d594f6d1a7b9f6",
+      "bytes": 9129
+    },
+    "web/evidence/acquisition-governance/observation.json": {
+      "sha256": "8e2c6567f2fcc9694fb2563acdd1ed44b0663982d2ef4026c2885a26984c9aae",
+      "bytes": 133
+    },
+    "web/evidence/acquisition-governance/pass5-findings.md": {
+      "sha256": "21be26e66915146b70a080e41143f6bd8d51d9651821a1d7cca69fd6d0b9b596",
+      "bytes": 3920
+    },
+    "web/evidence/acquisition-governance/portable.json": {
+      "sha256": "8ba2d1a8c11c0a45d3370eee99ea16177a4926ff8d2a70eae29e645151f80dbc",
+      "bytes": 2706682
+    },
+    "web/evidence/acquisition-governance/process-death.json": {
+      "sha256": "f1c0193bc7e4ebf64248c1a360819557992038f10d4274b42f45d694e2c84dc6",
+      "bytes": 163
+    },
+    "web/evidence/acquisition-governance/projection.json": {
+      "sha256": "f793cf2802479b38ab20a4aa3b77a4c4812df9c3b99316abf35c0ccbfe6ddb4c",
+      "bytes": 11010
+    },
+    "web/evidence/acquisition-governance/publication-negative.json": {
+      "sha256": "fd9784eacc94ee17bd1586c58be14a5bef74198cc99d924a2bd9f62315a43938",
+      "bytes": 4887
+    },
+    "web/evidence/acquisition-governance/reproduction.zip": {
+      "sha256": "67a3233bc7358205ad2e87ac6e3e2b96c2c846919b55338a7904502c12a21b24",
+      "bytes": 216173
+    },
+    "web/evidence/acquisition-governance/selected-period.json": {
+      "sha256": "1722463c7b54ebac5f3b872dd48f2f215edee2a412bf43ee37622104a997b865",
+      "bytes": 321400
+    },
+    "web/evidence/acquisition-governance/software.json": {
+      "sha256": "77127720a8dae10e7354e67ef755d8dd06b425ff0f469e83113ca03e8aee6bab",
+      "bytes": 16786
+    },
+    "web/evidence/acquisition-governance/source-regression.json": {
+      "sha256": "5b247984ef0009af8be6c1e1d144c0bf9423db0891876c84f7d1daaf7218aefe",
+      "bytes": 11876
+    },
+    "web/evidence/acquisition-governance/timeline.json": {
+      "sha256": "585dd270ba671f88896d33a9a9bd1a6fc790592797e26c3659e70f8e33c68853",
+      "bytes": 2782
+    },
+    "web/evidence/acquisition-governance/upstream.json": {
+      "sha256": "a33f877e834d1ee165aaccc18274506f151fbbf06ee9a935bde003d22787f6ae",
+      "bytes": 15033
+    },
+    "web/evidence/acquisition-governance/verification.json": {
+      "sha256": "713e2b55bb40c568357e4a98b62f283a13afda17bd7e7646f2ea92558a28ccc8",
+      "bytes": 1113
+    },
+    "web/evidence/acquisition-governance/warehouse/dbt_project.yml": {
+      "sha256": "7e7ec60047cd4b2daf12152096d0bbe1a06cb860dc7d28c41e305e16f9d85931",
+      "bytes": 188
+    },
+    "web/evidence/acquisition-governance/warehouse/models/dim_reporting_entities.sql": {
+      "sha256": "0d5f0e661a06efb746d479b9fce852db5a20dc812c3e70a7e6c54f0306dd7c23",
+      "bytes": 381
+    },
+    "web/evidence/acquisition-governance/warehouse/models/fct_allocations.sql": {
+      "sha256": "99fc791473505e384d0cb9cca5a0274ec4c232afa17fd2e3434d7a719be39a10",
+      "bytes": 503
+    },
+    "web/evidence/acquisition-governance/warehouse/models/fct_invoices.sql": {
+      "sha256": "cae735450bb22cfa814cec0ead70a34db6a7d1bfc7181e42e1e2abe6b7302936",
+      "bytes": 1274
+    },
+    "web/evidence/acquisition-governance/warehouse/models/intercompany_eliminations.sql": {
+      "sha256": "efedc1a7ec585d9e7d68e16001d652a46592c5bd16085aaed9849c6f616b4892",
+      "bytes": 1753
+    },
+    "web/evidence/acquisition-governance/warehouse/models/legal_entity_totals.sql": {
+      "sha256": "5a441db535bcc9f5dc56d2441e43ca40e08eb23e8947ee56885e6b8259934f94",
+      "bytes": 1804
+    },
+    "web/evidence/acquisition-governance/warehouse/models/portfolio_totals.sql": {
+      "sha256": "7a89569963ff5d3f280675dde297769bda4d22b2db8f2bc545f077e10c91785f",
+      "bytes": 585
+    },
+    "web/evidence/acquisition-governance/warehouse/models/reconciliation_variances.sql": {
+      "sha256": "51428689cb1b466b2b745593d293ba0533c80654c112c0b751f65b25d9d58398",
+      "bytes": 1067
+    },
+    "web/evidence/acquisition-governance/warehouse/models/restatement_bridge.sql": {
+      "sha256": "c0039be53be5c58d1901368580578b13143c16db6aeeb90a10cf2c2da79b4b69",
+      "bytes": 939
+    },
+    "web/evidence/acquisition-governance/warehouse/models/schema.yml": {
+      "sha256": "43191fbc07ab618b868af460c946ed90083562de488a336259d5f83723790e49",
+      "bytes": 893
+    },
+    "web/evidence/acquisition-governance/warehouse/models/stg_financial.sql": {
+      "sha256": "ef2459d475492e9a8957378a3adb6e78509a19e984c4946cb0b3244b9ef9da6b",
+      "bytes": 2605
+    },
+    "web/evidence/acquisition-governance/warehouse/tests/financial_amount_controls.sql": {
+      "sha256": "4e295b14bf361de12d6eb8d2e61e47ba9073cca6699632c3372de77e08650a10",
+      "bytes": 545
+    },
+    "web/evidence/acquisition-governance/warehouse/tests/financial_grains.sql": {
+      "sha256": "aece6ca5824c2154b0e50b79e8f82524ffb00eaceae3b2ba417ae085eafc7c87",
+      "bytes": 472
+    },
+    "web/evidence/acquisition-governance/warehouse/tests/financial_references.sql": {
+      "sha256": "ca9e535d06ec14262a079424a075306d1b7467fc3d8c08e0c531fdce78fd7e1e",
+      "bytes": 651
+    },
+    "web/evidence/acquisition-governance/warehouse/tests/financial_scope.sql": {
+      "sha256": "75c311e5e19db647afe3458c40e5f4c32e0080428576d0bc1b4d206ab9891422",
+      "bytes": 386
+    },
+    "web/evidence/acquisition-governance/warehouse/tests/rollup_and_bridge.sql": {
+      "sha256": "a8809de6b1c3759d4e93f1f4fc5644cb096b75735643672c2942d416e0dd698e",
+      "bytes": 311
     },
     "web/evidence/analytics-engineering/bundle.json": {
       "sha256": "7ba2f24e7538bcd44d5a6d60631a7258812cde65366bfa64c804cab74efc74d9",
@@ -2259,8 +2519,8 @@
       "bytes": 16026
     },
     "web/index.html": {
-      "sha256": "3be4053472d31ac981d25e494311cfdc1fccda8a45d251f2410006a58095d9ce",
-      "bytes": 7870
+      "sha256": "020c7285d498f85252e33b6daa1362fe129a61c107846354eeace78b15ab7671",
+      "bytes": 8050
     },
     "web/integrity.js": {
       "sha256": "a7b4d930a5bf34f4a4ba1571a0a34decfea39ac04434c6f802b595cd68679752",
@@ -2279,8 +2539,8 @@
       "bytes": 14788
     },
     "web/style.css": {
-      "sha256": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",
-      "bytes": 23843
+      "sha256": "94b9ac91977dce6856f25c80d7d5a499bd0eca98e7ae8ac8d3956502477fa1c4",
+      "bytes": 24184
     }
   }
 }

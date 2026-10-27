@@ -51,7 +51,7 @@ def test_original_bytes_cannot_be_resealed_away(tmp_path):
 def test_all_eight_prior_investigations_and_artifacts_are_unchanged():
  baseline=json.loads((ROOT/"docs/evidence/measurement-integrity/prior-ui.json").read_bytes())["files"]
  before=json.loads(baseline["web/catalog.json"])["scenarios"];after=json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]
- assert all(r in after for r in before) and len(after)==len(before)+1
+ assert all(r in after for r in before) and len(after)==len(before)+2
  old=json.loads(baseline["sources.lock.json"]);now=json.loads((ROOT/"sources.lock.json").read_bytes())
  assert all(now[k]==v for k,v in old.items() if k!="sources")
  assert all(now["sources"][k]==v for k,v in old["sources"].items())
@@ -80,7 +80,8 @@ def test_measurement_screenshot_provenance():
  assert not r["http_writes"] and not r["nonlocal_requests"] and not r["page_errors"]
  assert all(not x["overflow"] and not x["contrast"]["failures"] for x in r["layouts"])
  assert all(not x["violations"] for x in r["accessibility"])
- for n,h in r["source_sha256"].items():assert hashlib.sha256((ROOT/n).read_bytes()).hexdigest()==h,n
+ baseline=json.loads((ROOT/"docs/evidence/acquisition-governance/prior-ui.json").read_bytes())["files"]
+ for n,h in r["source_sha256"].items():assert hashlib.sha256(baseline[n].encode() if n in baseline else (ROOT/n).read_bytes()).hexdigest()==h,n
  for n,h in r["image_sha256"].items():assert hashlib.sha256((ROOT/"docs/images/measurement-integrity"/n).read_bytes()).hexdigest()==h,n
 
 

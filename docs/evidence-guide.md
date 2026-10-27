@@ -14,7 +14,7 @@
 | A real model can qualify and be routed through a local staged release | [Pinned release acceptance](model-release-assurance.md): exact original summaries, rejected traces, request hashes, routing fingerprints and independent receipts | 192 selected-summary task outcomes; actual source model runs, separate 79-test software regression and synthetic effects. Finite-suite acceptance does not establish production reliability, general accuracy or commercial outcomes. |
 | The recorded order-to-cash discrepancy remains visible after delivery recovery | [Revenue Integrity](revenue-integrity.md): raw financial exports, exact invoice/receipt checks and separate operator-browser assertions | Pinned historical local-contract acceptance. The viewer does not certify general financial correctness or execute privileged actions; missing recovery journal rows remain explicitly unclaimed. |
 
-The seven source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
+The eight source repositories remain independent. The new connected case reuses the existing Customer Signal & Activation source repository and its pinned native evidence. The revenue bridge and correction views reference the same enterprise execution; they are not separate benchmark trials. Fresh model inference is distinct from the archived 120-case comparison. The original unsupported-language finding remains visible and no historical score is retroactively changed.
 
 ## Analytics model correctness and performance
 
@@ -23,6 +23,10 @@ The [eighth investigation](analytics-engineering.md) imports later Revenue Metri
 ## First-party measurement
 
 The [ninth investigation](measurement-integrity.md) imports exact conversion, browser, native Google sample and local warehouse records at a separate source pin. It recomputes money from source facts, preserves missing and overstated conversions, and exposes the SQL and job IDs behind native sample observations. A fresh small local GA4 DuckDB/dbt run contributes all five rowsets and an independent full-build comparison; it is not native Google execution.
+
+## Acquisition readiness and financial governance
+
+The [tenth investigation](acquisition-governance.md) imports separately executed intake, governed handoff, selected-period publications, annual publications and Pass 5 review. Fresh offline checks select source versions at frozen cutoffs and compare all seven published financial rowsets across both versions and scenarios. A separate disposable-checkout source regression executed 83 tests locally; it does not replace the historical 62-test acceptance or establish native vendor execution.
 
 ## Known limitations
 

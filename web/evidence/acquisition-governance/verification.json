@@ -1,0 +1,21 @@
+{
+  "scenario": "acquisition-governance",
+  "integrity": "verified",
+  "checks": {
+    "companies": 3,
+    "local_id": 100,
+    "separate_financial_scenarios": 2,
+    "models_per_build": 9,
+    "oracle_rowsets_compared": 28,
+    "recorded_software_tests": 62,
+    "recorded_browser_checks": 53,
+    "receiver_effects": 1,
+    "new_native_execution": false
+  },
+  "limitations": [
+    "Three fictional operating companies and synthetic USD only; no 50-company deployment, recognized revenue, statutory accounting or commercial outcomes.",
+    "Selected-period and annual scenarios are separate executed records. Admission today is not historical publication inclusion. Source import revision is not either execution revision.",
+    "Recorded local PostgreSQL, HTTP, dbt and browser acceptance; no native vendor connection or production deployment. Frozen receipts do not authorize a new action or prove universal exactly-once execution.",
+    "Pass 5 is a recorded independent AI-led adversarial assessment, not independent human security certification. This static explorer performs no privileged actions."
+  ]
+}

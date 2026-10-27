@@ -8,6 +8,8 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "acquisition-governance": ("acquisition", "M&A Systems Integration — Acquisition Readiness & Financial Governance",
+        "Inspect scoped identities, reviewed acquisition admission, independently receipted execution and separate selected-period/annual financial publications."),
     "measurement-integrity": ("measurement", "First-Party Measurement — Conversion & Revenue Integrity",
         "Reconcile synthetic source contracts and payments against measured claims; inspect recorded browser controls, local GA4 models and separate native Google sample queries."),
     "analytics-engineering": ("analytics", "Analytics Engineering — Model Correctness & Performance",

@@ -40,6 +40,10 @@
     "measurement": {
       "repository": "rlbsem/first-party-measurement-assurance",
       "commit": "88a197c761cfd167c19e3d23039948ffe6bb7f2b"
+    },
+    "acquisition": {
+      "repository": "rlbsem/enterprise-acquisition-onboarding",
+      "commit": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3"
     }
   },
   "gtm_imports": {
@@ -963,6 +967,247 @@
         "source_path": "ga4_pipeline/tests/assert_source_version_identity.sql",
         "sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
         "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/88a197c761cfd167c19e3d23039948ffe6bb7f2b/ga4_pipeline/tests/assert_source_version_identity.sql"
+      }
+    ]
+  },
+  "acquisition_import": {
+    "repository": "rlbsem/enterprise-acquisition-onboarding",
+    "import_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
+    "execution_note": "Source revision pins original bytes, not a new execution. Selected-period financial publications, governed delivery, annual publications and adversarial review retain their distinct execution provenance.",
+    "artifacts": [
+      {
+        "file": "demo.json",
+        "source_path": "docs/evidence/pass5/run01/demo.json",
+        "sha256": "447404eab463398940f7d30b47ef2cbf6b3e83d353b433a90c0ab8851a7849ee",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/demo.json"
+      },
+      {
+        "file": "governance.json",
+        "source_path": "docs/evidence/pass5/run01/pass2.json",
+        "sha256": "a8293b18d7057ca7d0a14244b47e95219b567a19a66a020989e8d89b9377c3e1",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass2.json"
+      },
+      {
+        "file": "selected-period.json",
+        "source_path": "docs/evidence/pass5/run01/pass3.json",
+        "sha256": "1722463c7b54ebac5f3b872dd48f2f215edee2a412bf43ee37622104a997b865",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass3.json"
+      },
+      {
+        "file": "annual.json",
+        "source_path": "docs/evidence/annual/run01/financial.json",
+        "sha256": "578d62bd6c3ca966ec14b3961cc7e2abf154adff37eb5c9de01daa086b6752f2",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/annual/run01/financial.json"
+      },
+      {
+        "file": "annual-execution.json",
+        "source_path": "docs/evidence/annual/run01/annual.json",
+        "sha256": "c5e93a5902eda3bb4a104f1fc36bf8415f99e7f99a8f646df472927527460975",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/annual/run01/annual.json"
+      },
+      {
+        "file": "browser.json",
+        "source_path": "docs/evidence/pass5/run01/pass4.json",
+        "sha256": "b9b09a9eb83f37957af9f0c0533d55b3a7e548be7043de127dc9a79da9e474f6",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass4.json"
+      },
+      {
+        "file": "software.json",
+        "source_path": "docs/evidence/pass5/run01/verification.json",
+        "sha256": "77127720a8dae10e7354e67ef755d8dd06b425ff0f469e83113ca03e8aee6bab",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/verification.json"
+      },
+      {
+        "file": "independent-financial.json",
+        "source_path": "docs/evidence/pass5/run01/independent-financial.json",
+        "sha256": "7275b408e146e2fc4c1d3ef24c937725da51340fb444bcb532cb2cea2904cd6e",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/independent-financial.json"
+      },
+      {
+        "file": "historical-authority.json",
+        "source_path": "docs/evidence/pass5/run01/historical-authority.json",
+        "sha256": "703e92c20bac9b101054859cb6a0df21695c00c35a029d4e1feadfb2ada01b59",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/historical-authority.json"
+      },
+      {
+        "file": "identity-negative.json",
+        "source_path": "docs/evidence/pass5/run01/identity-negative.json",
+        "sha256": "d8570a2747177f4307e0ac675662b3bf9b135ace2873316177b09c136b401ee5",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/identity-negative.json"
+      },
+      {
+        "file": "publication-negative.json",
+        "source_path": "docs/evidence/pass5/run01/payment-and-publication-negative.json",
+        "sha256": "fd9784eacc94ee17bd1586c58be14a5bef74198cc99d924a2bd9f62315a43938",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/payment-and-publication-negative.json"
+      },
+      {
+        "file": "exhaustion.json",
+        "source_path": "docs/evidence/pass5/run01/exhaustion.json",
+        "sha256": "4bb43c038ba5a95c7b9854f6bd88ff95eccd59d6ab58c69be9f30cdb6f2fa819",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/exhaustion.json"
+      },
+      {
+        "file": "process-death.json",
+        "source_path": "docs/evidence/pass5/run01/process-death.json",
+        "sha256": "f1c0193bc7e4ebf64248c1a360819557992038f10d4274b42f45d694e2c84dc6",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/process-death.json"
+      },
+      {
+        "file": "financial-oracle.py",
+        "source_path": "src/onboarding/financial_oracle.py",
+        "sha256": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/src/onboarding/financial_oracle.py"
+      },
+      {
+        "file": "mapping-fixtures.py",
+        "source_path": "src/onboarding/fixtures.py",
+        "sha256": "0e46fd4f5c92dd8a4b7ba90049a59885f05bed04f040f72d64d594f6d1a7b9f6",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/src/onboarding/fixtures.py"
+      },
+      {
+        "file": "admission-contract.md",
+        "source_path": "docs/admission-contract.md",
+        "sha256": "14f28293d7d9c425fef945f5c386de3a0d2b30238858f2b7e36982ec1c950665",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/admission-contract.md"
+      },
+      {
+        "file": "governed-execution.md",
+        "source_path": "docs/governed-execution.md",
+        "sha256": "e625d8d3f0b8fce8ec75eb8a64ae22725360a2e1b5ccc5f9cb700a756c56ced1",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/governed-execution.md"
+      },
+      {
+        "file": "financial-reporting.md",
+        "source_path": "docs/financial-reporting.md",
+        "sha256": "8117f7d3c0463e00836043efdfb43d71d14c90735fbc1b33f7c353f4e5a79906",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/financial-reporting.md"
+      },
+      {
+        "file": "pass5-findings.md",
+        "source_path": "docs/evidence/pass5/findings.md",
+        "sha256": "21be26e66915146b70a080e41143f6bd8d51d9651821a1d7cca69fd6d0b9b596",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/findings.md"
+      },
+      {
+        "file": "authorization-admission.json",
+        "source_path": "docs/evidence/pass5/run01/authorization-admission.json",
+        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-admission.json"
+      },
+      {
+        "file": "authorization-business.json",
+        "source_path": "docs/evidence/pass5/run01/authorization-business.json",
+        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-business.json"
+      },
+      {
+        "file": "authorization-mapping.json",
+        "source_path": "docs/evidence/pass5/run01/authorization-mapping.json",
+        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-mapping.json"
+      },
+      {
+        "file": "authorization-source_revision.json",
+        "source_path": "docs/evidence/pass5/run01/authorization-source_revision.json",
+        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-source_revision.json"
+      },
+      {
+        "file": "warehouse/dbt_project.yml",
+        "source_path": "warehouse/dbt_project.yml",
+        "sha256": "7e7ec60047cd4b2daf12152096d0bbe1a06cb860dc7d28c41e305e16f9d85931",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/dbt_project.yml"
+      },
+      {
+        "file": "warehouse/models/dim_reporting_entities.sql",
+        "source_path": "warehouse/models/dim_reporting_entities.sql",
+        "sha256": "0d5f0e661a06efb746d479b9fce852db5a20dc812c3e70a7e6c54f0306dd7c23",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/dim_reporting_entities.sql"
+      },
+      {
+        "file": "warehouse/models/fct_allocations.sql",
+        "source_path": "warehouse/models/fct_allocations.sql",
+        "sha256": "99fc791473505e384d0cb9cca5a0274ec4c232afa17fd2e3434d7a719be39a10",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/fct_allocations.sql"
+      },
+      {
+        "file": "warehouse/models/fct_invoices.sql",
+        "source_path": "warehouse/models/fct_invoices.sql",
+        "sha256": "cae735450bb22cfa814cec0ead70a34db6a7d1bfc7181e42e1e2abe6b7302936",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/fct_invoices.sql"
+      },
+      {
+        "file": "warehouse/models/intercompany_eliminations.sql",
+        "source_path": "warehouse/models/intercompany_eliminations.sql",
+        "sha256": "efedc1a7ec585d9e7d68e16001d652a46592c5bd16085aaed9849c6f616b4892",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/intercompany_eliminations.sql"
+      },
+      {
+        "file": "warehouse/models/legal_entity_totals.sql",
+        "source_path": "warehouse/models/legal_entity_totals.sql",
+        "sha256": "5a441db535bcc9f5dc56d2441e43ca40e08eb23e8947ee56885e6b8259934f94",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/legal_entity_totals.sql"
+      },
+      {
+        "file": "warehouse/models/portfolio_totals.sql",
+        "source_path": "warehouse/models/portfolio_totals.sql",
+        "sha256": "7a89569963ff5d3f280675dde297769bda4d22b2db8f2bc545f077e10c91785f",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/portfolio_totals.sql"
+      },
+      {
+        "file": "warehouse/models/reconciliation_variances.sql",
+        "source_path": "warehouse/models/reconciliation_variances.sql",
+        "sha256": "51428689cb1b466b2b745593d293ba0533c80654c112c0b751f65b25d9d58398",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/reconciliation_variances.sql"
+      },
+      {
+        "file": "warehouse/models/restatement_bridge.sql",
+        "source_path": "warehouse/models/restatement_bridge.sql",
+        "sha256": "c0039be53be5c58d1901368580578b13143c16db6aeeb90a10cf2c2da79b4b69",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/restatement_bridge.sql"
+      },
+      {
+        "file": "warehouse/models/schema.yml",
+        "source_path": "warehouse/models/schema.yml",
+        "sha256": "43191fbc07ab618b868af460c946ed90083562de488a336259d5f83723790e49",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/schema.yml"
+      },
+      {
+        "file": "warehouse/models/stg_financial.sql",
+        "source_path": "warehouse/models/stg_financial.sql",
+        "sha256": "ef2459d475492e9a8957378a3adb6e78509a19e984c4946cb0b3244b9ef9da6b",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/stg_financial.sql"
+      },
+      {
+        "file": "warehouse/tests/financial_amount_controls.sql",
+        "source_path": "warehouse/tests/financial_amount_controls.sql",
+        "sha256": "4e295b14bf361de12d6eb8d2e61e47ba9073cca6699632c3372de77e08650a10",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_amount_controls.sql"
+      },
+      {
+        "file": "warehouse/tests/financial_grains.sql",
+        "source_path": "warehouse/tests/financial_grains.sql",
+        "sha256": "aece6ca5824c2154b0e50b79e8f82524ffb00eaceae3b2ba417ae085eafc7c87",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_grains.sql"
+      },
+      {
+        "file": "warehouse/tests/financial_references.sql",
+        "source_path": "warehouse/tests/financial_references.sql",
+        "sha256": "ca9e535d06ec14262a079424a075306d1b7467fc3d8c08e0c531fdce78fd7e1e",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_references.sql"
+      },
+      {
+        "file": "warehouse/tests/financial_scope.sql",
+        "source_path": "warehouse/tests/financial_scope.sql",
+        "sha256": "75c311e5e19db647afe3458c40e5f4c32e0080428576d0bc1b4d206ab9891422",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_scope.sql"
+      },
+      {
+        "file": "warehouse/tests/rollup_and_bridge.sql",
+        "source_path": "warehouse/tests/rollup_and_bridge.sql",
+        "sha256": "a8809de6b1c3759d4e93f1f4fc5644cb096b75735643672c2942d416e0dd698e",
+        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/rollup_and_bridge.sql"
       }
     ]
   }

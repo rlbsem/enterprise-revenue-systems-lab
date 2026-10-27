@@ -1,0 +1,96 @@
+[
+  {
+    "action": "Separate selected-period publications",
+    "body": {
+      "original": {
+        "bookings_minor": 55000000,
+        "net_invoice_minor": 38800000,
+        "erp_posted_minor": 38300000,
+        "allocated_cash_minor": 23000000,
+        "elimination_minor": 2000000,
+        "consolidated_invoice_minor": 36800000,
+        "consolidated_erp_minor": 36300000
+      },
+      "restated": {
+        "bookings_minor": 55000000,
+        "net_invoice_minor": 40800000,
+        "erp_posted_minor": 40300000,
+        "allocated_cash_minor": 23000000,
+        "elimination_minor": 2000000,
+        "consolidated_invoice_minor": 38800000,
+        "consolidated_erp_minor": 38300000
+      },
+      "findings": [
+        {
+          "company": "cedar",
+          "legal_entity": "LE-CA-01",
+          "period": "2026-01-01",
+          "source_id": "I2",
+          "code": "erp_posting_difference",
+          "amount_minor": 500000
+        },
+        {
+          "company": "cedar",
+          "legal_entity": "LE-CA-01",
+          "period": "2026-02-01",
+          "source_id": "IC2",
+          "code": "intercompany_unresolved",
+          "amount_minor": 800000
+        }
+      ]
+    }
+  },
+  {
+    "action": "Separate annual publications",
+    "body": {
+      "original": {
+        "bookings_minor": 2242128000,
+        "net_invoice_minor": 2013226000,
+        "erp_posted_minor": 2010726000,
+        "allocated_cash_minor": 1560958560,
+        "elimination_minor": 12000000,
+        "consolidated_invoice_minor": 2001226000,
+        "consolidated_erp_minor": 1998726000
+      },
+      "restated": {
+        "bookings_minor": 2242128000,
+        "net_invoice_minor": 2017726000,
+        "erp_posted_minor": 2015226000,
+        "allocated_cash_minor": 1560958560,
+        "elimination_minor": 12000000,
+        "consolidated_invoice_minor": 2005726000,
+        "consolidated_erp_minor": 2003226000
+      },
+      "findings": [
+        {
+          "company": "cedar",
+          "legal_entity": "LE-CA-01",
+          "period": "2026-03-01",
+          "source_id": "I-2026-03",
+          "code": "erp_posting_difference",
+          "amount_minor": 2500000
+        },
+        {
+          "company": "cedar",
+          "legal_entity": "LE-CA-01",
+          "period": "2026-06-01",
+          "source_id": "IC-OPEN",
+          "code": "intercompany_unresolved",
+          "amount_minor": 4000000
+        }
+      ]
+    }
+  },
+  {
+    "action": "Recorded governed handoff",
+    "body": {
+      "effect_id": "69c3d786-ae9c-5b18-9e72-9ae515fd3cec",
+      "uncertain": "uncertain",
+      "independently_observed_effects_before_recovery": 1,
+      "recovered": "confirmed",
+      "duplicate_plan": true,
+      "conflicting_payload_http_status": 409,
+      "final_effects": 1
+    }
+  }
+]
