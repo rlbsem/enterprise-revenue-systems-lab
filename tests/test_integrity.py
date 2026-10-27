@@ -48,7 +48,7 @@ def test_six_prior_investigations_remain_exact_and_routes_preserved():
     snap=json.loads((ROOT/"docs/evidence/revenue-integrity/prior-release-ui.json").read_bytes())
     before={x["id"]:x for x in json.loads(snap["files"]["web/catalog.json"])["scenarios"]}
     after={x["id"]:x for x in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert set(after)-set(before)=={"revenue-integrity", "analytics-engineering", "measurement-integrity"}
+    assert set(after)-set(before)=={"revenue-integrity", "analytics-engineering", "measurement-integrity", "estate-assurance", "reliability-operations", "temporal-assurance"}
     assert all(after[k]==v for k,v in before.items())
 
 def test_genuine_screenshot_provenance():

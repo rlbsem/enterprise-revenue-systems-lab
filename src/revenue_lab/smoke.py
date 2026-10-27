@@ -110,7 +110,7 @@ def check_site(base, expected, output, *, source_links=False):
 
         def assets():
             hashes = {}
-            for name in ("index.html", "style.css", "app.js", "gtm.js", "research.js", "release.js", "integrity.js", "analytics.js", "measurement.js", "catalog.json"):
+            for name in ("index.html", "style.css", "app.js", "gtm.js", "research.js", "release.js", "integrity.js", "analytics.js", "measurement.js", "assurance.js", "assurance.css", "catalog.json"):
                 response = context.request.get(base + name)
                 assert response.status == 200, name
                 data = response.body()
@@ -162,6 +162,9 @@ def check_site(base, expected, output, *, source_links=False):
                 ("Trace commitment to cash", "revenue-integrity"),
                 ("Prove models and performance", "analytics-engineering"),
                 ("Trust measurement claims", "measurement-integrity"),
+                ("Assure estate changes", "estate-assurance"),
+                ("Trust source publication", "reliability-operations"),
+                ("Assure audience activation", "temporal-assurance"),
                 ("Trust the seller action", "seller-application"),
             ):
                 button = page.get_by_role("button", name=label)
@@ -189,7 +192,7 @@ def check_site(base, expected, output, *, source_links=False):
             assert page.get_by_role("link", name="Skip to investigation").evaluate("e => e === document.activeElement")
             page.keyboard.press("Enter")
             assert page.evaluate("document.activeElement.id") == "main", "skip link did not focus the investigation"
-            return "Six keyboard-selectable investigations; share/reload/Back/Forward; tab keys; skip link"
+            return "Twelve keyboard-selectable investigations; share/reload/Back/Forward; tab keys; skip link"
 
         record("navigation_and_keyboard", navigation)
 

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "scenario": "temporal-assurance",
+  "source": {
+    "repository": "rlbsem/temporal-customer-audiences",
+    "commit": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-27T21:17:11.708518+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "record.json",
+      "sha256": "009d56e2084ede3c8c0c71165a721fd7e646cd8da6606f201da7f44b192074d6",
+      "bytes": 548378
+    },
+    {
+      "path": "regression.json",
+      "sha256": "082ad60a0d96d1a9ba1d9b68a8cb39368e3058bc3d33b225fca5572328a6a09e",
+      "bytes": 24596
+    },
+    {
+      "path": "temporal-proof.json",
+      "sha256": "718b6239b6ce4298c30832df790418776f503d051552f5a839c6e3dba8b54881",
+      "bytes": 383671
+    },
+    {
+      "path": "ci-record.json",
+      "sha256": "8967bdefae699495f004e861b70f110a51df5328720f4aa7b61ed836ca673ef8",
+      "bytes": 18059
+    },
+    {
+      "path": "operating.sql",
+      "sha256": "a3755f0c152c235dea91ff1b722eb0cf79689058654ec1e19fe62e6a3799a94a",
+      "bytes": 8450
+    },
+    {
+      "path": "permission-source.py",
+      "sha256": "2ad6d0a0e5eb515de4fefe37c153c7022317dc48877904603375428983915f7e",
+      "bytes": 12966
+    },
+    {
+      "path": "delivery-source.py",
+      "sha256": "13a3461b39e1459131fda1aed6c1f09ccef7bb29bc049516698d22d1aa6fe248",
+      "bytes": 939
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "33731d4c764e33aaa96f76d4e43b9164f5660331f174ecacc65a807a76d32a00",
+      "bytes": 2933
+    },
+    {
+      "path": "projection.json",
+      "sha256": "116150ea5af8d778ade48745dd71f2445977aa51983bda5b519994327e1a2e51",
+      "bytes": 362
+    },
+    {
+      "path": "observation.json",
+      "sha256": "186e43f230323da8ef79ceb878cd0f3aefac3ee072238774bbdccd5b261f8e6f",
+      "bytes": 552
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "abde69ff727868d860c53faab53c5b08e5554bb9d8fd98d44c1b2b66fa805e19",
+      "bytes": 641
+    }
+  ],
+  "limitations": [
+    "All companies, people, source feeds, financial values and destination effects are synthetic. No customer result, causal uplift, vendor certification or production reliability is established.",
+    "Original records describe executed local software and independent synthetic source/receiver services. They are not native marketing-platform acceptance or a continuous workflow shared with other investigations.",
+    "This browser replays records. Its offline checker reconstructs selected relationships, arithmetic and temporal answers; it does not rerun the source engines, authorize changes, contact a person or connect to a live database.",
+    "Captured approvals, permissions, coverage and readiness describe the recorded clock only. Historical receipts and restatements never authorize a new present-day action."
+  ],
+  "input_hashes": {
+    "record.json": "009d56e2084ede3c8c0c71165a721fd7e646cd8da6606f201da7f44b192074d6",
+    "regression.json": "082ad60a0d96d1a9ba1d9b68a8cb39368e3058bc3d33b225fca5572328a6a09e",
+    "temporal-proof.json": "718b6239b6ce4298c30832df790418776f503d051552f5a839c6e3dba8b54881",
+    "ci-record.json": "8967bdefae699495f004e861b70f110a51df5328720f4aa7b61ed836ca673ef8",
+    "operating.sql": "a3755f0c152c235dea91ff1b722eb0cf79689058654ec1e19fe62e6a3799a94a",
+    "permission-source.py": "2ad6d0a0e5eb515de4fefe37c153c7022317dc48877904603375428983915f7e",
+    "delivery-source.py": "13a3461b39e1459131fda1aed6c1f09ccef7bb29bc049516698d22d1aa6fe248"
+  },
+  "reproduce": [
+    "git clone https://github.com/rlbsem/temporal-customer-audiences",
+    "git -C temporal-customer-audiences checkout 5488c4796b6789d4df470d77ac12f9ee4a0c18bc",
+    "python scripts/import_assurance.py temporal-assurance <source-git-checkout> # only in a fresh Lab checkout without this imported case",
+    "python -m revenue_lab.cli verify web/evidence/temporal-assurance"
+  ],
+  "configuration_hash": "94f6699d06fa65b6283582780143d9c55e0f4183ddae38d4fdf06b32f6ebf632"
+}

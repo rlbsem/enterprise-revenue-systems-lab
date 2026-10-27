@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "scenario": "reliability-operations",
+  "source": {
+    "repository": "rlbsem/martech-data-reliability",
+    "commit": "225964aead1a3f697007605534613f5a813aaed9"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-27T21:17:40.186622+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "record.json",
+      "sha256": "2f91c2805c192fb421a1fbd4133cd23a6e67d082b7fc1c0eb0cb33c5cc0bbd58",
+      "bytes": 391038
+    },
+    {
+      "path": "regression.json",
+      "sha256": "7bfbedf1ceafb8cdb2e9180aa845686ed74dc84102c8626d068d33c3b4948684",
+      "bytes": 17471
+    },
+    {
+      "path": "crashes.json",
+      "sha256": "8a9d498b01e589ee06a7f2240362b4b9c28098dcb25840eb3eb90919223fe951",
+      "bytes": 2738
+    },
+    {
+      "path": "contracts-source.py",
+      "sha256": "c031e62080e92a486977940c00a44560cc407c7358745c62230949c2abfa02d3",
+      "bytes": 4799
+    },
+    {
+      "path": "controller-source.py",
+      "sha256": "428cd83c5c25efb1172624a5c071b845f17d27479d5399fab6c62772c0348e80",
+      "bytes": 15995
+    },
+    {
+      "path": "publication.sql",
+      "sha256": "23324167067a04f934cf0c50fe03aa548e40531a1efce78c4cecfce38427881e",
+      "bytes": 939
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "97f0e193717d1d6a910b89e9a45d8768aa38643bd2bc80ac4d3935d68d2967fd",
+      "bytes": 2511
+    },
+    {
+      "path": "projection.json",
+      "sha256": "fed90f39de434a6736532e13084c16faacb75cc54429990ea272d862029ed688",
+      "bytes": 560
+    },
+    {
+      "path": "observation.json",
+      "sha256": "93f8a49a77b8a7b8d17976b74c30083a42e31e9ac7414da5100b40a34dad2e8f",
+      "bytes": 772
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "0130e9b4b691b1438b066678f0063f8372a4258e57b2639a7a10444ab2ac8893",
+      "bytes": 883
+    }
+  ],
+  "limitations": [
+    "All companies, people, source feeds, financial values and destination effects are synthetic. No customer result, causal uplift, vendor certification or production reliability is established.",
+    "Original records describe executed local software and independent synthetic source/receiver services. They are not native marketing-platform acceptance or a continuous workflow shared with other investigations.",
+    "This browser replays records. Its offline checker reconstructs selected relationships, arithmetic and temporal answers; it does not rerun the source engines, authorize changes, contact a person or connect to a live database.",
+    "Captured approvals, permissions, coverage and readiness describe the recorded clock only. Historical receipts and restatements never authorize a new present-day action."
+  ],
+  "input_hashes": {
+    "record.json": "2f91c2805c192fb421a1fbd4133cd23a6e67d082b7fc1c0eb0cb33c5cc0bbd58",
+    "regression.json": "7bfbedf1ceafb8cdb2e9180aa845686ed74dc84102c8626d068d33c3b4948684",
+    "crashes.json": "8a9d498b01e589ee06a7f2240362b4b9c28098dcb25840eb3eb90919223fe951",
+    "contracts-source.py": "c031e62080e92a486977940c00a44560cc407c7358745c62230949c2abfa02d3",
+    "controller-source.py": "428cd83c5c25efb1172624a5c071b845f17d27479d5399fab6c62772c0348e80",
+    "publication.sql": "23324167067a04f934cf0c50fe03aa548e40531a1efce78c4cecfce38427881e"
+  },
+  "reproduce": [
+    "git clone https://github.com/rlbsem/martech-data-reliability",
+    "git -C martech-data-reliability checkout 225964aead1a3f697007605534613f5a813aaed9",
+    "python scripts/import_assurance.py reliability-operations <source-git-checkout> # only in a fresh Lab checkout without this imported case",
+    "python -m revenue_lab.cli verify web/evidence/reliability-operations"
+  ],
+  "configuration_hash": "2407e79f7492c966c6f048316c4429c85269c316fbc5d89190bcfc0696528fb6"
+}

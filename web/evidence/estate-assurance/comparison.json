@@ -1,0 +1,343 @@
+{
+  "comparisons": [
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "baseline",
+      "revision": 0
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "consolidation",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "explore:atlas/crm",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "explore:atlas/workbench",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "explore:boreal/crm",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "proposal": "explore:cinder/crm",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "explore:cinder/spare",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "proposal": "explore:parent/hub",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNKNOWN",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNKNOWN",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNKNOWN",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNKNOWN",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "integration",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "UNSUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "UNSUPPORTED",
+        "cinder/report": "UNSUPPORTED"
+      },
+      "proposal": "outage",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "reassignment",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "replacement",
+      "revision": 1
+    },
+    {
+      "actual": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "SUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNKNOWN",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "replacement",
+      "revision": 2
+    },
+    {
+      "actual": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "independent": {
+        "atlas/campaign": "UNSUPPORTED",
+        "atlas/cycle-a": "UNKNOWN",
+        "atlas/cycle-b": "UNKNOWN",
+        "atlas/engage": "SUPPORTED",
+        "atlas/route": "SUPPORTED",
+        "atlas/seasonal": "UNSUPPORTED",
+        "boreal/report": "SUPPORTED",
+        "cinder/report": "SUPPORTED"
+      },
+      "proposal": "retirement",
+      "revision": 1
+    }
+  ],
+  "method": "Preserved recursive proof oracle with separate typed-foundation adapter; no production state reuse",
+  "requirements_compared": 112,
+  "status": "passed"
+}

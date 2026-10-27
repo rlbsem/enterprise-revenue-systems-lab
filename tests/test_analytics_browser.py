@@ -13,7 +13,7 @@ def test_analytics_lineage_metrics_benchmarks_native_and_download(url, tmp_path)
         page.on("request", lambda r: writes.append(r.url) if r.method != "GET" else None)
         page.goto(url + "/?case=analytics-engineering")
         page.get_by_role("heading", name="What is one row supposed to mean?").wait_for()
-        assert page.locator("[data-investigation]").count() == 9
+        assert page.locator("[data-investigation]").count() == 12
         page.get_by_role("button", name="Validate artifact integrity").click()
         page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
         page.get_by_role("button", name="mart_pipeline", exact=True).click()

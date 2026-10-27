@@ -1,0 +1,325 @@
+{
+  "format": "change-catalog/v1",
+  "as_of": "2026-10-27T00:00:00Z",
+  "synthetic": true,
+  "companies": {
+    "parent": "Northstar Group",
+    "atlas": "Atlas Industrial",
+    "boreal": "Boreal Services",
+    "cinder": "Cinder Software"
+  },
+  "identities": [
+    "atlas/campaign",
+    "atlas/campaign-input0",
+    "atlas/campaign-input1",
+    "atlas/crm",
+    "atlas/cycle-a",
+    "atlas/cycle-a-input0",
+    "atlas/cycle-b",
+    "atlas/cycle-b-input0",
+    "atlas/engage",
+    "atlas/engage-input0",
+    "atlas/engage-input1",
+    "atlas/modern",
+    "atlas/operations",
+    "atlas/revenue",
+    "atlas/route",
+    "atlas/route-input0",
+    "atlas/route-input1",
+    "atlas/seasonal",
+    "atlas/seasonal-adapter",
+    "atlas/seasonal-input0",
+    "atlas/seasonal-input1",
+    "atlas/sync",
+    "atlas/workbench",
+    "boreal/crm",
+    "boreal/operations",
+    "boreal/report",
+    "boreal/report-input0",
+    "boreal/report-input1",
+    "boreal/revenue",
+    "boreal/sync",
+    "cinder/crm",
+    "cinder/operations",
+    "cinder/report",
+    "cinder/report-input0",
+    "cinder/report-input1",
+    "cinder/revenue",
+    "cinder/spare",
+    "cinder/sync",
+    "parent/hub"
+  ],
+  "cross_company": [
+    [
+      "atlas/sync",
+      "parent/hub"
+    ],
+    [
+      "atlas/sync",
+      "parent/hub"
+    ],
+    [
+      "boreal/sync",
+      "parent/hub"
+    ],
+    [
+      "boreal/sync",
+      "parent/hub"
+    ],
+    [
+      "cinder/sync",
+      "parent/hub"
+    ],
+    [
+      "cinder/sync",
+      "parent/hub"
+    ]
+  ],
+  "sources": [
+    {
+      "source": "cmdb",
+      "artifact": "cmdb.csv",
+      "revision": 1,
+      "collected_at": "2026-10-27T00:00:00Z",
+      "scope": [
+        "parent",
+        "atlas",
+        "boreal",
+        "cinder"
+      ],
+      "status": "complete"
+    },
+    {
+      "source": "registry",
+      "artifact": "registry.json",
+      "revision": 1,
+      "collected_at": "2026-10-27T00:00:00Z",
+      "scope": [
+        "parent",
+        "atlas",
+        "boreal",
+        "cinder"
+      ],
+      "status": "complete"
+    },
+    {
+      "source": "owner",
+      "artifact": "owner.json",
+      "revision": 1,
+      "collected_at": "2026-10-27T00:00:00Z",
+      "scope": [
+        "parent",
+        "atlas",
+        "boreal",
+        "cinder"
+      ],
+      "status": "complete"
+    },
+    {
+      "source": "execution",
+      "artifact": "execution.json",
+      "revision": 1,
+      "collected_at": "2026-10-27T00:00:00Z",
+      "scope": [
+        "parent",
+        "atlas",
+        "boreal",
+        "cinder"
+      ],
+      "status": "partial"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "coverage:parent/hub",
+      "subjects": [
+        "parent/hub"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    },
+    {
+      "id": "coverage:atlas/crm",
+      "subjects": [
+        "atlas/crm"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    },
+    {
+      "id": "coverage:boreal/crm",
+      "subjects": [
+        "boreal/crm"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    },
+    {
+      "id": "coverage:cinder/crm",
+      "subjects": [
+        "cinder/crm"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    },
+    {
+      "id": "coverage:atlas/workbench",
+      "subjects": [
+        "atlas/workbench"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "partial",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-01-01T00:00:00Z",
+      "observed_start": "2026-10-01T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": [
+        "Annual launch not observed"
+      ]
+    },
+    {
+      "id": "coverage:atlas/modern",
+      "subjects": [
+        "atlas/modern"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    },
+    {
+      "id": "coverage:cinder/spare",
+      "subjects": [
+        "cinder/spare"
+      ],
+      "reviewer": "Synthetic architecture steward",
+      "reviewed_at": "2026-10-27T00:00:00Z",
+      "max_age_days": 30,
+      "status": "complete",
+      "expected": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "observed": [
+        "cmdb",
+        "registry",
+        "owner",
+        "execution"
+      ],
+      "expected_start": "2026-10-27T00:00:00Z",
+      "observed_start": "2026-10-27T00:00:00Z",
+      "expected_end": "2026-10-27T00:00:00Z",
+      "observed_end": "2026-10-27T00:00:00Z",
+      "exclusions": []
+    }
+  ]
+}

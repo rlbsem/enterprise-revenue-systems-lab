@@ -1,6 +1,6 @@
 # Enterprise Revenue Systems Lab
 
-Inspect AI seller decisions, recovery after uncertain writes, CRM-to-warehouse synchronization, GTM pipeline orchestration, real-model release assurance and the differences between bookings, invoices, cash and ARR.
+Inspect enterprise architecture decisions, source-to-report reliability and temporal audience safety alongside AI seller decisions, execution recovery, CRM-to-warehouse synchronization and revenue integrity.
 
 An AI-generated proposal can cite the right facts and still imply an unsupported commitment. A timed-out write may already have committed. A mature SaaS company can carry $754M of ARR while booking far less in one quarter.
 
@@ -12,9 +12,9 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/release-qa-eight/presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The first eight investigations retain their reconciled screenshots. The ninth adds new captures from the actual running application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
+The first nine investigations and their captured evidence remain preserved. Three new assurance investigations add captures from the actual static application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
 
-## Nine investigations
+## Twelve investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -26,10 +26,26 @@ The first eight investigations retain their reconciled screenshots. The ninth ad
 | Can a real-model candidate be released safely? | [AI Model Release Assurance](docs/model-release-assurance.md): preserved Qwen2.5 failures, blocked 35/36 Qwen3 candidate, 48/48 paired configurations and actual local shadow/canary/promotion/rollback | Finite-suite local acceptance with synthetic effects; controlled input corruption, not production reliability or general model accuracy. |
 | Why do billing and Finance disagree after a delivery recovers? | [Revenue Integrity](docs/revenue-integrity.md): authoritative invoice/ERP/cash lineage, independent receipts, a separate recorded operator recovery and an unresolved $1,500 variance | Local contract acceptance at a pinned historical source revision; recorded review states, no privileged actions or native vendor calls. |
 | Are analytical models correct, and is the optimization worth keeping? | [Analytics Engineering](docs/analytics-engineering.md): 15-model SQL lineage, actual small-fixture rows, 60K/180K paired benchmarks, a rejected selective rebuild and separate native Snowflake fixture evidence | Complete comparisons were recorded upstream; the browser checks artifacts and summaries. Local timing is not native warehouse performance or commercial savings. |
-
 | Can a measured conversion be trusted as collected money? | [First-Party Measurement](docs/measurement-integrity.md): synthetic source-to-conversion reconciliation, browser controls, five local GA4 rowsets and separate historical native Google sample queries | Measured values are claims. The Google sample is unrelated to Evermere; no production GA4 export or native dbt-bigquery acceptance. |
+| Can a platform be retired without breaking an operating company? | [Enterprise Change Assurance](docs/architecture-assurance.md): recorded multi-company dependencies, proposal revisions and reviewer decisions | Captured local PostgreSQL readiness is not current change authority or operational cutover acceptance. |
+| Would an incomplete or numerically wrong report be published? | [MarTech Data Reliability](docs/architecture-assurance.md): independent source deliveries, checkpoints, rejected candidates and reconciled output | Local synthetic HTTP/DuckDB execution, not native vendor data or business uplift. |
+| Can late history or an old receipt authorize a new audience action? | [Temporal Audience Assurance](docs/architecture-assurance.md): two-time decisions, scoped permissions and independent effects | Recorded synthetic clocks and local services; the viewer cannot activate an audience. |
 
-The eighteen cases draw from seven pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The twenty-one cases draw from ten pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+
+## Enterprise architecture and data assurance
+
+Three recorded local implementations are now inspectable through the same static Lab. No installation, live service or vendor credential is required.
+
+| Investigation | Decision to inspect | Evidence boundary |
+|---|---|---|
+| [Enterprise Change Assurance](docs/architecture-assurance.md#enterprise-change-assurance) · `?case=estate-assurance` | Follow company-scoped retirement impacts; compare replacement revisions and captured readiness/approval gates | Recorded PostgreSQL execution, synthetic multi-company estate; no present-day approval or external retirement |
+| [MarTech Data Reliability](docs/architecture-assurance.md#martech-data-reliability) · `?case=reliability-operations` | Reject a wrong-value reporting candidate despite equal row counts; inspect source bytes, checkpoints and recovery | Recorded independent local HTTP sources and DuckDB; not native marketing-platform acceptance |
+| [Temporal Audience Assurance](docs/architecture-assurance.md#temporal-audience-assurance) · `?case=temporal-assurance` | Compare original and restated history, current permission gates and independent destination receipts | Recorded local PostgreSQL/SQLite/HTTP effects; no prospect communication or present-day activation authority |
+
+<img src="docs/images/architecture-assurance/estate-desktop.png" alt="Actual static Lab showing company-scoped retirement consequences and an interactive requirement chain" width="900">
+
+[Source pins, verification and execution boundaries](docs/architecture-assurance.md) · [Genuine screenshots and browser evidence](docs/evidence/architecture-assurance/README.md). These feature-branch investigations are not claimed to be publicly deployed; publication follows owner approval and separate hosted verification.
 
 ## First-Party Measurement — Conversion & Revenue Integrity
 

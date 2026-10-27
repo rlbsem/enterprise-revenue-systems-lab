@@ -13,7 +13,7 @@ def test_recorded_financial_journey_and_static_boundary(url,tmp_path):
         page.get_by_role("heading",name="Which number should Finance trust?").wait_for()
         page.get_by_role("button",name="Validate artifact integrity").click()
         page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
-        assert page.locator("[data-investigation]").count()==9
+        assert page.locator("[data-investigation]").count()==12
         for stage in ["lineage","delivery","recovery","architecture","discrepancy"]:
             button=page.locator(f'[data-integrity-stage="{stage}"]');button.focus();page.keyboard.press("Enter")
             assert button.get_attribute("aria-pressed")=="true"

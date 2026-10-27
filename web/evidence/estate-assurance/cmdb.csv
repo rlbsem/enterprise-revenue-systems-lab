@@ -1,0 +1,8 @@
+company,local_id,label,lifecycle,owner
+parent,hub,Shared integration fabric,active,Parent Platform
+atlas,crm,Atlas CRM,active,Atlas Revenue Operations
+boreal,crm,Boreal CRM,active,Boreal Operations
+cinder,crm,Cinder CRM,active,Cinder Operations
+atlas,workbench,Legacy campaign workbench,active,Atlas Marketing
+atlas,modern,Proposed campaign platform,proposed,Atlas Marketing
+cinder,spare,Cold standby exporter,active,Cinder Operations

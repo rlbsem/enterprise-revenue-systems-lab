@@ -1,0 +1,73 @@
+{
+  "repository": "rlbsem/martech-estate-impact",
+  "import_revision": "11890321d8cd6c164da236cad7896d00b6e0938e",
+  "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+  "artifacts": [
+    {
+      "file": "record.json",
+      "source_path": "docs/evidence/change-assurance/run-03/estate-record.json",
+      "sha256": "8cb57cfe7056dfd03b10e5a52daf386ba0c77ea725e0f473f3d36c2de94b03c9",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/estate-record.json"
+    },
+    {
+      "file": "regression.json",
+      "source_path": "docs/evidence/change-assurance/run-03/verification.json",
+      "sha256": "579f498c721e3167bf25dfd10f51e1a7086311bcb03cd952df23a7b6dd1c57f0",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/verification.json"
+    },
+    {
+      "file": "comparison.json",
+      "source_path": "docs/evidence/change-assurance/run-03/oracle-comparison.json",
+      "sha256": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/oracle-comparison.json"
+    },
+    {
+      "file": "catalog-source.json",
+      "source_path": "fixtures/change-assurance/catalog.json",
+      "sha256": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/catalog.json"
+    },
+    {
+      "file": "cmdb.csv",
+      "source_path": "fixtures/change-assurance/cmdb.csv",
+      "sha256": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/cmdb.csv"
+    },
+    {
+      "file": "owner-source.json",
+      "source_path": "fixtures/change-assurance/owner.json",
+      "sha256": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/owner.json"
+    },
+    {
+      "file": "registry-source.json",
+      "source_path": "fixtures/change-assurance/registry.json",
+      "sha256": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/registry.json"
+    },
+    {
+      "file": "execution-source.json",
+      "source_path": "fixtures/change-assurance/execution.json",
+      "sha256": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/execution.json"
+    },
+    {
+      "file": "requirement-engine.py",
+      "source_path": "src/estate_impact/requirements.py",
+      "sha256": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_impact/requirements.py"
+    },
+    {
+      "file": "governance-source.py",
+      "source_path": "src/estate_change/service.py",
+      "sha256": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/service.py"
+    },
+    {
+      "file": "governance.sql",
+      "source_path": "src/estate_change/schema.sql",
+      "sha256": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566",
+      "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/schema.sql"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+/* Scoped additions: the existing nine investigations keep their styling. */
+.assurance-investigation .release-hero h2 {
+  color: #edf4fa;
+  font-size: clamp(24px, 2.5vw, 34px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+.assurance-control {
+  min-width: 0;
+  max-width: 100%;
+  margin: 14px 0;
+}
+.assurance-control label {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+  color: #324d65;
+}
+.assurance-control select {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.assurance-state {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #71869c;
+  background: #edf1f6;
+  color: #32475e;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: normal;
+  line-height: 1.5;
+}
+.assurance-state.good {
+  background: #e7f3f0;
+  color: #20565b;
+  border-color: #78a29f;
+}
+.assurance-state.bad {
+  background: #fff0ee;
+  color: #853b3b;
+  border-color: #bf8b88;
+}
+.assurance-state.unknown {
+  background: #fff6e5;
+  color: #72521c;
+  border-color: #bba06b;
+}
+.assurance-table {
+  max-width: 100%;
+  overflow: auto;
+  border: 1px solid #c8d6e2;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+.assurance-table table {
+  min-width: 680px;
+  table-layout: auto;
+  font-size: 12px;
+}
+.assurance-table th,
+.assurance-table td {
+  min-width: 95px;
+  overflow-wrap: normal;
+  word-break: normal;
+  vertical-align: top;
+}
+.assurance-table th:nth-child(2) {
+  width: auto;
+}
+.assurance-table caption {
+  padding: 12px;
+  background: #f2f6fa;
+  font-size: 12px;
+}
+.assurance-table th {
+  background: #eaf0f6;
+  color: #43576f;
+}
+.assurance-investigation .panel-title {
+  color: #43576f;
+}
+.assurance-investigation .assurance-table details {
+  margin: 0;
+}
+.assurance-flow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  margin: 20px 0;
+}
+.assurance-flow > section {
+  min-width: 0;
+  padding: 17px;
+  border: 1px solid #aabfce;
+  border-top: 3px solid #34777e;
+  border-radius: 7px;
+  background: #f5f8fb;
+}
+.assurance-flow > section:nth-child(2) {
+  background: #e8f0f5;
+  border-top-color: #203e57;
+}
+.assurance-node {
+  border-bottom: 1px solid #cad7e2;
+  padding: 13px 0;
+}
+.assurance-node p {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.assurance-flow button,
+.assurance-selected-record + button {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 8px 10px;
+  margin: 5px 5px 5px 0;
+  background: #fff;
+  border: 1px solid #869eb2;
+  border-radius: 5px;
+  color: #234a60;
+  font-size: 12px;
+  text-align: left;
+}
+.assurance-flow button:hover {
+  background: #dfeef0;
+}
+.assurance-selected-record:not(:empty) {
+  padding: 16px;
+  background: #f1f6fa;
+  border-left: 3px solid #34777e;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+.assurance-selected-record:focus {
+  outline: 3px solid #b7791f;
+  outline-offset: 3px;
+}
+.assurance-investigation section > a {
+  display: inline-block;
+  margin: 12px 18px 5px 0;
+  font-size: 12px;
+}
+.assurance-investigation pre {
+  /* Keep a whole number of text lines visible above the scroll boundary. */
+  max-height: 400px;
+  line-height: 20px;
+  padding: 20px;
+  border: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.assurance-investigation .release-detail button {
+  min-height: 44px;
+}
+.assurance-investigation button:not([data-assurance-stage]) {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #869eb2;
+  border-radius: 5px;
+  background: #fff;
+  color: #234a60;
+  font: inherit;
+  font-size: 12px;
+}
+.assurance-investigation button:not([data-assurance-stage]):hover {
+  background: #e5f0f2;
+}
+.assurance-investigation button:focus-visible,
+.assurance-table:focus-visible {
+  outline: 3px solid #b7791f;
+  outline-offset: 3px;
+}
+@media (max-width: 1050px) {
+  .assurance-flow {
+    grid-template-columns: 1fr;
+  }
+  .assurance-flow > section {
+    padding: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .assurance-investigation .release-stages button {
+    flex-basis: 140px;
+  }
+  .assurance-investigation .facts p {
+    gap: 8px;
+  }
+}
