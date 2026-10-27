@@ -947,3 +947,7 @@ th {
 
 /* Keep exact annual amounts readable on very narrow acquisition views. */
 @media (max-width:400px) { .metrics.acquisition-metrics { grid-template-columns:1fr; } }
+
+.acquisition-investigation .analytics-table table.acquisition-pairs { min-width:0; width:100%; }
+
+.acquisition-investigation .acquisition-pairs th:nth-child(2) { width:48%; }

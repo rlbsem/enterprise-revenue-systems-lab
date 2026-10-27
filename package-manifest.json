@@ -59,12 +59,12 @@
       "bytes": 1867
     },
     "docs/evidence/acquisition-governance/browser.json": {
-      "sha256": "8621da15d4b5a55cba730ed415a70466ef0a095247c8dcde48f2509de50afefa",
+      "sha256": "dfd3eef212b18c083dcf739bc106b0103e2ccb066b091bd20c04ed7ea784e770",
       "bytes": 13173
     },
     "docs/evidence/acquisition-governance/local-verification.json": {
-      "sha256": "4e662d697d163e72063c2f6a3542d80a6b6ad7a7e40e660e5c89bca481a580a0",
-      "bytes": 38500
+      "sha256": "6c21041ff5c57260098c5bd1dbb2e68d447c1c02b7cb19325e66367f21d14275",
+      "bytes": 38849
     },
     "docs/evidence/acquisition-governance/preserved-files.json": {
       "sha256": "352f905edaaa3250d9056031cc1fdb92dc3b0837599d5fbba864512da6165129",
@@ -379,12 +379,12 @@
       "bytes": 116883
     },
     "docs/images/acquisition-governance/acquisition-governance-finance.png": {
-      "sha256": "5f07465ed5db8ecd51d54f932ae3a1131836e7236cde6ab8f8067949e127ecbb",
-      "bytes": 107162
+      "sha256": "8cfae226009a755f1f333adbb894d4f8a01644857ff2751d93dc4073be52da3a",
+      "bytes": 106927
     },
     "docs/images/acquisition-governance/acquisition-governance-mobile.png": {
-      "sha256": "15a823dd775391a0dfd7d4c5f4cdf7649f7100fd3214bc4fa05f39d88c186e35",
-      "bytes": 34023
+      "sha256": "5efb7c46e7afc5d00fe9b28ab98611dc9ca92c6c582d47634afb6e04c5122e0b",
+      "bytes": 40135
     },
     "docs/images/analytics-engineering/analytics-engineering-desktop.png": {
       "sha256": "35b70fad28b08ff53b8be806842f04d082d05a06ccce63fd917ad3eec3e3af8d",
@@ -827,8 +827,8 @@
       "bytes": 150
     },
     "scripts/capture_acquisition.py": {
-      "sha256": "dc82a9b1ac1540d343df74f1efa117a22f2dff02ac4bba6cf750569845cd8091",
-      "bytes": 8719
+      "sha256": "67f3942ec832e681a781144528f9da7fc5556022d97e3cc252b77a599b83edd9",
+      "bytes": 9236
     },
     "scripts/capture_analytics.py": {
       "sha256": "74373f64382d5c276f356262d47be62d57a0d1fbc18951609fb0228b2f774482",
@@ -1011,8 +1011,8 @@
       "bytes": 6178
     },
     "tests/test_acquisition_browser.py": {
-      "sha256": "a6c20f7487361cbb319bc3391becf4ac4c57320beff3dfb94fb14796e5ab707c",
-      "bytes": 4525
+      "sha256": "d1087384721e304ac90c1c76ccfb08fab5a6f39563fb5dca599635a375e56b6d",
+      "bytes": 4900
     },
     "tests/test_analytics.py": {
       "sha256": "de85144faf6719d5f03880fcf835c859cb002f413c9ca029c0a9686c968930fe",
@@ -1095,8 +1095,8 @@
       "bytes": 4253
     },
     "web/acquisition.js": {
-      "sha256": "0f2331d80103dc5cec20afcb68df04312918c29ff778d7e0b938ee9511902d08",
-      "bytes": 16200
+      "sha256": "42b322020c518a02f0cf9e200c1a9ff862dfcf038d3777c093f9010ce500cae2",
+      "bytes": 16254
     },
     "web/analytics.js": {
       "sha256": "5f19987660bc5e120b94ec88bc472656cb4c41557cfd5f8c433b86aae0e4e86a",
@@ -2539,8 +2539,8 @@
       "bytes": 14788
     },
     "web/style.css": {
-      "sha256": "4ebdebc019216d7413fd2e8e89346086a605bf78aae0f719d707b8d6a25ce090",
-      "bytes": 24008
+      "sha256": "94b9ac91977dce6856f25c80d7d5a499bd0eca98e7ae8ac8d3956502477fa1c4",
+      "bytes": 24184
     }
   }
 }

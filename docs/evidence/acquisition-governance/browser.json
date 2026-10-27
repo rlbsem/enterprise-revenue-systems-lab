@@ -1,22 +1,22 @@
 {
-  "captured_at": "2026-10-27T04:06:30.252413+00:00",
+  "captured_at": "2026-10-27T04:11:41.145605+00:00",
   "browser": "Chromium 140.0.7339.16",
   "served": "actual dist at /enterprise-revenue-systems-lab/; not a public deployment",
   "case": "acquisition-governance",
   "source_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
   "source_sha256": {
     "web/app.js": "352d575852f914737f06667de8edf8d19c6d891a535b6e223a142bdbce0641c9",
-    "web/acquisition.js": "0f2331d80103dc5cec20afcb68df04312918c29ff778d7e0b938ee9511902d08",
-    "web/style.css": "4ebdebc019216d7413fd2e8e89346086a605bf78aae0f719d707b8d6a25ce090",
+    "web/acquisition.js": "42b322020c518a02f0cf9e200c1a9ff862dfcf038d3777c093f9010ce500cae2",
+    "web/style.css": "94b9ac91977dce6856f25c80d7d5a499bd0eca98e7ae8ac8d3956502477fa1c4",
     "web/index.html": "020c7285d498f85252e33b6daa1362fe129a61c107846354eeace78b15ab7671",
     "web/catalog.json": "3c5fdba9addaba4e83945c29fad859b4b9849604da98385e308d4189ea7a1aa5",
     "sources.lock.json": "5460f0a36322cf138cdaa015495fea9342cd562c8a02704926b7cbc91e23ed06",
-    "scripts/capture_acquisition.py": "dc82a9b1ac1540d343df74f1efa117a22f2dff02ac4bba6cf750569845cd8091"
+    "scripts/capture_acquisition.py": "67f3942ec832e681a781144528f9da7fc5556022d97e3cc252b77a599b83edd9"
   },
   "image_sha256": {
     "acquisition-governance-desktop.png": "e1f1cec3bf91b672f34c041bd8137cc4d56019b671e5b03781b56307d67ad2be",
-    "acquisition-governance-finance.png": "5f07465ed5db8ecd51d54f932ae3a1131836e7236cde6ab8f8067949e127ecbb",
-    "acquisition-governance-mobile.png": "15a823dd775391a0dfd7d4c5f4cdf7649f7100fd3214bc4fa05f39d88c186e35"
+    "acquisition-governance-finance.png": "8cfae226009a755f1f333adbb894d4f8a01644857ff2751d93dc4073be52da3a",
+    "acquisition-governance-mobile.png": "5efb7c46e7afc5d00fe9b28ab98611dc9ca92c6c582d47634afb6e04c5122e0b"
   },
   "images": {
     "acquisition-governance-desktop.png": {

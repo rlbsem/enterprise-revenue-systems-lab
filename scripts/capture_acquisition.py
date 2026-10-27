@@ -66,6 +66,10 @@ def main():
                 page.set_viewport_size({"width":width,"height":1100 if width>768 else 844})
                 for stage in STAGES:
                     page.locator(f'[data-acquisition-stage="{stage}"]').click()
+                    if stage=="finance":
+                        bounds=page.get_by_role("cell",name="$20,057,260.00",exact=True).bounding_box()
+                        assert bounds["x"]>=0 and bounds["x"]+bounds["width"]<=width, "financial amount requires horizontal scrolling"
+                        assert page.get_by_role("cell",name="$20,057,260.00",exact=True).evaluate("e=>{const r=document.createRange();r.selectNodeContents(e);return r.getClientRects().length}")==1, "financial amount breaks across lines"
                     layouts.append({"width":width,"state":stage,"overflow":page.evaluate("document.documentElement.scrollWidth>innerWidth"),"contrast":page.evaluate(CONTRAST)})
                     if width in [1440,390]:
                         result=page.evaluate("async()=>{const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {violations:r.violations,incomplete:r.incomplete.map(x=>({id:x.id,impact:x.impact})),passes:r.passes.length}}")
@@ -90,7 +94,7 @@ def main():
             page.evaluate("scrollTo(0,document.querySelector('.release-stages').getBoundingClientRect().top+scrollY-25)")
             page.screenshot(path=str(args.images/"acquisition-governance-finance.png"));images["acquisition-governance-finance.png"]={"width":1440,"height":1260,"capture":"actual viewport; separately executed annual financial publication and preserved findings"}
             page.set_viewport_size({"width":390,"height":1000})
-            page.evaluate("scrollTo(0,document.querySelector('.release-stages').getBoundingClientRect().top+scrollY-15)")
+            page.evaluate("scrollTo(0,document.querySelector('.release-detail').getBoundingClientRect().top+scrollY-15)")
             page.screenshot(path=str(args.images/"acquisition-governance-mobile.png"));images["acquisition-governance-mobile.png"]={"width":390,"height":1000,"capture":"actual mobile viewport; annual financial publication"}
             browser_version=browser.version;browser.close()
     finally:

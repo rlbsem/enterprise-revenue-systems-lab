@@ -40,6 +40,11 @@ def test_acquisition_identity_admission_receipts_financial_versions_and_download
   for tab in ["Source records","Evidence timeline","Compare & verify"]:
    page.get_by_role("tab",name=tab,exact=True).click();assert page.locator("#panel").inner_text().strip()
   page.get_by_role("tab",name="Decision & outcome",exact=True).click();page.set_viewport_size({"width":320,"height":844});assert not page.evaluate("document.documentElement.scrollWidth>innerWidth")
+  page.locator('[data-acquisition-stage="finance"]').click()
+  page.get_by_label("Choose a separately executed financial scenario").select_option("annual")
+  page.get_by_label("Choose a published version").select_option("restated")
+  bounds=page.get_by_role("cell",name="$20,057,260.00",exact=True).bounding_box()
+  assert bounds["x"]>=0 and bounds["x"]+bounds["width"]<=320
   assert page.locator("#fresh").is_hidden() and not errors and not writes
   browser.close()
 

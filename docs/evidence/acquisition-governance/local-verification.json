@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-27T04:08:09.469783+00:00",
+  "recorded_at": "2026-10-27T04:13:48.435890+00:00",
   "scope": "Fresh local Lab and disposable acquisition source tests; static read-only investigation, no native vendors or deployment",
   "baseline_commit": "6135acd0c8ff4e4970d05ece035b31f963120ad6",
   "source_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
@@ -8,7 +8,7 @@
     "failures": "0",
     "errors": "0",
     "skipped": "0",
-    "time": "83.329"
+    "time": "82.441"
   },
   "tests": [
     {
@@ -1038,7 +1038,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "262e5901de2d1f66c58be84cea6a79546a7895d0ca4efa811d4a37a27558fb29"
+      "report_sha256": "6276b3b1db7c15f30b6167c9546349e04f52c6b36c7b8dd2d22438a8816a9e63"
     },
     "research": {
       "layout_contrast_observations": 20,
@@ -1047,7 +1047,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "1d7e396af93d6798d1889f021ecb090099ad85e884b102b211558b9457c9422f"
+      "report_sha256": "41dbd2637e83c3c2c2519b6368c43fc52210d68dd1da43353c7bb9d8f6cc0e5b"
     },
     "release": {
       "layout_contrast_observations": 50,
@@ -1056,7 +1056,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "b3e110ed856bff8305610cec793f90d687974405fed837f2566eac7d1fb68af7"
+      "report_sha256": "dc494006c8df90a5bbbb98ad7365caaa4a7bbdfedc3b759517abf65f62346032"
     },
     "integrity": {
       "layout_contrast_observations": 40,
@@ -1065,7 +1065,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "c87c4388a8c798335ecd130346fb0d92b1a918c4aa336d5fcc5fa3ac7fcdcc22"
+      "report_sha256": "8334407f02a83f556e38b7052aebf7b53f8be0c5bb2c848afe6cfd3391201659"
     },
     "analytics": {
       "layout_contrast_observations": 40,
@@ -1074,7 +1074,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "46160694e1d580746bec6dcff2b2f6b614c14345aa64d50f52a522c63a6f8605"
+      "report_sha256": "34a52e267851350eac27e3600939817c3b7715cd16a1fcde2e54d40b8181fa6c"
     },
     "measurement": {
       "layout_contrast_observations": 40,
@@ -1083,7 +1083,7 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "7d7afd97c912f7fd5beb44c8da8cdac4183d30b6b229c3401bec4777d327a4c0"
+      "report_sha256": "bbc5a85a6be53912114c5ca8a394d9d013e12f55e4142328de8f069332069aa6"
     },
     "acquisition": {
       "layout_contrast_observations": 47,
@@ -1092,19 +1092,26 @@
       "contrast_failures": 0,
       "axe_violations": 0,
       "page_errors": [],
-      "report_sha256": "8621da15d4b5a55cba730ed415a70466ef0a095247c8dcde48f2509de50afefa"
+      "report_sha256": "dfd3eef212b18c083dcf739bc106b0103e2ccb066b091bd20c04ed7ea784e770"
     }
   },
   "failures_resolved": [
     "320-pixel overflow from exact annual metric amounts; one-column narrow-screen treatment is scoped to acquisition cards.",
     "A financial browser locator matched both a summary card and publication cell; scoped the assertion to the actual table cell.",
     "A test compared CSS-uppercase inner text with mixed-case heading text; changed to the exact accessible heading.",
-    "Expanded SQL code panel initially failed scrollable-region-focusable; all nine SQL panels are now keyboard-focusable, with two additional expanded-state axe checks."
+    "Expanded SQL code panel initially failed scrollable-region-focusable; all nine SQL panels are now keyboard-focusable, with two additional expanded-state axe checks.",
+    "Inherited two-column table widths hid or fragmented mobile amounts; acquisition pair tables now fit the viewport with intact one-line monetary values, explicitly tested at 320 pixels."
   ],
   "unexecuted": [
     "native vendor calls",
     "production deployment",
     "statutory accounting",
     "independent human security certification"
-  ]
+  ],
+  "final_affected_regression": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "scope": "Final keyboard and mobile amount-readability checks"
+  }
 }
