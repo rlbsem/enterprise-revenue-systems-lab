@@ -293,7 +293,7 @@ def test_static_pages_subpath_has_attribution_and_no_execution_api(
                 assert author.get_attribute("href") == "https://github.com/rlbsem"
                 expected_label = (
                     "Verify these recorded assurance artifacts offline"
-                    if case["investigation"] in {"estate", "reliability", "temporal"} else
+                    if case["investigation"] in {"estate", "reliability", "temporal", "economics"} else
                     "Verify the recorded measurement evidence offline"
                     if case["investigation"] == "measurement" else
                     "Verify this recorded financial scenario offline"

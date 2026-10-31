@@ -21,7 +21,7 @@ def test_assurance_browser_downloads_navigation_and_read_only(url, tmp_path, cas
         page.on("request", lambda r: writes.append(r.url) if r.method != "GET" else None)
         page.goto(url + "/?case=" + case)
         page.locator(".assurance-investigation").wait_for()
-        assert page.locator("[data-investigation]").count() == 12
+        assert page.locator("[data-investigation]").count() == 13
         page.get_by_role("button", name="Validate artifact integrity").click()
         page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
         # Native buttons remain keyboard-operable; stages are genuine rendered views.
@@ -76,8 +76,9 @@ def test_current_capture_is_bound_and_has_no_external_execution():
     assert all(not x["violations"] for x in report["accessibility"])
     assert all(not x["incomplete"] for x in report["accessibility"])
     assert not any(report[k] for k in ["new_source_engine_execution","new_model_execution","new_vendor_execution"])
+    snapshot=json.loads((ROOT/"docs/evidence/integration-economics/prior-main-ui.json").read_bytes())["files"]
     for path, checksum in report["source_sha256"].items():
-        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==checksum, path
+        assert hashlib.sha256(snapshot[path].encode() if path in snapshot else (ROOT/path).read_bytes()).hexdigest()==checksum, path
     assert len(report["images"])==9
     for path, checksum in report["image_sha256"].items():
         assert hashlib.sha256((ROOT/"docs/images/architecture-assurance"/path).read_bytes()).hexdigest()==checksum

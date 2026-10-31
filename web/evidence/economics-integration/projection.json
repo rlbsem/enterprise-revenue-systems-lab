@@ -1,0 +1,135 @@
+{
+  "annual_source_events": 1200000000,
+  "currency": "USD",
+  "alternatives": {
+    "reference": {
+      "annual_cents": {
+        "operating": 28192323,
+        "campaign-disruption": 28579716
+      },
+      "workers": 8
+    },
+    "optimized": {
+      "annual_cents": {
+        "operating": 18758995,
+        "campaign-disruption": 21950617
+      },
+      "workers": 4
+    },
+    "resilient": {
+      "annual_cents": {
+        "operating": 19675209,
+        "campaign-disruption": 20063045
+      },
+      "workers": 4
+    }
+  },
+  "sensitivity_comparisons": 22,
+  "http_trials": [
+    {
+      "name": "normal",
+      "acceptable": true,
+      "source_records": 5400,
+      "on_time_records": 5400,
+      "late_records": 0,
+      "unresolved_records": 0,
+      "actual_synthetic_cost_cents": 518,
+      "violations": []
+    },
+    {
+      "name": "launch-surge",
+      "acceptable": false,
+      "source_records": 56700,
+      "on_time_records": 50200,
+      "late_records": 250,
+      "unresolved_records": 6250,
+      "actual_synthetic_cost_cents": 732,
+      "violations": [
+        "freshness_breach",
+        "incomplete_on_time_coverage",
+        "post_arrived_after_deadline",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "transient-recovery",
+      "acceptable": false,
+      "source_records": 56700,
+      "on_time_records": 50450,
+      "late_records": 0,
+      "unresolved_records": 6250,
+      "actual_synthetic_cost_cents": 735,
+      "violations": [
+        "incomplete_on_time_coverage",
+        "post_arrived_after_deadline",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "delayed-source",
+      "acceptable": false,
+      "source_records": 5400,
+      "on_time_records": 4800,
+      "late_records": 0,
+      "unresolved_records": 600,
+      "actual_synthetic_cost_cents": 510,
+      "violations": [
+        "incomplete_on_time_coverage",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "slow-destination",
+      "acceptable": false,
+      "source_records": 5400,
+      "on_time_records": 4900,
+      "late_records": 500,
+      "unresolved_records": 900,
+      "actual_synthetic_cost_cents": 523,
+      "violations": [
+        "freshness_breach",
+        "incomplete_on_time_coverage",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "shared-quota-pressure",
+      "acceptable": false,
+      "source_records": 56700,
+      "on_time_records": 47700,
+      "late_records": 0,
+      "unresolved_records": 9000,
+      "actual_synthetic_cost_cents": 710,
+      "violations": [
+        "incomplete_on_time_coverage",
+        "post_arrived_after_deadline",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "revoked-permission",
+      "acceptable": false,
+      "source_records": 5400,
+      "on_time_records": 0,
+      "late_records": 0,
+      "unresolved_records": 5400,
+      "actual_synthetic_cost_cents": 470,
+      "violations": [
+        "incomplete_on_time_coverage",
+        "unresolved_records"
+      ]
+    },
+    {
+      "name": "capacity-revision",
+      "acceptable": true,
+      "source_records": 56700,
+      "on_time_records": 56700,
+      "late_records": 0,
+      "unresolved_records": 0,
+      "actual_synthetic_cost_cents": 1236,
+      "violations": []
+    }
+  ],
+  "native_vendor_execution": false,
+  "enterprise_throughput_measured": false
+}

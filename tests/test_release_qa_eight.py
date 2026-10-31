@@ -19,8 +19,8 @@ def test_current_main_contracts_survive_typography_reconciliation():
     baseline = json.loads((QA/"prior-ui-main.json").read_bytes())["files"]
     before = {r["id"]: r for r in json.loads(baseline["web/catalog.json"])["scenarios"]}
     after = {r["id"]: r for r in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert set(after) - set(before) == {"measurement-integrity", "estate-assurance", "reliability-operations", "temporal-assurance"} and len(after) == 21
-    assert len({r["investigation"] for r in after.values()}) == 12
+    assert set(after) - set(before) == {"measurement-integrity", "estate-assurance", "reliability-operations", "temporal-assurance", "economics-integration", "warehouse-verification"} and len(after) == 23
+    assert len({r["investigation"] for r in after.values()}) == 13
     for key, record in before.items():
         expected = dict(record)
         if key == "revenue-integrity":
@@ -30,7 +30,7 @@ def test_current_main_contracts_survive_typography_reconciliation():
     old = json.loads(baseline["sources.lock.json"])
     assert all(current[k] == v for k, v in old.items() if k != "sources")
     assert all(current["sources"][k] == v for k,v in old["sources"].items())
-    assert set(current["sources"]) - set(old["sources"]) == {"measurement", "estate", "reliability", "temporal"}
+    assert set(current["sources"]) - set(old["sources"]) == {"measurement", "estate", "reliability", "temporal", "economics", "warehouse"}
     result = verify(ROOT/"web/evidence/analytics-engineering")["checks"]
     assert result["models"] == 15 and result["paired_repetitions"] == 6 and result["native_query_ids"] == 461
 
@@ -62,10 +62,10 @@ def test_fresh_eight_case_captures_bind_current_source_and_images(name):
 def test_readme_images_use_fresh_release_captures_without_losing_routes():
     text = (ROOT/"README.md").read_text(encoding="utf-8")
     images = re.findall(r'<img src="([^"]+)"', text)
-    assert images and all(p.startswith(("docs/images/release-qa-eight/", "docs/images/measurement-integrity/", "docs/images/architecture-assurance/")) for p in images)
+    assert images and all(p.startswith(("docs/images/release-qa-eight/", "docs/images/measurement-integrity/", "docs/images/architecture-assurance/", "docs/images/integration-economics/")) for p in images)
     assert all((ROOT/p).is_file() for p in images)
-    assert "## Twelve investigations" in text
+    assert "## Thirteen investigations" in text
     html = (ROOT/"web/index.html").read_text(encoding="utf-8")
-    assert "Twelve investigations. Independent evidence." in html
+    assert "Thirteen investigations. Independent evidence." in html
     assert not re.search(r"(?:Six|Seven|six|seven) investigations", html)
     assert not re.search(r"PR #11[^\n]*(?:unmerged|requires.*merge)", text)

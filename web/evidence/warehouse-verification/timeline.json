@@ -1,0 +1,40 @@
+[
+  {
+    "action": "native row counts",
+    "body": {
+      "daily": 1,
+      "events": 1856,
+      "items": 4828,
+      "purchases": 14,
+      "sessions": 12
+    }
+  },
+  {
+    "action": "bytes processed",
+    "body": 19631768
+  },
+  {
+    "action": "native data jobs",
+    "body": 2
+  },
+  {
+    "action": "complete local rowsets",
+    "body": 5
+  },
+  {
+    "action": "negative guard cases",
+    "body": 14
+  },
+  {
+    "action": "original missed cases",
+    "body": 8
+  },
+  {
+    "action": "native dbt build",
+    "body": false
+  },
+  {
+    "action": "native incremental merge",
+    "body": false
+  }
+]
