@@ -632,6 +632,7 @@ function render() {
     ? "The original native run is archived in Customer Signal & Activation. This case supports offline evidence verification only; no Salesforce or Snowflake calls are made."
     : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
   const metrics = $("#metrics");
+  metrics.dataset.domain = entry.investigation;
   if (["estate", "reliability", "temporal"].includes(entry.investigation)) {
     metrics.replaceChildren(...assuranceMetrics(entry.investigation, json, metric));
   } else if (entry.investigation === "economics") {

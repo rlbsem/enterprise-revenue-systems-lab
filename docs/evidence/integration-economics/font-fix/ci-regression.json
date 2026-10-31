@@ -1,0 +1,19 @@
+{
+  "workflow_run": 41165210806,
+  "source_revision": "0cdd6a7ff986ae959cdcedc0e2fa6029faa90047",
+  "linux": {
+    "tests_passed": 281,
+    "tests_failed": 1,
+    "finding": "Document overflow remains at 320px under Arial/Liberation Sans fallback"
+  },
+  "windows": "all checks passed",
+  "source_engines": "passed",
+  "local_diagnostic": {
+    "viewport_pixels": 320,
+    "observed_document_pixels": 321,
+    "overflow_elements": "Economics metric cards",
+    "font_family": "Arial, sans-serif"
+  },
+  "correction": "Scope the narrow-screen economics metric grid to one shrinkable column; force Arial in regression and inspect 32 Arial/serif stage-width states.",
+  "boundary": "Recorded CI and real local Chromium diagnosis; no new source-model, vendor or cloud execution"
+}

@@ -37,7 +37,7 @@ def main():
     server=ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Pages,directory=str(ROOT/'dist')))
     thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
     base=f'http://127.0.0.1:{server.server_port}/enterprise-revenue-systems-lab/'
-    errors,writes,outside,layouts,accessibility,images,catalog_checks,interactions=[],[],[],[],[],{},[],[]
+    errors,writes,outside,layouts,accessibility,images,catalog_checks,interactions,fonts=[],[],[],[],[],{},[],[],[]
     try:
         with sync_playwright() as pw:
             browser=pw.chromium.launch();page=browser.new_page(viewport={'width':1440,'height':1100},reduced_motion='reduce')
@@ -82,6 +82,14 @@ def main():
                     for value in options:
                         page.locator(selector).select_option(value)
                         interactions.append(dict(case=case,width=width,selection=value,overflow=page.evaluate('document.documentElement.scrollWidth>innerWidth'),contrast=page.evaluate(CONTRAST)))
+                for family in ('Arial, sans-serif','Georgia, serif'):
+                    font=page.add_style_tag(content='body { font-family: '+family+' !important; }')
+                    for width in (320,390):
+                        page.set_viewport_size({'width':width,'height':1000})
+                        for stage in stages:
+                            page.locator('[data-evidence-stage="'+stage+'"]').click()
+                            fonts.append(dict(case=case,width=width,font_family=family,stage=stage,overflow=page.evaluate('document.documentElement.scrollWidth>innerWidth')))
+                    font.evaluate('(node)=>node.remove()')
                 captures=[(1440,1260,stages[0],'desktop'),(1440,1260,stages[2],'detail'),(390,1000,stages[0],'mobile')]
                 if case=='economics-integration':captures.append((1440,1260,'execution','http'))
                 for width,height,stage,suffix in captures:
@@ -97,13 +105,14 @@ def main():
                 served='Actual dist at GitHub Pages subpath; no public deployment',
                 source_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths},
                 image_sha256={n:hashlib.sha256((args.images/n).read_bytes()).hexdigest() for n in images},images=images,
-                catalog_checks=catalog_checks,layouts=layouts,interaction_layouts=interactions,accessibility=accessibility,axe_sha256=axe_sha,
+                catalog_checks=catalog_checks,layouts=layouts,interaction_layouts=interactions,font_layouts=fonts,accessibility=accessibility,axe_sha256=axe_sha,
                 page_errors=errors,http_writes=writes,nonlocal_requests=outside,new_source_execution=False,new_native_execution=False)
     write_json(args.output,record)
     assert not errors and not writes and not outside
     assert all(not r['overflow'] for r in catalog_checks)
     assert all(not r['overflow'] and not r['contrast']['failures'] for r in layouts)
     assert all(not r['overflow'] and not r['contrast']['failures'] for r in interactions)
+    assert all(not r['overflow'] for r in fonts)
     assert all(not r['violations'] for r in accessibility)
     print(json.dumps(dict(status='passed',catalog_states=len(catalog_checks),layouts=len(layouts),interaction_layouts=len(interactions),accessibility_states=len(accessibility),screenshots=len(images))))
 

@@ -37,6 +37,8 @@ def test_new_cases_interactions_downloads_and_mobile(url,tmp_path,case):
         for tab in ['Source records','Evidence timeline','Compare & verify']:
             page.get_by_role('tab',name=tab,exact=True).click();assert page.locator('#panel').inner_text().strip()
         page.get_by_role('tab',name='Decision & outcome',exact=True).click()
+        # Linux falls back to Arial/Liberation Sans; Segoe UI hid a 1px metric-grid overflow locally.
+        page.add_style_tag(content='body { font-family: Arial, sans-serif !important; }')
         page.set_viewport_size({'width':320,'height':900})
         assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
         assert page.locator('#fresh').is_hidden() and not errors and not writes
