@@ -26,7 +26,7 @@ The first nine investigations and their captured evidence remain preserved. Thre
 
 The two new case links above are intended public URLs after owner-approved merge and deployment. They are verified in the local static Pages-path build; this PR does not deploy them. [New evidence and execution boundaries](docs/integration-economics.md).
 
-<img src="docs/images/integration-economics/economics-integration-desktop.png" alt="Actual static architecture decision showing three calculated synthetic annual integration alternatives" width="900">
+<img src="docs/images/integration-economics/mobile-fix/economics-integration-desktop.png" alt="Actual static architecture decision showing three calculated synthetic annual integration alternatives" width="900">
 
 ## Thirteen investigations
 

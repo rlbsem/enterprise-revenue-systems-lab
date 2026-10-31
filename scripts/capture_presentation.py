@@ -4,6 +4,7 @@ import argparse
 import functools
 import hashlib
 import json
+import sys
 import threading
 import zipfile
 from datetime import datetime, timezone
@@ -13,6 +14,8 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from revenue_lab.site import build
 CASES = {
     "economics": "economics-integration",
     "estate": "estate-assurance",
@@ -70,29 +73,9 @@ def main():
         "--evidence", type=Path, default=ROOT / ".cache/visual-review/capture.json"
     )
     args = parser.parse_args()
-    # Generate only the new recorded case archive. Existing source-bound ZIPs
-    # must not be rebuilt by a visual review.
-    bundle_dir = ROOT / "web/evidence/connected-roundtrip"
-    bundle = json.loads((bundle_dir / "bundle.json").read_text(encoding="utf-8"))
-    with zipfile.ZipFile(bundle_dir / "reproduction.zip", "w", zipfile.ZIP_DEFLATED) as z:
-        def member(name, data):
-            info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
-            info.compress_type = zipfile.ZIP_DEFLATED
-            z.writestr(info, data)
-
-        member("bundle.json", (bundle_dir / "bundle.json").read_bytes())
-        for item in bundle["artifacts"]:
-            member(item["path"], (bundle_dir / item["path"]).read_bytes())
-        member(
-            "REPRODUCE.txt",
-            (
-                "Clone https://github.com/rlbsem/enterprise-revenue-systems-lab\\n"
-                "Install requirements.lock and set PYTHONPATH=src.\\n"
-                + "\\n".join(bundle["reproduce"])
-                + "\\npython -m revenue_lab.cli verify <extracted-bundle>\\n"
-                "Recorded vendor execution is verified offline; no new vendor calls.\\n"
-            ).encode(),
-        )
+    # Use the canonical, byte-preserving builder rather than rewriting the ignored
+    # connected-case ZIP with a second format during presentation checks.
+    build()
     args.images.mkdir(parents=True, exist_ok=True)
     args.evidence.parent.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer(
@@ -203,7 +186,7 @@ def main():
                     )
                     expected_label = (
                         "Verify these recorded assurance artifacts offline"
-                        if investigation in {"estate", "reliability", "temporal"} else
+                        if investigation in {"estate", "reliability", "temporal", "economics"} else
                         "Verify this recorded financial scenario offline"
                         if investigation == "integrity" else
                         "Verify this recorded release offline"

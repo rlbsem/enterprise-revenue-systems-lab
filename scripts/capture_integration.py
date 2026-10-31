@@ -37,7 +37,7 @@ def main():
     server=ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Pages,directory=str(ROOT/'dist')))
     thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
     base=f'http://127.0.0.1:{server.server_port}/enterprise-revenue-systems-lab/'
-    errors,writes,outside,layouts,accessibility,images,catalog_checks=[],[],[],[],[],{},[]
+    errors,writes,outside,layouts,accessibility,images,catalog_checks,interactions=[],[],[],[],[],{},[],[]
     try:
         with sync_playwright() as pw:
             browser=pw.chromium.launch();page=browser.new_page(viewport={'width':1440,'height':1100},reduced_motion='reduce')
@@ -69,6 +69,19 @@ def main():
                         if width in (1440,390):
                             result=page.evaluate("async()=>{const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return {violations:r.violations,incomplete:r.incomplete.map(x=>({id:x.id,impact:x.impact})),passes:r.passes.length}}")
                             accessibility.append(dict(case=case,width=width,stage=stage,**result))
+                for width in (320,390):
+                    page.set_viewport_size({'width':width,'height':1000})
+                    if case=='economics-integration':
+                        page.locator('[data-evidence-stage="execution"]').click()
+                        options=page.locator('#economics-trial option').evaluate_all('(options)=>options.map(o=>o.value)')
+                        selector='#economics-trial'
+                    else:
+                        page.locator('[data-evidence-stage="guard"]').click()
+                        options=page.locator('#warehouse-fault option').evaluate_all('(options)=>options.map(o=>o.value)')
+                        selector='#warehouse-fault'
+                    for value in options:
+                        page.locator(selector).select_option(value)
+                        interactions.append(dict(case=case,width=width,selection=value,overflow=page.evaluate('document.documentElement.scrollWidth>innerWidth'),contrast=page.evaluate(CONTRAST)))
                 captures=[(1440,1260,stages[0],'desktop'),(1440,1260,stages[2],'detail'),(390,1000,stages[0],'mobile')]
                 if case=='economics-integration':captures.append((1440,1260,'execution','http'))
                 for width,height,stage,suffix in captures:
@@ -84,14 +97,15 @@ def main():
                 served='Actual dist at GitHub Pages subpath; no public deployment',
                 source_sha256={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in paths},
                 image_sha256={n:hashlib.sha256((args.images/n).read_bytes()).hexdigest() for n in images},images=images,
-                catalog_checks=catalog_checks,layouts=layouts,accessibility=accessibility,axe_sha256=axe_sha,
+                catalog_checks=catalog_checks,layouts=layouts,interaction_layouts=interactions,accessibility=accessibility,axe_sha256=axe_sha,
                 page_errors=errors,http_writes=writes,nonlocal_requests=outside,new_source_execution=False,new_native_execution=False)
     write_json(args.output,record)
     assert not errors and not writes and not outside
     assert all(not r['overflow'] for r in catalog_checks)
     assert all(not r['overflow'] and not r['contrast']['failures'] for r in layouts)
+    assert all(not r['overflow'] and not r['contrast']['failures'] for r in interactions)
     assert all(not r['violations'] for r in accessibility)
-    print(json.dumps(dict(status='passed',catalog_states=len(catalog_checks),layouts=len(layouts),accessibility_states=len(accessibility),screenshots=len(images))))
+    print(json.dumps(dict(status='passed',catalog_states=len(catalog_checks),layouts=len(layouts),interaction_layouts=len(interactions),accessibility_states=len(accessibility),screenshots=len(images))))
 
 
 if __name__=='__main__':main()
