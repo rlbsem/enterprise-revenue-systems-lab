@@ -10,3 +10,5 @@ web/evidence/measurement-integrity/** -text
 web/evidence/estate-assurance/** -text whitespace=cr-at-eol
 web/evidence/reliability-operations/** -text whitespace=cr-at-eol
 web/evidence/temporal-assurance/** -text whitespace=cr-at-eol
+web/evidence/economics-integration/** -text whitespace=cr-at-eol
+web/evidence/warehouse-verification/** -text whitespace=cr-at-eol

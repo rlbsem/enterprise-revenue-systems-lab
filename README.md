@@ -14,7 +14,21 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 The first nine investigations and their captured evidence remain preserved. Three new assurance investigations add captures from the actual static application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
 
-## Twelve investigations
+## Choose an engineering question
+
+| Focus | Start here | What you can inspect |
+|---|---|---|
+| Enterprise integration / MarTech architecture | [Integration Economics](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=economics-integration) | 1.2B modeled annual source events, three cost/capacity alternatives and separate bounded HTTP execution |
+| Marketing data / analytics engineering | [GA4 warehouse verification](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=warehouse-verification) | Native read-only BigQuery comparisons, local dbt correction/replay parity and the corrected regression guard |
+| Analytics performance | [Model correctness and performance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) | Fifteen-model lineage, paired measurements and a rejected optimization |
+| AI / GTM systems | [SDR account intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research) | Actual recorded model responses, seller decisions and separate native CRM evidence |
+| Enterprise change governance | [Enterprise Change Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance) | Company-scoped dependencies, review authority and unresolved readiness |
+
+The two new case links above are intended public URLs after owner-approved merge and deployment. They are verified in the local static Pages-path build; this PR does not deploy them. [New evidence and execution boundaries](docs/integration-economics.md).
+
+<img src="docs/images/integration-economics/economics-integration-desktop.png" alt="Actual static architecture decision showing three calculated synthetic annual integration alternatives" width="900">
+
+## Thirteen investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -29,9 +43,10 @@ The first nine investigations and their captured evidence remain preserved. Thre
 | Can a measured conversion be trusted as collected money? | [First-Party Measurement](docs/measurement-integrity.md): synthetic source-to-conversion reconciliation, browser controls, five local GA4 rowsets and separate historical native Google sample queries | Measured values are claims. The Google sample is unrelated to Evermere; no production GA4 export or native dbt-bigquery acceptance. |
 | Can a platform be retired without breaking an operating company? | [Enterprise Change Assurance](docs/architecture-assurance.md): recorded multi-company dependencies, proposal revisions and reviewer decisions | Captured local PostgreSQL readiness is not current change authority or operational cutover acceptance. |
 | Would an incomplete or numerically wrong report be published? | [MarTech Data Reliability](docs/architecture-assurance.md): independent source deliveries, checkpoints, rejected candidates and reconciled output | Local synthetic HTTP/DuckDB execution, not native vendor data or business uplift. |
+| Which integration architecture meets requirements at the lowest defensible cost? | [Enterprise Integration Economics](docs/integration-economics.md): annual source demand, monthly integer-cent accounting, capacity and recorded sensitivities | Synthetic price book; separate bounded local HTTP trials are not enterprise throughput, vendor prices or realized savings. |
 | Can late history or an old receipt authorize a new audience action? | [Temporal Audience Assurance](docs/architecture-assurance.md): two-time decisions, scoped permissions and independent effects | Recorded synthetic clocks and local services; the viewer cannot activate an audience. |
 
-The twenty-one cases draw from ten pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+The twenty-three cases draw from eleven pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
 
 ## Enterprise architecture and data assurance
 
@@ -51,7 +66,7 @@ Three recorded local implementations are now inspectable through the same static
 
 The ninth investigation traces synthetic Evermere contracts and payments to reported conversions. Inspect the missing $245,000 contract, missing $13,000 payment and $171,500 deposit overstatement. Explore collection decisions, consent controls, actual locally executed GA4 rowsets and the separate historical native BigQuery sample queries.
 
-Feature route: `?case=measurement-integrity`. This change is not deployed by the feature branch. [Evidence and reproduction](docs/measurement-integrity.md).
+Current warehouse case: `?case=warehouse-verification`; preserved conversion case: `?case=measurement-integrity`. [Updated native SQL and local dbt evidence](docs/integration-economics.md#ga4-warehouse-verification). This change is not deployed by the feature branch. [Evidence and reproduction](docs/measurement-integrity.md).
 
 <img src="docs/images/measurement-integrity/measurement-integrity-desktop.png" alt="Actual measurement explorer showing source amounts and unresolved conversion findings" width="900">
 

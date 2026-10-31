@@ -8,6 +8,10 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
+    "economics-integration": ("economics", "Enterprise Integration Economics",
+        "Compare three annual architecture decisions for 1.2B synthetic source events; inspect monthly cost, capacity, sensitivities and separate bounded HTTP trials."),
+    "warehouse-verification": ("measurement", "GA4 warehouse · native SQL and local dbt verification",
+        "Compare native read-only model SELECTs with an independent BigQuery source query; inspect local dbt correction, replay, full-refresh and regression-guard evidence."),
     "estate-assurance": ("estate", "Enterprise Change Assurance",
         "Inspect company-scoped dependencies, recorded retirement consequences, immutable revisions and unresolved readiness gates."),
     "reliability-operations": ("reliability", "MarTech Data Reliability",

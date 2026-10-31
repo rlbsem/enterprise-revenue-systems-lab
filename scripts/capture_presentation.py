@@ -14,6 +14,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = {
+    "economics": "economics-integration",
     "estate": "estate-assurance",
     "reliability": "reliability-operations",
     "temporal": "temporal-assurance",

@@ -11,7 +11,7 @@ def test_measurement_project_receipt_sql_models_downloads_and_mobile(url,tmp_pat
   page.on("pageerror",lambda e:errors.append(str(e)))
   page.on("request",lambda r:writes.append(r.url) if r.method!="GET" else None)
   page.goto(url+"/?case=measurement-integrity");page.get_by_role("heading",name="Which number should the business trust?").wait_for()
-  assert page.locator("[data-investigation]").count()==12
+  assert page.locator("[data-investigation]").count()==13
   page.get_by_role("button",name="Validate artifact integrity").click();page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
   page.get_by_label("Choose a synthetic project").select_option("SYN-P01");page.get_by_text("Missing $13,000 conversion",exact=True).wait_for()
   page.get_by_label("Choose a synthetic project").select_option("SYN-P03");page.get_by_text("Deposit overstated by $171,500",exact=True).wait_for()

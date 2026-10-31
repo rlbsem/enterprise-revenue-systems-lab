@@ -1,0 +1,135 @@
+{
+  "repository": "rlbsem/martech-stack-economics",
+  "import_revision": "80cfd61882cd916406edf8b9fba6ba2ff02f4715",
+  "artifacts": [
+    {
+      "file": "acceptance.json",
+      "source_path": "docs/evidence/enterprise/acceptance/verification.json",
+      "sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+      "source_sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/enterprise/acceptance/verification.json"
+    },
+    {
+      "file": "accounting-source.py",
+      "source_path": "src/stack_economics/enterprise/accounting.py",
+      "sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+      "source_sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/src/stack_economics/enterprise/accounting.py"
+    },
+    {
+      "file": "contract-source.py",
+      "source_path": "src/stack_economics/enterprise/contract.py",
+      "sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+      "source_sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/src/stack_economics/enterprise/contract.py"
+    },
+    {
+      "file": "decision.json",
+      "source_path": "docs/evidence/enterprise/acceptance/decision.json",
+      "sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+      "source_sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/enterprise/acceptance/decision.json"
+    },
+    {
+      "file": "http-summary.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/summary.json",
+      "sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+      "source_sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/summary.json"
+    },
+    {
+      "file": "http/capacity-revision-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/capacity-revision/result.json",
+      "sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+      "source_sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/capacity-revision/result.json"
+    },
+    {
+      "file": "http/delayed-source-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/delayed-source/result.json",
+      "sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+      "source_sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/delayed-source/result.json"
+    },
+    {
+      "file": "http/launch-surge-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/launch-surge/result.json",
+      "sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+      "source_sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/launch-surge/result.json"
+    },
+    {
+      "file": "http/normal-journal.txt",
+      "source_path": "docs/evidence/execution/acceptance/execution/normal/observations.json.gz",
+      "sha256": "8ef90305ebd86d4207bb74e1143c9e3f70a07fa59358012e3e1328140f24bd2e",
+      "source_sha256": "9041bd48b468024523f1c1a6bb5ef0738e0a56c4e1c5450d15d46a783cca22ce",
+      "encoding": "base64-gzip",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/normal/observations.json.gz"
+    },
+    {
+      "file": "http/normal-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/normal/result.json",
+      "sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+      "source_sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/normal/result.json"
+    },
+    {
+      "file": "http/revoked-permission-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/revoked-permission/result.json",
+      "sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+      "source_sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/revoked-permission/result.json"
+    },
+    {
+      "file": "http/shared-quota-pressure-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/shared-quota-pressure/result.json",
+      "sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+      "source_sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/shared-quota-pressure/result.json"
+    },
+    {
+      "file": "http/slow-destination-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/slow-destination/result.json",
+      "sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+      "source_sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/slow-destination/result.json"
+    },
+    {
+      "file": "http/transient-recovery-journal.txt",
+      "source_path": "docs/evidence/execution/acceptance/execution/transient-recovery/observations.json.gz",
+      "sha256": "71bdfc6ad87545bbea6820640578660f0e90075751348feee55f7236d21d2afb",
+      "source_sha256": "e57278ea0e99d1f34f831c18cc4cabdadf4eecfb34a680968c0aa79b5b4f9571",
+      "encoding": "base64-gzip",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/transient-recovery/observations.json.gz"
+    },
+    {
+      "file": "http/transient-recovery-result.json",
+      "source_path": "docs/evidence/execution/acceptance/execution/transient-recovery/result.json",
+      "sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+      "source_sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/transient-recovery/result.json"
+    },
+    {
+      "file": "scenario.json",
+      "source_path": "fixtures/enterprise/multibrand-2026.json",
+      "sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+      "source_sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+      "encoding": "original",
+      "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/fixtures/enterprise/multibrand-2026.json"
+    }
+  ],
+  "execution_note": "Imported committed records; importing and offline inspection do not repeat source execution."
+}

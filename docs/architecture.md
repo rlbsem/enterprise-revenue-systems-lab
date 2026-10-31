@@ -47,3 +47,7 @@ The fifth investigation imports exact public GTM artifacts into three distinct r
 ## Recorded model release investigation
 
 The sixth investigation adds one compact recorded bundle, with fifteen exact original artifacts pinned to Agent Runtime merge `84b7bbaa92b08d3238aa321ada52b4881a62b4c2`. Its reader projects aggregate task results and recorded release transitions; it adds no model client or execution adapter. The offline verifier checks source hashes, aggregate/oracle consistency, recorded requests, routed configurations, controlled-fault rejection and exact receipt content. Complete raw task records remain upstream. Portable serialization preserves original line endings as well as hashes. [Evidence selection and limitations](model-release-assurance.md).
+
+## Recorded integration-economics and warehouse extensions
+
+Two additive bundles use the existing catalog, schema, portable downloads and SHA-256 verification. Small isolated DOM readers expose the original decisions without adding an execution adapter. The economics verifier independently reconstructs selected monthly accounting and validates exact compressed receiver journals. The warehouse verifier checks native SQL/provider hashes, model/source signatures, local oracle controls and retained negative results. These are offline checks of recorded evidence; they never run imported Python, a solver, dbt, Google queries or HTTP destinations. [Source pins and boundaries](integration-economics.md).

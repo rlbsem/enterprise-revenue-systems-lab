@@ -48,3 +48,7 @@ The runner refuses an existing workspace, verifies all exported input bytes and 
 ![Actual reconciliation interface](images/measurement-integrity/measurement-integrity-desktop.png)
 ![Actual native sample evidence interface](images/measurement-integrity/measurement-integrity-native.png)
 ![Actual mobile interface](images/measurement-integrity/measurement-integrity-mobile.png)
+
+## Updated warehouse verification
+
+The same investigation now includes `?case=warehouse-verification`, importing the merged native read-only SQL comparisons, independent source signatures, corrected regression guard and separate complete local dbt oracle acceptance. [Exact source pins, scope and remaining native dbt limitation](integration-economics.md#ga4-warehouse-verification). The original conversion case, local fixture execution and all historical files on this page remain unchanged. No native dbt-BigQuery build or MERGE is claimed.

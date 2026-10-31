@@ -51,8 +51,22 @@ jobs:
         run: python scripts/capture_measurement.py --images .cache/measurement/screenshots --output .cache/measurement/browser.json
       - name: Verify architecture, reliability and temporal investigations
         run: python scripts/capture_assurance.py --images .cache/assurance/screenshots --output .cache/assurance/browser.json
+      - name: Verify integration economics and current warehouse accessibility
+        run: python scripts/capture_integration.py --images .cache/integration/screenshots --output .cache/integration/browser.json
       - run: python scripts/check_repository.py
       - run: python scripts/build.py
+      - name: Preserve finite static UI verification
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: integration-ui-${{ matrix.os }}
+          path: |
+            .cache/tests.xml
+            .cache/integration/browser.json
+            .cache/integration/screenshots/
+          if-no-files-found: warn
+          include-hidden-files: true
+          retention-days: 7
   source-engines:
     runs-on: ubuntu-latest
     timeout-minutes: 30

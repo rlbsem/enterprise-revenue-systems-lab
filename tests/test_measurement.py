@@ -51,7 +51,7 @@ def test_original_bytes_cannot_be_resealed_away(tmp_path):
 def test_all_eight_prior_investigations_and_artifacts_are_unchanged():
  baseline=json.loads((ROOT/"docs/evidence/measurement-integrity/prior-ui.json").read_bytes())["files"]
  before=json.loads(baseline["web/catalog.json"])["scenarios"];after=json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]
- assert all(r in after for r in before) and len(after)==len(before)+4
+ assert all(r in after for r in before) and len(after)==len(before)+6
  old=json.loads(baseline["sources.lock.json"]);now=json.loads((ROOT/"sources.lock.json").read_bytes())
  assert all(now[k]==v for k,v in old.items() if k!="sources")
  assert all(now["sources"][k]==v for k,v in old["sources"].items())

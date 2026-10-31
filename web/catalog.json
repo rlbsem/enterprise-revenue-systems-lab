@@ -41,6 +41,19 @@
       "mode": "fresh_engine"
     },
     {
+      "id": "economics-integration",
+      "investigation": "economics",
+      "title": "Enterprise Integration Economics",
+      "summary": "Compare three annual architecture decisions for 1.2B synthetic source events; inspect monthly cost, capacity, sensitivities and separate bounded HTTP trials.",
+      "manifest_sha256": "cd3b14c93ccda9a99e781bd34b3da27d5e81e2502b52f6aecc0f02e659a09127",
+      "verification_sha256": "c671378326c24f37716f214070f832af07868639a973b9034509c502fba22879",
+      "source": {
+        "repository": "rlbsem/martech-stack-economics",
+        "commit": "80cfd61882cd916406edf8b9fba6ba2ff02f4715"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "estate-assurance",
       "investigation": "estate",
       "title": "Enterprise Change Assurance",
@@ -271,6 +284,19 @@
       "source": {
         "repository": "rlbsem/temporal-customer-audiences",
         "commit": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc"
+      },
+      "mode": "recorded"
+    },
+    {
+      "id": "warehouse-verification",
+      "investigation": "measurement",
+      "title": "GA4 warehouse · native SQL and local dbt verification",
+      "summary": "Compare native read-only model SELECTs with an independent BigQuery source query; inspect local dbt correction, replay, full-refresh and regression-guard evidence.",
+      "manifest_sha256": "042ffb77d3394e15c81cb9377cb477ef51e58f38245fc3f5b37cd4335bd1b088",
+      "verification_sha256": "3c762c61f41dd5bf37b83833471bece235322b95da7fbad6bf7d4245df72e564",
+      "source": {
+        "repository": "rlbsem/first-party-measurement-assurance",
+        "commit": "a1438e3eef101e23d61f0fd7889272098e50f9f6"
       },
       "mode": "recorded"
     }

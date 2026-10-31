@@ -32,10 +32,10 @@ def test_original_nine_investigations_eighteen_cases_and_476_artifacts_unchanged
     old=json.loads((folder/"prior-main-ui.json").read_bytes())["files"]
     before={r["id"]:r for r in json.loads(old["web/catalog.json"])["scenarios"]}
     after={r["id"]:r for r in json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]}
-    assert len(before)==18 and len(after)==21
-    assert set(after)-set(before)==set(CASES)
+    assert len(before)==18 and len(after)==23
+    assert set(after)-set(before)==set(CASES)|{"economics-integration","warehouse-verification"}
     assert all(after[k]==v for k,v in before.items())
-    assert len({v["investigation"] for v in after.values()})==12
+    assert len({v["investigation"] for v in after.values()})==13
     old_lock=json.loads(old["sources.lock.json"])
     assert all(LOCK[k]==v for k,v in old_lock.items() if k!="sources")
     assert all(LOCK["sources"][k]==v for k,v in old_lock["sources"].items())

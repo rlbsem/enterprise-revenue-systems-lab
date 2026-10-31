@@ -3,8 +3,8 @@
   "scope": "all delivered source files; manifest excludes itself to avoid recursion",
   "files": {
     ".gitattributes": {
-      "sha256": "a19e7f25388ed5dcdd8fae32b451df6d9127176e39db56c04fb45f992629454a",
-      "bytes": 484
+      "sha256": "9eae97503238fb2f4eb60f34de2c1dc2c9af623ea58d5231ae869bd1b540ba08",
+      "bytes": 615
     },
     ".github/workflows/hosted.yml": {
       "sha256": "ddb41b3c18c17b20b7a31f431775414e94291001777c2f2ea4eb72f3a542927b",
@@ -15,8 +15,8 @@
       "bytes": 2516
     },
     ".github/workflows/verify.yml": {
-      "sha256": "ecbe68e9bd7a9758865979d681551735d5917a1d07c0a4b9cb8351e63e9c2e33",
-      "bytes": 5715
+      "sha256": "46f57e8374a5726f59c761c7dfacdb1a445c4cd84ee88d7fff3c87bde9420767",
+      "bytes": 6375
     },
     ".gitignore": {
       "sha256": "89fb63f91f40b687e8f85a7bd1f94c627702506f9a79bd2c54137e1c57633604",
@@ -27,8 +27,8 @@
       "bytes": 759
     },
     "README.md": {
-      "sha256": "61065c6ac7d76c8d92364482f2872f42bb4a096a838ccd14ac44bbade91c5de2",
-      "bytes": 20926
+      "sha256": "5b2cae166e2141d86b0280d5cc85c2bff0a78b8d016ea83a8073db83bf8c9696",
+      "bytes": 23217
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
@@ -43,16 +43,16 @@
       "bytes": 7466
     },
     "docs/architecture.md": {
-      "sha256": "d2a100b977b3ed1c045a9bea59464e536d9a362355573b1c9289f21ba68329ce",
-      "bytes": 4883
+      "sha256": "273c26c0bba55dc4858c0eaa3f77ec372d64daca8f6046c832cca705a378990d",
+      "bytes": 5589
     },
     "docs/deployment.md": {
       "sha256": "506121084a20c3f8fe8de5e3ad73a7a68360039e9f329e7729ed5826a8161326",
       "bytes": 6298
     },
     "docs/evidence-guide.md": {
-      "sha256": "a1460b4df146afdd5d4ff07152ca93bf0076a4783e641ce1b8a16e3acf8c06f1",
-      "bytes": 6467
+      "sha256": "1a884b7cbdb101e22975bc129ffe8657e9e7281a33b48d9042143fbbdcf1eaf8",
+      "bytes": 7442
     },
     "docs/evidence/analytics-engineering/README.md": {
       "sha256": "3b4281cf535fb977a84729ccdb8aad3e3f90ece6303f00a3a5a7946318d82278",
@@ -145,6 +145,26 @@
     "docs/evidence/hosted-verification/README.md": {
       "sha256": "e3a29b69ff3eb17446d2bdda5a1406362fe460675cfdacb92d01a6e10fda186f",
       "bytes": 3986
+    },
+    "docs/evidence/integration-economics/README.md": {
+      "sha256": "03b1e9eda3a7af11d71e1e255a32a807ad10a1c04e95b655a08dce439f8859ac",
+      "bytes": 1750
+    },
+    "docs/evidence/integration-economics/browser.json": {
+      "sha256": "a4d4a5cf0194b13fba20b6c1ebbe3083010a6e8f9f650a733ff7c6f32c4abd60",
+      "bytes": 38730
+    },
+    "docs/evidence/integration-economics/local-verification.json": {
+      "sha256": "e63f1e8770f83f3787298a8e654ed9a8c340bb24f4c726e0fea11b75fc4e989c",
+      "bytes": 4575
+    },
+    "docs/evidence/integration-economics/preserved-main.json": {
+      "sha256": "cf49d8a509777ea9a35e8489165679595c8e828f957858f52a4f0ef73b320c62",
+      "bytes": 68803
+    },
+    "docs/evidence/integration-economics/prior-main-ui.json": {
+      "sha256": "e593c0f45722f2346eaa4523538a360c4f494aacc6d2f2fede47cdd383ce6ed5",
+      "bytes": 162053
     },
     "docs/evidence/local-ui.json": {
       "sha256": "ea194b8e1c221a46b7d9e67511338b9330458bd6ec709726926467398b625246",
@@ -594,6 +614,34 @@
       "sha256": "b7697c453c65499cc0c5bdb04d6a662257ac2ead949966aad0cbf61a853a9004",
       "bytes": 164561
     },
+    "docs/images/integration-economics/economics-integration-desktop.png": {
+      "sha256": "8b1592cfbbfd009f9cd8caf885bc7c051d5ed999fbec3d190937b7628816bbe8",
+      "bytes": 120100
+    },
+    "docs/images/integration-economics/economics-integration-detail.png": {
+      "sha256": "4ed09fa67832d0386ea408dcab3efd9cd92dc3c7f853aa86b59838b967b554b4",
+      "bytes": 128062
+    },
+    "docs/images/integration-economics/economics-integration-http.png": {
+      "sha256": "eb3db946c2ec4689b6619f1d15551acfc03e3f5ffe4841bde5be8b4c0027235c",
+      "bytes": 115632
+    },
+    "docs/images/integration-economics/economics-integration-mobile.png": {
+      "sha256": "d280e4505e2ac03e805c913267557e33da8a5fa66c9ac35ee4a0d4928a36b2f4",
+      "bytes": 45766
+    },
+    "docs/images/integration-economics/warehouse-verification-desktop.png": {
+      "sha256": "ef361340fffc3aefab341730d1a0c4f42323c8246d11d9a7e5808e1386be6880",
+      "bytes": 121869
+    },
+    "docs/images/integration-economics/warehouse-verification-detail.png": {
+      "sha256": "bdb86cffffec65054e22bfb213c964d7fd3fa43563856de4016bafee034b2268",
+      "bytes": 105378
+    },
+    "docs/images/integration-economics/warehouse-verification-mobile.png": {
+      "sha256": "20bf3a1557602e90b980292533eff8d4a16f63e9a3d31bcc9e1e59fd66a9c315",
+      "bytes": 45502
+    },
     "docs/images/local-execution.png": {
       "sha256": "00f49334efffe9f732f23d1f53ad933b433979824a24c3f3b3a2e79cb3af9ab3",
       "bytes": 192552
@@ -810,9 +858,13 @@
       "sha256": "3ba48c189611236ba301c3252f48f727604ce53b6d49ff7c69b56be8a4d0c87f",
       "bytes": 147357
     },
+    "docs/integration-economics.md": {
+      "sha256": "ef27f16a383e4f9fa8949c9e33fb8d9dccba4e866096434c00c71bfedb82c752",
+      "bytes": 6498
+    },
     "docs/measurement-integrity.md": {
-      "sha256": "00f6ba81a86617b53e79bdef97213ab9cae4edfde399f99d159165cc18264e58",
-      "bytes": 4817
+      "sha256": "6d38fd2a49196073bedbee68ba3c3e9898c4ee0d29e4ce84a03fe58f4910ea22",
+      "bytes": 5362
     },
     "docs/model-release-assurance.md": {
       "sha256": "525ca7c512805a10880abc7b5f1b594ae4939c04dcfac7ba660ee411fd3fbe3a",
@@ -843,8 +895,8 @@
       "bytes": 308
     },
     "schema/bundle-v1.json": {
-      "sha256": "bd9f800bab47a692b1d7af9344cf11fa7d2e73fc0821bfac359b557222c5d939",
-      "bytes": 1966
+      "sha256": "a486e41baeeb241f053f352cb7d80c38643d9656e4c38bf2dfa80f8d2ab6ef23",
+      "bytes": 2017
     },
     "scripts/build.py": {
       "sha256": "3b961d161bbc6dd1fd53491825bbccf8058713ea8a24a2ea937ffcabbaceb2e7",
@@ -862,6 +914,10 @@
       "sha256": "8ce8030a0249b008729cf1cfdf336763b292d2c91e14d0d11008ca1bfcbf10d4",
       "bytes": 13028
     },
+    "scripts/capture_integration.py": {
+      "sha256": "115edbd494700908af4c4420e03718cbb3b8f0da4836016ca1bc255301c8c9d0",
+      "bytes": 6925
+    },
     "scripts/capture_integrity.py": {
       "sha256": "16e22d95b7bd27b338628dda18a4a983a325c5e9778a0405a9ba06a8ba9998a3",
       "bytes": 6869
@@ -871,8 +927,8 @@
       "bytes": 7857
     },
     "scripts/capture_presentation.py": {
-      "sha256": "10c0d904fb737630f4398a73aa372323eb87323219ecad2b20eb951198bc7121",
-      "bytes": 14829
+      "sha256": "75c5e00ff2f8d1babaa058b5706065e1815923fbeaa9d1649639011df278d453",
+      "bytes": 14871
     },
     "scripts/capture_release.py": {
       "sha256": "f8daa8b1972fec57346bc6b5d653c711ff4d916cd74fb6e6c0439734608b663a",
@@ -905,6 +961,10 @@
     "scripts/import_assurance.py": {
       "sha256": "2ac45a7deda4b9178cc6c6f76120411459ae9eb7fa10e9d07095a87af1fec758",
       "bytes": 6606
+    },
+    "scripts/import_economics_warehouse.py": {
+      "sha256": "d62ae669fd042bb288a41254ce8ee9e95cabe36e04130f307a1cf50b53181614",
+      "bytes": 7584
     },
     "scripts/import_gtm.py": {
       "sha256": "9fd76ba707de1743f62fc97c77c71fb795f514e48e6d3245fa5c27ff5f738e44",
@@ -939,8 +999,8 @@
       "bytes": 2365
     },
     "sources.lock.json": {
-      "sha256": "9e6cae12f1ab5d914efc09837bb38a2d7e97f842f0d26fc5f7693225225216da",
-      "bytes": 71604
+      "sha256": "17dc4e83e863bb82b4fdae0bf54c842e12834e27cbaa83e6b4b23c8313dcfad0",
+      "bytes": 102046
     },
     "src/revenue_lab/__init__.py": {
       "sha256": "86ae3225ba682f28332a5a72ee605fe93868168b1512caec716d92505c9e653d",
@@ -955,8 +1015,8 @@
       "bytes": 17383
     },
     "src/revenue_lab/bundle.py": {
-      "sha256": "65f3f340b314a352407131852339f93da0cf56a256c5f3fd0af74234c1bf4e10",
-      "bytes": 11609
+      "sha256": "87eb31846e63af06c74bd34425402eb022d8fcaaa013962b2a2d20be4f651dfd",
+      "bytes": 11821
     },
     "src/revenue_lab/cli.py": {
       "sha256": "25f692f47dbca2cb6be956f53a87e494d3053a5eb35b39df5a5a6f9e010d0ae0",
@@ -977,6 +1037,10 @@
     "src/revenue_lab/gtm_checks.py": {
       "sha256": "9b17fdded63b8690d96df8cfa91c7034d399e0176211887ea396dcfebac39646",
       "bytes": 11506
+    },
+    "src/revenue_lab/integration_checks.py": {
+      "sha256": "7b4cf5aa7fe1bc2260d4db7432b381d8ce54fcefa1d6d7b1da4c0cfcc98a2522",
+      "bytes": 14496
     },
     "src/revenue_lab/integrity_checks.py": {
       "sha256": "707a88c9bbf1b95c267a936240d98d282dae8f874830bbdf04a6d2da70848f5c",
@@ -1011,12 +1075,12 @@
       "bytes": 7761
     },
     "src/revenue_lab/site.py": {
-      "sha256": "2e15bae2db45a2971ab3fec0d6450a5931efcc5b90864935d3ae82e75a06d5fe",
-      "bytes": 8034
+      "sha256": "351c584747d9cc664ee7c90ca880dd66365b15fd1318339210ac5c6572a1a240",
+      "bytes": 8563
     },
     "src/revenue_lab/smoke.py": {
-      "sha256": "5ac640d0ec2dc008fcdd4a8e16252151dcd7fec65f9a10614c8240a42b0b3c8a",
-      "bytes": 14781
+      "sha256": "724a0a17d1fd285f25e8b976da421310a7f0cd1c99c9ac610c6363169d820914",
+      "bytes": 14859
     },
     "src/revenue_lab/worker.py": {
       "sha256": "4b20631e040db72e549042c0e2f3aa1cf44497964c955b10a4ccdaca4508ffe9",
@@ -1039,24 +1103,24 @@
       "bytes": 302
     },
     "tests/test_analytics.py": {
-      "sha256": "9df2b9952c2f1a34d30801eff7c8a983861df4514006b09a891e59c3b44d687f",
-      "bytes": 6814
+      "sha256": "0f7f2554437af7a5ac614e0665de0a3c33ccc060d088f8c08950303dc34a5ba8",
+      "bytes": 6865
     },
     "tests/test_analytics_browser.py": {
-      "sha256": "e76d31c90cb0c805a9edc29257aab042c03494192748a87fca650702688f45fa",
+      "sha256": "7f90a0d009b6c68850e26ad6abc50a43a081c78396734ac61c31bb86f7b1e755",
       "bytes": 4171
     },
     "tests/test_assurance.py": {
-      "sha256": "53579619f6a15d2e261a71718a4a14da3f93b83c204c628344dcd1ab55b47954",
-      "bytes": 6410
+      "sha256": "bbe35b86711cf749360aa232ac991e22afe60919dc3f2e24cbdd23db9db11f56",
+      "bytes": 6461
     },
     "tests/test_assurance_browser.py": {
-      "sha256": "ba7b4b17c53a6636ff854ee22d35527aa31c0d21525caabcbf6addaa55f2c7c8",
-      "bytes": 4541
+      "sha256": "0b8cb5895644bda5a367e37591834a0f8b59ae0183e63b366e77b495ad8f8818",
+      "bytes": 4701
     },
     "tests/test_browser.py": {
-      "sha256": "97969f357f626d3a52cae7338f589c3f51ccb2b623f5500f7e5dcb683875eee5",
-      "bytes": 15958
+      "sha256": "4f847d406c982c475b85623f9ba848ebcd72921c94325cf1e09da894b78c5277",
+      "bytes": 15971
     },
     "tests/test_bundles.py": {
       "sha256": "5f1bfee425b23ddf0744846af7d0aec6928fe50f15ff18cd14cc54b225aad3c2",
@@ -1086,20 +1150,32 @@
       "sha256": "dab7cab06a4541e993958ae4fd4d927f96fc5d595e6dabf640a5b57e3e723f66",
       "bytes": 2867
     },
+    "tests/test_integration_capture.py": {
+      "sha256": "4fc8cca6621804d76ab8233d3feaae514b58cdbb59429a5c8a985fe32977d6f7",
+      "bytes": 1180
+    },
+    "tests/test_integration_economics.py": {
+      "sha256": "1679c0c1b323810bc49edf15edf8b5bb1872ec3ad8b10e2c1bf640186c19fb7e",
+      "bytes": 5896
+    },
+    "tests/test_integration_economics_browser.py": {
+      "sha256": "0e47b68e2421f9e6bf4afb7821ca367890b0dffe398a153ed2a21ce0ba85afd7",
+      "bytes": 3820
+    },
     "tests/test_integrity.py": {
-      "sha256": "9df2d8da24a30c24acb47a075f293ac5e4200f00ecd33477ecd830e550b82ee0",
-      "bytes": 4819
+      "sha256": "e265cdd1586e0edcc13f19dc75aeb19558f3af76a9cdf0cbf4b3432fe7861660",
+      "bytes": 4870
     },
     "tests/test_integrity_browser.py": {
-      "sha256": "d95f99cf7181eb6a41b6741da97c59f894609491e67a4c513b682bdce75762cf",
+      "sha256": "767d5c334bcd4a3678e2227260d3bb37d40f0eec072f510003cde69b9e266069",
       "bytes": 3093
     },
     "tests/test_measurement.py": {
-      "sha256": "b9763603a52b3e89315343044b292d357a7b03014ff6d9ce595003d17164f018",
+      "sha256": "7aeb3657d6f5e59de5d8ef1c5f682cbe50f08deb752ca3abdb987c7e5fd6237f",
       "bytes": 6699
     },
     "tests/test_measurement_browser.py": {
-      "sha256": "c7c2214d9e7615d47d6698f9e2663a362005ac78ec51b91cac59d76eac9b7735",
+      "sha256": "f45dc7265d884aa45ce8ab941a6e4aa1d65545321d3f7350216d29ab5f6c4f55",
       "bytes": 3930
     },
     "tests/test_process_boundaries.py": {
@@ -1107,16 +1183,16 @@
       "bytes": 2119
     },
     "tests/test_release.py": {
-      "sha256": "3011c7a3270a37ae5a4fe09a906b7cf3fd2746e56128f880f106c6cf533812dc",
-      "bytes": 6595
+      "sha256": "8104cab96decef09ec3d48dda87fd45f19507a952d82c9b4e1519251689aae4f",
+      "bytes": 6646
     },
     "tests/test_release_browser.py": {
-      "sha256": "69702d2e525941d19316a12ec28fa5615d0572f0615c059d7f5a82a6c99e0049",
+      "sha256": "1963e29ced79ba2294a185308f5a184e941aff4d22a7d917899ca484e39e16fc",
       "bytes": 3378
     },
     "tests/test_release_qa_eight.py": {
-      "sha256": "53cd2647ab84202c40b2f370b98aeb697bff6eb1cec6bbcb4b7eb57fb05cf4c2",
-      "bytes": 4332
+      "sha256": "e14308f6731e30e0bff1cfc241c7c5d4a96f42a7b0450b2a11e8fdcefefb1827",
+      "bytes": 4451
     },
     "tests/test_research.py": {
       "sha256": "d18227ddb521a326fafb1d35b233d8ebf12d041a8f57ed8f3309682983abe6fc",
@@ -1131,20 +1207,28 @@
       "bytes": 17287
     },
     "web/app.js": {
-      "sha256": "ff36e05fe26cfc1cb9b6a4930bfd3fcdcf77fa926298167bdc71679d78cc6333",
-      "bytes": 40582
+      "sha256": "e38d233c572517991ed06f7a30b1e31441cc180434ced286bd487c31d229d604",
+      "bytes": 41711
     },
     "web/assurance.css": {
-      "sha256": "5ee1a4337b2a4559d884670c7d7ddc8bb4bd2ecaed797d492cddf8e4969c9b6c",
-      "bytes": 3972
+      "sha256": "7ae87ee23bfe9d12d7e33cbe3e8d0f84e47ee5081133b8fdac8e66b49b1e2a1b",
+      "bytes": 4635
     },
     "web/assurance.js": {
       "sha256": "14aef0fe453f98d68c76c9468ca313c39fa27b49a0ad6d76142a55c77559021c",
       "bytes": 37953
     },
     "web/catalog.json": {
-      "sha256": "43280bf409736652c839bdb16bf7d3ccf9723410d3e32f3d1ea477162a255185",
-      "bytes": 13178
+      "sha256": "309d5fd53ca4d7b4f9951e96aa48751b7310ea5e53310d179374c08f38d82e9c",
+      "bytes": 14567
+    },
+    "web/economics.js": {
+      "sha256": "308583368ccc9388bade6b37e3b5c270a0f5845a034257ff4e725c8da8002ca3",
+      "bytes": 9883
+    },
+    "web/evidence-ui.js": {
+      "sha256": "961bc989180ad5341586fb967df9c288e33cb31c1c7ca3cd6df0006e08cdcf27",
+      "bytes": 2514
     },
     "web/evidence/analytics-engineering/bundle.json": {
       "sha256": "7ba2f24e7538bcd44d5a6d60631a7258812cde65366bfa64c804cab74efc74d9",
@@ -1437,6 +1521,102 @@
     "web/evidence/control-recovery/verification.json": {
       "sha256": "ec3c4f907635da3cd87fa8b28030fb88221a30412a393021368fa81bbed74a1f",
       "bytes": 482
+    },
+    "web/evidence/economics-integration/acceptance.json": {
+      "sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+      "bytes": 2118
+    },
+    "web/evidence/economics-integration/accounting-source.py": {
+      "sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+      "bytes": 10177
+    },
+    "web/evidence/economics-integration/bundle.json": {
+      "sha256": "cd3b14c93ccda9a99e781bd34b3da27d5e81e2502b52f6aecc0f02e659a09127",
+      "bytes": 6034
+    },
+    "web/evidence/economics-integration/contract-source.py": {
+      "sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+      "bytes": 5876
+    },
+    "web/evidence/economics-integration/decision.json": {
+      "sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+      "bytes": 770412
+    },
+    "web/evidence/economics-integration/http-summary.json": {
+      "sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+      "bytes": 178186
+    },
+    "web/evidence/economics-integration/http/capacity-revision-result.json": {
+      "sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+      "bytes": 2466
+    },
+    "web/evidence/economics-integration/http/delayed-source-result.json": {
+      "sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+      "bytes": 2492
+    },
+    "web/evidence/economics-integration/http/launch-surge-result.json": {
+      "sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+      "bytes": 2607
+    },
+    "web/evidence/economics-integration/http/normal-journal.txt": {
+      "sha256": "8ef90305ebd86d4207bb74e1143c9e3f70a07fa59358012e3e1328140f24bd2e",
+      "bytes": 62400
+    },
+    "web/evidence/economics-integration/http/normal-result.json": {
+      "sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+      "bytes": 2429
+    },
+    "web/evidence/economics-integration/http/revoked-permission-result.json": {
+      "sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+      "bytes": 2323
+    },
+    "web/evidence/economics-integration/http/shared-quota-pressure-result.json": {
+      "sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+      "bytes": 2622
+    },
+    "web/evidence/economics-integration/http/slow-destination-result.json": {
+      "sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+      "bytes": 2531
+    },
+    "web/evidence/economics-integration/http/transient-recovery-journal.txt": {
+      "sha256": "71bdfc6ad87545bbea6820640578660f0e90075751348feee55f7236d21d2afb",
+      "bytes": 530816
+    },
+    "web/evidence/economics-integration/http/transient-recovery-result.json": {
+      "sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+      "bytes": 2631
+    },
+    "web/evidence/economics-integration/observation.json": {
+      "sha256": "0c138fa238baa06bb58376d47fade0d5345ab4f9f1afd3adbc30f215b0126b0d",
+      "bytes": 122
+    },
+    "web/evidence/economics-integration/portable.json": {
+      "sha256": "36241956ba06616f4b78d6caa665e409e946b77a04b8054374d582b47ebbda5e",
+      "bytes": 1735457
+    },
+    "web/evidence/economics-integration/projection.json": {
+      "sha256": "be8482fd92120d72b14c89e0eaa59569f5326586031526ca0768b71b2af2b8f5",
+      "bytes": 3357
+    },
+    "web/evidence/economics-integration/reproduction.zip": {
+      "sha256": "aa348c9d12c178222e9769365c495b5cbcd1d0c030853f84fa10ce4dd9ab4f1d",
+      "bytes": 343634
+    },
+    "web/evidence/economics-integration/scenario.json": {
+      "sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+      "bytes": 17691
+    },
+    "web/evidence/economics-integration/timeline.json": {
+      "sha256": "815049e924f3c680b5e3b7e9dd4c06f23fc2330b342dd3df3343b32856684ecb",
+      "bytes": 3833
+    },
+    "web/evidence/economics-integration/upstream.json": {
+      "sha256": "ae9d669d4107e905ebe4774c5b455063ae63da4c14744f2b960e605113ada3a2",
+      "bytes": 8791
+    },
+    "web/evidence/economics-integration/verification.json": {
+      "sha256": "c671378326c24f37716f214070f832af07868639a973b9034509c502fba22879",
+      "bytes": 4192
     },
     "web/evidence/estate-assurance/bundle.json": {
       "sha256": "7ce1e2331fa16e439ec6ce0a57b0376cf391edaa44f35f222f70511ac260e0c3",
@@ -2550,13 +2730,177 @@
       "sha256": "c93a651806e4a2ca415653c6799cb7f185edb2acd41b6caee95af61c75ecfc00",
       "bytes": 1312
     },
+    "web/evidence/warehouse-verification/access.json": {
+      "sha256": "561318576ff282fbb9ab5e33f79e2d5f7476cca3dd55cd2741ad3138eaa83d1d",
+      "bytes": 1305
+    },
+    "web/evidence/warehouse-verification/application.json": {
+      "sha256": "3d0db3bce2beaea3a9dd4994b94888914561a2e9b40547624790528e9977e0f4",
+      "bytes": 10871
+    },
+    "web/evidence/warehouse-verification/bigquery/warehouse_job_metadata.sql": {
+      "sha256": "15f488af5cd3e3ba3253ffde469d762e42d7e080d14ff70dceaf0f5f4c2e01b6",
+      "bytes": 594
+    },
+    "web/evidence/warehouse-verification/bigquery/warehouse_models_preview.sql": {
+      "sha256": "f0aae01795260beaeb20196a8f93193c23d874b29d6654e0ee5aff2244228752",
+      "bytes": 8463
+    },
+    "web/evidence/warehouse-verification/bigquery/warehouse_source_oracle.sql": {
+      "sha256": "6f5d3aef7e43773c202d1339644f40fd69c62717d8d8cfd49d2dcaf44ef60b43",
+      "bytes": 6281
+    },
+    "web/evidence/warehouse-verification/bundle.json": {
+      "sha256": "042ffb77d3394e15c81cb9377cb477ef51e58f38245fc3f5b37cd4335bd1b088",
+      "bytes": 11077
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/macros/source_relations.sql": {
+      "sha256": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+      "bytes": 527
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/fct_ga4_events.sql": {
+      "sha256": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+      "bytes": 1217
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/fct_ga4_items.sql": {
+      "sha256": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+      "bytes": 457
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/mart_ga4_daily.sql": {
+      "sha256": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+      "bytes": 723
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/mart_ga4_purchase_quality.sql": {
+      "sha256": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+      "bytes": 1158
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/mart_ga4_sessions.sql": {
+      "sha256": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+      "bytes": 438
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/staging/stg_event_versions.sql": {
+      "sha256": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+      "bytes": 564
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/models/staging/stg_item_versions.sql": {
+      "sha256": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+      "bytes": 356
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/seeds/raw_ga4_events.csv": {
+      "sha256": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+      "bytes": 615
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/seeds/raw_ga4_items.csv": {
+      "sha256": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+      "bytes": 270
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_item_grain.sql": {
+      "sha256": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+      "bytes": 159
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_item_version_identity.sql": {
+      "sha256": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+      "bytes": 681
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_landing_values.sql": {
+      "sha256": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+      "bytes": 661
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_mart_reconciliation.sql": {
+      "sha256": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+      "bytes": 667
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_no_regression.sql": {
+      "sha256": "6011761773265245c9ca3fc72e4d7e63cb85a40100460aba4ce3d707ecd5ea4d",
+      "bytes": 1126
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_purchase_item_conservation.sql": {
+      "sha256": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+      "bytes": 526
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_quality_flags.sql": {
+      "sha256": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+      "bytes": 640
+    },
+    "web/evidence/warehouse-verification/ga4_pipeline/tests/assert_source_version_identity.sql": {
+      "sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+      "bytes": 278
+    },
+    "web/evidence/warehouse-verification/guard.json": {
+      "sha256": "b743d464373f055b90b5afc4b861d9b02586f9b49b14dfd7353ae746e67464e8",
+      "bytes": 2514
+    },
+    "web/evidence/warehouse-verification/jobs.json": {
+      "sha256": "c535ebe22e3bd786b881a2c89ec0643a6609f80d995cf790709ef3033b1cb0e2",
+      "bytes": 1169
+    },
+    "web/evidence/warehouse-verification/local.json": {
+      "sha256": "2a91f12116ce5badbadc0881ded6d9d491dcfc1f8ccd032432b518413d511cc6",
+      "bytes": 3710
+    },
+    "web/evidence/warehouse-verification/model-results.json": {
+      "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+      "bytes": 734
+    },
+    "web/evidence/warehouse-verification/native.json": {
+      "sha256": "b3efbf632e61267bc74f750ac76e81d3e87a650637233495cf224f439aa84331",
+      "bytes": 4430
+    },
+    "web/evidence/warehouse-verification/observation.json": {
+      "sha256": "0c138fa238baa06bb58376d47fade0d5345ab4f9f1afd3adbc30f215b0126b0d",
+      "bytes": 122
+    },
+    "web/evidence/warehouse-verification/portable.json": {
+      "sha256": "04670e45a002d1b3dd3b0717f7fea0b877bc0f02430b916a235a3bbab3c6294d",
+      "bytes": 117318
+    },
+    "web/evidence/warehouse-verification/projection.json": {
+      "sha256": "1b7119ea4789fd024b3d8249fcdcafbc742d00f030ed51f608ed0cc0b68a69ad",
+      "bytes": 341
+    },
+    "web/evidence/warehouse-verification/reproduction.zip": {
+      "sha256": "27bb92601dd6675de2ebcaddcc92019f51241744f6bfae2101684b053900e1b1",
+      "bytes": 40823
+    },
+    "web/evidence/warehouse-verification/scripts/bigquery_oracle.py": {
+      "sha256": "14efada7d849116e832f24607907ddf6b11532bc2f647730e8103300860d5888",
+      "bytes": 3524
+    },
+    "web/evidence/warehouse-verification/scripts/verify_ga4_current.py": {
+      "sha256": "98281b7b6a571d3d132c7a40c34cf6a5f1f9b852ff5f8f6e9cd6686b88c347d6",
+      "bytes": 2431
+    },
+    "web/evidence/warehouse-verification/scripts/verify_ga4_pipeline.py": {
+      "sha256": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+      "bytes": 10274
+    },
+    "web/evidence/warehouse-verification/scripts/warehouse_preview.py": {
+      "sha256": "68b7a54f749dbf86e806ae3f9cc9c841021a1b8587c695655a8ec0241b8a705c",
+      "bytes": 10652
+    },
+    "web/evidence/warehouse-verification/source-results.json": {
+      "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+      "bytes": 734
+    },
+    "web/evidence/warehouse-verification/timeline.json": {
+      "sha256": "979688425d1d830e9d5283d1f4ea8775070b93bdd75a8aa4c50c5aeef23f130b",
+      "bytes": 609
+    },
+    "web/evidence/warehouse-verification/upstream.json": {
+      "sha256": "bc5984fc6589f2a092b1e4f28e26c55ced29283ca38178c7f8f61da05bf49e70",
+      "bytes": 19523
+    },
+    "web/evidence/warehouse-verification/verification.json": {
+      "sha256": "3c762c61f41dd5bf37b83833471bece235322b95da7fbad6bf7d4245df72e564",
+      "bytes": 994
+    },
     "web/gtm.js": {
       "sha256": "82f2f073ef670dc922921e837e80a6ff6ef2f1524c29b1304f5501521246e58b",
       "bytes": 16026
     },
     "web/index.html": {
-      "sha256": "4064ce19c70e4d5cbee5c3389a224508120f08f2894d163c84d93b41533a9f2f",
-      "bytes": 8443
+      "sha256": "930d7b0d5da021c9eac8ab99273d182ec4d9153daae0e57e41d17952c750c5e7",
+      "bytes": 9153
     },
     "web/integrity.js": {
       "sha256": "a7b4d930a5bf34f4a4ba1571a0a34decfea39ac04434c6f802b595cd68679752",
@@ -2577,6 +2921,10 @@
     "web/style.css": {
       "sha256": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",
       "bytes": 23843
+    },
+    "web/warehouse.js": {
+      "sha256": "95f3afe9b394712ace820767f849033e1907ea5dcce687f6cbf37a3afaa736aa",
+      "bytes": 7861
     }
   }
 }
