@@ -290,8 +290,8 @@
     {
       "id": "warehouse-verification",
       "investigation": "measurement",
-      "title": "GA4 warehouse · native SQL and local dbt verification",
-      "summary": "Compare native read-only model SELECTs with an independent BigQuery source query; inspect local dbt correction, replay, full-refresh and regression-guard evidence.",
+      "title": "GA4 warehouse · native dbt MERGE and SQL verification",
+      "summary": "Inspect native BigQuery MERGE, replay and five-rowset parity on a synthetic fixture; compare separate public-sample SQL, local dbt and regression guards.",
       "manifest_sha256": "042ffb77d3394e15c81cb9377cb477ef51e58f38245fc3f5b37cd4335bd1b088",
       "verification_sha256": "3c762c61f41dd5bf37b83833471bece235322b95da7fbad6bf7d4245df72e564",
       "source": {
