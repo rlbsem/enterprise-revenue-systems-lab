@@ -24,7 +24,7 @@ def test_native_dbt_addendum_is_distinct_from_historical_bundle():
     assert 'terminalJobs: 178' in code
     assert 'productionGA4Export: false' in code
     assert 'actualBillingClearanceVerified: false' in code
-    assert 'three datasets' in (ROOT / "docs/integration-economics.md").read_text()
+    assert 'three temporary datasets' in (ROOT / "docs/integration-economics.md").read_text()
 
 
 def test_warehouse_extension_is_read_only_and_existing_navigation_is_preserved():
