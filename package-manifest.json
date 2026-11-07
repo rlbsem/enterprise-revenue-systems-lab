@@ -27,8 +27,8 @@
       "bytes": 759
     },
     "README.md": {
-      "sha256": "b1808898fa77134517547dd6bc408a2b658e95d89abf617eca742f813dcc287f",
-      "bytes": 23226
+      "sha256": "5f8dd0cf7455ccc89df9b0d181c07305959e22a5422f2a080e66543caccbef71",
+      "bytes": 23552
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
@@ -51,8 +51,8 @@
       "bytes": 6298
     },
     "docs/evidence-guide.md": {
-      "sha256": "1a884b7cbdb101e22975bc129ffe8657e9e7281a33b48d9042143fbbdcf1eaf8",
-      "bytes": 7442
+      "sha256": "51cb5562ad5d23d2511a1cb3de59d980d3ab76cce7a3b4ea83b95a16fb3d4c70",
+      "bytes": 7888
     },
     "docs/evidence/analytics-engineering/README.md": {
       "sha256": "3b4281cf535fb977a84729ccdb8aad3e3f90ece6303f00a3a5a7946318d82278",
@@ -943,12 +943,12 @@
       "bytes": 147357
     },
     "docs/integration-economics.md": {
-      "sha256": "ef27f16a383e4f9fa8949c9e33fb8d9dccba4e866096434c00c71bfedb82c752",
-      "bytes": 6498
+      "sha256": "2c16a9c9262de0747a5b46adec547c5eaef7c9ab8bd267e9f47624ad65980030",
+      "bytes": 8242
     },
     "docs/measurement-integrity.md": {
-      "sha256": "6d38fd2a49196073bedbee68ba3c3e9898c4ee0d29e4ce84a03fe58f4910ea22",
-      "bytes": 5362
+      "sha256": "7cca95be51b8b541f3bebb73c91d4d7455f35e86a94f90e69afad587f637197e",
+      "bytes": 5627
     },
     "docs/model-release-assurance.md": {
       "sha256": "525ca7c512805a10880abc7b5f1b594ae4939c04dcfac7ba660ee411fd3fbe3a",
@@ -1159,8 +1159,8 @@
       "bytes": 7761
     },
     "src/revenue_lab/site.py": {
-      "sha256": "351c584747d9cc664ee7c90ca880dd66365b15fd1318339210ac5c6572a1a240",
-      "bytes": 8563
+      "sha256": "c0765a8208d63fe5a78ba015db352872e5f0fed1e5893677cc3afe86caed16cb",
+      "bytes": 8553
     },
     "src/revenue_lab/smoke.py": {
       "sha256": "724a0a17d1fd285f25e8b976da421310a7f0cd1c99c9ac610c6363169d820914",
@@ -1243,8 +1243,8 @@
       "bytes": 5896
     },
     "tests/test_integration_economics_browser.py": {
-      "sha256": "c4ea372328dab1dedaa7f0aa3593c6e8a1f3c30215285f36fb66559709b2c065",
-      "bytes": 4012
+      "sha256": "80db2bc458651b340f32e01a8f5b21ebef99d1ce2148c25926db0fc79e5b3386",
+      "bytes": 4550
     },
     "tests/test_integrity.py": {
       "sha256": "e265cdd1586e0edcc13f19dc75aeb19558f3af76a9cdf0cbf4b3432fe7861660",
@@ -1291,8 +1291,8 @@
       "bytes": 17287
     },
     "web/app.js": {
-      "sha256": "901a10de95da12758b5fbc9a4be5ceb1723d80e8ad63fa332c8d898e782a34a5",
-      "bytes": 41759
+      "sha256": "8791741ac4cf10967436ccd951d3a183f4dc6d730f80ace687ecec444c50da20",
+      "bytes": 42109
     },
     "web/assurance.css": {
       "sha256": "7231167db3b86c045192d64f1d7f2a2b6213c5ecd5425058571bd8a0d2c4bd37",
@@ -1303,8 +1303,8 @@
       "bytes": 37953
     },
     "web/catalog.json": {
-      "sha256": "309d5fd53ca4d7b4f9951e96aa48751b7310ea5e53310d179374c08f38d82e9c",
-      "bytes": 14567
+      "sha256": "d64c9fbc1a398ddcac09c0ab5ec6dc7bd1bd945f2209b807e36d38b2c0a4ed98",
+      "bytes": 14557
     },
     "web/economics.js": {
       "sha256": "308583368ccc9388bade6b37e3b5c270a0f5845a034257ff4e725c8da8002ca3",
@@ -3007,8 +3007,16 @@
       "bytes": 23843
     },
     "web/warehouse.js": {
-      "sha256": "95f3afe9b394712ace820767f849033e1907ea5dcce687f6cbf37a3afaa736aa",
-      "bytes": 7861
+      "sha256": "330168b6a1efabeecf97466794e85bda41debb20a335ce2ff282d60f6f6cd47d",
+      "bytes": 11367
+    },
+    "web/native-bigquery.js": {
+      "sha256": "a1ea77f6c2e0bd168be363b06a56c2936dda3eaf1d40d18c5fa73f2888d1db19",
+      "bytes": 2238
+    },
+    "tests/test_native_bigquery_lab_update.py": {
+      "sha256": "5727b255b4975a158bb1a268165974838f6d8a66f477a7092efa6c6454d181c6",
+      "bytes": 2463
     }
   }
 }
