@@ -1235,8 +1235,8 @@
       "bytes": 2867
     },
     "tests/test_integration_capture.py": {
-      "sha256": "66e373e78a74ac2fa90d8e5d37f92bb37e230c165bb5a7898d92d75865f5d7f3",
-      "bytes": 2066
+      "sha256": "04d4d951b17e92e6e06f47eb96d9d1bdebcd856458fdcbf7ef4004dc17a291e9",
+      "bytes": 2638
     },
     "tests/test_integration_economics.py": {
       "sha256": "1679c0c1b323810bc49edf15edf8b5bb1872ec3ad8b10e2c1bf640186c19fb7e",
