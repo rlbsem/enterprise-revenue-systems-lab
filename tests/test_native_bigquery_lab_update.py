@@ -38,7 +38,7 @@ def test_warehouse_extension_is_read_only_and_existing_navigation_is_preserved()
     assert "warehouse-verification" in app
     assert "Historical October bundle only" in app
     for source in (code, addendum):
-        assert not re.search(r"\\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|innerHTML)\\b", source)
+        assert not re.search(r"\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|innerHTML)\b", source)
     catalog = json.loads((ROOT / "web/catalog.json").read_text())
     assert len(catalog["scenarios"]) == 23
     assert len({e["investigation"] for e in catalog["scenarios"]}) == 13
