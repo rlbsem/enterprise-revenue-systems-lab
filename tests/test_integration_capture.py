@@ -4,7 +4,7 @@ import json
 from revenue_lab.bundle import ROOT
 
 
-def test_current_integration_capture_binds_all_rendered_source_and_images():
+def test_historical_integration_capture_keeps_original_source_bindings_and_images():
     r=json.loads((ROOT/'docs/evidence/integration-economics/font-fix/browser.json').read_bytes())
     assert len(r['catalog_checks'])==184 and len({c['case'] for c in r['catalog_checks']})==23
     assert len(r['layouts'])==40 and len(r['accessibility'])==16
@@ -16,8 +16,18 @@ def test_current_integration_capture_binds_all_rendered_source_and_images():
     assert all(not c['overflow'] for c in r['catalog_checks'])
     assert all(not c['overflow'] and not c['contrast']['failures'] for c in r['layouts'])
     assert all(not c['violations'] for c in r['accessibility'])
+    # The October 31 screenshot's source hashes must remain immutable. A later
+    # warehouse UI release intentionally changes these three files; the fresh
+    # CI browser suite tests their current behavior. Do not rewrite the old
+    # screenshot or falsely treat its old hashes as the current release.
+    updated_ui={'web/app.js','web/warehouse.js','web/catalog.json'}
     for name,digest in r['source_sha256'].items():
-        assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
+        assert len(digest)==64 and all(c in '0123456789abcdef' for c in digest)
+        actual=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()
+        if name in updated_ui:
+            assert actual!=digest,name
+        else:
+            assert actual==digest,name
     assert len(r['images'])==7
     for name,digest in r['image_sha256'].items():
         assert hashlib.sha256((ROOT/'docs/images/integration-economics/font-fix'/name).read_bytes()).hexdigest()==digest
