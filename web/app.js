@@ -578,7 +578,9 @@ function render() {
   link.href =
     "https://github.com/" + m.source.repository + "/tree/" + m.source.commit;
   link.textContent = m.source.repository + " ↗";
-  $("#limitations").textContent = m.limitations.join(" ");
+  $("#limitations").textContent = entry.id === "warehouse-verification"
+    ? "Historical October bundle only: " + m.limitations.join(" ") + " A separately approved November native dbt-BigQuery execution is shown in the new MERGE stage with its own source evidence and verification. This bundle's integrity button and downloads cover the historical archive, not the later run."
+    : m.limitations.join(" ");
   $("#commands").textContent =
     m.reproduce.join("\n") +
     "\npython -m revenue_lab.cli verify <bundle-directory>";

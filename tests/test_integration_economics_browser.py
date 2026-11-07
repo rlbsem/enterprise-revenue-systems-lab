@@ -26,6 +26,12 @@ def test_new_cases_interactions_downloads_and_mobile(url,tmp_path,case):
             page.locator('[data-evidence-stage="execution"]').click();page.get_by_label('Inspect a recorded HTTP trial').select_option('revoked-permission')
             assert 'Rejected' in page.locator('.release-detail').inner_text()
         else:
+            page.locator('[data-evidence-stage="native-dbt"]').click()
+            assert 'six corrected rows' in page.locator('.metrics').inner_text() or '6 / 0' in page.locator('.metrics').inner_text()
+            assert 'd59a1ff0-0672-4543-88cc-806a61990676' in page.locator('.release-detail').inner_text()
+            assert '178 terminal jobs' in page.locator('.release-detail').inner_text()
+            assert page.locator('.warehouse-native-links a').count() == 5
+            page.locator('[data-evidence-stage="native"]').click()
             page.get_by_label('Inspect a native rowset').select_option('items')
             assert '4,828' in page.locator('.release-detail').inner_text()
             page.locator('[data-evidence-stage="local"]').click();assert 'ev06' in page.locator('.release-detail').inner_text()

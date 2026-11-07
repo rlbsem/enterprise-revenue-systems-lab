@@ -15,7 +15,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: ubuntu-latest
+          # Playwright 1.55 does not support Ubuntu 26.04; pin supported runner.
+          - os: ubuntu-24.04
             python: '3.12.14'
           - os: windows-latest
             python: '3.12.10'

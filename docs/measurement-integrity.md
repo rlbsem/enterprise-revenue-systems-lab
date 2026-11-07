@@ -20,7 +20,7 @@ Source pin: [`88a197c761cfd167c19e3d23039948ffe6bb7f2b`](https://github.com/rlbs
 
 Historical records remain byte-exact. A [preservation inventory](evidence/measurement-integrity/preserved-files.json) protects every prior evidence/image file from the eight-investigation baseline. Historical capture checks bind to their capture-time source snapshot, not to today's changed UI.
 
-No new BigQuery query, model inference, Measurement Protocol validation, published GTM container or production deployment occurred. Native dbt-bigquery acceptance remains unexecuted. Reported Google bytes billed are job statistics, not proof of charges.
+The original measurement import did not itself submit BigQuery queries, model inference, Measurement Protocol validation, GTM publication or production deployment. A **separate later approved native dbt-BigQuery acceptance executed November 7, 2026 UTC**; the updated warehouse-verification case links that record without modifying this historical import. Reported BigQuery billed bytes are job statistics, not invoices.
 
 ## Reproduce offline checks
 
@@ -51,4 +51,4 @@ The runner refuses an existing workspace, verifies all exported input bytes and 
 
 ## Updated warehouse verification
 
-The same investigation now includes `?case=warehouse-verification`, importing the merged native read-only SQL comparisons, independent source signatures, corrected regression guard and separate complete local dbt oracle acceptance. [Exact source pins, scope and remaining native dbt limitation](integration-economics.md#ga4-warehouse-verification). The original conversion case, local fixture execution and all historical files on this page remain unchanged. No native dbt-BigQuery build or MERGE is claimed.
+The same investigation now includes `?case=warehouse-verification`, importing the merged native read-only SQL comparisons, independent source signatures, corrected regression guard and separate complete local dbt oracle acceptance. [Exact historical source pins and later native dbt execution scope](integration-economics.md#ga4-warehouse-verification). The original conversion case, local fixture execution and all historical files on this page remain unchanged. This original import did not run native dbt; the newer, separately sourced warehouse stage now documents the completed synthetic native MERGE.
