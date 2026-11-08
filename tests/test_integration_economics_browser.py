@@ -14,7 +14,7 @@ def test_new_cases_interactions_downloads_and_mobile(url,tmp_path,case):
         page.on('pageerror',lambda e:errors.append(str(e)))
         page.on('request',lambda r:writes.append(r.url) if r.method!='GET' else None)
         page.goto(url+'/?case='+case);page.locator('.release-investigation').wait_for()
-        assert page.locator('[data-investigation]').count()==13
+        assert page.locator('[data-investigation]').count()==14
         page.get_by_role('button',name='Validate artifact integrity').click();page.locator('#status').filter(has_text='Artifact integrity verified').wait_for()
         if case=='economics-integration':
             page.get_by_label('Architecture',exact=True).select_option('resilient')

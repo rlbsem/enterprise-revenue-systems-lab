@@ -2,7 +2,7 @@
 
 An acquired business is not safe to consolidate merely because its files were imported. This static investigation exposes the actual local implementation's identity, source-coverage, authorization and financial-publication boundaries.
 
-Route: `?case=acquisition-governance`. The feature is not deployed by this branch.
+Read-only route: `?case=acquisition-governance`. The browser runs on packaged, recorded evidence; hosted availability must be confirmed separately through GitHub Pages deployment.
 
 ## Inspect six engineering decisions
 
@@ -23,6 +23,14 @@ Route: `?case=acquisition-governance`. The feature is not deployed by this branc
 | Unsupported intercompany candidate | $8,000 | $40,000 |
 
 These are three representative fictional companies, not a real 50-company deployment. The annual scenario excludes Summit's held facts and Meridian's pre-acquisition January facts at its captured cutoff. It is separate from the selected-period governed-delivery and financial runs. A company becoming admitted later cannot rewrite inclusion in an earlier publication.
+
+## Later execution evidence — separate from the historical three-company bundle
+
+**Native HubSpot read-only acceptance (November 7 Toronto / November 8 UTC 2026):** Actual application-owned API GETs and independent HTTPS reads verified a synthetic Cedar company and contact, exact properties and associations in both directions. A genuine negative exposed an unexpected company association; a separately approved browser relationship repair was a real write, not part of the GET-only adapter. The corrected parser rejected extra companies while allowing primary and unlabeled representations of the same relationship. [Actual provider results, negative attempts and sanitized source hashes](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/e58fac314cad7fa1ff81929f454359635f8d996a/docs/evidence/hubspot-native/2026-11-08/README.md). This does **not** demonstrate HubSpot CDC, acquisition admission, application CRM writes or readback of portal ID via object GETs.
+
+**Multi-company failure isolation:** A separately executed deterministic **3, 10, 25 and 50-company synthetic workload** used real PostgreSQL, independent HTTP source processes, receiver receipts and dbt. In the 50-company run **149 canonical accounts** retained company scope and **37 healthy companies** progressed while one company's operations feed was stopped. An independently observed lock did not stall another company's admission; one handoff exhausted its bounded attempts, and an intentionally missing financial allocation blocked publication. The restated synthetic net invoicing was **$6,047,899.69** with an unresolved **$1,750 ERP posting gap**. [Measured runs, financial witnesses and bounded guarantees](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/e58fac314cad7fa1ff81929f454359635f8d996a/docs/evidence/multi-company/README.md). This is neither native 50-brand vendor ingestion nor proof of physical isolation or a throughput SLA.
+
+The static browser offers separate HubSpot and failure-isolation inspection stages with links to the published execution records. Those later proofs are **not contained in, resealed into, or certified by** the original 2026 October three-company bundle. No new CRM calls, financial writes or approval actions occur in the browser.
 
 ## Provenance and verification
 
@@ -49,7 +57,7 @@ python scripts/capture_acquisition.py --images .cache/acquisition/screenshots --
 
 Browser checks require Playwright Chromium. The public browser requires no Python, database, credentials or cloud access. Source tests can be repeated from a disposable checkout of the pinned Acquisition Onboarding repository using its locked dependencies and local PostgreSQL prerequisites; never use production systems. The Lab importer is `python scripts/import_acquisition.py <pinned-source-checkout>` and preserves the separate fresh regression record.
 
-No native vendor connections, privileged public controls, production deployment, statutory accounting, universal exactly-once guarantee or human security certification are demonstrated.
+The **historical three-company bundle** contains no native vendor connection. A later separate bounded native read-only HubSpot acceptance is linked above. The static Lab has no privileged controls or live API connection; it does not establish full production deployment, statutory accounting, universal exactly-once execution or independent human security certification.
 
 ![Actual acquisition identity explorer](images/acquisition-governance/acquisition-governance-desktop.png)
 ![Actual annual financial publication](images/acquisition-governance/acquisition-governance-finance.png)

@@ -9,7 +9,7 @@ from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
     "acquisition-governance": ("acquisition", "Acquisition Governance — Identity, Readiness & Financial Truth",
-        "Inspect scoped acquisition identity, admission, receipts and financial revisions; later HubSpot readback and 50-company isolation are separately sourced."),
+        "Three-company synthetic identity, admission, durable handoff and two financial reports, with separately evidenced native HubSpot readback and 50-company synthetic isolation."),
     "economics-integration": ("economics", "Enterprise Integration Economics",
         "Compare three annual architecture decisions for 1.2B synthetic source events; inspect monthly cost, capacity, sensitivities and separate bounded HTTP trials."),
     "warehouse-verification": ("measurement", "GA4 warehouse · native dbt MERGE and SQL verification",

@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from revenue_lab.site import build
 CASES = {
+    "acquisition": "acquisition-governance",
     "economics": "economics-integration",
     "estate": "estate-assurance",
     "reliability": "reliability-operations",
