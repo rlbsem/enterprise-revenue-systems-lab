@@ -1,3 +1,4 @@
+import { acquisitionPanel, acquisitionMetrics } from "./acquisition.js";
 import { economicsPanel, economicsMetrics } from "./economics.js";
 import { warehousePanel, warehouseMetrics } from "./warehouse.js";
 import { assurancePanel, assuranceMetrics } from "./assurance.js";
@@ -8,6 +9,7 @@ import { releasePanel, releaseMetrics } from "./release.js";
 import { gtmPanel, gtmMetrics } from "./gtm.js";
 const $ = (s) => document.querySelector(s);
 const titles = {
+  acquisition: ["14 · ACQUISITION GOVERNANCE", "Imported is not\nreport-ready.", "Explore legal-entity identity, reviewed admission, bounded execution and versioned financial truth; later HubSpot readback and 50-company isolation are independently evidenced.", "Consolidate with evidence.", "Separate authorities. Verified controls. Preserved findings."],
   economics: ["13 · INTEGRATION ARCHITECTURE", "What should the\narchitecture cost?", "Compare annual demand, shared capacity and modeled costs, then challenge the separate bounded HTTP execution.", "Feasible first. Economical second.", "Synthetic assumptions. Calculated tradeoffs. Independent execution evidence."],
   estate: ["10 · ENTERPRISE ARCHITECTURE", "What breaks when\na platform retires?", "Inspect scoped dependencies, conflicting source claims and the evidence behind an approved or blocked change.", "Readiness needs more than a replacement.", "Immutable evidence. Explicit company scope. Recorded review authority."],
   reliability: ["11 · DATA RELIABILITY ENGINEERING", "Would you publish\nthis report?", "Follow source ingestion, checkpoint recovery and independent reconciliation before accepting plausible numbers.", "A delivery is not a publication.", "Exact source bytes. Stable coverage. Independently checked values."],
@@ -53,6 +55,7 @@ const titles = {
   ],
 };
 const names = {
+  acquisition: "ACQUISITION GOVERNANCE & FINANCIAL TRUTH",
   economics: "ENTERPRISE INTEGRATION ECONOMICS",
   estate: "ENTERPRISE CHANGE ASSURANCE",
   reliability: "MARTECH DATA RELIABILITY",
@@ -164,7 +167,7 @@ function sourcesPanel() {
     }
     panel.append(q);
   }
-  const label = el("label", ["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+  const label = el("label", ["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics", "acquisition"].includes(entry.investigation)
     ? "Inspect a packaged artifact · original records and derived metadata"
     : "Inspect an original artifact", "panel-title");
   label.htmlFor = "artifact";
@@ -172,8 +175,8 @@ function sourcesPanel() {
   const choice = el("select", undefined, "artifact-select");
   choice.id = "artifact";
   for (const name of Object.keys(artifacts)) {
-    const original = ["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics"].includes(entry.investigation) && json("upstream.json").artifacts.some(a => a.file === name);
-    const o = el("option", name + (["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+    const original = ["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics", "acquisition"].includes(entry.investigation) && json("upstream.json").artifacts.some(a => a.file === name);
+    const o = el("option", name + (["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics", "acquisition"].includes(entry.investigation)
       ? ["analytics", "measurement"].includes(entry.investigation) && name === "fixture-execution.json" ? " · separate local fixture execution" : original ? " · upstream original" : " · derived Lab metadata" : ""));
     o.value = name;
     choice.append(o);
@@ -542,6 +545,8 @@ function renderPanel() {
             ? economicsPanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
           : entry.id === "warehouse-verification"
             ? warehousePanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
+          : entry.investigation === "acquisition"
+            ? acquisitionPanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
           : entry.investigation === "measurement"
             ? measurementPanel({el, section, raw, json, facts, finding, text: name => artifacts[name]})
           : entry.investigation === "analytics"
@@ -578,7 +583,9 @@ function render() {
   link.href =
     "https://github.com/" + m.source.repository + "/tree/" + m.source.commit;
   link.textContent = m.source.repository + " ↗";
-  $("#limitations").textContent = entry.id === "warehouse-verification"
+  $("#limitations").textContent = entry.id === "acquisition-governance"
+    ? "Historical three-company bundle: " + m.limitations.join(" ") + " Later native HubSpot reads and the 50-company synthetic failure-isolation trial are separate linked evidence; this frozen bundle does not attest those executions."
+    : entry.id === "warehouse-verification"
     ? "Historical October bundle only: " + m.limitations.join(" ") + " A separately approved November native dbt-BigQuery execution is shown in the new MERGE stage with its own source evidence and verification. This bundle's integrity button and downloads cover the historical archive, not the later run."
     : m.limitations.join(" ");
   $("#commands").textContent =
@@ -590,7 +597,9 @@ function render() {
     localConfig?.execution_enabled && localConfig.allowed.includes(entry.id)
   );
   $("#fresh-status").textContent = localConfig?.fresh_inference || "";
-  $(".local-execution summary").textContent = ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+  $(".local-execution summary").textContent = entry.investigation === "acquisition"
+    ? "Verify the historical acquisition evidence offline"
+    : ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
     ? "Verify these recorded assurance artifacts offline"
     : entry.investigation === "measurement"
     ? "Verify the recorded measurement evidence offline"
@@ -605,7 +614,9 @@ function render() {
     : entry.investigation === "connected"
     ? "Verify this native record offline"
     : "Reproduce this investigation · fresh local execution";
-  $("#reproduction-copy").textContent = ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+  $("#reproduction-copy").textContent = entry.investigation === "acquisition"
+    ? "Download three-company source records, SQL, cutoffs and independent receipts. Offline checks recompute historical finance; later native HubSpot and 50-company observations live in separately linked source evidence."
+    : ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
     ? "Download the exact original records and run offline integrity and domain checks. Fresh source-engine execution is a separate procedure in the pinned repository. No services or credentials are needed to inspect this case."
     : entry.investigation === "measurement"
     ? "Download exact source records, contracts, SQL and seeds. Offline verification recomputes financial findings and checks recorded acceptance; it does not collect events or execute Google queries."
@@ -618,7 +629,9 @@ function render() {
     : entry.investigation === "gtm"
     ? "Download the original artifact bytes and run offline checks. These commands do not reproduce native Salesforce or model execution. To reproduce the local synthetic pipeline engine, use the pinned GTM repository instructions."
     : "The public explorer reads recorded files. These commands invoke the original engine in a new isolated workspace. Replay of saved model responses is explicitly labeled; fresh inference needs a configured local endpoint.";
-  $("#local-note").textContent = ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+  $("#local-note").textContent = entry.investigation === "acquisition"
+    ? "The original PostgreSQL/HTTP/dbt three-company evidence is separate from subsequent real HubSpot GET-only acceptance and 50-company local workload. This static site makes no live CRM calls, writes or approvals."
+    : ["estate", "reliability", "temporal", "economics"].includes(entry.investigation)
     ? "Recorded local database, HTTP and process-recovery evidence with synthetic data. No present-day review authority, live source read, destination write or native vendor execution occurs here."
     : entry.investigation === "measurement"
     ? "Evermere conversion fixtures, local GA4 warehouse acceptance and historical native Google sample jobs are separate executions. No live tracking, Google credentials or vendor calls."
@@ -635,7 +648,10 @@ function render() {
     : "Run commands from the Lab checkout. No external CRM writes or paid services are required.";
   const metrics = $("#metrics");
   metrics.dataset.domain = entry.investigation;
-  if (["estate", "reliability", "temporal"].includes(entry.investigation)) {
+  metrics.classList.toggle("acquisition-metrics", entry.investigation === "acquisition");
+  if (entry.investigation === "acquisition") {
+    metrics.replaceChildren(...acquisitionMetrics(json, metric));
+  } else if (["estate", "reliability", "temporal"].includes(entry.investigation)) {
     metrics.replaceChildren(...assuranceMetrics(entry.investigation, json, metric));
   } else if (entry.investigation === "economics") {
     metrics.replaceChildren(...economicsMetrics(json, metric));
@@ -716,7 +732,7 @@ function render() {
   status(
     "Recorded evidence loaded · " +
       m.artifacts.length +
-      (["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics"].includes(entry.investigation)
+      (["gtm", "release", "integrity", "analytics", "measurement", "estate", "reliability", "temporal", "economics", "acquisition"].includes(entry.investigation)
         ? " packaged artifacts · originals and derived metadata labeled · integrity not yet checked in this browser."
         : " original artifacts · integrity not yet checked in this browser."),
   );

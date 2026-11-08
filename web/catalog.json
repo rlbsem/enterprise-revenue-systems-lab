@@ -2,6 +2,19 @@
   "version": 1,
   "scenarios": [
     {
+      "id": "acquisition-governance",
+      "investigation": "acquisition",
+      "title": "Acquisition Governance — Identity, Readiness & Financial Truth",
+      "summary": "Three-company synthetic identity, admission, durable handoff and two financial reports, with separately evidenced native HubSpot readback and 50-company synthetic isolation.",
+      "manifest_sha256": "f65c4e5afff53a823a2f0171148f1844b21d49a9c21fc7501609ffab9a9bed61",
+      "verification_sha256": "713e2b55bb40c568357e4a98b62f283a13afda17bd7e7646f2ea92558a28ccc8",
+      "source": {
+        "repository": "rlbsem/enterprise-acquisition-onboarding",
+        "commit": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3"
+      },
+      "mode": "recorded"
+    },
+    {
       "id": "analytics-engineering",
       "investigation": "analytics",
       "title": "Analytics Engineering — Model Correctness & Performance",

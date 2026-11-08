@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import shutil
+import subprocess
 import pytest
 from revenue_lab.bundle import ROOT, load_verified, verify, write_json
 from revenue_lab.acquisition_checks import acquisition, recalculate
@@ -59,8 +60,9 @@ def test_resealed_original_bytes_still_refused(tmp_path):
 def test_all_nine_prior_investigations_and_historical_bytes_are_preserved():
  snap=json.loads((ROOT/"docs/evidence/acquisition-governance/prior-ui.json").read_bytes())["files"]
  before=json.loads(snap["web/catalog.json"])["scenarios"];after=json.loads((ROOT/"web/catalog.json").read_bytes())["scenarios"]
- assert all(r in after for r in before) and len(after)==len(before)+1
- assert {r["id"] for r in after}-{r["id"] for r in before}=={"acquisition-governance"}
+ assert all(r in after for r in before) and len(after)==24
+ assert "acquisition-governance" in {r["id"] for r in after}
+ assert len({r["investigation"] for r in after})==14
  old=json.loads(snap["sources.lock.json"]);current=json.loads((ROOT/"sources.lock.json").read_bytes())
  assert all(current[k]==v for k,v in old.items() if k!="sources")
  assert all(current["sources"][k]==v for k,v in old["sources"].items())
@@ -83,5 +85,7 @@ def test_acquisition_genuine_screenshots_and_accessibility_provenance():
  assert not r["http_writes"] and not r["nonlocal_requests"] and not r["page_errors"]
  assert all(not x["overflow"] and not x["contrast"]["failures"] for x in r["layouts"])
  assert all(not x["violations"] for x in r["accessibility"])
- for n,h in r["source_sha256"].items():assert hashlib.sha256((ROOT/n).read_bytes()).hexdigest()==h,n
+ for n,h in r["source_sha256"].items():
+  historical=subprocess.check_output(["git","show","4a778ad1d336936f07e746193551bcd7519cca7a:"+n],cwd=ROOT)
+  assert hashlib.sha256(historical).hexdigest()==h,n  # bind archived screenshot to the exact original branch, not current UI
  for n,h in r["image_sha256"].items():assert hashlib.sha256((ROOT/"docs/images/acquisition-governance"/n).read_bytes()).hexdigest()==h,n

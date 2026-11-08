@@ -1,5 +1,5 @@
 // Static recorded acquisition evidence; no vendor connection or privileged actions.
-const stages=[["identity","01","Identity & intake"],["admission","02","Admission decisions"],["delivery","03","Governed handoff"],["finance","04","Financial truth"],["history","05","Publication history"],["proof","06","Engineering proof"]];
+const stages=[["identity","01","Identity & intake"],["admission","02","Admission decisions"],["delivery","03","Governed handoff"],["finance","04","Financial truth"],["history","05","Publication history"],["proof","06","Engineering proof"],["hubspot","07","Native HubSpot readback"],["isolation","08","50-company fault isolation"]];
 let selected="identity",company="summit",scenario="annual",version="restated",model="fct_invoices",delivery="receipt";
 const money=n=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",minimumFractionDigits:2,maximumFractionDigits:2}).format(n/100);
 export function acquisitionMetrics(read,metric){const p=read("projection.json");return [metric("Fictional companies",p.companies.length,"Same local ID · separate legal entities"),metric("Annual net invoicing",money(p.annual.restated.consolidated_invoice_minor),"Restated consolidated · synthetic USD"),metric("Annual allocated cash",money(p.annual.restated.allocated_cash_minor),"Separate from invoicing and bookings"),metric("Governed handoff","1 effect","Recorded local independent receiver")];}
@@ -9,9 +9,10 @@ export function acquisitionPanel(ui){
  const section=t=>{const n=ui.section(t);n.querySelector(".panel-title").replaceWith(el("h3",t,"panel-title"));return n;};
  const inspect=(parent,title,value)=>{const d=el("details"),r=ui.raw(value);r.tabIndex=0;d.append(el("summary",title),r);parent.append(d);};
  const origin=(file,label)=>{const a=el("a",label+" ↗");a.href=up.artifacts.find(a=>a.file===file).source_url;return a;};
+ const sourceLink=(path,label)=>{const a=el("a",label+" ↗");a.href="https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/e58fac314cad7fa1ff81929f454359635f8d996a/"+path;a.target="_blank";a.rel="noopener noreferrer";return a;};
  const choose=(label,id,options,value,fn)=>{const box=el("div",undefined,"analytics-control"),l=el("label",label),s=el("select");l.htmlFor=id;s.id=id;for(const [v,t] of options){const o=el("option",t);o.value=v;s.append(o);}s.value=value;s.addEventListener("change",()=>{fn(s.value);document.getElementById(id)?.focus();});box.append(l,s);return box;};
  function table(headers,rows,caption){const wrap=el("div",undefined,"analytics-table");wrap.tabIndex=0;wrap.setAttribute("role","region");wrap.setAttribute("aria-label",caption);const t=el("table"),head=el("thead"),tr=el("tr");if(headers.length===2)t.className="acquisition-pairs";t.append(el("caption",caption));for(const h of headers){const c=el("th",h);c.scope="col";tr.append(c);}head.append(tr);t.append(head);const body=el("tbody");for(const row of rows){const tr=el("tr");for(const v of row)tr.append(el("td",v));body.append(tr);}t.append(body);wrap.append(t);return wrap;}
- const hero=el("div",undefined,"release-hero");hero.append(el("small","RECORDED ACQUISITION ENGINEERING · THREE SYNTHETIC COMPANIES","release-kicker"),el("h2","Imported does not mean ready to consolidate."),el("p","Three businesses share a customer number and trade name. Inspect the reviewed identity boundaries, receipted handoff and financial cutoffs that determine what may enter the parent platform. Invoicing and cash remain distinct from recognized revenue."));root.append(hero);
+ const hero=el("div",undefined,"release-hero");hero.append(el("small","RECORDED ACQUISITION ENGINEERING · THREE SYNTHETIC COMPANIES","release-kicker"),el("h2","Imported does not mean ready to consolidate."),el("p","Three businesses share a customer number and trade name. Inspect their historical identity boundaries, receipted handoff and financial cutoffs, then review separately executed native HubSpot reads and synthetic 50-company failure isolation. Invoicing and cash are not recognized revenue."));root.append(hero);
  const nav=el("nav",undefined,"release-stages");nav.setAttribute("aria-label","Acquisition investigation stages");const announcement=el("p",undefined,"release-announcement");announcement.setAttribute("role","status");const content=el("div",undefined,"release-detail");
  const dataset=()=>read(scenario==="annual"?"annual.json":"selected-period.json");
  const scenarioControls=box=>{box.append(choose("Choose a separately executed financial scenario","acquisition-scenario",[["annual","Annual · twelve synthetic months"],["selected","Selected period · original correctness fixture"]],scenario,v=>{scenario=v;show();}),choose("Choose a published version","acquisition-version",[["original","Original publication"],["restated","Restated publication"]],version,v=>{version=v;show();}));};
@@ -51,7 +52,40 @@ export function acquisitionPanel(ui){
  box.append(table(["Publication","Net invoicing","Allocated cash"],["original","restated"].map(v=>[v,money(p[scenario][v].consolidated_invoice_minor),money(p[scenario][v].allocated_cash_minor)]),"Separate immutable publications · original source cutoff remains reproducible"));
  box.append(facts([["Selected publication",version],["Observed-source cutoff",snap.cutoff],["Previous report",snap.previous_id||"None"],["Input hash",snap.input_hash],["Original report unchanged",String(d.original_report_unchanged)],["Original-cutoff replay equal",String(d.original_cutoff_replay_equal)]]));
  inspect(box,"Inspect complete selected snapshot and controls",snap);inspect(box,"Inspect restatement bridge · calculated deltas",d.restated.results.restatement_bridge);inspect(box,"Inspect rejected source updates",d.rejected_updates);inspect(box,"Inspect invalid candidate: failed dbt gates, no publication",d.blocked_candidate);box.append(finding("Unpublished does not mean zero","An invalid candidate is refused, not exposed as a successful empty financial report. Late corrections never overwrite the original source version or publication."));content.append(box);
- }else{
+ }else if(selected==="hubspot"){
+ const box=section("A real CRM read is not an acquisition admission.");
+ box.append(el("p","Executed November 7, 2026 Toronto (November 8 UTC) using a two-scope HubSpot Service Key against two authorized synthetic CRM objects. A GET-only Python adapter and a separate HTTPS client confirmed exact company/contact properties and associations in both directions. The static Lab makes no HubSpot requests."));
+ box.append(table(["Control boundary","Recorded observation"],[[
+ "CRM API","HubSpot 2026-09; two application GETs"],
+ ["Synthetic company","Cedar Services · 229684469730"],
+ ["Synthetic contact","Cedar Test Contact · 288567817180"],
+ ["Independent readback","Two HTTP 200 responses; all nine checks true"],
+ ["Initial negative","Unexpected extra company link failed authenticated acceptance"],
+ ["Owner-browser correction","Separately authorized relationship write, not an API GET"],
+ ["Corrected parser","Primary/unlabeled association types accepted for one identity; extra companies rejected"],
+ ["Credential scopes","companies.read and contacts.read only; no application CRM writes"]
+ ],"Recorded native read-only acceptance · bounded synthetic objects"));
+ box.append(finding("Readback does not establish acquisition admission","These verified native object GETs did not connect to the local admission workflow or demonstrate CDC, native write recovery, production reliability or revenue outcomes. The portal boundary was checked in the Service Key UI, not independently verified by object GETs."));
+ box.append(sourceLink("docs/evidence/hubspot-native/2026-11-08/README.md","Inspect native provider requests, independent checks and preserved failures"));
+ content.append(box);
+}else if(selected==="isolation"){
+ const box=section("A failing subsidiary must not contaminate healthy work.");
+ box.append(el("p","A separate deterministic synthetic workload used real PostgreSQL, independently persisted HTTP source feeds, internal receiver receipts and dbt across 3, 10, 25 and 50 fictional companies. This was not native multi-brand vendor ingestion."));
+ box.append(table(["Evidence boundary","50-company observation"],[
+ ["Company scopes","50 fictional companies; 149 canonical accounts"],
+ ["Local identities","All 50 reused local customer ID 100 without cross-company merging"],
+ ["Source outage","37 healthy companies progressed while one operations feed was stopped"],
+ ["Lock isolation","Blocked PostgreSQL backend confirmed; another company completed admission"],
+ ["Independent receiver","36 confirmed effects; one exhausted intent after three attempts"],
+ ["Applied duplicate effects","None in the bounded recorded workload"],
+ ["Financial gate","Missing allocation blocked all partial publication"],
+ ["Restated net invoicing","Synthetic USD $6,047,899.69; not recognized revenue"],
+ ["Unresolved posting variance","Synthetic USD $1,750 remained open"]
+ ],"Recorded local failure isolation · shared PostgreSQL and receiver remain failure domains"));
+ box.append(finding("Measured isolation is not a throughput SLA","The control API, PostgreSQL server, receiver and shared dbt build schema were not physically isolated for each company. Four concurrent workers and finite tests establish observed progress, not production capacity."));
+ box.append(sourceLink("docs/evidence/multi-company/README.md","Inspect measured runs, independent financial witnesses and screenshots"));
+ content.append(box);
+}else{
  const box=section("Executed evidence, independently inspectable boundaries.");const s=read("software.json"),b=read("browser.json");box.append(facts([["Historical software regression",s.tests+" passing tests"],["Historical source-console browser checks",b.checks.length],["Published rowsets compared offline","7 × 2 versions × 2 scenarios"],["dbt build nodes","9 models + 9 tests per successful publication"]]));
  inspect(box,"Inspect historical source regression case results",s);inspect(box,"Inspect fresh disposable-checkout source regression · 83 tests",read("source-regression.json"));inspect(box,"Inspect original real-browser observations and accessibility",b);inspect(box,"Inspect original independent financial recalculation and one-cent mutation test",read("independent-financial.json"));inspect(box,"Inspect recorded adversarial Pass 5 findings",ui.text("pass5-findings.md"));box.append(origin("pass5-findings.md","Open original review with its historical evidence links"));inspect(box,"Inspect identity negatives",read("identity-negative.json"));inspect(box,"Inspect overallocated payment and unpublished-report rejection",read("publication-negative.json"));
  const sqls=up.artifacts.filter(a=>a.file.startsWith("warehouse/models/")&&a.file.endsWith(".sql"));for(const a of sqls){const d=el("details"),code=ui.raw(ui.text(a.file));code.tabIndex=0;d.append(el("summary",a.file.split("/").at(-1)),code,origin(a.file,"Open original SQL"));box.append(d);}

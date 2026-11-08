@@ -18,8 +18,8 @@ def test_all_twelve_prior_investigations_and_540_evidence_files_survive():
     prior=json.loads((folder/'prior-main-ui.json').read_bytes())['files']
     before=json.loads(prior['web/catalog.json'])['scenarios']
     after=json.loads((ROOT/'web/catalog.json').read_bytes())['scenarios']
-    assert len(before)==21 and len(after)==23
-    assert len({c['investigation'] for c in after})==13
+    assert len(before)==21 and len(after)==24
+    assert len({c['investigation'] for c in after})==14
     assert all(row in after for row in before)
     old=json.loads(prior['sources.lock.json'])
     assert all(LOCK[k]==v for k,v in old.items() if k!='sources')

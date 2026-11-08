@@ -944,3 +944,10 @@ th {
 .research-rounds small { color:#526779; }
 @media(max-width:1100px) { .research-layout { grid-template-columns:1fr; } .research-queue { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; } .research-queue > h3,.research-queue > p,.research-queue > details { grid-column:1/-1; } }
 @media(max-width:520px) { .research-hero { padding:19px; } .research-hero h2 { font-size:24px; } .research-queue,.research-rounds { grid-template-columns:1fr; } }
+
+/* Keep exact annual amounts readable on very narrow acquisition views. */
+@media (max-width:400px) { .metrics.acquisition-metrics { grid-template-columns:1fr; } }
+
+.acquisition-investigation .analytics-table table.acquisition-pairs { min-width:0; width:100%; }
+
+.acquisition-investigation .acquisition-pairs th:nth-child(2) { width:48%; }

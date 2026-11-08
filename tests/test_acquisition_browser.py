@@ -10,8 +10,12 @@ def test_acquisition_identity_admission_receipts_financial_versions_and_download
   browser=p.chromium.launch();page=browser.new_page(viewport={"width":1440,"height":1100});errors=[];writes=[]
   page.on("pageerror",lambda e:errors.append(str(e)));page.on("request",lambda r:writes.append(r.url) if r.method!="GET" else None)
   page.goto(url+"/?case=acquisition-governance");page.get_by_role("heading",name="Same customer number. Different legal identities.").wait_for()
-  assert page.locator("[data-investigation]").count()==10
+  assert page.locator("[data-investigation]").count()==14
   page.get_by_role("button",name="Validate artifact integrity").click();page.locator("#status").filter(has_text="Artifact integrity verified").wait_for()
+  for stage,needle in [("hubspot","Two HTTP 200 responses"),("isolation","149 canonical accounts")]:
+   page.locator(f'[data-acquisition-stage="{stage}"]').click()
+   assert needle in page.locator(".acquisition-investigation").inner_text()
+  page.locator('[data-acquisition-stage="identity"]').click()
   for c in ["cedar","meridian","summit"]:page.get_by_label("Inspect an operating company").select_option(c)
   page.locator('[data-acquisition-stage="admission"]').focus();page.keyboard.press("Enter")
   page.get_by_role("heading",name="Readiness is a fresh computation, not a stored flag.",exact=True).wait_for()
