@@ -1,0 +1,30 @@
+{
+  "scope": "Read-only recorded evidence inspection",
+  "synthetic": true,
+  "new_source_execution": false,
+  "new_native_external_execution": false,
+  "summary": {
+    "sources": 3,
+    "source_positions": 11,
+    "row_accounting": {
+      "admitted": 27,
+      "duplicate": 2,
+      "quarantined": 2
+    },
+    "latest_records": 19,
+    "superseded": 8,
+    "rows": 6,
+    "active_run": 13,
+    "totals": {
+      "cost_cents": 41000,
+      "impressions": 4000,
+      "clicks": 400,
+      "conversions": 6,
+      "revenue_cents": 115000
+    },
+    "raw_source_rows_reconciled": 19,
+    "candidates": 13,
+    "native_external_execution": false,
+    "boundary": "Offline reconstruction of selected original records; no new source-engine, vendor or model execution."
+  }
+}

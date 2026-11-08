@@ -1,0 +1,43 @@
+{
+  "repository": "rlbsem/martech-data-reliability",
+  "import_revision": "225964aead1a3f697007605534613f5a813aaed9",
+  "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+  "artifacts": [
+    {
+      "file": "record.json",
+      "source_path": "docs/evidence/operations/run02/acceptance.json",
+      "sha256": "2f91c2805c192fb421a1fbd4133cd23a6e67d082b7fc1c0eb0cb33c5cc0bbd58",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/acceptance.json"
+    },
+    {
+      "file": "regression.json",
+      "source_path": "docs/evidence/operations/run02/verification.json",
+      "sha256": "7bfbedf1ceafb8cdb2e9180aa845686ed74dc84102c8626d068d33c3b4948684",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/verification.json"
+    },
+    {
+      "file": "crashes.json",
+      "source_path": "docs/evidence/operations/run02/original-recovery.json",
+      "sha256": "8a9d498b01e589ee06a7f2240362b4b9c28098dcb25840eb3eb90919223fe951",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/original-recovery.json"
+    },
+    {
+      "file": "contracts-source.py",
+      "source_path": "src/marketing_reliability/contracts.py",
+      "sha256": "c031e62080e92a486977940c00a44560cc407c7358745c62230949c2abfa02d3",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/contracts.py"
+    },
+    {
+      "file": "controller-source.py",
+      "source_path": "src/reliability_ops/controller.py",
+      "sha256": "428cd83c5c25efb1172624a5c071b845f17d27479d5399fab6c62772c0348e80",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/reliability_ops/controller.py"
+    },
+    {
+      "file": "publication.sql",
+      "source_path": "src/marketing_reliability/sql/campaign_daily.sql",
+      "sha256": "23324167067a04f934cf0c50fe03aa548e40531a1efce78c4cecfce38427881e",
+      "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/sql/campaign_daily.sql"
+    }
+  ]
+}

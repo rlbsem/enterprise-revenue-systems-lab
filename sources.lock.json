@@ -41,9 +41,25 @@
       "repository": "rlbsem/first-party-measurement-assurance",
       "commit": "88a197c761cfd167c19e3d23039948ffe6bb7f2b"
     },
-    "acquisition": {
-      "repository": "rlbsem/enterprise-acquisition-onboarding",
-      "commit": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3"
+    "estate": {
+      "repository": "rlbsem/martech-estate-impact",
+      "commit": "11890321d8cd6c164da236cad7896d00b6e0938e"
+    },
+    "reliability": {
+      "repository": "rlbsem/martech-data-reliability",
+      "commit": "225964aead1a3f697007605534613f5a813aaed9"
+    },
+    "temporal": {
+      "repository": "rlbsem/temporal-customer-audiences",
+      "commit": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc"
+    },
+    "economics": {
+      "repository": "rlbsem/martech-stack-economics",
+      "commit": "80cfd61882cd916406edf8b9fba6ba2ff02f4715"
+    },
+    "warehouse": {
+      "repository": "rlbsem/first-party-measurement-assurance",
+      "commit": "a1438e3eef101e23d61f0fd7889272098e50f9f6"
     }
   },
   "gtm_imports": {
@@ -970,245 +986,612 @@
       }
     ]
   },
-  "acquisition_import": {
-    "repository": "rlbsem/enterprise-acquisition-onboarding",
-    "import_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
-    "execution_note": "Source revision pins original bytes, not a new execution. Selected-period financial publications, governed delivery, annual publications and adversarial review retain their distinct execution provenance.",
-    "artifacts": [
-      {
-        "file": "demo.json",
-        "source_path": "docs/evidence/pass5/run01/demo.json",
-        "sha256": "447404eab463398940f7d30b47ef2cbf6b3e83d353b433a90c0ab8851a7849ee",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/demo.json"
-      },
-      {
-        "file": "governance.json",
-        "source_path": "docs/evidence/pass5/run01/pass2.json",
-        "sha256": "a8293b18d7057ca7d0a14244b47e95219b567a19a66a020989e8d89b9377c3e1",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass2.json"
-      },
-      {
-        "file": "selected-period.json",
-        "source_path": "docs/evidence/pass5/run01/pass3.json",
-        "sha256": "1722463c7b54ebac5f3b872dd48f2f215edee2a412bf43ee37622104a997b865",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass3.json"
-      },
-      {
-        "file": "annual.json",
-        "source_path": "docs/evidence/annual/run01/financial.json",
-        "sha256": "578d62bd6c3ca966ec14b3961cc7e2abf154adff37eb5c9de01daa086b6752f2",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/annual/run01/financial.json"
-      },
-      {
-        "file": "annual-execution.json",
-        "source_path": "docs/evidence/annual/run01/annual.json",
-        "sha256": "c5e93a5902eda3bb4a104f1fc36bf8415f99e7f99a8f646df472927527460975",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/annual/run01/annual.json"
-      },
-      {
-        "file": "browser.json",
-        "source_path": "docs/evidence/pass5/run01/pass4.json",
-        "sha256": "b9b09a9eb83f37957af9f0c0533d55b3a7e548be7043de127dc9a79da9e474f6",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/pass4.json"
-      },
-      {
-        "file": "software.json",
-        "source_path": "docs/evidence/pass5/run01/verification.json",
-        "sha256": "77127720a8dae10e7354e67ef755d8dd06b425ff0f469e83113ca03e8aee6bab",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/verification.json"
-      },
-      {
-        "file": "independent-financial.json",
-        "source_path": "docs/evidence/pass5/run01/independent-financial.json",
-        "sha256": "7275b408e146e2fc4c1d3ef24c937725da51340fb444bcb532cb2cea2904cd6e",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/independent-financial.json"
-      },
-      {
-        "file": "historical-authority.json",
-        "source_path": "docs/evidence/pass5/run01/historical-authority.json",
-        "sha256": "703e92c20bac9b101054859cb6a0df21695c00c35a029d4e1feadfb2ada01b59",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/historical-authority.json"
-      },
-      {
-        "file": "identity-negative.json",
-        "source_path": "docs/evidence/pass5/run01/identity-negative.json",
-        "sha256": "d8570a2747177f4307e0ac675662b3bf9b135ace2873316177b09c136b401ee5",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/identity-negative.json"
-      },
-      {
-        "file": "publication-negative.json",
-        "source_path": "docs/evidence/pass5/run01/payment-and-publication-negative.json",
-        "sha256": "fd9784eacc94ee17bd1586c58be14a5bef74198cc99d924a2bd9f62315a43938",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/payment-and-publication-negative.json"
-      },
-      {
-        "file": "exhaustion.json",
-        "source_path": "docs/evidence/pass5/run01/exhaustion.json",
-        "sha256": "4bb43c038ba5a95c7b9854f6bd88ff95eccd59d6ab58c69be9f30cdb6f2fa819",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/exhaustion.json"
-      },
-      {
-        "file": "process-death.json",
-        "source_path": "docs/evidence/pass5/run01/process-death.json",
-        "sha256": "f1c0193bc7e4ebf64248c1a360819557992038f10d4274b42f45d694e2c84dc6",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/process-death.json"
-      },
-      {
-        "file": "financial-oracle.py",
-        "source_path": "src/onboarding/financial_oracle.py",
-        "sha256": "36d63b544d6184f628af16911fadf51a4f93a4b101942db99304d354051e173c",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/src/onboarding/financial_oracle.py"
-      },
-      {
-        "file": "mapping-fixtures.py",
-        "source_path": "src/onboarding/fixtures.py",
-        "sha256": "0e46fd4f5c92dd8a4b7ba90049a59885f05bed04f040f72d64d594f6d1a7b9f6",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/src/onboarding/fixtures.py"
-      },
-      {
-        "file": "admission-contract.md",
-        "source_path": "docs/admission-contract.md",
-        "sha256": "14f28293d7d9c425fef945f5c386de3a0d2b30238858f2b7e36982ec1c950665",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/admission-contract.md"
-      },
-      {
-        "file": "governed-execution.md",
-        "source_path": "docs/governed-execution.md",
-        "sha256": "e625d8d3f0b8fce8ec75eb8a64ae22725360a2e1b5ccc5f9cb700a756c56ced1",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/governed-execution.md"
-      },
-      {
-        "file": "financial-reporting.md",
-        "source_path": "docs/financial-reporting.md",
-        "sha256": "8117f7d3c0463e00836043efdfb43d71d14c90735fbc1b33f7c353f4e5a79906",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/financial-reporting.md"
-      },
-      {
-        "file": "pass5-findings.md",
-        "source_path": "docs/evidence/pass5/findings.md",
-        "sha256": "21be26e66915146b70a080e41143f6bd8d51d9651821a1d7cca69fd6d0b9b596",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/findings.md"
-      },
-      {
-        "file": "authorization-admission.json",
-        "source_path": "docs/evidence/pass5/run01/authorization-admission.json",
-        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-admission.json"
-      },
-      {
-        "file": "authorization-business.json",
-        "source_path": "docs/evidence/pass5/run01/authorization-business.json",
-        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-business.json"
-      },
-      {
-        "file": "authorization-mapping.json",
-        "source_path": "docs/evidence/pass5/run01/authorization-mapping.json",
-        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-mapping.json"
-      },
-      {
-        "file": "authorization-source_revision.json",
-        "source_path": "docs/evidence/pass5/run01/authorization-source_revision.json",
-        "sha256": "3e79e1a450ef17ded8819c7e3ebdc5461ff052c258cb318900ddd4d62d771fa4",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/docs/evidence/pass5/run01/authorization-source_revision.json"
-      },
-      {
-        "file": "warehouse/dbt_project.yml",
-        "source_path": "warehouse/dbt_project.yml",
-        "sha256": "7e7ec60047cd4b2daf12152096d0bbe1a06cb860dc7d28c41e305e16f9d85931",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/dbt_project.yml"
-      },
-      {
-        "file": "warehouse/models/dim_reporting_entities.sql",
-        "source_path": "warehouse/models/dim_reporting_entities.sql",
-        "sha256": "0d5f0e661a06efb746d479b9fce852db5a20dc812c3e70a7e6c54f0306dd7c23",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/dim_reporting_entities.sql"
-      },
-      {
-        "file": "warehouse/models/fct_allocations.sql",
-        "source_path": "warehouse/models/fct_allocations.sql",
-        "sha256": "99fc791473505e384d0cb9cca5a0274ec4c232afa17fd2e3434d7a719be39a10",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/fct_allocations.sql"
-      },
-      {
-        "file": "warehouse/models/fct_invoices.sql",
-        "source_path": "warehouse/models/fct_invoices.sql",
-        "sha256": "cae735450bb22cfa814cec0ead70a34db6a7d1bfc7181e42e1e2abe6b7302936",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/fct_invoices.sql"
-      },
-      {
-        "file": "warehouse/models/intercompany_eliminations.sql",
-        "source_path": "warehouse/models/intercompany_eliminations.sql",
-        "sha256": "efedc1a7ec585d9e7d68e16001d652a46592c5bd16085aaed9849c6f616b4892",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/intercompany_eliminations.sql"
-      },
-      {
-        "file": "warehouse/models/legal_entity_totals.sql",
-        "source_path": "warehouse/models/legal_entity_totals.sql",
-        "sha256": "5a441db535bcc9f5dc56d2441e43ca40e08eb23e8947ee56885e6b8259934f94",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/legal_entity_totals.sql"
-      },
-      {
-        "file": "warehouse/models/portfolio_totals.sql",
-        "source_path": "warehouse/models/portfolio_totals.sql",
-        "sha256": "7a89569963ff5d3f280675dde297769bda4d22b2db8f2bc545f077e10c91785f",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/portfolio_totals.sql"
-      },
-      {
-        "file": "warehouse/models/reconciliation_variances.sql",
-        "source_path": "warehouse/models/reconciliation_variances.sql",
-        "sha256": "51428689cb1b466b2b745593d293ba0533c80654c112c0b751f65b25d9d58398",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/reconciliation_variances.sql"
-      },
-      {
-        "file": "warehouse/models/restatement_bridge.sql",
-        "source_path": "warehouse/models/restatement_bridge.sql",
-        "sha256": "c0039be53be5c58d1901368580578b13143c16db6aeeb90a10cf2c2da79b4b69",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/restatement_bridge.sql"
-      },
-      {
-        "file": "warehouse/models/schema.yml",
-        "source_path": "warehouse/models/schema.yml",
-        "sha256": "43191fbc07ab618b868af460c946ed90083562de488a336259d5f83723790e49",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/schema.yml"
-      },
-      {
-        "file": "warehouse/models/stg_financial.sql",
-        "source_path": "warehouse/models/stg_financial.sql",
-        "sha256": "ef2459d475492e9a8957378a3adb6e78509a19e984c4946cb0b3244b9ef9da6b",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/models/stg_financial.sql"
-      },
-      {
-        "file": "warehouse/tests/financial_amount_controls.sql",
-        "source_path": "warehouse/tests/financial_amount_controls.sql",
-        "sha256": "4e295b14bf361de12d6eb8d2e61e47ba9073cca6699632c3372de77e08650a10",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_amount_controls.sql"
-      },
-      {
-        "file": "warehouse/tests/financial_grains.sql",
-        "source_path": "warehouse/tests/financial_grains.sql",
-        "sha256": "aece6ca5824c2154b0e50b79e8f82524ffb00eaceae3b2ba417ae085eafc7c87",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_grains.sql"
-      },
-      {
-        "file": "warehouse/tests/financial_references.sql",
-        "source_path": "warehouse/tests/financial_references.sql",
-        "sha256": "ca9e535d06ec14262a079424a075306d1b7467fc3d8c08e0c531fdce78fd7e1e",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_references.sql"
-      },
-      {
-        "file": "warehouse/tests/financial_scope.sql",
-        "source_path": "warehouse/tests/financial_scope.sql",
-        "sha256": "75c311e5e19db647afe3458c40e5f4c32e0080428576d0bc1b4d206ab9891422",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/financial_scope.sql"
-      },
-      {
-        "file": "warehouse/tests/rollup_and_bridge.sql",
-        "source_path": "warehouse/tests/rollup_and_bridge.sql",
-        "sha256": "a8809de6b1c3759d4e93f1f4fc5644cb096b75735643672c2942d416e0dd698e",
-        "source_url": "https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/3a1d6d7de9447a101f8f8414c50ace9f2171ebc3/warehouse/tests/rollup_and_bridge.sql"
-      }
-    ]
+  "assurance_imports": {
+    "estate-assurance": {
+      "repository": "rlbsem/martech-estate-impact",
+      "import_revision": "11890321d8cd6c164da236cad7896d00b6e0938e",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/change-assurance/run-03/estate-record.json",
+          "sha256": "8cb57cfe7056dfd03b10e5a52daf386ba0c77ea725e0f473f3d36c2de94b03c9",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/estate-record.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/change-assurance/run-03/verification.json",
+          "sha256": "579f498c721e3167bf25dfd10f51e1a7086311bcb03cd952df23a7b6dd1c57f0",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/verification.json"
+        },
+        {
+          "file": "comparison.json",
+          "source_path": "docs/evidence/change-assurance/run-03/oracle-comparison.json",
+          "sha256": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/docs/evidence/change-assurance/run-03/oracle-comparison.json"
+        },
+        {
+          "file": "catalog-source.json",
+          "source_path": "fixtures/change-assurance/catalog.json",
+          "sha256": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/catalog.json"
+        },
+        {
+          "file": "cmdb.csv",
+          "source_path": "fixtures/change-assurance/cmdb.csv",
+          "sha256": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/cmdb.csv"
+        },
+        {
+          "file": "owner-source.json",
+          "source_path": "fixtures/change-assurance/owner.json",
+          "sha256": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/owner.json"
+        },
+        {
+          "file": "registry-source.json",
+          "source_path": "fixtures/change-assurance/registry.json",
+          "sha256": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/registry.json"
+        },
+        {
+          "file": "execution-source.json",
+          "source_path": "fixtures/change-assurance/execution.json",
+          "sha256": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/fixtures/change-assurance/execution.json"
+        },
+        {
+          "file": "requirement-engine.py",
+          "source_path": "src/estate_impact/requirements.py",
+          "sha256": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_impact/requirements.py"
+        },
+        {
+          "file": "governance-source.py",
+          "source_path": "src/estate_change/service.py",
+          "sha256": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/service.py"
+        },
+        {
+          "file": "governance.sql",
+          "source_path": "src/estate_change/schema.sql",
+          "sha256": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566",
+          "source_url": "https://github.com/rlbsem/martech-estate-impact/blob/11890321d8cd6c164da236cad7896d00b6e0938e/src/estate_change/schema.sql"
+        }
+      ]
+    },
+    "reliability-operations": {
+      "repository": "rlbsem/martech-data-reliability",
+      "import_revision": "225964aead1a3f697007605534613f5a813aaed9",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/operations/run02/acceptance.json",
+          "sha256": "2f91c2805c192fb421a1fbd4133cd23a6e67d082b7fc1c0eb0cb33c5cc0bbd58",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/acceptance.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/operations/run02/verification.json",
+          "sha256": "7bfbedf1ceafb8cdb2e9180aa845686ed74dc84102c8626d068d33c3b4948684",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/verification.json"
+        },
+        {
+          "file": "crashes.json",
+          "source_path": "docs/evidence/operations/run02/original-recovery.json",
+          "sha256": "8a9d498b01e589ee06a7f2240362b4b9c28098dcb25840eb3eb90919223fe951",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/docs/evidence/operations/run02/original-recovery.json"
+        },
+        {
+          "file": "contracts-source.py",
+          "source_path": "src/marketing_reliability/contracts.py",
+          "sha256": "c031e62080e92a486977940c00a44560cc407c7358745c62230949c2abfa02d3",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/contracts.py"
+        },
+        {
+          "file": "controller-source.py",
+          "source_path": "src/reliability_ops/controller.py",
+          "sha256": "428cd83c5c25efb1172624a5c071b845f17d27479d5399fab6c62772c0348e80",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/reliability_ops/controller.py"
+        },
+        {
+          "file": "publication.sql",
+          "source_path": "src/marketing_reliability/sql/campaign_daily.sql",
+          "sha256": "23324167067a04f934cf0c50fe03aa548e40531a1efce78c4cecfce38427881e",
+          "source_url": "https://github.com/rlbsem/martech-data-reliability/blob/225964aead1a3f697007605534613f5a813aaed9/src/marketing_reliability/sql/campaign_daily.sql"
+        }
+      ]
+    },
+    "temporal-assurance": {
+      "repository": "rlbsem/temporal-customer-audiences",
+      "import_revision": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc",
+      "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+      "artifacts": [
+        {
+          "file": "record.json",
+          "source_path": "docs/evidence/activation-assurance/run02/acceptance.json",
+          "sha256": "009d56e2084ede3c8c0c71165a721fd7e646cd8da6606f201da7f44b192074d6",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/acceptance.json"
+        },
+        {
+          "file": "regression.json",
+          "source_path": "docs/evidence/activation-assurance/run02/verification.json",
+          "sha256": "082ad60a0d96d1a9ba1d9b68a8cb39368e3058bc3d33b225fca5572328a6a09e",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/verification.json"
+        },
+        {
+          "file": "temporal-proof.json",
+          "source_path": "docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json",
+          "sha256": "718b6239b6ce4298c30832df790418776f503d051552f5a839c6e3dba8b54881",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json"
+        },
+        {
+          "file": "ci-record.json",
+          "source_path": "docs/evidence/activation-assurance/ci-execution.json",
+          "sha256": "8967bdefae699495f004e861b70f110a51df5328720f4aa7b61ed836ca673ef8",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/ci-execution.json"
+        },
+        {
+          "file": "operating.sql",
+          "source_path": "src/audience_ops/operating.sql",
+          "sha256": "a3755f0c152c235dea91ff1b722eb0cf79689058654ec1e19fe62e6a3799a94a",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/operating.sql"
+        },
+        {
+          "file": "permission-source.py",
+          "source_path": "src/audience_ops/activation.py",
+          "sha256": "2ad6d0a0e5eb515de4fefe37c153c7022317dc48877904603375428983915f7e",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/activation.py"
+        },
+        {
+          "file": "delivery-source.py",
+          "source_path": "src/audience_ops/worker.py",
+          "sha256": "13a3461b39e1459131fda1aed6c1f09ccef7bb29bc049516698d22d1aa6fe248",
+          "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/worker.py"
+        }
+      ]
+    }
+  },
+  "integration_imports": {
+    "economics-integration": {
+      "repository": "rlbsem/martech-stack-economics",
+      "import_revision": "80cfd61882cd916406edf8b9fba6ba2ff02f4715",
+      "artifacts": [
+        {
+          "file": "acceptance.json",
+          "source_path": "docs/evidence/enterprise/acceptance/verification.json",
+          "sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+          "source_sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/enterprise/acceptance/verification.json"
+        },
+        {
+          "file": "accounting-source.py",
+          "source_path": "src/stack_economics/enterprise/accounting.py",
+          "sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+          "source_sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/src/stack_economics/enterprise/accounting.py"
+        },
+        {
+          "file": "contract-source.py",
+          "source_path": "src/stack_economics/enterprise/contract.py",
+          "sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+          "source_sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/src/stack_economics/enterprise/contract.py"
+        },
+        {
+          "file": "decision.json",
+          "source_path": "docs/evidence/enterprise/acceptance/decision.json",
+          "sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+          "source_sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/enterprise/acceptance/decision.json"
+        },
+        {
+          "file": "http-summary.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/summary.json",
+          "sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+          "source_sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/summary.json"
+        },
+        {
+          "file": "http/capacity-revision-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/capacity-revision/result.json",
+          "sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+          "source_sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/capacity-revision/result.json"
+        },
+        {
+          "file": "http/delayed-source-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/delayed-source/result.json",
+          "sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+          "source_sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/delayed-source/result.json"
+        },
+        {
+          "file": "http/launch-surge-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/launch-surge/result.json",
+          "sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+          "source_sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/launch-surge/result.json"
+        },
+        {
+          "file": "http/normal-journal.txt",
+          "source_path": "docs/evidence/execution/acceptance/execution/normal/observations.json.gz",
+          "sha256": "8ef90305ebd86d4207bb74e1143c9e3f70a07fa59358012e3e1328140f24bd2e",
+          "source_sha256": "9041bd48b468024523f1c1a6bb5ef0738e0a56c4e1c5450d15d46a783cca22ce",
+          "encoding": "base64-gzip",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/normal/observations.json.gz"
+        },
+        {
+          "file": "http/normal-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/normal/result.json",
+          "sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+          "source_sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/normal/result.json"
+        },
+        {
+          "file": "http/revoked-permission-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/revoked-permission/result.json",
+          "sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+          "source_sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/revoked-permission/result.json"
+        },
+        {
+          "file": "http/shared-quota-pressure-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/shared-quota-pressure/result.json",
+          "sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+          "source_sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/shared-quota-pressure/result.json"
+        },
+        {
+          "file": "http/slow-destination-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/slow-destination/result.json",
+          "sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+          "source_sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/slow-destination/result.json"
+        },
+        {
+          "file": "http/transient-recovery-journal.txt",
+          "source_path": "docs/evidence/execution/acceptance/execution/transient-recovery/observations.json.gz",
+          "sha256": "71bdfc6ad87545bbea6820640578660f0e90075751348feee55f7236d21d2afb",
+          "source_sha256": "e57278ea0e99d1f34f831c18cc4cabdadf4eecfb34a680968c0aa79b5b4f9571",
+          "encoding": "base64-gzip",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/transient-recovery/observations.json.gz"
+        },
+        {
+          "file": "http/transient-recovery-result.json",
+          "source_path": "docs/evidence/execution/acceptance/execution/transient-recovery/result.json",
+          "sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+          "source_sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/docs/evidence/execution/acceptance/execution/transient-recovery/result.json"
+        },
+        {
+          "file": "scenario.json",
+          "source_path": "fixtures/enterprise/multibrand-2026.json",
+          "sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+          "source_sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+          "encoding": "original",
+          "source_url": "https://github.com/rlbsem/martech-stack-economics/blob/80cfd61882cd916406edf8b9fba6ba2ff02f4715/fixtures/enterprise/multibrand-2026.json"
+        }
+      ],
+      "execution_note": "Imported committed records; importing and offline inspection do not repeat source execution."
+    },
+    "warehouse-verification": {
+      "repository": "rlbsem/first-party-measurement-assurance",
+      "import_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+      "artifacts": [
+        {
+          "file": "access.json",
+          "source_path": "docs/evidence/warehouse-review/access-assessment.json",
+          "sha256": "561318576ff282fbb9ab5e33f79e2d5f7476cca3dd55cd2741ad3138eaa83d1d",
+          "source_sha256": "561318576ff282fbb9ab5e33f79e2d5f7476cca3dd55cd2741ad3138eaa83d1d",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/access-assessment.json"
+        },
+        {
+          "file": "application.json",
+          "source_path": "docs/evidence/warehouse-review/local/application-verification.json",
+          "sha256": "3d0db3bce2beaea3a9dd4994b94888914561a2e9b40547624790528e9977e0f4",
+          "source_sha256": "3d0db3bce2beaea3a9dd4994b94888914561a2e9b40547624790528e9977e0f4",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/local/application-verification.json"
+        },
+        {
+          "file": "bigquery/warehouse_job_metadata.sql",
+          "source_path": "bigquery/warehouse_job_metadata.sql",
+          "sha256": "15f488af5cd3e3ba3253ffde469d762e42d7e080d14ff70dceaf0f5f4c2e01b6",
+          "source_sha256": "15f488af5cd3e3ba3253ffde469d762e42d7e080d14ff70dceaf0f5f4c2e01b6",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/bigquery/warehouse_job_metadata.sql"
+        },
+        {
+          "file": "bigquery/warehouse_models_preview.sql",
+          "source_path": "bigquery/warehouse_models_preview.sql",
+          "sha256": "f0aae01795260beaeb20196a8f93193c23d874b29d6654e0ee5aff2244228752",
+          "source_sha256": "f0aae01795260beaeb20196a8f93193c23d874b29d6654e0ee5aff2244228752",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/bigquery/warehouse_models_preview.sql"
+        },
+        {
+          "file": "bigquery/warehouse_source_oracle.sql",
+          "source_path": "bigquery/warehouse_source_oracle.sql",
+          "sha256": "6f5d3aef7e43773c202d1339644f40fd69c62717d8d8cfd49d2dcaf44ef60b43",
+          "source_sha256": "6f5d3aef7e43773c202d1339644f40fd69c62717d8d8cfd49d2dcaf44ef60b43",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/bigquery/warehouse_source_oracle.sql"
+        },
+        {
+          "file": "ga4_pipeline/macros/source_relations.sql",
+          "source_path": "ga4_pipeline/macros/source_relations.sql",
+          "sha256": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+          "source_sha256": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/macros/source_relations.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/fct_ga4_events.sql",
+          "source_path": "ga4_pipeline/models/fct_ga4_events.sql",
+          "sha256": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+          "source_sha256": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/fct_ga4_events.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/fct_ga4_items.sql",
+          "source_path": "ga4_pipeline/models/fct_ga4_items.sql",
+          "sha256": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+          "source_sha256": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/fct_ga4_items.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/mart_ga4_daily.sql",
+          "source_path": "ga4_pipeline/models/mart_ga4_daily.sql",
+          "sha256": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+          "source_sha256": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/mart_ga4_daily.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/mart_ga4_purchase_quality.sql",
+          "source_path": "ga4_pipeline/models/mart_ga4_purchase_quality.sql",
+          "sha256": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+          "source_sha256": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/mart_ga4_purchase_quality.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/mart_ga4_sessions.sql",
+          "source_path": "ga4_pipeline/models/mart_ga4_sessions.sql",
+          "sha256": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+          "source_sha256": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/mart_ga4_sessions.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/staging/stg_event_versions.sql",
+          "source_path": "ga4_pipeline/models/staging/stg_event_versions.sql",
+          "sha256": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+          "source_sha256": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/staging/stg_event_versions.sql"
+        },
+        {
+          "file": "ga4_pipeline/models/staging/stg_item_versions.sql",
+          "source_path": "ga4_pipeline/models/staging/stg_item_versions.sql",
+          "sha256": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+          "source_sha256": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/models/staging/stg_item_versions.sql"
+        },
+        {
+          "file": "ga4_pipeline/seeds/raw_ga4_events.csv",
+          "source_path": "ga4_pipeline/seeds/raw_ga4_events.csv",
+          "sha256": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+          "source_sha256": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/seeds/raw_ga4_events.csv"
+        },
+        {
+          "file": "ga4_pipeline/seeds/raw_ga4_items.csv",
+          "source_path": "ga4_pipeline/seeds/raw_ga4_items.csv",
+          "sha256": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+          "source_sha256": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/seeds/raw_ga4_items.csv"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_item_grain.sql",
+          "source_path": "ga4_pipeline/tests/assert_item_grain.sql",
+          "sha256": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+          "source_sha256": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_item_grain.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_item_version_identity.sql",
+          "source_path": "ga4_pipeline/tests/assert_item_version_identity.sql",
+          "sha256": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+          "source_sha256": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_item_version_identity.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_landing_values.sql",
+          "source_path": "ga4_pipeline/tests/assert_landing_values.sql",
+          "sha256": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+          "source_sha256": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_landing_values.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_mart_reconciliation.sql",
+          "source_path": "ga4_pipeline/tests/assert_mart_reconciliation.sql",
+          "sha256": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+          "source_sha256": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_mart_reconciliation.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_no_regression.sql",
+          "source_path": "ga4_pipeline/tests/assert_no_regression.sql",
+          "sha256": "6011761773265245c9ca3fc72e4d7e63cb85a40100460aba4ce3d707ecd5ea4d",
+          "source_sha256": "6011761773265245c9ca3fc72e4d7e63cb85a40100460aba4ce3d707ecd5ea4d",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_no_regression.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_purchase_item_conservation.sql",
+          "source_path": "ga4_pipeline/tests/assert_purchase_item_conservation.sql",
+          "sha256": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+          "source_sha256": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_purchase_item_conservation.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_quality_flags.sql",
+          "source_path": "ga4_pipeline/tests/assert_quality_flags.sql",
+          "sha256": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+          "source_sha256": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_quality_flags.sql"
+        },
+        {
+          "file": "ga4_pipeline/tests/assert_source_version_identity.sql",
+          "source_path": "ga4_pipeline/tests/assert_source_version_identity.sql",
+          "sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+          "source_sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/ga4_pipeline/tests/assert_source_version_identity.sql"
+        },
+        {
+          "file": "guard.json",
+          "source_path": "docs/evidence/warehouse-review/local/guard-observations.json",
+          "sha256": "b743d464373f055b90b5afc4b861d9b02586f9b49b14dfd7353ae746e67464e8",
+          "source_sha256": "b743d464373f055b90b5afc4b861d9b02586f9b49b14dfd7353ae746e67464e8",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/local/guard-observations.json"
+        },
+        {
+          "file": "jobs.json",
+          "source_path": "docs/evidence/warehouse-review/native-readonly/job-statistics-results.json",
+          "sha256": "c535ebe22e3bd786b881a2c89ec0643a6609f80d995cf790709ef3033b1cb0e2",
+          "source_sha256": "c535ebe22e3bd786b881a2c89ec0643a6609f80d995cf790709ef3033b1cb0e2",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/native-readonly/job-statistics-results.json"
+        },
+        {
+          "file": "local.json",
+          "source_path": "docs/evidence/warehouse-review/local/complete-oracle-acceptance.json",
+          "sha256": "2a91f12116ce5badbadc0881ded6d9d491dcfc1f8ccd032432b518413d511cc6",
+          "source_sha256": "2a91f12116ce5badbadc0881ded6d9d491dcfc1f8ccd032432b518413d511cc6",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/local/complete-oracle-acceptance.json"
+        },
+        {
+          "file": "model-results.json",
+          "source_path": "docs/evidence/warehouse-review/native-readonly/model-results.json",
+          "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+          "source_sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/native-readonly/model-results.json"
+        },
+        {
+          "file": "native.json",
+          "source_path": "docs/evidence/warehouse-review/native-readonly/acceptance.json",
+          "sha256": "b3efbf632e61267bc74f750ac76e81d3e87a650637233495cf224f439aa84331",
+          "source_sha256": "b3efbf632e61267bc74f750ac76e81d3e87a650637233495cf224f439aa84331",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/native-readonly/acceptance.json"
+        },
+        {
+          "file": "scripts/bigquery_oracle.py",
+          "source_path": "scripts/bigquery_oracle.py",
+          "sha256": "14efada7d849116e832f24607907ddf6b11532bc2f647730e8103300860d5888",
+          "source_sha256": "14efada7d849116e832f24607907ddf6b11532bc2f647730e8103300860d5888",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/scripts/bigquery_oracle.py"
+        },
+        {
+          "file": "scripts/verify_ga4_current.py",
+          "source_path": "scripts/verify_ga4_current.py",
+          "sha256": "98281b7b6a571d3d132c7a40c34cf6a5f1f9b852ff5f8f6e9cd6686b88c347d6",
+          "source_sha256": "98281b7b6a571d3d132c7a40c34cf6a5f1f9b852ff5f8f6e9cd6686b88c347d6",
+          "encoding": "original",
+          "blob_revision": "9280b813422c5f1861e701034152a73305953089",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/9280b813422c5f1861e701034152a73305953089/scripts/verify_ga4_current.py"
+        },
+        {
+          "file": "scripts/verify_ga4_pipeline.py",
+          "source_path": "scripts/verify_ga4_pipeline.py",
+          "sha256": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+          "source_sha256": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/scripts/verify_ga4_pipeline.py"
+        },
+        {
+          "file": "scripts/warehouse_preview.py",
+          "source_path": "scripts/warehouse_preview.py",
+          "sha256": "68b7a54f749dbf86e806ae3f9cc9c841021a1b8587c695655a8ec0241b8a705c",
+          "source_sha256": "68b7a54f749dbf86e806ae3f9cc9c841021a1b8587c695655a8ec0241b8a705c",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/scripts/warehouse_preview.py"
+        },
+        {
+          "file": "source-results.json",
+          "source_path": "docs/evidence/warehouse-review/native-readonly/source-results.json",
+          "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+          "source_sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+          "encoding": "original",
+          "blob_revision": "a1438e3eef101e23d61f0fd7889272098e50f9f6",
+          "source_url": "https://github.com/rlbsem/first-party-measurement-assurance/blob/a1438e3eef101e23d61f0fd7889272098e50f9f6/docs/evidence/warehouse-review/native-readonly/source-results.json"
+        }
+      ],
+      "execution_note": "Imported committed records; importing and offline inspection do not repeat source execution."
+    }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "repository": "rlbsem/temporal-customer-audiences",
+  "import_revision": "5488c4796b6789d4df470d77ac12f9ee4a0c18bc",
+  "execution_note": "The import pins current main, not execution time. Original source hashes, execution revisions, clocks and native/local boundaries remain inside unmodified records.",
+  "artifacts": [
+    {
+      "file": "record.json",
+      "source_path": "docs/evidence/activation-assurance/run02/acceptance.json",
+      "sha256": "009d56e2084ede3c8c0c71165a721fd7e646cd8da6606f201da7f44b192074d6",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/acceptance.json"
+    },
+    {
+      "file": "regression.json",
+      "source_path": "docs/evidence/activation-assurance/run02/verification.json",
+      "sha256": "082ad60a0d96d1a9ba1d9b68a8cb39368e3058bc3d33b225fca5572328a6a09e",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/verification.json"
+    },
+    {
+      "file": "temporal-proof.json",
+      "source_path": "docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json",
+      "sha256": "718b6239b6ce4298c30832df790418776f503d051552f5a839c6e3dba8b54881",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/run02/original-demo/temporal-proof.json"
+    },
+    {
+      "file": "ci-record.json",
+      "source_path": "docs/evidence/activation-assurance/ci-execution.json",
+      "sha256": "8967bdefae699495f004e861b70f110a51df5328720f4aa7b61ed836ca673ef8",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/docs/evidence/activation-assurance/ci-execution.json"
+    },
+    {
+      "file": "operating.sql",
+      "source_path": "src/audience_ops/operating.sql",
+      "sha256": "a3755f0c152c235dea91ff1b722eb0cf79689058654ec1e19fe62e6a3799a94a",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/operating.sql"
+    },
+    {
+      "file": "permission-source.py",
+      "source_path": "src/audience_ops/activation.py",
+      "sha256": "2ad6d0a0e5eb515de4fefe37c153c7022317dc48877904603375428983915f7e",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/activation.py"
+    },
+    {
+      "file": "delivery-source.py",
+      "source_path": "src/audience_ops/worker.py",
+      "sha256": "13a3461b39e1459131fda1aed6c1f09ccef7bb29bc049516698d22d1aa6fe248",
+      "source_url": "https://github.com/rlbsem/temporal-customer-audiences/blob/5488c4796b6789d4df470d77ac12f9ee4a0c18bc/src/audience_ops/worker.py"
+    }
+  ]
+}

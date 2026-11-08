@@ -1,0 +1,16 @@
+{
+  "native_row_counts": {
+    "daily": 1,
+    "events": 1856,
+    "items": 4828,
+    "purchases": 14,
+    "sessions": 12
+  },
+  "bytes_processed": 19631768,
+  "native_data_jobs": 2,
+  "complete_local_rowsets": 5,
+  "negative_guard_cases": 14,
+  "original_missed_cases": 8,
+  "native_dbt_build": false,
+  "native_incremental_merge": false
+}

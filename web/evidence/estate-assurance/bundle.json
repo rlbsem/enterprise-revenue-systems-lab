@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "scenario": "estate-assurance",
+  "source": {
+    "repository": "rlbsem/martech-estate-impact",
+    "commit": "11890321d8cd6c164da236cad7896d00b6e0938e"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-27T21:17:39.288879+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "record.json",
+      "sha256": "8cb57cfe7056dfd03b10e5a52daf386ba0c77ea725e0f473f3d36c2de94b03c9",
+      "bytes": 457753
+    },
+    {
+      "path": "regression.json",
+      "sha256": "579f498c721e3167bf25dfd10f51e1a7086311bcb03cd952df23a7b6dd1c57f0",
+      "bytes": 19320
+    },
+    {
+      "path": "comparison.json",
+      "sha256": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a",
+      "bytes": 10362
+    },
+    {
+      "path": "catalog-source.json",
+      "sha256": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+      "bytes": 7320
+    },
+    {
+      "path": "cmdb.csv",
+      "sha256": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32",
+      "bytes": 435
+    },
+    {
+      "path": "owner-source.json",
+      "sha256": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+      "bytes": 8948
+    },
+    {
+      "path": "registry-source.json",
+      "sha256": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+      "bytes": 1553
+    },
+    {
+      "path": "execution-source.json",
+      "sha256": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+      "bytes": 283
+    },
+    {
+      "path": "requirement-engine.py",
+      "sha256": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+      "bytes": 4614
+    },
+    {
+      "path": "governance-source.py",
+      "sha256": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+      "bytes": 12789
+    },
+    {
+      "path": "governance.sql",
+      "sha256": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566",
+      "bytes": 3026
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "4e973db25947b781400c1209bc7982858afe4e5889ecec8dbccea220dbc506e9",
+      "bytes": 4226
+    },
+    {
+      "path": "projection.json",
+      "sha256": "b8b780f88c780d435f5ff3019ef254657a705ddb8375fc118935681980276e9e",
+      "bytes": 495
+    },
+    {
+      "path": "observation.json",
+      "sha256": "d124f673456e61d5fe5aa447715de239bf6fd91efb1c5f8dc4f08bf5ac954bdc",
+      "bytes": 695
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "540ba0a2e564f7dc98b0b6067cc3b9c2499e4a077cdcbd0de4c9de882672b508",
+      "bytes": 794
+    }
+  ],
+  "limitations": [
+    "All companies, people, source feeds, financial values and destination effects are synthetic. No customer result, causal uplift, vendor certification or production reliability is established.",
+    "Original records describe executed local software and independent synthetic source/receiver services. They are not native marketing-platform acceptance or a continuous workflow shared with other investigations.",
+    "This browser replays records. Its offline checker reconstructs selected relationships, arithmetic and temporal answers; it does not rerun the source engines, authorize changes, contact a person or connect to a live database.",
+    "Captured approvals, permissions, coverage and readiness describe the recorded clock only. Historical receipts and restatements never authorize a new present-day action."
+  ],
+  "input_hashes": {
+    "record.json": "8cb57cfe7056dfd03b10e5a52daf386ba0c77ea725e0f473f3d36c2de94b03c9",
+    "regression.json": "579f498c721e3167bf25dfd10f51e1a7086311bcb03cd952df23a7b6dd1c57f0",
+    "comparison.json": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a",
+    "catalog-source.json": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+    "cmdb.csv": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32",
+    "owner-source.json": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+    "registry-source.json": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+    "execution-source.json": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+    "requirement-engine.py": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+    "governance-source.py": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+    "governance.sql": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566"
+  },
+  "reproduce": [
+    "git clone https://github.com/rlbsem/martech-estate-impact",
+    "git -C martech-estate-impact checkout 11890321d8cd6c164da236cad7896d00b6e0938e",
+    "python scripts/import_assurance.py estate-assurance <source-git-checkout> # only in a fresh Lab checkout without this imported case",
+    "python -m revenue_lab.cli verify web/evidence/estate-assurance"
+  ],
+  "configuration_hash": "89337c73f25aa1bce9c1b39e981c9e36861941ffd9078536c93a1c70219a673c"
+}

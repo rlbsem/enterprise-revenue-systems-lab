@@ -8,8 +8,16 @@ from pathlib import Path
 from .bundle import ROOT, verify, write_json
 
 SCENARIOS = {
-    "acquisition-governance": ("acquisition", "M&A Systems Integration — Acquisition Readiness & Financial Governance",
-        "Inspect scoped identities, reviewed acquisition admission, independently receipted execution and separate selected-period/annual financial publications."),
+    "economics-integration": ("economics", "Enterprise Integration Economics",
+        "Compare three annual architecture decisions for 1.2B synthetic source events; inspect monthly cost, capacity, sensitivities and separate bounded HTTP trials."),
+    "warehouse-verification": ("measurement", "GA4 warehouse · native dbt MERGE and SQL verification",
+        "Inspect native BigQuery MERGE, replay and five-rowset parity on a synthetic fixture; compare separate public-sample SQL, local dbt and regression guards."),
+    "estate-assurance": ("estate", "Enterprise Change Assurance",
+        "Inspect company-scoped dependencies, recorded retirement consequences, immutable revisions and unresolved readiness gates."),
+    "reliability-operations": ("reliability", "MarTech Data Reliability",
+        "Trace independently persisted source deliveries, exact checkpoints and failed publication decisions to reconciled reporting values."),
+    "temporal-assurance": ("temporal", "Temporal Audience Assurance",
+        "Compare business time with knowledge time, then inspect current permissions, uncertain delivery and independent destination records."),
     "measurement-integrity": ("measurement", "First-Party Measurement — Conversion & Revenue Integrity",
         "Reconcile synthetic source contracts and payments against measured claims; inspect recorded browser controls, local GA4 models and separate native Google sample queries."),
     "analytics-engineering": ("analytics", "Analytics Engineering — Model Correctness & Performance",

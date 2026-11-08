@@ -1,0 +1,28 @@
+{
+  "scenario": "estate-assurance",
+  "integrity": "verified",
+  "checks": {
+    "companies": 4,
+    "systems": 7,
+    "requirements": 8,
+    "proposal_revisions": 13,
+    "independent_requirement_outcomes": 112,
+    "change_classes": [
+      "capability-reassignment",
+      "consolidation",
+      "integration-removal",
+      "replacement",
+      "retirement",
+      "temporary-outage"
+    ],
+    "capture_clock": "2026-10-27T00:00:00Z",
+    "native_external_execution": false,
+    "boundary": "Offline reconstruction of selected original records; no new source-engine, vendor or model execution."
+  },
+  "limitations": [
+    "All companies, people, source feeds, financial values and destination effects are synthetic. No customer result, causal uplift, vendor certification or production reliability is established.",
+    "Original records describe executed local software and independent synthetic source/receiver services. They are not native marketing-platform acceptance or a continuous workflow shared with other investigations.",
+    "This browser replays records. Its offline checker reconstructs selected relationships, arithmetic and temporal answers; it does not rerun the source engines, authorize changes, contact a person or connect to a live database.",
+    "Captured approvals, permissions, coverage and readiness describe the recorded clock only. Historical receipts and restatements never authorize a new present-day action."
+  ]
+}

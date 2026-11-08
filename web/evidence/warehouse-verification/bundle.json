@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "scenario": "warehouse-verification",
+  "source": {
+    "repository": "rlbsem/first-party-measurement-assurance",
+    "commit": "a1438e3eef101e23d61f0fd7889272098e50f9f6"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-31T03:17:01.338005+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "access.json",
+      "sha256": "561318576ff282fbb9ab5e33f79e2d5f7476cca3dd55cd2741ad3138eaa83d1d",
+      "bytes": 1305
+    },
+    {
+      "path": "application.json",
+      "sha256": "3d0db3bce2beaea3a9dd4994b94888914561a2e9b40547624790528e9977e0f4",
+      "bytes": 10871
+    },
+    {
+      "path": "bigquery/warehouse_job_metadata.sql",
+      "sha256": "15f488af5cd3e3ba3253ffde469d762e42d7e080d14ff70dceaf0f5f4c2e01b6",
+      "bytes": 594
+    },
+    {
+      "path": "bigquery/warehouse_models_preview.sql",
+      "sha256": "f0aae01795260beaeb20196a8f93193c23d874b29d6654e0ee5aff2244228752",
+      "bytes": 8463
+    },
+    {
+      "path": "bigquery/warehouse_source_oracle.sql",
+      "sha256": "6f5d3aef7e43773c202d1339644f40fd69c62717d8d8cfd49d2dcaf44ef60b43",
+      "bytes": 6281
+    },
+    {
+      "path": "ga4_pipeline/macros/source_relations.sql",
+      "sha256": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+      "bytes": 527
+    },
+    {
+      "path": "ga4_pipeline/models/fct_ga4_events.sql",
+      "sha256": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+      "bytes": 1217
+    },
+    {
+      "path": "ga4_pipeline/models/fct_ga4_items.sql",
+      "sha256": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+      "bytes": 457
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_daily.sql",
+      "sha256": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+      "bytes": 723
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_purchase_quality.sql",
+      "sha256": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+      "bytes": 1158
+    },
+    {
+      "path": "ga4_pipeline/models/mart_ga4_sessions.sql",
+      "sha256": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+      "bytes": 438
+    },
+    {
+      "path": "ga4_pipeline/models/staging/stg_event_versions.sql",
+      "sha256": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+      "bytes": 564
+    },
+    {
+      "path": "ga4_pipeline/models/staging/stg_item_versions.sql",
+      "sha256": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+      "bytes": 356
+    },
+    {
+      "path": "ga4_pipeline/seeds/raw_ga4_events.csv",
+      "sha256": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+      "bytes": 615
+    },
+    {
+      "path": "ga4_pipeline/seeds/raw_ga4_items.csv",
+      "sha256": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+      "bytes": 270
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_item_grain.sql",
+      "sha256": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+      "bytes": 159
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_item_version_identity.sql",
+      "sha256": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+      "bytes": 681
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_landing_values.sql",
+      "sha256": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+      "bytes": 661
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_mart_reconciliation.sql",
+      "sha256": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+      "bytes": 667
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_no_regression.sql",
+      "sha256": "6011761773265245c9ca3fc72e4d7e63cb85a40100460aba4ce3d707ecd5ea4d",
+      "bytes": 1126
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_purchase_item_conservation.sql",
+      "sha256": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+      "bytes": 526
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_quality_flags.sql",
+      "sha256": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+      "bytes": 640
+    },
+    {
+      "path": "ga4_pipeline/tests/assert_source_version_identity.sql",
+      "sha256": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+      "bytes": 278
+    },
+    {
+      "path": "guard.json",
+      "sha256": "b743d464373f055b90b5afc4b861d9b02586f9b49b14dfd7353ae746e67464e8",
+      "bytes": 2514
+    },
+    {
+      "path": "jobs.json",
+      "sha256": "c535ebe22e3bd786b881a2c89ec0643a6609f80d995cf790709ef3033b1cb0e2",
+      "bytes": 1169
+    },
+    {
+      "path": "local.json",
+      "sha256": "2a91f12116ce5badbadc0881ded6d9d491dcfc1f8ccd032432b518413d511cc6",
+      "bytes": 3710
+    },
+    {
+      "path": "model-results.json",
+      "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+      "bytes": 734
+    },
+    {
+      "path": "native.json",
+      "sha256": "b3efbf632e61267bc74f750ac76e81d3e87a650637233495cf224f439aa84331",
+      "bytes": 4430
+    },
+    {
+      "path": "scripts/bigquery_oracle.py",
+      "sha256": "14efada7d849116e832f24607907ddf6b11532bc2f647730e8103300860d5888",
+      "bytes": 3524
+    },
+    {
+      "path": "scripts/verify_ga4_current.py",
+      "sha256": "98281b7b6a571d3d132c7a40c34cf6a5f1f9b852ff5f8f6e9cd6686b88c347d6",
+      "bytes": 2431
+    },
+    {
+      "path": "scripts/verify_ga4_pipeline.py",
+      "sha256": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+      "bytes": 10274
+    },
+    {
+      "path": "scripts/warehouse_preview.py",
+      "sha256": "68b7a54f749dbf86e806ae3f9cc9c841021a1b8587c695655a8ec0241b8a705c",
+      "bytes": 10652
+    },
+    {
+      "path": "source-results.json",
+      "sha256": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+      "bytes": 734
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "bc5984fc6589f2a092b1e4f28e26c55ced29283ca38178c7f8f61da05bf49e70",
+      "bytes": 19523
+    },
+    {
+      "path": "projection.json",
+      "sha256": "1b7119ea4789fd024b3d8249fcdcafbc742d00f030ed51f608ed0cc0b68a69ad",
+      "bytes": 341
+    },
+    {
+      "path": "observation.json",
+      "sha256": "0c138fa238baa06bb58376d47fade0d5345ab4f9f1afd3adbc30f215b0126b0d",
+      "bytes": 122
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "979688425d1d830e9d5283d1f4ea8775070b93bdd75a8aa4c50c5aeef23f130b",
+      "bytes": 609
+    }
+  ],
+  "limitations": [
+    "Native read-only SELECT bodies and an independent source query ran on a purchase-user cohort of one public obfuscated GA4 shard; not a production GA4 export.",
+    "Native dbt compilation, build and MERGE were not executed. Browser authentication is not SDK authentication; the recorded billing-disabled sandbox excludes DML.",
+    "Local synthetic dbt correction, late-arrival, replay and complete-oracle checks are a separate execution. Snapshot event keys do not establish cross-export correction identity."
+  ],
+  "input_hashes": {
+    "access.json": "561318576ff282fbb9ab5e33f79e2d5f7476cca3dd55cd2741ad3138eaa83d1d",
+    "application.json": "3d0db3bce2beaea3a9dd4994b94888914561a2e9b40547624790528e9977e0f4",
+    "bigquery/warehouse_job_metadata.sql": "15f488af5cd3e3ba3253ffde469d762e42d7e080d14ff70dceaf0f5f4c2e01b6",
+    "bigquery/warehouse_models_preview.sql": "f0aae01795260beaeb20196a8f93193c23d874b29d6654e0ee5aff2244228752",
+    "bigquery/warehouse_source_oracle.sql": "6f5d3aef7e43773c202d1339644f40fd69c62717d8d8cfd49d2dcaf44ef60b43",
+    "ga4_pipeline/macros/source_relations.sql": "d5017d19c26100650f5800c597109d0eb3a585aa514ec7e8a911964bc42c301b",
+    "ga4_pipeline/models/fct_ga4_events.sql": "881a1ac06a8409665c17605b2e9660d8e12ef984cfbc336eaa457cc13df4b236",
+    "ga4_pipeline/models/fct_ga4_items.sql": "fd7db0c9929a64846f022cc89751fc371ded1620eed04012e1d6f27dcc9b93ec",
+    "ga4_pipeline/models/mart_ga4_daily.sql": "8c2053dbb2ee65bc4bc50f1e3792a8491f3d45a11e1c85871a6fcc88f4f51bcd",
+    "ga4_pipeline/models/mart_ga4_purchase_quality.sql": "2a8270a43673056c7e274869118d05c0cf6be628b170f4af0f011e0d9e46bd5b",
+    "ga4_pipeline/models/mart_ga4_sessions.sql": "63ea53af4ab63281d94d6e0415879fd574a50a7f111dfd640063d4699793b7c9",
+    "ga4_pipeline/models/staging/stg_event_versions.sql": "3674cecc8625e20b5326d68bdbe005647505817aa9d73635488eb537489b6a09",
+    "ga4_pipeline/models/staging/stg_item_versions.sql": "6d5564c520862ae6c09e463200191d64aab4bd7c29dc44a2ea7776051cad6ea7",
+    "ga4_pipeline/seeds/raw_ga4_events.csv": "10d91747b13a3bf9861eaaed205000586837ac4bce53324c8409713b5e2f2da1",
+    "ga4_pipeline/seeds/raw_ga4_items.csv": "8b3cdb9bca56369c3132254cdede97725928fa842b0e68f2f0dcc1cba15be154",
+    "ga4_pipeline/tests/assert_item_grain.sql": "33ba5618ce24513ea4e531b325ca9d0f5bbb956df7a1f1fbb69ce9a1e5e007a0",
+    "ga4_pipeline/tests/assert_item_version_identity.sql": "a89d7d3533dcc5cbfee9a7a837e2c138676a71356dc370b85e563ef2319af8f1",
+    "ga4_pipeline/tests/assert_landing_values.sql": "792cf1793d0571b13ca8a6239400d9867a99bd067205b489c9a745ea232d388a",
+    "ga4_pipeline/tests/assert_mart_reconciliation.sql": "cd10c893f8aee0c2a80418d0456cdb0ee26a8324c2249be899d18c638fadb3ec",
+    "ga4_pipeline/tests/assert_no_regression.sql": "6011761773265245c9ca3fc72e4d7e63cb85a40100460aba4ce3d707ecd5ea4d",
+    "ga4_pipeline/tests/assert_purchase_item_conservation.sql": "98fbce9515c42acf1270465646f6e561676d59a832b01ebb959396a81c222ea6",
+    "ga4_pipeline/tests/assert_quality_flags.sql": "07f570a2750ca6c6b4a91b15ac95901c667015a384f9b5dbe12158033286cb20",
+    "ga4_pipeline/tests/assert_source_version_identity.sql": "6f52200ffb4fa6dea47a1f091124cb4cf7ca249871dd4dea5c39ab19ba0bac4e",
+    "guard.json": "b743d464373f055b90b5afc4b861d9b02586f9b49b14dfd7353ae746e67464e8",
+    "jobs.json": "c535ebe22e3bd786b881a2c89ec0643a6609f80d995cf790709ef3033b1cb0e2",
+    "local.json": "2a91f12116ce5badbadc0881ded6d9d491dcfc1f8ccd032432b518413d511cc6",
+    "model-results.json": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f",
+    "native.json": "b3efbf632e61267bc74f750ac76e81d3e87a650637233495cf224f439aa84331",
+    "scripts/bigquery_oracle.py": "14efada7d849116e832f24607907ddf6b11532bc2f647730e8103300860d5888",
+    "scripts/verify_ga4_current.py": "98281b7b6a571d3d132c7a40c34cf6a5f1f9b852ff5f8f6e9cd6686b88c347d6",
+    "scripts/verify_ga4_pipeline.py": "e0aa4c7f57f4c484b879bea0921e6fbd2c0d3e5835d6fcd5ff8d3c9ab640d660",
+    "scripts/warehouse_preview.py": "68b7a54f749dbf86e806ae3f9cc9c841021a1b8587c695655a8ec0241b8a705c",
+    "source-results.json": "2cd1eec3b366c331ed075e0a357c592f2647874ee01951db19d06c19a073203f"
+  },
+  "reproduce": [
+    "python scripts/import_economics_warehouse.py <economics-checkout> <measurement-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/warehouse-verification"
+  ],
+  "configuration_hash": "9778ff310f4266dfc0338a5e2576885920d15e1ad8957c4fe573a70fe35bc6b4"
+}

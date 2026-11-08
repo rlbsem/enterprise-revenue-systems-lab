@@ -1,0 +1,22 @@
+{
+  "workflow_run": 41164492567,
+  "source_revision": "89d6a1e48abd0596a9c01f4fa4a968f326eb4bb9",
+  "linux": {
+    "tests_passed": 280,
+    "tests_failed": 1,
+    "finding": "320px rejected HTTP trial has horizontal overflow"
+  },
+  "windows": {
+    "tests_passed": 281,
+    "tests_failed": 0,
+    "finding": "Legacy presentation registry omitted economics offline label"
+  },
+  "source_engines": "passed",
+  "corrections": [
+    "Scoped shrinkable selectors and fact columns; overflow assertion unchanged",
+    "All 44 recorded trial/fault narrow-screen selections now checked",
+    "Economics label added to old capture registry",
+    "Canonical builder reused to avoid rewriting generated connected ZIP"
+  ],
+  "boundary": "Recorded CI failure observations; not a production incident or native cloud execution"
+}

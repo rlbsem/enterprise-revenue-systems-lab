@@ -243,10 +243,12 @@ def verify_seller(manifest, files):
 def verify(path):
     manifest, files = load_verified(Path(path))
     source = manifest["scenario"].split("-")[0]
-    if manifest["scenario"] == "acquisition-governance":
-        from .acquisition_checks import acquisition, verify_original_bytes
-        verify_original_bytes(Path(path), files["upstream.json"])
-        checks = acquisition(files)
+    if manifest["scenario"] in {"economics-integration", "warehouse-verification"}:
+        from .integration_checks import verify_import
+        checks = verify_import(Path(path), manifest["scenario"], files)
+    elif manifest["scenario"] in {"estate-assurance", "reliability-operations", "temporal-assurance"}:
+        from .assurance_checks import verify_assurance
+        checks = verify_assurance(Path(path), manifest["scenario"], files)
     elif manifest["scenario"] == "measurement-integrity":
         from .measurement_checks import measurement, verify_original_bytes
         verify_original_bytes(Path(path), files["upstream.json"])

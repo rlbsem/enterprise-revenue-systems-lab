@@ -1,0 +1,1761 @@
+{
+  "captured_at": "2026-10-31T03:25:11.815835+00:00",
+  "browser": "Chromium 140.0.7339.16",
+  "served": "Actual dist at GitHub Pages subpath; no public deployment",
+  "source_sha256": {
+    "web/app.js": "e38d233c572517991ed06f7a30b1e31441cc180434ced286bd487c31d229d604",
+    "web/index.html": "930d7b0d5da021c9eac8ab99273d182ec4d9153daae0e57e41d17952c750c5e7",
+    "web/assurance.css": "7ae87ee23bfe9d12d7e33cbe3e8d0f84e47ee5081133b8fdac8e66b49b1e2a1b",
+    "web/style.css": "ead5338406537be74bc2a0ca2c0ef75b29507cb7dd3c20feb4737abfa7537c56",
+    "web/economics.js": "308583368ccc9388bade6b37e3b5c270a0f5845a034257ff4e725c8da8002ca3",
+    "web/warehouse.js": "95f3afe9b394712ace820767f849033e1907ea5dcce687f6cbf37a3afaa736aa",
+    "web/evidence-ui.js": "961bc989180ad5341586fb967df9c288e33cb31c1c7ca3cd6df0006e08cdcf27",
+    "web/catalog.json": "309d5fd53ca4d7b4f9951e96aa48751b7310ea5e53310d179374c08f38d82e9c",
+    "sources.lock.json": "17dc4e83e863bb82b4fdae0bf54c842e12834e27cbaa83e6b4b23c8313dcfad0",
+    "scripts/capture_integration.py": "115edbd494700908af4c4420e03718cbb3b8f0da4836016ca1bc255301c8c9d0"
+  },
+  "image_sha256": {
+    "economics-integration-desktop.png": "8b1592cfbbfd009f9cd8caf885bc7c051d5ed999fbec3d190937b7628816bbe8",
+    "economics-integration-detail.png": "4ed09fa67832d0386ea408dcab3efd9cd92dc3c7f853aa86b59838b967b554b4",
+    "economics-integration-mobile.png": "d280e4505e2ac03e805c913267557e33da8a5fa66c9ac35ee4a0d4928a36b2f4",
+    "economics-integration-http.png": "eb3db946c2ec4689b6619f1d15551acfc03e3f5ffe4841bde5be8b4c0027235c",
+    "warehouse-verification-desktop.png": "ef361340fffc3aefab341730d1a0c4f42323c8246d11d9a7e5808e1386be6880",
+    "warehouse-verification-detail.png": "bdb86cffffec65054e22bfb213c964d7fd3fa43563856de4016bafee034b2268",
+    "warehouse-verification-mobile.png": "20bf3a1557602e90b980292533eff8d4a16f63e9a3d31bcc9e1e59fd66a9c315"
+  },
+  "images": {
+    "economics-integration-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "case": "economics-integration",
+      "stage": "decision",
+      "capture": "Unedited actual static application viewport"
+    },
+    "economics-integration-detail.png": {
+      "width": 1440,
+      "height": 1260,
+      "case": "economics-integration",
+      "stage": "sensitivity",
+      "capture": "Unedited actual static application viewport"
+    },
+    "economics-integration-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "case": "economics-integration",
+      "stage": "decision",
+      "capture": "Unedited actual static application viewport"
+    },
+    "economics-integration-http.png": {
+      "width": 1440,
+      "height": 1260,
+      "case": "economics-integration",
+      "stage": "execution",
+      "capture": "Unedited actual static application viewport"
+    },
+    "warehouse-verification-desktop.png": {
+      "width": 1440,
+      "height": 1260,
+      "case": "warehouse-verification",
+      "stage": "native",
+      "capture": "Unedited actual static application viewport"
+    },
+    "warehouse-verification-detail.png": {
+      "width": 1440,
+      "height": 1260,
+      "case": "warehouse-verification",
+      "stage": "guard",
+      "capture": "Unedited actual static application viewport"
+    },
+    "warehouse-verification-mobile.png": {
+      "width": 390,
+      "height": 1000,
+      "case": "warehouse-verification",
+      "stage": "native",
+      "capture": "Unedited actual static application viewport"
+    }
+  },
+  "catalog_checks": [
+    {
+      "case": "analytics-engineering",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "analytics-engineering",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "connected-roundtrip",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "control-recovery",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "estate-assurance",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-enterprise",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-qwen",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-research",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "gtm-salesforce",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "measurement-integrity",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "release-assurance",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "reliability-operations",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-bridge",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-correction",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "revenue-integrity",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-application",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-delivery",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-live",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-stale",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-support-review",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "seller-suppressed",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "temporal-assurance",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "tab": "Compare & verify",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "tab": "Decision & outcome",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "tab": "Source records",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "tab": "Evidence timeline",
+      "overflow": false
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "tab": "Compare & verify",
+      "overflow": false
+    }
+  ],
+  "layouts": [
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "decision",
+      "overflow": false,
+      "contrast": {
+        "checked": 170,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "cost",
+      "overflow": false,
+      "contrast": {
+        "checked": 167,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "sensitivity",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "execution",
+      "overflow": false,
+      "contrast": {
+        "checked": 190,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1024,
+      "stage": "decision",
+      "overflow": false,
+      "contrast": {
+        "checked": 170,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1024,
+      "stage": "cost",
+      "overflow": false,
+      "contrast": {
+        "checked": 167,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1024,
+      "stage": "sensitivity",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 1024,
+      "stage": "execution",
+      "overflow": false,
+      "contrast": {
+        "checked": 190,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 768,
+      "stage": "decision",
+      "overflow": false,
+      "contrast": {
+        "checked": 170,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 768,
+      "stage": "cost",
+      "overflow": false,
+      "contrast": {
+        "checked": 167,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 768,
+      "stage": "sensitivity",
+      "overflow": false,
+      "contrast": {
+        "checked": 158,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 768,
+      "stage": "execution",
+      "overflow": false,
+      "contrast": {
+        "checked": 190,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "decision",
+      "overflow": false,
+      "contrast": {
+        "checked": 134,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "cost",
+      "overflow": false,
+      "contrast": {
+        "checked": 131,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "sensitivity",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "execution",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "stage": "decision",
+      "overflow": false,
+      "contrast": {
+        "checked": 134,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "stage": "cost",
+      "overflow": false,
+      "contrast": {
+        "checked": 131,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "stage": "sensitivity",
+      "overflow": false,
+      "contrast": {
+        "checked": 122,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "economics-integration",
+      "width": 320,
+      "stage": "execution",
+      "overflow": false,
+      "contrast": {
+        "checked": 154,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 166,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "local",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "guard",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "boundary",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1024,
+      "stage": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 166,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1024,
+      "stage": "local",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1024,
+      "stage": "guard",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1024,
+      "stage": "boundary",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 768,
+      "stage": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 166,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 768,
+      "stage": "local",
+      "overflow": false,
+      "contrast": {
+        "checked": 150,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 768,
+      "stage": "guard",
+      "overflow": false,
+      "contrast": {
+        "checked": 178,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 768,
+      "stage": "boundary",
+      "overflow": false,
+      "contrast": {
+        "checked": 125,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 130,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "local",
+      "overflow": false,
+      "contrast": {
+        "checked": 114,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "guard",
+      "overflow": false,
+      "contrast": {
+        "checked": 142,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "boundary",
+      "overflow": false,
+      "contrast": {
+        "checked": 89,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "stage": "native",
+      "overflow": false,
+      "contrast": {
+        "checked": 130,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "stage": "local",
+      "overflow": false,
+      "contrast": {
+        "checked": 114,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "stage": "guard",
+      "overflow": false,
+      "contrast": {
+        "checked": 142,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 320,
+      "stage": "boundary",
+      "overflow": false,
+      "contrast": {
+        "checked": 89,
+        "minimum_ratio": 4.584,
+        "failures": []
+      }
+    }
+  ],
+  "accessibility": [
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "decision",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "cost",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "sensitivity",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 1440,
+      "stage": "execution",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "decision",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "cost",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "sensitivity",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "economics-integration",
+      "width": 390,
+      "stage": "execution",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "native",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "local",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "guard",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 1440,
+      "stage": "boundary",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "native",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "local",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "guard",
+      "violations": [],
+      "incomplete": [],
+      "passes": 28
+    },
+    {
+      "case": "warehouse-verification",
+      "width": 390,
+      "stage": "boundary",
+      "violations": [],
+      "incomplete": [],
+      "passes": 26
+    }
+  ],
+  "axe_sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+  "page_errors": [],
+  "http_writes": [],
+  "nonlocal_requests": [],
+  "new_source_execution": false,
+  "new_native_execution": false
+}

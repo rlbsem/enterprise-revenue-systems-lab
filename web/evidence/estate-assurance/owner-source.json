@@ -1,0 +1,373 @@
+{
+  "format": "change-source/v1",
+  "records": [
+    {
+      "kind": "capability",
+      "subject": "atlas/revenue",
+      "value": {
+        "label": "Revenue operations",
+        "owner": "atlas Revenue",
+        "criticality": "critical"
+      },
+      "location": "record:1"
+    },
+    {
+      "kind": "capability",
+      "subject": "atlas/operations",
+      "value": {
+        "label": "Operational reporting",
+        "owner": "atlas Operations",
+        "criticality": "important"
+      },
+      "location": "record:2"
+    },
+    {
+      "kind": "capability",
+      "subject": "boreal/revenue",
+      "value": {
+        "label": "Revenue operations",
+        "owner": "boreal Revenue",
+        "criticality": "critical"
+      },
+      "location": "record:3"
+    },
+    {
+      "kind": "capability",
+      "subject": "boreal/operations",
+      "value": {
+        "label": "Operational reporting",
+        "owner": "boreal Operations",
+        "criticality": "important"
+      },
+      "location": "record:4"
+    },
+    {
+      "kind": "capability",
+      "subject": "cinder/revenue",
+      "value": {
+        "label": "Revenue operations",
+        "owner": "cinder Revenue",
+        "criticality": "critical"
+      },
+      "location": "record:5"
+    },
+    {
+      "kind": "capability",
+      "subject": "cinder/operations",
+      "value": {
+        "label": "Operational reporting",
+        "owner": "cinder Operations",
+        "criticality": "important"
+      },
+      "location": "record:6"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/route-input0",
+      "value": {
+        "consumer": "atlas/route",
+        "provider": "sys:atlas/crm",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:7"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/route-input1",
+      "value": {
+        "consumer": "atlas/route",
+        "provider": "int:atlas/sync",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:8"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/route",
+      "value": {
+        "label": "Route qualified accounts",
+        "capability": "atlas/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:atlas/route-input0",
+          "dependency:atlas/route-input1"
+        ]
+      },
+      "location": "record:9"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/campaign-input0",
+      "value": {
+        "consumer": "atlas/campaign",
+        "provider": "req:atlas/route",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:10"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/campaign-input1",
+      "value": {
+        "consumer": "atlas/campaign",
+        "provider": "sys:atlas/workbench",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "campaign.ready"
+          ],
+          "fields": [
+            "account_id",
+            "permission"
+          ],
+          "keys": [
+            "campaign_id"
+          ]
+        }
+      },
+      "location": "record:11"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/campaign",
+      "value": {
+        "label": "Release governed campaigns",
+        "capability": "atlas/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:atlas/campaign-input0",
+          "dependency:atlas/campaign-input1"
+        ]
+      },
+      "location": "record:12"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/engage-input0",
+      "value": {
+        "consumer": "atlas/engage",
+        "provider": "req:atlas/route",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:13"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/engage-input1",
+      "value": {
+        "consumer": "atlas/engage",
+        "provider": "sys:atlas/workbench",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "campaign.ready"
+          ],
+          "fields": [
+            "account_id",
+            "permission"
+          ],
+          "keys": [
+            "campaign_id"
+          ]
+        }
+      },
+      "location": "record:14"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/engage",
+      "value": {
+        "label": "Keep an alternate engagement path",
+        "capability": "atlas/revenue",
+        "mode": "ANY",
+        "inputs": [
+          "dependency:atlas/engage-input0",
+          "dependency:atlas/engage-input1"
+        ]
+      },
+      "location": "record:15"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/seasonal-input0",
+      "value": {
+        "consumer": "atlas/seasonal",
+        "provider": "sys:atlas/workbench",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "campaign.ready"
+          ],
+          "fields": [
+            "account_id",
+            "permission"
+          ],
+          "keys": [
+            "campaign_id"
+          ]
+        }
+      },
+      "location": "record:16"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/seasonal-input1",
+      "value": {
+        "consumer": "atlas/seasonal",
+        "provider": "sys:atlas/seasonal-adapter",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:17"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/seasonal",
+      "value": {
+        "label": "Annual partner launch",
+        "capability": "atlas/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:atlas/seasonal-input0",
+          "dependency:atlas/seasonal-input1"
+        ]
+      },
+      "location": "record:18"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/cycle-a-input0",
+      "value": {
+        "consumer": "atlas/cycle-a",
+        "provider": "req:atlas/cycle-b",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:19"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/cycle-a",
+      "value": {
+        "label": "Unanchored approval cycle A",
+        "capability": "atlas/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:atlas/cycle-a-input0"
+        ]
+      },
+      "location": "record:20"
+    },
+    {
+      "kind": "dependency",
+      "subject": "atlas/cycle-b-input0",
+      "value": {
+        "consumer": "atlas/cycle-b",
+        "provider": "req:atlas/cycle-a",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:21"
+    },
+    {
+      "kind": "requirement",
+      "subject": "atlas/cycle-b",
+      "value": {
+        "label": "Unanchored approval cycle B",
+        "capability": "atlas/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:atlas/cycle-b-input0"
+        ]
+      },
+      "location": "record:22"
+    },
+    {
+      "kind": "dependency",
+      "subject": "boreal/report-input0",
+      "value": {
+        "consumer": "boreal/report",
+        "provider": "sys:boreal/crm",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:23"
+    },
+    {
+      "kind": "dependency",
+      "subject": "boreal/report-input1",
+      "value": {
+        "consumer": "boreal/report",
+        "provider": "int:boreal/sync",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:24"
+    },
+    {
+      "kind": "requirement",
+      "subject": "boreal/report",
+      "value": {
+        "label": "Publish operating reports",
+        "capability": "boreal/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:boreal/report-input0",
+          "dependency:boreal/report-input1"
+        ]
+      },
+      "location": "record:25"
+    },
+    {
+      "kind": "dependency",
+      "subject": "cinder/report-input0",
+      "value": {
+        "consumer": "cinder/report",
+        "provider": "sys:cinder/crm",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:26"
+    },
+    {
+      "kind": "dependency",
+      "subject": "cinder/report-input1",
+      "value": {
+        "consumer": "cinder/report",
+        "provider": "int:cinder/sync",
+        "qualified": true,
+        "optional": false
+      },
+      "location": "record:27"
+    },
+    {
+      "kind": "requirement",
+      "subject": "cinder/report",
+      "value": {
+        "label": "Publish operating reports",
+        "capability": "cinder/revenue",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:cinder/report-input0",
+          "dependency:cinder/report-input1"
+        ]
+      },
+      "location": "record:28"
+    },
+    {
+      "kind": "ownership",
+      "subject": "atlas/workbench",
+      "value": {
+        "team": "Atlas Applications"
+      },
+      "location": "record:29"
+    }
+  ]
+}

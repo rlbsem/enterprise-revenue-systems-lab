@@ -1,0 +1,25 @@
+{
+  "scenario": "warehouse-verification",
+  "integrity": "verified",
+  "checks": {
+    "native_row_counts": {
+      "daily": 1,
+      "events": 1856,
+      "items": 4828,
+      "purchases": 14,
+      "sessions": 12
+    },
+    "bytes_processed": 19631768,
+    "native_data_jobs": 2,
+    "complete_local_rowsets": 5,
+    "negative_guard_cases": 14,
+    "original_missed_cases": 8,
+    "native_dbt_build": false,
+    "native_incremental_merge": false
+  },
+  "limitations": [
+    "Native read-only SELECT bodies and an independent source query ran on a purchase-user cohort of one public obfuscated GA4 shard; not a production GA4 export.",
+    "Native dbt compilation, build and MERGE were not executed. Browser authentication is not SDK authentication; the recorded billing-disabled sandbox excludes DML.",
+    "Local synthetic dbt correction, late-arrival, replay and complete-oracle checks are a separate execution. Snapshot event keys do not establish cross-export correction identity."
+  ]
+}

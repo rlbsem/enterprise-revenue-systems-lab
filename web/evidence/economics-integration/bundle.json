@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "scenario": "economics-integration",
+  "source": {
+    "repository": "rlbsem/martech-stack-economics",
+    "commit": "80cfd61882cd916406edf8b9fba6ba2ff02f4715"
+  },
+  "mode": "recorded",
+  "environment": "independent_synthetic_environment",
+  "packaged_at": "2026-10-31T03:16:45.132106+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "artifacts": [
+    {
+      "path": "acceptance.json",
+      "sha256": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+      "bytes": 2118
+    },
+    {
+      "path": "accounting-source.py",
+      "sha256": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+      "bytes": 10177
+    },
+    {
+      "path": "contract-source.py",
+      "sha256": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+      "bytes": 5876
+    },
+    {
+      "path": "decision.json",
+      "sha256": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+      "bytes": 770412
+    },
+    {
+      "path": "http-summary.json",
+      "sha256": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+      "bytes": 178186
+    },
+    {
+      "path": "http/capacity-revision-result.json",
+      "sha256": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+      "bytes": 2466
+    },
+    {
+      "path": "http/delayed-source-result.json",
+      "sha256": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+      "bytes": 2492
+    },
+    {
+      "path": "http/launch-surge-result.json",
+      "sha256": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+      "bytes": 2607
+    },
+    {
+      "path": "http/normal-journal.txt",
+      "sha256": "8ef90305ebd86d4207bb74e1143c9e3f70a07fa59358012e3e1328140f24bd2e",
+      "bytes": 62400
+    },
+    {
+      "path": "http/normal-result.json",
+      "sha256": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+      "bytes": 2429
+    },
+    {
+      "path": "http/revoked-permission-result.json",
+      "sha256": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+      "bytes": 2323
+    },
+    {
+      "path": "http/shared-quota-pressure-result.json",
+      "sha256": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+      "bytes": 2622
+    },
+    {
+      "path": "http/slow-destination-result.json",
+      "sha256": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+      "bytes": 2531
+    },
+    {
+      "path": "http/transient-recovery-journal.txt",
+      "sha256": "71bdfc6ad87545bbea6820640578660f0e90075751348feee55f7236d21d2afb",
+      "bytes": 530816
+    },
+    {
+      "path": "http/transient-recovery-result.json",
+      "sha256": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+      "bytes": 2631
+    },
+    {
+      "path": "scenario.json",
+      "sha256": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6",
+      "bytes": 17691
+    },
+    {
+      "path": "upstream.json",
+      "sha256": "ae9d669d4107e905ebe4774c5b455063ae63da4c14744f2b960e605113ada3a2",
+      "bytes": 8791
+    },
+    {
+      "path": "projection.json",
+      "sha256": "be8482fd92120d72b14c89e0eaa59569f5326586031526ca0768b71b2af2b8f5",
+      "bytes": 3357
+    },
+    {
+      "path": "observation.json",
+      "sha256": "0c138fa238baa06bb58376d47fade0d5345ab4f9f1afd3adbc30f215b0126b0d",
+      "bytes": 122
+    },
+    {
+      "path": "timeline.json",
+      "sha256": "815049e924f3c680b5e3b7e9dd4c06f23fc2330b342dd3df3343b32856684ecb",
+      "bytes": 3833
+    }
+  ],
+  "limitations": [
+    "All annual demand and USD prices are synthetic planning inputs, not vendor quotes or commercial savings.",
+    "Annual architecture calculations and bounded local HTTP trials are separate execution sets. No enterprise-scale load test or native vendor integration is claimed.",
+    "Hourly modeled capacity assumes balanced within-hour emission and declared route lag; it does not establish queue-tail, strict rolling-arrival or production SLA guarantees."
+  ],
+  "input_hashes": {
+    "acceptance.json": "ecf49e8338987d5697ed060d99bc5407315ca66cd9affa4bb60c4f702856b2f9",
+    "accounting-source.py": "0b42d6e4f5bc09b4a3e123d4baa1861f271d12f7772dea9e081ba690512af7ed",
+    "contract-source.py": "444fdbbad95c1ad782b42df5e10a109bba6df7a2aab1bf015deca9d78d96e6fc",
+    "decision.json": "9487f3b1447c891894133e10a162af2068f1dc0faef026fd00df271be82e9aeb",
+    "http-summary.json": "772e6959a30c202c85df7823b9210a4fe9a3cc76c99952976134aecf760b72b5",
+    "http/capacity-revision-result.json": "5e1e1c195ab8b830bb9cd2d58546581c57dab9697080a47cda219f3ff197909c",
+    "http/delayed-source-result.json": "85c686d8a4b73c8d6ac8b475ed44c7abb660d9b1969d5ddc15dd049397084e22",
+    "http/launch-surge-result.json": "9541f42e3cc762e8c059c86c762e5bb899819a19df05a5d3547f1e0b74e81ecb",
+    "http/normal-journal.txt": "8ef90305ebd86d4207bb74e1143c9e3f70a07fa59358012e3e1328140f24bd2e",
+    "http/normal-result.json": "2a50aaf11bb0e6ec2ad134bc5b2842a7645baeae4758814b05dff6942156b216",
+    "http/revoked-permission-result.json": "7ac5edaf6f39368e89fc3a9c27df89f6e10f0eb8251426498b47589ac692678a",
+    "http/shared-quota-pressure-result.json": "bd6edb0cde9a475d23ae7ee38717561b54e8eb8760c225ac69316316566804a2",
+    "http/slow-destination-result.json": "9614826238551d65b6bd6e8b61f7ff8107ab9c4aa4db011fecb2d7bbe8a72d3c",
+    "http/transient-recovery-journal.txt": "71bdfc6ad87545bbea6820640578660f0e90075751348feee55f7236d21d2afb",
+    "http/transient-recovery-result.json": "3c73210075feedf74cc07f07e86264602e3b250edde5fcdfe314c211b6ee8db2",
+    "scenario.json": "8c38a09406011a16e0d89fb528de0f4e1b27f7eb432ddd34df3f9aba35d04de6"
+  },
+  "reproduce": [
+    "python scripts/import_economics_warehouse.py <economics-checkout> <measurement-checkout>",
+    "python -m revenue_lab.cli verify web/evidence/economics-integration"
+  ],
+  "configuration_hash": "ee48bd940f187d806c1d6d550c4f63418c0125c0a19e29dee22b1ed8cb793c60"
+}

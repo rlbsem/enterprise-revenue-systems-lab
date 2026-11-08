@@ -1,0 +1,15 @@
+{
+  "format": "change-source/v1",
+  "records": [
+    {
+      "kind": "execution",
+      "subject": "atlas/seasonal",
+      "value": {
+        "count": 0,
+        "start": "2026-10-01T00:00:00Z",
+        "end": "2026-10-27T00:00:00Z"
+      },
+      "location": "record:1"
+    }
+  ]
+}
