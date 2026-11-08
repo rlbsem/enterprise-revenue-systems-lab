@@ -186,6 +186,8 @@ def main():
                         != "none"
                     )
                     expected_label = (
+                        "Verify the historical acquisition evidence offline"
+                        if investigation == "acquisition" else
                         "Verify these recorded assurance artifacts offline"
                         if investigation in {"estate", "reliability", "temporal", "economics"} else
                         "Verify this recorded financial scenario offline"
