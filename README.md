@@ -12,7 +12,7 @@ The hosted explorer is a static review surface with recorded evidence. Model inf
 
 <img src="docs/images/release-qa-eight/presentation/seller-overview.png" alt="Seller investigation screenshot" width="780">
 
-The first nine investigations and their captured evidence remain preserved. Three new assurance investigations add captures from the actual static application. Original captures remain archived. [Release QA and screenshot provenance](docs/release-qa-eight.md).
+The historical first nine investigations and their captured evidence remain preserved. The acquisition investigation is added separately to the existing 13, with its own pinned historical three-company bundle and distinct links to newer HubSpot and 50-company evidence. Earlier assurance captures stay archived. [Original release QA provenance](docs/release-qa-eight.md) · [Acquisition evidence guide](docs/acquisition-governance.md).
 
 ## Choose an engineering question
 
@@ -23,12 +23,13 @@ The first nine investigations and their captured evidence remain preserved. Thre
 | Analytics performance | [Model correctness and performance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=analytics-engineering) | Fifteen-model lineage, paired measurements and a rejected optimization |
 | AI / GTM systems | [SDR account intelligence](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=gtm-research) | Actual recorded model responses, seller decisions and separate native CRM evidence |
 | Enterprise change governance | [Enterprise Change Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance) | Company-scoped dependencies, review authority and unresolved readiness |
+| Acquisition integration & financial governance | [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance) | Scoped identity, reviewed admission and immutable reporting; separate native HubSpot readback and measured 50-company synthetic failure isolation |
 
 The two new case links above are intended public URLs after owner-approved merge and deployment. They are verified in the local static Pages-path build; this PR does not deploy them. [New evidence and execution boundaries](docs/integration-economics.md).
 
 <img src="docs/images/integration-economics/font-fix/economics-integration-desktop.png" alt="Actual static architecture decision showing three calculated synthetic annual integration alternatives" width="900">
 
-## Thirteen investigations
+## Fourteen investigations
 
 | Question | Working evidence | What to challenge |
 |---|---|---|
@@ -47,6 +48,12 @@ The two new case links above are intended public URLs after owner-approved merge
 | Can late history or an old receipt authorize a new audience action? | [Temporal Audience Assurance](docs/architecture-assurance.md): two-time decisions, scoped permissions and independent effects | Recorded synthetic clocks and local services; the viewer cannot activate an audience. |
 
 The twenty-three cases draw from eleven pinned source repositories, with research imported at a separate revision. The Salesforce and Snowflake case records an actual native synthetic integration; the other cases retain their separate execution boundaries. They are not a single client deployment.
+
+## Acquisition governance: native readback, admission and failure isolation
+
+[**Acquisition Governance — interactive investigation**](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance) examines three synthetic acquired companies: overlapping local IDs, legal-entity boundaries, reviewed source mappings, held admission, independently receipted internal handoffs and selected-period versus annual financial publications. A later **50-company synthetic failure-isolation workload** separately demonstrated 37 healthy companies progressing while another source feed was down, with 149 scoped accounts, fail-closed financial publication and an unresolved $1,750 synthetic ERP posting gap. A further **native HubSpot GET-only acceptance** verified a synthetic company/contact pair and their associations using independent HTTPS readback. These were **three separate executions**, not one continuous native integration or a production implementation.
+
+[Read the source-pinned evidence boundaries](docs/acquisition-governance.md) · [Historical acquisition bundle](web/evidence/acquisition-governance/bundle.json) · [Native HubSpot proof](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/e58fac314cad7fa1ff81929f454359635f8d996a/docs/evidence/hubspot-native/2026-11-08/README.md) · [50-company workload](https://github.com/rlbsem/enterprise-acquisition-onboarding/blob/e58fac314cad7fa1ff81929f454359635f8d996a/docs/evidence/multi-company/README.md).
 
 ## Enterprise architecture and data assurance
 

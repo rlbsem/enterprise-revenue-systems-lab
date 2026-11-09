@@ -20,7 +20,7 @@ def test_historical_integration_capture_keeps_original_source_bindings_and_image
     # warehouse UI release intentionally changes these three files; the fresh
     # CI browser suite tests their current behavior. Do not rewrite the old
     # screenshot or falsely treat its old hashes as the current release.
-    updated_ui={'web/app.js','web/warehouse.js','web/catalog.json'}
+    updated_ui={'web/app.js','web/warehouse.js','web/catalog.json','web/index.html','web/style.css','sources.lock.json'}
     for name,digest in r['source_sha256'].items():
         assert len(digest)==64 and all(c in '0123456789abcdef' for c in digest)
         actual=hashlib.sha256((ROOT/name).read_bytes()).hexdigest()

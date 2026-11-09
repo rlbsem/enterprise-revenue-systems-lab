@@ -1,0 +1,346 @@
+{
+  "executed_at": "2026-10-27T02:39:46.492932+00:00",
+  "source_revision": "3a1d6d7de9447a101f8f8414c50ace9f2171ebc3",
+  "lane": "fresh_disposable_checkout_local_postgresql_http_dbt_regression",
+  "native_vendor_calls": 0,
+  "cloud_resources": false,
+  "tests": 83,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": "215.846",
+  "cases": [
+    {
+      "test": "tests.test_admission.test_full_http_demo_all_four_acceptance_scenarios",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_import_is_not_admission_and_same_local_ids_do_not_merge",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_weak_name_candidates_remain_unlinked_and_raw_evidence_is_preserved",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_malformed_owned_records_quarantine_without_projecting[legalEntity-LE-US-02-incorrect_legal_entity]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_malformed_owned_records_quarantine_without_projecting[companyId--missing_source_identifier]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_malformed_owned_records_quarantine_without_projecting[dealStage-Unmapped CRM stage-unmapped_lifecycle_state]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_malformed_owned_records_quarantine_without_projecting[version-True-invalid_source_revision]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_missing_identifier_and_injected_lower_authority_field_are_not_ignored",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_exact_replay_preserves_readiness_but_content_collision_blocks",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_new_envelope_same_source_version_is_still_one_business_record",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_no_regress_preserves_latest_owned_state[stale-stale_or_conflicting_source_revision]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_no_regress_preserves_latest_owned_state[gap-source_revision_gap]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_no_regress_preserves_latest_owned_state[time-source_observation_regression]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_no_regress_preserves_latest_owned_state[state-unsupported_lifecycle_transition]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_new_valid_source_revision_requires_new_reviewed_baseline",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_source_inventory_missing_is_unknown_not_zero",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_concurrent_real_http_replays_commit_once",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_http_identities_are_scoped_and_sponsor_is_read_only",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_service_database_role_cannot_change_governance_or_erase_evidence",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_governance_rejects_conflicting_field_ownership_and_duplicate_crosswalk",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_mapping_change_is_versioned_and_invalidates_old_source_coverage",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_persisted_ready_flag_and_equal_row_count_do_not_bypass_reconciliation",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_admission.test_incomplete_lifecycle_mapping_cannot_be_approved",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_annual_sources_are_deterministic_and_independent_document_grains",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_annual_admission_exclusions_and_source_controls",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_annual_duplicate_conflict_and_cross_company_identity",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_annual_inventory_cannot_silently_drop_a_source",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_annual_late_correction_preserves_earlier_source_cutoff",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual.test_correctness_fixture_stays_distinct",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual_evidence.test_annual_checker_rejects_false_claims_even_with_updated_checksums[summary]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual_evidence.test_annual_checker_rejects_false_claims_even_with_updated_checksums[source]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_annual_evidence.test_annual_checker_rejects_false_claims_even_with_updated_checksums[route]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_console_session_required_and_api_tokens_are_not_browser_sessions",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_opaque_expiring_session_cookie_and_logout",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_expired_session_is_rejected_server_side",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_browser_tenant_scope_is_enforced_on_every_target",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_browser_review_requires_role_csrf_origin_and_scope",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_local_login_origin_throttle_and_security_headers",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_console.test_console_sql_roles_cannot_change_controls_or_read_sessions",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_financial_snapshot_selection_is_independent_of_database_collation",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_source_owned_financial_rejections[change0-financial_entity_mismatch]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_source_owned_financial_rejections[change1-financial_currency_policy_mismatch]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_source_owned_financial_rejections[change2-financial_source_authority_denied]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_source_owned_financial_rejections[change3-financial_mapping_stale]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_duplicate_content_identity_and_exact_money",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_financial_coverage_unknown_is_not_zero",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_independent_oracle_grains_periods_and_variances",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_ambiguous_intercompany_relationship_cannot_eliminate",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_immutable_snapshots_and_restricted_warehouse",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_financial.test_new_source_revision_changes_candidate_not_frozen_inputs",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_complete_actual_review_resnapshot_and_lost_ack_workflow",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_review_identity_is_separate_and_scoped",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_stale_identity_decision_fails_closed",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_invalid_mapping_contract_and_incomplete_inventory_are_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_stale_mapping_approval_does_not_activate_or_rewrite_history",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_revoked_or_changed_authority_prevents_new_dispatch[admission]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_revoked_or_changed_authority_prevents_new_dispatch[mapping]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_revoked_or_changed_authority_prevents_new_dispatch[business]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_revoked_or_changed_authority_prevents_new_dispatch[source_revision]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_lost_ack_history_reconciliation_does_not_require_new_write_authority",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_unavailable_receiver_before_commit_exhausts_bounded_budget",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_unknown_receiver_readback_never_counts_as_absence",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_sender_cannot_open_receiver_database_or_forge_governance",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_receiver_exact_content_and_independent_readback",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_real_worker_process_death_recovers_original_effect",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass2.test_finance_state_cannot_be_manufactured_by_crm",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass5.test_pass5_cross_company_candidate_and_forged_review_id_leave_no_mutation",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass5.test_pass5_all_console_write_routes_enforce_role_and_csrf_before_mutation",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass5.test_pass5_copied_cookie_after_logout_and_invalid_sessions_fail_closed",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass5.test_pass5_observed_history_does_not_authorize_a_new_intent",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_pass5.test_pass5_overallocated_payment_fails_dbt_and_unpublished_http_is_unreadable",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_preserves_browser_authority_and_response_controls",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_never_exposes_nonconsole_services[/ingest]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_never_exposes_nonconsole_services[/dispatch]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_never_exposes_nonconsole_services[/api/config]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_never_exposes_nonconsole_services[/receiver]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_never_exposes_nonconsole_services[/openapi.json]",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_denies_host_rebinding_and_path_escape",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_rejects_ambiguous_framing_and_large_bodies",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_gateway_readiness_fails_closed",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_state_lock_and_pointer_cannot_attach_other_workspace",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_portable_refuses_external_database_before_start",
+      "status": "passed"
+    },
+    {
+      "test": "tests.test_portable.test_compose_boundary_and_build_context_are_explicit",
+      "status": "passed"
+    }
+  ]
+}

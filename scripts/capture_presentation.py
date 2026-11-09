@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from revenue_lab.site import build
 CASES = {
+    "acquisition": "acquisition-governance",
     "economics": "economics-integration",
     "estate": "estate-assurance",
     "reliability": "reliability-operations",
@@ -185,6 +186,8 @@ def main():
                         != "none"
                     )
                     expected_label = (
+                        "Verify the historical acquisition evidence offline"
+                        if investigation == "acquisition" else
                         "Verify these recorded assurance artifacts offline"
                         if investigation in {"estate", "reliability", "temporal", "economics"} else
                         "Verify this recorded financial scenario offline"
