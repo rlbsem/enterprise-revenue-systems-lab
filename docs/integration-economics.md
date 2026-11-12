@@ -49,7 +49,7 @@ Each artifact links its exact blob revision. Where a historical local report has
 
 ## Read-only architecture and reproduction
 
-No new source-engine execution, inference, vendor call, cloud resource, credential or deployment is introduced. The existing static-only GitHub Pages boundary and local execution allowlist remain unchanged. Focus links expose direct, shareable entry points for integration architecture, MarTech/analytics engineering, AI/GTM and enterprise change governance. The new routes are verified locally under the actual Pages subpath; public availability requires owner-approved merge/deployment and separate hosted verification.
+No new source-engine execution, inference, vendor call, cloud resource, credential or deployment is introduced. The existing static-only GitHub Pages boundary and local execution allowlist remain unchanged. Focus links expose direct, shareable entry points for integration architecture, MarTech/analytics engineering, AI/GTM and enterprise change governance. The routes were verified locally under the actual Pages subpath and have since been merged. Current public deployment status must be verified from the Pages deployment and hosted-check runs.
 
 ```text
 python -m pytest -q
