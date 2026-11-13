@@ -27,8 +27,8 @@
       "bytes": 759
     },
     "README.md": {
-      "sha256": "efad63add66ce5eacb5362995d440658de5b51e8cd38fff55bb6f42328f92771",
-      "bytes": 25538
+      "sha256": "14690aac298f65ab2d375e0ca4004504fee3f353c982e54aa2af8cabfd410a41",
+      "bytes": 26340
     },
     "compose.yaml": {
       "sha256": "6fa832fadd466e69af04f07610315cb04d3c13a6d53d94334a2fd805fccfcf8f",
@@ -51,8 +51,8 @@
       "bytes": 5589
     },
     "docs/deployment.md": {
-      "sha256": "506121084a20c3f8fe8de5e3ad73a7a68360039e9f329e7729ed5826a8161326",
-      "bytes": 6298
+      "sha256": "34e1a2420753197c6d6514c0cc73ca3a4df0881b2c57b4e84993f6eb0ae11cb9",
+      "bytes": 6473
     },
     "docs/evidence-guide.md": {
       "sha256": "1bf956a55d4e7046523eda1c1a44f86585b28b5c954093bf68cc2a297263f36d",
@@ -987,8 +987,8 @@
       "bytes": 8242
     },
     "docs/measurement-integrity.md": {
-      "sha256": "7cca95be51b8b541f3bebb73c91d4d7455f35e86a94f90e69afad587f637197e",
-      "bytes": 5627
+      "sha256": "692f8fb9e2c2150cad64c9dcf992ab1d7b4190f4cc955ca221a772d6310b1a0d",
+      "bytes": 5921
     },
     "docs/model-release-assurance.md": {
       "sha256": "525ca7c512805a10880abc7b5f1b594ae4939c04dcfac7ba660ee411fd3fbe3a",
