@@ -2,7 +2,7 @@
 
 A reported conversion can overstate cash even when the event pipeline works. This investigation reconciles the synthetic Evermere Design + Build source ledger against admitted conversion facts before treating any metric as money.
 
-Route: `?case=measurement-integrity`. The feature is prepared for review, not deployed by this branch.
+Route: `?case=measurement-integrity`. The case is included on `main`. The current public deployment is determined by [Pages](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain), not by the source branch alone.
 
 ## Inspect the evidence
 

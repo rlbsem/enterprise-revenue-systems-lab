@@ -25,7 +25,7 @@ The historical first nine investigations and their captured evidence remain pres
 | Enterprise change governance | [Enterprise Change Assurance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=estate-assurance) | Company-scoped dependencies, review authority and unresolved readiness |
 | Acquisition integration & financial governance | [Acquisition Governance](https://rlbsem.github.io/enterprise-revenue-systems-lab/?case=acquisition-governance) | Scoped identity, reviewed admission and immutable reporting; separate native HubSpot readback and measured 50-company synthetic failure isolation |
 
-The two new case links above are intended public URLs after owner-approved merge and deployment. They are verified in the local static Pages-path build; this PR does not deploy them. [New evidence and execution boundaries](docs/integration-economics.md).
+These cases are included on `main` and verified in the local static Pages-path build. Check the [Pages deployment history](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/pages.yml?query=branch%3Amain) and [hosted verification](https://github.com/rlbsem/enterprise-revenue-systems-lab/actions/workflows/hosted.yml?query=branch%3Amain) for the version currently published. [Evidence and execution boundaries](docs/integration-economics.md).
 
 <img src="docs/images/integration-economics/font-fix/economics-integration-desktop.png" alt="Actual static architecture decision showing three calculated synthetic annual integration alternatives" width="900">
 
@@ -97,7 +97,7 @@ Route: `?case=release-assurance`, included on `main`. [Evidence and execution bo
 
 The seventh investigation follows a recorded $1,500 posting discrepancy through source lineage and a separate reviewed delivery recovery. Inspect the before/after invoice, cash and ARR measures without access to the privileged operator console. The discrepancy remains **Review Required**.
 
-Route: `?case=revenue-integrity`, included on `main`. [Evidence and financial derivation](docs/revenue-integrity.md) · [Actual browser screenshots](docs/evidence/revenue-integrity/README.md). The source platform remains pinned to its recorded acceptance revision; this presentation update is not deployed by this PR.
+Route: `?case=revenue-integrity`, included on `main`. [Evidence and financial derivation](docs/revenue-integrity.md) · [Actual browser screenshots](docs/evidence/revenue-integrity/README.md). The source platform remains pinned to its recorded acceptance revision; this static case is included on `main`, while actual hosted publication is independently checked by the Pages and hosted-verification workflows.
 
 <img src="docs/images/release-qa-eight/integrity/revenue-integrity-desktop.png" alt="Actual static Revenue Integrity investigation showing synthetic invoice, ERP, cash and ARR values with the unresolved $1,500 difference" width="900">
 
